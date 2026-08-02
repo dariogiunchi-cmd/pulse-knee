@@ -228,3 +228,11 @@ editoriale.
     l'intera storia rifirmata dopo aver verificato che l'albero dei file fosse **identico
     byte per byte** prima e dopo la riscrittura. `pubblica.sh` ora avvisa se un commit
     esce senza firma, invece di lasciar passare la cosa in silenzio.
+
+31. **La copia di lavoro credeva di avere quindici commit non ancora spinti**, pur essendo
+    allineata a GitHub carattere per carattere. `pubblica.sh` spinge da un **clone
+    temporaneo**, quindi il riferimento locale `origin/main` non veniva mai aggiornato e
+    `git status` confrontava contro una versione vecchia. Difetto solo di contabilita',
+    non di contenuto — ma esattamente il tipo che porta a fidarsi di un segnale sbagliato,
+    o a "risolverlo" con una spinta forzata che invece cancellerebbe del lavoro.
+    Ora la procedura aggiorna anche il riferimento.
