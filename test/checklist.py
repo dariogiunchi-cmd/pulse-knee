@@ -60,6 +60,8 @@ MARCATORI = [
  ("Duelli non fantasma",          ["function duelliVivi"]),
  ("Versione mista dei testi",     ["setNlVer('mix'", "function wBlurb"]),
  ("Durata video in secondi",      ["function setSec", "function durataNota", "PAROLE_AL_SECONDO"]),
+ ("Proposte tracciate per nome",  ["function suggAperte", "suggDone"]),
+ ("Trasferimento fra dispositivi", ["function linkTrasferimento", "function fondiStato", "hashchange"]),
  ("Pulsante Video sulle schede",  ["ib vid"]),
  ("Memoria dell'utente",          ["localStorage.getItem('pulse4')"]),
  ("App installabile",             ['rel="manifest"', "apple-touch-icon", "serviceWorker"]),

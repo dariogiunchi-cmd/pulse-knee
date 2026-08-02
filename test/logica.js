@@ -3,7 +3,7 @@ function CL(){return {_c:{},add(c){this._c[c]=1},remove(c){delete this._c[c]},to
 function stub(){return {classList:CL()};}
 function El(){var e={innerHTML:'',textContent:'',value:'',style:{},classList:CL(),addEventListener(){},querySelector(){return El()},scrollIntoView(){},closest(){return null},id:''};e.parentNode={children:[stub(),stub(),stub(),stub()],id:''};e.children=[];return e;}
 var reg={};global.document={getElementById:id=>reg[id]||(reg[id]=El()),querySelectorAll:()=>[],querySelector:()=>El(),addEventListener(){}};
-global.navigator={clipboard:{writeText(){return Promise.resolve()}}};global.window={};global.confirm=()=>true;global.event=null;
+global.navigator={clipboard:{writeText(){return Promise.resolve()}},share:null};global.location={href:'https://esempio/pulse/',hash:'',split(){return['']}};global.history={replaceState(){}};global.btoa=s=>Buffer.from(s,'binary').toString('base64');global.atob=s=>Buffer.from(s,'base64').toString('binary');global.window={addEventListener(){}};global.confirm=()=>true;global.event=null;
 var _f=process.env.PULSE_HTML||'index.html';
 var _h=require('fs').readFileSync(_f,'utf8');
 eval(_h.match(/<script>([\s\S]*)<\/script>/)[1]);

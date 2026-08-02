@@ -368,6 +368,7 @@
     </div>
     <div class="sec"><h2>🔔 Promemoria</h2><div class="muted">Il briefing viene preparato ogni mattina alle 7 (ora svizzera) e l'avviso ti arriva dall'app Claude, <b>se hai le notifiche attive per quella app</b>. Qui sotto puoi attivare anche gli avvisi del browser: su iPhone funzionano solo se hai aggiunto PULSE alla schermata Home e apri l'app da lì.</div><div class="add" style="margin-top:10px"><button onclick="askNotif()">🔔 Attiva avvisi</button></div><div class="preview" id="notiflbl"></div></div>
     <div class="sec"><h2>🗄 Versioni precedenti</h2><div class="muted">Ogni giorno il PULSE viene salvato così com&rsquo;era. Restano tutti i giorni degli ultimi trenta e il primo di ogni mese, per sempre.</div><div class="add" style="margin-top:10px"><a class="btn" href="versioni/" style="text-decoration:none;display:inline-flex;align-items:center">🗄 Sfoglia le versioni</a></div></div>
+    <div class="sec"><h2>📲 Stesso PULSE su un altro dispositivo</h2><div class="muted">PULSE non ha un server: quello che fai su un dispositivo resta lì. Se usi anche il computer, porta i tuoi dati con un link — le due copie si <b>fondono</b>, non si sovrascrivono, quindi non perdi nulla da nessuna delle due parti.</div><div id="syncbox" style="margin-top:10px"></div></div>
     <div class="sec"><h2>♻︎ I tuoi dati</h2><div class="muted">Salvati, voti, preferenze, lavori scelti per la distribuzione e testi che hai adattato vivono <b>solo in questo browser</b>, su questo dispositivo. Non sono su nessun server e non si sincronizzano con altri dispositivi. Se cancelli i dati del sito, si perdono: per questo conviene tenere PULSE nella schermata Home e non cancellare i dati di Safari o Chrome per questo indirizzo. Le schede e i contenuti di ogni giorno restano invece sempre recuperabili dalle versioni precedenti.</div><div class="add" style="margin-top:10px"><button onclick="resetAll()" style="background:#ff3b30">Azzera tutto</button></div></div>
   </div>
   <div class="foot">PULSE · citazioni verificate 11/11 su PubMed · voce del dispositivo · contenuti social su 4 lavori, in tre toni e tre lunghezze · i testi che adatti restano salvati e hanno la precedenza.</div>
@@ -608,8 +609,8 @@ var PREF_SOC=['ESSKA','ISAKOS','AOSSM','AAOS','SFA','SOFCOT','AGA','BASK','SIAGA
 var PREF_AZ=['DePuy Synthes','Zimmer Biomet','Smith & Nephew','Arthrex','Stryker','Medacta','Lima','aziende innovative e asiatiche'];
 var DEF={saved:[],savedItems:[],votes:{},edits:{},weekly:[],blogUrl:'https://www.dariogiunchi.ch/blog',
  journals:PREF_RIVISTE.slice(),kols:PREF_KOL.slice(),societies:PREF_SOC.slice(),companies:PREF_AZ.slice(),
- prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,topics:[]};
-var S=load();function load(){var salvato=null,s;try{var r=localStorage.getItem('pulse4');if(r)salvato=JSON.parse(r)}catch(e){}s=salvato?Object.assign({},DEF,salvato):Object.assign({},DEF);/* La versione va letta da ciò che è SALVATO, non dal risultato della fusione:    DEF porta sempre PREFV e maschererebbe il valore vecchio. */if(salvato&&(salvato.prefv||0)<PREFV){s.journals=unisci(salvato.journals,PREF_RIVISTE);s.kols=unisci(salvato.kols,PREF_KOL);s.societies=unisci(salvato.societies,PREF_SOC);s.companies=unisci(salvato.companies,PREF_AZ);}s.prefv=PREFV;if(!s.companies||!s.companies.length)s.companies=PREF_AZ.slice();return s;}
+ prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,suggDone:{},topics:[]};
+var S=load();function load(){var salvato=null,s;try{var r=localStorage.getItem('pulse4');if(r)salvato=JSON.parse(r)}catch(e){}s=salvato?Object.assign({},DEF,salvato):Object.assign({},DEF);/* La versione va letta da ciò che è SALVATO, non dal risultato della fusione:    DEF porta sempre PREFV e maschererebbe il valore vecchio. */if(salvato&&(salvato.prefv||0)<PREFV){s.journals=unisci(salvato.journals,PREF_RIVISTE);s.kols=unisci(salvato.kols,PREF_KOL);s.societies=unisci(salvato.societies,PREF_SOC);s.companies=unisci(salvato.companies,PREF_AZ);}s.prefv=PREFV;s.suggDone=s.suggDone||{};if(!s.companies||!s.companies.length)s.companies=PREF_AZ.slice();return s;}
 function unisci(a,b){a=(a||[]).slice();b.forEach(function(x){if(a.indexOf(x)<0)a.push(x)});return a;}
 function save(){try{localStorage.setItem('pulse4',JSON.stringify(S))}catch(e){}}
 function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')}
@@ -646,6 +647,7 @@ function render(){
   document.getElementById('setJournals').innerHTML=S.journals.map(function(j){return tagX('journals',j)}).join('');
   document.getElementById('setKols').innerHTML=S.kols.map(function(k){return tagX('kols',k)}).join('');
   document.getElementById('setSoc').innerHTML=S.societies.map(function(k){return tagX('societies',k)}).join('');
+  if(document.getElementById('syncbox'))apriTrasferimento();
   var sa=document.getElementById('setAz');if(sa)sa.innerHTML=(S.companies||[]).map(function(k){return tagX('companies',k)}).join('');
   document.getElementById('wlit').textContent=S.winLit+' giorni';
   var b2=document.getElementById('savebtn-2');if(b2)b2.className='btn'+(isSaved(2)?' on':'');
@@ -677,19 +679,106 @@ function vote(ev,n,d){if(ev)ev.stopPropagation();if(S.votes[n]==d){delete S.vote
 function addItem(k,id){var v=document.getElementById(id).value.trim();if(!v)return;if(S[k].indexOf(v)<0)S[k].push(v);document.getElementById(id).value='';save();render();toast('Aggiunto')}
 function rm(k,x){S[k]=S[k].filter(function(y){return y!=x});save();render()}
 var SUGGQ=[{k:"kol",n:"Junsuke Nakase",w:"Kanazawa, Giappone",r:"Ha firmato lo studio di oggi sull'istologia del tendine quadricipitale: lavora sul tuo stesso innesto, in una scuola che in Europa si legge poco."},{k:"kol",n:"Matthieu Ollivier",w:"Marsiglia",r:"Coautore della revisione critica KSSTA di oggi sul retto femorale; molto attivo anche sulle osteotomie."},{k:"kol",n:"Adnan Saithna",w:"",r:"Coautore ricorrente di Sonnery-Cottet su LET e legamento antero-laterale: è esattamente la tua linea."},{k:"journal",n:"Journal of Experimental Orthopaedics",w:"rivista ESSKA, accesso aperto",r:"Oggi ha pubblicato due lavori sul tuo innesto. Ad accesso aperto: leggi il testo intero senza abbonamento."},{k:"kol",n:"Carlos Eduardo Franciozi",w:"San Paolo",r:"Coautore di Helito sulla revisione del retto femorale; gruppo brasiliano molto attivo sull'innesto."},{k:"society",n:"APKASS",w:"società asiatica del ginocchio e artroscopia",r:"Congressi e consensus asiatici che in Europa arrivano con mesi di ritardo. Copre il buco geografico che ti manca."},{k:"journal",n:"The Knee",w:"rivista",r:"Oggi ha pubblicato l'istologia del tendine quadricipitale. Non è ancora fra le tue riviste in focus."},{k:"kol",n:"Wolf Petersen",w:"Berlino",r:"Già fra le tue fonti ma non nel focus attivo; coautore della revisione di oggi sul retto femorale."},{k:"society",n:"AGA",w:"area germanofona",r:"Società di artroscopia di lingua tedesca: contesto vicino al Ticino, materiale che i tuoi pazienti e colleghi leggono."},{k:"topic",n:"posterior tibial slope",w:"tema",r:"Ricorre nelle revisioni sul fallimento del LCA, e tu fai correzioni di slope: vale la pena seguirlo come tema a sé."}];
+/* Le proposte si tracciano PER NOME, non per posizione nell'elenco.
+   L'elenco viene rigenerato ogni mattina: con un indice, le proposte nuove finite in
+   cima venivano saltate senza che lui le vedesse, e quelle a cui aveva gia' risposto
+   potevano ricomparire. Stesso errore — identita' per posizione invece che per
+   contenuto — gia' corretto sui lavori salvati e su quelli scelti per i video. */
+function suggAperte(){
+ /* Migrazione dal vecchio conteggio per posizione. Va fatta QUI e non dentro load():
+    li' SUGGQ non e' ancora definita — la variabile e' dichiarata piu' avanti nel file —
+    e l'app si fermava con un errore prima ancora di partire. */
+ S.suggDone=S.suggDone||{};
+ if(S.suggIdx&&!Object.keys(S.suggDone).length){
+  for(var q=0;q<S.suggIdx&&q<SUGGQ.length;q++)S.suggDone[SUGGQ[q].n]='vecchio';
+  save();}
+ var d=S.suggDone;return SUGGQ.filter(function(x){return !d[x.n]});}
 function renderSugg(){var sb=document.getElementById('suggBox');if(!sb)return;
- var i=S.suggIdx||0;
- if(i>=SUGGQ.length){sb.innerHTML='<b>Per ora ho finito le proposte.</b> Ne aggiungo di nuove ogni mattina, in base a chi compare nei lavori che escono.';return;}
- var q=SUGGQ[i];var ic={kol:'\ud83c\udf93',journal:'\ud83d\udcda',society:'\ud83c\udfdb',topic:'\ud83e\udded'}[q.k]||'\u2726';
- sb.innerHTML='<div style="font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;opacity:.7">Proposta '+(i+1)+' di '+SUGGQ.length+'</div>'+
+ var ap=suggAperte(),risposte=Object.keys(S.suggDone||{}).length;
+ if(!ap.length){sb.innerHTML='<b>Per ora ho finito le proposte.</b> Ne aggiungo di nuove ogni mattina, in base a chi compare nei lavori che escono.'+(risposte?' Finora hai risposto a '+risposte+'.':'');return;}
+ var q=ap[0];var ic={kol:'\ud83c\udf93',journal:'\ud83d\udcda',society:'\ud83c\udfdb',topic:'\ud83e\udded'}[q.k]||'\u2726';
+ sb.innerHTML='<div style="font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;opacity:.7">'+(ap.length==1?'Ultima proposta':ap.length+' proposte da vedere')+(risposte?' \u00b7 '+risposte+' gi\u00e0 viste':'')+'</div>'+
   '<div style="margin-top:5px"><b>'+ic+' '+esc(q.n)+'</b>'+(q.w?' <span style="opacity:.7">\u00b7 '+esc(q.w)+'</span>':'')+'</div>'+
   '<div style="margin-top:4px;line-height:1.45">'+esc(q.r)+'</div>'+
   '<div class="sb"><button class="btn pri" onclick="acceptSugg()">\uff0b Seguilo</button><button class="btn" onclick="dismissSugg()">Non mi interessa</button></div>';}
-function acceptSugg(){var i=S.suggIdx||0;var q=SUGGQ[i];if(!q)return;
+function acceptSugg(){var q=suggAperte()[0];if(!q)return;
  var m={kol:'kols',journal:'journals',society:'societies',topic:'topics'}[q.k];
  S[m]=S[m]||[];if(S[m].indexOf(q.n)<0)S[m].push(q.n);
- S.suggIdx=i+1;save();render();toast(q.n+' aggiunto \u2014 eccone un altro');}
-function dismissSugg(){S.suggIdx=(S.suggIdx||0)+1;save();render();toast('Va bene \u2014 eccone un altro');}
+ S.suggDone=S.suggDone||{};S.suggDone[q.n]='si';
+ save();render();toast(q.n+' aggiunto \u2014 eccone un altro');}
+function dismissSugg(){var q=suggAperte()[0];if(!q)return;
+ S.suggDone=S.suggDone||{};S.suggDone[q.n]='no';
+ save();render();toast('Va bene \u2014 eccone un altro');}
+/* ================== TRASFERIMENTO FRA DISPOSITIVI ==================
+   PULSE non ha un server: tutto vive nel browser di questo dispositivo. Due
+   dispositivi quindi NON si sincronizzano da soli — e prima o poi divergono, come
+   e' successo con le proposte da seguire, gia' risposte su un telefono e riproposte
+   sull'altro.
+   Qui non si finge una sincronizzazione che non c'e': si genera un link che porta
+   con se' lo stato, e all'apertura sull'altro dispositivo lo FONDE con quello che
+   c'e' gia'. Fondere, non sovrascrivere: altrimenti il dispositivo che riceve
+   perderebbe cio' che era stato fatto solo li'. */
+function b64enc(s){return btoa(unescape(encodeURIComponent(s))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
+function b64dec(s){s=s.replace(/-/g,'+').replace(/_/g,'/');return decodeURIComponent(escape(atob(s)));}
+function statoDaTrasferire(){
+ return {v:1,d:BUILD_DATE,
+  saved:S.saved,savedItems:S.savedItems,weekly:S.weekly,votes:S.votes,seen:S.seen,
+  edits:S.edits,suggDone:S.suggDone,journals:S.journals,kols:S.kols,
+  societies:S.societies,companies:S.companies,topics:S.topics,
+  blogUrl:S.blogUrl,winLit:S.winLit,lang:S.lang,audio:S.audio,prefv:S.prefv};}
+function linkTrasferimento(){
+ var base=location.href.split('#')[0];
+ return base+'#stato='+b64enc(JSON.stringify(statoDaTrasferire()));}
+function unione(a,b){a=(a||[]).slice();(b||[]).forEach(function(x){if(a.indexOf(x)<0)a.push(x)});return a;}
+function fondiStato(o){
+ if(!o||o.v!==1)return null;
+ var n={saved:0,scelti:0,pref:0};
+ /* salvati: unione per PMID, la fotografia piu' completa vince */
+ var mie={};(S.savedItems||[]).forEach(function(it){if(it&&it.a)mie[it.a.pmid]=it;});
+ (o.savedItems||[]).forEach(function(it){if(it&&it.a&&!mie[it.a.pmid]){mie[it.a.pmid]=it;n.saved++;}});
+ S.savedItems=Object.keys(mie).map(function(k){return mie[k]});
+ S.saved=unione(S.saved,o.saved);
+ /* lavori scelti per i video: unione per PMID, massimo quattro, i piu' recenti */
+ var w={};(S.weekly||[]).forEach(function(x){if(x&&x.a)w[x.a.pmid]=x;});
+ (o.weekly||[]).forEach(function(x){if(x&&x.a){if(!w[x.a.pmid]){w[x.a.pmid]=x;n.scelti++;}
+  else if(!w[x.a.pmid].v&&x.v){w[x.a.pmid].v=x.v;}}});
+ S.weekly=Object.keys(w).map(function(k){return w[k]})
+  .sort(function(x,y){return String(y.d||'').localeCompare(String(x.d||''))}).slice(0,4);
+ /* preferenze: unione. Cio' che ha tolto su un dispositivo puo' tornare dall'altro:
+    e' il prezzo della fusione, ed e' preferibile a perdere cio' che ha aggiunto. */
+ ['journals','kols','societies','companies','topics'].forEach(function(k){
+  var pr=(S[k]||[]).length;S[k]=unione(S[k],o[k]);n.pref+=S[k].length-pr;});
+ S.seen=unione(S.seen,o.seen);
+ S.votes=Object.assign({},o.votes||{},S.votes||{});   /* in conflitto vince questo dispositivo */
+ S.edits=Object.assign({},o.edits||{},S.edits||{});
+ S.suggDone=Object.assign({},o.suggDone||{},S.suggDone||{});
+ if(o.blogUrl&&!S.blogUrl)S.blogUrl=o.blogUrl;
+ save();return n;}
+function apriTrasferimento(){
+ var l=linkTrasferimento(),peso=Math.round(l.length/1024);
+ var el=document.getElementById('syncbox');if(!el)return;
+ el.innerHTML='<div class="muted" style="margin-bottom:9px">Questo link contiene salvati, voti, lavori scelti, preferenze e i testi che hai adattato ('+peso+' KB). Mandalo a te stesso e aprilo sull&rsquo;altro dispositivo: le due copie si fondono, non si sovrascrivono.</div>'+
+  '<div class="add"><button class="btn pri" onclick="copiaTrasferimento()">🔗 Copia il link di trasferimento</button>'+
+  (navigator.share?'<button class="btn" onclick="condividiTrasferimento()">Condividi…</button>':'')+'</div>';}
+function copiaTrasferimento(){try{navigator.clipboard.writeText(linkTrasferimento())}catch(e){}toast('Link copiato — aprilo sull’altro dispositivo');}
+function condividiTrasferimento(){if(navigator.share)navigator.share({title:'PULSE',text:'I miei dati PULSE',url:linkTrasferimento()}).catch(function(){});}
+function leggiTrasferimento(){
+ var m=(location.hash||'').match(/stato=([A-Za-z0-9\-_]+)/);
+ if(!m)return;
+ var o=null;try{o=JSON.parse(b64dec(m[1]))}catch(e){}
+ var n=o?fondiStato(o):null;
+ /* La pulizia dell'indirizzo viene DOPO la fusione e in un suo try: su alcuni contesti
+    replaceState solleva un'eccezione, e messa prima annullava silenziosamente il
+    trasferimento — il difetto e' stato trovato cosi'. */
+ try{history.replaceState(null,'',location.href.split('#')[0]);}catch(e){}
+ if(!o){toast('Link di trasferimento non leggibile');return;}
+ if(!n){toast('Link di trasferimento non compatibile');return;}
+ render();
+ var parti=[];
+ if(n.saved)parti.push(n.saved+(n.saved==1?' salvato':' salvati'));
+ if(n.scelti)parti.push(n.scelti+(n.scelti==1?' lavoro scelto':' lavori scelti'));
+ if(n.pref)parti.push(n.pref+(n.pref==1?' preferenza':' preferenze'));
+ toast(parti.length?('Uniti: '+parti.join(', ')):'Già allineati: niente di nuovo');}
 function setV(k,v,b){S[k]=v;[].forEach.call(b.parentNode.children,function(x){x.classList.remove('on')});b.classList.add('on');save();toast('Salvato')}
 function resetAll(){if(confirm('Azzerare tutto?')){S=JSON.parse(JSON.stringify(DEF));save();render();toast('Azzerato')}}
 function tab(id,btn){document.querySelectorAll('.view').forEach(function(v){v.classList.remove('on')});document.getElementById(id).classList.add('on');document.querySelectorAll('.tabs button').forEach(function(b){b.classList.remove('on')});btn.classList.add('on');window.scrollTo(0,0)}
@@ -846,6 +935,12 @@ function renderAudit(){var el=document.getElementById('auditbox');if(!el)return;
   '<div class="li">Fonti che non ho potuto verificare: <span class="n">'+AUDIT.nonverificate.map(esc).join(' · ')+'</span></div>'+
   '<div class="li" style="color:var(--dim)">'+esc(AUDIT.nota)+'</div>';}
 
+try{leggiTrasferimento()}catch(e){}
+/* Se PULSE e' GIA' aperto, il link di trasferimento cambia solo il frammento e il
+   browser non ricarica la pagina: senza questo, aprire il link dall'app aperta non
+   faceva assolutamente nulla. Difetto trovato provando due dispositivi veri. */
+if(typeof window.addEventListener==='function')
+ window.addEventListener('hashchange',function(){try{leggiTrasferimento()}catch(e){}});
 if('serviceWorker' in navigator && typeof window.addEventListener==='function'){
  window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})});}
 
