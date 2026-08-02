@@ -109,3 +109,14 @@ Mantenere quel nome: cambiarlo cancella tutto. Non azzerare mai `S.weekly`.
 ## Il testo dell'attività quotidiana
 L'attività «PULSE — briefing quotidiano ginocchio» parte ogni giorno alle 5.00 UTC.
 Il testo completo del suo prompt è conservato in `cervello/claude__13-attivita.md`.
+
+## Peso — misurato il 2 agosto 2026
+`index.html`: 133 KB grezzi, **38 KB come lo scarica l'iPhone**. Alla prima apertura la
+pagina fa **una sola richiesta**. Tolto `pulse_brief.mp3` (673 KB, zero riferimenti in
+tutto il repository, mai scaricato): il repository è passato da 1,2 MB a 524 KB.
+
+## Le suite — 387 controlli
+`checklist.py` 36 · `logica.js` 35 · `mobile.py` 24 · `qualita.py` 23 · `social.py` 12 ·
+`newsletter.py` 73 · `memoria.py` 14 · `distribuzione.py` 106 · `preferenze.py` 64.
+Il cancello è stato collaudato sabotando l'app di proposito quattro volte: funzione persa,
+errore di sintassi, credenziale nei file, parola pubblicitaria. Tutte e quattro bloccate.
