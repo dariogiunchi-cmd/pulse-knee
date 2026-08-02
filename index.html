@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0071e3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="PULSE">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<title>PULSE · knee</title>
+<style>
+  :root{--bg:#fff;--tint:#f2f2f5;--tint2:#f7f7f9;--line:rgba(0,0,0,.10);--line2:rgba(0,0,0,.06);--txt:#1d1d1f;--dim:#6e6e73;--dim2:#8e8e93;--blue:#0071e3;--red:#ff3b30;--orange:#ff9500;--green:#34c759;--gray:#8e8e93;--gold:#b8860b;--sh:0 1px 2px rgba(0,0,0,.05),0 6px 20px rgba(0,0,0,.06);--sh2:0 1px 2px rgba(0,0,0,.06),0 14px 40px rgba(0,0,0,.10);--r:16px}
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0}
+  body{background:var(--bg);color:var(--txt);font:15px/1.45 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:16px 14px calc(40px + env(safe-area-inset-bottom));letter-spacing:-.01em}
+  .wrap{max-width:1160px;margin:0 auto}a{color:var(--blue);text-decoration:none}
+  .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto;display:inline-block}
+  .red{background:var(--red)}.orange{background:var(--orange)}.green{background:var(--green)}.gray{background:var(--gray)}
+  .mono{width:36px;height:36px;border-radius:9px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:9px;line-height:1;box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 1px 2px rgba(0,0,0,.14)}
+  .m-kssta{background:linear-gradient(160deg,#2a93ad,#1d6b7e)}.m-ojsm{background:linear-gradient(160deg,#37a457,#22823f)}.m-arth{background:linear-gradient(160deg,#d33a46,#a5222d)}.m-knee{background:linear-gradient(160deg,#c8781f,#a05a12)}.m-jeo{background:linear-gradient(160deg,#7d5bc6,#5c3fa6)}.m-jrs{background:linear-gradient(160deg,#17909e,#0d6b77)}.m-gray{background:linear-gradient(160deg,#8b9096,#6b7178)}.m-npj{background:linear-gradient(160deg,#3a3f45,#23272c)}.m-oac{background:linear-gradient(160deg,#6f9a4e,#516f39)}
+  .top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .brand{font-size:20px;font-weight:700;letter-spacing:-.03em}.brand span{color:var(--dim2);font-weight:600}
+  .date{color:var(--dim);font-size:13px;width:100%;order:5}@media(min-width:560px){.date{width:auto;order:0}}
+  .kpi{font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px;background:#fff;box-shadow:var(--sh);color:var(--dim);display:flex;gap:5px;align-items:center}.kpi b{color:var(--txt)}.kpi.v{color:#248a3d}
+  .audiobar{display:flex;align-items:center;gap:12px;background:#fff;border-radius:16px;box-shadow:var(--sh);padding:11px 14px;margin-bottom:16px;flex-wrap:wrap}
+  .audiobar .play{width:46px;height:46px;border-radius:50%;border:none;background:var(--blue);color:#fff;font-size:17px;cursor:pointer;flex:0 0 auto}
+  .audiobar .tx b{font-size:14px}.audiobar .tx small{display:block;color:var(--dim);font-size:12px}
+  .audiobar audio{width:100%;height:38px;margin-top:2px}@media(min-width:620px){.audiobar audio{width:auto;margin-left:auto;margin-top:0}}
+  .tabs{display:flex;background:#ececef;border-radius:12px;padding:3px;gap:2px;margin-bottom:16px;overflow:auto}
+  .tabs button{font:inherit;font-size:13px;font-weight:600;padding:8px 12px;border-radius:9px;border:none;background:transparent;color:var(--dim);cursor:pointer;white-space:nowrap;flex:1}
+  .tabs button.on{background:#fff;color:var(--txt);box-shadow:0 1px 3px rgba(0,0,0,.14)}
+  .tabs .b{background:var(--blue);color:#fff;border-radius:20px;padding:0 6px;font-size:10px;margin-left:4px}
+  .view{display:none}.view.on{display:block}
+  .grid{display:grid;grid-template-columns:1fr;gap:18px}@media(min-width:1000px){.grid{grid-template-columns:minmax(0,1.7fr) minmax(290px,1fr)}}
+  .pick{position:relative;background:#fff;border-radius:var(--r);box-shadow:var(--sh2);padding:15px 16px;margin-bottom:18px;overflow:hidden}
+  .pick::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#e8c15a,#c99b1e)}
+  .pick .prev{width:100%;height:104px;border-radius:11px;background:#eef0f2;margin-bottom:12px;display:flex;align-items:center;justify-content:center;color:var(--dim2);font-size:11.5px;border:1px solid var(--line2);text-align:center;padding:10px}
+  .ey{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;flex-wrap:wrap}
+  .ey .meta{color:var(--dim2);font-weight:600;letter-spacing:0;text-transform:none}
+  .pick h1{margin:0;font-size:18px;line-height:1.28;font-weight:700;letter-spacing:-.02em}
+  .pick .aut{font-size:11.5px;color:var(--dim2);margin-top:6px}
+  .pick .why{font-size:13px;color:var(--dim);margin-top:6px;line-height:1.5}
+  .act{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+  .btn{font-size:12.5px;font-weight:600;padding:8px 14px;border-radius:980px;border:none;cursor:pointer;font-family:inherit;background:var(--tint);color:var(--txt)}
+  .btn.pri{background:var(--blue);color:#fff}.btn.on{background:var(--gold);color:#fff}.btn.soc{background:#111;color:#fff}
+  .sl{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.02em;color:var(--dim);margin:14px 2px 10px;text-transform:uppercase}.sl:first-child{margin-top:0}
+  .sl .ic{width:22px;height:22px;border-radius:6px;background:var(--sc,#c7c7cc);display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px}
+  .sl .n{margin-left:auto;color:var(--dim2);font-weight:600;text-transform:none}
+  .r-res{--sc:#0071e3}.r-tech{--sc:#30b0c7}.r-cong{--sc:#ff9500}.r-soc{--sc:#af52de}.r-disc{--sc:#34c759}.r-focus{--sc:#b8860b}.r-arch{--sc:#8e8e93}
+  .card{background:#fff;border-radius:var(--r);box-shadow:var(--sh);overflow:hidden}
+  .item{border-bottom:1px solid var(--line2)}.item:last-child{border-bottom:0}
+  .row{display:flex;align-items:flex-start;gap:11px;padding:12px 14px;cursor:pointer}.row:active{background:var(--tint2)}
+  .row .tt{min-width:0;flex:1}.row .h{font-size:14.5px;font-weight:600;letter-spacing:-.01em;line-height:1.32}
+  .row .v{font-size:12.5px;color:var(--dim);line-height:1.4;margin-top:2px}
+  .row .aut{font-size:11px;color:var(--dim2);margin-top:4px}
+  .row .rt{display:flex;flex-direction:column;align-items:flex-end;gap:7px;flex:0 0 auto}.row .meta{font-size:10.5px;color:var(--dim2);white-space:nowrap}
+  .chev{color:var(--dim2);font-size:16px;transition:.2s;line-height:1}.item.open .chev{transform:rotate(90deg)}
+  .acts{display:flex;gap:6px;padding:0 14px 12px;flex-wrap:wrap}
+  .ib{height:34px;min-width:34px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--dim);font-size:14px;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0 8px}
+  .ib.save.on{background:var(--gold);border-color:var(--gold);color:#fff}.ib.up.on{background:var(--green);border-color:var(--green);color:#fff}.ib.down.on{background:var(--red);border-color:var(--red);color:#fff}
+  .ib .t{font-size:11.5px;font-weight:600;margin-left:5px}.ib.soc{background:#111;color:#fff;border-color:#111}
+  .ib.vid.on{background:#af52de;border-color:#af52de;color:#fff}
+  .det{display:none;padding:2px 14px 14px}.item.open .det{display:block}
+  .fld{padding:9px 0;border-bottom:1px solid var(--line2)}.fld:last-of-type{border-bottom:0}
+  .fld .k{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin-bottom:3px}.fld .val{font-size:13px;line-height:1.5;color:#2a2a2c}
+  .detlinks{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+  .tile{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:13px 15px;margin-bottom:12px}
+  .tile.curio{background:linear-gradient(160deg,#fff,#f4f7ff);border:1px solid rgba(0,113,227,.18)}
+  .muted{font-size:12.5px;color:var(--dim);line-height:1.5}.muted b{color:var(--txt)}
+  .tcong{display:flex;gap:10px;align-items:flex-start}.tcong .tt .h{font-size:13px;font-weight:600}.tcong .tt .v{font-size:11.5px;color:var(--dim);margin-top:2px}
+  .lab{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin:2px 0 7px}
+  .tag{display:inline-flex;align-items:center;gap:6px;background:var(--tint);color:#3a3a3c;font-size:12px;font-weight:500;padding:5px 11px;border-radius:13px;margin:3px 5px 3px 0}.tag b{color:var(--dim2);font-weight:700;cursor:pointer;font-size:14px}
+  .sugg{margin-top:10px;font-size:12.5px;background:rgba(52,199,89,.09);border-radius:10px;padding:10px 12px}.sugg b{color:#248a3d}.sugg .sb{display:flex;gap:8px;margin-top:8px}
+  .add{display:flex;gap:8px;margin-top:11px}.add input{flex:1;min-width:0;font:inherit;font-size:14px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);outline:none}.add input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,113,227,.12)}
+  .add button{font:inherit;font-size:13px;font-weight:600;padding:10px 15px;border-radius:10px;border:none;background:var(--blue);color:#fff;cursor:pointer}
+  .seg{display:inline-flex;background:var(--tint);border-radius:10px;padding:3px;gap:2px}.seg button{font:inherit;font-size:12.5px;font-weight:600;padding:6px 13px;border-radius:8px;border:none;background:transparent;color:var(--dim);cursor:pointer}.seg button.on{background:#fff;color:var(--txt);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+  .rowset{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid var(--line2)}.rowset:first-of-type{border-top:0}.rowset .k{font-size:13.5px;font-weight:600}.rowset .k small{display:block;font-weight:400;color:var(--dim2);font-size:11.5px;margin-top:2px}
+  .sec{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:15px 16px;margin-bottom:14px}.sec h2{font-size:12.5px;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:var(--dim);margin:0 0 10px}
+  .empty{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:34px 20px;text-align:center;color:var(--dim)}.empty .big{font-size:34px;margin-bottom:8px}
+  .cal{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;max-width:520px}.calgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}.calgrid .wd{font-size:10px;font-weight:700;color:var(--dim2);text-align:center;padding-bottom:4px}
+  .day{aspect-ratio:1;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:13px;color:var(--dim);background:var(--tint2)}.day.empty{background:transparent}.day.today{background:var(--blue);color:#fff;font-weight:700;cursor:pointer}.day.today .mk{background:#fff}.day .mk{width:5px;height:5px;border-radius:50%;background:var(--orange)}.day.future{color:var(--dim2)}
+  /* social sheet */
+  .ov{position:fixed;inset:0;background:rgba(0,0,0,.4);backdrop-filter:blur(3px);display:none;align-items:flex-end;justify-content:center;z-index:40}
+  .ov.on{display:flex}
+  .sheet{background:#fff;border-radius:20px 20px 0 0;width:100%;max-width:620px;max-height:88vh;display:flex;flex-direction:column;box-shadow:0 -10px 50px rgba(0,0,0,.3)}
+  @media(min-width:620px){.ov{align-items:center}.sheet{border-radius:20px;max-height:86vh}}
+  .sheet .hd{padding:14px 16px;border-bottom:1px solid var(--line2);display:flex;align-items:center;gap:10px}
+  .sheet .hd .tt{flex:1;min-width:0}.sheet .hd h3{margin:0;font-size:15px;line-height:1.3}.sheet .hd small{color:var(--dim);font-size:11.5px}
+  .sheet .close{border:none;background:var(--tint);width:30px;height:30px;border-radius:50%;font-size:15px;color:var(--dim);cursor:pointer;flex:0 0 auto}
+  .stabs{display:flex;gap:6px;padding:10px 16px;flex-wrap:wrap;border-bottom:1px solid var(--line2)}
+  .stabs button{font:inherit;font-size:12.5px;font-weight:600;padding:7px 13px;border-radius:20px;border:1px solid var(--line);background:#fff;color:var(--dim);cursor:pointer;white-space:nowrap}
+  .stabs button.on{background:#111;color:#fff;border-color:#111}
+  .sbody{padding:14px 16px;overflow:auto}
+  .sbody .cnt{font-size:13.5px;line-height:1.55;white-space:pre-wrap;color:#1d1d1f}
+  .sbody .meta{font-size:11px;color:var(--dim2);margin-top:10px}
+  .sfoot{padding:12px 16px;border-top:1px solid var(--line2);display:flex;gap:8px}
+  .sfoot button{flex:1;font:inherit;font-size:13px;font-weight:600;padding:11px;border-radius:12px;border:none;cursor:pointer}
+  .sfoot .copy{background:var(--blue);color:#fff}.sfoot .edit{background:var(--tint);color:var(--txt)}
+  .foot{margin-top:16px;font-size:11px;color:var(--dim2);line-height:1.6}
+  .nuovo{font-size:9px;font-weight:800;color:#fff;background:var(--blue);padding:1px 6px;border-radius:8px;letter-spacing:.3px;align-self:flex-end}
+  .srch{display:flex;gap:8px;margin:0 0 12px}.srch input{flex:1;font:inherit;font-size:14px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);outline:none}.srch input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,113,227,.12)}
+  .hbtn{width:34px;height:34px;border-radius:50%;background:#fff;box-shadow:var(--sh);border:none;cursor:pointer;font-size:15px;color:var(--dim)}
+
+  .filters{display:flex;gap:7px;margin:0 2px 12px;flex-wrap:wrap}
+  .fchip{font:inherit;font-size:12.5px;font-weight:600;padding:7px 13px;border-radius:20px;border:1px solid var(--line);background:#fff;color:var(--dim);cursor:pointer;white-space:nowrap;flex:0 0 auto}
+  .fchip.on{background:var(--txt);color:var(--bg);border-color:var(--txt)}
+  .pick .prev.cover{background:linear-gradient(135deg,#37a457,#175c40);color:#fff;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:14px 16px;height:112px}
+  .covmono{font-size:11px;font-weight:800;letter-spacing:.5px;opacity:.85}
+  .covtitle{font-size:16px;font-weight:700;line-height:1.25;margin-top:6px;max-width:88%;z-index:1}
+  .covline{position:absolute;left:0;bottom:-2px;width:100%;height:46px;opacity:.55}
+  .speakcard{cursor:pointer}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#1c1c1e;--page:#000;--tint:#2c2c2e;--tint2:#242426;--line:rgba(255,255,255,.15);--line2:rgba(255,255,255,.09);--txt:#f5f5f7;--dim:#a1a1a6;--dim2:#8e8e93;--sh:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.5);--sh2:0 1px 2px rgba(0,0,0,.5),0 14px 40px rgba(0,0,0,.6)}
+  body{background:#000}
+  .kpi,.pill,.pick,.card,.tile,.sec,.empty,.cal,details,.audiobar,.sheet{background:#1c1c1e !important}
+  .tabs{background:#2c2c2e}
+  .tabs button.on,.seg button.on,.stabs button,.ib,.hbtn,.fchip,.day{background:#2c2c2e !important;color:#f5f5f7}
+  .fchip.on{background:#f5f5f7 !important;color:#111}
+  .btn{background:#2c2c2e;color:#f5f5f7}
+  .add input,.srch input,.seg{background:#2c2c2e;color:#f5f5f7}
+  .tag{background:#2c2c2e !important;color:#e5e5ea !important}
+  .fld .val,.sbody .cnt{color:#e5e5ea !important}
+  .btn.soc,.ib.soc{background:#f5f5f7 !important;color:#111 !important}
+  .ib.save.on{background:var(--gold) !important;color:#fff !important}
+  .ib.up.on{background:var(--green) !important;color:#fff !important}
+  .ib.down.on{background:var(--red) !important;color:#fff !important}
+  .ib.vid.on{background:#af52de !important;color:#fff !important}
+  .stabs button.on{background:#f5f5f7 !important;color:#111 !important}
+  .empty div{color:#f5f5f7 !important}
+  .day.today{background:var(--blue) !important;color:#fff}
+  .vitem{background:rgba(255,255,255,.10) !important}
+  .verdict.act{color:#f0a94a !important}
+  .vitem,.vtop,.vhint{color:#f0a94a !important}
+  .tens2,.titem{background:#1c1c1e !important}
+  .tbody .p,.tv{color:#d0d0d5 !important}
+  .tr.act .tv{color:#f5f5f7 !important}
+  .tr.act{background:rgba(52,199,89,.16) !important}
+  .mute{background:rgba(255,149,0,.18) !important;color:#f0a94a !important}
+  .editbox{background:#2c2c2e !important;color:#f5f5f7 !important}
+  .sseg button.on{background:#3a3a3c !important;color:#f5f5f7 !important}
+  .tagv,.nlout{color:#d0d0d5 !important}
+  .nlout{background:#2c2c2e !important}
+  .nlwrap{background:#1c1c1e !important}
+  .nlvid{background:#2c2c2e !important;color:#f5f5f7 !important}
+}
+
+  .verdict{border-radius:14px;padding:12px 15px;margin-bottom:14px;font-size:13.5px;font-weight:600;display:flex;gap:10px;align-items:center;line-height:1.35}
+  .verdict.act{background:rgba(255,149,0,.12);color:#b25e00}
+  .verdict.calm{background:rgba(52,199,89,.12);color:#248a3d}
+  .verdict .vi{font-size:18px}
+  .conf{display:flex;align-items:center;gap:6px;margin-top:6px}
+  .confbar{display:flex;gap:3px}
+  .confseg{width:15px;height:4px;border-radius:2px;background:var(--line)}
+  .confseg.on{background:var(--cc)}
+  .conflab{font-size:10px;color:var(--dim2);font-weight:600}
+
+  .fresh{border-radius:12px;padding:9px 13px;margin-bottom:10px;font-size:12.5px;display:flex;gap:9px;align-items:center;font-weight:600}
+  .fresh.ok{background:rgba(52,199,89,.10);color:#248a3d}
+  .fresh.old{background:rgba(255,149,0,.15);color:#a35200}
+  .fresh.dead{background:rgba(255,59,48,.13);color:#c0362e}
+  .duelbar{display:flex;gap:8px;align-items:center;background:rgba(0,113,227,.08);border-radius:12px;padding:9px 13px;margin-bottom:14px;font-size:12.5px;color:var(--txt);cursor:pointer;font-weight:600}
+  .duelbar .vs{background:var(--blue);color:#fff;border-radius:8px;padding:2px 7px;font-size:10px;font-weight:800}
+  .retr{background:rgba(255,59,48,.13);color:#c0362e;border-radius:9px;padding:7px 10px;font-size:11.5px;font-weight:600;margin:8px 14px 0}
+  .links{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+  .lchip{background:var(--tint);border:1px solid var(--line);border-radius:12px;padding:3px 9px;font-size:11px;color:var(--dim);cursor:pointer}
+  .lchip b{color:var(--txt);font-weight:600}
+  .duelgrid{display:grid;grid-template-columns:1fr;gap:0}
+  @media(min-width:560px){.duelgrid{grid-template-columns:1fr 1fr;gap:0 14px}}
+  .dcol{padding:4px 0}
+  .dhead{display:flex;gap:9px;align-items:center;padding:10px 0 8px;border-bottom:1px solid var(--line2)}
+  .dhead .t{font-size:13px;font-weight:700;line-height:1.25}
+  .drow2{padding:8px 0;border-bottom:1px solid var(--line2)}
+  .drow2 .k{font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2)}
+  .drow2 .v{font-size:12.5px;line-height:1.45;margin-top:2px}
+  .audit{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;margin-top:16px;max-width:520px}
+  .audit h4{margin:0 0 8px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--dim)}
+  .audit .li{font-size:12.5px;color:var(--txt);padding:5px 0;border-top:1px solid var(--line2);line-height:1.4}
+  .audit .li:first-of-type{border-top:0}
+  .audit .n{font-weight:700}
+  .rt2{font-size:10px;color:var(--dim2)}
+
+  /* ===== ADATTAMENTO E RIFINITURE MOBILE ===== */
+  .grid,.grid>*{min-width:0}
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  html,body{max-width:100%;overflow-x:hidden}
+  img,svg,video{max-width:100%;height:auto}
+  /* iOS ingrandisce la pagina se il campo ha testo <16px: qui lo evitiamo */
+  .add input,.srch input{font-size:16px}
+  /* i testi lunghi vanno a capo invece di allargare la pagina */
+  .row .h,.row .v,.row .aut,.pick h1,.pick .why,.fld .val,.drow2 .v,.lchip,.muted,.sbody .cnt,.audit .li,.tag,.dhead .t{overflow-wrap:anywhere}
+  .tt,.row .tt,.drow .tt,.pick .body,.audiobar .tx{min-width:0}
+  /* la colonna destra non ruba spazio al titolo */
+  .row .rt{max-width:32%;align-items:flex-end;text-align:right}
+  .row .meta{white-space:normal;line-height:1.3}
+  /* navigazione sempre raggiungibile col pollice */
+  .tabs{position:sticky;top:6px;z-index:20;box-shadow:0 6px 18px rgba(0,0,0,.07)}
+  .item{scroll-margin-top:74px}
+  /* pannelli a scomparsa: zona sicura in basso e altezza corretta */
+  .sfoot{padding-bottom:calc(12px + env(safe-area-inset-bottom))}
+  .sheet{max-height:88vh}
+  @supports (height:100dvh){.sheet{max-height:88dvh}}
+  /* duello impilato sul telefono: separatore chiaro fra i due lavori */
+  @media(max-width:559px){
+    .duelgrid .dcol+.dcol{border-top:2px solid var(--line);margin-top:12px;padding-top:6px}
+  }
+  @media(max-width:430px){
+    .tabs{gap:2px;padding:3px;flex-wrap:wrap;overflow:visible}
+    .tabs button{padding:8px 4px;font-size:11.5px;letter-spacing:-.02em;flex:1 1 30%}
+  }
+  @media(max-width:400px){
+    body{padding:12px 11px calc(36px + env(safe-area-inset-bottom))}
+    .brand{font-size:19px}
+    .pick h1{font-size:17px}
+    .row{gap:9px;padding:11px 12px}
+    .mono{width:32px;height:32px;font-size:8px}
+    .kpi{font-size:11.5px;padding:3px 9px}
+  }
+
+  .verdict.act{flex-direction:column;align-items:stretch;gap:0}
+  .vtop{display:flex;gap:9px;align-items:center;font-size:13.5px;font-weight:700;line-height:1.3}
+  .vlist{margin-top:9px;display:flex;flex-direction:column;gap:2px}
+  .vitem{font-size:13px;font-weight:600;line-height:1.35;padding:8px 10px;border-radius:9px;background:rgba(255,255,255,.55);cursor:pointer;display:flex;gap:8px;align-items:flex-start}
+  .vitem:active{background:rgba(255,255,255,.9)}
+  .vitem .ar{opacity:.55;flex:0 0 auto}
+  .vhint{font-size:11px;font-weight:500;opacity:.75;margin-top:8px}
+
+  .tens2{background:#fff;border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;margin-bottom:14px}
+  .titem{padding:13px 15px;border-bottom:1px solid var(--line2);cursor:pointer}
+  .titem:last-child{border-bottom:0}
+  .tid{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.05em;color:#fff;background:#c77a00;padding:2px 7px;border-radius:6px;margin-right:8px}
+  .tq{font-size:13.5px;font-weight:600;line-height:1.35;display:inline}
+  .tbody{display:none;margin-top:9px}
+  .titem.open .tbody{display:block}
+  .tbody .p{font-size:12.5px;line-height:1.5;color:#3a3a3c;margin:6px 0}
+  .tbody .close{font-size:12px;line-height:1.5;color:var(--dim);margin-top:8px;padding-top:8px;border-top:1px solid var(--line2)}
+  .mute{background:rgba(255,149,0,.12);color:#a35200;border-radius:9px;padding:8px 10px;font-size:12px;font-weight:600;line-height:1.4;margin-top:8px}
+  .editbox{width:100%;min-height:180px;font:inherit;font-size:14px;line-height:1.5;padding:11px;border-radius:11px;border:1px solid var(--line);background:var(--bg);color:var(--txt);outline:none}
+  .thead{display:flex;gap:9px;align-items:flex-start}
+  .tchev{margin-left:auto;color:var(--dim2);font-size:16px;transition:.2s;flex:0 0 auto}
+  .titem.open .tchev{transform:rotate(90deg)}
+  .tr{padding:9px 0;border-bottom:1px solid var(--line2)}
+  .tr:last-child{border-bottom:0}
+  .tk{font-size:9.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--dim2);margin-bottom:3px}
+  .tr.act .tk{color:#248a3d}
+  .tv{font-size:12.8px;line-height:1.5;color:#2a2a2c}
+  .tr.act .tv{color:#1d1d1f;font-weight:600}
+  .tr.act{background:rgba(52,199,89,.09);border-radius:9px;padding:9px 11px;margin:4px 0;border-bottom:0}
+  .tintro{font-size:12px;color:var(--dim);padding:12px 15px 2px;line-height:1.45}
+  .sctrl{display:flex;gap:10px;flex-wrap:wrap;padding:10px 16px 4px;border-bottom:1px solid var(--line2)}
+  .sgroup{display:flex;flex-direction:column;gap:4px}
+  .sgl{font-size:9.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2)}
+  .sseg{display:inline-flex;background:var(--tint);border-radius:9px;padding:2px;gap:2px}
+  .sseg button{font:inherit;font-size:11.5px;font-weight:600;padding:5px 10px;border-radius:7px;border:none;background:transparent;color:var(--dim);cursor:pointer;white-space:nowrap}
+  .sseg button.on{background:#fff;color:var(--txt);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+  .tagbox{margin-top:14px;border-top:1px solid var(--line2);padding-top:12px}
+  .tagl{font-size:9.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin-bottom:4px}
+  .tagv{font-size:12.5px;line-height:1.55;color:#2a2a2c;word-break:break-word}
+  .tagbtn{font:inherit;font-size:11.5px;font-weight:600;padding:5px 11px;border-radius:14px;border:1px solid var(--line);background:var(--bg);color:var(--txt);cursor:pointer;margin-top:7px}
+  .nlwrap{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:15px 16px;margin-bottom:14px}
+  .nlslot{display:flex;gap:11px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--line2)}
+  .nlslot:last-child{border-bottom:0}
+  .nlnum{width:26px;height:26px;border-radius:8px;background:var(--tint);color:var(--dim);font-size:11.5px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .nlnum.full{background:var(--green);color:#fff}
+  .nlt{min-width:0;flex:1}
+  .nlt .h{font-size:13px;font-weight:600;line-height:1.3}
+  .nlt .v{font-size:11.5px;color:var(--dim);margin-top:2px}
+  .nlvid{width:100%;font:inherit;font-size:16px;padding:8px 10px;border-radius:9px;border:1px solid var(--line);margin-top:6px;outline:none}
+  .nlvid:focus{border-color:var(--blue)}
+  .nlmeta{font-size:11.5px;color:var(--dim);margin-top:9px;line-height:1.45}
+  .nlmeta .okc{color:var(--green);font-weight:700}
+  .nlmeta .badc{color:var(--red);font-weight:700}
+  #nldest,#nlver{margin-bottom:2px;vertical-align:top}
+  .nlrm{font:inherit;font-size:11.5px;font-weight:600;color:var(--dim);background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:7px 11px;min-height:30px;cursor:pointer}
+  .nlempty{font-size:12.5px;color:var(--dim);line-height:1.5}
+  .nlout{white-space:pre-wrap;font-size:12.5px;line-height:1.6;background:var(--tint2);border-radius:11px;padding:13px;margin-top:11px;max-height:340px;overflow:auto;color:#2a2a2c}
+  #toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom));transform:translateX(-50%);background:#1d1d1f;color:#fff;font-size:13px;font-weight:500;padding:10px 18px;border-radius:22px;opacity:0;transition:.22s;pointer-events:none;box-shadow:0 10px 34px rgba(0,0,0,.22);z-index:50}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <span class="brand">PULSE<span> · knee</span></span>
+    <div style="display:flex;gap:6px;margin-left:auto"><span class="kpi"><b>15</b></span><span class="kpi"><span class="dot orange"></span><b>2</b></span><span class="kpi v">✓ 11/11</span><button class="hbtn" onclick="location.reload()" title="Aggiorna" aria-label="Ricarica l'app">↻</button></div>
+    <span class="date">Domenica 2 agosto 2026</span>
+  </div>
+  <div class="audiobar">
+    <button class="play" onclick="speakBrief()" id="playbtn" aria-label="Ascolta il riassunto del giorno">▶</button>
+    <div class="tx"><b>Riassunto vocale del giorno</b><small id="voicelbl">voce del tuo iPhone · tocca ▶ per ascoltare</small></div>
+  </div>
+  <div class="tabs">
+    <button class="on" onclick="tab('today',this)">📄 Oggi</button>
+    <button onclick="tab('archive',this)">🗓 Archivio</button>
+    <button onclick="tab('saved',this)">★ Salvati <span class="b" id="savedCount">0</span></button>
+    <button onclick="tab('news',this)">✉️ Newsletter</button><button onclick="tab('settings',this)">⚙ Impostazioni</button>
+  </div>
+
+  <div class="view on" id="today">
+    <div id="freshbox"></div>
+    <div class="verdict" id="verdict"></div>
+    <div id="duelbox"></div>
+    <div class="grid">
+      <div>
+        <div class="pick">
+          <div class="prev cover"><div class="covmono">OJSM · meta-analisi</div><div class="covtitle">LCA: non riduce l'artrosi, abbassa le protesi</div><svg class="covline" viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0 22 Q25 6 50 18 T100 10" fill="none" stroke="#fff" stroke-width="1.4"/></svg></div>
+          <div class="ey">★ Da leggere oggi <span class="mono m-ojsm" style="width:22px;height:22px;font-size:6.5px">OJSM</span><span class="meta">meta-analisi · III · lug 2026 · [2]</span></div>
+          <h1>La ricostruzione del LCA non riduce l'artrosi, ma abbassa le protesi</h1>
+          <div class="aut">Blackman … Abouali · Orthop J Sports Med · luglio 2026</div>
+          <div class="why">Riduce protesi totali e reinterventi meniscali, non l'artrosi radiografica.</div>
+          <div class="act"><button class="btn pri" onclick="scrollToItem(2)">Scheda estesa ▾</button><button class="btn soc" onclick="openSocial(event,2)">✎ Contenuti social</button><button class="btn" id="savebtn-2" onclick="toggleSave(event,2)">★ Salva</button></div>
+        </div>
+        <div class="sl" style="--sc:#c77a00"><span class="ic">⚑</span>Dove le prove non ti coprono<span class="n" id="tensn"></span></div>
+        <div class="tens2"><div class="tintro">Punti in cui <b>tu fai una cosa</b> e la letteratura <b>ne ha studiata un&rsquo;altra</b>. Non sono errori: sono zone in cui le prove non ti coprono. Tocca per vedere che cosa puoi farci.</div><div id="tensbox"></div></div>
+        <div class="sl r-res"><span class="ic">🔬</span>Ricerca scientifica<span class="n">9 — tocca per aprire</span></div>
+        <div class="filters"><button class="fchip on" onclick="setFilter('all',this)">Tutti</button><button class="fchip" onclick="setFilter('orange',this)">🟠 La mia pratica</button><button class="fchip" onclick="setFilter('green',this)">🟢 Mie tecniche</button><button class="fchip" onclick="setFilter('gray',this)">⚪ Contesto</button></div><div class="card" id="researchList"></div>
+      </div>
+      <div>
+        <div class="sl r-tech"><span class="ic">🛠</span>Industria &amp; tecnologia<span class="n">0 in finestra</span></div>
+        <div class="tile"><div class="muted"><b>Nulla di verificato negli ultimi 10 giorni.</b> ROSA Knee OptimiZe (Zimmer Biomet) è del 14 nov 2025 — fuori finestra. Nessun richiamo per il ginocchio (openFDA).</div></div>
+        <div class="sl r-cong"><span class="ic">📅</span>Congressi</div>
+        <div class="tile"><div class="tcong"><span class="mono" style="background:linear-gradient(160deg,#1e6fb0,#0a3d62)">ISK</span><div class="tt"><div class="h">ISAKOS 2027 · Sydney</div><div class="v">abstract entro il 4 ago — 2 giorni.</div></div></div><div class="muted" style="margin-top:7px">ESSKA · AAOS · AOSSM · AGA — non verificati.</div></div>
+        <div class="sl r-soc"><span class="ic">👥</span>Società scientifiche</div>
+        <div class="tile"><div class="muted"><b>Nessun nuovo consensus verificato</b> (pagine ESSKA/AAOS non aperte). Consensus menisco ricontrollato sui 12 mesi.</div></div>
+        <div class="sl r-disc"><span class="ic">✦</span>Oltre il consueto<span class="n">scelti per te</span></div>
+        <div class="card" id="discList" style="border:1px solid rgba(52,199,89,.25)"></div>
+        <div class="tile curio" style="margin-top:12px"><div class="lab">🌏 Curiosità dall'altra parte del mondo</div>
+          <div class="tcong"><span class="mono m-knee">Knee</span><div class="tt" onclick="scrollToItem(4)" style="cursor:pointer"><div class="h">Gruppo giapponese (Kanazawa): istologia del quadricipite</div><div class="v">Mizuno … Nakase · una scuola asiatica sul tuo innesto · [4]</div></div></div></div>
+        <div class="sl r-focus"><span class="ic">🎯</span>Il tuo focus</div>
+        <div class="tile"><div class="lab">Riviste</div><div id="focusJournals"></div><div class="lab" style="margin-top:10px">Opinion leader</div><div id="focusKols"></div><div class="lab" style="margin-top:10px">Temi e società</div><div id="focusMore"></div><div class="sugg" id="suggBox"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="view" id="archive">
+    <div class="sl r-arch"><span class="ic">🗓</span>Storico delle ricerche<span class="n">agosto 2026</span></div>
+    <div class="cal"><div class="calgrid"><div class="wd">L</div><div class="wd">M</div><div class="wd">M</div><div class="wd">G</div><div class="wd">V</div><div class="wd">S</div><div class="wd">D</div>
+      <div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day">1</div><div class="day today" onclick="tab('today',document.querySelectorAll('.tabs button')[0])">2<span class="mk"></span></div>
+      <div class="day future">3</div><div class="day future">4</div><div class="day future">5</div><div class="day future">6</div><div class="day future">7</div><div class="day future">8</div><div class="day future">9</div><div class="day future">10</div><div class="day future">11</div><div class="day future">12</div><div class="day future">13</div><div class="day future">14</div><div class="day future">15</div><div class="day future">16</div><div class="day future">17</div><div class="day future">18</div><div class="day future">19</div><div class="day future">20</div><div class="day future">21</div><div class="day future">22</div><div class="day future">23</div><div class="day future">24</div><div class="day future">25</div><div class="day future">26</div><div class="day future">27</div><div class="day future">28</div><div class="day future">29</div><div class="day future">30</div><div class="day future">31</div></div></div>
+    <div class="srch" style="max-width:520px;margin-top:14px"><input id="histq" placeholder="Cerca in tutto l'archivio…" oninput="searchHist()"></div><div id="histres" style="max-width:520px"></div><div class="audit" id="auditbox"></div><div class="muted" style="max-width:520px;margin-top:12px">Ogni mattina — anche i giorni “nessuna novità” — finisce qui. Da domani lo storico cresce da solo.</div>
+  </div>
+
+  <div class="view" id="saved"><div class="sl r-focus"><span class="ic">★</span>Articoli salvati<span class="n" id="savedN">0</span></div><div id="retrbox"></div><div class="srch"><input id="savedq" placeholder="Cerca nei salvati…" oninput="renderSaved()"></div><div id="savedList"></div></div>
+
+  <div class="view" id="news">
+      <div class="sl" style="--sc:#af52de"><span class="ic">📤</span>Lavori del mese<span class="n" id="nlcount"></span></div>
+      <div class="nlwrap"><div class="nlempty" id="nlintro"></div><div id="nlslots"></div></div>
+      <div class="sl" style="--sc:#af52de"><span class="ic">📝</span>Testo pronto<span class="n">3 destinazioni</span></div>
+      <div class="nlwrap">
+        <div class="seg" id="nldest"><button class="on" onclick="setDest('mail',this)">✉️ Email</button><button onclick="setDest('blog',this)">🌐 Blog</button><button onclick="setDest('gbp',this)">📍 Google</button></div>
+        <div class="seg" id="nlver" style="margin-left:6px"><button class="on" onclick="setNlVer('prof',this)">Professionisti</button><button onclick="setNlVer('paz',this)">Pazienti</button></div>
+        <div id="gbpurlbox" style="display:none;margin-top:10px"><input class="nlvid" id="gbpurl" placeholder="Indirizzo del post sul tuo blog" oninput="setBlogUrl(this.value)"></div>
+        <div class="nlout" id="nlout"></div>
+        <div class="nlmeta" id="nlmeta"></div>
+        <div class="act" id="nlacts"></div>
+        <div class="cmd" id="nlhint" style="margin-top:10px"></div>
+      </div>
+    </div>
+    <div class="view" id="settings">
+    <div class="sec"><h2>📚 Riviste in focus</h2><div id="setJournals"></div><div class="add"><input id="jinput" placeholder="Aggiungi rivista" onkeydown="if(event.key==='Enter')addItem('journals','jinput')"><button onclick="addItem('journals','jinput')">Aggiungi</button></div></div>
+    <div class="sec"><h2>🎯 Opinion leader</h2><div id="setKols"></div><div class="add"><input id="kinput" placeholder="Aggiungi autore, es. Helito" onkeydown="if(event.key==='Enter')addItem('kols','kinput')"><button onclick="addItem('kols','kinput')">Aggiungi</button></div></div>
+    <div class="sec"><h2>👥 Società &amp; congressi</h2><div id="setSoc"></div><div class="add"><input id="sinput" placeholder="Aggiungi, es. APKASS (Asia)" onkeydown="if(event.key==='Enter')addItem('societies','sinput')"><button onclick="addItem('societies','sinput')">Aggiungi</button></div></div>
+    <div class="sec"><h2>🕑 Finestre, lingua, audio</h2>
+      <div class="rowset"><div class="k">Finestra letteratura <small id="wlit">30 giorni</small></div><div class="seg"><button onclick="setV('winLit',14,this)">14</button><button class="on" onclick="setV('winLit',30,this)">30</button><button onclick="setV('winLit',45,this)">45</button></div></div>
+      <div class="rowset"><div class="k">Lingua pagina</div><div class="seg"><button class="on" onclick="setV('lang','it',this)">Italiano</button><button onclick="setV('lang','en',this)">English</button></div></div>
+      <div class="rowset"><div class="k">Lingua audio</div><div class="seg"><button class="on" onclick="setV('audio','it',this)">Italiano</button><button onclick="setV('audio','en',this)">English</button></div></div>
+    </div>
+    <div class="sec"><h2>🔔 Promemoria</h2><div class="muted">Ogni mattina Claude ti avvisa già sul telefono quando il PULSE è pronto. Puoi attivare anche gli avvisi del browser.</div><div class="add" style="margin-top:10px"><button onclick="askNotif()">🔔 Attiva avvisi</button></div><div class="preview" id="notiflbl"></div></div>
+    <div class="sec"><h2>♻︎ Dati</h2><div class="muted">Nel prototipo tutto resta su questo iPhone. Nel deploy vive nel tuo Google e si sincronizza.</div><div class="add" style="margin-top:10px"><button onclick="resetAll()" style="background:#ff3b30">Azzera tutto</button></div></div>
+  </div>
+  <div class="foot">Prototipo app PULSE · citazioni verificate 11/11 · voce del dispositivo (naturale, gratuita) · contenuti social pronti su 4 articoli chiave (nel deploy: su ogni articolo, e imparano dalle tue correzioni).</div>
+</div>
+
+<!-- SOCIAL SHEET -->
+<div class="ov" id="ov" onclick="if(event.target===this)closeSocial()">
+  <div class="sheet">
+    <div class="hd"><div class="tt"><h3 id="shTitle"></h3><small id="shSub"></small></div><button class="close" onclick="closeSocial()">✕</button></div>
+    <div class="stabs" id="shTabs"></div>
+    <div class="sctrl" id="shCtrl"></div>
+    <div class="sbody"><div class="cnt" id="shCnt"></div><div class="meta" id="shMeta"></div></div>
+    <div class="sfoot"><button class="edit" id="editbtn" onclick="toggleEdit()">✎ Adatta</button><button class="copy" onclick="copyCnt()">📋 Copia</button></div>
+  </div>
+</div>
+<div id="toast"></div>
+
+<script>
+var SOC={
+ 2:{video:`Se ti sei rotto il crociato anteriore, ricostruirlo ti evita l'artrosi? La risposta breve è: non proprio.
+Una grande revisione che ha messo insieme molti studi ha visto che operare il crociato non riduce, sul lungo periodo, la comparsa di artrosi radiografica rispetto al non operare. Quello che cambia è un altro dato: chi viene operato arriva meno spesso alla protesi di ginocchio, e subisce meno reinterventi sul menisco.
+Attenzione: sono studi di confronto, non esperimenti perfetti, quindi il segnale va preso con prudenza.
+Il messaggio pratico, valido per il chirurgo, il medico di famiglia e il fisioterapista, è che la ricostruzione serve soprattutto a dare stabilità e a proteggere menisco e cartilagine, non a cancellare il rischio di artrosi. Per questo la riabilitazione e un ritorno graduale allo sport contano moltissimo. Un ginocchio stabile e ben allenato invecchia meglio.`,
+ linkedin:`Ricostruire il LCA riduce l'artrosi? Una nuova meta-analisi ridimensiona un'aspettativa diffusa.
+
+Confrontando gestione operatoria e non operatoria, la ricostruzione del crociato anteriore non ha ridotto l'incidenza di artrosi radiografica a lungo termine (KL≥2). Ha però mostrato due vantaggi concreti: un minor tasso di protesi totale di ginocchio e meno reinterventi meniscali.
+
+Il dato non svaluta la chirurgia: ne ridefinisce l'obiettivo. La ricostruzione serve a restituire stabilità e a proteggere menisco e cartilagine dalle lesioni secondarie, più che a prevenire di per sé la degenerazione.
+
+Prudenza metodologica d'obbligo: studi comparativi osservazionali, eterogeneità e confondenti non controllati.
+
+Per chi segue questi pazienti — ortopedici, medici curanti, fisioterapisti — contano l'indicazione, la stabilità ottenuta e la qualità del percorso riabilitativo.
+
+#ginocchio #LCA #ortopedia`,
+ instagram:`Operare il crociato anteriore evita l'artrosi? 🤔
+
+Una grande revisione dice: non davvero. Rispetto al non operare, la ricostruzione non riduce l'artrosi vista alle radiografie negli anni.
+
+Però chi viene operato arriva meno spesso alla protesi di ginocchio e si rioperare meno sul menisco.
+
+Tradotto: l'intervento serve a ridare stabilità e a proteggere menisco e cartilagine, non a cancellare il rischio di artrosi.
+
+Sono studi di confronto, non la parola definitiva. Ma è un buon promemoria: dopo l'intervento, riabilitazione e ritorno graduale allo sport fanno la differenza.
+
+Parlane col tuo specialista se hai una lesione del crociato.`,
+ reel:`[Operare il crociato = niente artrosi?]
+Falso, o quasi.
+Una grande revisione: ricostruire il crociato anteriore NON riduce l'artrosi radiografica a lungo termine.
+[Ma…]
+Chi viene operato arriva meno spesso alla protesi e si rioperare meno sul menisco.
+Quindi l'intervento dà stabilità e protegge il menisco, non evita l'artrosi.
+[Il resto lo fa la riabilitazione]
+Studi di confronto, non certezze assolute — ma utile.`},
+ 1:{video:`Negli ultimi anni, per ricostruire il crociato anteriore si usa sempre più un innesto preso dallo strato superficiale del tendine del quadricipite, il retto femorale. È pratico e versatile.
+Ma una revisione appena uscita invita alla prudenza: dice che l'entusiasmo ha corso più veloce delle prove. Dal punto di vista meccanico l'innesto regge bene, con una resistenza paragonabile al tendine rotuleo; però è più elastico, e questo lascia aperte domande sul comportamento nel tempo — in particolare sul rischio che il legamento si allunghi o diventi più lasso a distanza.
+Non è un allarme: è un richiamo a non trattarlo come una certezza consolidata finché non arrivano studi robusti, randomizzati e con follow-up lungo.
+Per chi opera, per il medico che segue il paziente e per il fisioterapista, il senso è lo stesso: buona opzione, ma da monitorare con attenzione nei controlli, soprattutto sulla stabilità.`,
+ linkedin:`L'innesto di retto femorale nel LCA: entusiasmo in anticipo sulle prove?
+
+Una revisione critica su KSSTA analizza l'innesto di tendine quadricipitale superficiale (retto femorale), ormai diffuso nella ricostruzione del crociato anteriore.
+
+Il quadro: anatomia favorevole e prelievo riproducibile; sul piano biomeccanico, stress ultimo paragonabile al tendine rotuleo. Il punto aperto è l'elasticità significativamente maggiore, che solleva interrogativi non risolti su creep e lassità a lungo termine.
+
+Conclusione misurata degli autori: potenziale reale, ma servono RCT ad alta potenza e follow-up prolungato per capire se è un cambio di paradigma o una variante tecnica.
+
+Un promemoria: la popolarità di una tecnica non equivale alla sua validazione. Nei controlli, attenzione alla stabilità nel tempo.
+
+#ginocchio #LCA #ortopedia`,
+ instagram:`Il crociato anteriore si ricostruisce sempre più con un pezzo del tendine del quadricipite. Ma è la scelta giusta? 🦵
+
+Una revisione appena uscita invita alla calma: l'entusiasmo ha superato le prove disponibili.
+
+Meccanicamente regge bene, quanto il tendine rotuleo. Però è più elastico — e non sappiamo ancora come si comporta a distanza di anni: potrebbe allungarsi o diventare più lasso.
+
+Non è un allarme, è prudenza: servono tempo e studi seri prima di darlo per scontato.
+
+Se ti stai informando su un intervento al crociato, chiedi al tuo specialista quale innesto propone e perché.`,
+ reel:`[Crociato col tendine del quadricipite: sicuri?]
+Una revisione appena uscita: rallentiamo.
+È pratico e regge bene, quanto il tendine rotuleo.
+[Ma c'è un ma]
+È più elastico. Non sappiamo ancora se col tempo tende ad allungarsi o a farsi più lasso.
+Non un allarme: un invito a non darlo per scontato finché mancano studi solidi.
+[Popolare ≠ dimostrato]`},
+ 4:{video:`Quando si preleva un innesto dal tendine del quadricipite per ricostruire il crociato, conta anche la qualità del tessuto.
+Un gruppo giapponese ha studiato al microscopio la composizione di questo tendine in pazienti di età diverse, dai più giovani, con le cartilagini di crescita ancora aperte, agli adulti. Il risultato è rassicurante: la quantità di collagene di tipo uno, quello che dà resistenza, resta sostanzialmente stabile, senza differenze significative tra le età. E lo strato più superficiale del tendine è quello più ricco di collagene di tipo uno.
+In pratica, questo dà un motivo in più per prelevare lo strato superficiale, ed è utile anche quando si opera un adolescente.
+Attenzione: è uno studio piccolo e monocentrico, che guarda la composizione ma non la resistenza meccanica diretta. È un tassello, non una conclusione definitiva — ma va nella direzione di un prelievo più mirato.`,
+ linkedin:`Qualità dell'innesto di quadricipite: un contributo istologico dal Giappone.
+
+Un gruppo di Kanazawa ha analizzato la composizione in collagene del tendine quadricipitale in 25 pazienti, stratificati per maturità scheletrica e per strato anatomico.
+
+Due dati utili: il contenuto di collagene di tipo I non differisce in modo significativo tra livelli di maturità né tra strati (p>0,05); lo strato superficiale risulta il più ricco di collagene I.
+
+Ricaduta pratica: un razionale istologico a favore del prelievo dello strato superficiale, rilevante anche nel paziente scheletricamente immaturo.
+
+Limiti chiari: coorte piccola, monocentrica, valutazione compositiva e non delle proprietà meccaniche.
+
+Un tassello verso una selezione dell'innesto più informata.
+
+#ginocchio #LCA #ortopedia`,
+ instagram:`Che cosa rende buono un innesto preso dal tendine del quadricipite? 🔬
+
+Un gruppo giapponese l'ha guardato al microscopio, in pazienti di età diverse — anche giovanissimi con le cartilagini di crescita aperte.
+
+Buona notizia: il collagene di tipo uno, quello che dà resistenza, resta stabile a ogni età. E lo strato più superficiale ne è il più ricco.
+
+Tradotto: prelevare lo strato superficiale ha senso anche “dal punto di vista del tessuto”, pure negli adolescenti.
+
+Studio piccolo, sulla composizione e non sulla forza diretta. Un tassello, non l'ultima parola — ma nella giusta direzione.`,
+ reel:`[Cosa c'è dentro l'innesto del crociato?]
+Un gruppo giapponese l'ha visto al microscopio.
+Il collagene che dà resistenza resta stabile a ogni età — anche nei più giovani.
+E lo strato superficiale del tendine ne è il più ricco.
+[Perché conta]
+Un motivo in più per prelevare lo strato superficiale, anche negli adolescenti.
+Studio piccolo, sulla composizione: un tassello, non una certezza.`},
+ 5:{video:`Nelle lesioni complesse del ginocchio, quelle che coinvolgono più legamenti, capire quali strutture sono danneggiate è cruciale, e si parte dall'esame clinico.
+Uno studio su modello robotico ha rivalutato un test classico, il recurvatum in rotazione esterna, usato per sospettare un danno dell'angolo postero-laterale. Il risultato è controcorrente: le lesioni postero-laterali possono non dare un recurvatum evidente. L'iperestensione aumenta soprattutto quando si aggiungono anche il collaterale laterale e il crociato, mentre da sole quelle strutture danno segnali modesti.
+La conclusione pratica: non affidarsi al solo recurvatum per escludere un problema postero-laterale, ma usare altri test, come il dial test e la ricerca di apertura in varo a ginocchio flesso.
+È uno studio su cadavere, con i limiti del modello. Ma per chi visita questi pazienti, ortopedico o fisioterapista, è un promemoria utile: un test negativo non basta a stare tranquilli.`,
+ linkedin:`Recurvatum in rotazione esterna e angolo postero-laterale: un test da ridimensionare.
+
+Studio biomeccanico su cadavere (analisi robotica, 23 ginocchia): iperestensione e rotazioni accoppiate con sezioni sequenziali delle strutture.
+
+Dato chiave: le lesioni postero-laterali isolate possono NON produrre un recurvatum esterno positivo. L'iperestensione sale in modo marcato (da 2,5° a 7,6°) solo aggiungendo LCL, popliteo e LCA.
+
+Ricaduta clinica: il recurvatum non basta a escludere un danno postero-laterale. Meglio integrarlo con dial test e stress in varo a ginocchio flesso.
+
+Limiti: modello cadaverico, solo maschi, sequenza di sezione predefinita.
+
+Nell'esame delle multilegamentose, un singolo test negativo non chiude la diagnosi.
+
+#ginocchio #legamenti #ortopedia`,
+ instagram:`Un ginocchio instabile dopo un trauma serio: come si capisce cosa si è rotto? 🦵
+
+Uno studio su modello robotico ha rivalutato un test classico (il recurvatum in rotazione esterna), usato per sospettare un danno nella parte esterna-posteriore del ginocchio.
+
+Sorpresa: quel danno, da solo, può NON far comparire il segno. L'iperestensione aumenta davvero solo quando sono coinvolti anche altri legamenti.
+
+Morale per chi visita: non fidarsi di un solo test. Ne servono altri per non farsi sfuggire il problema.
+
+Studio su cadavere, con i suoi limiti. Ma il messaggio è pratico e prezioso.`,
+ reel:`[Un test “negativo” = ginocchio a posto?]
+Non sempre.
+Uno studio robotico: le lesioni della parte postero-laterale possono NON dare il segno del recurvatum.
+L'iperestensione sale davvero solo se sono coinvolti anche altri legamenti.
+[Cosa fare]
+Non fidarsi di un solo test: servono il dial test e lo stress in varo.
+Studio su cadavere — ma un buon promemoria.`}
+};
+var SOCV={"2": {"video": {"chir": ["Meta-analisi appena uscita sull'Orthopaedic Journal of Sports Medicine: gestione operatoria contro non operatoria del crociato anteriore, endpoint artrosi radiografica Kellgren-Lawrence maggiore o uguale a due.", "Il risultato è che la ricostruzione non riduce l'incidenza di artrosi a lungo termine, mentre riduce il tasso di protesi totale e di reintervento meniscale. Dimensioni dell'effetto e intervalli di confidenza non sono riportati nell'abstract, e si tratta di studi comparativi osservazionali, con eterogeneità e confondenti non controllati.", "La lettura ragionevole è che la ricostruzione protegga stabilità e menisco, non la cartilagine di per sé. Nel colloquio conviene separare i due esiti, invece di prometterne uno solo."], "misto": ["Se ti sei rotto il crociato anteriore, ricostruirlo ti evita l'artrosi? La risposta breve è: non proprio.", "Una grande revisione che mette insieme molti studi ha visto che operare non riduce la comparsa di artrosi alle radiografie sul lungo periodo. Cambia però un altro dato: chi viene operato arriva meno spesso alla protesi di ginocchio e subisce meno reinterventi sul menisco. Sono studi di confronto, non esperimenti perfetti, quindi il segnale va preso con prudenza.", "Il messaggio pratico, valido per il chirurgo, per il medico curante e per il fisioterapista, è che la ricostruzione serve soprattutto a ridare stabilità e a proteggere il menisco dalle lesioni successive, non a cancellare il rischio di artrosi. Per questo la riabilitazione e un ritorno graduale allo sport contano moltissimo."], "pazienti": ["Ti sei rotto il crociato del ginocchio e ti chiedi: se mi opero, evito l'artrosi da grande?", "Una grande ricerca dice di no, non del tutto. Chi si opera non ha meno artrosi vista alle radiografie negli anni. Però ha un vantaggio importante: arriva meno spesso alla protesi di ginocchio, e si deve rioperare meno per il menisco.", "Quindi l'intervento serve a rendere il ginocchio di nuovo stabile e a proteggere le parti interne, non a fermare l'invecchiamento della cartilagine. Ecco perché la riabilitazione, fatta bene e senza fretta, conta quanto l'operazione."]}, "linkedin": {"chir": ["Ricostruzione del LCA e artrosi: una meta-analisi ridimensiona un'aspettativa diffusa.", "Confrontando gestione operatoria e non operatoria, la ricostruzione non ha ridotto l'incidenza di artrosi radiografica (KL≥2) a lungo termine. Ha mostrato invece un minor tasso di protesi totale di ginocchio e di reinterventi meniscali. Prudenza metodologica d'obbligo: studi comparativi osservazionali, eterogeneità, confondenti non controllati, dimensioni dell'effetto non riportate nell'abstract.", "Il dato non svaluta la chirurgia: ne ridefinisce l'obiettivo. La ricostruzione restituisce stabilità e protegge il menisco dalle lesioni secondarie, più che prevenire di per sé la degenerazione cartilaginea. Nel counselling vale la pena separare i due esiti."], "misto": ["Ricostruire il crociato anteriore riduce il rischio di artrosi? Una nuova meta-analisi dice di no.", "Rispetto alla gestione non operatoria, la ricostruzione non ha ridotto l'artrosi visibile alle radiografie negli anni. Ha però mostrato due vantaggi concreti: meno protesi di ginocchio e meno reinterventi sul menisco.", "Per chi segue questi pazienti — ortopedici, medici curanti, fisioterapisti — il punto è che l'intervento serve a ridare stabilità e a proteggere il menisco. La prevenzione dell'artrosi non è un obiettivo che possiamo promettere."], "pazienti": ["Operarsi al crociato non evita l'artrosi. Ma serve lo stesso, e ti spiego perché.", "Una grande ricerca ha confrontato chi si opera e chi no: l'artrosi vista alle radiografie compare più o meno allo stesso modo. Chi si opera, però, arriva meno spesso alla protesi di ginocchio e si rioperare meno per il menisco.", "Significa che l'intervento serve a ridare stabilità e a proteggere il ginocchio dagli infortuni successivi. E che la riabilitazione, fatta con calma e bene, è parte del risultato, non un dettaglio."]}, "instagram": {"chir": ["Ricostruzione del LCA e artrosi: la meta-analisi ridimensiona l'aspettativa.", "Nessuna riduzione dell'artrosi radiografica (KL≥2) a lungo termine rispetto alla gestione non operatoria. Minor tasso di protesi totale e di reinterventi meniscali. Studi osservazionali, effetti non quantificati nell'abstract.", "Obiettivo della chirurgia: stabilità e protezione meniscale. Non prevenzione della degenerazione cartilaginea."], "misto": ["Operare il crociato anteriore evita l'artrosi? 🤔", "Una grande revisione dice: non davvero. Rispetto al non operare, la ricostruzione non riduce l'artrosi vista alle radiografie negli anni. Però chi viene operato arriva meno spesso alla protesi di ginocchio e si rioperare meno sul menisco.", "Tradotto: l'intervento serve a ridare stabilità e a proteggere il menisco, non a cancellare il rischio di artrosi. Sono studi di confronto, non la parola definitiva. Parlane con il tuo specialista se hai una lesione del crociato."], "pazienti": ["Mi opero al crociato: eviterò l'artrosi? 🤔", "Una grande ricerca dice di no. Chi si opera non ha meno artrosi alle radiografie negli anni che seguono.", "Ma c'è un vantaggio vero: arriva meno spesso alla protesi di ginocchio e si rioperare meno per il menisco. L'intervento serve a ridare stabilità. Il resto lo fa la riabilitazione. Parlane con il tuo specialista."]}, "reel": {"chir": ["[LCA e artrosi: cosa dice la meta-analisi]\nNessuna riduzione dell'artrosi radiografica a lungo termine.", "Ma minor tasso di protesi e di reinterventi meniscali.\nStudi osservazionali, effetti non quantificati.", "[Obiettivo reale della chirurgia]\nStabilità e protezione meniscale, non prevenzione della degenerazione."], "misto": ["[Operare il crociato = niente artrosi?]\nFalso, o quasi.", "Una grande revisione: ricostruire il crociato NON riduce l'artrosi radiografica a lungo termine.\n[Ma…]\nChi viene operato arriva meno spesso alla protesi e si rioperare meno sul menisco.", "Quindi l'intervento dà stabilità e protegge il menisco, non evita l'artrosi.\n[Il resto lo fa la riabilitazione]"], "pazienti": ["[Mi opero al crociato: eviterò l'artrosi?]\nNo, non del tutto.", "Chi si opera non ha meno artrosi alle radiografie.\n[Però…]\nArriva meno spesso alla protesi di ginocchio.", "L'intervento serve a ridare stabilità.\nLa riabilitazione fa il resto.\n[Parlane col tuo specialista]"]}}, "1": {"video": {"chir": ["Revisione critica su KSSTA dedicata all'innesto di retto femorale, cioè lo strato superficiale del tendine quadricipitale, sempre più usato nella ricostruzione del crociato anteriore.", "Gli autori sostengono che l'entusiasmo abbia superato le prove. Sul piano biomeccanico lo stress ultimo è paragonabile al tendine rotuleo, ma l'elasticità è significativamente maggiore: questo lascia aperti gli interrogativi su creep e lassità nel tempo. Dimensioni dell'effetto e intervalli di confidenza non sono riportati: è una sintesi narrativa, livello quattro.", "La conclusione è misurata: potenziale reale, ma servono trial randomizzati ad alta potenza e follow-up prolungato per stabilire se sia un cambio di paradigma o una variante tecnica. Nel follow-up conviene sorvegliare la stabilità a distanza."], "misto": ["Negli ultimi anni, per ricostruire il crociato anteriore si usa sempre più un innesto preso dallo strato superficiale del tendine del quadricipite. È pratico e versatile.", "Ma una revisione appena uscita invita alla prudenza: dice che l'entusiasmo ha corso più veloce delle prove. Meccanicamente l'innesto regge bene, con una resistenza paragonabile al tendine rotuleo; però è più elastico, e questo lascia aperte domande sul comportamento nel tempo, in particolare sul rischio che il legamento si allunghi o diventi più lasso a distanza.", "Non è un allarme: è un richiamo a non trattarlo come una certezza consolidata finché non arrivano studi robusti con follow-up lungo. Per chi opera, per il medico che segue il paziente e per il fisioterapista il senso è lo stesso: buona opzione, da monitorare con attenzione sulla stabilità."], "pazienti": ["Per riparare il crociato del ginocchio serve un tendine da usare come sostituto. Oggi se ne usa sempre di più uno preso dalla coscia, dal muscolo davanti.", "Uno studio appena uscito invita alla calma: funziona bene ed è resistente quanto le alternative, ma è un po' più elastico. Non sappiamo ancora se col tempo tende ad allungarsi.", "Non è un allarme: è un invito a non darlo per scontato finché non ci saranno studi più lunghi. Se stai per operarti, chiedi al tuo chirurgo quale tendine userà e perché."]}, "linkedin": {"chir": ["L'innesto di retto femorale nel LCA: entusiasmo in anticipo sulle prove?", "Una revisione critica su KSSTA analizza l'innesto di tendine quadricipitale superficiale. Anatomia favorevole e prelievo riproducibile; stress ultimo paragonabile al tendine rotuleo. Il punto aperto è l'elasticità significativamente maggiore, che solleva interrogativi non risolti su creep e lassità a lungo termine. Sintesi narrativa, livello IV: nessun esito clinico duro, nessuna stima di effetto.", "Conclusione misurata degli autori: potenziale reale, ma servono RCT ad alta potenza e follow-up prolungato per capire se sia un cambio di paradigma o una variante tecnica. Promemoria utile: la popolarità di una tecnica non equivale alla sua validazione."], "misto": ["L'innesto di quadricipite nel crociato anteriore: prudenza, dice una nuova revisione.", "Il prelievo è riproducibile e la resistenza è paragonabile al tendine rotuleo. Ma l'elasticità maggiore lascia aperte domande su allungamento e lassità nel tempo. È una revisione narrativa: nessun esito clinico duro.", "Il messaggio non è di fermarsi, ma di non considerarlo una certezza consolidata. Nei controlli, attenzione alla stabilità a distanza."], "pazienti": ["Il tendine usato per riparare il crociato conta. E su uno dei più usati serve prudenza.", "Una revisione appena pubblicata dice che l'entusiasmo per l'innesto preso dal quadricipite ha superato le prove disponibili: regge bene, ma è più elastico, e non sappiamo ancora come si comporta a distanza di anni.", "Non è un allarme. È un buon motivo per chiedere al proprio specialista quale innesto propone e perché."]}, "instagram": {"chir": ["Innesto di retto femorale nel LCA: entusiasmo oltre le prove.", "Stress ultimo paragonabile al BPTB, ma elasticità significativamente maggiore: creep e lassità a lungo termine restano irrisolti. Revisione narrativa, livello IV.", "Serve un RCT ad alta potenza con follow-up prolungato. Popolarità ≠ validazione."], "misto": ["Il crociato si ricostruisce sempre più con un pezzo del tendine del quadricipite. Ma è la scelta giusta? 🦵", "Una revisione appena uscita invita alla calma: l'entusiasmo ha superato le prove. Meccanicamente regge bene, quanto il tendine rotuleo. Però è più elastico, e non sappiamo ancora come si comporta a distanza di anni.", "Non è un allarme, è prudenza: servono tempo e studi seri prima di darlo per scontato. Se ti stai informando su un intervento al crociato, chiedi al tuo specialista quale innesto propone e perché."], "pazienti": ["Per riparare il crociato serve un tendine. Ma quale? 🦵", "Quello preso dal quadricipite è sempre più usato: comodo e resistente. Uno studio nuovo però dice che è anche un po' più elastico, e non sappiamo ancora se col tempo si allunga.", "Non è un allarme: è un motivo in più per chiedere al tuo chirurgo quale tendine userà e perché."]}, "reel": {"chir": ["[Retto femorale nel LCA: le prove reggono?]\nRevisione KSSTA: entusiasmo oltre le prove.", "Stress ultimo come il BPTB.\n[Ma]\nElasticità significativamente maggiore → creep e lassità irrisolti.", "Narrativa, livello IV: nessun esito clinico duro.\n[Popolarità ≠ validazione]"], "misto": ["[Crociato col tendine del quadricipite: sicuri?]\nUna revisione appena uscita: rallentiamo.", "È pratico e regge bene, quanto il tendine rotuleo.\n[Ma c'è un ma]\nÈ più elastico. Non sappiamo se col tempo si allunga.", "Non un allarme: un invito a non darlo per scontato finché mancano studi solidi.\n[Popolare ≠ dimostrato]"], "pazienti": ["[Quale tendine per riparare il crociato?]\nQuello del quadricipite si usa sempre di più.", "Regge bene.\n[Ma]\nÈ un po' più elastico: non sappiamo se col tempo si allunga.", "Chiedi al tuo chirurgo quale userà e perché.\n[È una domanda giusta]"]}}, "4": {"video": {"chir": ["Studio istologico giapponese, gruppo di Kanazawa, su venticinque pazienti: composizione in collagene del tendine quadricipitale per strato anatomico e per maturità scheletrica.", "Il collagene di tipo uno nel primo strato è fra l'ottantanove e il novantasei per cento come mediana, senza differenze significative fra strati né fra livelli di maturità, con p maggiore di zero virgola zero cinque. Attenzione: i gruppi contano sette, otto e dieci soggetti — con questa numerosità differenze anche rilevanti resterebbero invisibili, quindi il nessuna differenza non è una prova di equivalenza.", "La ricaduta è un razionale istologico a favore del prelievo dello strato superficiale, valido anche nel paziente scheletricamente immaturo. Studio compositivo, non meccanico."], "misto": ["Quando si preleva un innesto dal tendine del quadricipite per ricostruire il crociato, conta anche la qualità del tessuto.", "Un gruppo giapponese ha studiato al microscopio questo tendine in pazienti di età diverse, dai più giovani con le cartilagini di crescita ancora aperte fino agli adulti. Il collagene che dà resistenza resta sostanzialmente stabile, senza differenze significative fra le età, e lo strato più superficiale ne è il più ricco.", "In pratica è un motivo in più per prelevare lo strato superficiale, anche negli adolescenti. Va detto però che è uno studio piccolo, su venticinque pazienti e in un solo centro, e che guarda la composizione, non la resistenza meccanica."], "pazienti": ["Per riparare il crociato si usa spesso un pezzo di tendine preso dalla coscia. Ma tutti i tendini sono uguali?", "Un gruppo di ricercatori giapponesi l'ha guardato al microscopio, in persone di età diverse, anche ragazzi molto giovani. La buona notizia è che la parte che dà resistenza resta stabile a ogni età, e lo strato più esterno del tendine ne è il più ricco.", "È uno studio piccolo, quindi non l'ultima parola. Ma va nella direzione giusta: prendere lo strato più esterno ha senso, anche nei ragazzi."]}, "linkedin": {"chir": ["Composizione in collagene del tendine quadricipitale: un contributo istologico dal Giappone.", "Venticinque pazienti, stratificati per maturità scheletrica e per strato anatomico. Collagene di tipo I nel primo strato: mediane 89–96%; nessuna differenza significativa fra strati né fra livelli di maturità (p>0,05). Gruppi da 7, 8 e 10 soggetti: la potenza non consente di escludere differenze rilevanti — «nessuna differenza» qui non è prova di equivalenza.", "Ricaduta pratica: razionale istologico a favore del prelievo dello strato superficiale, rilevante anche nel paziente scheletricamente immaturo. Valutazione compositiva, non delle proprietà meccaniche."], "misto": ["Qualità dell'innesto di quadricipite: un contributo dal Giappone.", "Su 25 pazienti, il contenuto di collagene di tipo I non differisce in modo significativo fra strati né fra età (p>0,05), e lo strato superficiale risulta il più ricco. I gruppi sono però molto piccoli: il «nessuna differenza» non equivale a equivalenza dimostrata.", "Un razionale in più per il prelievo superficiale, valido anche nell'adolescente."], "pazienti": ["Non tutti i tendini sono uguali: uno studio guarda dentro l'innesto usato per il crociato.", "Ricercatori giapponesi hanno analizzato al microscopio il tendine del quadricipite in pazienti di età diverse: la parte che dà resistenza resta stabile a ogni età, e lo strato più esterno ne è il più ricco.", "Studio piccolo, non definitivo. Ma è un tassello utile: prelevare lo strato superficiale ha senso anche nei più giovani."]}, "instagram": {"chir": ["Istologia del tendine quadricipitale: collagene I stabile fra strati e maturità (p>0,05).", "Mediane 89–96% nel primo strato. Gruppi da 7-10 soggetti: potenza insufficiente, «nessuna differenza» ≠ equivalenza.", "Razionale per il prelievo superficiale, anche nello scheletricamente immaturo. Valutazione compositiva, non meccanica."], "misto": ["Che cosa rende buono un innesto preso dal tendine del quadricipite? 🔬", "Un gruppo giapponese l'ha guardato al microscopio, in pazienti di età diverse, anche giovanissimi. Il collagene che dà resistenza resta stabile a ogni età, e lo strato più superficiale ne è il più ricco.", "Tradotto: prelevare lo strato superficiale ha senso anche dal punto di vista del tessuto, pure negli adolescenti. Studio piccolo e compositivo: un tassello, non l'ultima parola."], "pazienti": ["Cosa c'è dentro il tendine usato per riparare il crociato? 🔬", "Dei ricercatori giapponesi l'hanno guardato al microscopio, in persone di ogni età. La parte che dà resistenza resta stabile, e lo strato più esterno ne è il più ricco.", "Studio piccolo, non definitivo. Ma è un buon segnale, anche per i ragazzi."]}, "reel": {"chir": ["[Istologia del QT]\nCollagene I: 89–96% nel primo strato.", "Nessuna differenza fra strati né maturità (p>0,05).\n[Ma]\nGruppi da 7-10: potenza insufficiente.", "Razionale per il prelievo superficiale.\n[Compositivo, non meccanico]"], "misto": ["[Cosa c'è dentro l'innesto del crociato?]\nUn gruppo giapponese l'ha visto al microscopio.", "Il collagene che dà resistenza resta stabile a ogni età — anche nei più giovani.\nE lo strato superficiale ne è il più ricco.", "[Perché conta]\nUn motivo in più per prelevare lo strato superficiale, anche negli adolescenti.\nStudio piccolo: un tassello, non una certezza."], "pazienti": ["[Il tendine per il crociato]\nGuardato al microscopio.", "La parte che dà resistenza resta stabile a ogni età.\nLo strato esterno ne è il più ricco.", "[Studio piccolo]\nUn buon segnale, anche per i ragazzi."]}}, "5": {"video": {"chir": ["Studio biomeccanico su modello robotico, ventitré ginocchia cadaveriche, con sezione sequenziale delle strutture e carico in iperestensione fino a venticinque newton metro.", "Sezionando la capsula posteriore l'iperestensione aumenta di due virgola cinque gradi; aggiungendo collaterale laterale, popliteo e crociato anteriore si arriva a sette virgola sei gradi, con p minore di zero virgola zero uno. Gli incrementi di rotazione esterna e varo restano però modesti.", "La conclusione è controcorrente: le lesioni postero-laterali possono non produrre un recurvatum esterno positivo. Gli autori raccomandano di integrare con dial test e stress in varo a ginocchio flesso. Modello cadaverico, soli maschi, sequenza di sezione predefinita."], "misto": ["Nelle lesioni complesse del ginocchio, quelle che coinvolgono più legamenti, capire quali strutture sono danneggiate è cruciale, e si parte dall'esame clinico.", "Uno studio su modello robotico ha rivalutato un test classico, il recurvatum in rotazione esterna, usato per sospettare un danno dell'angolo postero-laterale. Il risultato è controcorrente: quelle lesioni possono non dare un recurvatum evidente. L'iperestensione aumenta davvero solo quando si aggiungono anche il collaterale laterale e il crociato.", "La conclusione pratica è di non affidarsi al solo recurvatum per escludere un problema postero-laterale, ma di usare anche il dial test e la ricerca di apertura in varo a ginocchio flesso. È uno studio su cadavere, con i limiti del modello, ma per chi visita questi pazienti è un promemoria utile: un test negativo non basta a stare tranquilli."], "pazienti": ["Dopo un trauma serio al ginocchio, il medico prova diverse manovre per capire cosa si è rotto dentro.", "Uno studio ha rivalutato una di queste manovre, usata per sospettare un danno nella parte esterna e posteriore del ginocchio. La sorpresa è che quel danno, da solo, può non far comparire il segno.", "Vuol dire che un solo test non basta: servono più manovre per non farsi sfuggire il problema. È uno studio di laboratorio, ma il messaggio è pratico e utile."]}, "linkedin": {"chir": ["Recurvatum in rotazione esterna e angolo postero-laterale: un test da ridimensionare.", "Analisi robotica su 23 ginocchia cadaveriche con sezioni sequenziali. La capsula posteriore aggiunge 2,5°±0,9° di iperestensione (p=0,02); con LCL, popliteo e LCA si arriva a 7,6°±4,4° (p<0,01), ma gli incrementi di rotazione esterna e varo restano modesti.", "Ricaduta clinica: le lesioni postero-laterali possono NON produrre un recurvatum esterno positivo. Meglio integrare con dial test e stress in varo a ginocchio flesso. Limiti: modello cadaverico, soli maschi, sequenza di sezione predefinita. Nell'esame delle multilegamentose, un singolo test negativo non chiude la diagnosi."], "misto": ["Un test classico del ginocchio da ridimensionare.", "Uno studio robotico su cadavere mostra che le lesioni della parte postero-laterale possono non produrre il segno del recurvatum: l'iperestensione sale in modo marcato solo quando sono coinvolti anche collaterale laterale e crociato.", "In pratica: non affidarsi a un solo test. Meglio integrare con dial test e stress in varo a ginocchio flesso. Studio su cadavere, con i limiti del modello."], "pazienti": ["Come si capisce cosa si è rotto dentro un ginocchio dopo un trauma serio?", "Con delle manovre. Uno studio ha però mostrato che una di queste, usata per un tipo preciso di lesione, può risultare negativa anche quando la lesione c'è.", "Il messaggio è semplice: un solo test non basta. Per questo la visita è fatta di più manovre, e a volte serve anche la risonanza."]}, "instagram": {"chir": ["Recurvatum in rotazione esterna: test da ridimensionare per il PLC.", "Robotico, 23 ginocchia: iperestensione 2,5°→7,6° solo con LCL+popliteo+LCA; rotazione esterna e varo modesti.", "Le lesioni PLC possono NON dare recurvatum positivo. Integrare con dial test e stress in varo. Modello cadaverico."], "misto": ["Un ginocchio instabile dopo un trauma serio: come si capisce cosa si è rotto? 🦵", "Uno studio su modello robotico ha rivalutato un test classico, usato per sospettare un danno nella parte esterna e posteriore del ginocchio. Sorpresa: quel danno, da solo, può NON far comparire il segno.", "Morale per chi visita: non fidarsi di un solo test. Ne servono altri per non farsi sfuggire il problema. Studio su cadavere, con i suoi limiti, ma il messaggio è pratico."], "pazienti": ["Come fa il medico a capire cosa si è rotto nel ginocchio? 🦵", "Con delle manovre. Ma uno studio mostra che una di queste può risultare negativa anche quando la lesione c'è.", "Ecco perché la visita non è mai un test solo: servono più manovre, e a volte la risonanza."]}, "reel": {"chir": ["[Recurvatum per il PLC?]\nStudio robotico, 23 ginocchia.", "Iperestensione 2,5°→7,6° solo con LCL+popliteo+LCA.\nRotazione esterna e varo modesti.", "[Conclusione]\nLe lesioni PLC possono NON dare recurvatum.\nUsare dial test e stress in varo."], "misto": ["[Un test negativo = ginocchio a posto?]\nNon sempre.", "Studio robotico: le lesioni della parte postero-laterale possono NON dare il segno del recurvatum.\nL'iperestensione sale davvero solo se sono coinvolti anche altri legamenti.", "[Cosa fare]\nNon fidarsi di un solo test: servono il dial test e lo stress in varo.\nStudio su cadavere — ma un buon promemoria."], "pazienti": ["[Un test negativo basta?]\nNo.", "Dopo un trauma al ginocchio una manovra può risultare negativa anche se la lesione c'è.", "[Per questo]\nLa visita è fatta di più manovre.\nE a volte serve la risonanza."]}}};
+var TAGS={"2": {"linkedin": "#ginocchio #LCA #ortopedia", "instagram": "#ginocchio #crociatoanteriore #LCA #ortopedia #chirurgiadelginocchio #artrosi #protesidiginocchio #medicinadellosport #riabilitazione #ritornoallosport #infortuniosportivo #ginocchiosano", "kw": "ricostruzione legamento crociato anteriore e artrosi · LCA protesi di ginocchio · crociato anteriore rischio artrosi · intervento crociato anteriore risultati a lungo termine"}, "1": {"linkedin": "#LCA #innestoquadricipitale #ortopedia", "instagram": "#crociatoanteriore #LCA #tendinequadricipitale #innesto #ortopedia #chirurgiadelginocchio #ginocchio #medicinadellosport #ricostruzionelca #infortuniosportivo", "kw": "innesto tendine quadricipitale crociato anteriore · retto femorale LCA · quale innesto per il crociato anteriore · tipi di innesto ricostruzione LCA"}, "4": {"linkedin": "#LCA #innesto #ricercaclinica", "instagram": "#crociatoanteriore #tendinequadricipitale #ginocchio #ortopedia #adolescenti #chirurgiadelginocchio #ricerca #innesto #medicinadellosport", "kw": "tendine quadricipitale collagene innesto · innesto crociato anteriore adolescente · prelievo strato superficiale quadricipite"}, "5": {"linkedin": "#ginocchio #legamenti #ortopedia", "instagram": "#ginocchio #legamenti #traumadelginocchio #ortopedia #esameclinico #chirurgiadelginocchio #medicinadellosport #lesionemultilegamentosa #dialtest", "kw": "test recurvatum angolo postero-laterale · dial test ginocchio · lesione multilegamentosa ginocchio · esame clinico instabilità ginocchio"}};
+
+var curTone='misto',curLen=2;
+var TONEL={chir:'Chirurghi',misto:'Misto',pazienti:'Pazienti'};
+var LENL={1:'Corto',2:'Medio',3:'Lungo'};
+function renderCtrl(){var el=document.getElementById('shCtrl');if(!el)return;
+ if(!curSoc||!SOCV[curSoc]){el.innerHTML='';el.style.display='none';return;}
+ el.style.display='flex';
+ el.innerHTML='<div class="sgroup"><div class="sgl">Tono</div><div class="sseg">'+
+  ['chir','misto','pazienti'].map(function(t){return '<button class="'+(t==curTone?'on':'')+'" onclick="setTone(\''+t+'\')">'+TONEL[t]+'</button>';}).join('')+'</div></div>'+
+  '<div class="sgroup"><div class="sgl">Lunghezza</div><div class="sseg">'+
+  [1,2,3].map(function(l){return '<button class="'+(l==curLen?'on':'')+'" onclick="setLen('+l+')">'+LENL[l]+'</button>';}).join('')+'</div></div>';}
+function setTone(t){curTone=t;renderCtrl();showFmt();}
+function setLen(l){curLen=l;renderCtrl();showFmt();}
+function socKey(){return 'edit_'+curSoc+'_'+curFmt+'_'+curTone+'_'+curLen;}
+function socText(){var e=(S.edits&&S.edits[socKey()]);if(e)return e;
+ var v=SOCV[curSoc]&&SOCV[curSoc][curFmt]&&SOCV[curSoc][curFmt][curTone];
+ if(!v)return (SOC[curSoc]&&SOC[curSoc][curFmt])||'';
+ return v.slice(0,curLen).join('\n\n');}
+function tagsHTML(){var t=TAGS[curSoc];if(!t)return '';
+ var ht=(curFmt=='linkedin')?t.linkedin:t.instagram;
+ var lab=(curFmt=='linkedin')?'Hashtag (LinkedIn: massimo 3)':'Hashtag';
+ return '<div class="tagbox"><div class="tagl">'+lab+'</div><div class="tagv">'+esc(ht)+'</div>'+
+  '<button class="tagbtn" onclick="copyTags()">Copia hashtag</button>'+
+  '<div class="tagl" style="margin-top:12px">Parole chiave per Google</div><div class="tagv">'+esc(t.kw)+'</div>'+
+  '<div class="tagl" style="margin-top:10px;text-transform:none;letter-spacing:0;font-weight:500;color:var(--dim)">Gli hashtag ti fanno trovare su Instagram e LinkedIn. Su Google contano invece le parole chiave dentro al testo: usale nel titolo e nelle prime righe.</div></div>';}
+function copyTags(){var t=TAGS[curSoc];if(!t)return;var ht=(curFmt=='linkedin')?t.linkedin:t.instagram;
+ try{navigator.clipboard.writeText(ht)}catch(e){}toast('Hashtag copiati');}
+var NLB={"2": {"prof": ["**La ricostruzione del crociato anteriore non riduce l'artrosi, ma abbassa le protesi.**", "Una meta-analisi su Orthopaedic Journal of Sports Medicine ha confrontato gestione operatoria e non operatoria: nessuna riduzione dell'artrosi radiografica (KL≥2) a lungo termine, ma un minor tasso di protesi totale di ginocchio e di reinterventi meniscali.", "Prudenza metodologica: studi comparativi osservazionali, confondenti non controllati, dimensioni dell'effetto non riportate nell'abstract. La lettura ragionevole è che la chirurgia protegga stabilità e menisco, non la cartilagine di per sé."], "paz": ["**Operarsi al crociato non evita l'artrosi — ma serve lo stesso.**", "Una grande ricerca ha confrontato chi si opera e chi no: l'artrosi vista alle radiografie compare più o meno allo stesso modo. Chi si opera, però, arriva meno spesso alla protesi di ginocchio e si rioperare meno per il menisco.", "Significa che l'intervento serve a ridare stabilità e a proteggere il ginocchio dagli infortuni successivi. E che la riabilitazione, fatta con calma e bene, è parte del risultato."], "kw": "ricostruzione del legamento crociato anteriore, artrosi del ginocchio, protesi di ginocchio, menisco"}, "1": {"prof": ["**Innesto di retto femorale: l'entusiasmo ha superato le prove.**", "Una revisione critica su KSSTA analizza l'innesto di tendine quadricipitale superficiale, ormai diffuso nella ricostruzione del LCA. Stress ultimo paragonabile al tendine rotuleo, ma elasticità significativamente maggiore: creep e lassità a lungo termine restano irrisolti.", "È una sintesi narrativa (livello IV), senza esiti clinici duri. Conclusione degli autori: servono RCT ad alta potenza e follow-up prolungato per capire se sia un cambio di paradigma o una variante tecnica."], "paz": ["**Il tendine usato per riparare il crociato conta — e su uno dei più usati serve prudenza.**", "Per ricostruire il crociato si usa sempre più spesso un tendine preso dalla coscia. Una revisione appena uscita dice che regge bene, ma è un po' più elastico degli altri, e non sappiamo ancora come si comporta a distanza di anni.", "Non è un allarme: è un motivo in più per chiedere al proprio specialista quale innesto propone e perché."], "kw": "innesto quadricipitale, ricostruzione del crociato anteriore, scelta dell’innesto"}, "4": {"prof": ["**Composizione in collagene del tendine quadricipitale: stabile fra strati e maturità.**", "Studio istologico giapponese (Kanazawa) su 25 pazienti: collagene di tipo I nel primo strato con mediane 89-96%, senza differenze significative fra strati né fra livelli di maturità scheletrica (p>0,05).", "Attenzione alla potenza: gruppi da 7, 8 e 10 soggetti — «nessuna differenza» qui non è prova di equivalenza. Resta un razionale istologico a favore del prelievo dello strato superficiale, anche nel paziente scheletricamente immaturo."], "paz": ["**Cosa c'è dentro il tendine usato per riparare il crociato.**", "Ricercatori giapponesi l'hanno analizzato al microscopio in pazienti di età diverse, anche molto giovani: la parte che dà resistenza resta stabile a ogni età, e lo strato più esterno ne è il più ricco.", "È uno studio piccolo, quindi non l'ultima parola. Ma è un buon segnale, anche per i ragazzi che devono operarsi."], "kw": "tendine quadricipitale, crociato anteriore nell’adolescente, cartilagine di accrescimento"}, "5": {"prof": ["**Recurvatum in rotazione esterna: un test da ridimensionare per l'angolo postero-laterale.**", "Analisi robotica su 23 ginocchia cadaveriche: l'iperestensione sale da 2,5°±0,9° a 7,6°±4,4° solo aggiungendo collaterale laterale, popliteo e LCA, mentre gli incrementi di rotazione esterna e varo restano modesti.", "Ricaduta clinica: le lesioni postero-laterali possono NON produrre un recurvatum positivo. Meglio integrare con dial test e stress in varo a ginocchio flesso. Un singolo test negativo non chiude la diagnosi."], "paz": ["**Come si capisce cosa si è rotto in un ginocchio dopo un trauma serio.**", "Il medico usa diverse manovre. Uno studio ha però mostrato che una di queste, usata per un tipo preciso di lesione, può risultare negativa anche quando la lesione c'è.", "Il messaggio è semplice: un solo test non basta. Per questo la visita è fatta di più manovre, e a volte serve anche la risonanza."], "kw": "lesione dell’angolo postero-laterale, instabilità del ginocchio, trauma del ginocchio"}};
+var SLAB={video:'🎬 Script video (30–90s)',linkedin:'💼 LinkedIn',instagram:'📸 Instagram',reel:'🎞 Reel'};
+var SMETA={video:'Da leggere in camera · gancio, dato, significato, limite, chiusura',linkedin:'Prima riga autoportante · registro tecnico · 3 hashtag',instagram:'Divulgativo · chiusura concreta',reel:'Una sola idea · testo a schermo tra [ ]'};
+
+var ARTICLES=[
+ {n:1,mono:'m-kssta',j:'KSSTA',dot:'orange',sec:'res',h:"Innesto retto femorale: l'entusiasmo ha superato le prove",v:"il tuo innesto, messo in discussione — elasticità, creep e lassità irrisolti",ax:"Glaab … Helito",date:"lug 2026",meta:"rev · IV · [1]",pmid:'42529836',doi:'10.1002/ksa.70526',journal:"Knee Surgery, Sports Traumatology, Arthroscopy (KSSTA)",authors:"Glaab R, Ollivier M, Petersen W, … Helito CP",design:"Revisione narrativa critica (livello IV)",pop:"Anatomia, biomeccanica e primi esiti del retto femorale",results:"Stress ultimo paragonabile al tendine rotuleo, ma elasticità significativamente maggiore. Dimensioni dell'effetto e intervalli di confidenza non riportati nell'abstract: è una sintesi narrativa.",concl:"Innesto promettente ma servono RCT ad alta potenza e follow-up lungo.",limits:"Narrativa · nessun esito clinico duro · follow-up breve",perte:"È il tuo innesto: la base di prove è ancora sottile."},
+ {n:2,mono:'m-ojsm',j:'OJSM',dot:'orange',sec:'res',h:"LCA: non riduce l'artrosi, abbassa le protesi",v:"contraddice il messaggio corrente sulla prevenzione dell'artrosi",ax:"Blackman … Abouali",date:"lug 2026",meta:"meta · III · [2]",pmid:'42539917',doi:'10.1177/23259671261451241',journal:"Orthopaedic Journal of Sports Medicine (OJSM)",authors:"Blackman B, Juric M, … Abouali J",design:"Revisione sistematica e meta-analisi (livello III)",pop:"Operatorio vs non operatorio; artrosi radiografica KL≥2",results:"Nessuna riduzione dell'artrosi radiografica (KL≥2) a lungo termine; minor tasso di protesi totale e di reinterventi meniscali. Dimensioni dell'effetto e intervalli di confidenza non riportati nell'abstract.",concl:"Non abbassa il rischio di artrosi, ma riduce le protesi.",limits:"Osservazionali eterogenei · confondenti · GRADE da valutare",perte:"Ciò che conta per come informi il paziente."},
+ {n:3,mono:'m-jeo',j:'JEO',dot:'green',sec:'res',h:"Il retto femorale come innesto distinto dal quadricipite",v:"carico a rottura nel range dei graft LCA; deficit estensorio come hamstring",ax:"Barroso … Helito",date:"lug 2026",meta:"rev · 35 · [3]",pmid:'42534476',doi:'10.1002/jeo2.70862',journal:"Journal of Experimental Orthopaedics (JEO)",authors:"Barroso BG, … Franciozi CE, Helito CP",design:"Revisione narrativa, 35 studi (livello V)",pop:"Anatomia, biomeccanica, applicazioni cliniche",results:"Lunghezza ~30 cm, diametro 8–11 mm; carico a rottura nel range dei graft LCA.",concl:"Va considerato nella scelta individualizzata (livello V).",limits:"Narrativa · serie precoci · tecniche eterogenee",perte:"Rassicurante sul tuo innesto — rovescio della [1]."},
+ {n:4,mono:'m-knee',j:'Knee',dot:'green',sec:'res',h:"Collagene del quadricipite stabile con la maturità",v:"include immaturi (12 anni); strato superficiale più ricco di collagene I",ax:"Mizuno … Nakase",date:"ago 2026",meta:"histo · 25 · [4]",pmid:'42541889',doi:'10.1016/j.knee.2026.104583',journal:"The Knee",authors:"Mizuno Y, … Nakase J (Kanazawa, Giappone)",design:"Studio istologico, 25 pazienti",pop:"QT, tre strati; gruppi immaturo/giovane/adulto",results:"Collagene I ~89–96% nel primo strato; nessuna differenza significativa (p>0,05).",concl:"Composizione stabile fra strati e maturità.",limits:"Piccolo · monocentrico · solo composizione",perte:"Razionale per il prelievo superficiale; utile nell'adolescente."},
+ {n:5,mono:'m-arth',j:'A',dot:'green',sec:'res',h:"Recurvatum in rotazione esterna: NON basta per il postero-laterale",v:"correzione: le lesioni PLC possono NON dare recurvatum — meglio il dial test",ax:"Deardurff … Noyes",date:"lug 2026",meta:"cadav · 23 · [5]",pmid:'42527843',doi:'10.1002/arj.70409',journal:"Arthroscopy",authors:"Deardurff RM, Grood ES, Noyes FR",design:"Studio robotico su cadavere, 23 ginocchia",pop:"Sezione sequenziale; carico fino a 25 Nm",results:"Iperestensione da 2,5° a 7,6° con LCL+popliteo+LCA; rotazione/varo modesti.",concl:"Le lesioni PLC possono NON dare recurvatum; usare dial test e varo.",limits:"Cadavere · solo maschi · sequenza artificiale",perte:"Di quale test fidarti nelle multilegamentose."},
+ {n:6,mono:'m-jrs',j:'JRS',dot:'green',sec:'res',h:"Intelligenza artificiale nella pianificazione dell'osteotomia",v:"errore <1,2 mm; correzioni entro 1° nel 95% — tecnologico, non clinico",ax:"Özdemir … Özdeş",date:"lug 2026",meta:"rev · [6]",pmid:'42536128',doi:'10.1007/s11701-026-03753-3',journal:"Journal of Robotic Surgery",authors:"Özdemir E, Özdeş HU",design:"Revisione PRISMA",pop:"IA per allineamento, simulazione, navigazione",results:"Errore medio <1,2 mm sui landmark; deviazione asse meccanico 0,52°±0,31°; correzioni entro 1° in >95%; modelli prognostici ROC-AUC fino a 0,81.",concl:"Strumento di precisione; servono IA spiegabile e trial clinici.",limits:"Prove tecnologiche · eterogeneità · publication bias",perte:"Osteotomia + IA, ma non cambia ancora la pratica."},
+ {n:7,mono:'m-jeo',j:'JEO',dot:'green',sec:'res',h:"Osteotomia distale della tuberosità tibiale: guarigione ossea",v:"descrittivo; possibile fattore di rischio per frattura della diafisi",ax:"Only … Arendt",date:"lug 2026",meta:"descr · III · [7]",pmid:'42534535',doi:'10.1002/jeo2.70872',journal:"Journal of Experimental Orthopaedics (JEO)",authors:"Only A, Engelking M, Agel J, Arendt E",design:"Comparativo retrospettivo (livello III)",pop:"Fattori all'interfaccia ossea distale nella TTO",results:"Nessuna correlazione statisticamente significativa con la guarigione tempestiva; segnalato come possibile fattore di rischio per frattura della diafisi tibiale. Numerosità e stime di effetto non riportate nell'abstract.",concl:"Non correlato alla guarigione, ma possibile fattore di rischio.",limits:"Retrospettivo · descrittivo · nessun confronto randomizzato",perte:"Utile per realineamenti rotulei / correzioni ossee."},
+ {n:8,mono:'m-gray',j:'EJOST',dot:'gray',sec:'res',h:"Peroneo lungo vs hamstring nel LCA primario",v:"innesto che non usi · morbilità del sito donatore inferiore",ax:"Desouza … Shetty",date:"ago 2026",meta:"meta · 407 · [8]",pmid:'42542493',doi:'10.1007/s00590-026-04907-7',journal:"European Journal of Orthopaedic Surgery & Traumatology",authors:"Desouza C, Nighot A, Sahu A, Shetty V",design:"Revisione sistematica e meta-analisi, 4 RCT, 407 pz",pop:"Peroneo lungo vs hamstring, ACLR primaria",results:"IKDC/Lysholm comparabili; Cincinnati migliore (MD 3,02; p=0,0004); morbilità donatore inferiore (OR 0,12).",concl:"Esiti comparabili con vantaggi sul sito donatore.",limits:"Solo 4 RCT · follow-up variabile · caviglia da monitorare",perte:"Non è il tuo innesto: entra come confronto."},
+ {n:9,mono:'m-gray',j:'JCOT',dot:'gray',sec:'res',h:"Aumento biologico nella preservazione del ginocchio",v:"19/23 favorevoli ma disegni non controllati e publication bias",ax:"Khan … Enc",date:"lug 2026",meta:"SR · 23 · [9]",pmid:'42540413',doi:'10.1016/j.jcot.2026.103565',journal:"Journal of Clinical Orthopaedics and Trauma (JCOT)",authors:"Khan U, Enc ME",design:"Revisione sistematica, 23 studi",pop:"PRP/BMAC in menisco, MAT, osteotomia, cartilagine, OCA",results:"19/23 favorevoli; beneficio selettivo per la sutura meniscale; per il resto prove insufficienti.",concl:"Beneficio selettivo e incostante; servono RCT procedura-specifici.",limits:"Non controllati · publication bias · nessuna meta aggregata",perte:"Prove fragili: la conclusione supera i dati."},
+ {n:10,mono:'m-npj',j:'npj',dot:'gray',sec:'disc',h:"IA spiegabile: segmentazione cartilagine e menisco su RM",v:"perché a te: misura automatica per l'imaging",ax:"Sanogo … Tafti",date:"feb 2026",meta:"AI · [10]",pmid:'42527501',doi:'10.1038/s44401-026-00072-5',journal:"npj Health Systems",authors:"Sanogo M, Gao F, … Tafti",design:"Deep learning (KneeXNet-2.5D)",pop:"Segmentazione RM cartilagine e menisco, con spiegabilità",results:"Validità anatomica e interpretabilità valutate da chirurghi ortopedici certificati; il modello mostra le regioni su cui basa la decisione. Metriche di accuratezza non riportate nell'abstract.",concl:"Fedeltà anatomica e interpretabilità, pronto per l'integrazione.",limits:"Validazione esterna limitata · non prospettico",perte:"Automatizzare misure sulle tue RM."},
+ {n:15,mono:'m-oac',j:'O&C',dot:'gray',sec:'disc',h:"Sottogruppi nascosti di artrosi a rischio protesi",v:"perché a te: flag di progressione data-driven",ax:"Sourougeon … Thein",date:"lug 2026",meta:"pheno · [15]",pmid:'42532331',doi:'10.1016/j.joca.2026.07.011',journal:"Osteoarthritis and Cartilage",authors:"Sourougeon Y, … Thein R",design:"Fenotipizzazione multi-dominio",pop:"Assi strutturali e sintomatici; gradiente di rischio protesi",results:"Circa il 25% dei ginocchi fenotipizzati (“Silent Progressors”): alto carico strutturale con pochi sintomi. Percentuale esatta e intervalli di confidenza non riportati nell'abstract.",concl:"Sottogruppi ad alto rischio invisibili ai controlli sui sintomi.",limits:"Validazione esterna parziale · osservazionale",perte:"Capire chi progredirà, in modo data-driven."}
+];
+var A={};ARTICLES.forEach(function(a){A[a.n]=a});
+var DEF={saved:[],votes:{},edits:{},weekly:[],blogUrl:'https://www.dariogiunchi.ch/blog',journals:['AJSM','KSSTA','Arthroscopy','OJSM','JBJS'],kols:["D'Ambrosi",'Zaffagnini','Sonnery-Cottet','LaPrade','Della Villa'],societies:['ESSKA','ISAKOS','AAOS','SIAGASCOT','swiss orthopaedics','SIM'],seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,topics:[]};
+var S=load();function load(){try{var r=localStorage.getItem('pulse4');return r?Object.assign({},DEF,JSON.parse(r)):Object.assign({},DEF)}catch(e){return Object.assign({},DEF)}}
+function save(){try{localStorage.setItem('pulse4',JSON.stringify(S))}catch(e){}}
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function pm(a){return 'https://pubmed.ncbi.nlm.nih.gov/'+a.pmid+'/'}function di(a){return 'https://doi.org/'+a.doi}
+function itemHTML(a){var sv=S.saved.indexOf(a.n)>=0,vt=S.votes[a.n];var hasSoc=!!SOC[a.n];
+ return '<div class="item" id="it-'+a.n+'">'+
+  '<div class="row" onclick="toggle('+a.n+')"><span class="dot '+a.dot+'" style="margin-top:5px"></span><span class="mono '+a.mono+'">'+esc(a.j)+'</span>'+
+    '<div class="tt"><div class="h">'+esc(a.h)+'</div><div class="v">'+esc(a.v)+'</div><div class="aut">'+esc(a.ax)+' · '+esc(a.date)+'</div>'+confHTML(a.n)+'</div>'+
+    '<div class="rt">'+(S.seen.indexOf(a.n)<0?'<span class="nuovo" id="nuovo-'+a.n+'">nuovo</span>':'')+'<span class="meta">'+a.meta+'</span><span class="rt2">'+readMin(a)+' min</span><span class="chev">›</span></div></div>'+retrHTML(a.n)+
+  '<div class="acts">'+
+    '<span class="ib save'+(sv?' on':'')+'" role="button" tabindex="0" aria-label="'+(sv?'Togli dai salvati':'Salva questo lavoro')+'" onclick="toggleSave(event,'+a.n+')">★</span>'+
+    '<span class="ib up'+(vt==1?' on':'')+'" role="button" tabindex="0" aria-label="Mostrami più lavori come questo" onclick="vote(event,'+a.n+',1)">👍</span>'+
+    '<span class="ib down'+(vt==-1?' on':'')+'" role="button" tabindex="0" aria-label="Mostrami meno lavori come questo" onclick="vote(event,'+a.n+',-1)">👎</span>'+
+    (hasSoc?'<span class="ib soc" role="button" tabindex="0" aria-label="Genera contenuti social per questo lavoro" onclick="openSocial(event,'+a.n+')"><span class="t">✎ Social</span></span>':'')+
+    '<span class="ib vid'+(inWeek(a.n)?' on':'')+'" role="button" tabindex="0" aria-label="Scegli questo lavoro per il video della settimana" onclick="pickWeek(event,'+a.n+')"><span class="t">📹 Video</span></span>'+
+    '<span class="ib" onclick="toggle('+a.n+')"><span class="t">Dettagli</span></span></div>'+
+  '<div class="det">'+fld('Autori',a.authors)+fld('Rivista',a.journal)+fld('Disegno',a.design)+fld('Popolazione',a.pop)+fld('Risultati',a.results)+fld('Conclusione degli autori',a.concl)+fld('Limiti (da revisore)',a.limits)+fld('Per te',a.perte)+muteHTML(a.n)+linksHTML(a.n)+
+    '<div class="detlinks"><a class="btn pri" href="'+pm(a)+'" target="_blank">PubMed ↗</a><a class="btn" href="'+di(a)+'" target="_blank">Rivista (DOI) ↗</a>'+(hasSoc?'<button class="btn soc" onclick="openSocial(event,'+a.n+')">✎ Contenuti social</button>':'')+'</div></div></div>';}
+function fld(k,v){return '<div class="fld"><div class="k">'+k+'</div><div class="val">'+esc(v)+'</div></div>'}
+function render(){
+  renderResearch();
+  document.getElementById('discList').innerHTML=ARTICLES.filter(function(a){return a.sec=='disc'}).map(itemHTML).join('');
+  var sc=S.saved.length;document.getElementById('savedCount').textContent=sc;document.getElementById('savedN').textContent=sc;
+  var sl=document.getElementById('savedList');
+  if(!sc)sl.innerHTML='<div class="empty"><div class="big">★</div><div style="font-weight:600;color:#1d1d1f;font-size:15px;margin-bottom:6px">Nessun articolo salvato</div>Tocca ★ su un lavoro: comparirà qui e ci resterà.</div>';
+  else sl.innerHTML='<div class="card">'+S.saved.map(function(n){return itemHTML(A[n])}).join('')+'</div>';
+  if(document.getElementById('savedq'))renderSaved();
+  renderRetr();
+  renderNl();
+  document.getElementById('focusJournals').innerHTML=S.journals.map(function(j){return '<span class="tag">'+esc(j)+'</span>'}).join('');
+  document.getElementById('focusKols').innerHTML=S.kols.map(function(k){return '<span class="tag">'+esc(k)+'</span>'}).join('');
+  var fm=document.getElementById('focusMore');if(fm)fm.innerHTML=(S.societies||[]).concat(S.topics||[]).map(function(k){return '<span class="tag">'+esc(k)+'</span>'}).join('');
+  renderSugg();
+  document.getElementById('setJournals').innerHTML=S.journals.map(function(j){return tagX('journals',j)}).join('');
+  document.getElementById('setKols').innerHTML=S.kols.map(function(k){return tagX('kols',k)}).join('');
+  document.getElementById('setSoc').innerHTML=S.societies.map(function(k){return tagX('societies',k)}).join('');
+  document.getElementById('wlit').textContent=S.winLit+' giorni';
+  var b2=document.getElementById('savebtn-2');if(b2)b2.className='btn'+(S.saved.indexOf(2)>=0?' on':'');
+}
+function tagX(k,x){return '<span class="tag">'+esc(x)+' <b onclick="rm(\''+k+'\',\''+x.replace(/'/g,"\\'")+'\')">×</b></span>'}
+function toggle(n){var e=document.getElementById('it-'+n);if(e)e.classList.toggle('open');if(S.seen.indexOf(n)<0){S.seen.push(n);save();var nb=document.getElementById('nuovo-'+n);if(nb)nb.style.display='none'}}
+function scrollToItem(n){var e=document.getElementById('it-'+n);if(e){e.classList.add('open');e.scrollIntoView({behavior:'smooth',block:'center'})}}
+function toast(m){var t=document.getElementById('toast');t.textContent=m;t.style.opacity=1;clearTimeout(window._t);window._t=setTimeout(function(){t.style.opacity=0},1700)}
+function toggleSave(ev,n){if(ev)ev.stopPropagation();var i=S.saved.indexOf(n);if(i>=0){S.saved.splice(i,1);toast('Rimosso')}else{S.saved.push(n);toast('★ Salvato')}save();render()}
+function vote(ev,n,d){if(ev)ev.stopPropagation();if(S.votes[n]==d){delete S.votes[n];toast('Annullato')}else{S.votes[n]=d;toast(d==1?'👍 Più così':'👎 Meno così')}save();render()}
+function addItem(k,id){var v=document.getElementById(id).value.trim();if(!v)return;if(S[k].indexOf(v)<0)S[k].push(v);document.getElementById(id).value='';save();render();toast('Aggiunto')}
+function rm(k,x){S[k]=S[k].filter(function(y){return y!=x});save();render()}
+var SUGGQ=[{k:"kol",n:"Junsuke Nakase",w:"Kanazawa, Giappone",r:"Ha firmato lo studio di oggi sull'istologia del tendine quadricipitale: lavora sul tuo stesso innesto, in una scuola che in Europa si legge poco."},{k:"kol",n:"Matthieu Ollivier",w:"Marsiglia",r:"Coautore della revisione critica KSSTA di oggi sul retto femorale; molto attivo anche sulle osteotomie."},{k:"kol",n:"Adnan Saithna",w:"",r:"Coautore ricorrente di Sonnery-Cottet su LET e legamento antero-laterale: è esattamente la tua linea."},{k:"journal",n:"Journal of Experimental Orthopaedics",w:"rivista ESSKA, accesso aperto",r:"Oggi ha pubblicato due lavori sul tuo innesto. Ad accesso aperto: leggi il testo intero senza abbonamento."},{k:"kol",n:"Carlos Eduardo Franciozi",w:"San Paolo",r:"Coautore di Helito sulla revisione del retto femorale; gruppo brasiliano molto attivo sull'innesto."},{k:"society",n:"APKASS",w:"società asiatica del ginocchio e artroscopia",r:"Congressi e consensus asiatici che in Europa arrivano con mesi di ritardo. Copre il buco geografico che ti manca."},{k:"journal",n:"The Knee",w:"rivista",r:"Oggi ha pubblicato l'istologia del tendine quadricipitale. Non è ancora fra le tue riviste in focus."},{k:"kol",n:"Wolf Petersen",w:"Berlino",r:"Già fra le tue fonti ma non nel focus attivo; coautore della revisione di oggi sul retto femorale."},{k:"society",n:"AGA",w:"area germanofona",r:"Società di artroscopia di lingua tedesca: contesto vicino al Ticino, materiale che i tuoi pazienti e colleghi leggono."},{k:"topic",n:"posterior tibial slope",w:"tema",r:"Ricorre nelle revisioni sul fallimento del LCA, e tu fai correzioni di slope: vale la pena seguirlo come tema a sé."}];
+function renderSugg(){var sb=document.getElementById('suggBox');if(!sb)return;
+ var i=S.suggIdx||0;
+ if(i>=SUGGQ.length){sb.innerHTML='<b>Per ora ho finito le proposte.</b> Ne aggiungo di nuove ogni mattina, in base a chi compare nei lavori che escono.';return;}
+ var q=SUGGQ[i];var ic={kol:'\ud83c\udf93',journal:'\ud83d\udcda',society:'\ud83c\udfdb',topic:'\ud83e\udded'}[q.k]||'\u2726';
+ sb.innerHTML='<div style="font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;opacity:.7">Proposta '+(i+1)+' di '+SUGGQ.length+'</div>'+
+  '<div style="margin-top:5px"><b>'+ic+' '+esc(q.n)+'</b>'+(q.w?' <span style="opacity:.7">\u00b7 '+esc(q.w)+'</span>':'')+'</div>'+
+  '<div style="margin-top:4px;line-height:1.45">'+esc(q.r)+'</div>'+
+  '<div class="sb"><button class="btn pri" onclick="acceptSugg()">\uff0b Seguilo</button><button class="btn" onclick="dismissSugg()">Non mi interessa</button></div>';}
+function acceptSugg(){var i=S.suggIdx||0;var q=SUGGQ[i];if(!q)return;
+ var m={kol:'kols',journal:'journals',society:'societies',topic:'topics'}[q.k];
+ S[m]=S[m]||[];if(S[m].indexOf(q.n)<0)S[m].push(q.n);
+ S.suggIdx=i+1;save();render();toast(q.n+' aggiunto \u2014 eccone un altro');}
+function dismissSugg(){S.suggIdx=(S.suggIdx||0)+1;save();render();toast('Va bene \u2014 eccone un altro');}
+function setV(k,v,b){S[k]=v;[].forEach.call(b.parentNode.children,function(x){x.classList.remove('on')});b.classList.add('on');save();toast('Salvato')}
+function resetAll(){if(confirm('Azzerare tutto?')){S=JSON.parse(JSON.stringify(DEF));save();render();toast('Azzerato')}}
+function tab(id,btn){document.querySelectorAll('.view').forEach(function(v){v.classList.remove('on')});document.getElementById(id).classList.add('on');document.querySelectorAll('.tabs button').forEach(function(b){b.classList.remove('on')});btn.classList.add('on');window.scrollTo(0,0)}
+
+// SOCIAL
+var curSoc=null,curFmt='video';
+function openSocial(ev,n){if(ev)ev.stopPropagation();if(!SOC[n]){toast('Contenuti generati nel deploy');return}curSoc=n;curFmt='video';curTone='misto';curLen=2;var a=A[n];
+  document.getElementById('shTitle').textContent=a.h;document.getElementById('shSub').textContent='Contenuti pronti · pubblico misto (specialista · medico · fisioterapista)';
+  document.getElementById('shTabs').innerHTML=['video','linkedin','instagram','reel'].map(function(f){return '<button class="'+(f==curFmt?'on':'')+'" onclick="setFmt(\''+f+'\')">'+SLAB[f]+'</button>'}).join('');
+  renderCtrl();_editing=false;var eb=document.getElementById('editbtn');if(eb)eb.textContent='✎ Adatta';showFmt();document.getElementById('ov').classList.add('on');}
+function setFmt(f){curFmt=f;renderCtrl();[].forEach.call(document.getElementById('shTabs').children,function(b){b.classList.remove('on')});
+  var i=['video','linkedin','instagram','reel'].indexOf(f);document.getElementById('shTabs').children[i].classList.add('on');showFmt();}
+function showFmt(){document.getElementById('shCnt').textContent=socText();document.getElementById('shMeta').innerHTML=esc(SMETA[curFmt]||'')+tagsHTML();var sb=document.querySelector('.sbody');if(sb)sb.scrollTop=0;}
+function closeSocial(){document.getElementById('ov').classList.remove('on')}
+function copyCnt(){var t=socText();try{navigator.clipboard.writeText(t)}catch(e){}toast('Copiato');}
+var BRIEF_TEXT="Ciao. Oggi, sul ginocchio, la cosa più importante è questa. Una grande meta-analisi ha visto che ricostruire il crociato anteriore non riduce l'artrosi, però abbassa il numero di protesi e di reinterventi sul menisco. Vale la pena tenerlo a mente quando ne parli con un paziente. Per il resto, la giornata gira attorno al tuo innesto, il retto femorale. Sono uscite due revisioni nello stesso mese, e non vanno d'accordo. Una è critica: dice che l'entusiasmo ha superato le prove, e che la maggiore elasticità lascia aperti dei dubbi su allungamento e lassità nel tempo. L'altra è più tranquilla. Poi qualche conferma: uno studio giapponese mostra che il collagene del tendine quadricipitale resta stabile con la crescita; uno studio su cadavere ridimensiona il test del recurvatum per l'angolo postero-laterale, meglio affidarsi al dial test; e una revisione mappa l'intelligenza artificiale nella pianificazione delle osteotomie. Fuori dal solito, due spunti: un'intelligenza artificiale che misura da sola cartilagine e menisco sulla risonanza, e uno studio che scova i pazienti con artrosi silenziosa ma già a rischio di protesi. Industria e società, oggi niente di nuovo. In agenda, Isakos duemilaventisette a Sydney: gli abstract chiudono il quattro agosto. Per oggi è tutto. Quindici lavori, nessuna allerta rossa, due che toccano quello che fai.";
+var _speaking=false;
+function _pickVoice(){var vs=(window.speechSynthesis?speechSynthesis.getVoices():[]).filter(function(v){return /it(-|_)/i.test(v.lang)});
+ vs.sort(function(a,b){function s(v){return /(enhanced|premium|siri|neural|federica|alice|luca|emma)/i.test(v.name)?1:0}return s(b)-s(a)});return vs[0]||null;}
+function speakBrief(){var b=document.getElementById('playbtn'),l=document.getElementById('voicelbl');
+ if(!('speechSynthesis' in window)){l.textContent='voce non supportata su questo browser';return;}
+ if(_speaking){speechSynthesis.cancel();_speaking=false;b.textContent='▶';return;}
+ var u=new SpeechSynthesisUtterance(BRIEF_TEXT);u.lang='it-IT';u.rate=1;u.pitch=1;
+ var v=_pickVoice();if(v){u.voice=v;l.textContent='voce: '+v.name;}
+ u.onstart=function(){_speaking=true;b.textContent='⏸'};
+ u.onend=function(){_speaking=false;b.textContent='▶'};
+ u.onerror=function(){_speaking=false;b.textContent='▶'};
+ speechSynthesis.cancel();speechSynthesis.speak(u);}
+if('speechSynthesis' in window){speechSynthesis.onvoiceschanged=function(){};speechSynthesis.getVoices();}
+
+
+function renderSaved(){var q=(document.getElementById('savedq')?document.getElementById('savedq').value:'').toLowerCase();
+ var list=S.saved.filter(function(n){if(!q)return true;var a=A[n];return (a.h+' '+a.j+' '+a.authors+' '+a.v).toLowerCase().indexOf(q)>=0;});
+ var sl=document.getElementById('savedList');
+ if(!S.saved.length){sl.innerHTML='<div class="empty"><div class="big">★</div><div style="font-weight:600;color:#1d1d1f;font-size:15px;margin-bottom:6px">Nessun articolo salvato</div>Tocca la stella su un lavoro: comparirà qui.</div>';return;}
+ if(!list.length){sl.innerHTML='<div class="empty">Nessun salvato corrisponde a “'+q+'”.</div>';return;}
+ sl.innerHTML='<div class="card">'+list.map(function(n){return itemHTML(A[n])}).join('')+'</div>';}
+function shareArt(ev,n){if(ev)ev.stopPropagation();var a=A[n];var url=pm(a);var txt=a.h+' — '+a.journal;
+ if(navigator.share){navigator.share({title:'PULSE',text:txt,url:url}).catch(function(){});}
+ else{try{navigator.clipboard.writeText(txt+' '+url)}catch(e){}toast('Link copiato');}}
+function askNotif(){var l=document.getElementById('notiflbl');
+ if(!('Notification' in window)){l.textContent='Il tuo browser non supporta gli avvisi.';return;}
+ Notification.requestPermission().then(function(p){if(p==='granted'){l.textContent='Avvisi attivi ✓';try{new Notification('PULSE',{body:'Avvisi attivati. Ti avviso quando arriva il nuovo briefing.'})}catch(e){}}else{l.textContent='Avvisi non concessi.';}});}
+
+
+var curFilter='all';
+function renderResearch(){if(document.getElementById('verdict'))renderVerdict();var arr=ARTICLES.filter(function(a){return a.sec=='res'&&(curFilter=='all'||a.dot==curFilter)});
+ var el=document.getElementById('researchList');
+ el.innerHTML=arr.length?arr.map(itemHTML).join(''):'<div style="padding:16px;color:var(--dim);font-size:13px">Nessun lavoro in questa categoria oggi.</div>';}
+function setFilter(f,btn){curFilter=f;[].forEach.call(btn.parentNode.children,function(x){x.classList.remove('on')});btn.classList.add('on');renderResearch();}
+function _speakText(t){var b=document.getElementById('playbtn');
+ if(!('speechSynthesis' in window)){toast('Voce non supportata');return;}
+ var u=new SpeechSynthesisUtterance(t);u.lang='it-IT';u.rate=1;var v=_pickVoice();if(v)u.voice=v;
+ speechSynthesis.cancel();speechSynthesis.speak(u);toast('▶ In lettura');}
+function speakCard(ev,n){if(ev)ev.stopPropagation();var a=A[n];_speakText(a.h+'. '+a.v+'. Conclusione degli autori: '+a.concl+'. Per te: '+a.perte);}
+
+
+var CONF={1:'bassa',2:'media',3:'bassa',4:'bassa',5:'bassa',6:'bassa',7:'bassa',8:'alta',9:'bassa',10:'bassa',15:'media'};
+function confHTML(n){var lvl=CONF[n]||'bassa';var nf={bassa:1,media:2,alta:3}[lvl];var cc={bassa:'#e6902a',media:'#0071e3',alta:'#34c759'}[lvl];
+ var seg='';for(var i=1;i<=3;i++){seg+='<span class="confseg'+(i<=nf?' on':'')+'"></span>';}
+ return '<div class="conf" style="--cc:'+cc+'"><span class="confbar">'+seg+'</span><span class="conflab">evidenza '+lvl+'</span></div>';}
+function renderVerdict(){var el=document.getElementById('verdict');if(!el)return;
+ var oranges=ARTICLES.filter(function(a){return a.sec=='res'&&a.dot=='orange'}).length;
+ var orl=ARTICLES.filter(function(a){return a.sec=='res'&&a.dot=='orange'});
+ if(oranges>0){el.className='verdict act';
+  el.innerHTML='<div class="vtop"><span class="vi">⚠️</span><span>'+oranges+(oranges==1?' lavoro mette in discussione quello che fai':' lavori mettono in discussione quello che fai')+'</span></div>'+
+   '<div class="vlist">'+orl.map(function(a){return '<div class="vitem" onclick="goTo('+a.n+')"><span class="ar">→</span><span>'+esc(a.h)+'</span></div>';}).join('')+'</div>'+
+   '<div class="vhint">Tocca un titolo per aprirlo — sono i due più importanti di oggi.</div>';}
+ else{el.className='verdict calm';el.innerHTML='<span class="vi">✅</span><span>Oggi niente mette in discussione quello che fai. Uno sguardo e via.</span>';}}
+// swipe: destra=salva, sinistra=segna letto
+var _sx=0,_sy=0,_sItem=null;
+document.addEventListener('touchstart',function(e){var r=e.target.closest?e.target.closest('.row'):null;
+ if(r&&r.parentNode&&(''+r.parentNode.id).indexOf('it-')===0){_sItem=r.parentNode;_sx=e.touches[0].clientX;_sy=e.touches[0].clientY;}else{_sItem=null;}},{passive:true});
+document.addEventListener('touchend',function(e){if(!_sItem)return;
+ var dx=e.changedTouches[0].clientX-_sx,dy=e.changedTouches[0].clientY-_sy;
+ if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.4){var n=+(''+_sItem.id).replace('it-','');
+  if(dx>0){if(S.saved.indexOf(n)<0){S.saved.push(n);save();render();toast('★ Salvato');}}
+  else{if(S.seen.indexOf(n)<0){S.seen.push(n);save();}_sItem.classList.remove('open');var nb=document.getElementById('nuovo-'+n);if(nb)nb.style.display='none';toast('Segnato letto');}}
+ _sItem=null;},{passive:true});
+
+
+var BUILD_DATE='2026-08-02';
+var LAST_RETRACTION_CHECK='2 agosto 2026';
+var RETRACTED={};   // {n: 'motivo'} — popolato ogni mattina dal controllo su PubMed
+var LINKS={1:[{n:3,rel:'posizione opposta, stesso mese'},{n:4,rel:'stesso innesto'}],
+           3:[{n:1,rel:'posizione opposta, stesso mese'},{n:4,rel:'stesso innesto'}],
+           4:[{n:1,rel:'stesso innesto'},{n:3,rel:'stesso innesto'}],
+           2:[{n:15,rel:'stesso tema: progressione artrosica'}],
+           15:[{n:2,rel:'stesso tema: progressione artrosica'}],
+           9:[{n:6,rel:'entrambi: prove tecnologiche/biologiche ancora deboli'}]};
+var DUELS=[{a:1,b:3,topic:'Innesto retto femorale: le prove reggono?'}];
+var HISTORY=[{d:'2026-08-02',label:'domenica 2 agosto',n:15,rossi:0,arancioni:2,pick:2}];
+var AUDIT={settimana:'27 luglio – 2 agosto 2026',visti:15,scartati:'oltre 40',
+  nonverificate:['Swissmedic (avvisi dispositivi)','Retraction Watch','pagine ESSKA e AAOS (403)'],
+  nota:'Le fonti non verificate sono pagine che non si sono aperte: non sono state controllate, quindi qualcosa potrebbe essermi sfuggito lì.'};
+
+function readMin(a){var t=((a.h||'')+(a.v||'')+(a.authors||'')+(a.design||'')+(a.pop||'')+(a.results||'')+(a.concl||'')+(a.limits||'')+(a.perte||'')).length;
+ return Math.max(1,Math.min(4,Math.round(t/700)));}
+function retrHTML(n){if(!RETRACTED[n])return '';return '<div class="retr">⚠︎ Articolo ritirato dalla rivista — '+esc(RETRACTED[n])+'</div>';}
+function linksHTML(n){var L=LINKS[n];if(!L||!L.length)return '';
+ return '<div class="fld"><div class="k">Collegati nel tempo</div><div class="links">'+L.map(function(x){var t=A[x.n];if(!t)return '';
+  return '<span class="lchip" onclick="goTo('+x.n+')"><b>['+x.n+']</b> '+esc(t.h.slice(0,42))+(t.h.length>42?'…':'')+' · '+esc(x.rel)+'</span>';}).join('')+'</div></div>';}
+function goTo(n){var el=document.getElementById('it-'+n);if(el){el.classList.add('open');el.scrollIntoView({behavior:'smooth',block:'center'});}else{toast('Scheda non in questa vista');}}
+
+function renderFresh(){var el=document.getElementById('freshbox');if(!el)return;
+ var b=new Date(BUILD_DATE+'T07:00:00'),now=new Date();
+ var days=Math.floor((now-b)/86400000);
+ var dl=b.toLocaleDateString('it-IT',{day:'numeric',month:'long'});
+ if(days<=0){el.innerHTML='<div class="fresh ok">✓ <span>Aggiornato oggi, '+dl+'</span></div>';}
+ else if(days===1){el.innerHTML='<div class="fresh old">⏱ <span>Ultimo aggiornamento ieri ('+dl+'). Se non arriva entro stamattina, qualcosa non ha funzionato.</span></div>';}
+ else{el.innerHTML='<div class="fresh dead">⚠︎ <span>Ultimo aggiornamento '+days+' giorni fa ('+dl+'). Il briefing automatico non sta girando: scrivi «PULSE» a Claude per rigenerarlo.</span></div>';}}
+
+function renderDuel(){var el=document.getElementById('duelbox');if(!el)return;
+ if(!DUELS.length){el.innerHTML='';return;}
+ el.innerHTML=DUELS.map(function(d,i){return '<div class="duelbar" onclick="openDuel('+i+')"><span class="vs">VS</span><span>'+esc(d.topic)+' — confronta i due lavori →</span></div>';}).join('');}
+function openDuel(i){var d=DUELS[i],x=A[d.a],y=A[d.b];if(!x||!y)return;
+ function col(a){return '<div class="dcol"><div class="dhead"><span class="mono '+a.mono+'">'+esc(a.j)+'</span><span class="t">'+esc(a.h)+'</span></div>'+
+  '<div class="drow2"><div class="k">Disegno</div><div class="v">'+esc(a.design)+'</div></div>'+
+  '<div class="drow2"><div class="k">Risultati</div><div class="v">'+esc(a.results)+'</div></div>'+
+  '<div class="drow2"><div class="k">Conclusione</div><div class="v">'+esc(a.concl)+'</div></div>'+
+  '<div class="drow2"><div class="k">Limiti</div><div class="v">'+esc(a.limits)+'</div></div>'+
+  '<div class="drow2"><div class="k">Evidenza</div><div class="v">'+(CONF[a.n]||'bassa')+'</div></div></div>';}
+ document.getElementById('shTitle').textContent=d.topic;
+ document.getElementById('shSub').textContent='Due lavori a confronto — dove non vanno d\'accordo';
+ document.getElementById('shTabs').innerHTML='';
+ document.getElementById('shCnt').innerHTML='<div class="duelgrid">'+col(x)+col(y)+'</div>';
+ document.getElementById('shMeta').textContent='Nessuno dei due riporta esiti clinici duri: la differenza è di interpretazione, non di dati.';
+ curSoc=null;renderCtrl();document.getElementById('ov').classList.add('on');}
+
+function renderRetr(){var el=document.getElementById('retrbox');if(!el)return;
+ var hits=S.saved.filter(function(n){return RETRACTED[n]});
+ if(hits.length){el.innerHTML='<div class="fresh dead">⚠︎ <span>'+hits.length+' dei tuoi salvati '+(hits.length==1?'è stato ritirato':'sono stati ritirati')+' dalla rivista. Controllali.</span></div>';}
+ else if(S.saved.length){el.innerHTML='<div class="fresh ok">✓ <span>Nessun articolo salvato è stato ritirato. Ultimo controllo: '+LAST_RETRACTION_CHECK+'.</span></div>';}
+ else{el.innerHTML='';}}
+
+function searchHist(){var q=(document.getElementById('histq')||{value:''}).value.toLowerCase().trim();
+ var el=document.getElementById('histres');if(!el)return;
+ if(!q){el.innerHTML='';return;}
+ var hits=ARTICLES.filter(function(a){return ((a.h+' '+a.v+' '+a.j+' '+(a.authors||'')+' '+(a.concl||'')+' '+(a.perte||'')).toLowerCase().indexOf(q)>=0);});
+ if(!hits.length){el.innerHTML='<div class="empty" style="margin-top:12px">Nessun risultato per “'+esc(q)+'” nell\'archivio.</div>';return;}
+ el.innerHTML='<div class="card" style="margin-top:12px">'+hits.map(itemHTML).join('')+'</div>';}
+
+function renderAudit(){var el=document.getElementById('auditbox');if(!el)return;
+ el.innerHTML='<h4>Autocritica della settimana</h4>'+
+  '<div class="li">Periodo: <span class="n">'+esc(AUDIT.settimana)+'</span></div>'+
+  '<div class="li">Lavori mostrati: <span class="n">'+AUDIT.visti+'</span> · scartati perché fuori finestra: <span class="n">'+esc(AUDIT.scartati)+'</span></div>'+
+  '<div class="li">Fonti che non ho potuto verificare: <span class="n">'+AUDIT.nonverificate.map(esc).join(' · ')+'</span></div>'+
+  '<div class="li" style="color:var(--dim)">'+esc(AUDIT.nota)+'</div>';}
+
+if('serviceWorker' in navigator && typeof window.addEventListener==='function'){
+ window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})});}
+
+var TENSIONS=[{id:"1",t:"Il rinforzo laterale (LET) su innesto rigido",fai:"Fai il LET su tutti i pazienti che ricostruisci, con innesto di retto femorale.",prove:"Il beneficio del LET è dimostrato su innesto hamstring. Il protocollo STABILITY 2 scrive testualmente che nessuno studio ha stabilito se quel beneficio resta con innesti più rigidi.",fare:"Non cambiare nulla: non è un errore, è una lacuna della letteratura. Ma se un collega ti chiede perché lo fai su tutti, la risposta onesta è: «beneficio dimostrato su hamstring, esteso per ragionevolezza al quadricipitale».",chiude:"STABILITY 2, braccio quadricipitale con e senza LET, 1292 pazienti. Risultati attesi nel 2029."},{id:"2",t:"Il tuo costrutto non è quello studiato",fai:"Lemaire modificato, fissazione onlay, passaggio superficiale al collaterale laterale.",prove:"I trial usano il passaggio profondo sotto il collaterale e la fissazione con graffa. Sono due costrutti biomeccanicamente diversi, che la letteratura tratta come se fossero la stessa cosa.",fare:"Quando leggi i risultati di un trial sul LET, ricorda che non sono automaticamente i tuoi. Segnale a tuo favore: le note tecniche recenti si stanno spostando verso l'onlay — il campo va dove sei tu, le prove non ancora.",chiude:"Un confronto diretto fra i due costrutti. Oggi non esiste, e nemmeno STABILITY 2 lo risolverà."},{id:"3",t:"Nella radice meniscale conta l'estrusione, non il ritardo",fai:"Rifissazione della radice con tecnica transtibiale. Nel colloquio si tende a pesare il grado condrale e il tempo trascorso dall'infortunio.",prove:"All'analisi multivariata il ritardo NON è predittore indipendente di progressione (p=0,31). Lo sono l'estrusione meniscale (p=0,023) e la larghezza dello spazio articolare preoperatoria.",fare:"AZIONE CONCRETA, da subito: misura e referta l'estrusione sulla risonanza preoperatoria, e usa quella nel colloquio sul rischio di progressione, al posto del grado condrale e del tempo trascorso.",chiude:"Studi prospettici con l'estrusione come variabile principale. Confidenza attuale: media — due studi retrospettivi piccoli (170 e 61 pazienti)."},{id:"4",t:"Il criterio di rientro non regge sul tuo innesto",fai:"Se usi la simmetria di forza al 90% come criterio per il ritorno allo sport.",prove:"Sul retto femorale, a 6 mesi, il deficit di estensione è del 29% (simmetria 71%), mentre la flessione recupera al 93%. Con una soglia del 90% quasi nessuno passa a 6 mesi.",fare:"Verifica che cosa misuri davvero a 6 mesi. Sul quadricipitale aspettati tempi più lunghi per l'estensione: o sposti la scadenza, o cambi la misura. Dato su 31 pazienti, soli maschi, un solo centro.",chiude:"Studi che leghino il deficit di forza a esiti duri (rirottura, mancato rientro) e non a misure intermedie."},{id:"5",t:"Nel minced cartilage varia il tessuto, non solo la tecnica",fai:"Trapianto di cartilagine tritata con filiera dedicata.",prove:"I campioni prelevati da difetti debridati variano oltre dieci volte in peso umido, DNA totale e proteoglicani. Dipende da quale tessuto si raccoglie, non dallo strumento.",fare:"Se un caso va peggio di un altro a parità di gesto chirurgico, la variabile può essere la qualità del tessuto raccolto. Utile saperlo prima di attribuirlo alla tecnica.",chiude:"Una caratterizzazione di vitalità e resa cellulare specifica della filiera che usi. Oggi non esiste."}];
+var MUTE={1:"Revisione narrativa: nessun esito clinico, nessun confronto. Non può né confermare né escludere un problema di allungamento.",3:"Revisione narrativa (livello V) su serie precoci: non può escludere differenze di fallimento fra innesti.",4:"Gruppi da 7, 8 e 10 pazienti: con questa numerosità differenze anche rilevanti resterebbero invisibili. Il «nessuna differenza» qui non è una prova di equivalenza.",5:"Modello su cadavere: dimostra un meccanismo, non la resa del test nei pazienti veri.",7:"Retrospettivo, senza braccio di confronto: descrive, non misura un effetto.",9:"Nessuna meta-analisi aggregata, disegni non controllati e publication bias: il 75% di confronti favorevoli non è una stima di efficacia.",10:"Nessuna validazione clinica esterna né valutazione prospettica."};
+
+function muteHTML(n){if(!MUTE[n])return '';return '<div class="mute">⚑ Studio muto: '+esc(MUTE[n])+'</div>';}
+
+var _editing=false;
+function _ekey(){return socKey();}
+function toggleEdit(){var body=document.getElementById('shCnt'),btn=document.getElementById('editbtn');
+ if(!curSoc){toast('Disponibile sui contenuti social');return;}
+ if(!_editing){var cur=socText();
+  body.innerHTML='<textarea class="editbox" id="editarea"></textarea>';
+  document.getElementById('editarea').value=cur;
+  btn.textContent='✓ Salva';_editing=true;
+  document.getElementById('shMeta').textContent='Modifica il testo come lo diresti tu: resta salvato e viene riusato.';}
+ else{var v=document.getElementById('editarea').value;
+  S.edits=S.edits||{};S.edits[_ekey()]=v;save();
+  _editing=false;btn.textContent='✎ Adatta';showFmt();toast('Salvato — sarà riusato così');}}
+
+var nlVer='prof';var nlDest='mail';
+function setNlVer(v,b){nlVer=v;[].forEach.call(b.parentNode.children,function(x){x.classList.remove('on')});b.classList.add('on');renderNl();}
+function nlMonth(){var d=new Date();return d.toLocaleDateString('it-IT',{month:'long',year:'numeric'});}
+function pickWeek(ev,n){if(ev)ev.stopPropagation();
+ S.weekly=S.weekly||[];
+ var i=wIdx(n);
+ if(i>=0){S.weekly.splice(i,1);toast('Tolto dalla newsletter');}
+ else{if(S.weekly.length>=4){toast('Hai già 4 lavori: togline uno');return;}
+  var a=A[n];if(!a){toast('Lavoro non trovato');return;}
+  /* fotografia del lavoro: i numeri cambiano ogni mattina, il ricordo no */
+  S.weekly.push({n:n,d:BUILD_DATE,v:'',
+   a:{h:a.h,j:a.j,journal:a.journal,date:a.date,pmid:a.pmid,v:a.v},
+   b:(NLB[n]||null)});
+  toast('Aggiunto alla newsletter del mese');}
+ save();render();}
+function wArt(w){return w.a||A[w.n]||null}
+function wBlurb(w,pro){var b=(w.b||NLB[w.n]);return (b&&b[pro?'prof':'paz'])||null}
+/* riconosce lo stesso lavoro anche se il numero della scheda è cambiato: confronta il PMID */
+function wIdx(n){var p=A[n]&&A[n].pmid;
+ return (S.weekly||[]).findIndex(function(x){return x.n==n||(p&&x.a&&x.a.pmid==p)});}
+function inWeek(n){return wIdx(n)>=0}
+function setVid(i,val){var w=(S.weekly||[])[i];if(w){w.v=val;save();renderNlOut();}}
+function renderNl(){
+ var slots=document.getElementById('nlslots'),intro=document.getElementById('nlintro'),cnt=document.getElementById('nlcount');
+ if(!slots)return;
+ var W=S.weekly||[];
+ if(cnt)cnt.textContent=W.length+' di 4';
+ if(intro)intro.innerHTML=W.length?'I lavori che hai scelto questo mese. Aggiungi il link del video quando lo pubblichi: finisce da solo nei tre testi qui sotto.':'<b>Come funziona.</b> Ogni settimana, quando scegli il lavoro per il tuo video, tocca <b>📹 Video</b> sulla sua scheda. A fine mese trovi qui <b>tre testi già scritti dagli stessi quattro lavori</b>: l\'email, il post per il blog del sito e l\'aggiornamento per Google. Tu copi e incolli.';
+ slots.innerHTML=[0,1,2,3].map(function(i){var w=W[i];
+  if(!w)return '<div class="nlslot"><div class="nlnum">'+(i+1)+'</div><div class="nlt"><div class="h" style="color:var(--dim2);font-weight:500">Settimana '+(i+1)+' — ancora libera</div></div></div>';
+  var a=wArt(w);if(!a)return '';
+  return '<div class="nlslot"><div class="nlnum full">'+(i+1)+'</div><div class="nlt"><div class="h">'+esc(a.h)+'</div>'+
+   '<div class="v">'+esc(a.j)+' · '+esc(a.date)+(w.d&&w.d!=BUILD_DATE?' · scelto il '+esc(w.d):'')+'</div>'+
+   '<input class="nlvid" placeholder="Link del tuo video (facoltativo)" value="'+esc(w.v||'')+'" oninput="setVid('+i+',this.value)">'+
+   '<div style="margin-top:7px"><button class="nlrm" onclick="pickWeek(event,'+w.n+')">Togli dalla newsletter</button></div></div></div>';}).join('');
+ renderNlOut();}
+function nlText(){
+ var W=(S.weekly||[]).filter(function(w){return wArt(w)});
+ var mese=nlMonth();
+ if(!W.length)return NL_EMPTY;
+ var pro=(nlVer=='prof');
+ var subj=pro?('Ginocchio · '+W.length+' novità di '+mese+' che vale la pena conoscere')
+             :('Ginocchio · '+W.length+' novità di '+mese+', spiegate semplice');
+ var pre=pro?'Una sintesi breve, con i numeri e i limiti dichiarati.':'Cosa è uscito di nuovo, in parole comprensibili.';
+ var open=pro?('Gentili colleghe e colleghi,\nquesto mese ho scelto '+W.length+(W.length==1?' lavoro':' lavori')+' che toccano da vicino la pratica sul ginocchio. Per ciascuno trovate il dato, il limite e il link alla fonte.')
+             :('Buongiorno,\nogni mese raccolgo le novità sul ginocchio che possono interessare chi è stato operato o sta valutando un intervento. Questo mese sono '+W.length+'.');
+ var body=W.map(function(w,i){var a=wArt(w);
+   var b=wBlurb(w,pro);
+   var t=(b?b.join('\n'):(a.h+'\n'+a.v)).replace(/\*\*/g,'');
+   var links='Fonte: https://pubmed.ncbi.nlm.nih.gov/'+a.pmid+'/';
+   if(w.v)links+='\nIl mio commento in video: '+w.v;
+   return (i+1)+'. '+t+'\n'+links;}).join('\n\n———\n\n');
+ var close=pro?'Come sempre: se un lavoro è sottopotente o i numeri non sostengono le conclusioni, lo trovate scritto. Buona lettura.\n\nDario Giunchi'
+              :'Se qualcosa vi riguarda da vicino, parlatene con il vostro medico o con me in visita: ogni ginocchio è diverso.\n\nDario Giunchi';
+ return 'OGGETTO: '+subj+'\nANTEPRIMA: '+pre+'\n\n———\n\n'+open+'\n\n'+body+'\n\n———\n\n'+close;}
+
+/* ============ BLOG DEL SITO (Wix, dariogiunchi.ch) ============ */
+function slugify(s){return (s||'').toLowerCase()
+ .replace(/[àáâä]/g,'a').replace(/[èéêë]/g,'e').replace(/[ìíîï]/g,'i')
+ .replace(/[òóôö]/g,'o').replace(/[ùúûü]/g,'u').replace(/[^a-z0-9]+/g,'-')
+ .replace(/^-+|-+$/g,'').slice(0,70);}
+function nlKw(){
+ var W=nlPicks(),base=['chirurgia del ginocchio','ortopedia Ticino'],out=[];
+ W.forEach(function(w){var b=(w.b||NLB[w.n]);if(b&&b.kw)b.kw.split(',').forEach(function(k){k=k.trim();if(k&&out.indexOf(k)<0)out.push(k)})});
+ base.forEach(function(k){if(out.indexOf(k)<0)out.push(k)});
+ return out.slice(0,10);}
+function nlPicks(){return (S.weekly||[]).filter(function(w){return wArt(w)})}
+function blogText(){
+ var W=nlPicks();if(!W.length)return NL_EMPTY;
+ var pro=(nlVer=='prof'),mese=nlMonth();
+ var titolo='Novità dalla ricerca sul ginocchio — '+mese;
+ var desc=pro?('Le ricerche sul ginocchio uscite in '+mese+': che cosa dicono i numeri, quali sono i limiti, che cosa cambia davvero nella pratica.')
+             :('Che cosa è emerso in '+mese+' dalla ricerca sul ginocchio, spiegato in parole semplici: '+W.length+' studi, i dati e i loro limiti.');
+ var apri=pro?('Ogni mese leggo la letteratura sul ginocchio e metto da parte i lavori che possono cambiare qualcosa nella pratica. Di seguito i '+W.length+' di '+mese+', con il dato principale e il limite dichiarato dagli autori.')
+             :('Ogni mese seguo le ricerche che escono sul ginocchio nel mondo e riassumo qui quelle che possono interessare chi è stato operato, chi sta valutando un intervento o chi convive con un problema al ginocchio. Questo mese sono '+W.length+'.');
+ var corpo=W.map(function(w){var a=wArt(w),b=wBlurb(w,pro);
+   var bl=(b?b.slice():[a.h,a.v]).map(function(x){return x.replace(/\*\*/g,'')});
+   var tit=noDot(bl.shift());
+   var s='## '+tit+'\n\n'+bl.join('\n\n');
+   s+='\n\nFonte: '+(a.journal||a.j||'')+' — https://pubmed.ncbi.nlm.nih.gov/'+a.pmid+'/';
+   if(w.v)s+='\nNe ho parlato anche in video: '+w.v;
+   return s;}).join('\n\n');
+ var chiude=pro?'Nessuno di questi lavori, da solo, cambia una indicazione. Servono a sapere dove le prove si stanno muovendo — e dove invece non coprono ancora la decisione.'
+               :'Nessuno di questi studi vale per tutti allo stesso modo. Servono a farsi un’idea di dove sta andando la ricerca: la scelta giusta per un singolo ginocchio si decide sempre in visita, guardando quel ginocchio e quella persona.';
+ return 'TITOLO DELLA PAGINA\n'+titolo
+  +'\n\nDESCRIZIONE PER GOOGLE (meta description)\n'+desc
+  +'\n\nINDIRIZZO DELLA PAGINA\n'+slugify(titolo)
+  +'\n\nPAROLE CHIAVE — vanno dentro al testo, non come hashtag\n'+nlKw().join(' · ')
+  +'\n\n——— DA QUI IN GIÙ: INCOLLA NEL BLOG ———\n\n'+apri+'\n\n'+corpo
+  +'\n\n## In breve\n\n'+chiude
+  +'\n\n---\n\nQuesto testo ha finalità informativa e non sostituisce una valutazione clinica individuale. Le fonti sono indicate per esteso e consultabili.'
+  +'\n\nDr. med. Dario Giunchi — specialista FMH in chirurgia ortopedica, ginocchio.';}
+/* ============ GOOGLE BUSINESS PROFILE ============ */
+var GBP_MAX=1500;
+function gbpText(){
+ var W=nlPicks();if(!W.length)return NL_EMPTY;
+ var mese=nlMonth();
+ var righe=W.map(function(w){var b=wBlurb(w,false),a=wArt(w);
+   return '• '+noDot((b?b[0]:a.h).replace(/\*\*/g,''));});
+ var url=(S.blogUrl||'https://www.dariogiunchi.ch/blog').trim();
+ var t='Novità dalla ricerca sul ginocchio, '+mese+': '+W.length+' studi riassunti in parole semplici.\n\n'
+  +'Ogni mese leggo le ricerche che escono nel mondo sulla chirurgia del ginocchio e ne riassumo alcune per chi è stato operato, chi sta valutando un intervento o chi convive con un problema al ginocchio.\n\n'
+  +righe.join('\n')
+  +'\n\nIl testo completo, con le fonti originali: '+url
+  +'\n\nDr. med. Dario Giunchi — specialista FMH in chirurgia ortopedica, ginocchio.';
+ if(t.length>GBP_MAX){/* taglia le righe più lunghe, mai a metà parola */
+  var over=t.length-GBP_MAX+3;
+  righe=righe.map(function(r){if(over<=0||r.length<60)return r;
+    var cut=Math.min(over,r.length-55);over-=cut;
+    return r.slice(0,r.length-cut).replace(/[\s,;:]+\S*$/,'')+'…';});
+  t=t.replace(/• [\s\S]*?\n\nIl testo completo/, righe.join('\n')+'\n\nIl testo completo');}
+ return t;}
+/* ============ USCITA ============ */
+var NL_EMPTY='Scegli almeno un lavoro con il pulsante «📹 Video» su una scheda: qui comparirà il testo già scritto, per l’email, per il blog del sito e per Google.';
+function noDot(s){return (s||'').replace(/\s+$/,'').replace(/\.$/,'')}
+function setDest(d,b){nlDest=d;[].forEach.call(b.parentNode.children,function(x){x.classList.remove('on')});b.classList.add('on');renderNlOut();}
+function setBlogUrl(v){S.blogUrl=v;save();renderNlOut();}
+function outText(){return nlDest=='blog'?blogText():nlDest=='gbp'?gbpText():nlText();}
+function renderNlOut(){
+ var o=document.getElementById('nlout');if(!o)return;
+ var t=outText();o.textContent=t;
+ var vb=document.getElementById('nlver');if(vb)vb.style.display=(nlDest=='gbp')?'none':'inline-flex';
+ var ub=document.getElementById('gbpurlbox');if(ub)ub.style.display=(nlDest=='gbp')?'block':'none';
+ var ui=document.getElementById('gbpurl');if(ui&&ui.value!==(S.blogUrl||''))ui.value=S.blogUrl||'';
+ var m=document.getElementById('nlmeta');
+ if(m){if(nlDest=='gbp'){var n=t.length,ok=n<=GBP_MAX;
+   m.innerHTML='<span class="'+(ok?'okc':'badc')+'">'+n+' / '+GBP_MAX+' caratteri</span> · su telefono si leggono le prime ~100 lettere prima di «Altro»: il senso sta già lì.';}
+  else m.textContent='';}
+ var A2=document.getElementById('nlacts');
+ if(A2){A2.innerHTML=nlDest=='mail'
+   ?'<button class="btn pri" onclick="copyOut()">📋 Copia tutto</button><button class="btn" onclick="copyPart(0)">Copia solo l’oggetto</button>'
+   :nlDest=='blog'
+   ?'<button class="btn pri" onclick="copyBody()">📋 Copia il testo dell’articolo</button><button class="btn" onclick="copyPart(1)">Copia titolo e descrizione</button>'
+   :'<button class="btn pri" onclick="copyOut()">📋 Copia il post</button>';}
+ var hh=document.getElementById('nlhint');
+ if(hh){hh.textContent=nlDest=='mail'
+   ?'Incolla in Brevo (o nel servizio che usi) e programma l’invio: firma e disiscrizione le aggiunge il servizio.'
+   :nlDest=='blog'
+   ?'Wix: Blog → Crea post. Titolo e descrizione vanno in «Impostazioni SEO», il resto nel corpo. Le righe che iniziano con ## sono i sottotitoli.'
+   :'App Google Business Profile → Aggiungi aggiornamento. Nessuna offerta, nessun invito: è informazione, non pubblicità.';}}
+function copyOut(){try{navigator.clipboard.writeText(outText())}catch(e){}toast('Copiato');}
+function copyBody(){var t=outText(),i=t.indexOf('———\n\n');
+ try{navigator.clipboard.writeText(i>=0?t.slice(i+5).replace(/^\s+/,''):t)}catch(e){}toast('Testo dell’articolo copiato');}
+function copyPart(k){var t=outText(),v;
+ if(k===0)v=t.split('\n')[0].replace('OGGETTO: ','');
+ else{var L=t.split('\n');v=L[1]+'\n\n'+L[4];}
+ try{navigator.clipboard.writeText(v)}catch(e){}toast('Copiato');}
+function copyNl(){copyOut()}
+function copyNlSubj(){copyPart(0)}
+function renderTens(){var el=document.getElementById('tensbox');if(!el)return;
+ var nn=document.getElementById('tensn');if(nn)nn.textContent=TENSIONS.length+' punti';
+ el.innerHTML=TENSIONS.map(function(t,i){return '<div class="titem" id="tn-'+i+'" onclick="tglTens('+i+')">'+
+  '<div class="thead"><span class="tid">'+esc(t.id)+'</span><span class="tq">'+esc(t.t)+'</span><span class="tchev">\u203a</span></div>'+
+  '<div class="tbody">'+
+   '<div class="tr"><div class="tk">Tu fai</div><div class="tv">'+esc(t.fai)+'</div></div>'+
+   '<div class="tr"><div class="tk">Le prove per\u00f2 sono su</div><div class="tv">'+esc(t.prove)+'</div></div>'+
+   '<div class="tr act"><div class="tk">Che cosa puoi fare</div><div class="tv">'+esc(t.fare)+'</div></div>'+
+   '<div class="tr"><div class="tk">Che cosa lo chiuderebbe</div><div class="tv">'+esc(t.chiude)+'</div></div>'+
+  '</div></div>';}).join('');}
+function tglTens(i){var e=document.getElementById('tn-'+i);if(e)e.classList.toggle('open');}
+
+renderVerdict();
+renderTens();
+renderFresh();
+renderDuel();
+renderAudit();
+render();
+</script>
+</body>
+</html>
