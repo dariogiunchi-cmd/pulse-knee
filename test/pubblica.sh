@@ -58,6 +58,8 @@ for f in index.html manifest.json sw.js .nojekyll apple-touch-icon.png \
   if [ -f "$APP/$f" ]; then cp "$APP/$f" "./$f"; else echo "   ⚠️  assente in locale, tengo quello online: $f"; fi
 done
 mkdir -p test && cp "$QUI"/*.py "$QUI"/*.js "$QUI"/*.sh test/ 2>/dev/null
+rm -rf test/__pycache__ cervello/__pycache__
+[ -f "$APP/.gitignore" ] && cp "$APP/.gitignore" ./.gitignore
 [ -d "$APP/cervello" ] && { mkdir -p cervello && cp "$APP/cervello/"* cervello/ 2>/dev/null; }
 
 # File non più serviti da nessuna pagina. Il clone non cancella nulla da solo:
@@ -119,6 +121,20 @@ if ! PULSE_HTML="$CTRL/index.html" python3 "$QUI/checklist.py" >/dev/null 2>&1; 
   echo "❌ i file online non superano il controllo strutturale. Torna a ${PRIMA:0:7}."
   PULSE_HTML="$CTRL/index.html" python3 "$QUI/checklist.py" | grep '^❌'
   exit 8
+fi
+
+# La pubblicazione avviene da un clone temporaneo: senza questo passo la copia di
+# lavoro in $APP resta indietro rispetto a ciò che è online, e ogni sessione
+# successiva riparte da uno stato che sembra "modificato ma non pubblicato".
+echo
+echo "▶ allineo la copia di lavoro con ciò che è online"
+if [ -d "$APP/.git" ]; then
+  ( cd "$APP" \
+    && GIT_TERMINAL_PROMPT=0 git fetch -q "$AUTH" main 2>&1 | mask \
+    && git reset -q --hard FETCH_HEAD \
+    && rm -rf test/__pycache__ ) \
+    && echo "   copia di lavoro allineata a ${SHA:0:7}" \
+    || echo "   ⚠️  allineamento non riuscito: la pubblicazione è comunque andata a buon fine"
 fi
 
 echo
