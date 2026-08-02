@@ -193,3 +193,12 @@ editoriale.
     localStorage di quel browser. Sostituito con come stanno davvero le cose, compreso
     l'avvertimento che cancellare i dati del sito cancella salvataggi e scelte.
     *Era la cosa meno vera presente nell'app.*
+
+25. **La copia di lavoro restava indietro rispetto a ciò che era online.** `pubblica.sh`
+    pubblica da un clone temporaneo — scelta giusta, perché protegge istantanee e
+    cervello — ma non riallineava `/home/claude/deploy`. Risultato: dopo ogni
+    pubblicazione la copia locale sembrava «modificata e non pubblicata», e una sessione
+    successiva avrebbe potuto ripartire da uno stato ingannevole o, peggio, ripubblicare
+    all'indietro. Corretto: la pubblicazione ora riallinea la copia di lavoro all'ultimo
+    SHA e lo dichiara. Tolti anche `__pycache__` dai file pubblicabili (`.gitignore`) e
+    la credenziale dall'indirizzo del remoto nella configurazione locale di git.
