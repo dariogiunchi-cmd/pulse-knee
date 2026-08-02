@@ -366,7 +366,7 @@
       <div class="rowset"><div class="k">Lingua pagina</div><div class="seg"><button class="on" onclick="setV('lang','it',this)">Italiano</button><button onclick="setV('lang','en',this)">English</button></div></div>
       <div class="rowset"><div class="k">Lingua audio</div><div class="seg"><button class="on" onclick="setV('audio','it',this)">Italiano</button><button onclick="setV('audio','en',this)">English</button></div></div>
     </div>
-    <div class="sec"><h2>🔔 Promemoria</h2><div class="muted">Ogni mattina Claude ti avvisa già sul telefono quando il PULSE è pronto. Puoi attivare anche gli avvisi del browser.</div><div class="add" style="margin-top:10px"><button onclick="askNotif()">🔔 Attiva avvisi</button></div><div class="preview" id="notiflbl"></div></div>
+    <div class="sec"><h2>🔔 Promemoria</h2><div class="muted">Il briefing viene preparato ogni mattina alle 7 (ora svizzera) e l'avviso ti arriva dall'app Claude, <b>se hai le notifiche attive per quella app</b>. Qui sotto puoi attivare anche gli avvisi del browser: su iPhone funzionano solo se hai aggiunto PULSE alla schermata Home e apri l'app da lì.</div><div class="add" style="margin-top:10px"><button onclick="askNotif()">🔔 Attiva avvisi</button></div><div class="preview" id="notiflbl"></div></div>
     <div class="sec"><h2>🗄 Versioni precedenti</h2><div class="muted">Ogni giorno il PULSE viene salvato così com&rsquo;era. Restano tutti i giorni degli ultimi trenta e il primo di ogni mese, per sempre.</div><div class="add" style="margin-top:10px"><a class="btn" href="versioni/" style="text-decoration:none;display:inline-flex;align-items:center">🗄 Sfoglia le versioni</a></div></div>
     <div class="sec"><h2>♻︎ I tuoi dati</h2><div class="muted">Salvati, voti, preferenze, lavori scelti per la distribuzione e testi che hai adattato vivono <b>solo in questo browser</b>, su questo dispositivo. Non sono su nessun server e non si sincronizzano con altri dispositivi. Se cancelli i dati del sito, si perdono: per questo conviene tenere PULSE nella schermata Home e non cancellare i dati di Safari o Chrome per questo indirizzo. Le schede e i contenuti di ogni giorno restano invece sempre recuperabili dalle versioni precedenti.</div><div class="add" style="margin-top:10px"><button onclick="resetAll()" style="background:#ff3b30">Azzera tutto</button></div></div>
   </div>
@@ -733,7 +733,7 @@ function shareArt(ev,n){if(ev)ev.stopPropagation();var a=A[n];var url=pm(a);var 
  else{try{navigator.clipboard.writeText(txt+' '+url)}catch(e){}toast('Link copiato');}}
 function askNotif(){var l=document.getElementById('notiflbl');
  if(!('Notification' in window)){l.textContent='Il tuo browser non supporta gli avvisi.';return;}
- Notification.requestPermission().then(function(p){if(p==='granted'){l.textContent='Avvisi attivi ✓';try{new Notification('PULSE',{body:'Avvisi attivati. Ti avviso quando arriva il nuovo briefing.'})}catch(e){}}else{l.textContent='Avvisi non concessi.';}});}
+ Notification.requestPermission().then(function(p){if(p==='granted'){l.textContent='Avvisi del browser attivi ✓';try{new Notification('PULSE',{body:'Avvisi attivati. Ti avviso quando arriva il nuovo briefing.'})}catch(e){}}else{l.textContent='Avvisi non concessi.';}});}
 
 
 var curFilter='all';
