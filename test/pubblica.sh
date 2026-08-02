@@ -60,6 +60,15 @@ done
 mkdir -p test && cp "$QUI"/*.py "$QUI"/*.js "$QUI"/*.sh test/ 2>/dev/null
 [ -d "$APP/cervello" ] && { mkdir -p cervello && cp "$APP/cervello/"* cervello/ 2>/dev/null; }
 
+# File non più serviti da nessuna pagina. Il clone non cancella nulla da solo:
+# vanno tolti qui, esplicitamente, e restano recuperabili dalla storia di git.
+for f in pulse_brief.mp3; do
+  if [ -f "./$f" ] && [ ! -f "$APP/$f" ]; then
+    git rm -q --cached "$f" 2>/dev/null; rm -f "./$f"
+    echo "   🧹 tolto dal repository (mai richiesto da nessuna pagina): $f"
+  fi
+done
+
 # ---------------------------------------------------------------- 4. istantanea
 echo
 echo "▶ 4/6  istantanea del $DATA"
