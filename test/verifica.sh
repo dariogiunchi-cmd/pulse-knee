@@ -45,6 +45,30 @@ esegui() {                      # esegui <etichetta> <comando...>
   fi
 }
 
+# --- cancello zero: ci sono gli strumenti?
+# Se domani mattina mancasse Playwright o Chromium, tutte le suite fallirebbero e la
+# sessione potrebbe concludere che sia l'APP a essere rotta, mettendosi a "correggerla".
+# Meglio dirlo prima, in chiaro, con il comando per rimediare.
+MANCANTI=()
+command -v node    >/dev/null 2>&1 || MANCANTI+=("node")
+command -v python3 >/dev/null 2>&1 || MANCANTI+=("python3")
+command -v git     >/dev/null 2>&1 || MANCANTI+=("git")
+python3 -c "import playwright" >/dev/null 2>&1 || MANCANTI+=("playwright (pip install playwright --break-system-packages)")
+[ -d /opt/pw-browsers ] || python3 -c "
+import sys
+from playwright.sync_api import sync_playwright
+try:
+    with sync_playwright() as p: p.chromium.launch().close()
+except Exception: sys.exit(1)
+" >/dev/null 2>&1 || MANCANTI+=("chromium")
+if [ ${#MANCANTI[@]} -gt 0 ]; then
+  echo "  ⛔ MANCANO DEGLI STRUMENTI, non è l'app a essere rotta:"
+  for m in "${MANCANTI[@]}"; do echo "       · $m"; done
+  echo
+  echo "  Installali e rilancia. NON modificare index.html per far passare i test."
+  exit 3
+fi
+
 # --- primo cancello: struttura e sintassi. Se fallisce qui, inutile aprire un browser:
 #     un errore di sintassi lascerebbe le suite in attesa di elementi che non arriveranno mai.
 esegui "struttura e credenziali" python3 "$QUI/checklist.py"

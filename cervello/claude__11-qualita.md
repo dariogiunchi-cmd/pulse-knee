@@ -236,3 +236,44 @@ editoriale.
     non di contenuto — ma esattamente il tipo che porta a fidarsi di un segnale sbagliato,
     o a "risolverlo" con una spinta forzata che invece cancellerebbe del lavoro.
     Ora la procedura aggiorna anche il riferimento.
+
+---
+
+## Prove di funzionamento globale (2 agosto 2026, sera)
+
+Fino a questo punto erano stati collaudati i *pezzi*. Queste sono le prove del sistema
+**intero**, e vanno rifatte quando si cambia qualcosa di strutturale.
+
+**1. Ripristino da un'istantanea.** La rete di sicurezza non era mai stata tirata:
+scaricata `versioni/2026-08-02.html` e passata al cancello — 440 controlli verdi. Il
+ritorno indietro funziona davvero, non solo sulla carta.
+
+**2. Presenza degli strumenti.** `node`, `python3`, `git`, Playwright e Chromium sono
+nell'immagine di sistema (`/usr/local/lib/python3.11/dist-packages`), quindi ci saranno
+anche in un contenitore nuovo. Aggiunto comunque un **cancello zero** in `verifica.sh`:
+se manca uno strumento lo dice in chiaro, con il comando per rimediare, e soprattutto
+scrive *«non e' l'app a essere rotta — NON modificare index.html per far passare i
+test»*. Senza quell'avviso, una sessione futura potrebbe mettersi a "correggere" codice
+sano. Collaudato nascondendo `python3`: il messaggio giusto compare.
+
+**3. Ciclo quotidiano completo.** Simulato esattamente cio' che fara' la sessione delle
+5: clone del repository → lettura del cervello → riscrittura di ARTICLES, SOCV, TAGS,
+NLB, SOC, DUELS, LINKS, MUTE, CONF, SUGGQ e BUILD_DATE → 440 controlli → istantanea con
+ritenzione → commit **firmato**. Tutto superato.
+
+**4. Il passaggio di giorno visto dall'utente.** Le due versioni servite sullo *stesso
+indirizzo*, come sul suo telefono: stato creato con l'app del 2 agosto (3 salvati,
+3 lavori scelti, un link video, un testo adattato, due proposte risposte, due voti, un
+nome aggiunto), poi sostituzione dell'app con quella del 3 agosto e riapertura.
+**Diciotto controlli, tutti superati**: nulla perso, proposte gia' risposte non
+riproposte, proposte nuove mostrate, newsletter e blog ancora generati, zero errori.
+
+**5. Un mese intero.** Quattro ricostruzioni settimanali con numeri di scheda tutti
+diversi (100, 200, 300, 400) e una scelta per settimana. A fine mese la newsletter
+contiene i quattro PMID giusti nell'ordine giusto, i quattro titoli distinti, i quattro
+link video, e le date di scelta. E' il percorso che paga solo dopo trenta giorni ed era
+l'ultimo mai provato.
+
+**Cosa resta non dimostrabile qui:** il briefing vero delle 5 del mattino — ricerca su
+PubMed, verifica delle citazioni, scrittura dei contenuti — perche' richiede la rete e
+un contenitore nuovo. La meccanica attorno e' provata; il contenuto lo si giudica domani.

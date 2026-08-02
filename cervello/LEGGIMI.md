@@ -17,7 +17,7 @@ Il repository è pubblico. Prima di ogni scrittura, token e chiavi vengono sosti
 controllo. In questo aggiornamento: **0 sostituzioni**.
 Il token GitHub vero vive solo nel Progetto, dentro `claude/10-deploy.md`.
 
-## Documenti (14, 88 KB in tutto)
+## Documenti (14, 91 KB in tutto)
 
 | File | Peso | Impronta |
 |---|---|---|
@@ -32,7 +32,7 @@ Il token GitHub vero vive solo nel Progetto, dentro `claude/10-deploy.md`.
 | `claude__08-archivio.md` | 0.4 KB | `aba6dc9d105b` |
 | `claude__09-storico.md` | 3.4 KB | `81aae08ac418` |
 | `claude__10-deploy.md` | 7.3 KB | `5945a85b0e7a` |
-| `claude__11-qualita.md` | 13.5 KB | `48ee33949a2e` |
+| `claude__11-qualita.md` | 16.0 KB | `3ae417a11319` |
 | `claude__12-distribuzione.md` | 5.1 KB | `53733f2ec633` |
 | `claude__13-attivita.md` | 7.3 KB | `05cdb40550e6` |
 
