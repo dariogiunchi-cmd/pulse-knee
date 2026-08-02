@@ -17,7 +17,7 @@ Il repository è pubblico. Prima di ogni scrittura, token e chiavi vengono sosti
 controllo. In questo aggiornamento: **0 sostituzioni**.
 Il token GitHub vero vive solo nel Progetto, dentro `claude/10-deploy.md`.
 
-## Documenti (14, 78 KB in tutto)
+## Documenti (14, 84 KB in tutto)
 
 | File | Peso | Impronta |
 |---|---|---|
@@ -28,13 +28,13 @@ Il token GitHub vero vive solo nel Progetto, dentro `claude/10-deploy.md`.
 | `04-fonti.md` | 7.9 KB | `7aeb81624749` |
 | `05-formato.md` | 4.9 KB | `3cfd7dd432fa` |
 | `06-social.md` | 3.2 KB | `e798b888fbdf` |
-| `claude__07-preferenze.md` | 5.3 KB | `1be30e6c86fd` |
+| `claude__07-preferenze.md` | 7.2 KB | `dbff92d13672` |
 | `claude__08-archivio.md` | 0.4 KB | `aba6dc9d105b` |
 | `claude__09-storico.md` | 3.4 KB | `81aae08ac418` |
 | `claude__10-deploy.md` | 6.6 KB | `f7f8d519cb56` |
-| `claude__11-qualita.md` | 6.6 KB | `6baf37862402` |
+| `claude__11-qualita.md` | 9.5 KB | `ce024e0cebc5` |
 | `claude__12-distribuzione.md` | 5.1 KB | `53733f2ec633` |
-| `claude__13-attivita.md` | 6.7 KB | `d0d0d38a9abf` |
+| `claude__13-attivita.md` | 7.3 KB | `05cdb40550e6` |
 
 L'impronta è il SHA-256 abbreviato: due copie con la stessa impronta sono identiche
 carattere per carattere. I nomi con `claude__` corrispondono a `claude/` nel Progetto.

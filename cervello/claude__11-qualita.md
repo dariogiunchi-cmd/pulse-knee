@@ -57,6 +57,17 @@ Nessun pulsante deve dire «nel deploy funzionerà». O funziona, o non c'è.
 
 ## 9. CONTENUTI SOCIAL — tre toni, tre lunghezze, hashtag
 
+**I formati parlati si misurano in secondi.** Per `video` e `reel` l'app non mostra
+«corto/medio/lungo» ma **30, 60 e 90 secondi**, e accanto scrive la durata **calcolata
+sul testo reale** a 2,5 parole al secondo (150 parole al minuto, la velocità di lettura
+ad alta voce comunemente usata). Se il copione non arriva ai secondi chiesti, l'app lo
+dichiara invece di far finta.
+
+Conseguenza vincolante sulla scrittura dei copioni `video`: i tre blocchi vanno
+dimensionati perché **cumulativamente** diano circa **75 · 150 · 225 parole**, cioè
+30 · 60 · 90 secondi. Un copione che si ferma a 170 parole rende inutile la scelta dei
+90 secondi. Vale per tutti e tre i toni.
+
 `SOCV[n][formato][tono] = [b1,b2,b3]` — **tre blocchi**: la lunghezza si ottiene
 prendendo i primi 1, 2 o 3 (Corto / Medio / Lungo). Ogni blocco regge anche da solo.
 
@@ -76,13 +87,21 @@ salvati per combinazione formato+tono+lunghezza e hanno la precedenza.
 
 Disegno completo, parte legale e opzioni di automazione: `claude/12-distribuzione.md`.
 
-**Obbligo quotidiano: `NLB`.** Per **ogni** lavoro del giorno:
+**Obbligo quotidiano: `NLB`, in TRE registri.** Per **ogni** lavoro del giorno:
 
 ```
 NLB = { numero: { prof: [titolo, corpo, nota critica],
+                  mix:  [titolo, corpo, nota sul limite],
                   paz:  [titolo, corpo, nota rassicurante],
                   kw:   "3-4 parole chiave, come le cerca un paziente su Google" } }
 ```
+
+Il registro **misto** è stato chiesto esplicitamente il 2 agosto 2026 ed è il più
+difficile dei tre: deve essere capito da chiunque — medico curante, fisioterapista e
+paziente — senza che il primo lo trovi banale né l'ultimo incomprensibile. Regola
+pratica: nessuna sigla non sciolta, ma i numeri restano, e il limite dello studio si
+scrive per esteso invece che con l'etichetta metodologica. È il registro che l'app usa
+di default per Google Business Profile.
 
 Frasi intere, **mai elenchi puntati**. `prof` = numeri e limite dichiarato, tono da
 collega. `paz` = italiano semplice, nessuna promessa di risultato.
@@ -139,3 +158,25 @@ editoriale.
     modo per pubblicare.
 17. La pubblicazione faceva `git init` + `push -f`: avrebbe cancellato istantanee e
     cervello a ogni giro. Ora si clona.
+
+18. **Il difetto più grave della giornata, e riguardava il cancello stesso.** Le prime
+    suite davano per scontati i lavori di oggi: «gli articoli 2, 1, 4 e 5», «esattamente
+    48 testi social», «quattro lavori con le varianti». Simulando il briefing di domani —
+    schede nuove, numeri diversi, tre lavori invece di quattro — **tutte e otto le suite
+    fallivano**. Il cancello avrebbe bloccato una pubblicazione perfettamente valida,
+    lasciando online l'app del giorno prima senza che nessuno se ne accorgesse: un
+    fallimento silenzioso travestito da sicurezza. Riscritte tutte: **si collauda la
+    macchina, non il carico del giorno** (vedi `test/comune.py`).
+19. **Un articolo salvato oggi avrebbe mandato in errore l'app domani.** `S.saved`
+    conteneva solo numeri di scheda; il mattino dopo quei numeri appartengono ad altri
+    lavori o non esistono, e la scheda «Salvati» andava in eccezione. Corretto con la
+    stessa fotografia usata per la newsletter (`savedItems`, riconoscimento per PMID),
+    con migrazione dal vecchio formato. Trovato simulando il giorno dopo, mai arrivato
+    all'utente.
+20. Un `DUELS` che puntava a schede non più presenti mostrava una barra «VS» che non
+    apriva nulla. Ora i duelli si filtrano su ciò che esiste davvero (`duelliVivi`).
+21. Il verdetto diceva sempre «sono i **due** più importanti di oggi», anche con tre o
+    quattro lavori in discussione. Ora la frase segue il numero reale.
+22. La scheda sull'angolo postero-laterale riportava «da 2,5° a 7,6°» senza le deviazioni
+    standard, che pure erano nella fonte e nei blurb. Trovato dal controllo «ogni scheda
+    ha un numero con la sua incertezza». Ripristinato: 2,5°±0,9° → 7,6°±4,4°.

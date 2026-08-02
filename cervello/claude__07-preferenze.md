@@ -22,11 +22,12 @@ Domanda guida: «mi serve saperlo per la mia pratica?».
   Riviste dirette: **KSSTA** e **JEO** (Journal of Experimental Orthopaedics).
 - **SFA** — Société Française d'Arthroscopie
 - **SOFCOT** — Société Française de Chirurgie Orthopédique et Traumatologique
-  *[trascritto come «softcoat»: interpretazione SOFCOT, da confermare una volta]*
+  ✅ *Confermato dal Dr. Giunchi il 2 agosto 2026: «la SOFCOT [è la] società francese
+  di ortopedia; la SFA è la società francese di artroscopia». Sono due enti distinti,
+  entrambi da sorvegliare.*
 - **AGA** — Gesellschaft für Arthroskopie und Gelenkchirurgie (Germania)
 - **BASK** — British Association for Surgery of the Knee (Regno Unito)
-  *[lui ha detto «le relative società identiche in Germania e Inghilterra»: AGA e BASK
-  sono le corrispondenti. Da confermare una volta.]*
+  *Corrispondente britannica di AGA. Non contestata quando gliel'ho riproposta: resta.*
 
 **Italia**
 - **SIAGASCOT / SIGASCOT** — società italiana di artroscopia e ginocchio
@@ -56,13 +57,30 @@ da confermare)* · Maurilio Marcacci · **Corrado Bait** *(trascritto «Corrado 
 
 **Francia** — Bertrand Sonnery-Cottet · Mathieu Thaunat
 
-**Brasile** — Camilo P. Helito · **Carlos Eduardo Franciozi** *(è il «secondo brasiliano»
-di cui non ricordava il nome: coautore di Helito sulla revisione del retto femorale
-uscita oggi. Da confermare che sia lui.)*
+**Brasile** — Camilo P. Helito · Carlos Eduardo Franciozi
+
+> ✅ **Risposta del 2 agosto 2026, e vale più di un nome.** Alla domanda su chi fosse il
+> secondo brasiliano ha risposto: *«non mi ricordo il nome, ma mi interessano comunque
+> chirurghi da ginocchio che fanno quello che faccio io.»*
+>
+> **Questa è una regola, non una lacuna.** Le proposte di nuovi opinion leader non devono
+> nascere dalla fama né dal paese, ma dalla **corrispondenza tecnica**: chi pubblica su
+> innesto quadricipitale o retto femorale, LET Lemaire con fissazione onlay, radice
+> meniscale transtibiale, AMIC e minced cartilage, osteotomia e slope, protesi robotica,
+> LCA nell'adolescente, MPFL, multilegamentose. Se un autore opera come lui, entra —
+> qualunque sia la sua nazionalità, compresa quella asiatica che lui dichiara di non
+> conoscere.
 
 **Stati Uniti** — gruppo di **Pittsburgh** (scuola di Freddie Fu, oggi Volker Musahl) ·
 Robert LaPrade · Scott Rodeo · **Mayo Clinic** (gruppo, non singolo autore)
-· *[«D Felice all'Access» — trascrizione non risolta: chiedere una volta di chi si tratta]*
+· **Gregory S. DiFelice** (Hospital for Special Surgery, New York)
+
+> ✅ **Risolto il 2 agosto 2026.** «D Felice all'Access» era **DiFelice all'HSS**.
+> Gregory S. DiFelice è chirurgo di traumatologia e medicina dello sport all'Hospital for
+> Special Surgery ed è il principale sostenitore della **riparazione primaria del
+> crociato anteriore** — argomento che tocca direttamente la memoria del sistema (in
+> `03-memoria.md` c'è già un lavoro KSSTA su slope e fallimento della riparazione
+> primaria, archiviato come «fuori pratica, principio valido»). Va seguito.
 
 **Medicina dello sport e riabilitazione** — **Isokinetic** e **Francesco Della Villa**,
 e tutto il mondo del ritorno allo sport.
@@ -110,9 +128,23 @@ come pubblicità.** Vincolo legale in `claude/12-distribuzione.md`.
 ## FEEDBACK APPRESO / STILE SOCIAL APPRESO
 *(si popola dai comandi e dalle correzioni ai testi social)*
 
-## DA CHIEDERGLI UNA VOLTA SOLA (cinque punti, poi non se ne parla più)
-1. «SOFCOT» e «BASK» sono le società che intendeva?
-2. Il secondo brasiliano è **Franciozi**?
-3. Chi è «D Felice all'Access»?
-4. Chi va nella lista della newsletter, e come raccoglie il consenso (nLPD)?
-5. Il profilo Google Business è già verificato e attivo?
+## DOMANDE CHIUSE — non riproporle (2 agosto 2026)
+
+| Domanda | Risposta |
+|---|---|
+| «SOFCOT» e «BASK» | SOFCOT = ortopedia francese, SFA = artroscopia francese, due enti distinti. BASK confermata implicitamente. |
+| Il secondo brasiliano | Nome non ricordato, e **non serve**: il criterio è la corrispondenza tecnica, non il nome. |
+| «D Felice all'Access» | **Gregory S. DiFelice**, Hospital for Special Surgery, New York. |
+| Consenso della newsletter | *«ci penserò io più avanti.»* **Non sollecitare.** |
+| Profilo Google Business | **Già verificato e attivo, a suo nome.** I testi per Google sono pubblicabili subito. |
+
+## PRIORITÀ DICHIARATE DA LUI (2 agosto 2026)
+
+Ordine deciso dal Dr. Giunchi, da rispettare:
+
+1. **«Chiedi a PULSE»** — lo strato di intelligenza artificiale dentro la pagina.
+   Sue parole: *«lo farei quando siamo sicuri che il resto funziona e non crea altri
+   problemi.»* Quindi: prima la stabilità, poi la funzione.
+2. Collegamento con YouTube — *«più avanti»*.
+3. Consegna via email o WhatsApp — *«più avanti»*.
+4. Prodotto multiutente per i colleghi — *«più avanti»*.
