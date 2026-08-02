@@ -180,3 +180,16 @@ editoriale.
 22. La scheda sull'angolo postero-laterale riportava «da 2,5° a 7,6°» senza le deviazioni
     standard, che pure erano nella fonte e nei blurb. Trovato dal controllo «ogni scheda
     ha un numero con la sua incertezza». Ripristinato: 2,5°±0,9° → 7,6°±4,4°.
+
+23. **Segnaposto sopravvissuti al controllo che doveva trovarli.** Il piè di pagina diceva
+    ancora «Prototipo app PULSE» e «nel deploy: su ogni articolo», e un messaggio a
+    comparsa diceva «Contenuti generati nel deploy». Il controllo cercava una sola frase
+    esatta. Ora cerca una famiglia di segnaposto, come parole intere, **sia nel testo
+    visibile sia dentro i messaggi generati dal JavaScript** — dove si nascondeva quello
+    peggiore.
+24. **L'app prometteva una sincronizzazione che non esiste.** In Impostazioni si leggeva:
+    «Nel prototipo tutto resta su questo iPhone. Nel deploy vive nel tuo Google e si
+    sincronizza.» Non c'è alcun Google, e non c'è alcuna sincronizzazione: tutto vive nel
+    localStorage di quel browser. Sostituito con come stanno davvero le cose, compreso
+    l'avvertimento che cancellare i dati del sito cancella salvataggi e scelte.
+    *Era la cosa meno vera presente nell'app.*
