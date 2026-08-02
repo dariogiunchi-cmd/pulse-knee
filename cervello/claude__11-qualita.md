@@ -323,3 +323,22 @@ intercettati**.
     *Un controllo che non suona è peggio di un controllo assente: dà la sicurezza senza
     darne la sostanza.* Regola che ne discende: ogni nuova sentinella va collaudata
     rompendo davvero ciò che deve proteggere.
+
+33. **Avevo aggiunto una condizione al cancello senza dirlo alla sessione del mattino.**
+    I nuovi controlli di verità pretendono `CIT_VERIFICATE` e `LAST_RETRACTION_CHECK`
+    aggiornati, ma le istruzioni quotidiane non ne parlavano: domattina la pubblicazione
+    sarebbe stata bloccata da una regola che nessuno aveva comunicato.
+    **Regola che ne discende: ogni condizione aggiunta al cancello va aggiunta anche al
+    prompt dell'attività quotidiana, nello stesso momento.**
+34. **Sette conteggi scritti a mano erano rientrati nelle suite** — «5 tensioni»,
+    «10 riviste», «14 società», «8 aziende», «3 salvati», «5 dopo la fusione», «2 proposte
+    risposte». Le tensioni cambiano ogni giorno: quel controllo sarebbe saltato **di
+    certo** il 3 agosto. Tutti derivati dai dati. La regola 11 esisteva già: il fatto che
+    sia stata violata due volte nello stesso giorno dice che va **verificata**, non solo
+    scritta — d'ora in poi, dopo ogni modifica alle suite, cercare i confronti con numeri
+    letterali.
+
+**Prova finale del 2 agosto, sul «domani difficile»:** 7 schede, contenuti social solo su
+2 lavori, una sola proposta, due tensioni, nessun duello, nessuno studio muto, nessun
+collegamento. **458 controlli verdi.** È lo scenario magro che avrebbe fatto inciampare
+ognuno dei conteggi scritti a mano.

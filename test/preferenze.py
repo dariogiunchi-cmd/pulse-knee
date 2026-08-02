@@ -15,10 +15,13 @@ with sync_playwright() as p:
     errs=[]; pg.on("pageerror",lambda e:errs.append(str(e)))
     pg.goto(U); pg.wait_for_timeout(400)
     st=pg.evaluate("({j:S.journals,k:S.kols,s:S.societies,c:S.companies,v:S.prefv})")
-    chk("nuovo: 10 riviste", len(st["j"])==10, st["j"])
-    chk("nuovo: 21 opinion leader", len(st["k"])==21, len(st["k"]))
-    chk("nuovo: 14 società", len(st["s"])==14, len(st["s"]))
-    chk("nuovo: 8 aziende", len(st["c"])==8, st["c"])
+    # Le liste crescono quando si aggiungono voci e si alza PREFV: si confrontano
+    # con le costanti dell'app, non con numeri scritti qui.
+    ATT = pg.evaluate("({j:PREF_RIVISTE.length,k:PREF_KOL.length,s:PREF_SOC.length,c:PREF_AZ.length,v:PREFV})")
+    chk(f"nuovo: {ATT['j']} riviste", len(st["j"])==ATT["j"], st["j"])
+    chk(f"nuovo: {ATT['k']} opinion leader", len(st["k"])==ATT["k"], len(st["k"]))
+    chk(f"nuovo: {ATT['s']} società", len(st["s"])==ATT["s"], len(st["s"]))
+    chk(f"nuovo: {ATT['c']} aziende", len(st["c"])==ATT["c"], st["c"])
     chk("nessun doppione nelle liste iniziali",
         all(len(x)==len(set(x)) for x in [st["j"],st["k"],st["s"],st["c"]]))
     for nome in ["ESSKA","SFA","SOFCOT","AGA","BASK","SIAGASCOT","swiss orthopaedics","FMH","AOSSM","AAOS","APKASS (Asia)"]:
@@ -30,7 +33,7 @@ with sync_playwright() as p:
     for nome in ["DePuy Synthes","Zimmer Biomet","Smith & Nephew","Arthrex","Stryker","Medacta","Lima","aziende innovative e asiatiche"]:
         chk("azienda "+nome, nome in st["c"])
     pg.click("button:has-text('Impostazioni')"); pg.wait_for_timeout(250)
-    chk("sezione Aziende visibile", pg.locator("#setAz .tag").count()==8, pg.locator("#setAz .tag").count())
+    chk("sezione Aziende visibile", pg.locator("#setAz .tag").count()==ATT["c"], pg.locator("#setAz .tag").count())
     chk("link alle versioni", pg.locator("a[href='versioni/']").count()==1)
     chk("aziende nel riquadro In focus", "Medacta" in pg.inner_text("#focusMore"))
     ctx.close()
@@ -57,8 +60,8 @@ with sync_playwright() as p:
     chk("migrazione: le sue voci restano", "Rivista sua" in s2["j"] and "Un suo nome" in s2["k"] and "Una sua società" in s2["s"])
     chk("migrazione: le nuove sono state unite", "SOFCOT" in s2["s"] and "Helito" in s2["k"] and "JEO" in s2["j"])
     chk("migrazione: nessun doppione", len(s2["j"])==len(set(s2["j"])) and len(s2["k"])==len(set(s2["k"])) and len(s2["s"])==len(set(s2["s"])))
-    chk("migrazione: aziende create", len(s2["c"])==8)
-    chk("migrazione: marcatore alzato", s2["v"]==2)
+    chk("migrazione: aziende create", len(s2["c"])==ATT["c"], len(s2["c"]))
+    chk("migrazione: marcatore alzato", s2["v"]==ATT["v"], (s2["v"], ATT["v"]))
     # C. ciò che toglie deve restare tolto
     pg2.evaluate("rm('societies','SOFCOT')"); pg2.wait_for_timeout(200)
     pg2.reload(); pg2.wait_for_timeout(500)

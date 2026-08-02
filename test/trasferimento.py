@@ -16,9 +16,14 @@ with sync_playwright() as p:
     errsA=[]; A.on("pageerror", lambda e: errsA.append(str(e)))
     A.goto(U); A.wait_for_timeout(500)
     N=numeri(A); NL=con_nlb(A,4)
-    A.evaluate("ns => ns.forEach(function(n){toggleSave(null,n)})", N[:3])
-    A.evaluate("ns => ns.forEach(function(n){pickWeek(null,n)})", NL[:2])
-    A.evaluate("acceptSugg()"); A.evaluate("dismissSugg()")
+    SUL_TELEFONO=min(3,len(N)); SUL_COMPUTER=min(2,max(0,len(N)-SUL_TELEFONO)); TOT=SUL_TELEFONO+SUL_COMPUTER
+    A.evaluate("ns => ns.forEach(function(n){toggleSave(null,n)})", N[:SUL_TELEFONO])
+    SCELTI=min(2,len(NL))
+    A.evaluate("ns => ns.forEach(function(n){pickWeek(null,n)})", NL[:SCELTI])
+    # Quante proposte ci siano quel giorno dipende dal briefing: si risponde a
+    # quelle che ci sono, non a un numero deciso a priori.
+    A.evaluate("() => { if(suggAperte().length) acceptSugg(); if(suggAperte().length) dismissSugg(); }")
+    RISPOSTE = A.evaluate("Object.keys(S.suggDone||{}).length")
     A.evaluate("addItem2 = null; S.kols.push('Nome solo sul telefono'); S.votes[%d]=1; save();" % N[0])
     A.wait_for_timeout(200)
     link = A.evaluate("linkTrasferimento()")
@@ -30,7 +35,7 @@ with sync_playwright() as p:
     cb=b.new_context(viewport={"width":430,"height":900}); B=cb.new_page()
     errsB=[]; B.on("pageerror", lambda e: errsB.append(str(e)))
     B.goto(U); B.wait_for_timeout(500)
-    B.evaluate("ns => ns.forEach(function(n){toggleSave(null,n)})", N[3:5])
+    B.evaluate("ns => ns.forEach(function(n){toggleSave(null,n)})", N[SUL_TELEFONO:SUL_TELEFONO+SUL_COMPUTER])
     B.evaluate("S.kols.push('Nome solo sul computer'); S.societies.push('Società solo sul computer'); save(); render();")
     B.wait_for_timeout(200)
     primaB = B.evaluate("({sv:savedList().length,k:S.kols.length,soc:S.societies.length})")
@@ -39,11 +44,17 @@ with sync_playwright() as p:
     # --- apre il link sul dispositivo B
     B.goto(link); B.wait_for_timeout(700)
     dopoB = B.evaluate("({sv:savedList().length,w:(S.weekly||[]).length,k:S.kols,soc:S.societies,sd:Object.keys(S.suggDone).length,vo:S.votes})")
-    chk("i salvati si sommano, non si sostituiscono", dopoB["sv"] == 5, (dopoB["sv"], statoA["sv"], primaB["sv"]))
-    chk("i lavori scelti arrivano dal telefono", dopoB["w"] == 2, dopoB["w"])
+    chk(f"i salvati si sommano ({SUL_TELEFONO}+{SUL_COMPUTER}), non si sostituiscono", dopoB["sv"] == TOT, (dopoB["sv"], TOT))
+    chk("i lavori scelti arrivano dal telefono", dopoB["w"] == SCELTI, (dopoB["w"], SCELTI))
     chk("quello che c'era solo sul computer resta", "Nome solo sul computer" in dopoB["k"] and "Società solo sul computer" in dopoB["soc"])
     chk("quello che c'era solo sul telefono arriva", "Nome solo sul telefono" in dopoB["k"])
-    chk("le proposte già risposte non tornano", dopoB["sd"] == 2, dopoB["sd"])
+    if RISPOSTE:
+        chk(f"le {RISPOSTE} proposte già risposte non tornano", dopoB["sd"] == RISPOSTE, (dopoB["sd"], RISPOSTE))
+        chk("nessuna proposta ancora aperta risulta già risposta",
+            B.evaluate("suggAperte().every(function(q){return !S.suggDone[q.n]})"))
+    else:
+        chk("nessuna proposta oggi: la macchina c'è comunque",
+            B.evaluate("typeof suggAperte==='function' && typeof acceptSugg==='function'"))
     chk("i voti arrivano", str(N[0]) in dopoB["vo"] or N[0] in dopoB["vo"])
     chk("il link sparisce dalla barra", "#stato=" not in B.evaluate("location.href"))
     chk("nessun doppione fra le preferenze", len(dopoB["k"]) == len(set(dopoB["k"])))
@@ -51,15 +62,15 @@ with sync_playwright() as p:
     # --- riapre lo stesso link: idempotente
     B.goto(link); B.wait_for_timeout(700)
     di_nuovo = B.evaluate("savedList().length")
-    chk("riaprire lo stesso link non duplica nulla", di_nuovo == 5, di_nuovo)
+    chk("riaprire lo stesso link non duplica nulla", di_nuovo == TOT, di_nuovo)
 
     # --- persistenza
     B.goto(U); B.wait_for_timeout(600)
-    chk("la fusione resta dopo la chiusura", B.evaluate("savedList().length") == 5)
+    chk("la fusione resta dopo la chiusura", B.evaluate("savedList().length") == TOT)
 
     # --- link rovinato: non deve azzerare nulla
     B.goto(U.split('#')[0] + "#stato=xxxNONVALIDOxxx"); B.wait_for_timeout(600)
-    chk("un link rovinato non cancella i dati", B.evaluate("savedList().length") == 5)
+    chk("un link rovinato non cancella i dati", B.evaluate("savedList().length") == TOT)
     chk("nessun errore JavaScript", len(errsA)==0 and len(errsB)==0, (errsA[:2], errsB[:2]))
 
     # --- la sezione è visibile e spiega che non c'è sincronizzazione automatica
