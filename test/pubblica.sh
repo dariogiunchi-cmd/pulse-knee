@@ -103,8 +103,12 @@ if ! diff -q "$CTRL/index.html" "$APP/index.html" >/dev/null; then
   exit 7
 fi
 echo "   il file online è identico a quello verificato ✅"
-if ! bash "$QUI/verifica.sh" "$CTRL/index.html" >/dev/null 2>&1; then
-  echo "❌ il file online non supera la verifica. Torna a ${PRIMA:0:7}."
+# Il file è già risultato IDENTICO byte per byte a quello verificato: rieseguire le
+# suite nel browser darebbe per costruzione lo stesso esito e raddoppierebbe i tempi.
+# Qui serve solo controllare che anche gli ALTRI file siano arrivati interi.
+if ! PULSE_HTML="$CTRL/index.html" python3 "$QUI/checklist.py" >/dev/null 2>&1; then
+  echo "❌ i file online non superano il controllo strutturale. Torna a ${PRIMA:0:7}."
+  PULSE_HTML="$CTRL/index.html" python3 "$QUI/checklist.py" | grep '^❌'
   exit 8
 fi
 
