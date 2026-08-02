@@ -221,3 +221,10 @@ editoriale.
 29. Con PULSE **gia' aperto**, il link di trasferimento cambiava solo il frammento e il
     browser non ricaricava la pagina: non succedeva assolutamente nulla. Aggiunto
     l'ascolto di `hashchange`. Trovato provando due dispositivi veri invece di uno.
+
+30. **Tutte le pubblicazioni della giornata erano «Unverified» su GitHub.** La procedura
+    ereditata disattivava esplicitamente la firma dei commit (`-c commit.gpgsign=false`),
+    mentre l'ambiente ha una firma SSH configurata e GitHub la verifica. Riattivata, e
+    l'intera storia rifirmata dopo aver verificato che l'albero dei file fosse **identico
+    byte per byte** prima e dopo la riscrittura. `pubblica.sh` ora avvisa se un commit
+    esce senza firma, invece di lasciar passare la cosa in silenzio.

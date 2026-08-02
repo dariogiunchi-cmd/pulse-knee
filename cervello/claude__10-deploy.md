@@ -106,6 +106,19 @@ Salvataggi, voti, letti, preferenze, testi social adattati, lavori scelti per la
 distribuzione e indirizzo del blog vivono nel browser dell'iPhone (chiave `pulse4`).
 Mantenere quel nome: cambiarlo cancella tutto. Non azzerare mai `S.weekly`.
 
+## ⚠️ I COMMIT VANNO FIRMATI
+
+Questo ambiente ha la firma SSH configurata a livello globale (`commit.gpgsign true`,
+`gpg.format ssh`) e GitHub la verifica. La vecchia procedura scriveva
+`git -c commit.gpgsign=false commit`: ogni pubblicazione della giornata è risultata
+**Unverified**, e ho dovuto rifirmare tutta la storia con
+`git rebase --exec "git commit --amend --no-edit --reset-author" --root` — operazione
+sicura solo dopo aver verificato che l'albero (`git rev-parse HEAD^{tree}`) fosse
+identico prima e dopo.
+
+**Non disattivare mai la firma.** `pubblica.sh` ora firma e, se per qualche motivo la
+firma non c'è, lo dice a schermo invece di lasciar passare la cosa in silenzio.
+
 ## Il testo dell'attività quotidiana
 L'attività «PULSE — briefing quotidiano ginocchio» parte ogni giorno alle 5.00 UTC.
 Il testo completo del suo prompt è conservato in `cervello/claude__13-attivita.md`.

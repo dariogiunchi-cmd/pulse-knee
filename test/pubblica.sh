@@ -92,7 +92,13 @@ if git diff --cached --quiet; then
   echo "   niente da pubblicare: identico a quanto è già online."
   exit 0
 fi
-git -c commit.gpgsign=false commit -q -m "$MSG"
+# La firma dei commit e' configurata a livello globale in questo ambiente e GitHub
+# la verifica: disattivarla — come faceva la vecchia procedura con
+# `-c commit.gpgsign=false` — rendeva ogni pubblicazione "Unverified".
+git commit -q -m "$MSG"
+if ! git cat-file commit HEAD | grep -q "^gpgsig"; then
+  echo "   ⚠️  commit non firmato: GitHub lo mostrera' come Unverified"
+fi
 if ! GIT_TERMINAL_PROMPT=0 git push -q "$AUTH" HEAD:main 2>&1 | mask; then
   echo "❌ push fallito. Online resta ${PRIMA:0:7}."; exit 6
 fi
