@@ -82,7 +82,29 @@ if m:
 resid = re.findall(r'\\U0001[0-9a-fA-F]{4}', h)
 chk("nessun escape \\U rimasto letterale", not resid, resid[:4])
 
-chk("nessun segnaposto «nel deploy funzionerà»", "nel deploy funzioner" not in h)
+# Il primo controllo cercava una sola frase e ha lasciato passare «nel deploy: su ogni
+# articolo» nel piè di pagina, insieme alla parola «Prototipo». Ora cerca la famiglia.
+# Cercati come PAROLE INTERE: senza confine, «TODO» si trova dentro parole italiane
+# comuni e «placeholder» dentro l'attributo HTML omonimo — due falsi allarmi che
+# renderebbero il controllo rumoroso e quindi, alla lunga, ignorato.
+SEGNAPOSTO = ["nel deploy", "prototipo", "coming soon", "in arrivo", "da implementare",
+              "lorem ipsum", "work in progress", "TODO", "FIXME", "XXX"]
+import re as _re
+trovati_sp = []
+_testo = _re.sub(r"<script>[\s\S]*?</script>", "", h)   # cerca in ciò che l'utente legge
+_testo = _re.sub(r'placeholder="[^"]*"', "", _testo)   # placeholder= è un attributo HTML, non un segnaposto
+for s_ in SEGNAPOSTO:
+    if _re.search(r"\b" + _re.escape(s_) + r"\b", _testo, _re.I):
+        trovati_sp.append(s_)
+chk("nessun segnaposto nel testo visibile", not trovati_sp, trovati_sp)
+
+# I segnaposto si nascondono anche dentro i messaggi generati dal JavaScript:
+# «Contenuti generati nel deploy» stava in un toast, invisibile all'HTML statico.
+_stringhe = _re.findall(r"'([^'\\]{6,200})'|\"([^\"\\]{6,200})\"", h)
+_piatte = [a or b for a, b in _stringhe]
+trovati_js = sorted({s_ for s_ in SEGNAPOSTO for t_ in _piatte
+                     if _re.search(r"\b" + _re.escape(s_) + r"\b", t_, _re.I)})
+chk("nessun segnaposto nei messaggi dell'app", not trovati_js, trovati_js)
 
 chk("etichette di accessibilità (≥6)", h.count('aria-label') >= 6, h.count('aria-label'))
 

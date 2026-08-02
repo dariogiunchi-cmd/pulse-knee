@@ -368,9 +368,9 @@
     </div>
     <div class="sec"><h2>🔔 Promemoria</h2><div class="muted">Ogni mattina Claude ti avvisa già sul telefono quando il PULSE è pronto. Puoi attivare anche gli avvisi del browser.</div><div class="add" style="margin-top:10px"><button onclick="askNotif()">🔔 Attiva avvisi</button></div><div class="preview" id="notiflbl"></div></div>
     <div class="sec"><h2>🗄 Versioni precedenti</h2><div class="muted">Ogni giorno il PULSE viene salvato così com&rsquo;era. Restano tutti i giorni degli ultimi trenta e il primo di ogni mese, per sempre.</div><div class="add" style="margin-top:10px"><a class="btn" href="versioni/" style="text-decoration:none;display:inline-flex;align-items:center">🗄 Sfoglia le versioni</a></div></div>
-    <div class="sec"><h2>♻︎ Dati</h2><div class="muted">Nel prototipo tutto resta su questo iPhone. Nel deploy vive nel tuo Google e si sincronizza.</div><div class="add" style="margin-top:10px"><button onclick="resetAll()" style="background:#ff3b30">Azzera tutto</button></div></div>
+    <div class="sec"><h2>♻︎ I tuoi dati</h2><div class="muted">Salvati, voti, preferenze, lavori scelti per la distribuzione e testi che hai adattato vivono <b>solo in questo browser</b>, su questo dispositivo. Non sono su nessun server e non si sincronizzano con altri dispositivi. Se cancelli i dati del sito, si perdono: per questo conviene tenere PULSE nella schermata Home e non cancellare i dati di Safari o Chrome per questo indirizzo. Le schede e i contenuti di ogni giorno restano invece sempre recuperabili dalle versioni precedenti.</div><div class="add" style="margin-top:10px"><button onclick="resetAll()" style="background:#ff3b30">Azzera tutto</button></div></div>
   </div>
-  <div class="foot">Prototipo app PULSE · citazioni verificate 11/11 · voce del dispositivo (naturale, gratuita) · contenuti social pronti su 4 articoli chiave (nel deploy: su ogni articolo, e imparano dalle tue correzioni).</div>
+  <div class="foot">PULSE · citazioni verificate 11/11 su PubMed · voce del dispositivo · contenuti social su 4 lavori, in tre toni e tre lunghezze · i testi che adatti restano salvati e hanno la precedenza.</div>
 </div>
 
 <!-- SOCIAL SHEET -->
@@ -696,7 +696,7 @@ function tab(id,btn){document.querySelectorAll('.view').forEach(function(v){v.cl
 
 // SOCIAL
 var curSoc=null,curFmt='video';
-function openSocial(ev,n){if(ev)ev.stopPropagation();if(!SOC[n]){toast('Contenuti generati nel deploy');return}curSoc=n;curFmt='video';curTone='misto';curLen=2;var a=A[n];
+function openSocial(ev,n){if(ev)ev.stopPropagation();if(!SOC[n]){toast('Per questo lavoro non ci sono contenuti social oggi');return}curSoc=n;curFmt='video';curTone='misto';curLen=2;var a=A[n];
   document.getElementById('shTitle').textContent=a.h;document.getElementById('shSub').textContent='Contenuti pronti · pubblico misto (specialista · medico · fisioterapista)';
   document.getElementById('shTabs').innerHTML=['video','linkedin','instagram','reel'].map(function(f){return '<button class="'+(f==curFmt?'on':'')+'" onclick="setFmt(\''+f+'\')">'+SLAB[f]+'</button>'}).join('');
   renderCtrl();_editing=false;var eb=document.getElementById('editbtn');if(eb)eb.textContent='✎ Adatta';showFmt();document.getElementById('ov').classList.add('on');}
