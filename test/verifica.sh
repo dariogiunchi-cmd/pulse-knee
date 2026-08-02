@@ -72,6 +72,7 @@ fi
 # --- primo cancello: struttura e sintassi. Se fallisce qui, inutile aprire un browser:
 #     un errore di sintassi lascerebbe le suite in attesa di elementi che non arriveranno mai.
 esegui "struttura e credenziali" python3 "$QUI/checklist.py"
+esegui "verità e citazioni"      python3 "$QUI/verita.py"
 if [ ${#FALLITE[@]} -gt 0 ]; then
   echo
   echo "═══════════════════════════════════════════════════════════"

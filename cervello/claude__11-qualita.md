@@ -277,3 +277,49 @@ l'ultimo mai provato.
 **Cosa resta non dimostrabile qui:** il briefing vero delle 5 del mattino — ricerca su
 PubMed, verifica delle citazioni, scrittura dei contenuti — perche' richiede la rete e
 un contenitore nuovo. La meccanica attorno e' provata; il contenuto lo si giudica domani.
+
+---
+
+## 12. I CONTROLLI DI VERITÀ — `test/verita.py`
+
+*Aggiunti la sera del 2 agosto, prima della prima esecuzione non sorvegliata.*
+
+Le altre suite verificano che l'app **funzioni**. Questa verifica che non **affermi cose
+false**. È la difesa meccanica del PRINCIPIO ZERO, e serve perché da domani il contenuto
+viene generato senza che nessuno lo guardi.
+
+Nessuno di questi controlli può dimostrare che una citazione sia vera — per quello serve
+riaprire PubMed, e lo fa la sessione del mattino. Trovano le **impronte tipiche
+dell'invenzione** e le affermazioni che l'app fa su sé stessa senza che i suoi dati le
+sostengano:
+
+- PMID e DOI **unici**, di lunghezza e forma plausibili, non tondi;
+- **nessuna progressione aritmetica fra i PMID** — i PMID reali della stessa settimana
+  sono vicini ma mai in sequenza regolare: una sequenza è l'impronta classica
+  dell'invenzione;
+- il conteggio delle citazioni verificate **non può superare** il numero di schede;
+- `LAST_RETRACTION_CHECK` **deve coincidere con `BUILD_DATE`**: se resta indietro, l'app
+  rassicura l'utente con un controllo che quel giorno non ha fatto;
+- `CONF`, `MUTE`, `NLB`, `SOCV`, `LINKS`, `DUELS` **non possono puntare a schede
+  inesistenti**.
+
+Collaudata sabotando l'app cinque volte — PMID in sequenza, PMID duplicato, conteggio
+gonfiato, data delle ritrattazioni vecchia, duello fantasma: **cinque su cinque
+intercettati**.
+
+---
+
+## Difetti trovati e corretti (segue)
+
+31. **Il piè di pagina dichiarava «citazioni verificate 11/11» scritto a mano.** Domani,
+    con un numero diverso di schede, l'app avrebbe affermato all'utente una verifica che
+    non corrispondeva ai suoi stessi dati. Ora il totale viene **contato**, e se le
+    citazioni verificate sono meno delle schede il piè di pagina lo dichiara con un
+    avviso invece di tacere.
+32. **Un controllo che si disattivava da solo.** In `verita.py` la lettura di una
+    variabile inciampava nel commento in coda alla riga e restituiva spazzatura: il
+    controllo successivo veniva **saltato in silenzio** e la suite dava verde. Trovato
+    solo perché ho sabotato l'app di proposito per vedere se le sentinelle suonassero.
+    *Un controllo che non suona è peggio di un controllo assente: dà la sicurezza senza
+    darne la sostanza.* Regola che ne discende: ogni nuova sentinella va collaudata
+    rompendo davvero ciò che deve proteggere.

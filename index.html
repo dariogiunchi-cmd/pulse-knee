@@ -371,7 +371,7 @@
     <div class="sec"><h2>📲 Stesso PULSE su un altro dispositivo</h2><div class="muted">PULSE non ha un server: quello che fai su un dispositivo resta lì. Se usi anche il computer, porta i tuoi dati con un link — le due copie si <b>fondono</b>, non si sovrascrivono, quindi non perdi nulla da nessuna delle due parti.</div><div id="syncbox" style="margin-top:10px"></div></div>
     <div class="sec"><h2>♻︎ I tuoi dati</h2><div class="muted">Salvati, voti, preferenze, lavori scelti per la distribuzione e testi che hai adattato vivono <b>solo in questo browser</b>, su questo dispositivo. Non sono su nessun server e non si sincronizzano con altri dispositivi. Se cancelli i dati del sito, si perdono: per questo conviene tenere PULSE nella schermata Home e non cancellare i dati di Safari o Chrome per questo indirizzo. Le schede e i contenuti di ogni giorno restano invece sempre recuperabili dalle versioni precedenti.</div><div class="add" style="margin-top:10px"><button onclick="resetAll()" style="background:#ff3b30">Azzera tutto</button></div></div>
   </div>
-  <div class="foot">PULSE · citazioni verificate 11/11 su PubMed · voce del dispositivo · contenuti social su 4 lavori, in tre toni e tre lunghezze · i testi che adatti restano salvati e hanno la precedenza.</div>
+  <div class="foot" id="foot"></div>
 </div>
 
 <!-- SOCIAL SHEET -->
@@ -639,6 +639,7 @@ function render(){
   else sl.innerHTML='<div class="card">'+SL.map(itemHTML).join('')+'</div>';
   if(document.getElementById('savedq'))renderSaved();
   renderRetr();
+  renderFoot();
   renderNl();
   document.getElementById('focusJournals').innerHTML=S.journals.map(function(j){return '<span class="tag">'+esc(j)+'</span>'}).join('');
   document.getElementById('focusKols').innerHTML=S.kols.map(function(k){return '<span class="tag">'+esc(k)+'</span>'}).join('');
@@ -862,6 +863,7 @@ document.addEventListener('touchend',function(e){if(!_sItem)return;
 
 
 var BUILD_DATE='2026-08-02';
+var CIT_VERIFICATE=11;   /* quante citazioni la sessione ha davvero riaperto su PubMed */
 var LAST_RETRACTION_CHECK='2 agosto 2026';
 var RETRACTED={};   // {n: 'motivo'} — popolato ogni mattina dal controllo su PubMed
 var LINKS={1:[{n:3,rel:'posizione opposta, stesso mese'},{n:4,rel:'stesso innesto'}],
@@ -896,6 +898,18 @@ function duelliVivi(){/* un duello che punta a schede non più presenti non va m
  lascerebbe un pulsante che non apre nulla */
  return (typeof DUELS!=='undefined'?DUELS:[]).map(function(d,i){return {d:d,i:i}})
   .filter(function(x){return A[x.d.a]&&A[x.d.b]});}
+/* Il piè di pagina diceva «citazioni verificate 11/11» scritto a mano. Domani, con un
+   numero diverso di schede, avrebbe affermato una cosa falsa all'utente. Ora il totale
+   viene CONTATO e la frase cambia se non tutte sono state verificate. */
+function renderFoot(){var el=document.getElementById('foot');if(!el)return;
+ var tot=ARTICLES.length, ver=(typeof CIT_VERIFICATE==='number')?CIT_VERIFICATE:0;
+ var cit = (ver>=tot)
+   ? 'citazioni verificate '+ver+'/'+tot+' su PubMed'
+   : '⚠︎ citazioni verificate solo '+ver+' su '+tot+' — le altre non sono state riaperte';
+ var nSoc=ARTICLES.filter(function(a){return SOCV[a.n]}).length;
+ el.innerHTML='PULSE · '+cit+' · voce del dispositivo · contenuti social su '+nSoc+
+  (nSoc==1?' lavoro':' lavori')+', in tre toni e tre lunghezze · i testi che adatti restano salvati e hanno la precedenza.';}
+
 function renderDuel(){var el=document.getElementById('duelbox');if(!el)return;
  var V=duelliVivi();
  if(!V.length){el.innerHTML='';return;}
