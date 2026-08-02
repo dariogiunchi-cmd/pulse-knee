@@ -202,3 +202,22 @@ editoriale.
     all'indietro. Corretto: la pubblicazione ora riallinea la copia di lavoro all'ultimo
     SHA e lo dichiara. Tolti anche `__pycache__` dai file pubblicabili (`.gitignore`) e
     la credenziale dall'indirizzo del remoto nella configurazione locale di git.
+
+26. **Le proposte da seguire venivano tracciate per POSIZIONE nell'elenco** (`suggIdx`),
+    e l'elenco viene rigenerato ogni mattina. Due conseguenze, entrambe verificate: le
+    proposte nuove finite in cima venivano **saltate senza che lui le vedesse**, e quelle
+    a cui aveva gia' risposto potevano **ricomparire**. E' il terzo caso dello stesso
+    errore in una giornata — identita' per posizione invece che per contenuto, dopo i
+    lavori salvati e quelli scelti per i video. Corretto: `suggDone` per nome, con
+    migrazione dal vecchio indice.
+    **E' il difetto che l'utente ha notato per primo**, segnalando che l'app gli
+    richiedeva conferme gia' date.
+27. La migrazione appena scritta leggeva `SUGGQ` **dentro `load()`**, dove la variabile
+    non e' ancora definita: l'app si fermava con un errore prima di partire. Spostata
+    dove il dato esiste. *Trovata dai test, non pubblicata.*
+28. `history.replaceState` chiamato **prima** della fusione annullava in silenzio l'intero
+    trasferimento fra dispositivi. La pulizia dell'indirizzo non deve mai precedere il
+    lavoro utile.
+29. Con PULSE **gia' aperto**, il link di trasferimento cambiava solo il frammento e il
+    browser non ricaricava la pagina: non succedeva assolutamente nulla. Aggiunto
+    l'ascolto di `hashchange`. Trovato provando due dispositivi veri invece di uno.
