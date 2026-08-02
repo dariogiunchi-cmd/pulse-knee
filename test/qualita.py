@@ -2,6 +2,11 @@ from playwright.sync_api import sync_playwright
 import os
 _H=os.environ.get('PULSE_HTML') or os.path.abspath('index.html')
 _U='file://'+_H
+import sys; sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
+from comune import numeri, con_socv, salta
+# I numeri di scheda cambiano ogni mattina: si scoprono a runtime, mai scritti a mano.
+# Vedi comune.py per il perché (difetto del 2 agosto 2026).
+
 import os
 ok=0;bad=0
 def chk(c,m):
@@ -22,17 +27,36 @@ with sync_playwright() as p:
     chk('STABILITY 2' in pg.inner_text('#tn-0'),'tocco tensione → si apre con il dettaglio')
     chk('CHIUDEREBBE' in pg.inner_text('#tn-0').upper(),'ogni tensione dice cosa la chiuderebbe')
     # muto
-    pg.click('#it-7 .row'); pg.wait_for_timeout(250)
-    chk('Studio muto' in pg.inner_text('#it-7'),'studi sottopotenti marcati "Studio muto"')
-    chk(pg.evaluate("()=>Object.keys(MUTE).length")>=7,'7 studi valutati per potenza')
+    N=numeri(pg); SOCN=con_socv(pg)
+    A1=N[0]; A2=(SOCN[0] if SOCN else N[0]); A3=(N[2] if len(N)>2 else N[-1])
+    pg.click(f'#it-{A3} .row'); pg.wait_for_timeout(250)
+    MU=pg.evaluate("() => ARTICLES.map(function(a){return a.n}).filter(function(n){return MUTE[n]})")
+    if MU:
+        pg.evaluate('n => { var e=document.getElementById("it-"+n); if(e) e.classList.add("open") }', MU[0])
+        pg.wait_for_timeout(250)
+        chk('Studio muto' in pg.inner_text(f'#it-{MU[0]}'),f'studi sottopotenti marcati "Studio muto" ({len(MU)} oggi)')
+    else:
+        salta('studi muti','nessuno studio sottopotente oggi')
+        chk(pg.evaluate("typeof muteHTML==='function'"),'la marcatura degli studi muti c\'è comunque')
+    # la potenza va VALUTATA su ogni scheda; quante risultino mute dipende dal giorno.
+    # Ciò che si verifica è che ogni marcatura punti a una scheda reale e spieghi il perché.
+    difettosi=pg.evaluate("""() => Object.keys(MUTE).filter(function(n){
+      return !A[n] || !MUTE[n] || String(MUTE[n]).length < 15; })""")
+    chk(not difettosi, f'{len(MU)} studi marcati muti, ognuno con la motivazione'+(f' — difettosi: {difettosi}' if difettosi else ''))
     # numeri
-    pg.click('#it-2 .row'); pg.wait_for_timeout(200)
-    chk('non riportat' in pg.inner_text('#it-2').lower(),'assenza dei numeri dichiarata esplicitamente')
+    pg.click(f'#it-{A2} .row'); pg.wait_for_timeout(200)
+    # ogni scheda deve avere un numero con incertezza OPPURE dichiarare che manca
+    senzaNum=pg.evaluate("""() => ARTICLES.filter(function(a){
+      var r=(a.results||'');
+      var haNum=/\\d/.test(r) && /(p\\s*[=<>]|IC|CI|IQR|DS|SD|±|%)/i.test(r);
+      var dichiara=/non riportat/i.test(r);
+      return !haNum && !dichiara;}).map(function(a){return a.n})""")
+    chk(not senzaNum, f'ogni scheda ha un numero con incertezza o dichiara che manca'+(f' — mancano: {senzaNum}' if senzaNum else ''))
     print("\n=== QUALITÀ: DIFETTI ===")
     n=pg.evaluate("()=>document.querySelectorAll('[aria-label]').length")
     chk(n>=10, f'etichette di accessibilità presenti ({n})')
     # adatta reale
-    pg.click('#it-2 .ib.soc'); pg.wait_for_timeout(350)
+    pg.click(f'#it-{A2} .ib.soc'); pg.wait_for_timeout(350)
     pg.click('#editbtn'); pg.wait_for_timeout(250)
     chk(pg.is_visible('#editarea'),'"Adatta" apre un campo modificabile vero')
     pg.fill('#editarea','TESTO MIO DI PROVA'); pg.click('#editbtn'); pg.wait_for_timeout(300)
@@ -42,11 +66,23 @@ with sync_playwright() as p:
     pg.click('.sheet .close'); pg.wait_for_timeout(200)
     print("\n=== NON-REGRESSIONE ===")
     chk('Aggiornato oggi' in pg.inner_text('#freshbox'),'banner freschezza')
-    chk('VS' in pg.inner_text('#duelbox'),'barra duello')
-    chk('mettono in discussione' in pg.inner_text('#verdict'),'verdetto con i titoli')
-    pg.click('.vitem'); pg.wait_for_timeout(300)
-    chk(pg.is_visible('#it-1 .det'),'titolo del verdetto apre la scheda')
-    pg.click('#it-3 .ib.save'); pg.wait_for_timeout(200)
+    if pg.evaluate('typeof duelliVivi==="function" && duelliVivi().length>0'):
+        chk('VS' in pg.inner_text('#duelbox'),'barra duello')
+    else:
+        salta('duello','nessun confronto fra lavori oggi')
+        chk(pg.evaluate("typeof openDuel==='function'"),'la vista duello c\'è comunque')
+    # due stati legittimi: ci sono lavori che lo mettono in discussione, oppure no
+    ar=pg.evaluate("() => ARTICLES.filter(function(a){return a.sec=='res'&&a.dot=='orange'}).length")
+    v=pg.inner_text('#verdict')
+    if ar:
+        chk('mette in discussione' in v or 'mettono in discussione' in v, f'verdetto: {ar} lavori in discussione, con i titoli')
+        chk(pg.locator('.vitem').count()==ar, 'un titolo tappabile per ogni lavoro in discussione')
+        pg.click('.vitem'); pg.wait_for_timeout(300)
+        apr=pg.evaluate("() => { var o=document.querySelector('.item.open'); return o?o.id:null }")
+        chk(bool(apr),'titolo del verdetto apre la scheda'+(f' ({apr})' if apr else ''))
+    else:
+        chk('niente mette in discussione' in v.lower(), 'verdetto: giornata senza contraddizioni, dichiarata')
+    pg.click(f'#it-{A1} .ib.save'); pg.wait_for_timeout(200)
     chk(pg.eval_on_selector('#savedCount','e=>e.textContent')!='0','salvataggio funziona')
     chk(pg.evaluate("()=>document.querySelectorAll('.conf').length")>0,'barre di confidenza')
     chk('min' in pg.inner_text('#researchList'),'tempo di lettura')
@@ -58,11 +94,18 @@ with sync_playwright() as p:
     print("\n=== MODALITÀ SCURA ===")
     pg2=b.new_page(viewport={'width':390,'height':844},is_mobile=True,color_scheme='dark',device_scale_factor=2)
     pg2.goto(_U); pg2.wait_for_timeout(600)
-    c=pg2.evaluate("""()=>{const v=document.querySelector('.vitem');const t=document.querySelector('.titem');
-      return {vitemBg:getComputedStyle(v).backgroundColor,vitemColor:getComputedStyle(v).color,tensBg:getComputedStyle(t).backgroundColor};}""")
+    # gli elementi da controllare esistono solo se quel giorno c'è il relativo contenuto
+    c=pg2.evaluate("""() => { function st(sel,prop){var e=document.querySelector(sel);
+        return e?getComputedStyle(e)[prop]:null; }
+      return {vitemBg:st('.vitem','backgroundColor'), tensBg:st('.titem','backgroundColor'),
+              cardBg:st('.card','backgroundColor'), testo:st('body','color')};}""")
     print("  ",c)
-    chk('255, 255, 255, 0.1' in c['vitemBg'], 'titoli del verdetto su fondo scuro corretto')
-    chk('28, 28, 30' in c['tensBg'], 'sezione tensioni con fondo scuro')
+    if c['vitemBg']: chk('255, 255, 255, 0.1' in c['vitemBg'], 'titoli del verdetto su fondo scuro corretto')
+    else: salta('titoli del verdetto in scuro','oggi nessun lavoro in discussione')
+    if c['tensBg']: chk('28, 28, 30' in c['tensBg'], 'sezione tensioni con fondo scuro')
+    else: salta('tensioni in scuro','oggi nessuna tensione aperta')
+    chk(c['cardBg'] is not None and '28, 28, 30' in c['cardBg'], 'schede con fondo scuro')
+    chk(c['testo'] is not None and '245, 245, 247' in c['testo'], 'testo chiaro su fondo scuro')
     pg2.screenshot(path='/tmp/dark2.png'); pg2.close()
     b.close()
 print(f"\n===== PASSATI {ok} · FALLITI {bad} =====")

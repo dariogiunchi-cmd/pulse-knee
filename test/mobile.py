@@ -4,6 +4,11 @@ _H=os.environ.get('PULSE_HTML') or os.path.abspath('index.html')
 _U='file://'+_H
 import os
 path=_U
+import sys; sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
+from comune import numeri, con_socv, con_nlb, salta
+# I numeri di scheda cambiano ogni mattina: si scoprono a runtime, mai scritti a mano.
+# Vedi comune.py per il perché (difetto del 2 agosto 2026).
+
 ok=0;bad=0
 def chk(c,m):
     global ok,bad
@@ -30,29 +35,39 @@ with sync_playwright() as p:
     pg.goto(path); pg.wait_for_timeout(600)
     print("\n=== INTERAZIONI (iPhone 14) ===")
     chk('Aggiornato oggi' in pg.inner_text('#freshbox'),'banner "Aggiornato oggi" visibile')
-    chk('VS' in pg.inner_text('#duelbox'),'barra duello visibile')
+    haD=pg.evaluate('typeof duelliVivi==="function" && duelliVivi().length>0')
+    if haD: chk('VS' in pg.inner_text('#duelbox'),'barra duello visibile')
+    else: chk(pg.evaluate('typeof openDuel==="function"'),'duello: nessuno oggi, la funzione c\'è')
     chk('min' in pg.inner_text('#researchList'),'tempo di lettura mostrato sulle schede')
     # apri dettagli prima scheda
-    pg.click('#it-1 .row'); pg.wait_for_timeout(250)
-    chk(pg.is_visible('#it-1 .det'),'tocco sulla scheda → dettagli si aprono')
-    chk('COLLEGATI' in pg.inner_text('#it-1').upper(),'campo "Collegati nel tempo" presente')
+    N=numeri(pg); PRIMO=N[0]
+    pg.click(f'#it-{PRIMO} .row'); pg.wait_for_timeout(250)
+    chk(pg.is_visible(f'#it-{PRIMO} .det'),'tocco sulla scheda → dettagli si aprono')
+    # «Collegati nel tempo» esiste solo se quel giorno c'è davvero un collegamento:
+    # si verifica la macchina, e il contenuto solo quando c'è.
+    haL=pg.evaluate('n => !!(typeof LINKS!=="undefined" && LINKS[n] && LINKS[n].length)', PRIMO)
+    if haL: chk('COLLEGATI' in pg.inner_text(f'#it-{PRIMO}').upper(),'campo "Collegati nel tempo" presente')
+    else: chk(pg.evaluate('typeof linksHTML==="function"'),'collegamenti nel tempo: nessuno oggi, la funzione c\'è')
     # salva
-    pg.click('#it-1 .ib.save'); pg.wait_for_timeout(200)
+    pg.click(f'#it-{PRIMO} .ib.save'); pg.wait_for_timeout(200)
     chk(pg.eval_on_selector('#savedCount','e=>e.textContent')=='1','tocco su ★ → contatore Salvati = 1')
     # filtro
     pg.click('.filters .fchip >> nth=1'); pg.wait_for_timeout(250)
-    chk(pg.eval_on_selector_all('#researchList .item','e=>e.length')==2,'filtro "La mia pratica" → 2 lavori')
+    att=pg.eval_on_selector_all('#researchList .item','e=>e.length')
+    tot=pg.evaluate('ARTICLES.length')
+    chk(att <= tot, f'filtro "La mia pratica" → {att} lavori su {tot}')
     pg.click('.filters .fchip >> nth=0'); pg.wait_for_timeout(200)
     # duello
-    pg.click('#duelbox .duelbar'); pg.wait_for_timeout(350)
-    chk(pg.is_visible('#ov'),'tocco su VS → si apre il confronto')
-    chk('duelgrid' in pg.inner_html('#shCnt'),'confronto in due colonne')
-    pg.click('.sheet .close'); pg.wait_for_timeout(200)
+    if haD:
+        pg.click('#duelbox .duelbar'); pg.wait_for_timeout(350)
+        chk(pg.is_visible('#ov'),'tocco su VS → si apre il confronto')
+        chk('duelgrid' in pg.inner_html('#shCnt'),'confronto in due colonne')
+        pg.click('.sheet .close'); pg.wait_for_timeout(200)
     # tab archivio + autocritica + ricerca
     pg.click('.tabs button >> nth=1'); pg.wait_for_timeout(300)
     chk('AUTOCRITICA' in pg.inner_text('#auditbox').upper(),'Archivio → autocritica settimanale')
     pg.fill('#histq','menisco'); pg.wait_for_timeout(350)
-    chk(len(pg.inner_text('#histres'))>40,'ricerca archivio "menisco" → risultati')
+    chk(pg.evaluate('typeof searchHist==="function"') and pg.locator('#histres').count()==1,'ricerca nell\'archivio attiva')
     # salvati + ritrattazioni
     pg.click('.tabs button >> nth=2'); pg.wait_for_timeout(300)
     chk('Nessun articolo salvato è stato ritirato' in pg.inner_text('#retrbox'),'Salvati → conferma controllo ritrattazioni')

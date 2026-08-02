@@ -3,6 +3,8 @@ from playwright.sync_api import sync_playwright
 import os
 _H=os.environ.get('PULSE_HTML') or os.path.abspath('index.html')
 _U='file://'+_H
+import sys as _sy; _sy.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
+from comune import con_nlb, numeri, salta
 
 PATH = _U
 fails = []
@@ -24,6 +26,14 @@ with sync_playwright() as p:
             pg.wait_for_timeout(400)
 
             tag = f"[{theme}/{w}] "
+            SCELTI = con_nlb(pg, 4)
+            TUTTI = numeri(pg)
+            ALTRO = next((x for x in TUTTI if x not in SCELTI), None)
+            if not SCELTI:
+                salta("newsletter", "nessun lavoro con i testi pronti oggi")
+                chk(tag+"la macchina della newsletter c'è comunque",
+                    pg.evaluate("typeof nlText==='function' && typeof pickWeek==='function'"))
+                ctx.close(); continue
 
             if theme == "light" and w == 390:
                 # --- 1. Video button exists on every card
@@ -43,38 +53,41 @@ with sync_playwright() as p:
                 chk(tag+"testo vuoto istruttivo", "📹 Video" in out0 and "blog" in out0, out0[:80])
                 chk(tag+"contatore 0 di 4", pg.inner_text("#nlcount") == "0 di 4", pg.inner_text("#nlcount"))
 
-                # --- 4. pick 4 articles (2,1,4,5 which have NLB)
+                # --- 4. sceglie i lavori del giorno che hanno i testi (i numeri cambiano ogni mattina)
                 pg.click("button:has-text('📄 Oggi')")
                 pg.wait_for_timeout(150)
-                for n in [2, 1, 4, 5]:
+                for n in SCELTI:
                     pg.evaluate(f"pickWeek(null,{n})")
                 pg.wait_for_timeout(200)
                 w4 = pg.evaluate("(S.weekly||[]).map(function(x){return x.n})")
-                chk(tag+"4 lavori scelti", w4 == [2, 1, 4, 5], w4)
+                chk(tag+f"{len(SCELTI)} lavori scelti", w4 == SCELTI, (w4, SCELTI))
 
-                # --- 5. 5th is refused
-                pg.evaluate("pickWeek(null,6)")
-                cnt5 = pg.evaluate("(S.weekly||[]).length")
-                chk(tag+"il quinto viene rifiutato", cnt5 == 4, cnt5)
+                # --- 5. oltre il quarto viene rifiutato (solo se oggi ce n'è un quinto)
+                if len(SCELTI) == 4 and ALTRO is not None:
+                    pg.evaluate(f"pickWeek(null,{ALTRO})")
+                    cnt5 = pg.evaluate("(S.weekly||[]).length")
+                    chk(tag+"il quinto viene rifiutato", cnt5 == 4, cnt5)
+                else:
+                    salta("limite di quattro", "oggi non ci sono abbastanza lavori per provarlo")
 
                 # --- 6. video buttons turn on
                 on = pg.locator('.ib.vid.on').count()
-                chk(tag+"4 pulsanti Video accesi", on == 4, on)
+                chk(tag+f"{len(SCELTI)} pulsanti Video accesi", on == len(SCELTI), on)
 
                 # --- 7. newsletter view filled
                 pg.click("button:has-text('✉️ Newsletter')")
                 pg.wait_for_timeout(200)
-                chk(tag+"4 slot pieni", pg.locator("#nlslots .nlnum.full").count() == 4)
-                chk(tag+"contatore 4 di 4", pg.inner_text("#nlcount") == "4 di 4")
-                chk(tag+"4 campi link video", pg.locator("#nlslots .nlvid").count() == 4)
+                chk(tag+f"{len(SCELTI)} slot pieni", pg.locator("#nlslots .nlnum.full").count() == len(SCELTI))
+                chk(tag+f"contatore {len(SCELTI)} di 4", pg.inner_text("#nlcount") == f"{len(SCELTI)} di 4")
+                chk(tag+"un campo link video per slot", pg.locator("#nlslots .nlvid").count() == len(SCELTI))
 
                 # --- 8. output structure
                 t = pg.inner_text("#nlout")
                 chk(tag+"OGGETTO presente", t.startswith("OGGETTO: "), t[:40])
                 chk(tag+"ANTEPRIMA presente", "ANTEPRIMA: " in t)
-                chk(tag+"4 punti numerati", all((f"\n{i}. " in t or t.startswith(f"{i}. ")) for i in [1,2,3,4]))
+                chk(tag+f"{len(SCELTI)} punti numerati", all((f"\n{i}. " in t or t.startswith(f"{i}. ")) for i in range(1, len(SCELTI)+1)))
                 pmids = re.findall(r"pubmed\.ncbi\.nlm\.nih\.gov/(\d+)/", t)
-                chk(tag+"4 link PubMed", len(pmids) == 4, pmids)
+                chk(tag+f"{len(SCELTI)} link PubMed", len(pmids) == len(SCELTI), pmids)
                 real = pg.evaluate("(S.weekly||[]).map(function(x){return A[x.n].pmid})")
                 chk(tag+"PMID corrispondono agli articoli", pmids == real, (pmids, real))
                 chk(tag+"nessun ** markdown", "**" not in t)
@@ -103,21 +116,22 @@ with sync_playwright() as p:
                 # --- 11. persistence across reload
                 pg.reload(); pg.wait_for_timeout(400)
                 pg.click("button:has-text('✉️ Newsletter')"); pg.wait_for_timeout(200)
-                chk(tag+"stato salvato dopo ricarica", pg.locator("#nlslots .nlnum.full").count() == 4)
+                chk(tag+"stato salvato dopo ricarica", pg.locator("#nlslots .nlnum.full").count() == len(SCELTI))
                 chk(tag+"link video salvato", "TEST123" in pg.inner_text("#nlout"))
 
                 # --- 12. remove one
                 pg.locator("#nlslots .nlrm").first.click()
                 pg.wait_for_timeout(250)
-                chk(tag+"rimozione funziona", pg.evaluate("(S.weekly||[]).length") == 3)
-                chk(tag+"contatore aggiornato", pg.inner_text("#nlcount") == "3 di 4")
-                chk(tag+"testo aggiornato a 3", "3 novità" in pg.inner_text("#nlout"))
-                # restore to 4 for layout tests
-                pg.evaluate("pickWeek(null,2)")
+                resta = len(SCELTI) - 1
+                chk(tag+"rimozione funziona", pg.evaluate("(S.weekly||[]).length") == resta)
+                chk(tag+f"contatore aggiornato a {resta}", pg.inner_text("#nlcount") == f"{resta} di 4")
+                if resta:
+                    chk(tag+f"testo aggiornato a {resta}", f"{resta} novità" in pg.inner_text("#nlout"))
+                pg.evaluate(f"pickWeek(null,{SCELTI[0]})")
                 pg.wait_for_timeout(150)
             else:
                 # seed state for layout checks
-                pg.evaluate("S.weekly=[{n:2,d:'x',v:'https://youtu.be/abc'},{n:1,d:'x',v:''},{n:4,d:'x',v:''},{n:5,d:'x',v:''}];save();render();")
+                pg.evaluate("ns => { S.weekly=[]; ns.forEach(function(n){ pickWeek(null,n) }); if(S.weekly[0]) S.weekly[0].v='https://youtu.be/abc'; save(); render(); }", SCELTI)
                 pg.wait_for_timeout(200)
 
             # --- layout: nothing overflows on the newsletter view

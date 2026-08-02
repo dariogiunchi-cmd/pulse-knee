@@ -19,6 +19,8 @@ with sync_playwright() as p:
     chk("nuovo: 21 opinion leader", len(st["k"])==21, len(st["k"]))
     chk("nuovo: 14 società", len(st["s"])==14, len(st["s"]))
     chk("nuovo: 8 aziende", len(st["c"])==8, st["c"])
+    chk("nessun doppione nelle liste iniziali",
+        all(len(x)==len(set(x)) for x in [st["j"],st["k"],st["s"],st["c"]]))
     for nome in ["ESSKA","SFA","SOFCOT","AGA","BASK","SIAGASCOT","swiss orthopaedics","FMH","AOSSM","AAOS","APKASS (Asia)"]:
         chk("società "+nome, nome in st["s"])
     for nome in ["Marcheggiani Muccioli","Grassi","Bonanzinga","Kon","Marcacci","Bait","Andriolo","Petersen","Zantop","Andy Williams (Fortius)","Helito","Franciozi","Musahl (Pittsburgh)","LaPrade","Rodeo","Mayo Clinic","Della Villa (Isokinetic)","D'Ambrosi"]:
@@ -37,11 +39,12 @@ with sync_playwright() as p:
     ctx2=b.new_context(viewport={"width":390,"height":900}); pg2=ctx2.new_page()
     errs2=[]; pg2.on("pageerror",lambda e:errs2.append(str(e)))
     pg2.goto(U); pg2.wait_for_timeout(300)
+    PRIMO = pg2.evaluate("ARTICLES[0].n")   # i numeri cambiano ogni mattina
     vecchio={"saved":[2,4],"votes":{"1":1},"seen":[1,2],
              "journals":["AJSM","KSSTA","Rivista sua"],
              "kols":["D'Ambrosi","Un suo nome"],
              "societies":["ESSKA","Una sua società"],
-             "weekly":[{"n":2,"d":"2026-08-02","v":"https://youtu.be/x","a":{"h":"T","j":"J","date":"d","pmid":"1","v":"v"},"b":{"prof":["a","b","c"],"paz":["a","b","c"]}}],
+             "weekly":[{"n":PRIMO,"d":"2026-08-02","v":"https://youtu.be/x","a":{"h":"T","j":"J","date":"d","pmid":"1","v":"v"},"b":{"prof":["a","b","c"],"paz":["a","b","c"]}}],
              "winLit":45,"suggIdx":3}
     pg2.evaluate("v => localStorage.setItem('pulse4', JSON.stringify(v))", vecchio)
     pg2.reload(); pg2.wait_for_timeout(500)

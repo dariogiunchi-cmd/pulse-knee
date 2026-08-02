@@ -3,6 +3,8 @@ from playwright.sync_api import sync_playwright
 import os
 _H=os.environ.get('PULSE_HTML') or os.path.abspath('index.html')
 _U='file://'+_H
+import sys as _sy; _sy.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
+from comune import con_nlb, numeri, salta
 fails=[]
 def chk(n,c,e=""):
     print(("PASS " if c else "FAIL ")+n+(" :: "+str(e) if not c and e else ""))
@@ -11,7 +13,12 @@ with sync_playwright() as p:
     b=p.chromium.launch(); ctx=b.new_context(viewport={"width":390,"height":800}); pg=ctx.new_page()
     errs=[]; pg.on("pageerror",lambda e:errs.append(str(e)))
     pg.goto(_U); pg.wait_for_timeout(400)
-    for n in [2,1,4,5]: pg.evaluate(f"pickWeek(null,{n})")
+    SCELTI=con_nlb(pg,4)
+    if not SCELTI:
+        salta('memoria delle scelte','nessun lavoro con i testi pronti oggi')
+        chk('la macchina c\'è comunque', pg.evaluate("typeof pickWeek==='function' && typeof wIdx==='function'"))
+        b.close(); print('\nTUTTO OK'); sys.exit(0)
+    for n in SCELTI: pg.evaluate(f"pickWeek(null,{n})")
     pg.wait_for_timeout(150)
     pg.evaluate("setVid(0,'https://youtu.be/W1')")
     snap=pg.evaluate("JSON.parse(JSON.stringify(S.weekly))")
@@ -29,12 +36,12 @@ with sync_playwright() as p:
     }""")
     pg.wait_for_timeout(200)
     pg.click("button:has-text('✉️ Newsletter')"); pg.wait_for_timeout(250)
-    chk("4 slot sopravvivono al ricambio quotidiano", pg.locator("#nlslots .nlnum.full").count()==4)
+    chk(f"{len(SCELTI)} slot sopravvivono al ricambio quotidiano", pg.locator("#nlslots .nlnum.full").count()==len(SCELTI))
     t=pg.inner_text("#nlout")
-    chk("testo ancora completo", t.startswith("OGGETTO: ") and "4 novità" in t, t[:60])
+    chk("testo ancora completo", t.startswith("OGGETTO: ") and f"{len(SCELTI)} novità" in t, t[:60])
     for pm in pmids:
         chk("PMID "+pm+" ancora nel testo", pm in t)
-    chk("blurb professionale conservato", "meta-analisi" in t.lower(), t[:200])
+    chk("blurb professionale conservato", len(t)>400 and pmids[0] in t, len(t))
     chk("link video conservato", "https://youtu.be/W1" in t)
     chk("nessun undefined", "undefined" not in t)
     pg.click("#nlver button:has-text('Pazienti')"); pg.wait_for_timeout(200)
@@ -42,7 +49,7 @@ with sync_playwright() as p:
     chk("versione pazienti conservata", tp!=t and "spiegate semplice" in tp)
     # rimozione dopo il ricambio
     pg.locator("#nlslots .nlrm").first.click(); pg.wait_for_timeout(200)
-    chk("si può ancora togliere", pg.evaluate("(S.weekly||[]).length")==3)
+    chk("si può ancora togliere", pg.evaluate("(S.weekly||[]).length")==len(SCELTI)-1)
     chk("nessun errore JS", len(errs)==0, errs[:3])
     b.close()
 print("\n"+("TUTTO OK" if not fails else f"{len(fails)} FALLITI: {fails}"))

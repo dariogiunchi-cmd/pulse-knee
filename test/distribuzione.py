@@ -4,6 +4,8 @@ from playwright.sync_api import sync_playwright
 import os
 _H=os.environ.get('PULSE_HTML') or os.path.abspath('index.html')
 _U='file://'+_H
+import sys as _sy; _sy.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
+from comune import con_nlb, numeri, salta
 PATH=_U
 fails=[]
 def chk(n,c,e=""):
@@ -19,7 +21,12 @@ with sync_playwright() as p:
         pg.on("console",lambda m:errs.append(m.text) if m.type=="error" else None)
         pg.goto(PATH); pg.wait_for_timeout(400)
         tag=f"[{theme}/{w}] "
-        for n in [2,1,4,5]: pg.evaluate(f"pickWeek(null,{n})")
+        SCELTI=con_nlb(pg,4)
+        if not SCELTI:
+            salta("blog e Google","nessun lavoro con i testi pronti oggi")
+            chk(tag+"la macchina c'è comunque", pg.evaluate("typeof blogText==='function' && typeof gbpText==='function'"))
+            ctx.close(); continue
+        for n in SCELTI: pg.evaluate(f"pickWeek(null,{n})")
         pg.wait_for_timeout(200)
         pg.click("button:has-text('✉️ Newsletter'), button:has-text('Newsletter')")
         pg.wait_for_timeout(250)
@@ -32,16 +39,24 @@ with sync_playwright() as p:
             chk(tag+"email: versione visibile", pg.locator("#nlver").is_visible())
             chk(tag+"email: campo url nascosto", not pg.locator("#gbpurlbox").is_visible())
             # BLOG
+            # TRE registri, non due
+            chk(tag+"tre versioni disponibili", pg.locator("#nlver button").count()==3, pg.locator("#nlver button").count())
+            pg.click("#nlver button:has-text('Misto')"); pg.wait_for_timeout(250)
+            mx=pg.inner_text("#nlout")
+            chk(tag+"email: versione mista distinta", mx.startswith("OGGETTO: ") and "in chiaro" in mx, mx[:70])
+            chk(tag+"misto: né gergo da collega né tono da paziente", "Gentili colleghe" not in mx and "spiegate semplice" not in mx)
+            chk(tag+"misto: il limite resta dichiarato", any(k in mx.lower() for k in ["limite","osservazional","campione","non dimostra","sottopotent","piccol"]), mx[:200])
+            pg.click("#nlver button:has-text('Professionisti')"); pg.wait_for_timeout(200)
             pg.click("#nldest button:has-text('Blog')"); pg.wait_for_timeout(250)
             bl=pg.inner_text("#nlout")
             for k in ["TITOLO DELLA PAGINA","DESCRIZIONE PER GOOGLE","INDIRIZZO DELLA PAGINA","PAROLE CHIAVE","INCOLLA NEL BLOG","## In breve"]:
                 chk(tag+"blog: "+k, k in bl)
-            chk(tag+"blog: 4 sottotitoli ##", bl.count("\n## ")>=5, bl.count("\n## "))
-            chk(tag+"blog: 4 fonti PubMed", len(re.findall(r"pubmed\.ncbi\.nlm\.nih\.gov/\d+/",bl))==4)
+            chk(tag+"blog: un sottotitolo per lavoro + «In breve»", bl.count("\n## ")>=len(SCELTI)+1, bl.count("\n## "))
+            chk(tag+f"blog: {len(SCELTI)} fonti PubMed", len(re.findall(r"pubmed\.ncbi\.nlm\.nih\.gov/\d+/",bl))==len(SCELTI))
             chk(tag+"blog: slug pulito", re.search(r"\n([a-z0-9-]+)\n\nPAROLE",bl) is not None, bl[:400])
             slug=re.search(r"\n([a-z0-9-]+)\n\nPAROLE",bl).group(1)
             chk(tag+"blog: slug senza accenti/spazi", re.fullmatch(r"[a-z0-9-]+",slug) is not None, slug)
-            chk(tag+"blog: parole chiave presenti", "crociato" in bl.split("PAROLE CHIAVE")[1][:300])
+            chk(tag+"blog: parole chiave presenti", len(bl.split("PAROLE CHIAVE")[1].split("\n")[1].strip())>10)
             chk(tag+"blog: disclaimer", "non sostituisce una valutazione clinica" in bl)
             chk(tag+"blog: firma FMH", "specialista FMH" in bl)
             chk(tag+"blog: niente **", "**" not in bl)
@@ -64,7 +79,7 @@ with sync_playwright() as p:
             chk(tag+"google: <=1500 caratteri", len(g)<=1500, len(g))
             chk(tag+"google: contatore mostrato", "/ 1500 caratteri" in pg.inner_text("#nlmeta"), pg.inner_text("#nlmeta"))
             chk(tag+"google: contatore verde", pg.locator("#nlmeta .okc").count()==1)
-            chk(tag+"google: 4 righe elenco", g.count("\n• ")==4, g.count("\n• "))
+            chk(tag+f"google: {len(SCELTI)} righe elenco", g.count("\n• ")==len(SCELTI), g.count("\n• "))
             chk(tag+"google: url del blog", "dariogiunchi.ch/blog" in g)
             chk(tag+"google: senso nei primi 100", "ginocchio" in g[:100], g[:100])
             chk(tag+"google: niente **", "**" not in g)
@@ -85,7 +100,7 @@ with sync_playwright() as p:
             chk(tag+"google: campo ripopolato", pg.input_value("#gbpurl").endswith("ginocchio-agosto"))
             # limite duro: testi lunghissimi
             over=pg.evaluate("""() => {
-              (S.weekly||[]).forEach(function(w,i){ w.b={prof:['P'.repeat(400),'x','y'],paz:['Z'.repeat(400),'x','y']} });
+              (S.weekly||[]).forEach(function(w){ w.b={prof:['P'.repeat(400),'x','y'],paz:['Z'.repeat(400),'x','y']} });
               nlDest='gbp'; var t=gbpText(); return {len:t.length, tail:t.slice(-200)};
             }""")
             chk(tag+"google: taglia se supera 1500", over["len"]<=1500, over["len"])
