@@ -8,6 +8,11 @@ Cadenza: `0 5 * * *` (UTC) · Attiva dal 2 agosto 2026
 Se il Progetto o l'attività vanno persi, si ricrea con `create_trigger` usando
 esattamente il testo qui sotto.
 
+> ⚠️ **Regola imparata il 2 agosto:** ogni volta che si aggiunge una condizione al
+> cancello dei test, va aggiunta **anche qui** l'istruzione per soddisfarla. Aggiungere
+> un controllo senza dirlo alla sessione del mattino significa bloccarle la
+> pubblicazione il giorno dopo.
+
 ---
 
 ```
@@ -23,16 +28,19 @@ RECUPERO: 1) PubMed MCP datetype=edat (letteratura 30 gg; revisioni/meta 90; con
 
 CRITERIO PER LE PROPOSTE DI NUOVI NOMI (`SUGGQ`): non la fama, non il paese, ma la CORRISPONDENZA TECNICA con la sua pratica — innesto quadricipitale/retto femorale, LET Lemaire onlay, radice meniscale transtibiale, AMIC/AutoCart, osteotomia e slope, protesi robotica, LCA nell'adolescente, MPFL, multilegamentose. Ogni proposta deve dire QUALE tecnica condivide con lui. Sue parole: «mi interessano chirurghi da ginocchio che fanno quello che faccio io».
 
-VERIFICA CITAZIONI: riapri ogni PMID/DOI con PubMed MCP e conferma titolo/rivista. Se non combacia → NOT VERIFIED o togli. Scrivi «✓ verificate X/Y».
+*** VERIFICA DELLE CITAZIONI — ora è controllata da una suite, non solo dalla tua parola ***
+Riapri OGNI PMID/DOI con PubMed MCP e conferma titolo e rivista. Se non combacia → NOT VERIFIED o togli la scheda.
+Poi imposta nel file `var CIT_VERIFICATE=<numero di citazioni che hai davvero riaperto>;`. Il piè di pagina dell'app costruisce da solo la frase «citazioni verificate X/Y» contando le schede: **non scriverla mai a mano**. Se `CIT_VERIFICATE` supera il numero di schede la pubblicazione si blocca; se è inferiore, l'app avvisa l'utente che non tutte sono state riaperte — il che è onesto, ma va evitato verificandole tutte.
+`test/verita.py` controlla anche: PMID e DOI unici e di forma plausibile, **nessuna progressione aritmetica fra i PMID** (è l'impronta tipica dell'invenzione: i PMID reali della stessa settimana sono vicini ma mai in sequenza), e che `CONF`, `MUTE`, `NLB`, `SOCV`, `LINKS`, `DUELS` non puntino a schede inesistenti.
 
-CONTROLLO RITRATTAZIONI: ricontrolla i PMID di claude/08-archivio.md; se `article_types` contiene «Retracted Publication», «Retraction of Publication» o «Expression of Concern», popola `RETRACTED`. Aggiorna sempre `LAST_RETRACTION_CHECK`.
+CONTROLLO RITRATTAZIONI: ricontrolla i PMID di claude/08-archivio.md; se `article_types` contiene «Retracted Publication», «Retraction of Publication» o «Expression of Concern», popola `RETRACTED`. **`LAST_RETRACTION_CHECK` deve corrispondere alla data di oggi** nella forma «3 agosto 2026»: la suite lo verifica, perché una data vecchia rassicurerebbe l'utente su un controllo che quel giorno non hai fatto.
 
 *** QUALITÀ (claude/11-qualita.md, obbligatorio) ***
 - `CONF` per RUBRICA: alta=meta-analisi di RCT/RCT ampio/registro nazionale; media=SR di osservazionali, coorte prospettica, comparativo con controllo; bassa=narrativa, cadavere, serie di casi, retrospettivo senza confronto, editoriale, preprint.
 - NUMERI: OGNI campo `results` deve avere un risultato quantificato CON la sua incertezza (p, IC, OR/HR/MD, DS/±) OPPURE la frase «Dimensioni dell'effetto e intervalli di confidenza non riportati nell'abstract.» Il test lo verifica scheda per scheda e blocca la pubblicazione.
 - STUDI MUTI: `MUTE={numero:'motivo'}`, con la motivazione per esteso.
 - TENSIONI: `TENSIONS` dalle questioni aperte di 03-memoria.md, quattro campi.
-- AUDIO: `BRIEF_TEXT` derivato dalle schede. LINGUA italiana. NIENTE SEGNAPOSTO.
+- AUDIO: `BRIEF_TEXT` derivato dalle schede. LINGUA italiana. NIENTE SEGNAPOSTO (né «prototipo», né «nel deploy», né promesse di cose che l'app non fa).
 
 *** CONTENUTI: TRE REGISTRI E DURATE VERE ***
 `NLB` per OGNI lavoro, in TRE registri: `{prof:[titolo,corpo,nota critica], mix:[titolo,corpo,nota sul limite], paz:[titolo,corpo,nota rassicurante], kw:'3-4 parole chiave'}`. Il registro MISTO deve essere capito da chiunque — medico curante, fisioterapista e paziente — senza sigle non sciolte ma SENZA togliere i numeri: il limite si scrive per esteso invece che con l'etichetta metodologica. Il primo blocco è il titolo, max ~95 caratteri, senza punto finale.
@@ -45,20 +53,21 @@ COSTRUZIONE — clona il repository, non ricostruire da zero:
 git clone https://dariogiunchi-cmd:<TOKEN>@github.com/dariogiunchi-cmd/pulse-knee.git /home/claude/deploy
 ```
 Dentro trovi index.html, `test/` (le suite) e `cervello/` (copia dei documenti). Lavora su /home/claude/deploy/index.html.
-Aggiorna: `BUILD_DATE`, `ARTICLES`, `CONF`, `MUTE`, `TENSIONS`, `LINKS`, `DUELS`, `HISTORY`, `AUDIT`, `RETRACTED`, `LAST_RETRACTION_CHECK`, `BRIEF_TEXT`, `NLB`, `SOCV`, `TAGS`, `SOC`, `SUGGQ`, `VERDICT`.
+Aggiorna: `BUILD_DATE`, `ARTICLES`, `CIT_VERIFICATE`, `CONF`, `MUTE`, `TENSIONS`, `LINKS`, `DUELS`, `HISTORY`, `AUDIT`, `RETRACTED`, `LAST_RETRACTION_CHECK`, `BRIEF_TEXT`, `NLB`, `SOCV`, `TAGS`, `SOC`, `SUGGQ`, `VERDICT`.
 NON toccare: la chiave localStorage `pulse4`, `S.weekly` (lavori scelti), `S.savedItems` (salvati), `PREFV`/`PREF_*` (se aggiungi voci alle sue liste alza `PREFV` di 1). `LINKS` e `DUELS` devono puntare SOLO a schede presenti oggi.
 
 *** PUBBLICAZIONE — un solo comando ***
 ```
 PULSE_TOKEN=<token da claude/10-deploy.md> bash test/pubblica.sh "<AAAA-MM-GG>" "PULSE <data>"
 ```
-Fa tutto: oltre 400 controlli → clone → istantanea datata → push → riscarica dallo SHA e riverifica.
+Fa tutto: oltre 460 controlli → clone → istantanea datata → push firmato → riscarica dallo SHA e riverifica.
 **Se la verifica fallisce NON pubblica**: leggi che cosa segnala, correggi, rilancia. Non aggirarla mai con un push a mano. Non scrivere mai il token nei messaggi.
-Le suite collaudano la MACCHINA, non il carico del giorno: se una fallisce, quasi sempre il difetto è nei tuoi contenuti (un numero senza incertezza, un DUELS che punta a una scheda inesistente, una parola pubblicitaria), non nel test. Se invece hai cambiato di proposito qualcosa che un test controlla, aggiorna il TEST insieme al codice — mai disattivarlo. Non reintrodurre MAI nei test numeri di scheda scritti a mano o conteggi assoluti.
+Se il messaggio dice che MANCANO DEGLI STRUMENTI (Playwright, Chromium, node), non è l'app a essere rotta: installali e rilancia, non modificare index.html per far passare i test.
+Le suite collaudano la MACCHINA, non il carico del giorno: se una fallisce, quasi sempre il difetto è nei tuoi contenuti (un numero senza incertezza, un DUELS che punta a una scheda inesistente, una parola pubblicitaria, `CIT_VERIFICATE` o `LAST_RETRACTION_CHECK` non aggiornati), non nel test. Se invece hai cambiato di proposito qualcosa che un test controlla, aggiorna il TEST insieme al codice — mai disattivarlo, e collaudalo rompendo davvero ciò che deve proteggere. Non reintrodurre MAI nei test numeri di scheda scritti a mano o conteggi assoluti.
 
 CERVELLO: dopo aver aggiornato i documenti del Progetto, riscrivi le copie in `/home/claude/deploy/cervello/` (`claude/` diventa `claude__`) e lancia `python3 test/cervello.py cervello`.
 
 AGGIORNA claude/09-storico.md con l'entrata di oggi (data, conteggi, PICK, elenco compatto con PMID/DOI), anche se «nessuna novità». Se hai modificato una tensione, aggiorna 03-memoria.md.
 
-MESSAGGIO IN CHAT (breve, legge da iPhone): una riga di sintesi + il link + le 3-4 schede principali con link PubMed + se una tensione si è mossa, una riga. NON proporre di pubblicare sui social, NON chiedere dati di esito, NON sollecitare la newsletter né il consenso (ci pensa lui). Se una categoria è vuota, dillo. Meglio corto e vero che lungo e gonfiato.
+MESSAGGIO IN CHAT (breve, legge da iPhone): una riga di sintesi + il link + le 3-4 schede principali con link PubMed + se una tensione si è mossa, una riga. Se qualcosa non ha funzionato, dillo in una riga invece di tacere: è la prima settimana di funzionamento non sorvegliato. NON proporre di pubblicare sui social, NON chiedere dati di esito, NON sollecitare la newsletter né il consenso (ci pensa lui). Se una categoria è vuota, dillo. Meglio corto e vero che lungo e gonfiato.
 ```
