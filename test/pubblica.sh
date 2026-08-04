@@ -50,6 +50,54 @@ git config user.name "Claude"
 PRIMA="$(git rev-parse HEAD)"
 echo "   versione online prima di ora: ${PRIMA:0:7}"
 
+# ------------------------------------------------- 2b. il fermo contro la sovrascrittura
+# Difetto pagato la sera del 4 agosto 2026, e va capito bene perché è subdolo.
+# Alle 18:51 sono state pubblicate quattro correzioni. Alle 18:53 è partito il briefing,
+# che ha clonato il repository un istante PRIMA che quella pubblicazione fosse visibile.
+# Alle 19:10 il briefing ha pubblicato: il clone di partenza era fresco, il push non è
+# stato forzato, la storia è rimasta lineare — e le quattro correzioni sono sparite lo
+# stesso, perché il passo 3 copia index.html sopra il clone senza chiedersi da quale
+# versione quel file discenda.
+# Nessun allarme è suonato: 464 controlli verdi su un file che aveva appena cancellato
+# il lavoro di mezz'ora prima. Le suite collaudano il contenuto, non la discendenza.
+# Da qui in avanti la discendenza si verifica: se la copia di lavoro nasce da una
+# versione più vecchia di quella online, non si pubblica.
+BASE="$(git -C "$APP" rev-parse HEAD 2>/dev/null || true)"
+if [ -z "$BASE" ]; then
+  echo "   ⚠️  la copia di lavoro non è un repository git: impossibile verificare da quale"
+  echo "       versione discende. Procedo, ma questa è la condizione in cui si sovrascrive."
+elif [ "$BASE" != "$PRIMA" ]; then
+  if git cat-file -e "$BASE^{commit}" 2>/dev/null && git merge-base --is-ancestor "$BASE" "$PRIMA"; then
+    echo
+    echo "⛔ PUBBLICAZIONE ANNULLATA — la tua copia di lavoro è indietro."
+    echo
+    echo "   tu parti da:  ${BASE:0:7}"
+    echo "   online c'è:   ${PRIMA:0:7}"
+    echo
+    echo "   Nel frattempo qualcun altro ha pubblicato:"
+    git log --pretty='     · %h %ad %s' --date=format:'%d/%m %H:%M' "$BASE..$PRIMA" | head -10
+    echo
+    echo "   File toccati da quelle pubblicazioni:"
+    git diff --name-only "$BASE" "$PRIMA" | sed 's/^/     · /' | head -15
+    echo
+    echo "   Pubblicare ora cancellerebbe quel lavoro senza che nessun test se ne accorga."
+    echo "   Fai così, nell'ordine:"
+    echo "     1)  cd $APP && git fetch origin main && git log --oneline HEAD..origin/main"
+    echo "     2)  metti da parte le tue modifiche (git diff > /tmp/mie.patch)"
+    echo "     3)  git reset --hard origin/main"
+    echo "     4)  riapplica le tue modifiche sopra il nuovo stato e rilancia la verifica"
+    echo
+    echo "   Se — e solo se — sei certo che nulla vada perso: PULSE_SOVRASCRIVI=1 davanti al comando."
+    [ "${PULSE_SOVRASCRIVI:-}" = "1" ] || exit 4
+    echo "   ⚠️  PULSE_SOVRASCRIVI=1: proseguo sovrascrivendo. Scelta tua, dichiarata."
+  else
+    echo "   ℹ️  la copia di lavoro ha una storia divergente da quella online (${BASE:0:7} non"
+    echo "       discende da ${PRIMA:0:7}). Non è il caso della sovrascrittura silenziosa; proseguo."
+  fi
+else
+  echo "   ✓ la copia di lavoro discende esattamente da ciò che è online"
+fi
+
 # ---------------------------------------------------------------- 3. file
 echo
 echo "▶ 3/6  copio i file del sito"

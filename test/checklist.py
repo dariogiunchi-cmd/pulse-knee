@@ -111,6 +111,22 @@ trovati_js = sorted({s_ for s_ in SEGNAPOSTO for t_ in _piatte
                      if _re.search(r"\b" + _re.escape(s_) + r"\b", t_, _re.I)})
 chk("nessun segnaposto nei messaggi dell'app", not trovati_js, trovati_js)
 
+# Il fermo contro la sovrascrittura vive in pubblica.sh, non in index.html: se qualcuno
+# lo togliesse, nessuna delle altre suite se ne accorgerebbe — e il modo in cui si perde
+# lavoro è esattamente questo, in silenzio, con tutti i controlli verdi.
+# (Difetto pagato il 4 agosto 2026: un briefing ha cancellato quattro correzioni
+# pubblicate diciannove minuti prima, superando 464 controlli.)
+_pub = os.path.join(D, 'test', 'pubblica.sh')
+if not os.path.exists(_pub):
+    _pub = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'pubblica.sh')
+if os.path.exists(_pub):
+    _p = open(_pub, encoding='utf-8').read()
+    _mk = ['PULSE_SOVRASCRIVI', 'merge-base --is-ancestor', 'PUBBLICAZIONE ANNULLATA']
+    _persi = [m for m in _mk if m not in _p]
+    chk("il fermo contro la sovrascrittura è al suo posto", not _persi, _persi)
+else:
+    chk("il fermo contro la sovrascrittura è al suo posto", False, "pubblica.sh non trovato")
+
 chk("etichette di accessibilità (≥6)", h.count('aria-label') >= 6, h.count('aria-label'))
 
 chk("la chiave della memoria è ancora 'pulse4'", "localStorage.getItem('pulse4')" in h)
