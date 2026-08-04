@@ -342,3 +342,65 @@ intercettati**.
 2 lavori, una sola proposta, due tensioni, nessun duello, nessuno studio muto, nessun
 collegamento. **458 controlli verdi.** È lo scenario magro che avrebbe fatto inciampare
 ognuno dei conteggi scritti a mano.
+
+---
+
+## 13. LA DISCENDENZA — regola nata dalla sera del 4 agosto 2026
+
+**Una pubblicazione deve discendere da ciò che è online.** Non è una raccomandazione: è
+un controllo, e sta in `test/pubblica.sh`.
+
+Che cosa è successo. Alle 18:51 sono state pubblicate quattro correzioni. Alle 18:53 è
+partito il briefing, che ha clonato il repository un istante prima che quella
+pubblicazione fosse visibile. Alle 19:10 il briefing ha pubblicato: clone fresco, push
+non forzato, storia lineare — e le quattro correzioni erano sparite. Il passo che copia
+`index.html` sopra il clone non si chiedeva da quale versione quel file discendesse.
+
+**Nessun allarme è suonato.** 464 controlli verdi su un file che aveva appena cancellato
+il lavoro di diciannove minuti prima. Le suite collaudano il contenuto della giornata,
+non la sua discendenza: è una dimensione che nessuna di esse guardava.
+
+Il fermo confronta lo `HEAD` della copia di lavoro con `origin/main` al momento del
+clone. Se la copia di lavoro è un antenato di ciò che è online, si ferma con codice 4,
+elenca i commit e i file finiti nel mezzo, e dice come riallinearsi. `PULSE_SOVRASCRIVI=1`
+è l'unica scappatoia, e stampa a video che la scelta è stata dichiarata.
+
+Collaudato su tre rami, con un repository finto: copia indietro → si ferma prima di
+toccare qualsiasi file · copia allineata → passa e lo dice · copia indietro con
+forzatura → avverte per intero, poi prosegue dichiarandolo. E il controllo che protegge
+il fermo (`checklist.py`) è stato collaudato togliendo il fermo: suona.
+
+> **La lezione, più generale del difetto.** Le suite guardavano *che cosa* viene
+> pubblicato e mai *sopra che cosa*. Ogni volta che due sessioni possono lavorare sullo
+> stesso oggetto, esiste una dimensione che nessun test di contenuto vede.
+
+## Difetti trovati e corretti (4 agosto 2026)
+
+35. **Due giorni di silenzio totale.** Il 3 e il 4 agosto il compito quotidiano è partito
+    e non ha lasciato nulla: nessun commit, nessuna istantanea, nessuna entrata nello
+    storico, nessun messaggio. L'utente ha aperto l'app e ha trovato il giorno prima.
+    Causa più probabile, indicata da lui: **esaurimento dei crediti**. Il silenzio totale
+    è la firma di una sessione che non è mai partita davvero — un esaurimento *durante* il
+    lavoro avrebbe lasciato tracce parziali.
+    **Regola che ne discende:** un guasto silenzioso è peggio di un guasto rumoroso. Il
+    sistema deve avere almeno un rilevatore che non dipenda dalle stesse risorse di ciò
+    che sorveglia.
+36. **Il rilevatore che dipende da ciò che sorveglia.** La sentinella creata lo stesso
+    giorno (compito schedulato delle 9, `trig_01FXmhEtnk1CrCDAk2DFGU4y`) consuma crediti
+    anch'essa: se finiscono, tace. Per questo è scritta come **battito**, non come
+    allarme: manda una riga anche quando va tutto bene. L'assenza del messaggio è essa
+    stessa il segnale. L'unico rilevatore davvero indipendente è il banner dentro l'app,
+    che gira sull'iPhone e non consuma nulla.
+37. **La sentinella usava `api.github.com`, che dal sandbox risponde 403.** Scoperto
+    provando il comando prima di lasciarla in servizio, non dopo. Riscritta su
+    `raw.githubusercontent.com` più una sonda sull'istantanea del giorno
+    (`versioni/AAAA-MM-GG.html`): due segnali che dicono cose diverse — l'app è stata
+    ripubblicata, e il briefing è stato aggiornato — e permettono di distinguere «non è
+    successo niente» da «è successo qualcosa ma non il briefing».
+38. **L'intestazione dell'app era di nuovo scritta a mano** — «15» lavori mentre erano 11,
+    più il conteggio degli arancioni, «11/11» e la data del 2 agosto — perché la
+    correzione delle 18:51 era stata cancellata dal difetto della discendenza. Ripristinata
+    e derivata: `renderTop()`.
+39. **`PREFV` era tornato a 2 e Filardo e de Caro erano spariti dalle liste**, stessa
+    causa. Ripristinati. Nota: entrambi i nomi erano stati riaperti su PubMed prima di
+    scriverli — «Filaro», come era stato dettato, è **Giuseppe Filardo**, EOC Lugano.

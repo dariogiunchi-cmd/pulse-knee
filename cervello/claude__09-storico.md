@@ -61,3 +61,29 @@ RITRATTAZIONI: archivio salvati vuoto → nessun PMID da ricontrollare; LAST_RET
 NON VERIFICATO: Swissmedic · openFDA · Retraction Watch (feed) · pagine ESSKA/AAOS/ICRS · registri SIRIS/RIPO/NJR/AOANJRR.
 CONSEGNA: app aggiornata e pubblicata, BUILD_DATE 2026-08-04, 9 schede; NLB/SOCV/TAGS/SOC sui 4 lavori principali; tutte le 9 suite verdi.
 > Disciplina del tempo: dopo il 2 agosto il compito non ha prodotto nulla il 3 e il 4 mattina. Questo è il primo ciclo che arriva in fondo. Portato a 9 schede (7 + le due consensus ICRS recuperate la sera del 4); la verifica delle citazioni non è stata toccata. Un test cablato in logica.js (date fisse 2026-07-28/2026-08-01 e la parola «ieri» che renderFresh non produce più dopo il commit del 4 ago) è stato reso dinamico — corregge il TEST, non l'app.
+
+---
+
+## 2026-08-03 · nessun briefing
+Il compito automatico è partito e non ha prodotto nulla: nessun commit, nessuna
+istantanea, nessuna entrata. **Non è stato un ritardo: è stato un guasto silenzioso.**
+Causa più probabile, indicata dal Dr. Giunchi: esaurimento dei crediti.
+Registrato qui perché lo storico deve essere completo anche nei giorni vuoti — un
+calendario senza buchi che nasconde un buco è peggio di un buco dichiarato.
+
+## Nota sul 4 agosto 2026 — quattro pubblicazioni, non una
+La giornata è stata anomala e va letta così:
+- **18:51** correzioni all'app (intestazione derivata, attesa distinta dal guasto,
+  Filardo e de Caro nella rete). Contenuti ancora del 2 agosto.
+- **19:10 · 19:21 · 19:29** il briefing di recupero, lanciato a mano, in tre passate:
+  11 schede, poi 7, poi 9 con l'aggiunta delle due consensus ICRS.
+- **20:2x** il fermo contro la sovrascrittura (regola 13 di `claude/11-qualita.md`).
+
+La pubblicazione delle 19:10 ha **cancellato** quelle delle 18:51 senza che nessun test
+se ne accorgesse: la copia di lavoro del briefing era stata clonata un istante prima.
+È il difetto che ha generato la regola 13. Le correzioni sono state riapplicate.
+
+Stato finale della giornata: **9 schede, 9 citazioni su 9 riaperte su PubMed**,
+`LAST_RETRACTION_CHECK` al 4 agosto, `PREFV` a 3.
+Due delle nove schede sono consensus ICRS di cui **Giuseppe Filardo — aggiunto alla rete
+oggi stesso — è firma senior.** Il nome nuovo ha prodotto materiale il primo giorno.
