@@ -7,11 +7,23 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 1 agosto 2026.*
+*Ultimo aggiornamento: 4 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-08-04 | AJSM | Quadriceps tendon autografts: more reoperations for extension deficit vs hamstring, 5653 cases | 10.1177/03635465261465107 | innesto quadricipitale, reintervento, estensione | aperto — famiglia del suo innesto (QT intero, non retto femorale isolato)
+2026-08-04 | J ISAKOS | ACLR with modified Lemaire LET in adolescents, favorable, 55 pz | 10.1016/j.jisako.2026.101194 | let, lemaire, adolescente, hamstring | aperto — sua tecnica ma su hamstring
+2026-08-04 | JCOT | LET vs ALL reconstruction: comparative effectiveness SR, 17 studi | 10.1016/j.jcot.2026.103567 | let, all, confronto | aperto — sintesi qualitativa
+2026-08-04 | KSSTA | Management of increased posterior tibial slope in ACL deficiency — German Knee Society | 10.1002/ksa.70549 | slope, osteotomia, consenso | aperto — raccomandazioni pratiche
+2026-08-04 | KSSTA | Absolute extensor strength, not LSI, predicts outcomes after HTO, 125 pz | 10.1002/ksa.70535 | osteotomia, forza, lsi, rientro | aperto — rinforza T3
+2026-08-04 | J Exp Orthop | German Knee Society ACL rehabilitation consensus Part IV | 10.1002/jeo2.70875 | riabilitazione, consenso, rientro | aperto — standard di cura
+2026-08-04 | AJSM | Primary ACL repair vs reconstruction: FJS-12 and residual laxity, 85 pz | 10.1177/03635465261469658 | riparazione primaria, difelice, fjs | aperto — linea DiFelice
+2026-08-04 | The Knee | Delayed ACLR in skeletally immature increases medial meniscal tears, 87 pz | 10.1016/j.knee.2026.104584 | adolescente, timing, menisco | aperto — Rizzoli (Zaffagnini, Grassi)
+2026-08-04 | J Exp Orthop | Lateral UKA 10-year survival 93.7%, SR+meta, 15 studi | 10.1002/jeo2.70870 | monocompartimentale laterale, sopravvivenza | aperto — Hirschmann (Basilea)
+2026-08-04 | KSSTA | Playing position and ACL injury, German football registry, 742 casi | 10.1002/ksa.70566 | registro, calcio, epidemiologia | aperto — fuori pratica, contesto atleti
+2026-08-04 | Singapore Med J | MOWHTO vs UKA and mental health, PSM, 102 pz | 10.4103/singaporemedj.SMJ-2025-291 | osteotomia, monocompartimentale, salute mentale | aperto — oltre il consueto, Asia
 
 2026-07-29 | BMJ Open | STABILITY 2: protocol RCT, patellar or quadriceps tendon autograft ± LET | 10.1136/bmjopen-2026-120915 | lca, let, quadricipitale, bptb, protocollo | **RISOLTO** — full text letto 01-08, tecnica LET estratta
 2026-07-21 | Arthroscopy | Lateral Extra-articular Procedures Decrease Rates of Graft Failure and Positive Pivot Shift in Primary ACLR | 10.1002/arj.70413 | let, lca, pivot shift | aperto
@@ -64,6 +76,13 @@ studio negativo, è uno studio muto.** Segnale non significativo di maggiore art
 radiografica nel braccio LET (25,8% vs 17,1%): da conoscere, perché è ciò che un
 perito avversario userebbe contro l'indicazione universale.
 
+**Nota laterale sull'innesto (2026-08-04).** L'AJSM di Kekki e Cristiani (5653 casi)
+è il primo grande segnale comparativo sulla **famiglia** del suo innesto: il tendine
+quadricipitale intero mostra più reinterventi per deficit di estensione dell'hamstring
+(19,2% vs 8,9%; OR 1,96). Non è il retto femorale superficiale isolato, ma il
+meccanismo — prelievo dall'apparato estensore — è condiviso. Non chiude T1a; sposta
+l'attenzione sul recupero dell'estensione più che sul fallimento dell'innesto.
+
 **Cosa la chiude:** STABILITY 2, braccio QT ± LET, randomizzato, 1292 pazienti.
 Attesa 2029.
 
@@ -83,8 +102,11 @@ fissazione — che la letteratura tratta come equivalenti.
 
 **Il segnale collaterale conta.** Il numero di luglio di *Arthroscopy Techniques*
 contiene almeno sette note tecniche sul LET, tutte orientate a fissazione **onlay
-e knotless** e all'eliminazione dell'hardware. Il campo si sta spostando dove Dario
-è già, mentre l'intera base di evidenza è costruita sulla graffa.
+e knotless** e all'eliminazione dell'hardware. Il 2026-08-04 la SR *JCOT* (LET vs ALL)
+osserva che il LET dà un vincolo rotatorio leggermente superiore ma con più hardware
+e reinterventi: è esattamente ciò che la deriva onlay/knotless cerca di eliminare.
+Il campo si sta spostando dove Dario è già, mentre l'intera base di evidenza è
+costruita sulla graffa.
 
 **Cosa la chiude:** uno studio comparativo fra costrutti, oggi inesistente.
 **È il buco più pubblicabile emerso finora:** una serie sull'onlay superficiale con
@@ -109,21 +131,30 @@ tempo trascorso.
 **Confidenza: media.** Due studi retrospettivi piccoli (170 e 61), endpoint diversi.
 Riconciliazione plausibile, non dimostrazione.
 
-### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22)*
+### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22, arricchita 2026-08-04)*
 
 La simmetria di forza è il criterio clinico più usato; la meta-regressione che lo
 mette in dubbio dichiara certezza GRADE molto bassa.
 
-**Arricchita:** sul retto femorale, a 6 mesi, il deficit estensorio è del 29%
-(LSI 71% sul picco di coppia) mentre la flessione recupera al 93%. Immagine
+**Arricchita (retto femorale):** sul retto femorale, a 6 mesi, il deficit estensorio
+è del 29% (LSI 71% sul picco di coppia) mentre la flessione recupera al 93%. Immagine
 speculare dell'hamstring. Quindi sul suo innesto **nemmeno la premessa «la forza
 recupera» è verificata a 6 mesi**. Se il criterio di rientro usa una soglia del 90%,
 la maggioranza dei suoi pazienti a 6 mesi non ci si avvicina.
 
-Limiti del dato: n = 31, soli maschi, monocentrico, nessun gruppo di confronto.
+**Arricchita (osteotomia, 2026-08-04).** Il lavoro coreano *KSSTA* (Lee, Kim, 125 pz)
+porta un dato citabile su un altro versante: dopo osteotomia tibiale alta, la **forza
+estensoria assoluta** predice indipendentemente l'IKDC (β = 8,20; p = 0,015; soglia
+1,3 N·m/kg), mentre l'**indice di simmetria** estensorio **non** è predittore
+indipendente (p = 0,074). La simmetria resta legata all'equilibrio dinamico, non
+all'esito riferito. È un'altra popolazione e un'altra chirurgia, ma la direzione è la
+stessa: **la simmetria fra arti, da sola, non basta come criterio di rientro.**
 
-**Cosa la chiude:** studi che leghino il deficit di attivazione a esiti duri —
-rirottura o mancato rientro — non a misure intermedie.
+Limiti del dato: sul retto femorale n = 31, soli maschi, monocentrico, nessun gruppo
+di confronto; sull'osteotomia livello III, monocentrico, popolazione coreana.
+
+**Cosa la chiude:** studi che leghino il deficit di forza e di attivazione a esiti
+duri — rirottura o mancato rientro — non a misure intermedie.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 

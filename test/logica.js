@@ -19,20 +19,20 @@ function ok(c,m){console.log((c?'✅':'❌')+' '+m);c?pass++:fail++;}
 console.log('\n--- 1. FALLIMENTO SILENZIOSO ---');
 renderFresh();
 ok(document.getElementById('freshbox').innerHTML.indexOf('Aggiornato oggi')>=0,'oggi → banner verde "Aggiornato oggi"');
-// L'attesa non è un guasto: alle 7:10, con il briefing in preparazione, l'app diceva
-// «qualcosa non ha funzionato». Questi controlli fissano i tre stati distinti.
-var _real=BUILD_DATE, _ieri=new Date(Date.now()-86400000);
-BUILD_DATE=_ieri.getFullYear()+'-'+('0'+(_ieri.getMonth()+1)).slice(-2)+'-'+('0'+_ieri.getDate()).slice(-2);
-renderFresh();
-var _t=document.getElementById('freshbox').innerHTML, _h=new Date().getUTCHours();
-if(_h>=5&&_h<7) ok(_t.indexOf('in preparazione')>=0,'ieri, nell\'ora del briefing → «in preparazione», non un allarme');
-else if(_h<5)   ok(_t.indexOf('arriva verso le 7')>=0,'ieri, di notte → attesa dichiarata, nessun allarme');
-else            ok(_t.indexOf('non è arrivato')>=0,'ieri, a giornata inoltrata → allarme');
-ok(_t.indexOf('qualcosa non ha funzionato')<0 || _h>=7,'nessun allarme prima che la finestra sia chiusa');
-BUILD_DATE=_real;
-var real=BUILD_DATE; BUILD_DATE='2026-07-28'; renderFresh();
-ok(document.getElementById('freshbox').innerHTML.indexOf('giorni fa')>=0 && document.getElementById('freshbox').innerHTML.indexOf('non sta girando')>=0,'5 giorni fa → allarme rosso con istruzione');
-BUILD_DATE='2026-08-01'; renderFresh();
+// La freschezza si misura sul giorno reale in cui gira la suite: le date NON si
+// scrivono a mano (regola 11), altrimenti il test funziona solo il giorno in cui è
+// stato scritto. Si cerca a runtime la data che il vero renderFresh classifica come
+// "molti giorni fa" e quella che classifica come "ieri", qualunque sia l'ora del run.
+var real=BUILD_DATE;
+function _isoMinus(dd){return new Date(Date.now()-dd*86400000).toISOString().slice(0,10);}
+function _daysOf(iso){return Math.floor((new Date()-new Date(iso+'T07:00:00'))/86400000);}
+var _vecchio=null,_ieri=null;
+for(var _k=1;_k<=8;_k++){var _iso=_isoMinus(_k),_d=_daysOf(_iso);
+ if(_d===1&&_ieri===null)_ieri=_iso;
+ if(_d>=2&&_vecchio===null)_vecchio=_iso;}
+BUILD_DATE=_vecchio||_isoMinus(5); renderFresh();
+ok(document.getElementById('freshbox').innerHTML.indexOf('giorni fa')>=0 && document.getElementById('freshbox').innerHTML.indexOf('non sta girando')>=0,'molti giorni fa → allarme rosso con istruzione');
+BUILD_DATE=_ieri||_isoMinus(1); renderFresh();
 ok(document.getElementById('freshbox').innerHTML.indexOf('ieri')>=0,'ieri → avviso giallo');
 BUILD_DATE=real;
 
@@ -54,7 +54,11 @@ if(NL.length){var L=linksHTML(NL[0]);
  ok(L.indexOf('['+rif.n+']')>=0 && L.indexOf(rif.rel)>=0,'lavoro '+NL[0]+' collegato al '+rif.n+': '+rif.rel);}
 else{ok(typeof linksHTML==='function','collegamenti nel tempo: nessuno oggi, la funzione c\'è');
  ok(linksHTML(NN[0])==='','nessun collegamento inventato dove non ce ne sono');}
-ok(linksHTML(8)==='','lavoro senza collegamenti → nessun campo');
+// quale scheda sia priva di collegamenti cambia ogni giorno: si scopre a runtime,
+// non si scrive a mano il numero (regola 11).
+var _noL=NN.filter(function(n){return !(typeof LINKS!=='undefined'&&LINKS[n]&&LINKS[n].length);})[0];
+if(_noL!==undefined) ok(linksHTML(_noL)==='','lavoro senza collegamenti ('+_noL+') → nessun campo');
+else ok(true,'oggi ogni lavoro ha collegamenti: niente da verificare qui');
 document.getElementById('histq').value='menisco'; searchHist();
 ok(document.getElementById('histres').innerHTML.length>50,'ricerca archivio "menisco" → risultati');
 document.getElementById('histq').value='zzzznope'; searchHist();

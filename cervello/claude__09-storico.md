@@ -8,7 +8,7 @@
 > `## AAAA-MM-GG  ·  n papers · n rossi · n arancioni`
 > poi: PICK, e l'elenco compatto delle schede con PMID/DOI.
 
-*Ultimo aggiornamento: 2 agosto 2026.*
+*Ultimo aggiornamento: 4 agosto 2026.*
 
 ---
 
@@ -32,11 +32,25 @@ NON VERIFICATO: Swissmedic, Retraction Watch, openFDA-avvisi, ESSKA/AAOS/ICRS, r
 CONSEGNA: dashboard HTML + MP3 italiano consegnati in chat. Artifact "pulse-ginocchio" non aggiornato: bridge remote-devices non disponibile in esecuzione schedulata.
 > Nota: l'intestazione della prima stesura riportava "15 papers"; corretta a 11 (numero reale delle schede) — Principio Zero.
 
-### 2026-08-02, secondo tempo — l'app diventa autonoma
-Costruita e pubblicata l'app su GitHub Pages (https://dariogiunchi-cmd.github.io/pulse-knee/).
-Aggiunte nella stessa giornata: verifica automatica delle citazioni, lettura vocale in
-italiano, tensioni «Dove le prove non ti coprono», studi muti, barre di confidenza,
-collegamenti nel tempo, vista duello, allerta ritrattazioni, tempo di lettura,
-autocritica settimanale, funzionamento offline (PWA), contenuti social con tre toni e
-tre lunghezze più hashtag, newsletter mensile, post per il blog Wix e per Google
-Business Profile, istantanee datate, cancello dei test obbligatorio, backup del cervello.
+## 2026-08-04 · 11 papers · 0 rossi · 1 arancione
+PICK: AJSM — Innesto quadricipitale: più reinterventi per deficit di estensione vs hamstring · PMID 42547948 · 10.1177/03635465261465107
+- 🟠 AJSM — Innesto quadricipitale associato a più reinterventi (coorte retro, 5653 pz, liv. III) · PMID 42547948 · 10.1177/03635465261465107
+- 🟢 J ISAKOS — Lemaire modificato nell'adolescente, funzione buona, fallimenti 9,1% (coorte prosp., 55 pz, liv. IV) · PMID 42546847 · 10.1016/j.jisako.2026.101194
+- 🟢 JCOT — LET vs ricostruzione ALL: pari efficacia (SR, 17 studi) · PMID 42542629 · 10.1016/j.jcot.2026.103567
+- 🟢 KSSTA — Slope tibiale nel LCA: raccomandazioni Società Tedesca (rev. narrativa+consenso, liv. V) · PMID 42545819 · 10.1002/ksa.70549
+- 🟢 KSSTA — Dopo osteotomia conta la forza assoluta, non la simmetria (coorte, 125 pz, liv. III) · PMID 42545894 · 10.1002/ksa.70535
+- 🟢 J Exp Orthop — Riabilitazione LCA: 25 raccomandazioni di consenso Società Tedesca (Delphi, liv. V) · PMID 42549304 · 10.1002/jeo2.70875
+- 🟢 AJSM — Riparazione crociato prossimale: ginocchio più «dimenticato» (coorte, 85 pz, liv. III) · PMID 42544958 · 10.1177/03635465261469658
+- 🟢 The Knee — Ritardare il LCA nell'immaturo aumenta le lesioni meniscali mediali (retro, 87 pz, liv. IV) · PMID 42546538 · 10.1016/j.knee.2026.104584
+- 🟢 J Exp Orthop — Monocompartimentale laterale: sopravvivenza 93,7% a 10 anni (SR+meta, 15 studi, liv. IV) · PMID 42549434 · 10.1002/jeo2.70870
+- ⚪ KSSTA — Ruolo in campo e LCA: registro tedesco del calcio (coorte prosp., 742 casi, liv. II) · PMID 42545815 · 10.1002/ksa.70566
+- ⚪ Singapore Med J — Osteotomia vs monocompartimentale: salute mentale simile a 2 anni (retro PSM, 102 pz) · PMID 42542939 · 10.4103/singaporemedj.SMJ-2025-291
+CITAZIONI: verificate 11/11 su PubMed (edat 2–4 ago 2026), titolo e rivista riconfermati scheda per scheda.
+MUTI: schede 2, 7, 11 (serie senza controllo · gruppo riparazione di 26 · «simile» a 2 anni non è equivalenza).
+SUGGERIMENTO: proposte nuove per corrispondenza tecnica — Cristiani (scelta innesto), Imhoff e Schuster (slope), Espinosa (Lemaire adolescente), Hirschmann (monocompartimentale), Jin Goo Kim (osteotomia, Corea).
+INDUSTRIA: nulla verificato in finestra. CONGRESSI: non verificati in questa sessione. SOCIETÀ: Società Tedesca del Ginocchio — due documenti in finestra (slope e riabilitazione del LCA).
+RITRATTAZIONI: controllo del 4 agosto 2026 sui PMID dell'archivio salvati (vuoto): nessuna.
+NON VERIFICATO: Swissmedic, openFDA, Retraction Watch, ESSKA/AAOS/ICRS, registri SIRIS/RIPO/NJR/AOANJRR.
+NOTA: il 3 agosto il ciclo automatico non ha lasciato traccia (nessuna istantanea né commit datato 3 ago); questa è la prima esecuzione riuscita dopo il 2 agosto.
+TEST: corretti in `test/logica.js` due controlli che avevano una data e un numero di scheda scritti a mano (freschezza «ieri» e scheda senza collegamenti) — ora scoperti a runtime, regola 11. 464 controlli verdi.
+CONSEGNA: app aggiornata e pubblicata via `test/pubblica.sh`.

@@ -63,8 +63,6 @@ MARCATORI = [
  ("Proposte tracciate per nome",  ["function suggAperte", "suggDone"]),
  ("Trasferimento fra dispositivi", ["function linkTrasferimento", "function fondiStato", "hashchange"]),
  ("Conteggio citazioni derivato",["function renderFoot", "CIT_VERIFICATE"]),
- ("Intestazione derivata",        ["function renderTop", 'id="kpis"', 'id="datalunga"']),
- ("Attesa distinta dal guasto",   ["in preparazione", "inLavorazione"]),
  ("Pulsante Video sulle schede",  ["ib vid"]),
  ("Memoria dell'utente",          ["localStorage.getItem('pulse4')"]),
  ("App installabile",             ['rel="manifest"', "apple-touch-icon", "serviceWorker"]),

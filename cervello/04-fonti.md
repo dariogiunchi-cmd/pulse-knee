@@ -88,13 +88,6 @@ Mitek           → Johnson & Johnson
 Giulio Maria Marcheggiani Muccioli · Francesco Della Villa (Isokinetic, Bologna —
 ritorno allo sport e prevenzione delle recidive)
 
-**Asse cartilagine e preservazione articolare** *(aggiunto il 4 agosto 2026; ogni nome
-riaperto su PubMed prima di essere scritto).* Elizaveta Kon (Humanitas, Milano) ·
-Luca Andriolo (Rizzoli, Bologna) · Francesca de Caro (Istituto di Cura Città di Pavia) ·
-**Giuseppe Filardo (EOC Lugano e Università della Svizzera Italiana — stesso cantone)**.
-Firmano insieme le consensus ICRS ed ESSKA-ICRS: vanno sorvegliati come gruppo, non come
-singoli, perché escono in blocco. «Filaro», come era stato dettato, è Filardo.
-
 **Francia.** Bertrand Sonnery-Cottet · Mathieu Thaunat **[da confermare — dettato
 come «Taunat»]** — gruppo di Lione, riferimento mondiale su LET e legamento
 antero-laterale
