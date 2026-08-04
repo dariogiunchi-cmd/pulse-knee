@@ -19,6 +19,17 @@ function ok(c,m){console.log((c?'✅':'❌')+' '+m);c?pass++:fail++;}
 console.log('\n--- 1. FALLIMENTO SILENZIOSO ---');
 renderFresh();
 ok(document.getElementById('freshbox').innerHTML.indexOf('Aggiornato oggi')>=0,'oggi → banner verde "Aggiornato oggi"');
+// L'attesa non è un guasto: alle 7:10, con il briefing in preparazione, l'app diceva
+// «qualcosa non ha funzionato». Questi controlli fissano i tre stati distinti.
+var _real=BUILD_DATE, _ieri=new Date(Date.now()-86400000);
+BUILD_DATE=_ieri.getFullYear()+'-'+('0'+(_ieri.getMonth()+1)).slice(-2)+'-'+('0'+_ieri.getDate()).slice(-2);
+renderFresh();
+var _t=document.getElementById('freshbox').innerHTML, _h=new Date().getUTCHours();
+if(_h>=5&&_h<7) ok(_t.indexOf('in preparazione')>=0,'ieri, nell\'ora del briefing → «in preparazione», non un allarme');
+else if(_h<5)   ok(_t.indexOf('arriva verso le 7')>=0,'ieri, di notte → attesa dichiarata, nessun allarme');
+else            ok(_t.indexOf('non è arrivato')>=0,'ieri, a giornata inoltrata → allarme');
+ok(_t.indexOf('qualcosa non ha funzionato')<0 || _h>=7,'nessun allarme prima che la finestra sia chiusa');
+BUILD_DATE=_real;
 var real=BUILD_DATE; BUILD_DATE='2026-07-28'; renderFresh();
 ok(document.getElementById('freshbox').innerHTML.indexOf('giorni fa')>=0 && document.getElementById('freshbox').innerHTML.indexOf('non sta girando')>=0,'5 giorni fa → allarme rosso con istruzione');
 BUILD_DATE='2026-08-01'; renderFresh();

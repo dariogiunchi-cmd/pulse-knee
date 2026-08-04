@@ -75,6 +75,16 @@ if citv is not None and citv.isdigit():
     chk("non dichiara più citazioni verificate delle schede esistenti",
         int(citv) <= narts, f"dice {citv} verificate su {narts} schede")
 
+# L'intestazione conteneva «15» lavori mentre erano 11 — residuo di un errore corretto
+# nello storico ma mai nell'app, rimasto visibile all'utente per venti pubblicazioni.
+_visibile = re.sub(r'<script>[\s\S]*?</script>', '', h)
+chk("l'intestazione non contiene numeri scritti a mano",
+    not re.search(r'class="kpi[^"]*"><b>\d+</b>', _visibile) and 'id="kpis"' in h,
+    "i conteggi in cima vanno contati, non scritti")
+chk("la data non è scritta a mano",
+    not re.search(r'class="date"[^>]*>\s*\w+\s+\d+\s+\w+\s+\d{4}', _visibile),
+    "la data va derivata da BUILD_DATE")
+
 chk("il piè di pagina non contiene conteggi scritti a mano",
     not re.search(r'verificate\s+\d+\s*/\s*\d+', re.sub(r'<script>[\s\S]*?</script>', '', h)),
     "il totale va contato, non scritto")
