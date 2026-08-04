@@ -13,6 +13,8 @@
 
 ## LAVORI ARCHIVIATI
 
+2026-08-04 | KSSTA | Cell-based therapy injections for knee OA — ESSKA-ICRS consensus (RAND/UCLA, 144 scenari) | 10.1002/ksa.70487 | terapie cellulari, artrosi, iniezioni, consensus, asse ICRS | aperto — consensus, peso normativo alto; Kon·Andriolo·de Caro·Filardo(Lugano); appropriato <65 aa, BMI≤35, KL II–III
+2026-08-04 | BJSM | ICRS-FIFA-Aspetar consensus part 2 — cartilage surgery in football players (RAND/UCLA, 96 scenari) | 10.1136/bjsports-2025-110676 | cartilagine, calciatore, rientro, consensus, asse ICRS | aperto — consensus; rigenerative per il lungo termine, stimolazione midollare inappropriata/incerta; priorità calcio
 2026-08-04 | AJSM | Quadriceps Tendon Autografts: Increased Short-term Reoperation for Extension Deficit/Pain vs Hamstring (5653 casi) | 10.1177/03635465261465107 | innesto quadricipitale, reintervento, deficit estensione | aperto — 🟠 tocca l'innesto di default; coorte retrospettiva, non randomizzata; fallimenti d'innesto esclusi
 2026-08-04 | JEO | ACL rehabilitation, evidence-based consensus, German Knee Society — Part IV | 10.1002/jeo2.70875 | riabilitazione, ritorno allo sport, consensus, GRADE | aperto — consenso liv. V, peso normativo (tocca T3/T4)
 2026-08-04 | J ISAKOS | ACLR with modified Lemaire LET — favorable subjective knee function in adolescents (55 pz) | 10.1016/j.jisako.2026.101194 | let, lemaire, adolescente, hamstring | aperto — MUTO: serie senza confronto; innesto hamstring; tocca T1b (costrutto onlay superficiale)

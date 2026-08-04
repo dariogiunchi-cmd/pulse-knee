@@ -41,21 +41,23 @@ autocritica settimanale, funzionamento offline (PWA), contenuti social con tre t
 tre lunghezze più hashtag, newsletter mensile, post per il blog Wix e per Google
 Business Profile, istantanee datate, cancello dei test obbligatorio, backup del cervello.
 
-## 2026-08-04 · 7 papers · 0 rossi · 1 arancione
+## 2026-08-04 · 9 papers · 0 rossi · 1 arancione
 PICK: AJSM — Innesto quadricipitale: più reinterventi per deficit d'estensione vs hamstring · PMID 42547948 · 10.1177/03635465261465107
 - 🟠 AJSM — Quadricipite: più reinterventi per deficit d'estensione/dolore vs hamstring (coorte retrospettiva, 5653, liv. III) · PMID 42547948 · 10.1177/03635465261465107
 - 🟢 JEO — Consensus German Knee Society sulla riabilitazione dopo LCA, parte IV (Delphi, 29 temi, liv. V) · PMID 42549304 · 10.1002/jeo2.70875
+- 🟢 KSSTA — Consensus ESSKA-ICRS: appropriatezza delle iniezioni di cellule nell'artrosi di ginocchio (RAND/UCLA, 144 scenari) · PMID 42360177 · 10.1002/ksa.70487 [asse ICRS: Kon, Andriolo, de Caro, Filardo–Lugano]
+- 🟢 BJSM — Consensus ICRS-FIFA-Aspetar (parte 2): chirurgia della cartilagine nel calciatore (RAND/UCLA, 96 scenari) · PMID 42062041 · 10.1136/bjsports-2025-110676 [Kon, Andriolo, Filardo, Sonnery-Cottet, Zaffagnini]
 - 🟢 J ISAKOS — LCA + Lemaire modificato nell'adolescente (serie prospettica, 55, liv. IV) · PMID 42546847 · 10.1016/j.jisako.2026.101194
 - 🟢 JCOT — LET vs ricostruzione antero-laterale (SR PRISMA, 17 studi) · PMID 42542629 · 10.1016/j.jcot.2026.103567
 - 🟢 AJSM — Variazioni di lunghezza di FCL, ALL e bendelletta in flessione (cadavere, 10) · PMID 42544914 · 10.1177/03635465261468548
 - 🟢 AOTS — Cartilagine tritata: survey della pratica clinica AGA (927 risposte) · PMID 42545542 · 10.1007/s00402-026-06443-9
 - 🟢 Int Orth — Protesi robotica: sede dei pin femorali e frattura periprotesica (coorte retrospettiva, 688) · PMID 42542985 · 10.1007/s00264-026-06975-0
-CITAZIONI: verificate 7/7 su PubMed — ogni PMID riaperto e confrontato con titolo, rivista e DOI (l'ordine del batch non coincideva con i PMID: corretto sui campi identifiers).
+CITAZIONI: verificate 9/9 su PubMed — ogni PMID riaperto e confrontato con titolo, rivista e DOI (l'ordine del batch non coincideva con i PMID: corretto sui campi identifiers).
 STUDI MUTI: 4 — schede 3 (serie senza confronto), 5 (cadavere descrittivo), 6 (survey autoriferita 19%), 7 (1 sola frattura, endpoint troppo raro).
 SUGGERIMENTO (SUGGQ): von Essen (autore senior AJSM, innesto quadricipitale) · A. Yanke (Rush, fissazione del rinforzo laterale) · Vogt (survey AGA minced cartilage) · APKASS (buco asiatico) · riabilitazione basata su criteri (tema).
-CONSENSUS/SOCIETÀ: German Knee Society, riabilitazione post-LCA parte IV (in finestra, peso normativo).
+CONSENSUS/SOCIETÀ: German Knee Society (riabilitazione post-LCA IV); ESSKA-ICRS (iniezioni cellulari nell'artrosi, KSSTA); ICRS-FIFA-Aspetar parte 2 (cartilagine nel calciatore, BJSM). Le due ICRS erano sfuggite al briefing del 2 agosto, recuperate su segnalazione — finestra consensus 12 mesi, giugno 2026.
 INDUSTRIA · CONGRESSI · REGISTRI: NON VERIFICATI oggi — ricerca limitata a PubMed.
 RITRATTAZIONI: archivio salvati vuoto → nessun PMID da ricontrollare; LAST_RETRACTION_CHECK = 4 agosto 2026.
 NON VERIFICATO: Swissmedic · openFDA · Retraction Watch (feed) · pagine ESSKA/AAOS/ICRS · registri SIRIS/RIPO/NJR/AOANJRR.
-CONSEGNA: app aggiornata e pubblicata, BUILD_DATE 2026-08-04, 7 schede; NLB/SOCV/TAGS/SOC sui 4 lavori principali; tutte le 9 suite verdi.
-> Disciplina del tempo: dopo il 2 agosto il compito non ha prodotto nulla il 3 e il 4 mattina. Questo è il primo ciclo che arriva in fondo. Ridotto a 7 schede per stare nella sessione; la verifica delle citazioni non è stata toccata. Un test cablato in logica.js (date fisse 2026-07-28/2026-08-01 e la parola «ieri» che renderFresh non produce più dopo il commit del 4 ago) è stato reso dinamico — corregge il TEST, non l'app.
+CONSEGNA: app aggiornata e pubblicata, BUILD_DATE 2026-08-04, 9 schede; NLB/SOCV/TAGS/SOC sui 4 lavori principali; tutte le 9 suite verdi.
+> Disciplina del tempo: dopo il 2 agosto il compito non ha prodotto nulla il 3 e il 4 mattina. Questo è il primo ciclo che arriva in fondo. Portato a 9 schede (7 + le due consensus ICRS recuperate la sera del 4); la verifica delle citazioni non è stata toccata. Un test cablato in logica.js (date fisse 2026-07-28/2026-08-01 e la parola «ieri» che renderFresh non produce più dopo il commit del 4 ago) è stato reso dinamico — corregge il TEST, non l'app.
