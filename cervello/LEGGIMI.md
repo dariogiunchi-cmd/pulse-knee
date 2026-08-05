@@ -1,6 +1,6 @@
 # PULSE — il cervello
 
-*Copia di sicurezza dei documenti del Progetto, aggiornata il 2026-08-04.*
+*Copia di sicurezza dei documenti del Progetto, aggiornata il 2026-08-05.*
 
 Questi file sono la **memoria** del sistema: chi è il Dr. Giunchi, che cosa opera, quali
 lavori sono già stati visti, quali tensioni restano aperte, come si scrivono le schede e
@@ -17,7 +17,7 @@ Il repository è pubblico. Prima di ogni scrittura, token e chiavi vengono sosti
 controllo. In questo aggiornamento: **0 sostituzioni**.
 Il token GitHub vero vive solo nel Progetto, dentro `claude/10-deploy.md`.
 
-## Documenti (14, 110 KB in tutto)
+## Documenti (14, 112 KB in tutto)
 
 | File | Peso | Impronta |
 |---|---|---|
@@ -30,7 +30,7 @@ Il token GitHub vero vive solo nel Progetto, dentro `claude/10-deploy.md`.
 | `06-social.md` | 3.2 KB | `e798b888fbdf` |
 | `claude__07-preferenze.md` | 9.3 KB | `764ff5730906` |
 | `claude__08-archivio.md` | 0.4 KB | `aba6dc9d105b` |
-| `claude__09-storico.md` | 8.3 KB | `510372763b89` |
+| `claude__09-storico.md` | 10.0 KB | `da42c15be598` |
 | `claude__10-deploy.md` | 7.3 KB | `5945a85b0e7a` |
 | `claude__11-qualita.md` | 23.6 KB | `0cdc56731b9a` |
 | `claude__12-distribuzione.md` | 5.1 KB | `53733f2ec633` |
