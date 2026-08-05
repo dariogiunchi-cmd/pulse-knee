@@ -34,7 +34,19 @@ with sync_playwright() as p:
     errs=[]; pg.on('pageerror',lambda e:errs.append(str(e)))
     pg.goto(path); pg.wait_for_timeout(600)
     print("\n=== INTERAZIONI (iPhone 14) ===")
-    chk('Aggiornato oggi' in pg.inner_text('#freshbox'),'banner "Aggiornato oggi" visibile')
+    # Il banner va confrontato con la VERITÀ del giorno, non con l'ipotesi che il file
+    # sia stato costruito oggi: quando si pubblica una correzione senza un briefing
+    # nuovo, BUILD_DATE resta indietro ed è giusto che il banner lo dica (regola 11).
+    _bd = pg.evaluate('BUILD_DATE')
+    _oggi = pg.evaluate("new Date().toLocaleDateString('sv')")   # sv → AAAA-MM-GG
+    _testo = pg.inner_text('#freshbox')
+    if _bd == _oggi:
+        chk('Aggiornato oggi' in _testo, 'briefing di oggi → banner «Aggiornato oggi»')
+    else:
+        atteso = ('in preparazione' in _testo) or ('non è arrivato' in _testo) \
+                 or ('arriva verso le' in _testo) or ('giorni fa' in _testo)
+        chk(atteso, f'briefing del {_bd}, oggi è {_oggi} → il banner lo dichiara')
+        chk('Aggiornato oggi' not in _testo, 'non dice «aggiornato oggi» quando non lo è')
     haD=pg.evaluate('typeof duelliVivi==="function" && duelliVivi().length>0')
     if haD: chk('VS' in pg.inner_text('#duelbox'),'barra duello visibile')
     else: chk(pg.evaluate('typeof openDuel==="function"'),'duello: nessuno oggi, la funzione c\'è')
@@ -77,6 +89,34 @@ with sync_playwright() as p:
     # zoom test: focus su input non deve ingrandire (font >=16px)
     fs=pg.eval_on_selector('#jinput','e=>getComputedStyle(e).fontSize')
     chk(float(fs.replace('px',''))>=16, f'campi di testo a {fs} → iPhone non ingrandisce la pagina')
+    # --- le due righe di pulsanti non devono andare a capo ---------------------
+    # Il 5 agosto 2026 «Dettagli» finiva da solo su una seconda riga, e «★ Salva»
+    # faceva lo stesso nel lavoro del giorno. Nessuna suite se ne accorgeva: si
+    # collaudava che i pulsanti CI FOSSERO, mai come stessero. Qui si misura, a più
+    # larghezze e con il testo ingrandito come nelle impostazioni di iOS.
+    def righe_di(sel):
+        return pg.evaluate("""s=>{const a=document.querySelector(s);if(!a)return -1;
+          const k=[...a.children].filter(c=>c.offsetParent!==null);
+          if(!k.length)return 0;
+          return new Set(k.map(c=>Math.round(c.getBoundingClientRect().top))).size;}""", sel)
+    def tronchi_di(sel):
+        return pg.evaluate("""s=>{const a=document.querySelector(s);if(!a)return 0;
+          return [...a.children].filter(c=>c.scrollWidth>c.clientWidth+1).length;}""", sel)
+    for larg in (320, 375, 393):
+        pg.set_viewport_size({'width':larg,'height':900})
+        pg.click('.tabs button >> nth=0'); pg.wait_for_timeout(300)
+        for sel, nome in (('.acts','pulsanti della scheda'), ('.pick .act','pulsanti del lavoro del giorno')):
+            r = righe_di(sel)
+            chk(r == 1, f'{nome} su una riga sola a {larg} px' + ('' if r==1 else f' (ne servono {r})'))
+            chk(tronchi_di(sel) == 0, f'{nome}: nessuna etichetta tagliata a {larg} px')
+    # con il testo ingrandito del 35%
+    pg.set_viewport_size({'width':393,'height':900}); pg.wait_for_timeout(200)
+    pg.evaluate("""()=>{document.querySelectorAll('.ib .t').forEach(e=>e.style.fontSize='15.5px');
+      document.querySelectorAll('.pick .act .btn').forEach(e=>e.style.fontSize='17px');}""")
+    pg.wait_for_timeout(200)
+    chk(righe_di('.acts')==1,'pulsanti della scheda su una riga anche con il testo ingrandito del 35%')
+    chk(righe_di('.pick .act')==1,'pulsanti del lavoro del giorno idem')
+
     chk(len(errs)==0,'nessun errore JavaScript durante l\'uso')
     pg.screenshot(path='/tmp/shot.png',full_page=False)
     pg.close(); b.close()

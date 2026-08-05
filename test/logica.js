@@ -16,16 +16,58 @@ if(PSOC===undefined)PSOC=NN.filter(function(n){return typeof SOCV!=='undefined'&
 var pass=0,fail=0;
 function ok(c,m){console.log((c?'✅':'❌')+' '+m);c?pass++:fail++;}
 
+console.log('\n--- 0. LAVORO DEL GIORNO E COLONNA DESTRA ---');
+// Il 5 agosto 2026 la scheda in cima era quella scelta il 2: HTML scritto a mano.
+// Qui si verifica che venga dai dati, che regga se PICK punta a nulla, e che i giorni
+// alle scadenze siano CALCOLATI — nessuna data scritta a mano (regola 11).
+renderPick();
+var _pb=document.getElementById('pickbox').innerHTML;
+var _pa=pickArt();
+ok(!!_pa,'esiste un lavoro del giorno');
+ok(_pb.indexOf(_pa.h)>=0,'la scheda in cima è quella indicata da PICK ('+_pa.n+')');
+ok(_pb.indexOf(_pa.h)===_pb.lastIndexOf(_pa.h),'il titolo compare una volta sola, non due');
+var _oldPick=PICK; PICK=99999; renderPick();
+ok(document.getElementById('pickbox').innerHTML.length>50,'PICK che punta a una scheda inesistente → ripiega, non lascia il vuoto');
+PICK=_oldPick; renderPick();
+
+// scadenze: si costruiscono date relative a oggi, mai letterali
+function _fra(g){var d=new Date(Date.now()+g*86400000);
+ return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);}
+ok(giorniA(_fra(5))===5 && giorniA(_fra(0))===0 && giorniA(_fra(-3))===-3,'i giorni a una scadenza si contano giusti');
+ok(scadenzaTesto(_fra(5)).indexOf('5 giorni')>=0,'fra cinque giorni → «5 giorni»');
+ok(scadenzaTesto(_fra(1)).indexOf('domani')>=0,'fra un giorno → «domani», non «1 giorni»');
+ok(scadenzaTesto(_fra(0)).indexOf('scade oggi')>=0,'oggi → «scade oggi»');
+ok(scadenzaTesto(_fra(-2)).indexOf('scaduta')>=0,'passata → dichiarata scaduta, mai un numero positivo');
+var _oc=CONGRESSI;
+CONGRESSI=[{sig:'X',nome:'Prova vecchia',scad:_fra(-30)},{sig:'Y',nome:'Prova viva',scad:_fra(4)}];
+renderLato();
+var _lb=document.getElementById('latobox').innerHTML;
+ok(_lb.indexOf('Prova viva')>=0,'una scadenza futura si mostra');
+ok(_lb.indexOf('Prova vecchia')<0,'una scadenza di un mese fa sparisce da sola');
+CONGRESSI=[]; renderLato();
+ok(document.getElementById('latobox').innerHTML.indexOf('Nessuna scadenza verificata')>=0,'senza congressi verificati lo dice, invece di tacere');
+CONGRESSI=_oc; renderLato();
+
 console.log('\n--- 1. FALLIMENTO SILENZIOSO ---');
-renderFresh();
-ok(document.getElementById('freshbox').innerHTML.indexOf('Aggiornato oggi')>=0,'oggi → banner verde "Aggiornato oggi"');
+// Il banner si collauda contro la verità del giorno, non contro l'ipotesi che il file
+// sia stato costruito oggi: quando si pubblica una correzione senza briefing nuovo,
+// BUILD_DATE resta indietro ed è giusto che il banner lo dichiari (regola 11).
+var _bdReale=BUILD_DATE;
+var _n=new Date(), _oggiIso=_n.getFullYear()+'-'+('0'+(_n.getMonth()+1)).slice(-2)+'-'+('0'+_n.getDate()).slice(-2);
+BUILD_DATE=_oggiIso; renderFresh();
+ok(document.getElementById('freshbox').innerHTML.indexOf('Aggiornato oggi')>=0,'briefing di oggi → banner verde "Aggiornato oggi"');
+BUILD_DATE=_bdReale; renderFresh();
+ok(_bdReale===_oggiIso ? document.getElementById('freshbox').innerHTML.indexOf('Aggiornato oggi')>=0
+   : document.getElementById('freshbox').innerHTML.indexOf('Aggiornato oggi')<0,
+   'con il file di oggi dice «aggiornato oggi», con un file vecchio non lo dice');
 // L'attesa non è un guasto: alle 7:10, con il briefing in preparazione, l'app diceva
 // «qualcosa non ha funzionato». Questi controlli fissano i tre stati distinti.
 var _real=BUILD_DATE, _ieri=new Date(Date.now()-86400000);
 BUILD_DATE=_ieri.getFullYear()+'-'+('0'+(_ieri.getMonth()+1)).slice(-2)+'-'+('0'+_ieri.getDate()).slice(-2);
 renderFresh();
 var _t=document.getElementById('freshbox').innerHTML, _h=new Date().getUTCHours();
-if(_h>=5&&_h<7) ok(_t.indexOf('in preparazione')>=0,'ieri, nell\'ora del briefing → «in preparazione», non un allarme');
+var _hm=new Date().getUTCHours()+new Date().getUTCMinutes()/60;
+if(_hm>=5&&_hm<6.5) ok(_t.indexOf('in preparazione')>=0,'ieri, nell\'ora del briefing → «in preparazione», non un allarme');
 else if(_h<5)   ok(_t.indexOf('arriva verso le 7')>=0,'ieri, di notte → attesa dichiarata, nessun allarme');
 else            ok(_t.indexOf('non è arrivato')>=0,'ieri, a giornata inoltrata → allarme');
 ok(_t.indexOf('qualcosa non ha funzionato')<0 || _h>=7,'nessun allarme prima che la finestra sia chiusa');
@@ -57,7 +99,12 @@ if(NL.length){var L=linksHTML(NL[0]);
  ok(L.indexOf('['+rif.n+']')>=0 && L.indexOf(rif.rel)>=0,'lavoro '+NL[0]+' collegato al '+rif.n+': '+rif.rel);}
 else{ok(typeof linksHTML==='function','collegamenti nel tempo: nessuno oggi, la funzione c\'è');
  ok(linksHTML(NN[0])==='','nessun collegamento inventato dove non ce ne sono');}
-ok(linksHTML(8)==='','lavoro senza collegamenti → nessun campo');
+// quale scheda sia priva di collegamenti cambia ogni giorno: si scopre a runtime,
+// non si scrive a mano il numero (regola 11). Era tornato «8» — e oggi la scheda 8
+// i collegamenti ce li ha.
+var _noL=NN.filter(function(n){return !(typeof LINKS!=='undefined'&&LINKS[n]&&LINKS[n].length);})[0];
+if(_noL!==undefined) ok(linksHTML(_noL)==='','lavoro senza collegamenti ('+_noL+') → nessun campo');
+else ok(true,'oggi ogni lavoro ha collegamenti: niente da verificare qui');
 document.getElementById('histq').value='menisco'; searchHist();
 ok(document.getElementById('histres').innerHTML.length>50,'ricerca archivio "menisco" → risultati');
 document.getElementById('histq').value='zzzznope'; searchHist();

@@ -41,7 +41,13 @@
   .pick h1{margin:0;font-size:18px;line-height:1.28;font-weight:700;letter-spacing:-.02em}
   .pick .aut{font-size:11.5px;color:var(--dim2);margin-top:6px}
   .pick .why{font-size:13px;color:var(--dim);margin-top:6px;line-height:1.5}
-  .act{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+  /* Anche qui «★ Salva» finiva da solo su una riga. Stessa cura della riga delle
+     schede: nessun a capo, e le tre voci si dividono lo spazio. */
+  .act{display:flex;gap:6px;margin-top:12px;flex-wrap:nowrap}
+  .act .btn{flex:1 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:8px 11px}
+  /* sotto i 360 px (iPhone SE, o testo ingrandito) le etichette si stringono invece
+     di farsi tagliare: meglio un carattere più piccolo che una parola mozzata */
+  @media(max-width:359px){.act .btn{font-size:11px;padding:8px 7px}.ib .t{font-size:10.5px}}
   .btn{font-size:12.5px;font-weight:600;padding:8px 14px;border-radius:980px;border:none;cursor:pointer;font-family:inherit;background:var(--tint);color:var(--txt)}
   .btn.pri{background:var(--blue);color:#fff}.btn.on{background:var(--gold);color:#fff}.btn.soc{background:#111;color:#fff}
   .sl{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.02em;color:var(--dim);margin:14px 2px 10px;text-transform:uppercase}.sl:first-child{margin-top:0}
@@ -56,10 +62,18 @@
   .row .aut{font-size:11px;color:var(--dim2);margin-top:4px}
   .row .rt{display:flex;flex-direction:column;align-items:flex-end;gap:7px;flex:0 0 auto}.row .meta{font-size:10.5px;color:var(--dim2);white-space:nowrap}
   .chev{color:var(--dim2);font-size:16px;transition:.2s;line-height:1}.item.open .chev{transform:rotate(90deg)}
-  .acts{display:flex;gap:6px;padding:0 14px 12px;flex-wrap:wrap}
-  .ib{height:34px;min-width:34px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--dim);font-size:14px;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0 8px}
+  /* I sei pulsanti andavano a capo e «Dettagli» finiva da solo su una riga sua.
+     Non basta stringere i margini: con il testo ingrandito nelle impostazioni di iOS
+     il problema torna. Qui i tre pulsanti con etichetta si dividono in parti uguali
+     lo spazio che avanza dopo le tre icone, quindi la riga sta su una riga sempre,
+     su qualunque larghezza e con qualunque dimensione del carattere. */
+  .acts{display:flex;gap:5px;padding:0 14px 12px;flex-wrap:nowrap}
+  .acts .ib{flex:0 0 auto}
+  .acts .ib.lbl{flex:1 1 0;min-width:0}
+  .acts .ib.lbl .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .ib{height:34px;min-width:32px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--dim);font-size:14px;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0 7px}
   .ib.save.on{background:var(--gold);border-color:var(--gold);color:#fff}.ib.up.on{background:var(--green);border-color:var(--green);color:#fff}.ib.down.on{background:var(--red);border-color:var(--red);color:#fff}
-  .ib .t{font-size:11.5px;font-weight:600;margin-left:5px}.ib.soc{background:#111;color:#fff;border-color:#111}
+  .ib .t{font-size:11.5px;font-weight:600;margin-left:4px}.ib.soc{background:#111;color:#fff;border-color:#111}
   .ib.vid.on{background:#af52de;border-color:#af52de;color:#fff}
   .kpi.w{color:#c77700;background:#fff4e0;border-color:#f2c98a}
   .sgl.real{margin-top:6px;font-weight:500;color:var(--dim);font-size:11px;letter-spacing:0}
@@ -109,7 +123,7 @@
   .fchip{font:inherit;font-size:12.5px;font-weight:600;padding:7px 13px;border-radius:20px;border:1px solid var(--line);background:#fff;color:var(--dim);cursor:pointer;white-space:nowrap;flex:0 0 auto}
   .fchip.on{background:var(--txt);color:var(--bg);border-color:var(--txt)}
   .pick .prev.cover{background:linear-gradient(135deg,#37a457,#175c40);color:#fff;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:14px 16px;height:112px}
-  .covmono{font-size:11px;font-weight:800;letter-spacing:.5px;opacity:.85}
+  .covmono{font-size:13px;font-weight:800;letter-spacing:.6px;opacity:.92;z-index:1}
   .covtitle{font-size:16px;font-weight:700;line-height:1.25;margin-top:6px;max-width:88%;z-index:1}
   .covline{position:absolute;left:0;bottom:-2px;width:100%;height:46px;opacity:.55}
 @media (prefers-color-scheme: dark){
@@ -303,26 +317,14 @@
     <div id="duelbox"></div>
     <div class="grid">
       <div>
-        <div class="pick">
-          <div class="prev cover"><div class="covmono">OJSM · meta-analisi</div><div class="covtitle">LCA: non riduce l'artrosi, abbassa le protesi</div><svg class="covline" viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0 22 Q25 6 50 18 T100 10" fill="none" stroke="#fff" stroke-width="1.4"/></svg></div>
-          <div class="ey">★ Da leggere oggi <span class="mono m-ojsm" style="width:22px;height:22px;font-size:6.5px">OJSM</span><span class="meta">meta-analisi · III · lug 2026 · [2]</span></div>
-          <h1>La ricostruzione del LCA non riduce l'artrosi, ma abbassa le protesi</h1>
-          <div class="aut">Blackman … Abouali · Orthop J Sports Med · luglio 2026</div>
-          <div class="why">Riduce protesi totali e reinterventi meniscali, non l'artrosi radiografica.</div>
-          <div class="act"><button class="btn pri" onclick="scrollToItem(2)">Scheda estesa ▾</button><button class="btn soc" onclick="openSocial(event,2)">✎ Contenuti social</button><button class="btn" id="savebtn-2" onclick="toggleSave(event,2)">★ Salva</button></div>
-        </div>
+        <div class="pick" id="pickbox"></div>
         <div class="sl" style="--sc:#c77a00"><span class="ic">⚑</span>Dove le prove non ti coprono<span class="n" id="tensn"></span></div>
         <div class="tens2"><div class="tintro">Punti in cui <b>tu fai una cosa</b> e la letteratura <b>ne ha studiata un&rsquo;altra</b>. Non sono errori: sono zone in cui le prove non ti coprono. Tocca per vedere che cosa puoi farci.</div><div id="tensbox"></div></div>
-        <div class="sl r-res"><span class="ic">🔬</span>Ricerca scientifica<span class="n">9 — tocca per aprire</span></div>
+        <div class="sl r-res"><span class="ic">🔬</span>Ricerca scientifica<span class="n" id="resn"></span></div>
         <div class="filters"><button class="fchip on" onclick="setFilter('all',this)">Tutti</button><button class="fchip" onclick="setFilter('orange',this)">🟠 La mia pratica</button><button class="fchip" onclick="setFilter('green',this)">🟢 Mie tecniche</button><button class="fchip" onclick="setFilter('gray',this)">⚪ Contesto</button></div><div class="card" id="researchList"></div>
       </div>
       <div>
-        <div class="sl r-tech"><span class="ic">🛠</span>Industria &amp; tecnologia<span class="n">0 in finestra</span></div>
-        <div class="tile"><div class="muted"><b>Nulla di verificato negli ultimi 10 giorni.</b> ROSA Knee OptimiZe (Zimmer Biomet) è del 14 nov 2025 — fuori finestra. Nessun richiamo per il ginocchio (openFDA).</div></div>
-        <div class="sl r-cong"><span class="ic">📅</span>Congressi</div>
-        <div class="tile"><div class="tcong"><span class="mono" style="background:linear-gradient(160deg,#1e6fb0,#0a3d62)">ISK</span><div class="tt"><div class="h">ISAKOS 2027 · Sydney</div><div class="v">abstract entro il 4 ago — 2 giorni.</div></div></div><div class="muted" style="margin-top:7px">ESSKA · AAOS · AOSSM · AGA — non verificati.</div></div>
-        <div class="sl r-soc"><span class="ic">👥</span>Società scientifiche</div>
-        <div class="tile"><div class="muted"><b>Nessun nuovo consensus verificato</b> (pagine ESSKA/AAOS non aperte). Consensus menisco ricontrollato sui 12 mesi.</div></div>
+        <div id="latobox"></div>
         <div class="sl r-disc"><span class="ic">✦</span>Oltre il consueto<span class="n">scelti per te</span></div>
         <div class="card" id="discList" style="border:1px solid rgba(52,199,89,.25)"></div>
         <div class="tile curio" style="margin-top:12px"><div class="lab">🌏 Curiosità dall'altra parte del mondo</div>
@@ -522,9 +524,9 @@ function itemHTML(a){if(!a)return '';var sv=isSaved(a.n),vt=S.votes[a.n];var has
     '<span class="ib save'+(sv?' on':'')+'" role="button" tabindex="0" aria-label="'+(sv?'Togli dai salvati':'Salva questo lavoro')+'" onclick="toggleSave(event,'+a.n+')">★</span>'+
     '<span class="ib up'+(vt==1?' on':'')+'" role="button" tabindex="0" aria-label="Mostrami più lavori come questo" onclick="vote(event,'+a.n+',1)">👍</span>'+
     '<span class="ib down'+(vt==-1?' on':'')+'" role="button" tabindex="0" aria-label="Mostrami meno lavori come questo" onclick="vote(event,'+a.n+',-1)">👎</span>'+
-    (hasSoc?'<span class="ib soc" role="button" tabindex="0" aria-label="Genera contenuti social per questo lavoro" onclick="openSocial(event,'+a.n+')"><span class="t">✎ Social</span></span>':'')+
-    '<span class="ib vid'+(inWeek(a.n)?' on':'')+'" role="button" tabindex="0" aria-label="Scegli questo lavoro per il video della settimana" onclick="pickWeek(event,'+a.n+')"><span class="t">📹 Video</span></span>'+
-    '<span class="ib" onclick="toggle('+a.n+')"><span class="t">Dettagli</span></span></div>'+
+    (hasSoc?'<span class="ib soc lbl" role="button" tabindex="0" aria-label="Genera contenuti social per questo lavoro" onclick="openSocial(event,'+a.n+')"><span class="t">✎ Social</span></span>':'')+
+    '<span class="ib vid lbl'+(inWeek(a.n)?' on':'')+'" role="button" tabindex="0" aria-label="Scegli questo lavoro per il video della settimana" onclick="pickWeek(event,'+a.n+')"><span class="t">📹 Video</span></span>'+
+    '<span class="ib lbl" onclick="toggle('+a.n+')"><span class="t">Dettagli</span></span></div>'+
   '<div class="det">'+fld('Autori',a.authors)+fld('Rivista',a.journal)+fld('Disegno',a.design)+fld('Popolazione',a.pop)+fld('Risultati',a.results)+fld('Conclusione degli autori',a.concl)+fld('Limiti (da revisore)',a.limits)+fld('Per te',a.perte)+muteHTML(a.n)+linksHTML(a.n)+
     '<div class="detlinks"><a class="btn pri" href="'+pm(a)+'" target="_blank">PubMed ↗</a><a class="btn" href="'+di(a)+'" target="_blank">Rivista (DOI) ↗</a>'+(hasSoc?'<button class="btn soc" onclick="openSocial(event,'+a.n+')">✎ Contenuti social</button>':'')+'</div></div></div>';}
 function fld(k,v){return '<div class="fld"><div class="k">'+k+'</div><div class="val">'+esc(v)+'</div></div>'}
@@ -726,7 +728,10 @@ function askNotif(){var l=document.getElementById('notiflbl');
 
 
 var curFilter='all';
-function renderResearch(){if(document.getElementById('verdict'))renderVerdict();var arr=ARTICLES.filter(function(a){return a.sec=='res'&&(curFilter=='all'||a.dot==curFilter)});
+function renderResearch(){if(document.getElementById('verdict'))renderVerdict();
+ var _rn=document.getElementById('resn');
+ if(_rn){var _tot=ARTICLES.filter(function(a){return a.sec=='res'}).length;
+  _rn.textContent=_tot+' — tocca per aprire';}var arr=ARTICLES.filter(function(a){return a.sec=='res'&&(curFilter=='all'||a.dot==curFilter)});
  var el=document.getElementById('researchList');
  el.innerHTML=arr.length?arr.map(itemHTML).join(''):'<div style="padding:16px;color:var(--dim);font-size:13px">Nessun lavoro in questa categoria oggi.</div>';}
 function setFilter(f,btn){curFilter=f;[].forEach.call(btn.parentNode.children,function(x){x.classList.remove('on')});btn.classList.add('on');renderResearch();}
@@ -741,6 +746,69 @@ var CONF={1:'media',2:'bassa',3:'bassa',4:'media',5:'bassa',6:'bassa',7:'bassa',
 function confHTML(n){var lvl=CONF[n]||'bassa';var nf={bassa:1,media:2,alta:3}[lvl];var cc={bassa:'#e6902a',media:'#0071e3',alta:'#34c759'}[lvl];
  var seg='';for(var i=1;i<=3;i++){seg+='<span class="confseg'+(i<=nf?' on':'')+'"></span>';}
  return '<div class="conf" style="--cc:'+cc+'"><span class="confbar">'+seg+'</span><span class="conflab">evidenza '+lvl+'</span></div>';}
+/* Il lavoro del giorno. Prima era HTML scritto a mano: il 5 agosto mostrava ancora
+   la scelta del 2. Ora si costruisce dalla scheda indicata da PICK — e se PICK punta
+   a una scheda che oggi non c'è, si ripiega sul primo arancione e poi sulla prima
+   scheda, invece di mostrare un vuoto o, peggio, qualcosa di ieri. */
+function pickArt(){
+ var res=ARTICLES.filter(function(a){return a.sec=='res'});
+ var p=(typeof PICK!=='undefined')&&res.filter(function(a){return a.n==PICK})[0];
+ return p || res.filter(function(a){return a.dot=='orange'})[0] || res[0] || null;}
+function renderPick(){var el=document.getElementById('pickbox');if(!el)return;
+ var a=pickArt();
+ if(!a){el.style.display='none';return;}
+ el.style.display='';
+ var disegno=(a.meta||'').split('·')[0].trim();
+ var occhiello=[disegno,(a.meta||'').indexOf('·')>=0?(a.meta||'').split('·').slice(1).join('·').trim():''].filter(Boolean).join(' · ');
+ el.innerHTML=
+  /* Il titolo sta una volta sola, grande e nero, sotto la fascia: scriverlo anche
+     dentro la fascia lo faceva finire sopra l'onda e lo ripeteva a due centimetri
+     di distanza. */
+  '<div class="prev cover"><div class="covmono">'+esc(a.j+(disegno?' · '+disegno:''))+'</div>'+
+  '<svg class="covline" viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0 22 Q25 6 50 18 T100 10" fill="none" stroke="#fff" stroke-width="1.4"/></svg></div>'+
+  '<div class="ey">★ Da leggere oggi <span class="mono '+esc(a.mono||'')+'" style="width:22px;height:22px;font-size:6.5px">'+esc(a.j)+'</span>'+
+  '<span class="meta">'+esc(occhiello)+'</span></div>'+
+  '<h1>'+esc(a.h)+'</h1>'+
+  '<div class="aut">'+esc([a.ax,a.journal,a.date].filter(Boolean).join(' · '))+'</div>'+
+  '<div class="why">'+esc(a.concl||a.v||'')+'</div>'+
+  '<div class="act"><button class="btn pri" onclick="scrollToItem('+a.n+')">Scheda estesa ▾</button>'+
+  '<button class="btn soc" onclick="openSocial(event,'+a.n+')">✎ Social</button>'+
+  '<button class="btn" id="savebtn-'+a.n+'" onclick="toggleSave(event,'+a.n+')">★ Salva</button></div>';}
+
+/* La colonna di destra. I giorni che mancano a una scadenza NON si scrivono: si
+   calcolano. Il 5 agosto la pagina diceva ancora «entro il 4 ago — 2 giorni», frase
+   scritta il 2 agosto e diventata falsa due volte (il numero, e poi la scadenza). */
+function giorniA(iso){
+ var oggi=new Date(); var o=new Date(oggi.getFullYear()+'-'+('0'+(oggi.getMonth()+1)).slice(-2)+'-'+('0'+oggi.getDate()).slice(-2)+'T12:00:00');
+ return Math.round((new Date(iso+'T12:00:00')-o)/86400000);}
+function scadenzaTesto(iso){
+ var g=giorniA(iso);
+ var d=new Date(iso+'T12:00:00').toLocaleDateString('it-IT',{day:'numeric',month:'long'});
+ if(g>1)  return 'entro il '+d+' — '+g+' giorni';
+ if(g===1)return 'entro il '+d+' — domani';
+ if(g===0)return 'scade oggi, '+d;
+ if(g===-1)return 'scaduta ieri, '+d;
+ return 'scaduta il '+d;}
+function riquadro(titolo, classe, icona, contatore, corpo, nota){
+ return '<div class="sl '+classe+'"><span class="ic">'+icona+'</span>'+titolo+
+  (contatore?'<span class="n">'+esc(contatore)+'</span>':'')+'</div>'+
+  '<div class="tile">'+corpo+(nota?'<div class="muted" style="margin-top:7px">'+esc(nota)+'</div>':'')+'</div>';}
+function renderLato(){var el=document.getElementById('latobox');if(!el)return;
+ var nv=(typeof NONVERIF!=='undefined')?NONVERIF:{};
+ var ind=(typeof INDUSTRIA!=='undefined'?INDUSTRIA:[])||[];
+ var cong=((typeof CONGRESSI!=='undefined'?CONGRESSI:[])||[]).filter(function(c){return !c.scad||giorniA(c.scad)>=-7;});
+ var soc=(typeof SOCIETA!=='undefined'?SOCIETA:[])||[];
+ var cInd=ind.length?ind.map(function(x){return '<div class="tcong"><div class="tt"><div class="h">'+esc(x.t)+'</div><div class="v">'+esc(x.v||'')+'</div></div></div>';}).join('')
+   :'<div class="muted"><b>Nulla di verificato negli ultimi 10 giorni.</b></div>';
+ var cCong=cong.length?cong.map(function(c){return '<div class="tcong"><span class="mono" style="background:linear-gradient(160deg,#1e6fb0,#0a3d62)">'+esc(c.sig||'')+'</span><div class="tt"><div class="h">'+esc(c.nome)+'</div><div class="v">'+esc((c.nota?c.nota+' ':'')+(c.scad?scadenzaTesto(c.scad):''))+'</div></div></div>';}).join('')
+   :'<div class="muted"><b>Nessuna scadenza verificata oggi.</b></div>';
+ var cSoc=soc.length?soc.map(function(s){return '<div class="tcong"><div class="tt"><div class="h">'+esc(s.t)+'</div><div class="v">'+esc(s.v||'')+'</div></div></div>';}).join('')
+   :'<div class="muted"><b>Nessun nuovo consensus verificato.</b></div>';
+ el.innerHTML=
+  riquadro('Industria &amp; tecnologia','r-tech','🛠',ind.length+' in finestra',cInd,nv.ind)+
+  riquadro('Congressi','r-cong','📅','',cCong,nv.cong)+
+  riquadro('Società scientifiche','r-soc','👥','',cSoc,nv.soc);}
+
 function renderVerdict(){var el=document.getElementById('verdict');if(!el)return;
  var oranges=ARTICLES.filter(function(a){return a.sec=='res'&&a.dot=='orange'}).length;
  var orl=ARTICLES.filter(function(a){return a.sec=='res'&&a.dot=='orange'});
@@ -762,6 +830,20 @@ document.addEventListener('touchend',function(e){if(!_sItem)return;
 
 
 var BUILD_DATE='2026-08-04';
+/* Fino al 5 agosto 2026 il lavoro scelto in cima e tutta la colonna di destra erano
+   HTML scritto a mano il 2 agosto. Il 5 agosto l'app mostrava ancora, in cima, la
+   scelta del 2 agosto (Blackman, OJSM) sopra un elenco del 4; diceva «ISAKOS 2027,
+   abstract entro il 4 agosto — 2 giorni» quando la scadenza era passata; e diceva
+   «nessun nuovo consensus verificato» nel giorno in cui ne erano state aggiunte due
+   dell'ICRS. Tre affermazioni false in cima alla pagina.
+   Ora sono dati, e la pagina li calcola. I giorni residui non si scrivono MAI. */
+var PICK=1;                 /* numero della scheda scelta come lavoro del giorno */
+var INDUSTRIA=[];           /* [{t:'titolo', v:'testo', d:'AAAA-MM-GG'}] */
+var CONGRESSI=[];           /* [{sig:'ISK', nome:'ISAKOS 2027 · Sydney', scad:'AAAA-MM-GG', nota:'scadenza abstract'}] */
+var SOCIETA=[{t:'ESSKA-ICRS e ICRS-FIFA-Aspetar',v:'Due consensus sulla cartilagine e sulle terapie cellulari nel ginocchio, entrambe in finestra e presenti fra le schede di oggi. Firma senior Giuseppe Filardo (EOC Lugano).'}];
+var NONVERIF={ind:'openFDA e Swissmedic non riaperti oggi.',
+              cong:'ESSKA · ISAKOS · AAOS · AOSSM · AGA — nessuna scadenza riverificata oggi.',
+              soc:'Pagine ESSKA e AAOS non aperte: verificato solo ciò che è passato da PubMed.'};
 var CIT_VERIFICATE=9;   /* quante citazioni la sessione ha davvero riaperto su PubMed */
 var LAST_RETRACTION_CHECK='4 agosto 2026';
 var RETRACTED={};   // {n: 'motivo'} — popolato ogni mattina dal controllo su PubMed
@@ -793,7 +875,7 @@ function renderFresh(){var el=document.getElementById('freshbox');if(!el)return;
  var dl=b.toLocaleDateString('it-IT',{day:'numeric',month:'long'});
  var giorniIndietro=Math.round((new Date(oggi+'T12:00:00')-b)/86400000);
  var oraUTC=now.getUTCHours()+now.getUTCMinutes()/60;
- var inLavorazione=(oraUTC>=5&&oraUTC<7);   /* 7.00-9.00 in Ticino */
+ var inLavorazione=(oraUTC>=5&&oraUTC<6.5);   /* 7.00-8.30 in Ticino */   /* 7.00-9.00 in Ticino */
  if(giorniIndietro<=0){
   el.innerHTML='<div class="fresh ok">✓ <span>Aggiornato oggi, '+dl+'</span></div>';}
  else if(giorniIndietro===1&&oraUTC<5){
@@ -1078,6 +1160,8 @@ function renderTens(){var el=document.getElementById('tensbox');if(!el)return;
 function tglTens(i){var e=document.getElementById('tn-'+i);if(e)e.classList.toggle('open');}
 
 renderVerdict();
+renderPick();
+renderLato();
 renderTens();
 renderFresh();
 renderDuel();

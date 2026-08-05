@@ -64,6 +64,9 @@ MARCATORI = [
  ("Trasferimento fra dispositivi", ["function linkTrasferimento", "function fondiStato", "hashchange"]),
  ("Conteggio citazioni derivato",["function renderFoot", "CIT_VERIFICATE"]),
  ("Intestazione derivata",        ["function renderTop", 'id="kpis"', 'id="datalunga"']),
+ ("Lavoro del giorno derivato",   ["function renderPick", "function pickArt", 'id="pickbox"', "var PICK="]),
+ ("Colonna destra derivata",      ["function renderLato", "function giorniA", "function scadenzaTesto", 'id="latobox"']),
+ ("Contatore ricerca derivato",   ['id="resn"']),
  ("Attesa distinta dal guasto",   ["in preparazione", "inLavorazione"]),
  ("Pulsante Video sulle schede",  ["ib vid"]),
  ("Memoria dell'utente",          ["localStorage.getItem('pulse4')"]),
@@ -126,6 +129,24 @@ if os.path.exists(_pub):
     chk("il fermo contro la sovrascrittura è al suo posto", not _persi, _persi)
 else:
     chk("il fermo contro la sovrascrittura è al suo posto", False, "pubblica.sh non trovato")
+
+# Il 5 agosto 2026 la pagina mostrava, in HTML scritto a mano il 2 agosto: la scelta
+# del giorno sbagliata, «abstract entro il 4 ago — 2 giorni» a scadenza passata, e
+# «nessun nuovo consensus verificato» mentre due erano state appena aggiunte. Tre
+# affermazioni false in cima alla pagina, e nessuna suite le guardava.
+# Regola: nel corpo HTML non si scrivono contenuti del giorno. Vivono nei dati.
+_corpo = _re.sub(r"<script>[\s\S]*?</script>", "", h)
+_vietati = []
+# «30 giorni» nelle impostazioni è un'etichetta, non un conto alla rovescia: si
+# cercano solo i conteggi legati a una scadenza, che sono quelli che invecchiano.
+if _re.search(r"[—-]\s*\d+\s+giorn|\d+\s+giorni\s+(residui|fa)\b|mancano\s+\d+", _corpo):
+    _vietati.append("un conto alla rovescia scritto a mano")
+if _re.search(r"\bclass=\"aut\"", _corpo):          _vietati.append("una riga di autori")
+if _re.search(r"\bcovtitle\">", _corpo):            _vietati.append("un titolo nella copertina")
+if _re.search(r"\bPMID\b|\b10\.\d{4}/", _corpo):     _vietati.append("un PMID o un DOI")
+for _rv in ["Orthop J Sports Med", "Am J Sports Med", "Knee Surg Sports"]:
+    if _rv in _corpo: _vietati.append("il nome di una rivista (" + _rv + ")")
+chk("nessun contenuto del giorno scritto a mano nell'HTML", not _vietati, _vietati)
 
 chk("etichette di accessibilità (≥6)", h.count('aria-label') >= 6, h.count('aria-label'))
 
