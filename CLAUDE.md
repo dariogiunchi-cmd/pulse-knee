@@ -99,7 +99,13 @@ Installali e rilancia; non toccare `index.html`.
 
 ## Le variabili che il briefing riscrive ogni mattina
 
-In `index.html`, tutte come `var` a livello superiore:
+**Dalla sera del 17 agosto vivono in `dati/giorno.js`** — l'unico file che il briefing tocca.
+`index.html` è il prodotto di `modello.html` (il codice, da non toccare mai) più i
+dati: si rigenera con `python3 test/costruisci.py`, e il cancello blocca un
+`index.html` modificato a mano (`costruisci.py --verifica`). Dopo il ripristino di
+un'istantanea: `costruisci.py --estrai` riallinea modello e dati all'index ripristinato.
+
+Tutte come `var` a livello superiore:
 
 `BUILD_DATE` · `ARTICLES` · `CIT_VERIFICATE` · `CONF` · `MUTE` · `TENSIONS` · `LINKS` ·
 `DUELS` · `HISTORY` · `AUDIT` · `RETRACTED` · `LAST_RETRACTION_CHECK` · `BRIEF_TEXT` ·
@@ -145,11 +151,16 @@ che cosa*.
 ## Struttura
 
 ```
-index.html          l'app intera: HTML, CSS, JS, dati del giorno. ~190 KB, una sola richiesta
+index.html          l'app servita: PRODOTTO di modello + dati. Non si modifica a mano
+modello.html        il codice dell'app (HTML, CSS, JS). Si tocca solo per cambiare l'app
+dati/giorno.js      i contenuti del giorno: l'unico file che il briefing riscrive
 manifest.json sw.js PWA — funziona offline; le istantanee non si tengono in cache
-cervello/           copia di sicurezza dei documenti del Progetto claude.ai
-test/               le suite, il cancello (verifica.sh) e la pubblicazione (pubblica.sh)
+cervello/           l'ORIGINALE del cervello (14-standard-di-cura.md: registro peritale)
+test/               le suite, costruisci.py, potenza.py, verifica.sh, pubblica.sh
 versioni/           istantanee datate, per tornare indietro in un minuto
+.github/workflows/  cancello.yml (verifica su ogni PR) · battito.yml (07:15 UTC: se il
+                    briefing non è arrivato, email da GitHub e issue — non consuma
+                    crediti Claude: è il rilevatore indipendente della regola 36)
 ```
 
 ### Le suite

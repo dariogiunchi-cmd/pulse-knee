@@ -51,8 +51,15 @@ storia a ogni pubblicazione. Ora si clona, si aggiorna, si spinge senza forzare.
 curl -s https://raw.githubusercontent.com/dariogiunchi-cmd/pulse-knee/main/versioni/2026-08-01.html -o index.html
 # opzione B — da uno SHA noto
 curl -s https://raw.githubusercontent.com/dariogiunchi-cmd/pulse-knee/<SHA_BUONO>/index.html -o index.html
+# dalla sera del 17 agosto index.html è il prodotto di modello + dati: dopo il ripristino
+python3 test/costruisci.py --estrai      # riallinea modello.html e dati/giorno.js
 # poi ripubblicare con test/pubblica.sh
 ```
+⚠️ Un'istantanea **precedente** a una funzione dell'app può non passare più i marcatori
+di `checklist.py`: è voluto — impedisce di rimettere online un'app che ha perso
+funzioni (la trappola del 2 agosto). In quel caso si ripristinano i **soli dati**:
+`--estrai` dall'istantanea in una cartella a parte, e si copia `dati/giorno.js` sul
+modello corrente.
 In un minuto il sito torna alla versione precedente. Avvisare sempre l'utente in chat.
 
 ## ⚠️ TRAPPOLA DELLA CACHE — errore già commesso, non ripeterlo

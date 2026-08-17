@@ -109,5 +109,21 @@ with sync_playwright() as p:
     chk(c['cardBg'] is not None and '28, 28, 30' in c['cardBg'], 'schede con fondo scuro')
     chk(c['testo'] is not None and '245, 245, 247' in c['testo'], 'testo chiaro su fondo scuro')
     pg2.screenshot(path='/tmp/dark2.png'); pg2.close()
+
+    # --- giorni scoperti dichiarati: funzione PURA collaudata con date sintetiche
+    #     (mai col carico del giorno), più la coerenza fra dati e ciò che si vede.
+    pg3=b.new_page(viewport={'width':390,'height':844}); pg3.goto(_U); pg3.wait_for_timeout(500)
+    chk(pg3.evaluate("copertura([{d:'2026-08-10'},{d:'2026-08-17'}])").find('11 agosto')>=0
+        and 'senza briefing' in pg3.evaluate("copertura([{d:'2026-08-10'},{d:'2026-08-17'}])"),
+        'un buco di più giorni viene dichiarato con le date giuste')
+    chk(pg3.evaluate("copertura([{d:'2026-08-16'},{d:'2026-08-17'}])")=='',
+        'un giorno consecutivo non produce nessun avviso')
+    chk('16 agosto' in pg3.evaluate("copertura([{d:'2026-08-15'},{d:'2026-08-17'}])"),
+        'un buco di un solo giorno nomina quel giorno')
+    chk(pg3.evaluate("copertura([])")=='' and pg3.evaluate("copertura(null)")=='',
+        'senza storia non si inventa nulla')
+    coer=pg3.evaluate("(document.getElementById('copbox').textContent.trim()!=='')===(copertura(HISTORY)!=='')")
+    chk(coer,'il riquadro compare se e solo se i dati dicono che serve')
+    pg3.close()
     b.close()
 print(f"\n===== PASSATI {ok} · FALLITI {bad} =====")

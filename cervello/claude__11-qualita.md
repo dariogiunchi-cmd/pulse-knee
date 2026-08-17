@@ -30,6 +30,11 @@ Casi tipici: gruppi <20-30 per braccio con esiti rari · retrospettivi senza con
 narrative senza esiti clinici · cadavere/banco · «nessuna differenza» su campioni piccoli
 (**non è prova di equivalenza**).
 
+*Dalla sera del 17 agosto il silenzio si misura*: per i confronti binari,
+`python3 test/potenza.py <eventi1> <n1> <eventi2> <n2>` stampa l'IC 95% del rischio
+relativo e la frase da usare — che cosa lo studio **non può escludere**. Il MUTE con
+il numero («non può escludere un RR fino a 10,4») vale più del MUTE ad aggettivi.
+
 ## 4. TENSIONI — sezione «Dove le prove non ti coprono»
 
 Dalle questioni aperte di `03-memoria.md`. Quattro campi obbligatori:

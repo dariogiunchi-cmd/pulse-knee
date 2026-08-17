@@ -1,0 +1,87 @@
+# PULSE — il battito che non dipende dai crediti Claude.
+#
+# Regola 36 del progetto: «il sistema deve avere almeno un rilevatore che non dipenda
+# dalle stesse risorse di ciò che sorveglia». La sentinella delle 7.00 e il briefing
+# consumano entrambi crediti Anthropic: se finiscono, tacciono INSIEME. Questo workflow
+# gira sull'infrastruttura di GitHub: se il briefing non è arrivato, il job fallisce
+# (→ email di GitHub al proprietario) e apre/aggiorna una issue. Quando il briefing
+# torna, la issue si chiude da sola.
+name: battito
+
+on:
+  schedule:
+    - cron: '15 7 * * *'   # 07:15 UTC, dopo il briefing delle 5 e la sentinella delle 7
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  battito:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: il briefing di oggi è arrivato?
+        id: stato
+        run: |
+          OGGI=$(date -u +%F)
+          BD=$(grep -o "var BUILD_DATE='[^']*'" index.html | head -1 | cut -d"'" -f2)
+          echo "oggi=$OGGI  build_date=$BD"
+          echo "oggi=$OGGI"  >> "$GITHUB_OUTPUT"
+          echo "build=$BD"   >> "$GITHUB_OUTPUT"
+          if [ "$BD" = "$OGGI" ]; then echo "fresco=si" >> "$GITHUB_OUTPUT"; else echo "fresco=no" >> "$GITHUB_OUTPUT"; fi
+      - name: issue aperta/chiusa di conseguenza
+        uses: actions/github-script@v7
+        env:
+          FRESCO: ${{ steps.stato.outputs.fresco }}
+          OGGI: ${{ steps.stato.outputs.oggi }}
+          BUILD: ${{ steps.stato.outputs.build }}
+        with:
+          script: |
+            const {FRESCO, OGGI, BUILD} = process.env;
+            const marca = 'battito-pulse';
+            const aperte = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: marca });
+            if (FRESCO === 'si') {
+              for (const i of aperte.data) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner, repo: context.repo.repo, issue_number: i.number,
+                  body: `Il briefing è tornato: BUILD_DATE ${BUILD}. Chiudo.` });
+                await github.rest.issues.update({
+                  owner: context.repo.owner, repo: context.repo.repo,
+                  issue_number: i.number, state: 'closed' });
+              }
+              return;
+            }
+            const titolo = `Briefing non arrivato: l'app mostra ${BUILD}, oggi è ${OGGI}`;
+            if (aperte.data.length > 0) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: aperte.data[0].number,
+                body: `Ancora fermo il ${OGGI}: l'app mostra ${BUILD}.` });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title: titolo, labels: [marca],
+                body: [
+                  `L'app pubblica mostra ancora BUILD_DATE **${BUILD}** mentre oggi è **${OGGI}**:`,
+                  `il briefing delle 5.00 UTC non è andato in fondo.`,
+                  ``,
+                  `Che cosa guardare, nell'ordine (da CLAUDE.md del repository):`,
+                  `1. la Routine è partita? (claude.ai → Routines)`,
+                  `2. la sessione ha pubblicato con \`bash test/pubblica.sh\` o ha provato un push a mano?`,
+                  `3. \`bash test/verifica.sh\` — se rosso, il difetto è quasi sempre nei contenuti del giorno.`,
+                  ``,
+                  `Questa issue si chiude da sola alla prima pubblicazione riuscita.`
+                ].join('\n') });
+            }
+      - name: esito del battito
+        if: steps.stato.outputs.fresco == 'no'
+        run: |
+          echo "Briefing NON arrivato: BUILD_DATE=${{ steps.stato.outputs.build }}, oggi=${{ steps.stato.outputs.oggi }}"
+          exit 1
