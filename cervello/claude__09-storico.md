@@ -129,9 +129,14 @@ CITAZIONI: `CIT_VERIFICATE=10` nell'app pubblicata; `LAST_RETRACTION_CHECK` 12 a
 
 ## 2026-08-06 → 2026-08-11 e 2026-08-13 → 2026-08-16 · nessun briefing
 Dieci giorni senza pubblicazione automatica, interrotti solo dal 12 (manuale, dal Mac).
-Stessa causa dei mattini 3–5 agosto: il sandbox Cowork riceve 403 dal proxy git — il
-briefing muore al passo del push, in silenzio. Registrati in blocco perché il calendario
-deve essere completo anche nei giorni vuoti.
+Fino al 15: la causa nota dei mattini 3–5 agosto — il sandbox Cowork riceve 403 dal
+proxy git, il briefing muore al passo del push. **Il 15 agosto è stata creata una nuova
+Routine su sessione Claude Code** (trig_01T9znAjKWuvrTCfpkxcE7ay, 5.00 UTC, connettore
+PubMed) che ha sparato il 16 e il 17 alle 5 **senza lasciare nulla online**: il suo
+prompt era pre-correzioni — non conosceva la trappola Playwright (1.62 contro Chromium
+1194: nove suite rosse) e ordinava il push a mano su `main`, che il classificatore dei
+permessi blocca. La vecchia attività Cowork risulta già disattivata il 15. Registrato
+perché il calendario deve essere completo anche nei giorni vuoti.
 
 ## 2026-08-17 · la macchina cambia casa — audit da Claude Code
 Prima sessione Claude Code sul repository. Fatti, tutti verificati eseguendo:

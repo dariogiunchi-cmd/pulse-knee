@@ -3,9 +3,14 @@
 *Testo di riferimento del prompt che parte ogni mattina alle 5.00 UTC.*
 
 Attività: **PULSE — briefing quotidiano ginocchio (Claude Code)**
-Cadenza: `0 5 * * *` (UTC) · Attiva dal 17 agosto 2026 · Ogni esecuzione apre una
-**sessione Claude Code nuova** sul repository `dariogiunchi-cmd/pulse-knee`, con il
-connettore **PubMed** concesso alla Routine.
+Cadenza: `0 5 * * *` (UTC) · Routine `trig_01T9znAjKWuvrTCfpkxcE7ay`, creata il 15
+agosto e **corretta il 17** (il primo mandato non conosceva la trappola Playwright e
+ordinava un push a mano che veniva bloccato: due mattini a vuoto, 16 e 17). Ogni
+esecuzione apre una **sessione Claude Code nuova** sul repository
+`dariogiunchi-cmd/pulse-knee`, con il connettore **PubMed** concesso alla Routine.
+Accanto vive la **sentinella delle 7.00 UTC** (`trig_01FXmhEtnk1CrCDAk2DFGU4y`), che
+controlla da fuori se il briefing è arrivato e manda una riga sull'iPhone anche quando
+va tutto bene: l'assenza del suo messaggio è essa stessa il segnale.
 
 **Storia.** Dal 2 al 12 agosto l'attività girava come compito Cowork del Progetto
 claude.ai e pubblicava con un token. Dal 5 agosto quel sandbox riceve 403 dal proxy git:
