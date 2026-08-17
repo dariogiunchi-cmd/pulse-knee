@@ -157,3 +157,25 @@ Prima sessione Claude Code sul repository. Fatti, tutti verificati eseguendo:
 - E-utilities NCBI (`eutils.ncbi.nlm.nih.gov`) è **bloccato dal proxy**: senza il
   connettore PubMed MCP il briefing non si può fare, e il mandato ora dice chiaramente
   che in quel caso non si fa — niente schede a memoria.
+
+## 2026-08-17 · 10 papers · 0 rossi · 0 arancioni — recupero, pubblicato da Claude Code
+PICK: KSSTA — Prelievo parziale del quadricipite: forza recuperata prima, pari a 12 mesi · PMID 42605970 · 10.1002/ksa.70547
+- 🟢 KSSTA — Prelievo quadricipitale parziale vs intero: forza prima, pari a 12 mesi (coorte retrospettiva, 42, liv. II dich.) · PMID 42605970 · 10.1002/ksa.70547
+- 🟢 J ISAKOS — Radici meniscali, state of the art: transtibiale di scelta, estrusione irrisolta (revisione, liv. V) · PMID 42600745 · 10.1016/j.jisako.2026.101202 [Pittsburgh, Seil, Getgood, Karlsson]
+- 🟢 J ISAKOS — Registro svedese: revisioni pari HT vs BPTB nei maschi 16-25 (registro, 10.038, liv. III) · PMID 42595218 · 10.1016/j.jisako.2026.101201 [D'Ambrosi, Cristiani]
+- 🟢 Arthroscopy — Ramp: 43,2% alla RM, 9,8% in artroscopia; bone bruise PM OR 4,04 (coorte, 579, liv. III) · PMID 42605136 · 10.1002/arj.70454 [Stålman, Cristiani]
+- 🟢 KSSTA — ACW-HTO nel LCA: revisione tecnica delle complicanze (liv. V) · PMID 42605955 · 10.1002/ksa.70575 [Musahl, Hughes]
+- 🟢 KSSTA — Nell'adolescente l'innesto matura più lentamente: SNQ 5,1 vs 1,5 (comparativo prospettico, 111, liv. II) · PMID 42605936 · 10.1002/ksa.70576 [Cavaignac, Accadbled]
+- 🟢 Arthroplasty — Consensus ASIA: robotica precisa (98%), superiorità clinica non dimostrata (77%) (Delphi, 45 esperti, liv. V) · PMID 42596025 · 10.1186/s42836-026-00427-1
+- 🟢 Arthroscopy — MQTFL per instabilità rotulea: ridislocazioni 1,6% se combinata (SR, 9 studi/347, liv. IV) · PMID 42592956 · 10.1002/arj.70433
+- 🟢 KSSTA — PRP vs placebo: meglio a 6-12 mesi, certezza molto bassa (meta di RCT, 20 trial, liv. I) · PMID 42605960 · 10.1002/ksa.70567
+- 🟢 BMJ Open — GRASE: RCT a 3 bracci sull'innesto, QT compreso; protocollo (150) · PMID 42595367 · 10.1136/bmjopen-2026-118571
+CITAZIONI: verificate 10/10 su PubMed MCP — ogni PMID riaperto e confrontato su titolo, rivista e DOI dai campi identifiers.
+STUDI MUTI: 2 — schede 5 (revisione tecnica senza stima aggregata) e 10 (protocollo, nessun risultato per costruzione).
+TENSIONI MOSSE: T1a (GRASE risponderà sull'innesto, non sulla combinazione col LET) · T2b/T3 (state of the art: estrusione +96,2% nonostante centralizzazione — rafforzata).
+SUGGERIMENTO (SUGGQ): Cristiani (Stoccolma, 2 lavori di oggi) · Hughes (Pittsburgh, slope) · Martín-Alguacil (Granada, prelievo QT parziale) · Accadbled (Tolosa, LCA pediatrico).
+INDUSTRIA · CONGRESSI · REGISTRI: NON VERIFICATI oggi — ricerca limitata a PubMed. SOCIETÀ: consensus ASIA da scheda verificata.
+RITRATTAZIONI: archivio salvati vuoto → nessun PMID da ricontrollare; LAST_RETRACTION_CHECK = 17 agosto 2026.
+NON VERIFICATO: Swissmedic · openFDA · Retraction Watch (feed) · pagine ESSKA/AAOS/ICRS · registri SIRIS/RIPO/NJR/AOANJRR.
+CONSEGNA: app aggiornata, BUILD_DATE 2026-08-17, 10 schede; NLB su tutte, SOCV/TAGS/SOC su 1-2-3-7; 496 controlli verdi; pubblicazione via pull request dalla sessione Claude Code (senza token).
+NOTA DI METODO: la finestra edat 12–17 agosto copre i giorni persi; ~90 risultati scorsi, 21 riaperti per esteso, 10 tenuti. Nessuna scheda arancione oggi: è un conteggio, non una rassicurazione.

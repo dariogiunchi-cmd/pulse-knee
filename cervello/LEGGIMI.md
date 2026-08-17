@@ -20,20 +20,20 @@ controllo. In questo aggiornamento: **0 sostituzioni**.
 La pubblicazione ordinaria non richiede più alcun token: la sessione Claude Code spinge
 dal proprio accesso autorizzato. Il token GitHub resta nel Progetto come via di riserva.
 
-## Documenti (14, 113 KB in tutto)
+## Documenti (14, 120 KB in tutto)
 
 | File | Peso | Impronta |
 |---|---|---|
 | `00-istruzioni-del-progetto.md` | 3.4 KB | `78dba04be726` |
 | `01-profilo.md` | 6.3 KB | `a39ce39af586` |
 | `02-cosa-opera.md` | 6.4 KB | `5eab1d69d4be` |
-| `03-memoria.md` | 14.6 KB | `fa52e90a4c27` |
+| `03-memoria.md` | 17.6 KB | `84cd9616dfd3` |
 | `04-fonti.md` | 8.4 KB | `4e694c6f7ebf` |
 | `05-formato.md` | 4.9 KB | `3cfd7dd432fa` |
 | `06-social.md` | 3.2 KB | `e798b888fbdf` |
 | `claude__07-preferenze.md` | 9.3 KB | `764ff5730906` |
 | `claude__08-archivio.md` | 0.4 KB | `aba6dc9d105b` |
-| `claude__09-storico.md` | 13.8 KB | `49021f8a66d7` |
+| `claude__09-storico.md` | 17.0 KB | `07dcdc0c39cd` |
 | `claude__10-deploy.md` | 8.0 KB | `f3e3f3b52e6a` |
 | `claude__11-qualita.md` | 23.6 KB | `0cdc56731b9a` |
 | `claude__12-distribuzione.md` | 5.1 KB | `53733f2ec633` |
