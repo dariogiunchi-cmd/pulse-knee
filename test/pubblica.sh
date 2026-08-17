@@ -132,6 +132,11 @@ mkdir -p test && cp "$QUI"/*.py "$QUI"/*.js "$QUI"/*.sh test/ 2>/dev/null
 rm -rf test/__pycache__ cervello/__pycache__
 [ -f "$APP/.gitignore" ] && cp "$APP/.gitignore" ./.gitignore
 [ -d "$APP/cervello" ] && { mkdir -p cervello && cp "$APP/cervello/"* cervello/ 2>/dev/null; }
+# La memoria delle sessioni Claude Code viaggia con l'app: senza queste due righe una
+# correzione a CLAUDE.md o al hook resterebbe locale e ogni sessione nuova partirebbe
+# con la versione vecchia.
+[ -f "$APP/CLAUDE.md" ] && cp "$APP/CLAUDE.md" ./CLAUDE.md
+[ -d "$APP/.claude" ] && { mkdir -p .claude && cp -r "$APP/.claude/." .claude/; }
 
 # File non più serviti da nessuna pagina. Il clone non cancella nulla da solo:
 # vanno tolti qui, esplicitamente, e restano recuperabili dalla storia di git.

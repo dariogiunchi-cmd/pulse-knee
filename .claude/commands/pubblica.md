@@ -22,11 +22,12 @@ mano, e non disattivare un controllo per farlo tacere.
 
 **3. La pubblicazione vera.**
 ```
-PULSE_TOKEN=<token> bash test/pubblica.sh "AAAA-MM-GG" "PULSE <data>"
+bash test/pubblica.sh "AAAA-MM-GG" "PULSE <data>"
 ```
-Il token vive **solo** nel Progetto claude.ai (`claude/10-deploy.md`). Non scriverlo mai
-in un file, in un commit o in un messaggio. Se non ce l'hai, chiedilo all'utente e
-avvisalo che serve incollarlo una volta sola, nel comando.
+Senza token: da una sessione autorizzata il push passa dal remoto della sessione, e lo
+script lo verifica prima di iniziare. Solo se lo script dice che nessuna via risponde,
+serve `PULSE_TOKEN=<token>` davanti al comando — il token vive nel Progetto claude.ai
+(`claude/10-deploy.md`) e non va mai scritto in un file, in un commit o in un messaggio.
 
 Lo script rifà la verifica per conto suo, clona, salva l'istantanea datata, firma il
 commit, spinge, e infine **riscarica dallo SHA per riverificare ciò che è davvero

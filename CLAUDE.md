@@ -3,10 +3,13 @@
 Questo file viene letto automaticamente da Claude Code a ogni sessione aperta in questa
 cartella. Non è documentazione per l'utente: è la memoria di lavoro dell'agente.
 
-**L'originale del cervello vive nel Progetto claude.ai «PULSE — Direzione Scientifica
-Ginocchio».** `cervello/` ne è la copia di sicurezza. In caso di divergenza vince il
-Progetto. Da Claude Code il Progetto **non è leggibile**: `cervello/` è tutto ciò che hai,
-quindi va tenuto allineato — vedi «Le due teste» in fondo.
+**Dal 17 agosto 2026 l'originale del cervello è `cervello/` in questo repository** —
+deciso dal Dr. Giunchi quando il lavoro si è spostato su Claude Code. Il Progetto
+claude.ai «PULSE — Direzione Scientifica Ginocchio» ne conserva una copia per le
+conversazioni; in caso di divergenza **vince il repository**. Fino al 12 agosto era il
+contrario: i documenti scritti prima vanno letti sapendolo. Dopo ogni modifica a
+`cervello/` si rilancia `python3 test/cervello.py cervello` (ripulisce le credenziali e
+rigenera l'indice).
 
 ---
 
@@ -50,11 +53,14 @@ bash test/verifica.sh /altro/file.html # verifica un file specifico
 Esce 0 solo se tutto passa. **Qualsiasi altro codice = non pubblicare.**
 
 ```bash
-PULSE_TOKEN=<token> bash test/pubblica.sh "2026-08-17" "PULSE 17 agosto 2026"
+bash test/pubblica.sh "2026-08-17" "PULSE 17 agosto 2026"
 ```
 
 Fa tutto in sei passi: verifica → clone → copia → istantanea datata → commit firmato e
-push → riscarica dallo SHA e riverifica ciò che è davvero online.
+push → riscarica dallo SHA e riverifica ciò che è davvero online. **Non serve alcun
+token**: da una sessione autorizzata il push passa dal remoto della sessione (verificato
+prima di iniziare). `PULSE_TOKEN=<token>` davanti al comando resta come via di riserva
+da ambienti non autorizzati.
 
 ### Quando una suite fallisce, il difetto è quasi sempre nei contenuti del giorno
 
@@ -187,28 +193,22 @@ codice.
 
 ---
 
-## Le due teste — Cowork e Claude Code
+## Una testa sola — il repository
 
-Il sistema è nato interamente dentro un Progetto claude.ai. Claude Code vede il
-repository ma **non** il Progetto; il Progetto vede i suoi documenti ma **non** può
-eseguire le suite né aprire un browser.
+Dal 17 agosto 2026 **tutto vive qui**: il cervello (`cervello/`, l'originale), il codice,
+il cancello, e il mandato del mattino (`cervello/claude__13-attivita.md`). Il briefing
+quotidiano gira come **Routine alle 5.00 UTC** che apre una sessione Claude Code nuova su
+questo repository, con il connettore PubMed; pubblica con `bash test/pubblica.sh` senza
+token, dall'accesso autorizzato della sessione. Il Progetto claude.ai resta per le
+conversazioni e come custode del token di riserva.
 
-Divisione dei compiti che ne discende:
-
-| | Progetto claude.ai (Cowork) | Claude Code |
-|---|---|---|
-| Briefing quotidiano, ricerca PubMed, scrittura dei contenuti | ✅ | ⚠️ possibile, ma il MCP PubMed va disponibile |
-| Modifiche al codice dell'app, alle suite, agli script | ⚠️ a fatica, via patch | ✅ |
-| Eseguire il cancello, aprire un browser, misurare il mobile | ❌ | ✅ |
-| Leggere e riscrivere i documenti del Progetto | ✅ | ❌ solo la copia in `cervello/` |
-
-**Regola di allineamento.** Se in una sessione Claude Code modifichi qualcosa che sta
-anche nel cervello — una regola di qualità, una trappola nuova, il testo dell'attività
-quotidiana — aggiorna il file in `cervello/`, lancia `python3 test/cervello.py cervello`,
-e **dillo esplicitamente all'utente**, perché il ricopiaggio nel Progetto lo può fare
-solo lui.
+**Il coinvolgimento dell'utente va ridotto al minimo — sua richiesta esplicita.** Non ha
+competenze informatiche né tempo: consegnargli risultati finiti, mai procedure da
+eseguire. Se serve un'azione che solo lui può fare, una riga sola, e solo quando è
+davvero indispensabile.
 
 **Regola imparata il 2 agosto, e vale ancora:** ogni volta che aggiungi una condizione al
-cancello, aggiungila **anche** al prompt dell'attività quotidiana
-(`cervello/claude__13-attivita.md`). Un controllo nuovo che la sessione del mattino non
-conosce le blocca la pubblicazione il giorno dopo.
+cancello, aggiungila **anche** al mandato del mattino
+(`cervello/claude__13-attivita.md`). Un controllo nuovo che la sessione delle 5 non
+conosce le blocca la pubblicazione il giorno dopo. Aggiornare quel file basta: la
+Routine lo legge dal repository a ogni esecuzione.
