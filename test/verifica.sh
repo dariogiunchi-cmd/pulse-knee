@@ -73,6 +73,10 @@ fi
 #     un errore di sintassi lascerebbe le suite in attesa di elementi che non arriveranno mai.
 esegui "struttura e credenziali" python3 "$QUI/checklist.py"
 esegui "verità e citazioni"      python3 "$QUI/verita.py"
+# index.html deve essere il prodotto esatto di modello.html + dati/giorno.js: se
+# qualcuno l'ha modificato a mano, il codice dell'app potrebbe essere cambiato senza
+# che nessuno l'abbia voluto. (Su file esterni al repository il passo si salta da solo.)
+esegui "coerenza modello-dati"   python3 "$QUI/costruisci.py" --verifica
 if [ ${#FALLITE[@]} -gt 0 ]; then
   echo
   echo "═══════════════════════════════════════════════════════════"

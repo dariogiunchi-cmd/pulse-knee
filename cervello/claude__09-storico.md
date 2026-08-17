@@ -179,3 +179,31 @@ RITRATTAZIONI: archivio salvati vuoto → nessun PMID da ricontrollare; LAST_RET
 NON VERIFICATO: Swissmedic · openFDA · Retraction Watch (feed) · pagine ESSKA/AAOS/ICRS · registri SIRIS/RIPO/NJR/AOANJRR.
 CONSEGNA: app aggiornata, BUILD_DATE 2026-08-17, 10 schede; NLB su tutte, SOCV/TAGS/SOC su 1-2-3-7; 496 controlli verdi; pubblicazione via pull request dalla sessione Claude Code (senza token).
 NOTA DI METODO: la finestra edat 12–17 agosto copre i giorni persi; ~90 risultati scorsi, 21 riaperti per esteso, 10 tenuti. Nessuna scheda arancione oggi: è un conteggio, non una rassicurazione.
+
+### 2026-08-17, sera — la macchina si irrobustisce su ogni asse
+Su mandato del Dr. Giunchi («procedi con tutto, non richiedere il mio intervento»):
+- **Modello e dati separati.** index.html è ora il PRODOTTO di modello.html (codice) +
+  dati/giorno.js (contenuti): il briefing riscrive solo i dati, `costruisci.py`
+  rigenera, e il cancello blocca un index modificato a mano. Round-trip collaudato
+  byte per byte; manomissione collaudata: suona.
+- **Due sentinelle su GitHub Actions**, fuori dai crediti Claude (regola 36):
+  `cancello.yml` esegue la verifica completa su ogni pull request e push a main;
+  `battito.yml` alle 7.15 UTC controlla BUILD_DATE — se il briefing manca, il job
+  fallisce (email di GitHub) e apre una issue che si chiude da sola al ritorno.
+- **Dedup meccanico**: verita.py blocca ogni PMID già proposto nei giorni passati
+  dello storico. Collaudato iniettando un PMID del 12 agosto: intercettato.
+- **Il MUTO si calcola**: test/potenza.py dà l'IC 95% del rischio relativo e la frase
+  «che cosa lo studio non può escludere». Collaudato sul caso reale del 12 agosto
+  (13,0% vs 4,8% → RR 2,74, IC 0,72–10,39).
+- **Registro degli standard di cura**: cervello/14-standard-di-cura.md, cronologia
+  dei consensus per l'uso peritale, alimentata dal briefing; 5 voci iniziali.
+- **UI**: copia di sicurezza su file (esporta/ripristina con fusione, mai
+  sovrascrittura) per l'unico dato non ricostruibile — lo stato dell'iPhone; riquadro
+  «giorni scoperti» che dichiara i buchi fra un briefing e il precedente (funzione
+  pura, collaudata con date sintetiche).
+- **Mandato del mattino aggiornato nello stesso commit** (regola del 2 agosto):
+  lavorare su dati/giorno.js, dedup, ritrattazioni su TUTTO il citato dello storico,
+  full text del PICK se open access, consensus nel registro, MUTE col numero.
+- Ritrattazioni ampliate: il perimetro passa dai soli salvati (oggi: zero) a tutti i
+  PMID citati nello storico.
+Cancello: **511 controlli verdi** (496 + 15 sentinelle nuove).

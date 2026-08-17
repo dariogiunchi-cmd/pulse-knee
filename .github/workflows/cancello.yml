@@ -1,0 +1,35 @@
+# PULSE — il cancello eseguito da GitHub, su ogni pull request e su ogni push a main.
+#
+# Perché esiste: le sessioni Claude eseguono verifica.sh prima di pubblicare, ma sono
+# loro stesse a poter sbagliare. Questo workflow è il controllo esterno: nessun merge
+# può arrivare verde su main senza che i controlli siano passati anche QUI, su una
+# macchina che non ha niente in comune col sandbox.
+name: cancello
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  verifica:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      # Qui non vale il vincolo dell'immagine del sandbox (Chromium 1194): Playwright
+      # scarica il SUO browser, quindi la versione può essere quella che le suite
+      # conoscono. La 1.56.0 resta per coerenza con l'ambiente di sviluppo.
+      - name: Playwright + Chromium
+        run: |
+          pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: verifica completa
+        run: bash test/verifica.sh

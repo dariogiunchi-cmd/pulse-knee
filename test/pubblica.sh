@@ -137,6 +137,10 @@ rm -rf test/__pycache__ cervello/__pycache__
 # con la versione vecchia.
 [ -f "$APP/CLAUDE.md" ] && cp "$APP/CLAUDE.md" ./CLAUDE.md
 [ -d "$APP/.claude" ] && { mkdir -p .claude && cp -r "$APP/.claude/." .claude/; }
+# Dalla sera del 17 agosto index.html è il PRODOTTO di modello.html + dati/giorno.js: viaggiano
+# insieme, altrimenti la coerenza modello-dati fallirebbe al prossimo clone.
+[ -f "$APP/modello.html" ] && cp "$APP/modello.html" ./modello.html
+[ -d "$APP/dati" ] && { mkdir -p dati && cp "$APP/dati/"* dati/ 2>/dev/null; }
 
 # File non più serviti da nessuna pagina. Il clone non cancella nulla da solo:
 # vanno tolti qui, esplicitamente, e restano recuperabili dalla storia di git.

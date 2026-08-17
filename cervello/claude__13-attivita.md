@@ -61,16 +61,40 @@ quella sola modifica, e dillo in chat in una riga.
 
 VERIFICA DELLE CITAZIONI: riapri OGNI PMID/DOI su PubMed e confronta titolo e rivista
 sui campi identifiers. Se non combacia → NOT VERIFIED o togli la scheda. Imposta
-CIT_VERIFICATE=<quante ne hai davvero riaperte>. RITRATTAZIONI: ricontrolla i PMID di
-claude__08-archivio.md; LAST_RETRACTION_CHECK = data di oggi («17 agosto 2026»).
+CIT_VERIFICATE=<quante ne hai davvero riaperte>. RITRATTAZIONI — dalla sera del 17 agosto il perimetro è TUTTO il citato, non solo i salvati:
+ricontrolla su PubMed i PMID di claude__08-archivio.md E quelli dello storico
+(claude__09: `grep -o 'PMID [0-9]*'` li elenca; una sola chiamata batch a
+get_article_metadata basta). Se article_types contiene «Retracted Publication»,
+«Retraction of Publication» o «Expression of Concern»: popola RETRACTED se la scheda
+è fra quelle di oggi, e in ogni caso scrivilo nello storico e in chat — una citazione
+passata che viene ritirata va saputa il giorno stesso.
+LAST_RETRACTION_CHECK = data di oggi (la data di oggi in lettere).
 
-COSTRUZIONE — lavora su index.html del repository in cui ti trovi (NON riclonare).
-Aggiorna: BUILD_DATE, ARTICLES, CIT_VERIFICATE, CONF, MUTE, TENSIONS, LINKS, DUELS,
-HISTORY, AUDIT, RETRACTED, LAST_RETRACTION_CHECK, BRIEF_TEXT, NLB, SOCV, TAGS, SOC,
-SUGGQ, VERDICT. Regole di qualità, tre registri NLB, durate dei copioni video,
-divieti pubblicitari (vincolo legale): claude__11-qualita.md, che hai già letto.
+COSTRUZIONE — dalla sera del 17 agosto index.html è un PRODOTTO, non un file da modificare.
+Il codice sta in modello.html (NON toccarlo mai); i contenuti del giorno stanno in
+**dati/giorno.js**, ed è l'UNICO file che riscrivi: BUILD_DATE, ARTICLES,
+CIT_VERIFICATE, CONF, MUTE, TENSIONS, LINKS, DUELS, HISTORY, AUDIT, RETRACTED,
+LAST_RETRACTION_CHECK, BRIEF_TEXT, NLB, SOCV, TAGS, SOC, SUGGQ. Poi rigenera:
+  python3 test/costruisci.py
+Il cancello verifica la coerenza (costruisci.py --verifica): un index.html modificato
+a mano BLOCCA la pubblicazione. Regole di qualità, tre registri NLB, durate dei
+copioni video, divieti pubblicitari (vincolo legale): claude__11-qualita.md.
 NON toccare: la chiave localStorage pulse4, S.weekly, S.savedItems, PREFV/PREF_* (se
 aggiungi voci alle sue liste alza PREFV di 1). LINKS e DUELS solo verso schede di oggi.
+DEDUP MECCANICO: verita.py blocca ogni PMID già comparso nei giorni passati dello
+storico — leggere 03-memoria e claude__09-storico PRIMA di scegliere le schede non è
+più solo disciplina, è l'unico modo di passare il cancello.
+MUTE COL NUMERO: per dichiarare muto un confronto binario usa
+  python3 test/potenza.py <eventi1> <n1> <eventi2> <n2>
+e scrivi nel MUTE che cosa lo studio non può escludere (l'IC che ti stampa).
+FULL TEXT DEL PICK: se il lavoro del giorno è open access su PMC
+(get_copyright_status / get_full_text_article del connettore PubMed), apri il testo
+completo PRIMA di scrivere la scheda estesa: numeri e limiti dall'abstract da solo
+hanno già ingannato una volta (T4).
+STANDARD DI CURA: se oggi passa un consensus, una linea guida o una presa di posizione
+di società, aggiungi UNA riga a cervello/14-standard-di-cura.md (formato in testa al
+file). È il registro peritale: si scrive nel giorno in cui il documento passa, mai
+ricostruito dopo.
 
 PUBBLICAZIONE — un solo comando, senza token:
   bash test/pubblica.sh "<AAAA-MM-GG>" "PULSE <data>"

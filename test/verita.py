@@ -123,6 +123,26 @@ for nome in ['LINKS', 'DUELS']:
     orf = sorted({r for r in rif if r} - numeri)
     chk(f"«{nome}» non punta a schede inesistenti", not orf, orf[:5])
 
+# --- nessun lavoro riproposto: i PMID di oggi non devono comparire nei giorni passati.
+# «Non riproporre due volte lo stesso lavoro» era disciplina della sessione (03-memoria);
+# da qui diventa un controllo. Fonte: lo storico nel repository. Le sezioni con la data
+# di BUILD_DATE si escludono, perché contengono proprio le schede di oggi — e così
+# un'istantanea vecchia riverificata trova la propria entrata e non suona a vuoto.
+_storico = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                        '..', 'cervello', 'claude__09-storico.md')
+if os.path.exists(_storico):
+    _txt = open(_storico, encoding='utf-8').read()
+    _passati = set()
+    for _sez in re.split(r'(?m)^## ', _txt)[1:]:
+        _data = _sez[:10]
+        if re.match(r'\d{4}-\d{2}-\d{2}', _data) and _data != build:
+            _passati.update(re.findall(r'PMID (\d{7,9})', _sez))
+    _doppi = sorted(set(pmid) & _passati)
+    chk("nessuna scheda già proposta nei giorni passati (storico)", not _doppi, _doppi[:5])
+else:
+    print("⏭️  dedup con lo storico — saltato: cervello/claude__09-storico.md non trovato "
+          "(verifica di un file fuori dal repository).")
+
 print()
 if ko:
     print(f"❌ CONTROLLI DI VERITÀ FALLITI — {len(ko)}: {ko}")

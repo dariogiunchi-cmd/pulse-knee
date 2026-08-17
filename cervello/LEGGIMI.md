@@ -20,7 +20,7 @@ controllo. In questo aggiornamento: **0 sostituzioni**.
 La pubblicazione ordinaria non richiede più alcun token: la sessione Claude Code spinge
 dal proprio accesso autorizzato. Il token GitHub resta nel Progetto come via di riserva.
 
-## Documenti (14, 120 KB in tutto)
+## Documenti (15, 127 KB in tutto)
 
 | File | Peso | Impronta |
 |---|---|---|
@@ -31,13 +31,14 @@ dal proprio accesso autorizzato. Il token GitHub resta nel Progetto come via di 
 | `04-fonti.md` | 8.4 KB | `4e694c6f7ebf` |
 | `05-formato.md` | 4.9 KB | `3cfd7dd432fa` |
 | `06-social.md` | 3.2 KB | `e798b888fbdf` |
+| `14-standard-di-cura.md` | 3.2 KB | `d6d91dc31cf5` |
 | `claude__07-preferenze.md` | 9.3 KB | `764ff5730906` |
 | `claude__08-archivio.md` | 0.4 KB | `aba6dc9d105b` |
-| `claude__09-storico.md` | 17.0 KB | `07dcdc0c39cd` |
-| `claude__10-deploy.md` | 8.0 KB | `f3e3f3b52e6a` |
-| `claude__11-qualita.md` | 23.6 KB | `0cdc56731b9a` |
+| `claude__09-storico.md` | 19.0 KB | `3c93add1849a` |
+| `claude__10-deploy.md` | 8.5 KB | `96b10a23c26e` |
+| `claude__11-qualita.md` | 23.9 KB | `4f5e2d22760c` |
 | `claude__12-distribuzione.md` | 5.1 KB | `53733f2ec633` |
-| `claude__13-attivita.md` | 5.9 KB | `cf658628b562` |
+| `claude__13-attivita.md` | 7.6 KB | `5a1f47f6c40e` |
 
 L'impronta è il SHA-256 abbreviato: due copie con la stessa impronta sono identiche
 carattere per carattere. I nomi con `claude__` corrispondono a `claude/` nel Progetto.

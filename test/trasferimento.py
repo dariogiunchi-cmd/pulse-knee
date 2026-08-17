@@ -80,6 +80,22 @@ with sync_playwright() as p:
     chk("l'app dichiara che non c'è un server", "non ha un server" in t)
     chk("l'app dice che le copie si fondono", "fondono" in t)
     chk("c'è il pulsante per copiare il link", B.locator("#syncbox button").count() >= 1)
+
+    # --- copia di sicurezza su file: la rete di sicurezza dell'unico dato non
+    #     ricostruibile. Si collauda con dati sintetici, mai con quelli del giorno.
+    chk("c'è il pulsante della copia di sicurezza",
+        B.locator("#syncbox button", has_text="copia di sicurezza").count() == 1)
+    chk("c'è il pulsante di ripristino da file",
+        B.locator("#syncbox button", has_text="Ripristina").count() == 1)
+    bk = B.evaluate("JSON.parse(_backupJson())")
+    chk("il backup è JSON leggibile con la versione giusta", bk and bk.get("v") == 1)
+    chk("il backup contiene salvati e lavori scelti",
+        "savedItems" in bk and "weekly" in bk and "votes" in bk)
+    n0 = B.evaluate("(S.savedItems||[]).length")
+    esito = B.evaluate("fondiStato({v:1,savedItems:[{a:{pmid:'99999999',h:'collaudo',j:'X'},d:'2099-01-01'}]})")
+    n1 = B.evaluate("(S.savedItems||[]).length")
+    chk("il ripristino fonde senza sovrascrivere", esito and esito.get("saved") == 1 and n1 == n0 + 1)
+    chk("un backup non compatibile viene rifiutato", B.evaluate("fondiStato({v:99})") is None)
     b.close()
 print("\n" + ("TUTTO OK" if not f else f"{len(f)} FALLITI: {f}"))
 sys.exit(1 if f else 0)
