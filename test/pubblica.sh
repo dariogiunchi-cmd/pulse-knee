@@ -21,12 +21,35 @@ MSG="${2:-PULSE $DATA}"
 REPO_URL_PUB="https://github.com/dariogiunchi-cmd/pulse-knee.git"
 RAW="https://raw.githubusercontent.com/dariogiunchi-cmd/pulse-knee"
 
-if [ -z "${PULSE_TOKEN:-}" ]; then
-  echo "❌ Manca PULSE_TOKEN. Il token sta in claude/10-deploy.md, non in questo file."
-  exit 2
+# --- come si raggiunge GitHub: due strade, e la seconda è nata da un blocco vero.
+#
+# Dal 5 agosto 2026 il sandbox di Cowork non riesce più a spingere: il proxy git
+# risponde 403 «not in this session's authorized repository set». È la spiegazione dei
+# mattini muti — il briefing partiva, lavorava, e falliva all'ultimo passo, il push.
+# Una sessione Claude Code aperta sul repository autorizzato, invece, raggiunge GitHub
+# attraverso il proprio remoto già autenticato: nessun token da passare.
+#
+# Quindi: se c'è PULSE_TOKEN si usa quello (strada storica, funziona ovunque). Se non
+# c'è, si prova il remoto `origin` già configurato, ma **solo dopo aver verificato che
+# risponda davvero** — mai scoprirlo al passo 5, con l'istantanea già scritta.
+if [ -n "${PULSE_TOKEN:-}" ]; then
+  AUTH="https://dariogiunchi-cmd:${PULSE_TOKEN}@github.com/dariogiunchi-cmd/pulse-knee.git"
+  mask() { sed -e "s/${PULSE_TOKEN}/***/g"; }
+  echo "▶ 0/6  accesso a GitHub: token PULSE_TOKEN"
+else
+  mask() { cat; }
+  if GIT_TERMINAL_PROMPT=0 git -C "$APP" ls-remote --exit-code origin HEAD >/dev/null 2>&1; then
+    AUTH="$(git -C "$APP" remote get-url origin)"
+    echo "▶ 0/6  accesso a GitHub: remoto autenticato della sessione (nessun token)"
+  else
+    echo "❌ Nessuna via per raggiungere GitHub."
+    echo "   · con un token:  PULSE_TOKEN=<token> bash test/pubblica.sh ..."
+    echo "     (il token sta nel Progetto claude.ai, in claude/10-deploy.md, non in questo file)"
+    echo "   · senza token:   serve una sessione autorizzata su dariogiunchi-cmd/pulse-knee,"
+    echo "     e qui 'git ls-remote origin' non risponde."
+    exit 2
+  fi
 fi
-AUTH="https://dariogiunchi-cmd:${PULSE_TOKEN}@github.com/dariogiunchi-cmd/pulse-knee.git"
-mask() { sed -e "s/${PULSE_TOKEN}/***/g"; }
 
 # ---------------------------------------------------------------- 1. verifica
 echo "▶ 1/6  verifica"
