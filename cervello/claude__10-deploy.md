@@ -1,9 +1,19 @@
 # PULSE — pubblicazione dell'app (deploy)
 
-*Attivo dal 2 agosto 2026.*
+*Attivo dal 2 agosto 2026. Rivisto il 17 agosto 2026: la pubblicazione non richiede più
+un token.*
 
-> ⚠️ **Questa è la copia pubblica.** Il token GitHub è stato tolto: vive solo nel
-> Progetto claude.ai, in `claude/10-deploy.md`. Tutto il resto è identico.
+> **Dal 17 agosto 2026 la via ordinaria è la sessione Claude Code**, che spinge dal
+> proprio accesso autorizzato al repository: `bash test/pubblica.sh` **senza**
+> `PULSE_TOKEN` davanti. Il token (nel Progetto claude.ai, `claude/10-deploy.md`) resta
+> come via di riserva da ambienti non autorizzati, con identico comportamento.
+> Motivo del cambio: dal 5 agosto il sandbox Cowork riceve 403 dal proxy git — cinque
+> mattini di briefing morti al passo del push.
+
+> ⚠️ **Playwright nel sandbox: serve `playwright==1.56.0`.** L'immagine contiene solo
+> Chromium build 1194; la 1.62 ne pretende una 1234 che non c'è e fa fallire nove suite
+> su dodici con «Executable doesn't exist». Ci pensa `.claude/hooks/session-start.sh`;
+> se il cancello segnala strumenti mancanti, questa è la prima cosa da controllare.
 
 ## Indirizzo pubblico
 **https://dariogiunchi-cmd.github.io/pulse-knee/**

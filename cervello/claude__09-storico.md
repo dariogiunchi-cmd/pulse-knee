@@ -111,3 +111,44 @@ Pubblicato: **de36977**. Token ripulito dal Mac dopo l'uso (rm della cartella te
 probabilità ha lo stesso blocco. Finché il repository non viene riautorizzato per quelle
 sessioni, i briefing continueranno a non pubblicarsi da soli. La via del Mac è manuale e
 richiede il desktop connesso.
+
+## 2026-08-12 · 10 papers · 0 rossi · 1 arancione — pubblicato dal Mac, storico non aggiornato quel giorno
+*Entrata ricostruita il 17 agosto dai dati dentro l'app pubblicata (commit f3d8d89), non da
+memoria: conteggi, PMID e DOI sono quelli di `ARTICLES`.*
+- 🟠 KSSTA — Retto femorale: esiti precoci pari all'hamstring, «uso di routine non ancora raccomandabile» (SR, 4 studi, 299 pz) · PMID 42573112 · 10.1002/ksa.70559
+- 🟢 AOTS — LCA + plastica extra-articolare nello stesso tempo chirurgico · PMID 42573786 · 10.1007/s00402-026-06422-0
+- 🟢 KSSTA — Radice mediale non operata: dolore migliora, estrusione e cartilagine peggiorano · PMID 42573108 · 10.1002/ksa.70570
+- 🟢 Diagn Interv Imaging — Osteoporosi e frattura subcondrale (OR 2,29) · PMID 42580929 · 10.1016/j.diii.2026.08.003
+- 🟢 KSSTA — Lesioni ramp nel registro SFA, classificazione di Thaunat · PMID 42578806 · 10.1002/ksa.70568
+- 🟢 JEO — MPFL isolata: conta la correzione del tilt · PMID 42577909 · 10.1002/jeo2.70874
+- 🟢 The Knee — Osteotomia tibiale bilaterale, un tempo o due · PMID 42574959 · 10.1016/j.knee.2026.104586
+- 🟢 OJSM — Seoul: taglio retrotuberositario e femororotulea · PMID 42571180 · 10.1177/23259671261467542
+- ⚪ JEO — Augmentation del LCA con conservazione del moncone · PMID 42577737 · 10.1002/jeo2.70886
+- ⚪ Ann Rheum Dis — Prima terapia genica intra-articolare per l'artrosi · PMID 42552219 · 10.1016/j.ard.2026.06.034
+CITAZIONI: `CIT_VERIFICATE=10` nell'app pubblicata; `LAST_RETRACTION_CHECK` 12 agosto.
+
+## 2026-08-06 → 2026-08-11 e 2026-08-13 → 2026-08-16 · nessun briefing
+Dieci giorni senza pubblicazione automatica, interrotti solo dal 12 (manuale, dal Mac).
+Stessa causa dei mattini 3–5 agosto: il sandbox Cowork riceve 403 dal proxy git — il
+briefing muore al passo del push, in silenzio. Registrati in blocco perché il calendario
+deve essere completo anche nei giorni vuoti.
+
+## 2026-08-17 · la macchina cambia casa — audit da Claude Code
+Prima sessione Claude Code sul repository. Fatti, tutti verificati eseguendo:
+- **Il push funziona da qui, senza token**: `git push` passa dall'accesso autorizzato
+  della sessione. Il blocco che uccideva i mattini non esiste su questa via.
+- **Il cancello era ineseguibile per una trappola di versioni**: Playwright 1.62 pretende
+  Chromium 1234, l'immagine ha solo il 1194 — nove suite su dodici rosse con «Executable
+  doesn't exist». Con `playwright==1.56.0`: **499 controlli verdi**, l'app è sana.
+- Decisioni del Dr. Giunchi (17 agosto): briefing su **sessione Claude Code programmata**
+  (5.00 UTC, connettore PubMed concesso alla Routine); **il repository diventa
+  l'originale del cervello** (il Progetto claude.ai ne tiene la copia); priorità alla
+  stabilità del mattino; lavoro su rami separati. E poi, sue parole: ridurre al minimo il
+  suo coinvolgimento — il risultato, non i passaggi.
+- Costruiti: `CLAUDE.md` (memoria delle sessioni), `.claude/hooks/session-start.sh`
+  (installa la versione giusta di Playwright e prova ad aprire il browser davvero),
+  comandi `/stato` `/verifica` `/pubblica`, `pubblica.sh` senza obbligo di token,
+  nuovo prompt dell'attività in `claude__13-attivita.md`.
+- E-utilities NCBI (`eutils.ncbi.nlm.nih.gov`) è **bloccato dal proxy**: senza il
+  connettore PubMed MCP il briefing non si può fare, e il mandato ora dice chiaramente
+  che in quel caso non si fa — niente schede a memoria.

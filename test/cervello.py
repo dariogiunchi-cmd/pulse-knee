@@ -63,22 +63,25 @@ tot = sum(b for _, b, _, _ in schede)
 
 open(os.path.join(DEST, 'LEGGIMI.md'), 'w', encoding='utf-8').write(f"""# PULSE — il cervello
 
-*Copia di sicurezza dei documenti del Progetto, aggiornata il {OGGI}.*
+*Indice rigenerato il {OGGI}.*
 
 Questi file sono la **memoria** del sistema: chi è il Dr. Giunchi, che cosa opera, quali
 lavori sono già stati visti, quali tensioni restano aperte, come si scrivono le schede e
 i contenuti, quali regole di qualità sono vincolanti, come si pubblica e come si distribuisce.
 
-**L'originale vive nel Progetto claude.ai.** Questa è la copia: se il Progetto va perso, da
-qui il sistema si ricostruisce per intero. Se le due versioni divergono, **vince il
-Progetto** — questa cartella è di sola lettura.
+**Dal 17 agosto 2026 l'ORIGINALE è questa cartella.** Deciso dal Dr. Giunchi quando il
+lavoro si è spostato su Claude Code: qui ogni modifica ha una storia, un diff e un autore;
+nel Progetto claude.ai non ha niente di tutto questo. Il Progetto ne conserva una copia
+per le conversazioni; se le due versioni divergono, **vince il repository**. Prima era il
+contrario — i documenti fino al 12 agosto vanno letti sapendolo.
 
 ## Le credenziali non sono qui
 
 Il repository è pubblico. Prima di ogni scrittura, token e chiavi vengono sostituiti con
 `***TOKEN-RIMOSSO***`, e la pubblicazione si ferma se una credenziale sopravvive al
 controllo. In questo aggiornamento: **{oscurati} sostituzioni**.
-Il token GitHub vero vive solo nel Progetto, dentro `claude/10-deploy.md`.
+La pubblicazione ordinaria non richiede più alcun token: la sessione Claude Code spinge
+dal proprio accesso autorizzato. Il token GitHub resta nel Progetto come via di riserva.
 
 ## Documenti ({len(schede)}, {tot/1024:.0f} KB in tutto)
 
@@ -91,13 +94,12 @@ carattere per carattere. I nomi con `claude__` corrispondono a `claude/` nel Pro
 
 ## Come si ricostruisce tutto, se un giorno servisse
 
-1. Creare un Progetto su claude.ai e incollare `00-istruzioni-del-progetto.md` come
-   istruzioni permanenti.
-2. Caricare gli altri file con gli stessi nomi, riportando `claude__` a `claude/`.
-3. Rigenerare un token GitHub (scope `repo`) e scriverlo in `claude/10-deploy.md`.
-4. Ricreare l'attività quotidiana delle 5 del mattino con il testo conservato in
-   `claude/10-deploy.md`.
-5. `bash test/verifica.sh` deve dare verde **prima** di qualunque pubblicazione.
+1. Il repository È la ricostruzione: clonarlo basta. `CLAUDE.md` orienta la sessione,
+   questa cartella contiene la memoria, `test/` il cancello.
+2. Per rifare anche il Progetto claude.ai: incollare `00-istruzioni-del-progetto.md`
+   come istruzioni permanenti e caricare gli altri file, riportando `claude__` a `claude/`.
+3. L'attività quotidiana delle 5.00 UTC si ricrea con il testo in `claude__13-attivita.md`.
+4. `bash test/verifica.sh` deve dare verde **prima** di qualunque pubblicazione.
 
 ## Che cosa non è ricostruibile da qui
 
