@@ -1,1 +1,25 @@
-{ "aggiornato": "2026-08-12", "versioni": [  {   "data": "2026-08-12",   "file": "versioni/2026-08-12.html",   "byte": 189992  },  {   "data": "2026-08-04",   "file": "versioni/2026-08-04.html",   "byte": 150291  },  {   "data": "2026-08-02",   "file": "versioni/2026-08-02.html",   "byte": 157176  } ]}
+{
+ "aggiornato": "2026-08-17",
+ "versioni": [
+  {
+   "data": "2026-08-17",
+   "file": "versioni/2026-08-17.html",
+   "byte": 181050
+  },
+  {
+   "data": "2026-08-12",
+   "file": "versioni/2026-08-12.html",
+   "byte": 189992
+  },
+  {
+   "data": "2026-08-04",
+   "file": "versioni/2026-08-04.html",
+   "byte": 150291
+  },
+  {
+   "data": "2026-08-02",
+   "file": "versioni/2026-08-02.html",
+   "byte": 157176
+  }
+ ]
+}

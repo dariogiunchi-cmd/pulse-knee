@@ -7,12 +7,22 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 4 agosto 2026.*
+*Ultimo aggiornamento: 17 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-08-17 | KSSTA | Earlier strength recovery with partial- vs full-thickness quadriceps tendon graft (42 calciatori) | 10.1002/ksa.70547 | innesto quadricipitale, prelievo parziale, isocinetica | aperto — 🟢 il tuo prelievo superficiale; vantaggio di forza nei primi 6 mesi, pari a 12; retrospettivo, 42 pz
+2026-08-17 | J ISAKOS | Meniscal Root Tears: A State of the Art (Pittsburgh, Seil, Getgood, Karlsson) | 10.1016/j.jisako.2026.101202 | root, transtibiale, estrusione | aperto — transtibiale confermata di scelta; estrusione aumenta nel 96,2% a 6 mesi nel RCT sulla centralizzazione; alimenta T3
+2026-08-17 | J ISAKOS | Swedish Knee Ligament Registry: HT vs BPTB, maschi 16-25 (10.038) | 10.1016/j.jisako.2026.101201 | lca, registro, revisione, giovani | aperto — revisioni 7,3% vs 5,4% a 5 anni (HR 1,39; NS); QT assente: benchmark, non verdetto
+2026-08-17 | Arthroscopy | Ramp lesions: MRI 43,2% vs artroscopia 9,8% (579) | 10.1002/arj.70454 | ramp, risonanza, bone bruise | aperto — bone bruise postero-mediale OR 4,04; esplorazione PM non sistematica nella coorte
+2026-08-17 | KSSTA | ACW-HTO nella ricostruzione del LCA: complicanze, revisione tecnica (Pittsburgh) | 10.1002/ksa.70575 | slope, osteotomia, complicanze | aperto — MUTO: complicanze 0–56,5% senza stima aggregata; mappa di prevenzione
+2026-08-17 | KSSTA | Rimodellamento dell'innesto più lento nel pediatrico (SNQ 5,1 vs 1,5 a 12 mesi) | 10.1002/ksa.70576 | adolescente, rimodellamento, rientro | aperto — ST4 senza LET (Tolosa); argomento contro il rientro a data fissa
+2026-08-17 | Arthroplasty | ASIA consensus Asia-Pacifico su protesica robotica (45 esperti, Delphi) | 10.1186/s42836-026-00427-1 | protesi robotica, consensus, velys | aperto — precisione 98%, superiorità clinica a lungo termine non dimostrata (77%); peso normativo
+2026-08-17 | Arthroscopy | MQTFL reconstruction per instabilità rotulea ricorrente (SR, 9 studi, 347) | 10.1002/arj.70433 | mpfl, mqtfl, instabilità rotulea | aperto — ridislocazioni 1,6% con ricostruzione combinata; nessun confronto con MPFL classica
+2026-08-17 | KSSTA | PRP vs placebo nell'artrosi: meta-analisi + meta-regressione (20 RCT) | 10.1002/ksa.70567 | prp, artrosi, orthobiologics | aperto — superiore al placebo a 6-12 mesi, certezza molto bassa; covariate intercorrelate
+2026-08-17 | BMJ Open | GRASE ACL: protocollo RCT a 3 bracci BPTB/HT/QT (150 pz, Copenaghen) | 10.1136/bmjopen-2026-118571 | innesto quadricipitale, rct, protocollo | aperto — reclutamento completo ago 2025; primi esiti 2026-27; alimenta T1a
 2026-08-04 | KSSTA | Cell-based therapy injections for knee OA — ESSKA-ICRS consensus (RAND/UCLA, 144 scenari) | 10.1002/ksa.70487 | terapie cellulari, artrosi, iniezioni, consensus, asse ICRS | aperto — consensus, peso normativo alto; Kon·Andriolo·de Caro·Filardo(Lugano); appropriato <65 aa, BMI≤35, KL II–III
 2026-08-04 | BJSM | ICRS-FIFA-Aspetar consensus part 2 — cartilage surgery in football players (RAND/UCLA, 96 scenari) | 10.1136/bjsports-2025-110676 | cartilagine, calciatore, rientro, consensus, asse ICRS | aperto — consensus; rigenerative per il lungo termine, stimolazione midollare inappropriata/incerta; priorità calcio
 2026-08-04 | AJSM | Quadriceps Tendon Autografts: Increased Short-term Reoperation for Extension Deficit/Pain vs Hamstring (5653 casi) | 10.1177/03635465261465107 | innesto quadricipitale, reintervento, deficit estensione | aperto — 🟠 tocca l'innesto di default; coorte retrospettiva, non randomizzata; fallimenti d'innesto esclusi
@@ -76,6 +86,8 @@ perito avversario userebbe contro l'indicazione universale.
 
 **Cosa la chiude:** STABILITY 2, braccio QT ± LET, randomizzato, 1292 pazienti.
 Attesa 2029.
+Nel frattempo: GRASE (Copenaghen, 150 pz, BPTB/HT/QT randomizzati, senza LET,
+reclutamento completo) risponderà sull'innesto — non sulla combinazione col LET.
 
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
@@ -118,6 +130,11 @@ tempo trascorso.
 
 **Confidenza: media.** Due studi retrospettivi piccoli (170 e 61), endpoint diversi.
 Riconciliazione plausibile, non dimostrazione.
+
+**Rafforzata il 17 agosto 2026** dallo state of the art J ISAKOS (Pittsburgh, Seil,
+Getgood, Karlsson): transtibiale confermata di scelta, e nel RCT citato sulla
+centralizzazione l'estrusione aumenta a 6 mesi nel 96,2% delle ginocchia comunque
+trattate — l'estrusione resta il determinante non corretto da nessuna tecnica attuale.
 
 ### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22)*
 
