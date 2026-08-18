@@ -158,9 +158,14 @@ manifest.json sw.js PWA — funziona offline; le istantanee non si tengono in ca
 cervello/           l'ORIGINALE del cervello (14-standard-di-cura.md: registro peritale)
 test/               le suite, costruisci.py, potenza.py, verifica.sh, pubblica.sh
 versioni/           istantanee datate, per tornare indietro in un minuto
+fonti/              fonti.json (configurazione) · raccolta.json (deposito notturno del
+                    raccoglitore: richiami, trial, ritrattazioni, video — il sandbox
+                    non esce su internet, i runner di GitHub sì)
 .github/workflows/  cancello.yml (verifica su ogni PR) · battito.yml (07:15 UTC: se il
                     briefing non è arrivato, email da GitHub e issue — non consuma
-                    crediti Claude: è il rilevatore indipendente della regola 36)
+                    crediti Claude: è il rilevatore indipendente della regola 36) ·
+                    raccolta.yml (04:15 UTC, scrive fonti/raccolta.json) ·
+                    ripristino.yml (mensile: l'ultima istantanea deve passare il cancello)
 ```
 
 ### Le suite

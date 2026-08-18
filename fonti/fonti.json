@@ -21,9 +21,8 @@
     "url_enforcement": "https://api.fda.gov/device/enforcement.json?search=product_description:knee&sort=report_date:desc&limit=15"
   },
   "swissmedic_scopri": [
-    "https://www.swissmedic.ch/swissmedic/it/home.html",
-    "https://www.swissmedic.ch/swissmedic/it/home/news.html",
-    "https://www.swissmedic.ch/swissmedic/en/home.html"
+    "https://www.swissmedic.ch/swissmedic/it/home/news/rss.html",
+    "https://www.swissmedic.ch/swissmedic/en/home/news/rss.html"
   ],
   "swissmedic_feed": [],
   "trials_query": [
@@ -64,22 +63,31 @@
     {
       "nome": "Arthrex",
       "id": "UCdz-AzeXveWr2FICZZastrQ"
+    },
+    {
+      "nome": "ISAKOS",
+      "id": "UCcnFy3MwSpwJWr1iqsIuvKg"
+    },
+    {
+      "nome": "ESSKA Education",
+      "id": "UCNmjfv5jhiXOLA7sWuLMF1Q"
+    },
+    {
+      "nome": "Zimmer Biomet",
+      "id": "UCI2zSmIIqEtm5WSBAPvcRHQ"
+    },
+    {
+      "nome": "DePuy Synthes",
+      "id": "UCpfwqgDTYi-CZw8RgeeqVGQ"
+    },
+    {
+      "nome": "Stryker",
+      "id": "UC2famKRbW3E3kq072ZagSzg"
+    },
+    {
+      "nome": "Smith+Nephew",
+      "id": "UCvLnxUVdVK6CkoxPzhtVXVQ"
     }
   ],
-  "youtube_scopri": [
-    "@ISAKOS",
-    "@zimmerbiomet",
-    "@depuysynthes",
-    "@ESSKAtv",
-    "@esska-society",
-    "@ESSKAeducation",
-    "@IsokineticMedical",
-    "@isokineticmedicalgroup",
-    "@stryker",
-    "@SmithNephewplc",
-    "@SmithNephewGlobal",
-    "@MedactaInternational",
-    "@MedactaGroup",
-    "@smith-nephew"
-  ]
+  "youtube_scopri": []
 }
