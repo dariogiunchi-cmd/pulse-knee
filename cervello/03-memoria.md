@@ -7,11 +7,18 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 17 agosto 2026.*
+*Ultimo aggiornamento: 18 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-08-18 | Sports Health | Salto monopodalico dopo LCA sotto carico visivo-cognitivo, 1-5 anni (60 pz) | 10.1177/19417381261471425 | ritorno allo sport, criterio di rientro, deficit residuo | aperto — rafforza T3: il deficit dell'arto operato persiste anni dopo, il carico cognitivo non lo aggrava
+2026-08-18 | JAAOS | Allineamento cinematico vs meccanico in PTG: SR+meta, 1.068 ginocchia | 10.5435/JAAOS-D-25-01576 | protesi robotica, allineamento, VELYS | aperto — più flessione e meno release col cinematico; sicurezza (complicanze PF, revisione) con IC larghi
+2026-08-18 | Musculoskelet Surg | Allineamento cinematico vs meccanico in PTG, medio-lungo termine: SR+meta di 10 RCT | 10.1007/s12306-026-00970-9 | protesi robotica, allineamento, VELYS | aperto — stessa domanda, stesso giorno: vantaggio a medio termine, si esaurisce a lungo termine
+2026-08-18 | KSSTA | Basetta tibiale cementless in PTG cinematica: RSA, stabile a 3 mesi (45 pz) | 10.1002/ksa.70572 | protesi robotica, allineamento, dispositivo | aperto — dato di ingegneria protesica, nessun confronto con basetta cementata
+2026-08-18 | JAAOS Glob Res Rev | Lesione multilegamentosa in atleta scheletricamente immaturo, 13 anni (caso clinico) | 10.5435/JAAOSGlobal-D-25-00266 | multilegamentose, adolescente, fisi | aperto — caso singolo, popolazione appena sotto i 14 anni dichiarati
+2026-08-18 | Sports Biomech | Ortesi plantari e cinematica nella corsa con dolore femoro-rotuleo (SPM, 30 runner) | 10.1080/14763141.2026.2701982 | rotula, femoro-rotuleo, conservativo | aperto — trattamento non chirurgico, fuori dalla tua pratica diretta
 
 2026-08-17 | KSSTA | Earlier strength recovery with partial- vs full-thickness quadriceps tendon graft (42 calciatori) | 10.1002/ksa.70547 | innesto quadricipitale, prelievo parziale, isocinetica | aperto — 🟢 il tuo prelievo superficiale; vantaggio di forza nei primi 6 mesi, pari a 12; retrospettivo, 42 pz
 2026-08-17 | J ISAKOS | Meniscal Root Tears: A State of the Art (Pittsburgh, Seil, Getgood, Karlsson) | 10.1016/j.jisako.2026.101202 | root, transtibiale, estrusione | aperto — transtibiale confermata di scelta; estrusione aumenta nel 96,2% a 6 mesi nel RCT sulla centralizzazione; alimenta T3
@@ -148,6 +155,17 @@ recupera» è verificata a 6 mesi**. Se il criterio di rientro usa una soglia de
 la maggioranza dei suoi pazienti a 6 mesi non ci si avvicina.
 
 Limiti del dato: n = 31, soli maschi, monocentrico, nessun gruppo di confronto.
+
+**Aggiornata il 18 agosto 2026.** Uno studio trasversale su Sports Health (30
+operati di LCA a 1-5 anni dall'intervento, tutti gli innesti, e 30 controlli
+sani) conferma che il deficit dell'arto chirurgico nel salto monopodalico
+resta misurabile a distanza di anni (-1,2 cm rispetto al controlaterale in
+ogni condizione testata; p<0,01). Il dato nuovo: un carico visivo-cognitivo
+aggiuntivo (Stroop, disturbo visivo stroboscopico) non aggrava ulteriormente
+la prestazione degli operati rispetto ai controlli — il limite sembra
+dell'arto, non dell'attenzione. Non chiude la tensione (resta trasversale,
+non lega il deficit a un esito duro), ma la rafforza con un secondo segnale
+indipendente dal tuo innesto.
 
 **Cosa la chiude:** studi che leghino il deficit di attivazione a esiti duri —
 rirottura o mancato rientro — non a misure intermedie.
