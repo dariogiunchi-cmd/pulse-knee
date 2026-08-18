@@ -71,8 +71,11 @@ def openfda():
     sorv = [a.lower() for a in CFG['aziende_sorvegliate']]
     for gruppo in out.values():
         for v in gruppo:
-            ditta = (v.get('recalling_firm') or '').lower()
-            v['sorvegliata'] = any(a in ditta for a in sorv)
+            # il nome sorvegliato può stare nella ditta che richiama OPPURE nel
+            # prodotto: il richiamo dei kit Medline contenenti materiale Zimmer
+            # Biomet (visto al primo giro reale) sfuggiva al solo campo ditta.
+            testo = ((v.get('recalling_firm') or '') + ' ' + (v.get('product_description') or '')).lower()
+            v['sorvegliata'] = any(a in testo for a in sorv)
     return out
 
 
@@ -95,26 +98,32 @@ def swissmedic():
 
 
 def swissmedic_scopri():
-    trovati = []
+    """Cerca i feed in due mosse: (1) qualunque href che contenga 'rss' nelle pagine
+    di partenza; (2) prova a scaricare i candidati e tiene solo ciò che è XML vero.
+    Nulla si inventa: si registra che cosa risponde e che cosa no."""
+    candidati, trovati = [], []
     for pagina in CFG.get('swissmedic_scopri', []):
         try:
             html = prendi(pagina)
-            for m in re.finditer(r'<link[^>]+type="application/(?:rss|atom)\+xml"[^>]*>', html):
-                tag = m.group(0)
-                href = re.search(r'href="([^"]+)"', tag)
-                tit = re.search(r'title="([^"]*)"', tag)
-                if href:
-                    u = href.group(1)
-                    if u.startswith('/'):
-                        u = 'https://www.swissmedic.ch' + u
-                    trovati.append({'pagina': pagina, 'feed': u, 'titolo': tit.group(1) if tit else ''})
-            for m in re.finditer(r'href="([^"]+\.rss[^"]*)"', html):
-                u = m.group(1)
+            for m in re.finditer(r'href="([^"]*rss[^"]*)"', html, re.I):
+                u = m.group(1).replace('&amp;', '&')
                 if u.startswith('/'):
                     u = 'https://www.swissmedic.ch' + u
-                trovati.append({'pagina': pagina, 'feed': u, 'titolo': '(link .rss nel corpo)'})
+                if u.startswith('http') and u not in candidati:
+                    candidati.append(u)
         except Exception as e:
             trovati.append({'pagina': pagina, 'errore': f'{type(e).__name__} {str(e)[:80]}'})
+    for u in candidati[:12]:
+        try:
+            corpo = prendi(u)
+            if '<rss' in corpo[:400] or '<feed' in corpo[:400]:
+                tit = re.search(r'<title>([^<]*)</title>', corpo)
+                trovati.append({'feed': u, 'xml': True, 'titolo': tit.group(1) if tit else ''})
+            else:
+                trovati.append({'feed': u, 'xml': False, 'nota': 'risponde ma non è un feed'})
+        except Exception as e:
+            trovati.append({'feed': u, 'errore': f'{type(e).__name__} {str(e)[:80]}'})
+        time.sleep(1)
     return trovati
 
 
@@ -210,7 +219,9 @@ def youtube_scopri():
     for h in CFG.get('youtube_scopri', []):
         try:
             html = prendi('https://www.youtube.com/' + h)
-            cid = re.search(r'"channelId":"(UC[\w-]{20,})"', html)
+            cid = (re.search(r'"channelId":"(UC[\w-]{20,})"', html)
+                   or re.search(r'youtube\.com/channel/(UC[\w-]{20,})', html)
+                   or re.search(r'"browseId":"(UC[\w-]{20,})"', html))
             tit = re.search(r'<title>([^<]*)</title>', html)
             trovati.append({'handle': h, 'id': cid.group(1) if cid else None,
                             'titolo': (tit.group(1).replace(' - YouTube', '') if tit else None)})

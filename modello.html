@@ -86,6 +86,12 @@
   .tile.curio{background:linear-gradient(160deg,#fff,#f4f7ff);border:1px solid rgba(0,113,227,.18)}
   .muted{font-size:12.5px;color:var(--dim);line-height:1.5}.muted b{color:var(--txt)}
   .copertura{font-size:12.5px;color:var(--dim);line-height:1.5;border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:0 0 10px}
+  .rsez{margin:0 0 14px}.rtit{font-size:13.5px;font-weight:700;color:var(--txt);margin:0 0 6px}
+  .rgrp{margin:0 0 8px}.rgt{font-size:12px;font-weight:600;color:var(--dim);margin:2px 0}
+  .ritem{font-size:13px;color:var(--txt);line-height:1.45;border:1px solid var(--line);border-radius:10px;padding:8px 11px;margin:0 0 6px;overflow-wrap:anywhere}
+  .ritem a{color:inherit}.rmeta{font-size:11.5px;color:var(--dim);margin-top:2px}
+  .ritem.rHot{border-color:rgba(255,59,48,.45)}
+  .rko{font-size:12.5px;color:var(--dim);border:1px dashed var(--line);border-radius:10px;padding:8px 11px;margin:0 0 8px}
   .tcong{display:flex;gap:10px;align-items:flex-start}.tcong .tt .h{font-size:13px;font-weight:600}.tcong .tt .v{font-size:11.5px;color:var(--dim);margin-top:2px}
   .lab{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin:2px 0 7px}
   .tag{display:inline-flex;align-items:center;gap:6px;background:var(--tint);color:#3a3a3c;font-size:12px;font-weight:500;padding:5px 11px;border-radius:13px;margin:3px 5px 3px 0}.tag b{color:var(--dim2);font-weight:700;cursor:pointer;font-size:14px}
@@ -307,6 +313,7 @@
   </div>
   <div class="tabs">
     <button class="on" onclick="tab('today',this)">📄 Oggi</button>
+    <button onclick="tab('rassegna',this);apriRassegna()">📡 Rassegna</button>
     <button onclick="tab('archive',this)">🗓 Archivio</button>
     <button onclick="tab('saved',this)">★ Salvati <span class="b" id="savedCount">0</span></button>
     <button onclick="tab('news',this)">✉️ Newsletter</button><button onclick="tab('settings',this)">⚙ Impostazioni</button>
@@ -335,6 +342,11 @@
         <div class="tile"><div class="lab">Riviste</div><div id="focusJournals"></div><div class="lab" style="margin-top:10px">Opinion leader</div><div id="focusKols"></div><div class="lab" style="margin-top:10px">Temi e società</div><div id="focusMore"></div><div class="sugg" id="suggBox"></div></div>
       </div>
     </div>
+  </div>
+
+  <div class="view" id="rassegna">
+    <div class="sl r-focus"><span class="ic">📡</span>Rassegna — richiami, trial e video della tua rete</div>
+    <div id="rassbox"><div class="muted">Apri questa scheda per caricare la rassegna.</div></div>
   </div>
 
   <div class="view" id="archive">
@@ -1145,6 +1157,68 @@ function renderCopertura(){
  var el=document.getElementById('copbox');if(!el)return;
  var t=copertura(HISTORY);
  el.innerHTML=t?'<div class="copertura">🗓 '+esc(t)+'</div>':'';}
+
+/* RASSEGNA — richiami, trial e video, dal raccoglitore notturno (fonti/raccolta.json).
+   Il file arriva da GitHub Actions alle 4.15: API ufficiali e feed pubblici, ogni
+   fonte col suo esito. rassHTML è PURA (dati → html) così i test la collaudano con
+   dati sintetici; il fetch è a parte e dichiara quando non riesce. */
+function _rSez(titolo,corpo){return '<div class="rsez"><div class="rtit">'+titolo+'</div>'+corpo+'</div>';}
+function _rKo(nome,esito){return '<div class="rko">⚠️ '+esc(nome)+': fonte non verificata stanotte ('+esc(esito)+').</div>';}
+function rassHTML(rac){
+ if(!rac||!rac.fonti)return '<div class="rko">⚠️ Raccolta non disponibile: il raccoglitore notturno non ha ancora depositato dati.</div>';
+ var F=rac.fonti,h='';
+ /* richiami — la categoria più alta della gerarchia */
+ var of=F.openfda||{};
+ if(of.esito==='ok'){
+  var vv=[].concat((of.dati&&of.dati.richiami)||[],(of.dati&&of.dati.enforcement)||[]);
+  var sv=vv.filter(function(v){return v.sorvegliata});
+  var corpo=vv.length?vv.slice(0,10).map(function(v){
+    return '<div class="ritem'+(v.sorvegliata?' rHot':'')+'">'+(v.sorvegliata?'🔴 ':'⚪ ')+
+     '<b>'+esc(v.recalling_firm||'ditta non riportata')+'</b> — '+esc((v.product_description||'').slice(0,140))+
+     '<div class="rmeta">'+esc(v.event_date_initiated||v.report_date||'')+' · '+esc(v.recall_status||'')+'</div></div>';
+   }).join(''):'<div class="muted">Nessun richiamo «knee» negli ultimi risultati openFDA.</div>';
+  h+=_rSez('🩺 Richiami di dispositivi (openFDA'+(sv.length?' — '+sv.length+' su aziende sorvegliate':'')+')',corpo);
+ }else h+=_rKo('openFDA',of.esito||'assente');
+ var sm=F.swissmedic||{};
+ if(sm.esito==='ok'&&sm.dati&&(sm.dati.voci||[]).length){
+  h+=_rSez('🇨🇭 Swissmedic',sm.dati.voci.slice(0,8).map(function(v){
+   return '<div class="ritem"><a href="'+esc(v.link||'#')+'" target="_blank" rel="noopener">'+esc(v.titolo||'')+'</a><div class="rmeta">'+esc(v.data||'')+'</div></div>';}).join(''));
+ }else if(sm.esito==='ok'){h+=_rKo('Swissmedic',(sm.dati&&sm.dati.nota)||'nessuna voce');}
+ else h+=_rKo('Swissmedic',sm.esito||'assente');
+ /* trial delle tensioni */
+ var tr=F.trials||{};
+ if(tr.esito==='ok'&&tr.dati){
+  h+=_rSez('🧪 I trial che chiudono le tue tensioni',tr.dati.map(function(g){
+   var righe=(g.studi||[]).slice(0,3).map(function(s){
+    return '<div class="ritem"><b>'+esc(s.nct||'')+'</b> · '+esc((s.titolo||'').slice(0,110))+
+     '<div class="rmeta">'+esc(s.stato||'stato non riportato')+' · agg. '+esc(s.aggiornato||'—')+(s.n?' · n='+s.n:'')+'</div></div>';}).join('');
+   return '<div class="rgrp"><div class="rgt">'+esc(g.sorveglianza)+'</div>'+(righe||'<div class="muted">nessuno studio trovato</div>')+'</div>';}).join(''));
+ }else h+=_rKo('ClinicalTrials.gov',tr.esito||'assente');
+ /* ritrattazioni */
+ var rt=F.ritrattazioni||{};
+ if(rt.esito==='ok'&&rt.dati){
+  var col=(rt.dati.colpiti||[]);
+  h+=_rSez('⚠️ Ritrattazioni (Crossref, ultimi 120 giorni)',
+   (col.length?col.map(function(c){return '<div class="ritem rHot">🔴 Un DOI citato da PULSE risulta colpito: '+esc((c.doi_citato||[]).join(', '))+' ('+esc(c.tipo)+')</div>';}).join('')
+    :'<div class="muted">Nessuno dei '+(rt.dati.doi_citati_controllati||0)+' DOI citati da PULSE risulta ritirato.</div>')+
+   ((rt.dati.nel_perimetro||[]).slice(0,5).map(function(c){return '<div class="ritem">⚪ '+esc(c.tipo)+' nel perimetro ginocchio: '+esc((c.titolo||'').slice(0,120))+'</div>';}).join('')));
+ }else h+=_rKo('Crossref/Retraction Watch',rt.esito||'assente');
+ /* video della rete */
+ var yt=F.youtube||{};
+ if(yt.esito==='ok'&&yt.dati&&(yt.dati.video||[]).length){
+  h+=_rSez('🎥 Video della tua rete (ultimi 14 giorni)',yt.dati.video.slice(0,12).map(function(v){
+   return '<div class="ritem"><a href="'+esc(v.link||'#')+'" target="_blank" rel="noopener">'+esc(v.titolo||'')+'</a><div class="rmeta">'+esc(v.canale||'')+' · '+esc(v.data||'')+'</div></div>';}).join(''));
+ }else if(yt.esito==='ok'){h+=_rSez('🎥 Video della tua rete','<div class="muted">Nessun video nuovo dai canali sorvegliati negli ultimi 14 giorni.</div>');}
+ else h+=_rKo('YouTube (feed ufficiali)',yt.esito||'assente');
+ h+='<div class="rmeta" style="margin-top:10px">Raccolta del '+esc(rac.generato||'—')+' · API ufficiali e feed pubblici · le fonti mute sono dichiarate, mai nascoste.</div>';
+ return h;}
+function apriRassegna(){
+ var el=document.getElementById('rassbox');if(!el)return;
+ el.innerHTML='<div class="muted">Carico la rassegna…</div>';
+ fetch('fonti/raccolta.json',{cache:'no-store'}).then(function(r){
+  if(!r.ok)throw new Error('HTTP '+r.status);return r.json();
+ }).then(function(j){el.innerHTML=rassHTML(j);}).catch(function(e){
+  el.innerHTML='<div class="rko">⚠️ Rassegna non raggiungibile ora ('+esc(String(e.message||e))+'). Se sei offline è normale: riprova con la rete.</div>';});}
 
 renderVerdict();
 renderCopertura();

@@ -54,6 +54,24 @@ curiosità dal mondo orientale. Criterio SUGGQ: corrispondenza tecnica con la su
 pratica, mai la fama. NB: eutils.ncbi.nlm.nih.gov è BLOCCATO dal proxy del sandbox —
 niente ripiego via curl.
 
+FONTI ESTERNE — dal 18 agosto il raccoglitore notturno (GitHub Actions, 4.15 UTC)
+deposita **fonti/raccolta.json**: leggilo SEMPRE, subito dopo il cervello. Contiene:
+richiami openFDA/Swissmedic (un richiamo che tocca un'azienda sorvegliata o un
+dispositivo che lui usa = scheda 🔴, SEMPRE in cima — è la categoria mai coperta
+finora); i trial delle tensioni da ClinicalTrials.gov (se uno cambia stato o deposita
+risultati, la tensione si aggiorna in 03-memoria e diventa scheda); le ritrattazioni
+Crossref sui DOI citati (un «colpito» = 🔴 + RETRACTED + avviso in chat); i video
+della rete (non c'entrano con le schede: li mostra la scheda Rassegna dell'app da
+sola). Ogni fonte ha un campo `esito`: se non è «ok», quella fonte va in NONVERIF —
+il file te lo dice, tu lo riporti. Se il file manca o `generato` non è di stanotte,
+il raccoglitore non è passato: dillo in NONVERIF e in chat, e procedi col resto.
+
+LA DOMENICA il briefing apre con la settimana: BRIEF_TEXT comincia con una sintesi
+(i 3-5 lavori che contano della settimana dallo storico, le tensioni mosse), poi il
+giorno normale. SUGGQ: considera anche i coautori ricorrenti — un nome comparso in
+≥2 lavori delle ultime due settimane dello storico è un candidato naturale, sempre
+col criterio della corrispondenza tecnica.
+
 ⛔ SE PUBMED NON È RAGGIUNGIBILE: il briefing NON SI FA. Niente schede ricostruite a
 memoria — sarebbe l'esatto fallimento che il sistema esiste per impedire. Registra il
 guasto in claude__09-storico.md («nessun briefing — PubMed non raggiungibile»), spingi

@@ -60,6 +60,7 @@ MARCATORI = [
  ("Duelli non fantasma",          ["function duelliVivi"]),
  ("Copia di sicurezza su file",   ["function esportaBackup", "function importaBackup", "function _backupJson"]),
  ("Giorni scoperti dichiarati",   ["function copertura", "function renderCopertura", 'id="copbox"']),
+ ("Rassegna delle fonti esterne", ["function rassHTML", "function apriRassegna", 'id="rassbox"']),
  ("Versione mista dei testi",     ["setNlVer('mix'", "function wBlurb"]),
  ("Durata video in secondi",      ["function setSec", "function durataNota", "PAROLE_AL_SECONDO"]),
  ("Proposte tracciate per nome",  ["function suggAperte", "suggDone"]),

@@ -96,6 +96,7 @@ esegui "blog e Google"           python3 "$QUI/distribuzione.py"
 esegui "preferenze e migrazione" python3 "$QUI/preferenze.py"
 esegui "salvati nel tempo"       python3 "$QUI/salvati.py"
 esegui "trasferimento fra device" python3 "$QUI/trasferimento.py"
+esegui "rassegna delle fonti"    python3 "$QUI/rassegna.py"
 
 echo
 echo "═══════════════════════════════════════════════════════════"

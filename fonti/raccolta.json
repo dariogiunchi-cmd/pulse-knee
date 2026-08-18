@@ -1,0 +1,827 @@
+{
+ "generato": "2026-08-18T20:50:45Z",
+ "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
+ "fonti": {
+  "openfda": {
+   "esito": "ok",
+   "dati": {
+    "richiami": [
+     {
+      "recalling_firm": "Kico Knee Innovation Company",
+      "product_description": "Brand Name: Kico Knee Innovation\r\nProduct Name: ARVIS SURGICAL NAVIGATION SYSTEM GEN 2\r\nModel/Catalog Number: IN-29200\r\nSoftware Version: ARVIS Hip and Knee Gap Balance Software v3.3.2 (IN-28200)\r\nARVIS Shoulder Software v2.0.3 (IN-23630)\r\nProduct Description: The ARVIS system is a computer-controlled navigation system intended to provide intra-operative measurements to the surgeon to aid in selection and positioning of orthopedic implant components. \r\n\r\n \r\n\r\nThe ARVIS Surgical Navigation System is indicated for assisting the surgeon in the positioning and alignment of implants relative to reference alignment axes and landmarks in stereotactic orthopedic surgery. The system aids the surgeon in making intraoperative measurements such as changes in leg length in Hip Arthroplasty. The system is compatible with straight acetabular impactors and with specific offset impactors, identified in the instructions for use, for which an adapter has been validated. Example orthopedic surgical procedures include but are not limited to:  \r\n\r\n\" Total Knee Arthroplasty  \r\n\r\n\" Unicompartmental Knee Arthroplasty: Tibial Transverse Resection  \r\n\r\n\" Hip Arthroplasty \r\n\r\n \r\n\r\nThe ARVIS\" head mounted display is for displaying augmented reality visualization and information to the user intraoperatively. The augmented/virtual displayed information should not be relied upon solely for absolute positional/alignment information and should always be used in conjunction with the displayed stereotaxic information.\r\nComponent: NA",
+      "reason_for_recall": "Due to an internal sensor issue, image displayed with eyepiece may appear tilted relative to the eyepiece housing",
+      "root_cause_description": "Device Design",
+      "event_date_initiated": "2026-07-13",
+      "recall_status": "Open, Classified",
+      "sorvegliata": false
+     },
+     {
+      "recalling_firm": "Medline Industries, LP",
+      "product_description": "Medline Kits containing Zimmer Biomet mixing bowls and spatulas\n\nTOTAL KNEE PACK\nDYNJT6267",
+      "reason_for_recall": "Kits contain Zimmer Biomet mixing bowls and spatulas, which were recalled due to seal nonconformities which present risk of sterility breach. Health consequences from use of product include clinically insignificant extension of surgery to find another readily available device.",
+      "root_cause_description": "Under Investigation by firm",
+      "event_date_initiated": "2026-06-10",
+      "recall_status": "Open, Classified",
+      "sorvegliata": true
+     },
+     {
+      "recalling_firm": "Medline Industries, LP",
+      "product_description": "Medline Kits containing Zimmer Biomet mixing bowls and spatulas\n\nTOTAL KNEE PACK-LF\nDYNJ61651J",
+      "reason_for_recall": "Kits contain Zimmer Biomet mixing bowls and spatulas, which were recalled due to seal nonconformities which present risk of sterility breach. Health consequences from use of product include clinically insignificant extension of surgery to find another readily available device.",
+      "root_cause_description": "Under Investigation by firm",
+      "event_date_initiated": "2026-06-10",
+      "recall_status": "Open, Classified",
+      "sorvegliata": true
+     },
+     {
+      "recalling_firm": "Medline Industries, LP",
+      "product_description": "MEDLINE medical procedure convenience kit labeled as:  \n1) TOTAL KNEE-LF, Medline kit SKU CDSOPT590T; \n2) TOTAL KNEE-LF, Medline kit SKU CDSOPT590U; \n3) TOTAL KNEE CDS, Medline kit SKU CDS983930J; \n4) HIP CDS-LF, Medline kit SKU CDS984556L; \n5) HIP CDS-LF, Medline kit SKU CDS984556M; \n6) TOTAL KNEE PACK, Medline kit SKU DYNJ905162Q.",
+      "reason_for_recall": "The procedure kits contain ICU Medical, Inc. pain management kits containing Bupivacaine Hydrochloride in Dextrose Injection, USP, which were recalled due to quality issues that could result in drug ineffectiveness.",
+      "root_cause_description": "Nonconforming Material/Component",
+      "event_date_initiated": "2026-06-08",
+      "recall_status": "Open, Classified",
+      "sorvegliata": false
+     },
+     {
+      "recalling_firm": "Medline Industries, LP",
+      "product_description": "MEDLINE convenience kits labeled as:  \n1) TOTAL JOINT KIT, Medline Kit SKU DYKS1574A; \n2) TOTAL KNEE BASIC, Medline Kit SKU DYNJ902378J; \n3) TOTAL HIP, Medline Kit SKU DYNJ903492K; \n4) ANTERIOR HIP, Medline Kit SKU DYNJ903493I; \n5) ANTERIOR HIP, Medline Kit SKU DYNJ903493J; \n6) ANTERIOR HIP, Medline Kit SKU DYNJ903493K; \n7) TOTAL HIP, Medline Kit SKU DYNJ906665G; \n8) TOTAL KNEE, Medline Kit SKU DYNJ906666J; \n9) TOTAL HIP-LF, Medline Kit SKU DYNJ909000A; \n10) TOTAL KNEE-LF, Medline Kit SKU DYNJ909002A; \n11) TOTAL HIP W NAVIGATION NO SYR, Medline Kit SKU DYNJ909068B; \n12) TOTAL JOINT, Medline Kit SKU DYNJ909069B; \n13) TOTAL KNEE, Medline Kit SKU DYNJ909070C; \n14) TOTAL KNEE W NAVIGATION NO SYR, Medline Kit SKU DYNJ909071B; \n15) TOTAL KNEE W NAVIGATION, Medline Kit SKU DYNJ909071C; \n16) MHCZ TOTAL KNEE, Medline Kit SKU DYNJ909534; \n17) MHCZ TOTAL KNEE, Medline Kit SKU DYNJ909534A; \n18) MHCZ TOTAL KNEE, Medline Kit SKU DYNJ909534B; \n19) ANTERIOR HIP, Medline Kit SKU DYNJ909640F; \n20) POSTERIOR HIP, Medline Kit SKU DYNJ909642D; \n21) TOTAL KNEE, Medline Kit SKU DYNJ909643D; \n22) TOTAL KNEE, Medline Kit SKU DYNJ909643F; \n23) TOTAL JOINT, Medline Kit SKU DYNJ910002A; \n24) TOTAL KNEE, Medline Kit SKU DYNJ910354A; \n25) TOTAL HIP, Medline Kit SKU DYNJ910813; \n26) ANTERIOR HIP, Medline Kit SKU DYNJ911083.",
+      "reason_for_recall": "Medline Industries, LP is issuing a recall for specific Medline kits containing B. Braun convenience kits that include Bupivacaine Hydrochloride in Dextrose Injection, USP. B. Braun Medical Inc. was notified by their supplier, Spectra Medical Devices, LLC of a product recall from Huons Co, Ltd., the manufacturer of Bupivacaine Hydrochloride in Dextrose Injection, USP. Huons Co, Ltd. has issued a voluntary recall of this product due to quality issues.",
+      "root_cause_description": "Under Investigation by firm",
+      "event_date_initiated": "2026-06-05",
+      "recall_status": "Open, Classified",
+      "sorvegliata": false
+     },
+     {
+      "recalling_firm": "United Orthopedic Corp.",
+      "product_description": "Brand Name: U2 Total Knee System\nProduct Name: PSA Box Trial, L, #1-6 and PSA Box Trial, R, #1-6\nModel/Catalog Number: 9323-5511 thru 9323-5516 and 9323-5521 thru 9323-5526\nSoftware Version: N/A\nProduct Description: Knee femur prosthesis trial, reusable\nComponent: No, N/A",
+      "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
+      "root_cause_description": "Process design",
+      "event_date_initiated": "2026-05-20",
+      "recall_status": "Open, Classified",
+      "sorvegliata": false
+     },
+     {
+      "recalling_firm": "United Orthopedic Corp.",
+      "product_description": "Brand Name: USTAR II Knee System\nProduct Name: Hinge Box Trial, L, #1-6 and Hinge Box Trial, R, #1-6\nModel/Catalog Number: 9325-5711 thru 9325-5716 and 9325-5721 thru 9325-5726\nSoftware Version: N/A\nProduct Description: Knee femur prosthesis trial, reusable\nComponent: No, N/A",
+      "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
+      "root_cause_description": "Process design",
+      "event_date_initiated": "2026-05-20",
+      "recall_status": "Open, Classified",
+      "sorvegliata": false
+     },
+     {
+      "recalling_firm": "United Orthopedic Corp.",
+      "product_description": "Brand Name: U2 Total Knee System\nProduct Name: Femoral valgus adaptor, left and right\nModel/Catalog Number: 9323-5333 and 9323-5334\nSoftware Version: N/A\nProduct Description: Manual Orthopedic Surgical Instrument\nComponent: No",
+      "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
+      "root_cause_description": "Process design",
+      "event_date_initiated": "2026-05-20",
+      "recall_status": "Open, Classified",
+      "sorvegliata": false
+     },
+     {
+      "recalling_firm": "United Orthopedic Corp.",
+      "product_description": "Brand Name: U2 Total Knee System\nProduct Name: Femoral valgus offset adaptor, 2mm, 4mm, 6mm, left and Femoral valgus offset adaptor, 2mm, 4mm, 6mm, right\nModel/Catalog Number: 9323-5335, 9323-5337, 9323-5339 and 9323-5336, 9323-5338, 9323-5340\nSoftware Version: N/A\nProduct Description: Manual Orthopedic Surgical Instrument\nComponent: No",
+      "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
+      "root_cause_description": "Process design",
+      "event_date_initiated": "2026-05-20",
+      "recall_status": "Open, Classified",
+      "sorvegliata": false
+     },
+     {
+      "recalling_firm": "DEPUY (IRELAND)",
+      "product_description": "Depuy Synthes, ATTUNE Revision Hinge Knee Hinge Housing Components with the below product descriptions and Part Codes.\n\n1. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN B; Part Number: 151730010. \n\n2. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN C; Part Number: 151730012. \n\n3. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN D; Part Number: 151730014. \n\n4. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN E; Part Number: 151730016. \n\n5. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN F; Part Number: 151730018. \n\n6. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN G; Part Number: 151730020. \n\n7. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN H; Part Number: 151730022. \n\n8. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN I; Part Number: 151730024. \n\n9. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN J; Part Number: 151730026. \n\n10. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN K; Part Number: 151730028. \n\n11. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN L; Part Number: 151730030. \n\n12. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN M; Part Number: 151730032. \n\n13. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN N; Part Number: 151730034. \n\n14. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN P; Part Number: 151730038. \n\n15. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN Q; Part Number: 151730040. \n\n16. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN R; Part Number: 151730042. \n\n17. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN S; Part Number: 151730044. \n\n18. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN T; Part Number: 151730046. \n\n19. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN U; Part Number: 151730048. \n\n20. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN V; Part Number: 151730050. \n\n21. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN W; Part Number: 151730052. \n\n22. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN X; Part Number: 151730036.",
+      "reason_for_recall": "The external sterile packaging was found adhered to the internal sterile packaging, potentially compromising sterility.",
+      "root_cause_description": "Under Investigation by firm",
+      "event_date_initiated": "2026-05-19",
+      "recall_status": "Open, Classified",
+      "sorvegliata": true
+     },
+     {
+      "recalling_firm": "DEPUY (IRELAND)",
+      "product_description": "Depuy Synthes, ATTUNE Revision Hinge Knee Hinge Insert Components with the below product descriptions and Part Codes.\n\n1. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 10mm B; Part Number: 151730410. \n\n2. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 12mm B; Part Number: 151730412. \n\n3. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 14mm B; Part Number: 151730414. \n\n4. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 16mm B; Part Number: 151730416. \n\n5. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 18mm B; Part Number: 151730418. \n\n6. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 20mm B; Part Number: 151730420. \n\n7. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 22mm B; Part Number: 151730422. \n\n8. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 24mm B; Part Number: 151730424. \n\n9. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 26mm B; Part Number: 151730426. \n\n10. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 8mm B; Part Number: 151730408. \n\n11. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 10mm C; Part Number: 151730510. \n\n12. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 12mm C; Part Number: 151730512. \n\n13. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 14mm C; Part Number: 151730514. \n\n14. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 16mm C; Part Number: 151730516. \n\n15. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 18mm C; Part Number: 151730518. \n\n16. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 20mm C; Part Number: 151730520. \n\n17. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 22mm C; Part Number: 151730522. \n\n18. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 24mm C; Part Number: 151730524. \n\n19. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 26mm C; Part Number: 151730526. \n\n20. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 8mm C; Part Number: 151730508. \n\n21. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 10mm E; Part Number: 151730710. \n\n22. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 12mm E; Part Number: 151730712. \n\n23. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 14mm E; Part Number: 151730714. \n\n24. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 16mm E; Part Number: 151730716. \n\n25. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 18mm E; Part Number: 151730718. \n\n26. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 20mm E; Part Number: 151730720. \n\n27. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 22mm E; Part Number: 151730722. \n\n28. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 24mm E; Part Number: 151730724. \n\n29. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 26mm E; Part Number: 151730726. \n\n30. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 8mm E; Part Number: 151730708. \n\n31. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 10mm W; Part Number: 151730810. \n\n32. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 12mm W; Part Number: 151730812. \n\n33. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 14mm W; Part Number: 151730814. \n\n34. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 16mm W; Part Number: 151730816. \n\n35. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 18mm W; Part Number: 151730818. \n\n36. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 20mm W; Part Number: 151730820. \n\n37. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 22mm W; Part Number: 151730822. \n\n38. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 8mm F; Part Number: 151730808. \n\n39. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 24mm W; Part Number: 151730824. \n\n40. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 26mm W; Part Number: 151730826.",
+      "reason_for_recall": "The external sterile packaging was found adhered to the internal sterile packaging, potentially compromising sterility.",
+      "root_cause_description": "Under Investigation by firm",
+      "event_date_initiated": "2026-05-19",
+      "recall_status": "Open, Classified",
+      "sorvegliata": true
+     },
+     {
+      "recalling_firm": "Think Surgical, Inc.",
+      "product_description": "TMINI Femur Tracking Array REF 109003\nUDI-DI code: M9461090030\n\nTMINI Tibia Tracking Array REF 109004\nUDI-DI code: M9461090040\n\nTMINI Miniature Robotic System is indicated as a stereotaxic instrumentation system for total knee replacement (TKA) surgery. It is to assist the surgeon by providing software-defined spatial boundaries for orientation and reference information to identifiable anatomical structures for the accurate placement of knee implant components",
+      "reason_for_recall": "Due to manufacturing/design issue where the knob on the tracking array may loosen causing potential misalignment of the array.",
+      "root_cause_description": "Process control",
+      "event_date_initiated": "2026-05-08",
+      "recall_status": "Open, Classified",
+      "sorvegliata": false
+     },
+     {
+      "recalling_firm": "Medline Industries, LP",
+      "product_description": "MEDLINE Medical Procedure Kits labeled as:  \n1) CRANI, Medline Kit Number/SKU DYNJ908097; \n2) CRANI, Medline Kit Number/SKU DYNJ908097A; \n3) CRANI, Medline Kit Number/SKU DYNJ908097B; \n4) CRANI, Medline Kit Number/SKU DYNJ908097C; \n5) CRANI, Medline Kit Number/SKU DYNJ908097D; \n6) DR TUCKER ANT TOTAL HIP, Medline Kit Number/SKU DYNJ912029; \n7) JEWISH CRANI PACK, Medline Kit Number/SKU DYNJ55637B; \n8) L SCOPE PACK, Medline Kit Number/SKU DYNJ43930A; \n9) LAMI PACK, Medline Kit Number/SKU DYNJ67767; \n10) LAVH NEW BRAUNFELS, Medline Kit Number/SKU DYNJ61136F; \n11) SOI KNEE ARTHROSCOPY, Medline Kit Number/SKU DYNJV0172Q; \n12) T AND A PACK, Medline Kit Number/SKU DYNJ86229.",
+      "reason_for_recall": "During an internal review, Medline identified representative samples did not meet applicable performance specifications. Identified issues include irregularities in catheter surface finish, instances where the catheter connector detached prematurely from the catheter funnel, and limited cases where the catheter outer diameter did not meet specification.",
+      "root_cause_description": "Nonconforming Material/Component",
+      "event_date_initiated": "2026-05-04",
+      "recall_status": "Open, Classified",
+      "sorvegliata": false
+     },
+     {
+      "recalling_firm": "Medline Industries, LP",
+      "product_description": "Medline convenience kits:\n\nACD\nDYNJ904999J\n\nACDF\nDYNJ907336B\nDYNJ910821A\n\nACDF PACK\nDYNJ81098C\n\nACL\nDYNJ911996\n\nACL ACCESSORY PACK\nDYNJ86584B\n\nACL- LF\nDYNJ905281B\n\nACL PACK\nDYNJ67271A\n\nALIF\nDYNJ904848L\n\nANTERIOR CERVICAL\nDYNJ901355J\n\nARTHROSCOPY\nDYNJ908193B\n\nARTHROSCOPY PACK-LF\nDYNJ42963M\nDYNJ52268B\n\nARTHROSCOPY SHOULDER\nDYNJ908684A\n\nBACK CDS-LF\nCDS983364G\n\nBACK PACK\nDYNJT4339\n\nCDH SPINE PACK\nDYNJ908828D\n\nCERVICAL CDS\nDYNJ903477J\n\nCMC ORTHO BACK TRAY\nSYNJ10272B\n\nCRANIOTOMY\nDYNJ911853\n\nCRANIOTOMY ROOSEVELT PACK\nDYNJ58358F\n\nCUSTOM HAND PACK-LF\nDYNJ0537135V\n\nCUSTOM SPINAL PACK\nDYNJT7544\n\nDISCECTOMY PACK\nDYNJ86770\n\nDJ ORTHO SPINE\nDYNJ48980M\n\nEXTREMITY PACK-LF\nDYNJT4161\n\nFOOT PACK\nDYNJ53179D\n\nGENERAL ORTHO-ACNW\nDYNJ84891\n\nGILMORE SHOULDER SCOPE PACK\nDYNJ58002\n\nGV LUMBAR LAMINECTOMY PK\nDYNJ46938L\n\nHAND PACK\nDYNJ63113B\nDYNJ69662A\nDYNJT5855\n\nHAND-LF\nDYNJ903263B\n\nKIT LAMINECTOMY\nDYNJ908806C\n\nKNEE ARTHROSCOPY\nDYNJ902056C\nDYNJ904846I\n\nKNEE ARTHROSCOPY-LF\nDYNJ905871F\n\nKNEE SCOPE\nDYNJ906986G\n\nLAMINECTOMY\nDYNJ904847K\nDYNJ909505D\n\nLAMINECTOMY CDS\nCDS983115K\n\nLAMINECTOMY CERVICAL DISC-LF\nDYNJ905286G\n\nLAMINECTOMY NEURO PACK\nDYNJ58356F\n\nLAMINECTOMY SPINE\nDYNJ904139L\n\nLOWER EXTREMITY PACK\nDYNJ63114C\n\nLUMBAR CERVICAL PACK-LF\nDYNJ0101088G\n\nLUMBAR LAMI\nDYNJ905020J\n\nLUMBAR LAMINECTOMY\nDYNJ53707\n\nLUMBAR LAMINECTOMY PACK\nDYNJT4386\n\nMAIN/LAMINECTOMY PACK-LF\nDYNJ0565499AN\n\nNJ SPINE SPECIALIST PACK\nDYNJ58706F\n\nOHOW SPINE-BACK PACK\nDYNJ910097A\n\nORTHO NECK CDS-LF\nCDS983134C\n\nORTHO PACK-LF\nDYNJ37202G\n\nORTHO SPINE\nDYNJ40221G\n\nOSC BEACH CHAIR SHOULDER-LF\nDYNJ905282C\n\nPACC PETRIE ACL ADD ON PACK-LF\nDYNJ58290D\n\nPACK,ARTHROSCOPY ASC\nDYNJ65484A\n\nPACK,POSTERIOR SPINAL FUSION\nDYNJ906892B\n\nPAD LATERAL SPINE\nDYNJ902158L\nDYNJ902158M\n\nPAD POSTERIOR SPINE\nDYNJ902142L\n\nPK-SPINE\nDYNJ58259A\n\nPODIATRY PACK\nDYNJ62288D\n\nPOST SPINE PACK\nDYNJ20509R\n\nPOSTERIOR SPINAL FUSION\nDYNJ903250B\n\nRFT ARTHROSCOPY PACK\nDYNJ43956C\n\nRFT SHOULDER PACK-NOBLE\nDYNJ36331D\n\nSA SHOULDER #2 BORDEN\nDYNJ56501A\n\nSHOULDER\nDYNJ900893M\nDYNJ904184I\n\nSHOULDER ARTHROSCOPY\nDYNJ904842G\n\nSHOULDER PACK\nDYNJ83483\n\nSHOULDER PACK-LF\nDYNJ42973N\n\nSHOULDER SCOPE PACK NTX\nDYNJ68399C\n\nSPINAL PACK\nDYNJ49692G\n\nSPINE\nDYNJ910451A\n\nSPINE PACK\nDYNJ20147O\nDYNJ84971\nDYNJ86044A\nDYNJ86308C\nDYNJ88917\nDYNJS3069\nDYNJT4163\nDYNJT8396\n\nST CHARLES TOTAL HIP\nDYNJ909593C\n\nTOTAL HIP\nDYNJ910906D\n\nTOTAL HIP PACK\nDYNJ64156B\n\nTOTAL JOINT\nDYNJ904186G\n\nTOTAL KNEE PACK\nDYNJ60967\nDYNJ61409A\n\nWMC ORTHO SPINE WMC-LF\nDYNJ902528M\n\nXLIF\nDYNJ910795B",
+      "reason_for_recall": "Kits contain recalled lot of Ferndale Laboratories MASTISOL Liquid Adhesive. Butyrate tubing may crack during actuation and render product unusable for application.",
+      "root_cause_description": "Process control",
+      "event_date_initiated": "2026-04-27",
+      "recall_status": "Open, Classified",
+      "sorvegliata": false
+     },
+     {
+      "recalling_firm": "Medline Industries, LP",
+      "product_description": "Medline convenience kits:\n\nACL PACK\nDYNJ64161C\n\nARTHROSCOPY PACK\nDYNJ47103D\nDYNJ67197G\nDYNJ85197A\nDYNJT4007\n\nBASIC ACCESS PACK-LF\nDYNJ36698B\n\nBASIC BACK TRAY\nDYNJ89037\n\nBASIC PEDI PACK-LF\nDYNJ0171446I\nDYNJ0171446J\n\nBASIC SPINE\nDYNJ910915A\n\nBREAST PACK\nDYNJ87587A\n\nBREAST PLASTIC PACK\nDYNJ84482C\n\nC SECTION\nDYNJ49172I\n\nCAROTID ENDARTERECTOMY PACK\nDYNJ48013L\n\nCENTRAL LINE PACK-LF\nDYNJ0220136S\n\nCERVICAL FUSION\nDYNJ908135B\n\nCERVICAL SPINE PACK\nDYNJ53044G\n\nC-SECTION\nDYNJ909099F\n\nDAVINCI PROSTATE PACK\nDYNJ61711C\n\nDEPAUL FOOT & ANKLE-LF\nDYNJ20010L\n\nDIEP PACK\nDYNJ64964J\n\nDYNJ43210K\nDYNJ61787F\nDYNJ87065\n\nEAR CUSTOM PACK\nDYNJ82564A\n\nENT FREE FLAP PACK SAFETY\nDYNJ54720D\n\nEP PACEMAKER SAFETY #1\nDYNJ54722F\n\nEPCH EXTREMITY PACK\nDYNJ83095B\n\nEXTREMITY PACK\nDYNJ32934F\n\nEXTREMITY PACK-LF\nDYNJ68935B\n\nFISTULA PACK\nDYNJ66502B\n\nGENDER AFFIRMING SURGERY\nDYNJ66252F\n\nGYN LAPAROSCOPY PACK AHSC\nDYNJT8381\n\nHAND PACK WATCHMAKER-LF\nDYNJ34580D\n\nHEAD & NECK PACK-LF\nDYNJ0282388T\nDYNJ88308\n\nHIP SCOPE\nDYNJ907120D\n\nKNEE ARTHRO PACK\nDYNJ58404F\n\nKNEE ARTHROSCOPY PACK\nDYNJ84740A\n\nLAMI OVERHEAD PACK\nDYNJ46531Q\n\nLAMINECTOMY NEURO MPH\nDYNJT5271\n\nLAMINECTOMY PACK\nDYNJ68785D\n\nLAP APPY PACK\nDYNJT6005\n\nLAP CHOLE PACK\nDYNJ82087A\n\nLEVY PACK\nDYNJ83939C\n\nMAJOR LAP VCH\nDYNJ39217P\n\nMAJOR NEURO PACK-LF\nDYNJ0578916AA\n\nMAJOR PACK\nDYNJ58528J\n\nMINOR GEN PACK\nDYNJ61661B\n\nMINOR LAPAROTOMY PACK-LF\nDYNJ0753436P\n\nMINOR PACK\nDYNJ54968B\n\nNEURO PACK\nDYNJ67628D\n\nNEURO SHUNT PACK-LF\nDYNJ0578815W\n\nOMFS PACK\nDYNJ54400C\n\nOPEN HEART PACK\nDYNJT5008\n\nOPEN HEART-LF\nDYNJ48260F\n\nOPEN LAPAROTOMY PACK\nDYNJ39247I\nDYNJ39247J\n\nPACEMAKER PACK\nDYNJ31461I\nDYNJ61411C\n\nPACK,ORTHO FLIP\nDYNJ65471B\n\nPED OPEN HEART PACK\nDYNJ45373G\n\nPLASTIC PACK\nDYNJ82495D\n\nPLASTICS PK - NO SYR\nDYNJ62433F\n\nPODIATRY PACK\nOP7809M\n\nPPE BUNDLE KIT\nDT13351A\n\nPROSTATE ROBOTIC PACK\nDYNJ84120C\n\nRADIAL ART LINE INSERTION\nARTNC234\n\nROBOTIC GENERAL WHH\nDYNJT5376\n\nROBOTIC PACK\nDYNJ47978G\n\nRR-SPINE PACK\nDYNJ62643B\n\nSHOULDER ARTH PACK\nDYNJ58410D\n\nSHOULDER ARTHROSCOPY PACK\nDYNJ54477C\nDYNJT8391\n\nSHOULDER PACK\nDYNJ61052B\nDYNJT3266\n\nSHOULDER PACK-LF\nDYNJ0122428K\nPHS656414I\n\nSPINE PACK\nDYNJ64949C\nDYNJ83649B\n\nSPINE SHOULDER PACK\nDYNJ47104D\n\nSTERILE ACCESS KIT\nDYNDA2664\n\nTOTAL KNEE PACK\nDYNJ84741B\n\nTUBAL PACK\nDYNJ68253F\n\nUNIVERSAL PACK\nDYNJ83246B\n\nVA TAMPA GENERAL ROBOTIC PACK\nDYNJT6993\n\nW.C. MINOR LAPAROTOMY PK-LF\nDYNJ0509186J\n\nZALE OTOLOGY CDS\nCDS983181G",
+      "reason_for_recall": "Kits contain recalled lot of Ferndale Laboratories MASTISOL Liquid Adhesive. Butyrate tubing may crack during actuation and render product unusable for application.",
+      "root_cause_description": "Process control",
+      "event_date_initiated": "2026-04-27",
+      "recall_status": "Open, Classified",
+      "sorvegliata": false
+     }
+    ],
+    "enforcement": [
+     {
+      "recall_number": "Z-2885-2026",
+      "recalling_firm": "United Orthopedic Corp.",
+      "product_description": "Brand Name: U2 Total Knee System  Product Name: Femoral valgus adaptor, left and right  Model/Catalog Number: 9323-5333 and 9323-5334  Software Version: N/A  Product Description: Manual Orthopedic Surgical Instrument  Component: No",
+      "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
+      "report_date": "20260812",
+      "classification": "Class II",
+      "sorvegliata": false
+     },
+     {
+      "recall_number": "Z-2897-2026",
+      "recalling_firm": "United Orthopedic Corp.",
+      "product_description": "Brand Name: U2 Total Knee System  Product Name: Femoral offset bushing, 0mm and 4mm  Model/Catalog Number: 9323-5310  Software Version: N/A  Product Description: Manual Orthopedic Surgical Instrument  Component: No, N/A",
+      "reason_for_recall": "Due to a design issue causing the incorrect engraved numbering on implant that could result in the incorrect orientation of the implant.",
+      "report_date": "20260812",
+      "classification": "Class II",
+      "sorvegliata": false
+     },
+     {
+      "recall_number": "Z-2883-2026",
+      "recalling_firm": "United Orthopedic Corp.",
+      "product_description": "Brand Name: U2 Total Knee System  Product Name: PSA Box Trial, L, #1-6 and PSA Box Trial, R, #1-6  Model/Catalog Number: 9323-5511 thru 9323-5516 and 9323-5521 thru 9323-5526  Software Version: N/A  Product Description: Knee femur prosthesis trial, reusable  Component: No, N/A",
+      "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
+      "report_date": "20260812",
+      "classification": "Class II",
+      "sorvegliata": false
+     },
+     {
+      "recall_number": "Z-2884-2026",
+      "recalling_firm": "United Orthopedic Corp.",
+      "product_description": "Brand Name: USTAR II Knee System  Product Name: Hinge Box Trial, L, #1-6 and Hinge Box Trial, R, #1-6  Model/Catalog Number: 9325-5711 thru 9325-5716 and 9325-5721 thru 9325-5726  Software Version: N/A  Product Description: Knee femur prosthesis trial, reusable  Component: No, N/A",
+      "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
+      "report_date": "20260812",
+      "classification": "Class II",
+      "sorvegliata": false
+     },
+     {
+      "recall_number": "Z-2886-2026",
+      "recalling_firm": "United Orthopedic Corp.",
+      "product_description": "Brand Name: U2 Total Knee System  Product Name: Femoral valgus offset adaptor, 2mm, 4mm, 6mm, left and Femoral valgus offset adaptor, 2mm, 4mm, 6mm, right  Model/Catalog Number: 9323-5335, 9323-5337, 9323-5339 and 9323-5336, 9323-5338, 9323-5340  Software Version: N/A  Product Description: Manual Orthopedic Surgical Instrument  Component: No",
+      "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
+      "report_date": "20260812",
+      "classification": "Class II",
+      "sorvegliata": false
+     },
+     {
+      "recall_number": "Z-2898-2026",
+      "recalling_firm": "United Orthopedic Corp.",
+      "product_description": "Brand Name: U2 Total Knee System  Product Name: Femoral offset bushing, 2mm and 6mm  Model/Catalog Number: 9323-5312  Software Version: N/A  Product Description: Manual Orthopedic Surgical Instrument  Component: No, N/A",
+      "reason_for_recall": "Due to a design issue causing the incorrect engraved numbering on implant that could result in the incorrect orientation of the implant.",
+      "report_date": "20260812",
+      "classification": "Class II",
+      "sorvegliata": false
+     },
+     {
+      "recall_number": "Z-2765-2026",
+      "recalling_firm": "Medline Industries, LP",
+      "product_description": "MEDLINE medical procedure convenience kit labeled as:   1) TOTAL KNEE-LF, Medline kit SKU CDSOPT590T;  2) TOTAL KNEE-LF, Medline kit SKU CDSOPT590U;  3) TOTAL KNEE CDS, Medline kit SKU CDS983930J;  4) HIP CDS-LF, Medline kit SKU CDS984556L;  5) HIP CDS-LF, Medline kit SKU CDS984556M;  6) TOTAL KNEE PACK, Medline kit SKU DYNJ905162Q.",
+      "reason_for_recall": "The procedure kits contain ICU Medical, Inc. pain management kits containing Bupivacaine Hydrochloride in Dextrose Injection, USP, which were recalled due to quality issues that could result in drug ineffectiveness.",
+      "report_date": "20260729",
+      "classification": "Class I",
+      "sorvegliata": false
+     },
+     {
+      "recall_number": "Z-2749-2026",
+      "recalling_firm": "Medline Industries, LP",
+      "product_description": "MEDLINE convenience kits labeled as:    1) TOTAL JOINT KIT, Medline Kit SKU DYKS1574A;   2) TOTAL KNEE BASIC, Medline Kit SKU DYNJ902378J;   3) TOTAL HIP, Medline Kit SKU DYNJ903492K;   4) ANTERIOR HIP, Medline Kit SKU DYNJ903493I;   5) ANTERIOR HIP, Medline Kit SKU DYNJ903493J;   6) ANTERIOR HIP, Medline Kit SKU DYNJ903493K;   7) TOTAL HIP, Medline Kit SKU DYNJ906665G;   8) TOTAL KNEE, Medline Kit SKU DYNJ906666J;   9) TOTAL HIP-LF, Medline Kit SKU DYNJ909000A;   10) TOTAL KNEE-LF, Medline Kit SKU DYNJ909002A;   11) TOTAL HIP W NAVIGATION NO SYR, Medline Kit SKU DYNJ909068B;   12) TOTAL JOINT, Medline Kit SKU DYNJ909069B;   13) TOTAL KNEE, Medline Kit SKU DYNJ909070C;   14) TOTAL KNEE W NAVIGATION NO SYR, Medline Kit SKU DYNJ909071B;   15) TOTAL KNEE W NAVIGATION, Medline Kit SKU DYNJ909071C;   16) MHCZ TOTAL KNEE, Medline Kit SKU DYNJ909534;   17) MHCZ TOTAL KNEE, Medline Kit SKU DYNJ909534A;   18) MHCZ TOTAL KNEE, Medline Kit SKU DYNJ909534B;   19) ANTERIOR HIP, Medline Kit SKU DYNJ909640F;   20) POSTERIOR HIP, Medline Kit SKU DYNJ909642D;   21) TOTAL KNEE, Medline Kit SKU DYNJ909643D;   22) TOTAL KNEE, Medline Kit SKU DYNJ909643F;   23) TOTAL JOINT, Medline Kit SKU DYNJ910002A;   24) TOTAL KNEE, Medline Kit SKU DYNJ910354A;   25) TOTAL HIP, Medline Kit SKU DYNJ910813;   26) ANTERIOR HIP, Medline Kit SKU DYNJ911083.",
+      "reason_for_recall": "Medline Industries, LP is issuing a recall for specific Medline kits containing B. Braun convenience kits that include Bupivacaine Hydrochloride in Dextrose Injection, USP. B. Braun Medical Inc. was notified by their supplier, Spectra Medical Devices, LLC of a product recall from Huons Co, Ltd., the manufacturer of Bupivacaine Hydrochloride in Dextrose Injection, USP. Huons Co, Ltd. has issued a voluntary recall of this product due to quality issues.",
+      "report_date": "20260729",
+      "classification": "Class I",
+      "sorvegliata": false
+     },
+     {
+      "recall_number": "Z-2736-2026",
+      "recalling_firm": "Medline Industries, LP",
+      "product_description": "Medline Kits containing Zimmer Biomet mixing bowls and spatulas    TOTAL KNEE PACK  DYNJT6267",
+      "reason_for_recall": "Kits contain Zimmer Biomet mixing bowls and spatulas, which were recalled due to seal nonconformities which present risk of sterility breach. Health consequences from use of product include clinically insignificant extension of surgery to find another readily available device.",
+      "report_date": "20260722",
+      "classification": "Class II",
+      "sorvegliata": true
+     },
+     {
+      "recall_number": "Z-2737-2026",
+      "recalling_firm": "Medline Industries, LP",
+      "product_description": "Medline Kits containing Zimmer Biomet mixing bowls and spatulas    TOTAL KNEE PACK-LF  DYNJ61651J",
+      "reason_for_recall": "Kits contain Zimmer Biomet mixing bowls and spatulas, which were recalled due to seal nonconformities which present risk of sterility breach. Health consequences from use of product include clinically insignificant extension of surgery to find another readily available device.",
+      "report_date": "20260722",
+      "classification": "Class II",
+      "sorvegliata": true
+     },
+     {
+      "recall_number": "Z-2716-2026",
+      "recalling_firm": "Think Surgical, Inc.",
+      "product_description": "TMINI Femur Tracking Array REF 109003  UDI-DI code: M9461090030    TMINI Tibia Tracking Array REF 109004  UDI-DI code: M9461090040    TMINI Miniature Robotic System is indicated as a stereotaxic instrumentation system for total knee replacement (TKA) surgery. It is to assist the surgeon by providing software-defined spatial boundaries for orientation and reference information to identifiable anatomical structures for the accurate placement of knee implant components",
+      "reason_for_recall": "Due to manufacturing/design issue where the knob on the tracking array may loosen causing potential misalignment of the array.",
+      "report_date": "20260715",
+      "classification": "Class II",
+      "sorvegliata": false
+     },
+     {
+      "recall_number": "Z-2700-2026",
+      "recalling_firm": "Encore Medical, LP",
+      "product_description": "Brand Name: EMPOWR 3D KNEE Product Name: EMPOWR 3D KNEE INS, 11L 14MM, VE Model/Catalog Number: 342-19-703 Product Description: Enovis knee devices are intended for knee arthroplasty.",
+      "reason_for_recall": "Due to packaging discrepancy with incorrect product size mixed up.",
+      "report_date": "20260715",
+      "classification": "Class II",
+      "sorvegliata": true
+     },
+     {
+      "recall_number": "Z-2701-2026",
+      "recalling_firm": "Encore Medical, LP",
+      "product_description": "Brand Name: EMPOWR 3D KNEE Product Name: EMPOWR 3D KNEE INS, 11L 14MM, VE Model/Catalog Number: 341-14-711 Product Description: Enovis knee devices are for knee arthroplasty.",
+      "reason_for_recall": "Due to packaging discrepancy with incorrect product size mixed up.",
+      "report_date": "20260715",
+      "classification": "Class II",
+      "sorvegliata": true
+     },
+     {
+      "recall_number": "Z-2617-2026",
+      "recalling_firm": "DEPUY (IRELAND)",
+      "product_description": "Depuy Synthes, ATTUNE Revision Hinge Knee Hinge Insert Components with the below product descriptions and Part Codes.    1. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 10mm B; Part Number: 151730410.     2. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 12mm B; Part Number: 151730412.     3. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 14mm B; Part Number: 151730414.     4. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 16mm B; Part Number: 151730416.     5. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 18mm B; Part Number: 151730418.     6. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 20mm B; Part Number: 151730420.     7. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 22mm B; Part Number: 151730422.     8. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 24mm B; Part Number: 151730424.     9. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 26mm B; Part Number: 151730426.     10. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 8mm B; Part Number: 151730408.     11. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 10mm C; Part Number: 151730510.     12. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 12mm C; Part Number: 151730512.     13. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 14mm C; Part Number: 151730514.     14. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 16mm C; Part Number: 151730516.     15. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 18mm C; Part Number: 151730518.     16. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 20mm C; Part Number: 151730520.     17. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 22mm C; Part Number: 151730522.     18. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 24mm C; Part Number: 151730524.     19. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 26mm C; Part Number: 151730526.     20. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 8mm C; Part Number: 151730508.     21. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 10mm E; Part Number: 151730710.     22. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 12mm E; Part Number: 151730712.     23. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 14mm E; Part Number: 151730714.     24. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 16mm E; Part Number: 151730716.     25. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 18mm E; Part Number: 151730718.     26. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 20mm E; Part Number: 151730720.     27. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 22mm E; Part Number: 151730722.     28. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 24mm E; Part Number: 151730724.     29. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 26mm E; Part Number: 151730726.     30. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 8mm E; Part Number: 151730708.     31. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 10mm W; Part Number: 151730810.     32. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 12mm W; Part Number: 151730812.     33. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 14mm W; Part Number: 151730814.     34. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 16mm W; Part Number: 151730816.     35. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 18mm W; Part Number: 151730818.     36. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 20mm W; Part Number: 151730820.     37. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 22mm W; Part Number: 151730822.     38. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 8mm F; Part Number: 151730808.     39. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 24mm W; Part Number: 151730824.     40. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 26mm W; Part Number: 151730826.",
+      "reason_for_recall": "The external sterile packaging was found adhered to the internal sterile packaging, potentially compromising sterility.",
+      "report_date": "20260708",
+      "classification": "Class II",
+      "sorvegliata": true
+     },
+     {
+      "recall_number": "Z-2616-2026",
+      "recalling_firm": "DEPUY (IRELAND)",
+      "product_description": "Depuy Synthes, ATTUNE Revision Hinge Knee Hinge Housing Components with the below product descriptions and Part Codes.    1. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN B; Part Number: 151730010.     2. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN C; Part Number: 151730012.     3. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN D; Part Number: 151730014.     4. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN E; Part Number: 151730016.     5. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN F; Part Number: 151730018.     6. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN G; Part Number: 151730020.     7. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN H; Part Number: 151730022.     8. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN I; Part Number: 151730024.     9. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN J; Part Number: 151730026.     10. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN K; Part Number: 151730028.     11. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN L; Part Number: 151730030.     12. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN M; Part Number: 151730032.     13. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN N; Part Number: 151730034.     14. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN P; Part Number: 151730038.     15. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN Q; Part Number: 151730040.     16. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN R; Part Number: 151730042.     17. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN S; Part Number: 151730044.     18. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN T; Part Number: 151730046.     19. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN U; Part Number: 151730048.     20. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN V; Part Number: 151730050.     21. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN W; Part Number: 151730052.     22. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN X; Part Number: 151730036.",
+      "reason_for_recall": "The external sterile packaging was found adhered to the internal sterile packaging, potentially compromising sterility.",
+      "report_date": "20260708",
+      "classification": "Class II",
+      "sorvegliata": true
+     }
+    ]
+   }
+  },
+  "swissmedic": {
+   "esito": "ok",
+   "dati": {
+    "voci": [
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "I-SMI.TI.10e Starting Material Identity Guarantee",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/bewilligungen_zertifikate/autorizzazioni-d-esercizio0/ispettorati.html",
+      "data": "Mon, 17 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "DHPC – Rhophylac (immunoglobulinum humanum anti-D)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-rhophylac-immunoglobulinum-humanum-anti-d1.html",
+      "data": "Fri, 14 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Kisunla®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-kisunla.html",
+      "data": "Fri, 14 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Out-of-Stock – Extencilline, 1 200 000 et 2 400 000 UI, poudre et solvant pour suspension injectable",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-extencilline-1200000-und-2400000-ui-pulver-undloesungsmittel-zur-herstellung-einer-injektionssuspension.html",
+      "data": "Thu, 13 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Ritiro di lotti – Movicol, polvere per soluzione orale",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-movicol-pulver-zur-herstellung-einer-loesung-zum-einnehmen.html",
+      "data": "Thu, 13 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Ispezioni ospedaliere di Swissmedic 2025: la sorveglianza è efficace, ma non basta",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/dispositivi-medici/panoramica-dispositivi-medici/jahresbericht-spitalinspektionen-2025.html",
+      "data": "Thu, 13 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "DHPC – Bonviva 150 mg (acidum ibandronicum)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-bonviva-150-mg-acidum-ibandronicum.html",
+      "data": "Wed, 12 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Out-of-Stock – Thiopental Inresa 0.5 g, poudre pour solution injectable / solution pour perfusion",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-thiopental-inresa-pulver-zur-herstellung-einer-injektionsloesung-infusionsloesung.html",
+      "data": "Mon, 10 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – MenQuadfi®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/menquadfi-wirkstoff-polysaccharide-von-neis-seria-meningitidis-der-gruppen-a-c-w-135-und-y-konjugiert-an-tetanus-toxoid-traegerprotein.html",
+      "data": "Mon, 10 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Swissmedic Journal",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/swissmedic-journal.html",
+      "data": "Mon, 10 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Application Manager (80-100%)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/posti-liberi/application-manager.html",
+      "data": "Fri, 07 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – RYSTIGGO®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-rystiggo-rozanolixizumab.html",
+      "data": "Fri, 07 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "DHPC – Tavneos® (avacopan)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-tavneos-avacopan.html",
+      "data": "Thu, 06 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "DHPC – Aranesp (darbepoetinum alfa)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-aranesp-darbepoetinum-alfa.html",
+      "data": "Thu, 06 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Ritiro di lotti – Viscum album Qu 200mg, ampoules / Viscum album Qu-F 100mg, ampoules",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/hargenrueckruf-viscum-album-qu-200mg-ampullen-viscum-album-qu-f-100mg-ampullen.html",
+      "data": "Tue, 04 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
+      "titolo": "DHPC – Rhophylac (immunoglobulinum humanum anti-D)Out-of-Stock – Extencilline, 1 200 000 et 2 400 000 UI, poudre et solvant pour...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-rhophylac-immunoglobulinum-humanum-anti-d1.html",
+      "data": "Mon, 17 Aug 2026 11:16:37 +0000"
+     }
+    ]
+   }
+  },
+  "trials": {
+   "esito": "ok",
+   "dati": [
+    {
+     "sorveglianza": "STABILITY 2 (T1a)",
+     "studi": [
+      {
+       "nct": "NCT03935750",
+       "titolo": "STABILITY 2: Anterior Cruciate Ligament Reconstruction +/- Lateral Tenodesis With Patellar vs Quad Tendon",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-06-17",
+       "fase": [
+        "NA"
+       ],
+       "n": 1272,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT06885372",
+       "titolo": "Long-term Follow up of the Stability 1 Trial",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-05-14",
+       "fase": [
+        "NA"
+       ],
+       "n": 510,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07475351",
+       "titolo": "Comparison of Bone-patellar Tendon-bone and Patellar Tendon-bone Grafts in ACL Reconstruction",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-03-23",
+       "fase": [
+        "NA"
+       ],
+       "n": 110,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07404046",
+       "titolo": "Comparison of Tendon and Muscle-Tendon Semitendinosus Grafts After ACL Reconstruction",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-02-11",
+       "fase": [
+        "NA"
+       ],
+       "n": 40,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT06341192",
+       "titolo": "Comparison Between Combined ALLR With Single Bundle and Double Bundle Anterior Cruciate Ligament Reconstruction",
+       "stato": "RECRUITING",
+       "aggiornato": "2025-09-25",
+       "fase": [
+        "NA"
+       ],
+       "n": 40,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07041242",
+       "titolo": "Outcomes and Complication Rates of Anterior Cruciate Ligament Reconstruction Using the \"Over-the-top\" Technique Combined With Lateral Extra-articular Tenodesis in Patients Over 50 Years Old, Compared With a Control Group of Patients Under 30",
+       "stato": "RECRUITING",
+       "aggiornato": "2025-07-17",
+       "fase": null,
+       "n": 164,
+       "tipo": "OBSERVATIONAL"
+      },
+      {
+       "nct": "NCT06664047",
+       "titolo": "Over-the-Top vs. Anteromedial ACLR With Lateral Extraarticular Tenodesis",
+       "stato": "RECRUITING",
+       "aggiornato": "2024-10-31",
+       "fase": [
+        "NA"
+       ],
+       "n": 150,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT06222814",
+       "titolo": "Evaluation of the Results of Two Different Methods in Management of Antero-lateral Instability of the Knee",
+       "stato": "UNKNOWN",
+       "aggiornato": "2024-01-25",
+       "fase": [
+        "NA"
+       ],
+       "n": 40,
+       "tipo": "INTERVENTIONAL"
+      }
+     ]
+    },
+    {
+     "sorveglianza": "GRASE (innesto)",
+     "studi": [
+      {
+       "nct": "NCT05342441",
+       "titolo": "Optimizing Graft Selection for ACL Reconstruction",
+       "stato": "RECRUITING",
+       "aggiornato": "2025-08-28",
+       "fase": [
+        "NA"
+       ],
+       "n": 150,
+       "tipo": "INTERVENTIONAL"
+      }
+     ]
+    },
+    {
+     "sorveglianza": "LET / tenodesi laterale",
+     "studi": [
+      {
+       "nct": "NCT06868147",
+       "titolo": "Long-term Clinical and Radiographic Results of Revision Anterior Cruciate Ligament Reconstruction Using a Single-bundle Technique and External Tenodesis With Achilles Tendon Allograft.",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-07-02",
+       "fase": null,
+       "n": 59,
+       "tipo": "OBSERVATIONAL"
+      },
+      {
+       "nct": "NCT03935750",
+       "titolo": "STABILITY 2: Anterior Cruciate Ligament Reconstruction +/- Lateral Tenodesis With Patellar vs Quad Tendon",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-06-17",
+       "fase": [
+        "NA"
+       ],
+       "n": 1272,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT06885372",
+       "titolo": "Long-term Follow up of the Stability 1 Trial",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-05-14",
+       "fase": [
+        "NA"
+       ],
+       "n": 510,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07049484",
+       "titolo": "Clinical and Biomechanical Outcomes of Anterior Cruciate Ligament (ACL) Reconstruction Associated With Lateral Extra-articular Tenodesis (LET)",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-04-22",
+       "fase": null,
+       "n": 51,
+       "tipo": "OBSERVATIONAL"
+      },
+      {
+       "nct": "NCT06668155",
+       "titolo": "ACLR: Isolated Autograft vs Allograft With Lateral Extra-articular Tenodesis",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2025-11-26",
+       "fase": [
+        "NA"
+       ],
+       "n": 60,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07041242",
+       "titolo": "Outcomes and Complication Rates of Anterior Cruciate Ligament Reconstruction Using the \"Over-the-top\" Technique Combined With Lateral Extra-articular Tenodesis in Patients Over 50 Years Old, Compared With a Control Group of Patients Under 30",
+       "stato": "RECRUITING",
+       "aggiornato": "2025-07-17",
+       "fase": null,
+       "n": 164,
+       "tipo": "OBSERVATIONAL"
+      },
+      {
+       "nct": "NCT06961292",
+       "titolo": "The Clinical Efficacy of Anterolateral Complex Augmentation in Patients With ACL Rupture Combined With Excessive Internal Tibial Rotation Subluxation: A Bidirectional Cohort Study",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2025-05-07",
+       "fase": null,
+       "n": 335,
+       "tipo": "OBSERVATIONAL"
+      },
+      {
+       "nct": "NCT06664047",
+       "titolo": "Over-the-Top vs. Anteromedial ACLR With Lateral Extraarticular Tenodesis",
+       "stato": "RECRUITING",
+       "aggiornato": "2024-10-31",
+       "fase": [
+        "NA"
+       ],
+       "n": 150,
+       "tipo": "INTERVENTIONAL"
+      }
+     ]
+    },
+    {
+     "sorveglianza": "Innesto quadricipitale",
+     "studi": [
+      {
+       "nct": "NCT07753707",
+       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 111,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07580157",
+       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 20,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07722104",
+       "titolo": "Graft Type and Outcomes After ACL Reconstruction in Female Athletes",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-07-23",
+       "fase": null,
+       "n": 82,
+       "tipo": "OBSERVATIONAL"
+      },
+      {
+       "nct": "NCT07657195",
+       "titolo": "Dry Needling and Quad Strength After Anterior Cruciate Ligament Reconstruction",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-07-22",
+       "fase": [
+        "NA"
+       ],
+       "n": 40,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT04039971",
+       "titolo": "Tendon-Bone Versus All-Soft-Tissue for ACL Reconstruction: A Patient-Blinded Randomized Clinical Trial",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-07-13",
+       "fase": [
+        "NA"
+       ],
+       "n": 150,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT04519801",
+       "titolo": "BFR Therapy for Post-Op Rehab of ACL Reconstruction With Quadriceps Tendon Autograft",
+       "stato": "COMPLETED",
+       "aggiornato": "2026-06-29",
+       "fase": [
+        "NA"
+       ],
+       "n": 60,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07671729",
+       "titolo": "Quadriceps Tendon vs Peroneus Longus Tendon in ACL Reconstruction",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-06-26",
+       "fase": [
+        "NA"
+       ],
+       "n": 60,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT03935750",
+       "titolo": "STABILITY 2: Anterior Cruciate Ligament Reconstruction +/- Lateral Tenodesis With Patellar vs Quad Tendon",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-06-17",
+       "fase": [
+        "NA"
+       ],
+       "n": 1272,
+       "tipo": "INTERVENTIONAL"
+      }
+     ]
+    },
+    {
+     "sorveglianza": "Radice meniscale",
+     "studi": [
+      {
+       "nct": "NCT07089316",
+       "titolo": "Preoperative MRI and Radiographic Parameters in Medial Meniscus Root Tears and Repair Outcomes",
+       "stato": "COMPLETED",
+       "aggiornato": "2026-07-29",
+       "fase": null,
+       "n": 128,
+       "tipo": "OBSERVATIONAL"
+      },
+      {
+       "nct": "NCT07388290",
+       "titolo": "The Effect of Centralization on Medial Meniscal Extrusion for Medial Meniscus Posterior Root Tear Repair",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-04-13",
+       "fase": [
+        "NA"
+       ],
+       "n": 54,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT03650374",
+       "titolo": "Effects of Contralateral Strength Training on Postoperative Strength Deficits in the Immobilized Lower Extremity",
+       "stato": "COMPLETED",
+       "aggiornato": "2026-03-30",
+       "fase": [
+        "NA"
+       ],
+       "n": 50,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT03037242",
+       "titolo": "Outcomes of Meniscus Root Repair Using a Transtibial Pullout Technique",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-01-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 55,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT05985772",
+       "titolo": "Operative vs Non-operative Management of Posterior-medial Meniscal Root Tears: A Randomized Multicenter Trial (RCT)",
+       "stato": "RECRUITING",
+       "aggiornato": "2025-08-21",
+       "fase": [
+        "NA"
+       ],
+       "n": 140,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT06707948",
+       "titolo": "A Study on Different Treatments for Knee Osteoarthritis Caused by Damaged Roots of the Medial Meniscus.",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2024-11-27",
+       "fase": null,
+       "n": 69,
+       "tipo": "OBSERVATIONAL"
+      },
+      {
+       "nct": "NCT05088525",
+       "titolo": "Meniscal Root Tears: Evaluation Using an Ultrahigh MRI",
+       "stato": "COMPLETED",
+       "aggiornato": "2024-11-22",
+       "fase": [
+        "NA"
+       ],
+       "n": 27,
+       "tipo": "INTERVENTIONAL"
+      }
+     ]
+    }
+   ]
+  },
+  "ritrattazioni": {
+   "esito": "ok",
+   "dati": {
+    "doi_citati_controllati": 71,
+    "colpiti": [],
+    "nel_perimetro": [
+     {
+      "tipo": "retraction",
+      "avviso": "10.1177/10732748231190122",
+      "bersaglio": [
+       "10.1177/1073274821997444"
+      ],
+      "titolo": "Retracted: “Efficacy and Safety of Cetuximab Plus Cisplatin Alone or in Combination With Paclitaxel in Patients With Head and Neck Squamous Cell Carcinoma: A Ra"
+     }
+    ],
+    "tipi_falliti": []
+   }
+  },
+  "youtube": {
+   "esito": "ok",
+   "dati": {
+    "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Core Decompression of the Femoral Head Using the AVN Expandable Reamer and AlloSync™ Pure DBM",
+      "link": "https://www.youtube.com/watch?v=mWYptxD1jjw",
+      "data": "2026-08-18"
+     },
+     {
+      "canale": "Stryker",
+      "titolo": "Voice Interpreter for Sync Badge | U.S.",
+      "link": "https://www.youtube.com/watch?v=Y3dTkvWSFh8",
+      "data": "2026-08-18"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Distal Humerus Shaft Fracture Fixation Using the Arthrex Elbow Plating System",
+      "link": "https://www.youtube.com/watch?v=PDL8DODmBO4",
+      "data": "2026-08-17"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex TightRope® PRO",
+      "link": "https://www.youtube.com/watch?v=e8VS-rrQS84",
+      "data": "2026-08-13"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "SpeedPearl: Automatic Wrist Washout Technique With the NanoNeedle™ Scope 2.0",
+      "link": "https://www.youtube.com/watch?v=HvgciVjo1M8",
+      "data": "2026-08-12"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Successful Setup and Use of the Arthrex Hip Distraction System",
+      "link": "https://www.youtube.com/watch?v=wWzsYOjt46k",
+      "data": "2026-08-11"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "CeMend™ Antibiotic Shoulder Spacers With Arthrex Bone Cement for Two-Stage Revision",
+      "link": "https://www.youtube.com/watch?v=Su2grPQXRqg",
+      "data": "2026-08-10"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "BunionBrace™ Medial Capsule Repair",
+      "link": "https://www.youtube.com/watch?v=AVs84WsSdjo",
+      "data": "2026-08-06"
+     }
+    ]
+   }
+  }
+ }
+}
