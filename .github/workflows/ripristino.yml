@@ -1,0 +1,36 @@
+# PULSE — il collaudo mensile della rete di sicurezza.
+#
+# «La rete di sicurezza non era mai stata tirata» (prove di funzionamento globale,
+# 2 agosto 2026): il ritorno a un'istantanea funziona solo se lo si prova. Questo
+# workflow, il primo di ogni mese, prende l'ULTIMA istantanea datata e la passa al
+# cancello completo: se un giorno servisse tornare indietro, la strada è dimostrata
+# — non presunta. Se fallisce, GitHub manda l'email e il problema si guarda subito,
+# non nel momento dell'emergenza.
+name: ripristino
+
+on:
+  schedule:
+    - cron: '30 8 1 * *'
+  workflow_dispatch:
+
+jobs:
+  collaudo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Playwright + Chromium
+        run: |
+          pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: l'ultima istantanea passa il cancello?
+        run: |
+          ULTIMA=$(python3 -c "import json;print(json.load(open('versioni/elenco.json'))['versioni'][0]['file'])")
+          echo "collaudo del ripristino su: $ULTIMA"
+          bash test/verifica.sh "$ULTIMA"

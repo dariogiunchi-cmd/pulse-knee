@@ -1,0 +1,53 @@
+# PULSE — la raccolta notturna delle fonti esterne.
+#
+# Il sandbox delle sessioni Claude non esce su internet; questi runner sì. Alle 4.15
+# UTC lo script interroga le API ufficiali (openFDA, ClinicalTrials.gov, Crossref,
+# feed YouTube, Swissmedic) e deposita fonti/raccolta.json nel repository: la sessione
+# del briefing delle 5.00 lo trova come file locale. Nessuno scraping di piattaforme
+# che lo vietano: API e feed pubblici, e ogni fonte che non risponde viene dichiarata.
+#
+# Lanciato a mano (workflow_dispatch) accetta scopri=true per la modalità di scoperta
+# (risoluzione di feed Swissmedic e canali YouTube candidati) e spinge sul ramo da cui
+# è stato lanciato: così la configurazione si mette a punto senza toccare main.
+name: raccolta
+
+on:
+  schedule:
+    - cron: '15 4 * * *'
+  workflow_dispatch:
+    inputs:
+      scopri:
+        description: 'Modalità scoperta (risolve feed e canali candidati)'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+jobs:
+  raccogli:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: raccolta
+        run: |
+          if [ "${{ github.event.inputs.scopri }}" = "true" ]; then
+            python3 test/raccolta.py --scopri
+          else
+            python3 test/raccolta.py
+          fi
+      - name: deposito nel repository
+        run: |
+          git config user.name "PULSE raccolta"
+          git config user.email "noreply@anthropic.com"
+          git add fonti/raccolta.json
+          if git diff --cached --quiet; then
+            echo "nessuna novità dalle fonti"
+          else
+            git commit -m "raccolta notturna $(date -u +%F)"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
