@@ -1,29 +1,85 @@
 {
   "_leggimi": "Configurazione del raccoglitore notturno (test/raccolta.py, eseguito da .github/workflows/raccolta.yml alle 4.15 UTC). Le fonti qui elencate sono API ufficiali e feed pubblici: niente scraping di piattaforme che lo vietano. Ogni fonte che non risponde viene DICHIARATA nell'esito, mai taciuta.",
-
-  "aziende_sorvegliate": ["Arthrex", "Smith & Nephew", "Smith+Nephew", "DePuy", "Johnson & Johnson", "Stryker", "Zimmer", "Medacta", "Lima", "Enovis", "DJO", "CONMED", "Geistlich", "Anika"],
-
+  "aziende_sorvegliate": [
+    "Arthrex",
+    "Smith & Nephew",
+    "Smith+Nephew",
+    "DePuy",
+    "Johnson & Johnson",
+    "Stryker",
+    "Zimmer",
+    "Medacta",
+    "Lima",
+    "Enovis",
+    "DJO",
+    "CONMED",
+    "Geistlich",
+    "Anika"
+  ],
   "openfda": {
     "url_prodotto": "https://api.fda.gov/device/recall.json?search=product_description:knee&sort=event_date_initiated:desc&limit=15",
     "url_enforcement": "https://api.fda.gov/device/enforcement.json?search=product_description:knee&sort=report_date:desc&limit=15"
   },
-
   "swissmedic_scopri": [
     "https://www.swissmedic.ch/swissmedic/it/home.html",
-    "https://www.swissmedic.ch/swissmedic/it/home/dispositivi-medici.html"
+    "https://www.swissmedic.ch/swissmedic/it/home/news.html",
+    "https://www.swissmedic.ch/swissmedic/en/home.html"
   ],
   "swissmedic_feed": [],
-
   "trials_query": [
-    {"nome": "STABILITY 2 (T1a)", "q": "STABILITY 2 anterior cruciate ligament tenodesis"},
-    {"nome": "GRASE (innesto)", "q": "GRASE anterior cruciate ligament graft quadriceps"},
-    {"nome": "LET / tenodesi laterale", "q": "\"lateral extra-articular tenodesis\" anterior cruciate"},
-    {"nome": "Innesto quadricipitale", "q": "\"quadriceps tendon\" \"anterior cruciate ligament\" reconstruction"},
-    {"nome": "Radice meniscale", "q": "\"meniscus root\" repair"}
+    {
+      "nome": "STABILITY 2 (T1a)",
+      "q": "STABILITY 2 anterior cruciate ligament tenodesis"
+    },
+    {
+      "nome": "GRASE (innesto)",
+      "q": "GRASE anterior cruciate ligament graft quadriceps"
+    },
+    {
+      "nome": "LET / tenodesi laterale",
+      "q": "\"lateral extra-articular tenodesis\" anterior cruciate"
+    },
+    {
+      "nome": "Innesto quadricipitale",
+      "q": "\"quadriceps tendon\" \"anterior cruciate ligament\" reconstruction"
+    },
+    {
+      "nome": "Radice meniscale",
+      "q": "\"meniscus root\" repair"
+    }
   ],
-
-  "crossref_parole": ["knee", "anterior cruciate", "ACL", "meniscus", "meniscal", "patell", "cartilage", "chondral", "tibial osteotomy", "knee arthroplasty"],
-
-  "youtube_canali": [],
-  "youtube_scopri": ["@ESSKA", "@ESSKAsociety", "@esska_org", "@ISAKOS", "@isakosconnect", "@Arthrex", "@ArthrexInc", "@smithnephew", "@IsokineticMedicalGroup", "@isokinetic", "@StrykerComm", "@zimmerbiomet", "@depuysynthes", "@Medacta"]
+  "crossref_parole": [
+    "knee",
+    "anterior cruciate",
+    "ACL",
+    "meniscus",
+    "meniscal",
+    "patell",
+    "cartilage",
+    "chondral",
+    "tibial osteotomy",
+    "knee arthroplasty"
+  ],
+  "youtube_canali": [
+    {
+      "nome": "Arthrex",
+      "id": "UCdz-AzeXveWr2FICZZastrQ"
+    }
+  ],
+  "youtube_scopri": [
+    "@ISAKOS",
+    "@zimmerbiomet",
+    "@depuysynthes",
+    "@ESSKAtv",
+    "@esska-society",
+    "@ESSKAeducation",
+    "@IsokineticMedical",
+    "@isokineticmedicalgroup",
+    "@stryker",
+    "@SmithNephewplc",
+    "@SmithNephewGlobal",
+    "@MedactaInternational",
+    "@MedactaGroup",
+    "@smith-nephew"
+  ]
 }
