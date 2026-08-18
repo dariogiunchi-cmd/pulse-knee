@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-18T20:42:46Z",
+ "generato": "2026-08-18T20:45:36Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -683,6 +683,12 @@
       "data": "2026-08-18"
      },
      {
+      "canale": "Stryker",
+      "titolo": "Voice Interpreter for Sync Badge | U.S.",
+      "link": "https://www.youtube.com/watch?v=Y3dTkvWSFh8",
+      "data": "2026-08-18"
+     },
+     {
       "canale": "Arthrex",
       "titolo": "Distal Humerus Shaft Fracture Fixation Using the Arthrex Elbow Plating System",
       "link": "https://www.youtube.com/watch?v=PDL8DODmBO4",
@@ -727,7 +733,7 @@
    "esito": "ok",
    "dati": [
     {
-     "feed": "https://www.swissmedic.ch/swissmedic/it/home/news/rss.html",
+     "feed": "https://www.swissmedic.ch/swissmedic/de/home/news/rss.html",
      "xml": false,
      "nota": "risponde ma non è un feed"
     },
@@ -735,76 +741,42 @@
      "feed": "https://www.swissmedic.ch/swissmedic/en/home/news/rss.html",
      "xml": false,
      "nota": "risponde ma non è un feed"
+    },
+    {
+     "feed": "https://www.swissmedic.ch/swissmedic/it/home/news/rss.html",
+     "xml": false,
+     "nota": "risponde ma non è un feed"
+    },
+    {
+     "feed": "https://www.swissmedic.ch/swissmedic/fr/home/news/rss.html",
+     "xml": false,
+     "nota": "risponde ma non è un feed"
+    },
+    {
+     "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+     "xml": true,
+     "titolo": "Novità sul sito Web"
+    },
+    {
+     "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
+     "xml": true,
+     "titolo": "RSS Feed Content – Sicurezza dei medicimenti"
+    },
+    {
+     "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaG_Z2JbPgiti.rss",
+     "xml": true,
+     "titolo": "New on this website"
+    },
+    {
+     "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbucMe8csni.rss",
+     "xml": true,
+     "titolo": "RSS Feed Content – Safety of medicines"
     }
    ]
   },
   "youtube": {
    "esito": "ok",
-   "dati": [
-    {
-     "handle": "@ISAKOS",
-     "id": "UCcnFy3MwSpwJWr1iqsIuvKg",
-     "titolo": "isakos"
-    },
-    {
-     "handle": "@zimmerbiomet",
-     "id": "UCI2zSmIIqEtm5WSBAPvcRHQ",
-     "titolo": "Zimmer Biomet"
-    },
-    {
-     "handle": "@depuysynthes",
-     "id": "UCpfwqgDTYi-CZw8RgeeqVGQ",
-     "titolo": "DePuy Synthes"
-    },
-    {
-     "handle": "@ESSKAtv",
-     "id": "UCBUqhMScbeLCnMC24P0ih2w",
-     "titolo": "Fms Prod/EsskaTV"
-    },
-    {
-     "handle": "@esska-society",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    },
-    {
-     "handle": "@ESSKAeducation",
-     "id": "UCNmjfv5jhiXOLA7sWuLMF1Q",
-     "titolo": "Esska Education"
-    },
-    {
-     "handle": "@IsokineticMedical",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    },
-    {
-     "handle": "@isokineticmedicalgroup",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    },
-    {
-     "handle": "@stryker",
-     "id": "UC2famKRbW3E3kq072ZagSzg",
-     "titolo": "Stryker"
-    },
-    {
-     "handle": "@SmithNephewplc",
-     "id": "UCvLnxUVdVK6CkoxPzhtVXVQ",
-     "titolo": "Smith+Nephew "
-    },
-    {
-     "handle": "@SmithNephewGlobal",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    },
-    {
-     "handle": "@MedactaInternational",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    },
-    {
-     "handle": "@MedactaGroup",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    },
-    {
-     "handle": "@smith-nephew",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    }
-   ]
+   "dati": []
   }
  }
 }
