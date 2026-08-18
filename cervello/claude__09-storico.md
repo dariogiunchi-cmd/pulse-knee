@@ -208,6 +208,25 @@ Su mandato del Dr. Giunchi («procedi con tutto, non richiedere il mio intervent
   PMID citati nello storico.
 Cancello: **511 controlli verdi** (496 + 15 sentinelle nuove).
 
+## 2026-08-18 · 6 papers · 0 rossi · 0 arancioni
+PICK: Sports Health — Test del salto dopo il crociato: il deficit dell'arto operato resta anche con carico visivo-cognitivo · PMID 42605116 · 10.1177/19417381261471425
+- 🟢 Sports Health — Salto monopodalico dopo LCA, 1-5 anni: il carico visivo-cognitivo non aggiunge deficit (trasversale comparativo, 60, liv. III) · PMID 42605116 · 10.1177/19417381261471425
+- 🟢 JAAOS — Allineamento cinematico vs meccanico in PTG: più flessione, meno release, sicurezza incerta (SR+meta, 7 studi/1.068, liv. II) · PMID 42606828 · 10.5435/JAAOS-D-25-01576
+- 🟢 Musculoskelet Surg — Stessa domanda, stesso giorno: il vantaggio del cinematico si esaurisce a lungo termine (SR+meta di RCT, 10/934, liv. I) · PMID 42606776 · 10.1007/s12306-026-00970-9
+- 🟢 KSSTA — Basetta tibiale cementless in PTG cinematica: stabile a 3 mesi (coorte RSA, 45, liv. —) · PMID 42605930 · 10.1002/ksa.70572
+- 🟢 JAAOS Glob Res Rev — Lesione multilegamentosa a 13 anni: ricostruzione completa, ritorno al calcio (caso clinico, liv. V) · PMID 42608056 · 10.5435/JAAOSGlobal-D-25-00266
+- ⚪ Sports Biomech — Ortesi plantari nella corsa con dolore femoro-rotuleo: cambiano la cinematica, non il dolore immediato (crossover, 30, liv. —) · PMID 42605701 · 10.1080/14763141.2026.2701982
+CITAZIONI: verificate 6/6 su PubMed MCP — ogni PMID riaperto e confrontato su titolo, rivista e DOI dai campi identifiers.
+STUDI MUTI: 2 — schede 2 e 3 (complicanze femoro-rotulee, manipolazione e revisione con intervalli di confidenza larghi e certezza bassa in entrambe le meta-analisi).
+DUELLO: schede 2 e 3, stessa domanda (allineamento cinematico vs meccanico in PTG) da due revisioni sistematiche pubblicate lo stesso giorno, con enfasi diverse — la prima non trova segnali di rischio a breve termine ma con IC larghi, la seconda mostra che il vantaggio sui sintomi percepiti si esaurisce a lungo termine.
+TENSIONI MOSSE: T3/criterio di rientro — rafforzata: il deficit dell'arto operato nel salto monopodalico persiste 1-5 anni dopo l'intervento, indipendente dal carico visivo-cognitivo aggiunto al test.
+SUGGERIMENTO (SUGGQ): Stephen M. Howell (UC Davis, pioniere dell'allineamento cinematico, coautore della scheda 4) · Daniel G. Cobian (Wisconsin, autore senior della scheda 1 sul test del salto e il rientro allo sport) · Ahmed Siddiqi (Texas Center for Joint Replacement, autore senior della scheda 2) · Bradley Nelson (Minnesota, autore senior della scheda 5 sul LCA pediatrico).
+INDUSTRIA · CONGRESSI · REGISTRI: NON VERIFICATI oggi — tentato un accesso diretto a openFDA (api.fda.gov), bloccato dal proxy di rete del sandbox; ricerca limitata a PubMed.
+RITRATTAZIONI: ricontrollati su PubMed tutti i 40 PMID già citati nello storico (2-17 agosto) più i 6 di oggi — nessuna ritrattazione né Expression of Concern. LAST_RETRACTION_CHECK = 18 agosto 2026.
+NON VERIFICATO: Swissmedic · openFDA (tentativo fallito: dominio bloccato dal proxy) · Retraction Watch (feed) · pagine ESSKA/AAOS/ICRS · registri SIRIS/RIPO/NJR/AOANJRR.
+CONSEGNA: app aggiornata, BUILD_DATE 2026-08-18, 6 schede; NLB su tutte, SOCV/TAGS/SOC sulle schede 1 e 2; 513 controlli verdi.
+NOTA DI METODO: giorno di ricerca "normale" (non di recupero) dopo il grande recupero del 17 agosto: finestra edat 16-18 agosto, 34+4 risultati esaminati nelle due interrogazioni, 4 già coincidenti con le schede del 17 agosto (dedup automatico), 30 candidati distinti aperti per esteso, 6 tenuti. Nessuna scheda arancione o rossa oggi.
+
 ### 2026-08-18, sera — la Rassegna: il mondo esterno entra nel sistema
 Su mandato del Dr. Giunchi («procedi con tutto tranne le perizie»):
 - **Il raccoglitore notturno** (.github/workflows/raccolta.yml, 4.15 UTC): il sandbox
