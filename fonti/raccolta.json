@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-18T20:45:36Z",
+ "generato": "2026-08-18T20:50:45Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -284,8 +284,104 @@
   "swissmedic": {
    "esito": "ok",
    "dati": {
-    "nota": "nessun feed configurato: usare --scopri per trovarli",
-    "voci": []
+    "voci": [
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "I-SMI.TI.10e Starting Material Identity Guarantee",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/bewilligungen_zertifikate/autorizzazioni-d-esercizio0/ispettorati.html",
+      "data": "Mon, 17 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "DHPC – Rhophylac (immunoglobulinum humanum anti-D)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-rhophylac-immunoglobulinum-humanum-anti-d1.html",
+      "data": "Fri, 14 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Kisunla®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-kisunla.html",
+      "data": "Fri, 14 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Out-of-Stock – Extencilline, 1 200 000 et 2 400 000 UI, poudre et solvant pour suspension injectable",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-extencilline-1200000-und-2400000-ui-pulver-undloesungsmittel-zur-herstellung-einer-injektionssuspension.html",
+      "data": "Thu, 13 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Ritiro di lotti – Movicol, polvere per soluzione orale",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-movicol-pulver-zur-herstellung-einer-loesung-zum-einnehmen.html",
+      "data": "Thu, 13 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Ispezioni ospedaliere di Swissmedic 2025: la sorveglianza è efficace, ma non basta",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/dispositivi-medici/panoramica-dispositivi-medici/jahresbericht-spitalinspektionen-2025.html",
+      "data": "Thu, 13 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "DHPC – Bonviva 150 mg (acidum ibandronicum)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-bonviva-150-mg-acidum-ibandronicum.html",
+      "data": "Wed, 12 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Out-of-Stock – Thiopental Inresa 0.5 g, poudre pour solution injectable / solution pour perfusion",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-thiopental-inresa-pulver-zur-herstellung-einer-injektionsloesung-infusionsloesung.html",
+      "data": "Mon, 10 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – MenQuadfi®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/menquadfi-wirkstoff-polysaccharide-von-neis-seria-meningitidis-der-gruppen-a-c-w-135-und-y-konjugiert-an-tetanus-toxoid-traegerprotein.html",
+      "data": "Mon, 10 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Swissmedic Journal",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/swissmedic-journal.html",
+      "data": "Mon, 10 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Application Manager (80-100%)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/posti-liberi/application-manager.html",
+      "data": "Fri, 07 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – RYSTIGGO®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-rystiggo-rozanolixizumab.html",
+      "data": "Fri, 07 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "DHPC – Tavneos® (avacopan)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-tavneos-avacopan.html",
+      "data": "Thu, 06 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "DHPC – Aranesp (darbepoetinum alfa)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-aranesp-darbepoetinum-alfa.html",
+      "data": "Thu, 06 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Ritiro di lotti – Viscum album Qu 200mg, ampoules / Viscum album Qu-F 100mg, ampoules",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/hargenrueckruf-viscum-album-qu-200mg-ampullen-viscum-album-qu-f-100mg-ampullen.html",
+      "data": "Tue, 04 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
+      "titolo": "DHPC – Rhophylac (immunoglobulinum humanum anti-D)Out-of-Stock – Extencilline, 1 200 000 et 2 400 000 UI, poudre et solvant pour...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-rhophylac-immunoglobulinum-humanum-anti-d1.html",
+      "data": "Mon, 17 Aug 2026 11:16:37 +0000"
+     }
+    ]
    }
   },
   "trials": {
@@ -726,57 +822,6 @@
      }
     ]
    }
-  }
- },
- "scoperta": {
-  "swissmedic": {
-   "esito": "ok",
-   "dati": [
-    {
-     "feed": "https://www.swissmedic.ch/swissmedic/de/home/news/rss.html",
-     "xml": false,
-     "nota": "risponde ma non è un feed"
-    },
-    {
-     "feed": "https://www.swissmedic.ch/swissmedic/en/home/news/rss.html",
-     "xml": false,
-     "nota": "risponde ma non è un feed"
-    },
-    {
-     "feed": "https://www.swissmedic.ch/swissmedic/it/home/news/rss.html",
-     "xml": false,
-     "nota": "risponde ma non è un feed"
-    },
-    {
-     "feed": "https://www.swissmedic.ch/swissmedic/fr/home/news/rss.html",
-     "xml": false,
-     "nota": "risponde ma non è un feed"
-    },
-    {
-     "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-     "xml": true,
-     "titolo": "Novità sul sito Web"
-    },
-    {
-     "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
-     "xml": true,
-     "titolo": "RSS Feed Content – Sicurezza dei medicimenti"
-    },
-    {
-     "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaG_Z2JbPgiti.rss",
-     "xml": true,
-     "titolo": "New on this website"
-    },
-    {
-     "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbucMe8csni.rss",
-     "xml": true,
-     "titolo": "RSS Feed Content – Safety of medicines"
-    }
-   ]
-  },
-  "youtube": {
-   "esito": "ok",
-   "dati": []
   }
  }
 }
