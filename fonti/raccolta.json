@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-18T20:38:55Z",
+ "generato": "2026-08-18T20:42:46Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -22,7 +22,7 @@
       "root_cause_description": "Under Investigation by firm",
       "event_date_initiated": "2026-06-10",
       "recall_status": "Open, Classified",
-      "sorvegliata": false
+      "sorvegliata": true
      },
      {
       "recalling_firm": "Medline Industries, LP",
@@ -31,7 +31,7 @@
       "root_cause_description": "Under Investigation by firm",
       "event_date_initiated": "2026-06-10",
       "recall_status": "Open, Classified",
-      "sorvegliata": false
+      "sorvegliata": true
      },
      {
       "recalling_firm": "Medline Industries, LP",
@@ -222,7 +222,7 @@
       "reason_for_recall": "Kits contain Zimmer Biomet mixing bowls and spatulas, which were recalled due to seal nonconformities which present risk of sterility breach. Health consequences from use of product include clinically insignificant extension of surgery to find another readily available device.",
       "report_date": "20260722",
       "classification": "Class II",
-      "sorvegliata": false
+      "sorvegliata": true
      },
      {
       "recall_number": "Z-2737-2026",
@@ -231,7 +231,7 @@
       "reason_for_recall": "Kits contain Zimmer Biomet mixing bowls and spatulas, which were recalled due to seal nonconformities which present risk of sterility breach. Health consequences from use of product include clinically insignificant extension of surgery to find another readily available device.",
       "report_date": "20260722",
       "classification": "Class II",
-      "sorvegliata": false
+      "sorvegliata": true
      },
      {
       "recall_number": "Z-2716-2026",
@@ -249,7 +249,7 @@
       "reason_for_recall": "Due to packaging discrepancy with incorrect product size mixed up.",
       "report_date": "20260715",
       "classification": "Class II",
-      "sorvegliata": false
+      "sorvegliata": true
      },
      {
       "recall_number": "Z-2701-2026",
@@ -258,7 +258,7 @@
       "reason_for_recall": "Due to packaging discrepancy with incorrect product size mixed up.",
       "report_date": "20260715",
       "classification": "Class II",
-      "sorvegliata": false
+      "sorvegliata": true
      },
      {
       "recall_number": "Z-2617-2026",
@@ -675,77 +675,133 @@
   "youtube": {
    "esito": "ok",
    "dati": {
-    "video": []
+    "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Core Decompression of the Femoral Head Using the AVN Expandable Reamer and AlloSync™ Pure DBM",
+      "link": "https://www.youtube.com/watch?v=mWYptxD1jjw",
+      "data": "2026-08-18"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Distal Humerus Shaft Fracture Fixation Using the Arthrex Elbow Plating System",
+      "link": "https://www.youtube.com/watch?v=PDL8DODmBO4",
+      "data": "2026-08-17"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex TightRope® PRO",
+      "link": "https://www.youtube.com/watch?v=e8VS-rrQS84",
+      "data": "2026-08-13"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "SpeedPearl: Automatic Wrist Washout Technique With the NanoNeedle™ Scope 2.0",
+      "link": "https://www.youtube.com/watch?v=HvgciVjo1M8",
+      "data": "2026-08-12"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Successful Setup and Use of the Arthrex Hip Distraction System",
+      "link": "https://www.youtube.com/watch?v=wWzsYOjt46k",
+      "data": "2026-08-11"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "CeMend™ Antibiotic Shoulder Spacers With Arthrex Bone Cement for Two-Stage Revision",
+      "link": "https://www.youtube.com/watch?v=Su2grPQXRqg",
+      "data": "2026-08-10"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "BunionBrace™ Medial Capsule Repair",
+      "link": "https://www.youtube.com/watch?v=AVs84WsSdjo",
+      "data": "2026-08-06"
+     }
+    ]
    }
   }
  },
  "scoperta": {
   "swissmedic": {
    "esito": "ok",
-   "dati": []
+   "dati": [
+    {
+     "feed": "https://www.swissmedic.ch/swissmedic/it/home/news/rss.html",
+     "xml": false,
+     "nota": "risponde ma non è un feed"
+    },
+    {
+     "feed": "https://www.swissmedic.ch/swissmedic/en/home/news/rss.html",
+     "xml": false,
+     "nota": "risponde ma non è un feed"
+    }
+   ]
   },
   "youtube": {
    "esito": "ok",
    "dati": [
     {
-     "handle": "@ESSKA",
-     "id": "UCKuoQthfj1WPylTqGbLErNA",
-     "titolo": "Esska.de GmbH"
-    },
-    {
-     "handle": "@ESSKAsociety",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    },
-    {
-     "handle": "@esska_org",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    },
-    {
      "handle": "@ISAKOS",
-     "id": null,
+     "id": "UCcnFy3MwSpwJWr1iqsIuvKg",
      "titolo": "isakos"
     },
     {
-     "handle": "@isakosconnect",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    },
-    {
-     "handle": "@Arthrex",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    },
-    {
-     "handle": "@ArthrexInc",
-     "id": "UCdz-AzeXveWr2FICZZastrQ",
-     "titolo": "ArthrexInc"
-    },
-    {
-     "handle": "@smithnephew",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    },
-    {
-     "handle": "@IsokineticMedicalGroup",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    },
-    {
-     "handle": "@isokinetic",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    },
-    {
-     "handle": "@StrykerComm",
-     "errore": "HTTPError HTTP Error 404: Not Found"
-    },
-    {
      "handle": "@zimmerbiomet",
-     "id": null,
+     "id": "UCI2zSmIIqEtm5WSBAPvcRHQ",
      "titolo": "Zimmer Biomet"
     },
     {
      "handle": "@depuysynthes",
-     "id": null,
+     "id": "UCpfwqgDTYi-CZw8RgeeqVGQ",
      "titolo": "DePuy Synthes"
     },
     {
-     "handle": "@Medacta",
+     "handle": "@ESSKAtv",
+     "id": "UCBUqhMScbeLCnMC24P0ih2w",
+     "titolo": "Fms Prod/EsskaTV"
+    },
+    {
+     "handle": "@esska-society",
+     "errore": "HTTPError HTTP Error 404: Not Found"
+    },
+    {
+     "handle": "@ESSKAeducation",
+     "id": "UCNmjfv5jhiXOLA7sWuLMF1Q",
+     "titolo": "Esska Education"
+    },
+    {
+     "handle": "@IsokineticMedical",
+     "errore": "HTTPError HTTP Error 404: Not Found"
+    },
+    {
+     "handle": "@isokineticmedicalgroup",
+     "errore": "HTTPError HTTP Error 404: Not Found"
+    },
+    {
+     "handle": "@stryker",
+     "id": "UC2famKRbW3E3kq072ZagSzg",
+     "titolo": "Stryker"
+    },
+    {
+     "handle": "@SmithNephewplc",
+     "id": "UCvLnxUVdVK6CkoxPzhtVXVQ",
+     "titolo": "Smith+Nephew "
+    },
+    {
+     "handle": "@SmithNephewGlobal",
+     "errore": "HTTPError HTTP Error 404: Not Found"
+    },
+    {
+     "handle": "@MedactaInternational",
+     "errore": "HTTPError HTTP Error 404: Not Found"
+    },
+    {
+     "handle": "@MedactaGroup",
+     "errore": "HTTPError HTTP Error 404: Not Found"
+    },
+    {
+     "handle": "@smith-nephew",
      "errore": "HTTPError HTTP Error 404: Not Found"
     }
    ]
