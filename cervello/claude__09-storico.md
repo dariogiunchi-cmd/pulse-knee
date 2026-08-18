@@ -207,3 +207,29 @@ Su mandato del Dr. Giunchi («procedi con tutto, non richiedere il mio intervent
 - Ritrattazioni ampliate: il perimetro passa dai soli salvati (oggi: zero) a tutti i
   PMID citati nello storico.
 Cancello: **511 controlli verdi** (496 + 15 sentinelle nuove).
+
+### 2026-08-18, sera — la Rassegna: il mondo esterno entra nel sistema
+Su mandato del Dr. Giunchi («procedi con tutto tranne le perizie»):
+- **Il raccoglitore notturno** (.github/workflows/raccolta.yml, 4.15 UTC): il sandbox
+  non esce su internet, i runner di GitHub sì. Solo API ufficiali e feed pubblici →
+  fonti/raccolta.json. Al collaudo di produzione: openFDA (15 richiami «knee», 10 su
+  aziende sorvegliate — il match copre anche il prodotto, non solo la ditta: il
+  richiamo dei kit Medline con materiale Zimmer sfuggiva), Swissmedic (i feed ufficiali
+  trovati sulla loro pagina rss.html: «Novità sul sito» e «Sicurezza dei medicamenti»),
+  ClinicalTrials.gov (STABILITY 2 = NCT03935750, ACTIVE_NOT_RECRUITING, agganciato al
+  radar della T1a; GRASE = NCT05342441), Crossref/Retraction Watch (71 DOI citati
+  ricontrollati ogni notte: oggi zero colpiti), YouTube (7 canali confermati DAL TITOLO
+  — «@ESSKA» era un'azienda tedesca di scarpe: la verifica sul campo non è pedanteria).
+- **La scheda «Rassegna» nell'app**: richiami, trial delle tensioni, ritrattazioni e
+  video della rete in un tocco. Renderer puro collaudato con dati sintetici (11
+  controlli): fonte muta → dichiarata; DOI citato colpito → rosso e nominato.
+- **La rassegna social dal Mac**: procedura in claude__15-rassegna-social.md (solo
+  lettura, solo la rete dichiarata, ritmo umano, stop a ogni anomalia; rischio
+  dichiarato e accettato da lui). Si avvia dal suo desktop con «fai la rassegna social».
+- **Collaudo mensile del ripristino** (ripristino.yml): l'ultima istantanea passa il
+  cancello il primo del mese — la rete di sicurezza si prova, non si presume.
+- Mandato del mattino aggiornato nello stesso commit: fonti/raccolta.json si legge
+  sempre (richiamo su azienda sorvegliata = 🔴 in cima), la domenica si apre con la
+  settimana, i coautori ricorrenti alimentano SUGGQ.
+- La parte peritale (standard↔tensioni) esclusa per sua scelta: il registro degli
+  standard resta, non ci si costruisce sopra.

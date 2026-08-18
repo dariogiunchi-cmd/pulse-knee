@@ -75,16 +75,17 @@ with sync_playwright() as p:
         chk(pg.is_visible('#ov'),'tocco su VS → si apre il confronto')
         chk('duelgrid' in pg.inner_html('#shCnt'),'confronto in due colonne')
         pg.click('.sheet .close'); pg.wait_for_timeout(200)
-    # tab archivio + autocritica + ricerca
-    pg.click('.tabs button >> nth=1'); pg.wait_for_timeout(300)
+    # tab archivio + autocritica + ricerca — per NOME, mai per posizione:
+    # l'aggiunta della Rassegna ha spostato gli indici e nth=1 apriva un'altra tab.
+    pg.click(".tabs button:has-text('Archivio')"); pg.wait_for_timeout(300)
     chk('AUTOCRITICA' in pg.inner_text('#auditbox').upper(),'Archivio → autocritica settimanale')
     pg.fill('#histq','menisco'); pg.wait_for_timeout(350)
     chk(pg.evaluate('typeof searchHist==="function"') and pg.locator('#histres').count()==1,'ricerca nell\'archivio attiva')
     # salvati + ritrattazioni
-    pg.click('.tabs button >> nth=2'); pg.wait_for_timeout(300)
+    pg.click(".tabs button:has-text('Salvati')"); pg.wait_for_timeout(300)
     chk('Nessun articolo salvato è stato ritirato' in pg.inner_text('#retrbox'),'Salvati → conferma controllo ritrattazioni')
     # impostazioni
-    pg.click('.tabs button >> nth=3'); pg.wait_for_timeout(300)
+    pg.click(".tabs button:has-text('Impostazioni')"); pg.wait_for_timeout(300)
     chk('PROMEMORIA' in pg.inner_text('#settings').upper(),'Impostazioni si apre')
     # zoom test: focus su input non deve ingrandire (font >=16px)
     fs=pg.eval_on_selector('#jinput','e=>getComputedStyle(e).fontSize')
@@ -104,7 +105,7 @@ with sync_playwright() as p:
           return [...a.children].filter(c=>c.scrollWidth>c.clientWidth+1).length;}""", sel)
     for larg in (320, 375, 393):
         pg.set_viewport_size({'width':larg,'height':900})
-        pg.click('.tabs button >> nth=0'); pg.wait_for_timeout(300)
+        pg.click(".tabs button:has-text('Oggi')"); pg.wait_for_timeout(300)
         for sel, nome in (('.acts','pulsanti della scheda'), ('.pick .act','pulsanti del lavoro del giorno')):
             r = righe_di(sel)
             chk(r == 1, f'{nome} su una riga sola a {larg} px' + ('' if r==1 else f' (ne servono {r})'))

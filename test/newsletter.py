@@ -173,7 +173,7 @@ with sync_playwright() as p:
               });
               return {n:document.querySelectorAll('.tabs button').length, bad:bad};
             }""")
-            chk(tag+"5 tab tutte visibili", tb["n"] == 5 and len(tb["bad"]) == 0, tb)
+            chk(tag+"tutte le tab visibili", tb["n"] >= 5 and len(tb["bad"]) == 0, tb)
 
             # --- tap target size
             tt = pg.evaluate("""() => {
