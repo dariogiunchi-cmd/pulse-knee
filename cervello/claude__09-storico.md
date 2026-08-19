@@ -374,3 +374,32 @@ le ha già in forma propria; scartati giochi e punteggi numerici (contro il form
   con git checkout.
 Viaggio da utente reale: **30 passi verdi, tre volte**. Cancello: **563 controlli,
 due volte**. Spesa aggiuntiva: zero.
+
+### 2026-08-19, sera (2) — la modalità auto
+Mandato: «migliora ancora UX/UI, soprattutto l'ascolto e l'interazione vocale in
+macchina». Modelli studiati: la car view di Spotify (tasti giganti, zero lettura),
+le linee guida VUI automotive (push-to-talk per affidabilità, conferme brevi,
+repeat-back), la voce continua di ChatGPT.
+- **🚗 Modalità auto**: pannello sempre scuro a contrasto massimo, quattro gesti.
+  PLAYLIST = briefing (il dialogo, se c'è) + tutte le schede, ognuna annunciata con
+  la posizione («Scheda 3 di 8») — il repeat-back è la conferma, non serve guardare.
+  ⏮ ▶ ⏭ · 🔁 · ★ salva la scheda IN ASCOLTO (per numero vero, non per posizione
+  nella playlist) · 🎙 push-to-talk: l'audio si ferma, UNA frase, esegue, riparte da
+  solo. Wake lock: schermo acceso finché il pannello è aperto. DECISIONE di
+  progetto: niente microfono sempre acceso durante la lettura — il riconoscitore
+  sentirebbe la voce dell'app stessa dall'altoparlante; il push-to-talk è la scelta
+  affidabile (ed è ciò che le linee guida automotive raccomandano).
+- **Comandi nuovi**: prossima/avanti · indietro · ripeti · pausa · riprendi ·
+  salva questa · più veloce / più piano / velocità normale (S.rate persistente,
+  limiti 0,7–1,4) · «modalità auto». «continua» resta della seconda pagina.
+- La catena avanza SOLO se la coda è finita davvero (_speakQueue passa `finita` al
+  callback): uno stop voluto non fa saltare avanti.
+- GUIDA_V=2: chi ha già visto il benvenuto riceve UNA riga di novità sul 🚗 — primo
+  uso reale del meccanismo. Guida aggiornata (sezione «In auto» + vocabolario),
+  col limite iOS dichiarato: Safari non legge in sottofondo.
+- Onestà su ciò che NON si può fare: controlli dalla schermata di blocco/CarPlay
+  richiederebbero un file audio vero (Media Session API), non speechSynthesis;
+  wake word («Ehi PULSE») impossibile su una pagina web. Dichiarato, non promesso.
+Viaggio da utente: **39 passi verdi**. Cancello: **583 controlli, due volte**.
+Nota operativa: i monitor CI vanno fatti col tool GitHub — il proxy del sandbox
+blocca api.github.com non autenticato (curl e urllib muti).

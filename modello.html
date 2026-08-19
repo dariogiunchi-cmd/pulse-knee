@@ -27,6 +27,17 @@
   .gvx details{margin:0 0 8px;background:var(--tint2);border-radius:11px;padding:9px 12px}
   .gvx summary{font-weight:600;cursor:pointer}
   .gvx ul{margin:7px 0 2px;padding-left:19px}.gvx li{margin:3px 0}
+  /* modalità auto: sempre scura, contrasto massimo, tasti da colpo d'occhio */
+  #autoov{align-items:stretch}
+  .autopan{background:#000;color:#fff;width:100%;display:flex;flex-direction:column;justify-content:space-between;padding:max(20px,env(safe-area-inset-top)) 18px max(20px,env(safe-area-inset-bottom))}
+  .autonow{font-size:22px;line-height:1.4;font-weight:600;min-height:92px}
+  .autonow small{display:block;font-size:15px;color:#9a9aa2;font-weight:500;margin-bottom:8px}
+  .autogrid{display:flex;gap:14px;justify-content:center;margin:10px 0}
+  .autogrid button{flex:1;max-width:170px;height:96px;border-radius:22px;border:none;background:#1c1c1e;color:#fff;font-size:38px;cursor:pointer}
+  .autogrid button.pri{background:#0a84ff}
+  .autogrid button.on{background:#b00020}
+  .autoesci{margin-top:12px;height:52px;border-radius:14px;border:1.5px solid #3a3a3c;background:none;color:#9a9aa2;font-size:16px;cursor:pointer}
+  .autovel{text-align:center;color:#9a9aa2;font-size:14px;margin-top:6px}
   .brand{font-size:20px;font-weight:700;letter-spacing:-.03em}.brand span{color:var(--dim2);font-weight:600}
   .date{color:var(--dim);font-size:13px;width:100%;order:5}@media(min-width:560px){.date{width:auto;order:0}}
   .kpi{font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px;background:#fff;box-shadow:var(--sh);color:var(--dim);display:flex;gap:5px;align-items:center}.kpi b{color:var(--txt)}.kpi.v{color:#248a3d}
@@ -320,7 +331,8 @@
   <div class="audiobar">
     <button class="play" onclick="speakBrief()" id="playbtn" aria-label="Ascolta il riassunto del giorno">▶</button>
     <button class="play" onclick="toggleConversazione()" id="micbtn" aria-label="Parla con PULSE a voce: comandi come apri la tre, seconda pagina, sorprendimi" style="display:none">🎙</button>
-    <div class="tx"><b>Riassunto vocale del giorno</b><small id="voicelbl">voce del tuo iPhone · tocca ▶ per ascoltare</small></div>
+    <button class="play" onclick="apriAuto()" id="autobtn" aria-label="Modalità auto: ascolto continuo del giornale con tasti grandi">🚗</button>
+    <div class="tx"><b>Riassunto vocale del giorno</b><small id="voicelbl">▶ il podcast del giorno · 🚗 tutto il giornale in ascolto continuo</small></div>
   </div>
   <div class="tabs">
     <button class="on" onclick="tab('today',this)">📄 Oggi</button>
@@ -407,6 +419,25 @@
 </div>
 
 <!-- SOCIAL SHEET -->
+<div class="ov" id="autoov">
+  <div class="autopan">
+    <div class="autonow" id="autonow"><small>Modalità auto</small>Tocca ▶ per ascoltare tutto il giornale.</div>
+    <div>
+      <div class="autogrid">
+        <button onclick="autoIndietro()" aria-label="Scheda precedente">⏮</button>
+        <button onclick="autoPlayPausa()" id="autopp" class="pri" aria-label="Riproduci o metti in pausa">▶</button>
+        <button onclick="autoProssima()" aria-label="Prossima scheda">⏭</button>
+      </div>
+      <div class="autogrid">
+        <button onclick="autoRipeti()" aria-label="Ripeti da capo la scheda in ascolto">🔁</button>
+        <button onclick="autoMic()" id="automic" aria-label="Di’ un comando: prossima, ripeti, salva questa, più veloce">🎙</button>
+        <button onclick="autoSalva()" aria-label="Salva la scheda in ascolto">★</button>
+      </div>
+      <div class="autovel" id="autovel"></div>
+    </div>
+    <button class="autoesci" onclick="chiudiAuto()" aria-label="Esci dalla modalità auto">Esci dalla modalità auto</button>
+  </div>
+</div>
 <div class="ov" id="gvov" onclick="if(event.target===this)chiudiGuida()">
   <div class="sheet">
     <div class="hd"><div class="tt"><h3>Come funziona PULSE</h3><small>tutto quello che vedi, spiegato</small></div><button class="close" onclick="chiudiGuida()" aria-label="Chiudi la guida">✕</button></div>
@@ -503,7 +534,7 @@ var PREF_SOC=['ESSKA','ISAKOS','AOSSM','AAOS','SFA','SOFCOT','AGA','BASK','SIAGA
 var PREF_AZ=['DePuy Synthes','Zimmer Biomet','Smith & Nephew','Arthrex','Stryker','Medacta','Lima','aziende innovative e asiatiche'];
 var DEF={saved:[],savedItems:[],votes:{},edits:{},weekly:[],blogUrl:'https://www.dariogiunchi.ch/blog',
  journals:PREF_RIVISTE.slice(),kols:PREF_KOL.slice(),societies:PREF_SOC.slice(),companies:PREF_AZ.slice(),
- prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,suggDone:{},topics:[],scoviste:[],voce:'',guidav:0,testo:1};
+ prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,suggDone:{},topics:[],scoviste:[],voce:'',guidav:0,testo:1,rate:1.02};
 var S=load();function load(){var salvato=null,s;try{var r=localStorage.getItem('pulse4');if(r)salvato=JSON.parse(r)}catch(e){}s=salvato?Object.assign({},DEF,salvato):Object.assign({},DEF);/* La versione va letta da ciò che è SALVATO, non dal risultato della fusione:    DEF porta sempre PREFV e maschererebbe il valore vecchio. */if(salvato&&(salvato.prefv||0)<PREFV){s.journals=unisci(salvato.journals,PREF_RIVISTE);s.kols=unisci(salvato.kols,PREF_KOL);s.societies=unisci(salvato.societies,PREF_SOC);s.companies=unisci(salvato.companies,PREF_AZ);}s.prefv=PREFV;s.suggDone=s.suggDone||{};if(!s.companies||!s.companies.length)s.companies=PREF_AZ.slice();return s;}
 function unisci(a,b){a=(a||[]).slice();b.forEach(function(x){if(a.indexOf(x)<0)a.push(x)});return a;}
 function save(){try{localStorage.setItem('pulse4',JSON.stringify(S))}catch(e){}}
@@ -670,7 +701,7 @@ function condividiTrasferimento(){if(navigator.share)navigator.share({title:'PUL
    chi ha già visto il benvenuto vede SOLO la riga di novità, una volta. Le funzioni
    sono PURE (stato → html) così i test le collaudano. La guida descrive solo cose
    che esistono davvero: se togli una funzione, togli la sua riga. */
-var GUIDA_V=1,NOVITA='';
+var GUIDA_V=2,NOVITA='🚗 <b>Modalità auto</b>: il tasto accanto a ▶ apre l’ascolto continuo a tasti grandi — briefing e schede una dopo l’altra, comandi a voce come «prossima», «salva questa», «più veloce». Lo schermo resta acceso finché il pannello è aperto.';
 function benvenutoHTML(guidav){
  if((guidav||0)>=GUIDA_V)return '';
  if((guidav||0)>0&&NOVITA)return '<div class="wel card"><b>Novità</b>'+NOVITA+
@@ -700,7 +731,9 @@ function guidaHTML(){
   '<li><b>🎙</b> ascolta i tuoi comandi e risponde a voce</li>'+
   '<li><b>👍 👎</b> su ogni scheda · <b>✎ Social</b> genera i testi · <b>📹 Video</b> sceglie il lavoro per la newsletter</li></ul></details>'+
   '<details><summary>I comandi a voce riconosciuti</summary>'+
-  '<div>«apri (o leggi) la tre» · «salva la due» · «briefing» · «tensioni» · «seconda pagina» · «sorprendimi» · «rassegna» · «aiuto» · «basta» per fermare. I numeri valgono anche in lettere. Fuori da questo vocabolario lo dice, non indovina.</div></details>'+
+  '<div>«apri (o leggi) la tre» · «salva la due» · «briefing» · «tensioni» · «seconda pagina» · «sorprendimi» · «rassegna» · «modalità auto» · «prossima» · «indietro» · «ripeti» · «pausa» · «riprendi» · «salva questa» · «più veloce / più piano / velocità normale» · «aiuto» · «basta» per fermare. I numeri valgono anche in lettere. Fuori da questo vocabolario lo dice, non indovina.</div></details>'+
+  '<details><summary>🚗 In auto</summary>'+
+  '<div>Il tasto 🚗 accanto a ▶ apre l’ascolto continuo: il briefing e poi le schede una dopo l’altra, ognuna annunciata con la posizione («Scheda 3 di 8»). Tasti grandi: ⏮ ▶ ⏭ · 🔁 ripete · ★ salva la scheda in ascolto · 🎙 un comando alla volta — l’audio si ferma, parli, riparte da solo. La velocità di lettura si regola a voce e resta memorizzata. Lo schermo resta acceso finché il pannello è aperto. Limite di iPhone, dichiarato: l’app deve restare in primo piano — Safari non legge né ascolta in sottofondo, quindi telefono sul supporto e schermo attivo.</div></details>'+
   '<details><summary>Le sezioni della pagina Oggi</summary>'+
   '<div>Il <b>lavoro del giorno</b> è la scheda che vale di più. I filtri in alto restringono l’elenco per pallino. «Cosa non torna» sono le tensioni aperte fra la letteratura e la tua pratica, con cosa fare e cosa le chiuderebbe. In fondo: 📖 la <b>seconda pagina</b> (altri lavori veri del giorno, in breve) e 🎲 <b>Sorprendimi</b> (una proposta fuori dai soliti argomenti, mai ripetuta).</div></details>'+
   '<details><summary>Le altre schede</summary><ul>'+
@@ -825,9 +858,9 @@ function _speakQueue(frasi,alTermine){
  if(!('speechSynthesis' in window)){if(alTermine)alTermine();return;}
  _coda=frasi;_codaIdx=0;var b=document.getElementById('playbtn'),l=document.getElementById('voicelbl');
  function prox(){
-  if(_codaIdx>=_coda.length||!_speaking){_speaking=false;if(b)b.textContent='▶';if(alTermine)alTermine();return;}
+  if(_codaIdx>=_coda.length||!_speaking){var finita=_codaIdx>=_coda.length;_speaking=false;if(b)b.textContent='▶';if(alTermine)alTermine(finita);return;}
   var it=_coda[_codaIdx],testo=(typeof it==='string')?it:it.t;
-  var u=new SpeechSynthesisUtterance(testo);u.lang='it-IT';u.rate=1.02;u.pitch=1;
+  var u=new SpeechSynthesisUtterance(testo);u.lang='it-IT';u.rate=S.rate||1.02;u.pitch=1;
   var v=_pickVoice();
   if(typeof it==='object'&&it.chi==='B'){var vb=_voceB();if(vb)v=vb;else u.pitch=0.82;}
   if(v)u.voice=v;
@@ -872,7 +905,7 @@ function renderResearch(){if(document.getElementById('verdict'))renderVerdict();
 function setFilter(f,btn){curFilter=f;[].forEach.call(btn.parentNode.children,function(x){x.classList.remove('on')});btn.classList.add('on');renderResearch();}
 function _speakText(t){var b=document.getElementById('playbtn');
  if(!('speechSynthesis' in window)){toast('Voce non supportata');return;}
- var u=new SpeechSynthesisUtterance(t);u.lang='it-IT';u.rate=1;var v=_pickVoice();if(v)u.voice=v;
+ var u=new SpeechSynthesisUtterance(t);u.lang='it-IT';u.rate=S.rate||1;var v=_pickVoice();if(v)u.voice=v;
  speechSynthesis.cancel();speechSynthesis.speak(u);toast('▶ In lettura');}
 function speakCard(ev,n){if(ev)ev.stopPropagation();var a=A[n];_speakText(a.h+'. '+a.v+'. Conclusione degli autori: '+a.concl+'. Per te: '+a.perte);}
 
@@ -894,6 +927,16 @@ function interpretaComando(t){
  if(/sorprend/.test(t))return {az:'sorprendimi'};
  if(/rassegna/.test(t))return {az:'rassegna'};
  if(/\b(aiuto|guida)\b|come funziona/.test(t))return {az:'aiuto'};
+ if(/modalit[àa] auto|in macchina|in auto\b/.test(t))return {az:'auto'};
+ if(/\b(prossima|prossimo|avanti|salta)\b/.test(t))return {az:'prossima'};
+ if(/\b(precedente|indietro)\b/.test(t))return {az:'indietro'};
+ if(/\bripeti\b/.test(t))return {az:'ripeti'};
+ if(/\bpausa\b/.test(t))return {az:'pausa'};
+ if(/\b(riprendi|riparti)\b/.test(t))return {az:'riprendi'};
+ if(/salva (questa|questo|quella)\b|salvala/.test(t))return {az:'salvaquesta'};
+ if(/pi[ùu] veloce/.test(t))return {az:'veloce'};
+ if(/pi[ùu] (piano|lento)/.test(t))return {az:'piano'};
+ if(/velocit[àa] normale/.test(t))return {az:'ratenorm'};
  if(/(tensioni|cosa non torna|non ti coprono)/.test(t))return {az:'tensioni'};
  if(/salva/.test(t)&&n)return {az:'salva',n:n};
  if(/(apri|leggi|ascolta|scheda|numero)/.test(t)&&n)return {az:'leggi',n:n};
@@ -918,11 +961,24 @@ function eseguiComando(c){
    di('Apro la rassegna: richiami, trial e video della tua rete.',fine);return;
   case 'tensioni':di(TENSIONS.map(function(t){return t.t+'. '+t.fare}).join(' '),fine);return;
   case 'aiuto':apriGuida();di('Ecco la guida: spiega i pallini, i gesti e tutti i comandi.',fine);return;
+  case 'auto':apriAuto();return;
+  case 'prossima':autoProssima();return;
+  case 'indietro':autoIndietro();return;
+  case 'ripeti':autoRipeti();return;
+  case 'pausa':_autoAttiva=false;_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();_autoPP('▶');
+   di('In pausa. Di’ riprendi quando vuoi.',fine);return;
+  case 'riprendi':autoVai(_autoLista?_autoPos:0);return;
+  case 'salvaquesta':var sn=autoSalva();
+   di(sn?'Salvata.':'Il briefing non si salva: chiedimelo mentre ascolti una scheda.',function(){_autoRiprendiSeAperto(fine);});return;
+  case 'veloce':setRate((S.rate||1.02)+0.15);di('Più veloce.',function(){_autoRiprendiSeAperto(fine);});return;
+  case 'piano':setRate((S.rate||1.02)-0.15);di('Più piano.',function(){_autoRiprendiSeAperto(fine);});return;
+  case 'ratenorm':setRate(1.02);di('Velocità normale.',function(){_autoRiprendiSeAperto(fine);});return;
   case 'niente':if(_convOn)_riascolta();return;
   default:di('Non ho capito «'+ (c.testo||'') +'». Posso aprire o salvare una scheda, leggere il briefing o le tensioni, aprire la seconda pagina, la rassegna, o sorprenderti. Di’ aiuto per la guida.',fine);}}
 var _convOn=false,_rec=null;
 function _SR(){return window.SpeechRecognition||window.webkitSpeechRecognition||null;}
-function _aggMic(){var b=document.getElementById('micbtn');if(b)b.textContent=_convOn?'🔴':'🎙';}
+function _aggMic(){var b=document.getElementById('micbtn');if(b)b.textContent=_convOn?'🔴':'🎙';
+ var a=document.getElementById('automic');if(a){a.textContent=_convOn?'🔴':'🎙';a.classList.toggle('on',_convOn);}}
 function _riascolta(){if(_convOn)setTimeout(_ascolta,250);}
 function _ascolta(){
  var SR=_SR();if(!SR||!_convOn)return;
@@ -937,6 +993,75 @@ function toggleConversazione(){
  if(_convOn){_speakQueue(_frasi('Ti ascolto.'),_riascolta);}
  else{try{if(_rec)_rec.stop();}catch(e){};_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();}}
 if(_SR()){var _mb=document.getElementById('micbtn');if(_mb)_mb.style.display='';}
+
+/* MODALITÀ AUTO — ascolto continuo a tasti grandi, il modello è la car view degli
+   ascoltatori di podcast: pannello sempre scuro, quattro gesti, zero lettura.
+   La PLAYLIST è briefing + tutte le schede, ognuna annunciata con la sua posizione
+   («Scheda 3 di 8») così si sa sempre dove si è senza guardare. La catena passa
+   per _speakQueue(…, alTermine(finita)): si avanza SOLO se la coda è finita
+   davvero, mai dopo uno stop voluto. Onestà: su iPhone l'app deve restare in primo
+   piano — Safari non ascolta né legge in sottofondo; il wake lock tiene lo schermo
+   acceso finché il pannello è aperto. */
+var _autoLista=null,_autoPos=0,_autoAttiva=false,_wl=null;
+function autoLista(){
+ var tot=ARTICLES.length;
+ var l=[{label:'Il briefing del giorno',n:null,coda:_codaBrief()}];
+ ARTICLES.forEach(function(a,i){
+  l.push({label:'Scheda '+(i+1)+' di '+tot+' — '+a.h,n:a.n,
+   coda:_frasi('Scheda '+(i+1)+' di '+tot+'. '+a.h+'. '+a.v+'. Conclusione degli autori: '+a.concl+'. Per te: '+a.perte)});});
+ return l;}
+function _autoNow(msg){var el=document.getElementById('autonow');if(!el||!_autoLista)return;
+ var it=_autoLista[_autoPos];
+ el.innerHTML='<small>'+(_autoPos+1)+' di '+_autoLista.length+(msg?' · '+esc(msg):'')+'</small>'+esc(it.label);}
+function _autoVel(){var el=document.getElementById('autovel');if(el)el.textContent='velocità '+String((S.rate||1.02).toFixed(2)).replace('.',',')+'× — di’ «più veloce» o «più piano»';}
+function _autoPP(t){var b=document.getElementById('autopp');if(b)b.textContent=t;}
+function autoVai(i){
+ if(!_autoLista)_autoLista=autoLista();
+ if(i<0)i=0;
+ if(i>=_autoLista.length){_autoAttiva=false;_autoPP('▶');_autoNow('fine del giornale');return;}
+ _autoPos=i;_autoAttiva=true;_autoNow();_autoPP('⏸');
+ _speakQueue(_autoLista[i].coda,function(finita){if(finita&&_autoAttiva)autoVai(_autoPos+1);else if(!_autoAttiva)_autoPP('▶');});}
+function autoPlayPausa(){
+ if(_speaking){_autoAttiva=false;_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();_autoPP('▶');_autoNow('in pausa');}
+ else{autoVai(_autoLista?_autoPos:0);}}
+function autoProssima(){_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();autoVai((_autoLista?_autoPos:0)+1);}
+function autoIndietro(){_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();autoVai((_autoLista?_autoPos:1)-1);}
+function autoRipeti(){_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();autoVai(_autoLista?_autoPos:0);}
+function autoSalva(){
+ var it=_autoLista&&_autoLista[_autoPos];
+ if(!it||!it.n){toast('Il briefing non si salva: salva una scheda');return null;}
+ if(S.saved.indexOf(it.n)<0){S.saved.push(it.n);save();render();}
+ toast('★ Salvata la scheda in ascolto');return it.n;}
+function setRate(v){S.rate=Math.max(0.7,Math.min(1.4,v));save();_autoVel();return S.rate;}
+function _wlPrendi(){try{if(navigator.wakeLock&&navigator.wakeLock.request)navigator.wakeLock.request('screen').then(function(l){_wl=l;}).catch(function(){});}catch(e){}}
+function _wlLascia(){try{if(_wl){_wl.release();_wl=null;}}catch(e){}}
+function apriAuto(){
+ var ov=document.getElementById('autoov');if(!ov)return;
+ ov.classList.add('on');_wlPrendi();_autoLista=autoLista();_autoPos=0;_autoVel();_autoNow();
+ var mb=document.getElementById('automic');if(mb)mb.style.display=_SR()?'':'none';
+ autoVai(0);}
+/* Il microfono in auto è PUSH-TO-TALK: ascoltare mentre l'app parla significherebbe
+   farle sentire la propria voce. Un tocco: l'audio si ferma, ascolta UNA frase,
+   esegue, e i comandi che riprendono la lettura la riprendono da soli. */
+function autoMic(){
+ if(!_SR())return;
+ _autoAttiva=false;_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();
+ _autoPP('▶');_autoNow('ti ascolto…');
+ var b=document.getElementById('automic');if(b){b.textContent='🔴';b.classList.add('on');}
+ var r;try{r=new (_SR())();}catch(e){_autoMicFine();return;}
+ r.lang='it-IT';r.interimResults=false;r.maxAlternatives=1;
+ r.onresult=function(ev){_autoMicFine();eseguiComando(interpretaComando(ev.results[0][0].transcript));};
+ r.onerror=function(){_autoMicFine();_autoNow('non ho sentito: riprova');};
+ try{r.start();}catch(e){_autoMicFine();}}
+function _autoMicFine(){var b=document.getElementById('automic');if(b){b.textContent='🎙';b.classList.remove('on');}}
+function _autoRiprendiSeAperto(fine){
+ var ov=document.getElementById('autoov');
+ if(ov&&ov.classList.contains('on')&&_autoLista)autoVai(_autoPos);
+ else if(fine)fine();}
+function chiudiAuto(){
+ _autoAttiva=false;_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();
+ if(_convOn)toggleConversazione();
+ _wlLascia();var ov=document.getElementById('autoov');if(ov)ov.classList.remove('on');_autoPP('▶');}
 
 
 function confHTML(n){var lvl=CONF[n]||'bassa';var nf={bassa:1,media:2,alta:3}[lvl];var cc={bassa:'#e6902a',media:'#0071e3',alta:'#34c759'}[lvl];

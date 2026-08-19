@@ -67,6 +67,8 @@ MARCATORI = [
  ("Segnali dell'utente condivisibili", ["function segnaliTesto", "function condividiSegnali"]),
  ("Benvenuto e guida",             ["function benvenutoHTML", "function guidaHTML", "function apriGuida", 'id="welbox"', 'id="gvov"']),
  ("Dimensione del testo",          ["function setTesto", "function applicaTesto", 'id="testochips"']),
+ ("Modalità auto",                 ["function autoLista", "function apriAuto", "function autoMic", 'id="autoov"', 'id="autobtn"', 'id="autonow"']),
+ ("Velocità di lettura persistente", ["function setRate", "S.rate"]),
  ("Destino dei verdetti in Rassegna", ["destino dei verdetti", "F.destino"]),
  ("Versione mista dei testi",     ["setNlVer('mix'", "function wBlurb"]),
  ("Durata video in secondi",      ["function setSec", "function durataNota", "PAROLE_AL_SECONDO"]),
