@@ -311,6 +311,7 @@
   </div>
   <div class="audiobar">
     <button class="play" onclick="speakBrief()" id="playbtn" aria-label="Ascolta il riassunto del giorno">▶</button>
+    <button class="play" onclick="toggleConversazione()" id="micbtn" aria-label="Parla con PULSE a voce: comandi come apri la tre, seconda pagina, sorprendimi" style="display:none">🎙</button>
     <div class="tx"><b>Riassunto vocale del giorno</b><small id="voicelbl">voce del tuo iPhone · tocca ▶ per ascoltare</small></div>
   </div>
   <div class="tabs">
@@ -485,7 +486,7 @@ var PREF_SOC=['ESSKA','ISAKOS','AOSSM','AAOS','SFA','SOFCOT','AGA','BASK','SIAGA
 var PREF_AZ=['DePuy Synthes','Zimmer Biomet','Smith & Nephew','Arthrex','Stryker','Medacta','Lima','aziende innovative e asiatiche'];
 var DEF={saved:[],savedItems:[],votes:{},edits:{},weekly:[],blogUrl:'https://www.dariogiunchi.ch/blog',
  journals:PREF_RIVISTE.slice(),kols:PREF_KOL.slice(),societies:PREF_SOC.slice(),companies:PREF_AZ.slice(),
- prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,suggDone:{},topics:[],scoviste:[]};
+ prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,suggDone:{},topics:[],scoviste:[],voce:''};
 var S=load();function load(){var salvato=null,s;try{var r=localStorage.getItem('pulse4');if(r)salvato=JSON.parse(r)}catch(e){}s=salvato?Object.assign({},DEF,salvato):Object.assign({},DEF);/* La versione va letta da ciò che è SALVATO, non dal risultato della fusione:    DEF porta sempre PREFV e maschererebbe il valore vecchio. */if(salvato&&(salvato.prefv||0)<PREFV){s.journals=unisci(salvato.journals,PREF_RIVISTE);s.kols=unisci(salvato.kols,PREF_KOL);s.societies=unisci(salvato.societies,PREF_SOC);s.companies=unisci(salvato.companies,PREF_AZ);}s.prefv=PREFV;s.suggDone=s.suggDone||{};if(!s.companies||!s.companies.length)s.companies=PREF_AZ.slice();return s;}
 function unisci(a,b){a=(a||[]).slice();b.forEach(function(x){if(a.indexOf(x)<0)a.push(x)});return a;}
 function save(){try{localStorage.setItem('pulse4',JSON.stringify(S))}catch(e){}}
@@ -702,16 +703,28 @@ function closeSocial(){document.getElementById('ov').classList.remove('on')}
 function copyCnt(){var t=socText();try{navigator.clipboard.writeText(t)}catch(e){}toast('Copiato');}
 var _speaking=false;
 function _pickVoice(){var vs=(window.speechSynthesis?speechSynthesis.getVoices():[]).filter(function(v){return /it(-|_)/i.test(v.lang)});
+ if(S.voce){var scelta=vs.filter(function(v){return v.name===S.voce})[0];if(scelta)return scelta;}
  vs.sort(function(a,b){function s(v){return /(enhanced|premium|siri|neural|federica|alice|luca|emma)/i.test(v.name)?1:0}return s(b)-s(a)});return vs[0]||null;}
+/* LETTURA A FRASI. Un'unica utterance lunga su iOS si tronca senza errore dopo
+   qualche frase (difetto noto di Safari): il testo si spezza in frasi e si legge
+   in coda. In più la coda dà il progresso e uno stop pulito. */
+function _frasi(t){return (t||'').split(/(?<=[.!?])\s+/).filter(function(s){return s.trim().length>1});}
+var _coda=[],_codaIdx=0;
+function _speakQueue(frasi,alTermine){
+ _coda=frasi;_codaIdx=0;var b=document.getElementById('playbtn'),l=document.getElementById('voicelbl');
+ function prox(){
+  if(_codaIdx>=_coda.length||!_speaking){_speaking=false;if(b)b.textContent='▶';if(alTermine)alTermine();return;}
+  var u=new SpeechSynthesisUtterance(_coda[_codaIdx]);u.lang='it-IT';u.rate=1.02;u.pitch=1;
+  var v=_pickVoice();if(v)u.voice=v;
+  u.onend=function(){_codaIdx++;if(l&&_coda.length>3)l.textContent='lettura '+Math.min(_codaIdx+1,_coda.length)+'/'+_coda.length;prox();};
+  u.onerror=function(){_speaking=false;if(b)b.textContent='▶';};
+  speechSynthesis.speak(u);}
+ _speaking=true;if(b)b.textContent='⏸';speechSynthesis.cancel();prox();}
 function speakBrief(){var b=document.getElementById('playbtn'),l=document.getElementById('voicelbl');
  if(!('speechSynthesis' in window)){l.textContent='voce non supportata su questo browser';return;}
- if(_speaking){speechSynthesis.cancel();_speaking=false;b.textContent='▶';return;}
- var u=new SpeechSynthesisUtterance(BRIEF_TEXT);u.lang='it-IT';u.rate=1;u.pitch=1;
- var v=_pickVoice();if(v){u.voice=v;l.textContent='voce: '+v.name;}
- u.onstart=function(){_speaking=true;b.textContent='⏸'};
- u.onend=function(){_speaking=false;b.textContent='▶'};
- u.onerror=function(){_speaking=false;b.textContent='▶'};
- speechSynthesis.cancel();speechSynthesis.speak(u);}
+ if(_speaking){_speaking=false;speechSynthesis.cancel();b.textContent='▶';return;}
+ var v=_pickVoice();if(v&&l)l.textContent='voce: '+v.name;
+ _speakQueue(_frasi(BRIEF_TEXT));}
 if('speechSynthesis' in window){speechSynthesis.onvoiceschanged=function(){};speechSynthesis.getVoices();}
 
 
@@ -743,6 +756,66 @@ function _speakText(t){var b=document.getElementById('playbtn');
  var u=new SpeechSynthesisUtterance(t);u.lang='it-IT';u.rate=1;var v=_pickVoice();if(v)u.voice=v;
  speechSynthesis.cancel();speechSynthesis.speak(u);toast('▶ In lettura');}
 function speakCard(ev,n){if(ev)ev.stopPropagation();var a=A[n];_speakText(a.h+'. '+a.v+'. Conclusione degli autori: '+a.concl+'. Per te: '+a.perte);}
+
+/* CONVERSAZIONE — «come parlare»: comandi vocali in italiano con risposta a voce.
+   Onestà architetturale: questa pagina è statica e non può interrogare un modello
+   senza esporre una chiave — quindi qui si capisce un VOCABOLARIO (aprire, leggere,
+   salvare, seconda pagina, sorprendimi…), non la conversazione libera: quella è
+   «Chiedi a PULSE», che arriva alla settimana verde compiuta. interpretaComando è
+   PURA (testo → azione) così i test la collaudano frase per frase. */
+var _NUMIT={'uno':1,'una':1,'due':2,'tre':3,'quattro':4,'cinque':5,'sei':6,'sette':7,'otto':8,'nove':9,'dieci':10,'undici':11,'dodici':12,'tredici':13,'quattordici':14,'quindici':15};
+function interpretaComando(t){
+ t=(t||'').toLowerCase().trim();
+ if(!t)return {az:'niente'};
+ if(/\b(stop|basta|ferma|fermati|silenzio|zitto)\b/.test(t))return {az:'stop'};
+ var n=null,m=t.match(/\b(\d{1,2})\b/);
+ if(m)n=parseInt(m[1],10);
+ else{for(var w in _NUMIT){if(new RegExp('\\b'+w+'\\b').test(t)){n=_NUMIT[w];break;}}}
+ if(/(seconda pagina|continua a leggere|altri lavori)/.test(t))return {az:'seconda'};
+ if(/sorprend/.test(t))return {az:'sorprendimi'};
+ if(/rassegna/.test(t))return {az:'rassegna'};
+ if(/(tensioni|cosa non torna|non ti coprono)/.test(t))return {az:'tensioni'};
+ if(/salva/.test(t)&&n)return {az:'salva',n:n};
+ if(/(apri|leggi|ascolta|scheda|numero)/.test(t)&&n)return {az:'leggi',n:n};
+ if(/(briefing|giornale|riassunto|di oggi)/.test(t))return {az:'briefing'};
+ if(n)return {az:'leggi',n:n};
+ return {az:'boh',testo:t};}
+function eseguiComando(c){
+ function di(t,poi){_speaking=false;speechSynthesis.cancel();_speakQueue(_frasi(t),poi);}
+ var fine=_convOn?_riascolta:null;
+ switch(c.az){
+  case 'stop':_speaking=false;speechSynthesis.cancel();_convOn=false;_aggMic();return;
+  case 'briefing':_speakQueue(_frasi(BRIEF_TEXT),fine);return;
+  case 'leggi':var a=A[c.n];if(!a){di('Oggi non c’è una scheda numero '+c.n+'. Le schede vanno da 1 a '+ARTICLES.length+'.',fine);return;}
+   toggle(c.n);di(a.h+'. '+a.v+'. Conclusione: '+a.concl+'. Per te: '+a.perte,fine);return;
+  case 'salva':if(!A[c.n]){di('Non trovo la scheda '+c.n+'.',fine);return;}
+   if(S.saved.indexOf(c.n)<0){S.saved.push(c.n);save();render();}di('Salvata la scheda '+c.n+'.',fine);return;
+  case 'seconda':spApri();di('Ecco la seconda pagina: altri '+((typeof EXTRA!=='undefined'?EXTRA:[]).length)+' lavori di oggi in forma breve.',fine);
+   var el=document.getElementById('secpag');if(el&&el.scrollIntoView)el.scrollIntoView();return;
+  case 'sorprendimi':sorprendimi();var s=document.getElementById('spsorp');
+   di(s&&s.textContent?s.textContent:'Oggi non ho scoperte da proporti.',fine);return;
+  case 'rassegna':var bt=[].slice.call(document.querySelectorAll('.tabs button')).filter(function(x){return /Rassegna/.test(x.textContent)})[0];if(bt)bt.click();apriRassegna();
+   di('Apro la rassegna: richiami, trial e video della tua rete.',fine);return;
+  case 'tensioni':di(TENSIONS.map(function(t){return t.t+'. '+t.fare}).join(' '),fine);return;
+  case 'niente':if(_convOn)_riascolta();return;
+  default:di('Non ho capito «'+ (c.testo||'') +'». Posso aprire o salvare una scheda, leggere il briefing o le tensioni, aprire la seconda pagina, la rassegna, o sorprenderti.',fine);}}
+var _convOn=false,_rec=null;
+function _SR(){return window.SpeechRecognition||window.webkitSpeechRecognition||null;}
+function _aggMic(){var b=document.getElementById('micbtn');if(b)b.textContent=_convOn?'🔴':'🎙';}
+function _riascolta(){if(_convOn)setTimeout(_ascolta,250);}
+function _ascolta(){
+ var SR=_SR();if(!SR||!_convOn)return;
+ try{_rec=new SR();}catch(e){_convOn=false;_aggMic();return;}
+ _rec.lang='it-IT';_rec.interimResults=false;_rec.maxAlternatives=1;
+ _rec.onresult=function(ev){var t=ev.results[0][0].transcript;eseguiComando(interpretaComando(t));};
+ _rec.onerror=function(ev){if(ev.error==='no-speech'&&_convOn){_riascolta();return;}_convOn=false;_aggMic();};
+ try{_rec.start();}catch(e){}}
+function toggleConversazione(){
+ if(!_SR())return;
+ _convOn=!_convOn;_aggMic();
+ if(_convOn){_speakQueue(_frasi('Ti ascolto.'),_riascolta);}
+ else{try{if(_rec)_rec.stop();}catch(e){};_speaking=false;speechSynthesis.cancel();}}
+if(_SR()){var _mb=document.getElementById('micbtn');if(_mb)_mb.style.display='';}
 
 
 function confHTML(n){var lvl=CONF[n]||'bassa';var nf={bassa:1,media:2,alta:3}[lvl];var cc={bassa:'#e6902a',media:'#0071e3',alta:'#34c759'}[lvl];
