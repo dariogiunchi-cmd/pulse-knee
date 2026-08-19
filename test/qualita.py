@@ -199,7 +199,7 @@ with sync_playwright() as p:
     chk(pg3.evaluate("autoLista()[0].label").find('briefing')>=0
         and pg3.evaluate("autoLista()[0].n") is None,
         'la playlist apre col briefing, che non è salvabile')
-    chk(pg3.evaluate("autoLista()[1].coda.join(' ')").startswith('Scheda 1 di '+str(pg3.evaluate("ARTICLES.length"))),
+    chk(pg3.evaluate("autoLista()[1].voci[0].t").startswith('Scheda 1 di '+str(pg3.evaluate("ARTICLES.length"))),
         'ogni scheda viene annunciata con la sua posizione')
     chk(pg3.evaluate("autoLista()[1].n")==pg3.evaluate("ARTICLES[0].n"),
         'la scheda in ascolto è identificata dal suo numero vero, per salvarla')
@@ -212,6 +212,36 @@ with sync_playwright() as p:
             f'la voce capisce «{frase}» → {att}')
     chk(pg3.evaluate("(function(){var v=S.rate;var r1=setRate(2),r2=setRate(0.1);S.rate=v;save();return r1<=1.4&&r2>=0.7})()"),
         'la velocità di lettura ha limiti sani e si salva')
+
+    # --- il cervello: conversazione libera e voce naturale, con onestà ----------
+    chk(pg3.evaluate("chiediDisponibile()")==False,
+        'senza configurazione il cervello risulta scollegato')
+    chk(pg3.evaluate("_appiattisci([{t:'Prima. Seconda.',chi:'B'},'Terza.'])"
+                     ".map(function(x){return typeof x==='string'?'s':x.chi}).join('')")=='BBs',
+        'l\'appiattimento per la voce di sistema conserva chi parla')
+    chk(pg3.evaluate("(function(){var v=S.cervello;S.cervello={url:'https://x',parola:'p'};"
+                     "var d=chiediDisponibile();S.cervello=v;return d})()"),
+        'con indirizzo e parola il cervello risulta collegato')
+    chk(pg3.evaluate("""(function(){
+      var v=S.cervello,dom=null,detto=null;
+      S.cervello={url:'https://x',parola:'p'};
+      var cp=chiediPulse,pl=parla;
+      chiediPulse=function(d,cb){dom=d;cb('Risposta di prova.');};
+      parla=function(items){detto=items[0];};
+      eseguiComando(interpretaComando('quanto dura la riabilitazione dopo protesi'));
+      chiediPulse=cp;parla=pl;S.cervello=v;
+      return dom&&dom.indexOf('riabilitazione')>=0&&detto==='Risposta di prova.'})()"""),
+        'una domanda fuori vocabolario, col cervello, diventa conversazione e risposta parlata')
+    chk(pg3.evaluate("typeof fermaVoce==='function' && typeof _natQueue==='function' && typeof parla==='function'"),
+        'la voce naturale ha partenza, coda e arresto unificati')
+    chk(pg3.evaluate("_briefItems().length")>1,
+        'il briefing per la voce naturale usa le battute del dialogo')
+    chk(pg3.evaluate("autoLista()[1].voci[0].t").startswith('Scheda 1 di '),
+        'anche in auto ogni scheda porta il suo annuncio di posizione')
+    chk(pg3.evaluate("document.getElementById('vocesel')!==null && typeof popolaVoci==='function'"),
+        'la voce di sistema si può scegliere dalle Impostazioni')
+    chk(pg3.evaluate("JSON.stringify(statoDaTrasferire()).indexOf('cervello')")==-1,
+        'indirizzo e parola del cervello NON viaggiano nel trasferimento né nel backup')
 
     # --- i segnali a PULSE: identità per contenuto, mai per posizione -----------
     chk(pg3.evaluate("(function(){var v=S.votes;S.votes={1:1,99:-1};"
