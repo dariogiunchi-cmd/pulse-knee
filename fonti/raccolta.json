@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-19T15:43:36Z",
+ "generato": "2026-08-19T15:57:04Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -1008,8 +1008,13 @@
    }
   },
   "polso": {
-   "esito": "non risposto: HTTPError HTTP Error 403: Forbidden",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "finestra": "14 giorni",
+    "canale": "Bluesky (ricerca pubblica)",
+    "esaminati": 40,
+    "voci": []
+   }
   },
   "preprint": {
    "esito": "ok",
