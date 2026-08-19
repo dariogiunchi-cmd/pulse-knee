@@ -642,9 +642,39 @@ function apriTrasferimento(){
   '<div class="muted" style="margin:12px 0 9px">La copia di sicurezza è un file: tutto ciò che decidi vive solo su questo dispositivo, e se i dati del sito vengono cancellati non c&rsquo;è altro modo di tornare indietro. Il ripristino fonde le copie, non le sovrascrive.</div>'+
   '<div class="add"><button class="btn" onclick="esportaBackup()" aria-label="Scarica una copia di sicurezza dei tuoi dati in un file">💾 Scarica copia di sicurezza</button>'+
   '<button class="btn" onclick="document.getElementById(\'bkfile\').click()" aria-label="Ripristina i dati da un file di copia di sicurezza">📥 Ripristina da file</button>'+
-  '<input type="file" id="bkfile" accept=".json,application/json" style="display:none" onchange="importaBackup(this)" aria-label="File di copia di sicurezza da ripristinare"></div>';}
+  '<input type="file" id="bkfile" accept=".json,application/json" style="display:none" onchange="importaBackup(this)" aria-label="File di copia di sicurezza da ripristinare"></div>'+
+  '<div class="muted" style="margin:12px 0 9px">I segnali sono le tue scelte — voti, salvati, lavori per la newsletter, proposte accettate o respinte. Incollàti nella chat con Claude, orientano le schede dei giorni successivi.</div>'+
+  '<div class="add"><button class="btn" onclick="condividiSegnali()" aria-label="Condividi i tuoi segnali con Claude per orientare i prossimi briefing">📡 Manda i segnali a PULSE</button></div>';}
 function copiaTrasferimento(){try{navigator.clipboard.writeText(linkTrasferimento())}catch(e){}toast('Link copiato — aprilo sull’altro dispositivo');}
 function condividiTrasferimento(){if(navigator.share)navigator.share({title:'PULSE',text:'I miei dati PULSE',url:linkTrasferimento()}).catch(function(){});}
+/* SEGNALI A PULSE. Le scelte dell'utente (voti, salvati, newsletter, proposte)
+   diventano un testo leggibile che lui incolla nella chat con Claude: è il canale di
+   ritorno del giudizio umano verso il briefing del mattino, senza server e senza
+   chiavi. IDENTITÀ PER CONTENUTO: ogni voce porta il suo PMID o il suo nome — i voti
+   sono per numero di scheda ma valgono solo per l'oggi, e il testo li traduce
+   subito in PMID+titolo, così il segnale sopravvive alla notte. */
+function segnaliTesto(){
+ var r=['SEGNALI PULSE — '+BUILD_DATE];
+ var su=[],giu=[];
+ Object.keys(S.votes||{}).forEach(function(n){var a=A[n];if(!a)return;
+  (S.votes[n]==1?su:giu).push((a.j||'')+' — '+(a.h||'')+' (PMID '+(a.pmid||'non riportato')+')');});
+ if(su.length)r.push('Più così: '+su.join(' · '));
+ if(giu.length)r.push('Meno così: '+giu.join(' · '));
+ var sv=savedList().map(function(a){return (a.h||'')+' (PMID '+(a.pmid||'non riportato')+')'});
+ if(sv.length)r.push('Salvati ('+sv.length+'): '+sv.join(' · '));
+ var wk=(S.weekly||[]).map(function(w){var a=wArt(w);return a?(a.h||'')+' (PMID '+(a.pmid||'non riportato')+')':null}).filter(Boolean);
+ if(wk.length)r.push('Scelti per la newsletter: '+wk.join(' · '));
+ var d=S.suggDone||{},si=[],no=[];
+ Object.keys(d).forEach(function(nome){if(d[nome]==='si')si.push(nome);else if(d[nome]==='no')no.push(nome);});
+ if(si.length)r.push('Proposte accettate: '+si.join(' · '));
+ if(no.length)r.push('Proposte respinte: '+no.join(' · '));
+ if(r.length===1)r.push('Nessun segnale ancora: nessun voto, salvataggio o scelta registrata su questo dispositivo.');
+ return r.join('\n');}
+function condividiSegnali(){
+ var t=segnaliTesto();
+ if(navigator.share){navigator.share({title:'Segnali PULSE',text:t}).catch(function(){});}
+ else{try{navigator.clipboard.writeText(t);toast('Segnali copiati: incollali nella chat con Claude');}
+  catch(e){toast('Copia non riuscita su questo browser');}}}
 /* Copia di sicurezza su FILE. Tutto lo stato vive nel localStorage di questo browser:
    una pulizia dei dati del sito lo cancella, e non esiste alcun server da cui
    recuperarlo. Il file è la rete di sicurezza; il ripristino FONDE (fondiStato),
@@ -709,22 +739,38 @@ function _pickVoice(){var vs=(window.speechSynthesis?speechSynthesis.getVoices()
    qualche frase (difetto noto di Safari): il testo si spezza in frasi e si legge
    in coda. In più la coda dà il progresso e uno stop pulito. */
 function _frasi(t){return (t||'').split(/(?<=[.!?])\s+/).filter(function(s){return s.trim().length>1});}
+/* PODCAST A DUE VOCI. Se il briefing porta BRIEF_DIALOGO (battute {chi:'A'|'B',t}),
+   lo stesso tasto ▶ legge il dialogo con due voci italiane diverse; se il dispositivo
+   ha una sola voce italiana, la seconda si distingue col tono più basso. Senza
+   dialogo il tasto legge BRIEF_TEXT come sempre: UN tasto solo, mai due. */
+function dialogoFrasi(d){var out=[];(d||[]).forEach(function(r){_frasi(r.t).forEach(function(f){out.push({t:f,chi:r.chi==='B'?'B':'A'})})});return out;}
+function _voceB(){var a=_pickVoice();
+ var vs=(window.speechSynthesis?speechSynthesis.getVoices():[]).filter(function(v){return /it(-|_)/i.test(v.lang)&&(!a||v.name!==a.name)});
+ vs.sort(function(x,y){function s(v){return /(enhanced|premium|siri|neural|federica|alice|luca|emma)/i.test(v.name)?1:0}return s(y)-s(x)});return vs[0]||null;}
 var _coda=[],_codaIdx=0;
 function _speakQueue(frasi,alTermine){
+ if(!('speechSynthesis' in window)){if(alTermine)alTermine();return;}
  _coda=frasi;_codaIdx=0;var b=document.getElementById('playbtn'),l=document.getElementById('voicelbl');
  function prox(){
   if(_codaIdx>=_coda.length||!_speaking){_speaking=false;if(b)b.textContent='▶';if(alTermine)alTermine();return;}
-  var u=new SpeechSynthesisUtterance(_coda[_codaIdx]);u.lang='it-IT';u.rate=1.02;u.pitch=1;
-  var v=_pickVoice();if(v)u.voice=v;
+  var it=_coda[_codaIdx],testo=(typeof it==='string')?it:it.t;
+  var u=new SpeechSynthesisUtterance(testo);u.lang='it-IT';u.rate=1.02;u.pitch=1;
+  var v=_pickVoice();
+  if(typeof it==='object'&&it.chi==='B'){var vb=_voceB();if(vb)v=vb;else u.pitch=0.82;}
+  if(v)u.voice=v;
   u.onend=function(){_codaIdx++;if(l&&_coda.length>3)l.textContent='lettura '+Math.min(_codaIdx+1,_coda.length)+'/'+_coda.length;prox();};
   u.onerror=function(){_speaking=false;if(b)b.textContent='▶';};
   speechSynthesis.speak(u);}
  _speaking=true;if(b)b.textContent='⏸';speechSynthesis.cancel();prox();}
+function _codaBrief(){
+ var dial=(typeof BRIEF_DIALOGO!=='undefined'&&BRIEF_DIALOGO&&BRIEF_DIALOGO.length)?BRIEF_DIALOGO:null;
+ return dial?dialogoFrasi(dial):_frasi(BRIEF_TEXT);}
 function speakBrief(){var b=document.getElementById('playbtn'),l=document.getElementById('voicelbl');
  if(!('speechSynthesis' in window)){l.textContent='voce non supportata su questo browser';return;}
  if(_speaking){_speaking=false;speechSynthesis.cancel();b.textContent='▶';return;}
- var v=_pickVoice();if(v&&l)l.textContent='voce: '+v.name;
- _speakQueue(_frasi(BRIEF_TEXT));}
+ var coda=_codaBrief(),v=_pickVoice();
+ if(l)l.textContent=(coda.length&&typeof coda[0]==='object'?'podcast a due voci':'voce')+(v?' · '+v.name:'');
+ _speakQueue(coda);}
 if('speechSynthesis' in window){speechSynthesis.onvoiceschanged=function(){};speechSynthesis.getVoices();}
 
 
@@ -781,11 +827,11 @@ function interpretaComando(t){
  if(n)return {az:'leggi',n:n};
  return {az:'boh',testo:t};}
 function eseguiComando(c){
- function di(t,poi){_speaking=false;speechSynthesis.cancel();_speakQueue(_frasi(t),poi);}
+ function di(t,poi){_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();_speakQueue(_frasi(t),poi);}
  var fine=_convOn?_riascolta:null;
  switch(c.az){
-  case 'stop':_speaking=false;speechSynthesis.cancel();_convOn=false;_aggMic();return;
-  case 'briefing':_speakQueue(_frasi(BRIEF_TEXT),fine);return;
+  case 'stop':_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();_convOn=false;_aggMic();return;
+  case 'briefing':_speakQueue(_codaBrief(),fine);return;
   case 'leggi':var a=A[c.n];if(!a){di('Oggi non c’è una scheda numero '+c.n+'. Le schede vanno da 1 a '+ARTICLES.length+'.',fine);return;}
    toggle(c.n);di(a.h+'. '+a.v+'. Conclusione: '+a.concl+'. Per te: '+a.perte,fine);return;
   case 'salva':if(!A[c.n]){di('Non trovo la scheda '+c.n+'.',fine);return;}
@@ -814,7 +860,7 @@ function toggleConversazione(){
  if(!_SR())return;
  _convOn=!_convOn;_aggMic();
  if(_convOn){_speakQueue(_frasi('Ti ascolto.'),_riascolta);}
- else{try{if(_rec)_rec.stop();}catch(e){};_speaking=false;speechSynthesis.cancel();}}
+ else{try{if(_rec)_rec.stop();}catch(e){};_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();}}
 if(_SR()){var _mb=document.getElementById('micbtn');if(_mb)_mb.style.display='';}
 
 
@@ -1280,6 +1326,19 @@ function rassHTML(rac){
     :'<div class="muted">Nessuno dei '+(rt.dati.doi_citati_controllati||0)+' DOI citati da PULSE risulta ritirato.</div>')+
    ((rt.dati.nel_perimetro||[]).slice(0,5).map(function(c){return '<div class="ritem">⚪ '+esc(c.tipo)+' nel perimetro ginocchio: '+esc((c.titolo||'').slice(0,120))+'</div>';}).join('')));
  }else h+=_rKo('Crossref/Retraction Watch',rt.esito||'assente');
+ /* il destino dei verdetti — come la letteratura successiva tratta i PICK passati */
+ var ds=F.destino||{};
+ if(ds.esito==='ok'&&ds.dati){
+  var conNuovi=ds.dati.filter(function(d){return (d.nuovi||[]).length});
+  var corpoD=ds.dati.length?ds.dati.map(function(d){
+    var nn=(d.nuovi||[]),tot=(d.citanti||[]).length;
+    return '<div class="ritem'+(nn.length?' rHot':'')+'"><b>'+esc((d.titolo||'').slice(0,110))+'</b>'+
+     '<div class="rmeta">'+(tot?tot+(tot===1?' lavoro lo cita':' lavori lo citano'):'nessun citante ancora — normale per un verdetto recente')+
+     (nn.length?' · nuovi: '+nn.slice(0,4).map(function(p){return '<a href="https://pubmed.ncbi.nlm.nih.gov/'+esc(p)+'/" target="_blank" rel="noopener">PMID '+esc(p)+' ↗</a>'}).join(' · '):'')+
+     '</div></div>';
+   }).join(''):'<div class="muted">Nessun verdetto passato nel registro.</div>';
+  h+=_rSez('⚖️ Il destino dei tuoi verdetti'+(conNuovi.length?' — '+conNuovi.length+' con citanti nuovi':''),corpoD);
+ }else h+=_rKo('Destino dei verdetti (PubMed cited-in)',ds.esito||'assente');
  /* video della rete */
  var yt=F.youtube||{};
  if(yt.esito==='ok'&&yt.dati&&(yt.dati.video||[]).length){
