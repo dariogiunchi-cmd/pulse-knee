@@ -1693,12 +1693,12 @@ function rassHTML(rac){
  var po=F.polso||{};
  if(po.esito==='ok'&&po.dati){
   var pv=po.dati.voci||[];
-  h+=_rSez('📣 Di cosa parla la comunità (Altmetric, ultima settimana)',
+  h+=_rSez('📣 Di cosa parla la comunità ('+esc((po.dati&&po.dati.canale)||'menzioni pubbliche')+')',
    (pv.length?pv.map(function(v){
      return '<div class="ritem">'+(v.url?'<a href="'+esc(v.url)+'" target="_blank" rel="noopener">':'')+esc((v.titolo||'').slice(0,140))+(v.url?'</a>':'')+
       '<div class="rmeta">'+esc(v.rivista||'')+' · attenzione '+esc(String(v.punteggio||0))+
       ' · '+esc(String(v.post_x||0))+' post pubblici · '+esc(String(v.notizie||0))+' testate</div></div>';
-    }).join('')+'<div class="rmeta">Menzioni PUBBLICHE aggregate (X, notizie, blog): dice quali lavori circolano, non chi li posta. Instagram non è tracciabile da alcuna API.</div>'
+    }).join('')+'<div class="rmeta">Menzioni PUBBLICHE: dicono quali lavori circolano, non chi li posta. Instagram non è tracciabile da alcuna API.</div>'
     :'<div class="muted">Nessun lavoro sul ginocchio fra i più discussi della settimana.</div>'));
  }else h+=_rKo('Polso social (Altmetric)',po.esito||'assente');
  /* video della rete */
