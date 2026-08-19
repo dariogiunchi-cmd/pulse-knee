@@ -70,6 +70,7 @@ MARCATORI = [
  ("Modalità auto",                 ["function autoLista", "function apriAuto", "function autoMic", 'id="autoov"', 'id="autobtn"', 'id="autonow"']),
  ("Velocità di lettura persistente", ["function setRate", "S.rate"]),
  ("Destino dei verdetti in Rassegna", ["destino dei verdetti", "F.destino"]),
+ ("Linee guida e polso social",    ["F.linee_guida", "F.polso", "F.preprint", 'id="rsomm"']),
  ("Versione mista dei testi",     ["setNlVer('mix'", "function wBlurb"]),
  ("Durata video in secondi",      ["function setSec", "function durataNota", "PAROLE_AL_SECONDO"]),
  ("Proposte tracciate per nome",  ["function suggAperte", "suggDone"]),

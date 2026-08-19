@@ -66,6 +66,21 @@ sola). Ogni fonte ha un campo `esito`: se non è «ok», quella fonte va in NONV
 il file te lo dice, tu lo riporti. Se il file manca o `generato` non è di stanotte,
 il raccoglitore non è passato: dillo in NONVERIF e in chat, e procedi col resto.
 
+LE TRE FONTI DEL 19 AGOSTO in raccolta.json — regole di lettura:
+· `linee_guida` (PubMed, consensus/guideline/position statement sul ginocchio,
+  60 giorni): una voce NUOVA nel perimetro si APRE su PubMed e si verifica; se
+  tocca la sua pratica (menisco, LCA, protesi, cartilagine) diventa scheda 🔴 in
+  cima — è la categoria che gli è sfuggita via Instagram il 19 agosto (consensus
+  americano sul post-operatorio delle suture meniscali): non deve sfuggire mai
+  più. Se non tocca la pratica: 🟡. In entrambi i casi una riga in chat.
+· `polso` (Altmetric: i lavori sul ginocchio più discussi pubblicamente della
+  settimana): sono CANDIDATI per schede o EXTRA — il punteggio di attenzione dice
+  che se ne parla, NON che è vero o importante: si verifica su PubMed via
+  DOI/PMID come qualunque altra cosa, e solo allora si giudica.
+· `preprint` (Europe PMC): MAI schede, mai EXTRA — non hanno passato la
+  revisione. Vivono solo nella Rassegna; se uno è davvero rilevante, una riga in
+  chat come «da riprendere quando esce revisionato».
+
 IL DESTINO DEI VERDETTI — dal 19 agosto raccolta.json contiene anche `destino`: per
 ogni PICK passato (letti dallo storico), chi lo cita su PubMed e quali citanti sono
 NUOVI rispetto alla notte prima. Se un PICK ha citanti nuovi: apri su PubMed gli

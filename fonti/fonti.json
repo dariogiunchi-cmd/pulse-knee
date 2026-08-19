@@ -1,93 +1,101 @@
 {
-  "_leggimi": "Configurazione del raccoglitore notturno (test/raccolta.py, eseguito da .github/workflows/raccolta.yml alle 4.15 UTC). Le fonti qui elencate sono API ufficiali e feed pubblici: niente scraping di piattaforme che lo vietano. Ogni fonte che non risponde viene DICHIARATA nell'esito, mai taciuta.",
-  "aziende_sorvegliate": [
-    "Arthrex",
-    "Smith & Nephew",
-    "Smith+Nephew",
-    "DePuy",
-    "Johnson & Johnson",
-    "Stryker",
-    "Zimmer",
-    "Medacta",
-    "Lima",
-    "Enovis",
-    "DJO",
-    "CONMED",
-    "Geistlich",
-    "Anika"
-  ],
-  "openfda": {
-    "url_prodotto": "https://api.fda.gov/device/recall.json?search=product_description:knee&sort=event_date_initiated:desc&limit=15",
-    "url_enforcement": "https://api.fda.gov/device/enforcement.json?search=product_description:knee&sort=report_date:desc&limit=15"
+ "_leggimi": "Configurazione del raccoglitore notturno (test/raccolta.py, eseguito da .github/workflows/raccolta.yml alle 4.15 UTC). Le fonti qui elencate sono API ufficiali e feed pubblici: niente scraping di piattaforme che lo vietano. Ogni fonte che non risponde viene DICHIARATA nell'esito, mai taciuta.",
+ "aziende_sorvegliate": [
+  "Arthrex",
+  "Smith & Nephew",
+  "Smith+Nephew",
+  "DePuy",
+  "Johnson & Johnson",
+  "Stryker",
+  "Zimmer",
+  "Medacta",
+  "Lima",
+  "Enovis",
+  "DJO",
+  "CONMED",
+  "Geistlich",
+  "Anika"
+ ],
+ "openfda": {
+  "url_prodotto": "https://api.fda.gov/device/recall.json?search=product_description:knee&sort=event_date_initiated:desc&limit=15",
+  "url_enforcement": "https://api.fda.gov/device/enforcement.json?search=product_description:knee&sort=report_date:desc&limit=15"
+ },
+ "swissmedic_scopri": [],
+ "swissmedic_feed": [
+  "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+  "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss"
+ ],
+ "trials_query": [
+  {
+   "nome": "STABILITY 2 (T1a)",
+   "q": "STABILITY 2 anterior cruciate ligament tenodesis"
   },
-  "swissmedic_scopri": [],
-  "swissmedic_feed": [
-    "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-    "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss"
-  ],
-  "trials_query": [
-    {
-      "nome": "STABILITY 2 (T1a)",
-      "q": "STABILITY 2 anterior cruciate ligament tenodesis"
-    },
-    {
-      "nome": "GRASE (innesto)",
-      "q": "GRASE anterior cruciate ligament graft quadriceps"
-    },
-    {
-      "nome": "LET / tenodesi laterale",
-      "q": "\"lateral extra-articular tenodesis\" anterior cruciate"
-    },
-    {
-      "nome": "Innesto quadricipitale",
-      "q": "\"quadriceps tendon\" \"anterior cruciate ligament\" reconstruction"
-    },
-    {
-      "nome": "Radice meniscale",
-      "q": "\"meniscus root\" repair"
-    }
-  ],
-  "crossref_parole": [
-    "knee",
-    "anterior cruciate",
-    "ACL",
-    "meniscus",
-    "meniscal",
-    "patell",
-    "cartilage",
-    "chondral",
-    "tibial osteotomy",
-    "knee arthroplasty"
-  ],
-  "youtube_canali": [
-    {
-      "nome": "Arthrex",
-      "id": "UCdz-AzeXveWr2FICZZastrQ"
-    },
-    {
-      "nome": "ISAKOS",
-      "id": "UCcnFy3MwSpwJWr1iqsIuvKg"
-    },
-    {
-      "nome": "ESSKA Education",
-      "id": "UCNmjfv5jhiXOLA7sWuLMF1Q"
-    },
-    {
-      "nome": "Zimmer Biomet",
-      "id": "UCI2zSmIIqEtm5WSBAPvcRHQ"
-    },
-    {
-      "nome": "DePuy Synthes",
-      "id": "UCpfwqgDTYi-CZw8RgeeqVGQ"
-    },
-    {
-      "nome": "Stryker",
-      "id": "UC2famKRbW3E3kq072ZagSzg"
-    },
-    {
-      "nome": "Smith+Nephew",
-      "id": "UCvLnxUVdVK6CkoxPzhtVXVQ"
-    }
-  ],
-  "youtube_scopri": []
+  {
+   "nome": "GRASE (innesto)",
+   "q": "GRASE anterior cruciate ligament graft quadriceps"
+  },
+  {
+   "nome": "LET / tenodesi laterale",
+   "q": "\"lateral extra-articular tenodesis\" anterior cruciate"
+  },
+  {
+   "nome": "Innesto quadricipitale",
+   "q": "\"quadriceps tendon\" \"anterior cruciate ligament\" reconstruction"
+  },
+  {
+   "nome": "Radice meniscale",
+   "q": "\"meniscus root\" repair"
+  }
+ ],
+ "crossref_parole": [
+  "knee",
+  "anterior cruciate",
+  "ACL",
+  "meniscus",
+  "meniscal",
+  "patell",
+  "cartilage",
+  "chondral",
+  "tibial osteotomy",
+  "knee arthroplasty"
+ ],
+ "youtube_canali": [
+  {
+   "nome": "Arthrex",
+   "id": "UCdz-AzeXveWr2FICZZastrQ"
+  },
+  {
+   "nome": "ISAKOS",
+   "id": "UCcnFy3MwSpwJWr1iqsIuvKg"
+  },
+  {
+   "nome": "ESSKA Education",
+   "id": "UCNmjfv5jhiXOLA7sWuLMF1Q"
+  },
+  {
+   "nome": "Zimmer Biomet",
+   "id": "UCI2zSmIIqEtm5WSBAPvcRHQ"
+  },
+  {
+   "nome": "DePuy Synthes",
+   "id": "UCpfwqgDTYi-CZw8RgeeqVGQ"
+  },
+  {
+   "nome": "Stryker",
+   "id": "UC2famKRbW3E3kq072ZagSzg"
+  },
+  {
+   "nome": "Smith+Nephew",
+   "id": "UCvLnxUVdVK6CkoxPzhtVXVQ"
+  }
+ ],
+ "youtube_scopri": [],
+ "linee_guida_query": "(knee[ti] OR meniscus[ti] OR meniscal[ti] OR \"anterior cruciate\"[ti] OR ACL[ti] OR patellofemoral[ti] OR patellar[ti] OR cartilage[ti] OR \"knee arthroplasty\"[ti] OR \"tibial osteotomy\"[ti]) AND (consensus[ti] OR guideline[ti] OR guidelines[ti] OR recommendation[ti] OR recommendations[ti] OR \"position statement\"[ti] OR \"practice guideline\"[pt] OR \"guideline\"[pt] OR \"consensus development conference\"[pt])",
+ "linee_guida_giorni": 60,
+ "altmetric": {
+  "finestra": "1w",
+  "pagine": 3,
+  "per_pagina": 100
+ },
+ "europepmc_giorni": 30
 }

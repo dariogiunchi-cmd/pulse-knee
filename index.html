@@ -104,6 +104,12 @@
   .muted{font-size:12.5px;color:var(--dim);line-height:1.5}.muted b{color:var(--txt)}
   .copertura{font-size:12.5px;color:var(--dim);line-height:1.5;border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:0 0 10px}
   .rsez{margin:0 0 14px}.rtit{font-size:13.5px;font-weight:700;color:var(--txt);margin:0 0 6px}
+  details.rsez{background:var(--tint2);border-radius:11px;padding:9px 12px;margin:0 0 9px}
+  details.rsez summary.rtit{cursor:pointer;margin:0}
+  details.rsez[open] summary.rtit{margin:0 0 7px}
+  .rsomm{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+  .rchip{font-size:12px;font-weight:600;padding:5px 10px;border-radius:14px;background:var(--tint2);color:var(--dim)}
+  .rchip.rHotC{background:rgba(255,59,48,.14);color:#c62828}
   .rgrp{margin:0 0 8px}.rgt{font-size:12px;font-weight:600;color:var(--dim);margin:2px 0}
   .ritem{font-size:13px;color:var(--txt);line-height:1.45;border:1px solid var(--line);border-radius:10px;padding:8px 11px;margin:0 0 6px;overflow-wrap:anywhere}
   .ritem a{color:inherit}.rmeta{font-size:11.5px;color:var(--dim);margin-top:2px}
@@ -159,6 +165,7 @@
   .tabs{background:#2c2c2e}
   .tabs button.on,.seg button.on,.stabs button,.ib,.hbtn,.fchip,.day{background:#2c2c2e !important;color:#f5f5f7}
   .fchip.on{background:#f5f5f7 !important;color:#111}
+  .rchip.rHotC{color:#ff7a70}
   .btn{background:#2c2c2e;color:#f5f5f7}
   .add input,.srch input,.seg{background:#2c2c2e;color:#f5f5f7}
   .tag{background:#2c2c2e !important;color:#e5e5ea !important}
@@ -887,7 +894,7 @@ function condividiTrasferimento(){if(navigator.share)navigator.share({title:'PUL
    chi ha già visto il benvenuto vede SOLO la riga di novità, una volta. Le funzioni
    sono PURE (stato → html) così i test le collaudano. La guida descrive solo cose
    che esistono davvero: se togli una funzione, togli la sua riga. */
-var GUIDA_V=2,NOVITA='🚗 <b>Modalità auto</b>: il tasto accanto a ▶ apre l’ascolto continuo a tasti grandi — briefing e schede una dopo l’altra, comandi a voce come «prossima», «salva questa», «più veloce». Lo schermo resta acceso finché il pannello è aperto.';
+var GUIDA_V=3,NOVITA='🚗 <b>Modalità auto</b>: il tasto accanto a ▶ apre l’ascolto continuo a tasti grandi, con comandi a voce come «prossima», «salva questa», «più veloce». E la <b>📡 Rassegna</b> ora sorveglia anche 📜 linee guida e consensus nuovi, 📣 i lavori di cui parla la comunità e 🧪 i preprint, con un sommario a colpo d’occhio in testa.';
 function benvenutoHTML(guidav){
  if((guidav||0)>=GUIDA_V)return '';
  if((guidav||0)>0&&NOVITA)return '<div class="wel card"><b>Novità</b>'+NOVITA+
@@ -923,7 +930,7 @@ function guidaHTML(){
   '<details><summary>Le sezioni della pagina Oggi</summary>'+
   '<div>Il <b>lavoro del giorno</b> è la scheda che vale di più. I filtri in alto restringono l’elenco per pallino. «Cosa non torna» sono le tensioni aperte fra la letteratura e la tua pratica, con cosa fare e cosa le chiuderebbe. In fondo: 📖 la <b>seconda pagina</b> (altri lavori veri del giorno, in breve) e 🎲 <b>Sorprendimi</b> (una proposta fuori dai soliti argomenti, mai ripetuta).</div></details>'+
   '<details><summary>Le altre schede</summary><ul>'+
-  '<li><b>📡 Rassegna</b>: richiami di dispositivi, Swissmedic, i trial delle tue tensioni, ritrattazioni, ⚖️ il destino dei tuoi verdetti (chi cita i lavori del giorno passati), i video della tua rete. Ogni fonte muta è dichiarata.</li>'+
+  '<li><b>📡 Rassegna</b>: in testa un sommario a colpo d’occhio, poi le sezioni — richiami di dispositivi, Swissmedic, 📜 linee guida e consensus nuovi, ritrattazioni, ⚖️ il destino dei tuoi verdetti, i trial delle tue tensioni, 📣 i lavori di cui parla la comunità, i video della tua rete, 🧪 i preprint (dichiarati non revisionati). Le sezioni che scottano si aprono da sole; ogni fonte muta è dichiarata.</li>'+
   '<li><b>🗓 Archivio</b>: tutte le mattine passate, con ricerca.</li>'+
   '<li><b>★ Salvati</b>: sopravvivono al ricambio quotidiano, con ricerca.</li>'+
   '<li><b>✉️ Newsletter</b>: fino a 4 lavori scelti con 📹, testo pronto in tre versioni.</li>'+
@@ -1671,11 +1678,32 @@ function renderCopertura(){
    Il file arriva da GitHub Actions alle 4.15: API ufficiali e feed pubblici, ogni
    fonte col suo esito. rassHTML è PURA (dati → html) così i test la collaudano con
    dati sintetici; il fetch è a parte e dichiara quando non riesce. */
-function _rSez(titolo,corpo){return '<div class="rsez"><div class="rtit">'+titolo+'</div>'+corpo+'</div>';}
+/* La Rassegna cresce (9 fonti): per restare SEMPLICE, prima un sommario a colpo
+   d'occhio, poi sezioni a soffietto — aperte da sole SOLO quando c'è qualcosa che
+   scotta (richiamo sorvegliato, ritrattazione colpita, consensus nuovo, citanti
+   nuovi). Il resto si apre con un tocco: rivelazione progressiva, non un muro. */
+function _rSez(titolo,corpo,aperta){return '<details class="rsez"'+(aperta?' open':'')+'><summary class="rtit">'+titolo+'</summary>'+corpo+'</details>';}
 function _rKo(nome,esito){return '<div class="rko">⚠️ '+esc(nome)+': fonte non verificata stanotte ('+esc(esito)+').</div>';}
 function rassHTML(rac){
  if(!rac||!rac.fonti)return '<div class="rko">⚠️ Raccolta non disponibile: il raccoglitore notturno non ha ancora depositato dati.</div>';
  var F=rac.fonti,h='';
+ /* sommario: una riga, i numeri che contano, il rosso solo dove scotta */
+ var _of=F.openfda||{},_vv=[].concat(((_of.dati||{}).richiami)||[],((_of.dati||{}).enforcement)||[]);
+ var _sorv=_vv.filter(function(v){return v.sorvegliata}).length;
+ var _lg=(((F.linee_guida||{}).dati||{}).voci||[]).length;
+ var _col=(((F.ritrattazioni||{}).dati||{}).colpiti||[]).length;
+ var _nuovi=((F.destino||{}).dati||[]).filter(function(d){return (d.nuovi||[]).length}).length;
+ var _po=(((F.polso||{}).dati||{}).voci||[]).length;
+ var _pp=(((F.preprint||{}).dati||{}).voci||[]).length;
+ var _yt=(((F.youtube||{}).dati||{}).video||[]).length;
+ function chip(txt,caldo){return '<span class="rchip'+(caldo?' rHotC':'')+'">'+txt+'</span>';}
+ h+='<div class="rsomm" id="rsomm">'+
+  chip((_sorv?'🔴 ':'')+_vv.length+' richiami',_sorv>0)+
+  chip((_lg?'📜 ':'')+_lg+' linee guida',_lg>0)+
+  chip((_col?'🔴 ':'')+_col+' ritrattazioni sui tuoi DOI',_col>0)+
+  chip((_nuovi?'⚖️ ':'')+_nuovi+' verdetti con citanti nuovi',_nuovi>0)+
+  chip(_po+' nel polso social',false)+chip(_yt+' video',false)+chip(_pp+' preprint',false)+
+  '</div>';
  /* richiami — la categoria più alta della gerarchia */
  var of=F.openfda||{};
  if(of.esito==='ok'){
@@ -1686,7 +1714,7 @@ function rassHTML(rac){
      '<b>'+esc(v.recalling_firm||'ditta non riportata')+'</b> — '+esc((v.product_description||'').slice(0,140))+
      '<div class="rmeta">'+esc(v.event_date_initiated||v.report_date||'')+' · '+esc(v.recall_status||'')+'</div></div>';
    }).join(''):'<div class="muted">Nessun richiamo «knee» negli ultimi risultati openFDA.</div>';
-  h+=_rSez('🩺 Richiami di dispositivi (openFDA'+(sv.length?' — '+sv.length+' su aziende sorvegliate':'')+')',corpo);
+  h+=_rSez('🩺 Richiami di dispositivi (openFDA'+(sv.length?' — '+sv.length+' su aziende sorvegliate':'')+')',corpo,sv.length>0);
  }else h+=_rKo('openFDA',of.esito||'assente');
  var sm=F.swissmedic||{};
  if(sm.esito==='ok'&&sm.dati&&(sm.dati.voci||[]).length){
@@ -1694,6 +1722,17 @@ function rassHTML(rac){
    return '<div class="ritem"><a href="'+esc(v.link||'#')+'" target="_blank" rel="noopener">'+esc(v.titolo||'')+'</a><div class="rmeta">'+esc(v.data||'')+'</div></div>';}).join(''));
  }else if(sm.esito==='ok'){h+=_rKo('Swissmedic',(sm.dati&&sm.dati.nota)||'nessuna voce');}
  else h+=_rKo('Swissmedic',sm.esito||'assente');
+ /* linee guida e consensus — il segnale che non deve MAI passare inosservato */
+ var lg=F.linee_guida||{};
+ if(lg.esito==='ok'&&lg.dati){
+  var lv=lg.dati.voci||[];
+  h+=_rSez('📜 Linee guida e consensus (PubMed, '+(lg.dati.finestra_giorni||60)+' giorni)',
+   (lv.length?lv.map(function(v){
+     return '<div class="ritem rHot">📜 <b>'+esc((v.titolo||'').slice(0,150))+'</b>'+
+      '<div class="rmeta">'+esc(v.rivista||'rivista non riportata')+' · '+esc(v.data||'')+
+      ' · <a href="https://pubmed.ncbi.nlm.nih.gov/'+esc(v.pmid||'')+'/" target="_blank" rel="noopener">PubMed ↗</a></div></div>';
+    }).join(''):'<div class="muted">Nessun consensus o linea guida nuova sul ginocchio nella finestra.</div>'),lv.length>0);
+ }else h+=_rKo('Linee guida (PubMed)',lg.esito||'assente');
  /* trial delle tensioni */
  var tr=F.trials||{};
  if(tr.esito==='ok'&&tr.dati){
@@ -1710,7 +1749,8 @@ function rassHTML(rac){
   h+=_rSez('⚠️ Ritrattazioni (Crossref, ultimi 120 giorni)',
    (col.length?col.map(function(c){return '<div class="ritem rHot">🔴 Un DOI citato da PULSE risulta colpito: '+esc((c.doi_citato||[]).join(', '))+' ('+esc(c.tipo)+')</div>';}).join('')
     :'<div class="muted">Nessuno dei '+(rt.dati.doi_citati_controllati||0)+' DOI citati da PULSE risulta ritirato.</div>')+
-   ((rt.dati.nel_perimetro||[]).slice(0,5).map(function(c){return '<div class="ritem">⚪ '+esc(c.tipo)+' nel perimetro ginocchio: '+esc((c.titolo||'').slice(0,120))+'</div>';}).join('')));
+   ((rt.dati.nel_perimetro||[]).slice(0,5).map(function(c){return '<div class="ritem">⚪ '+esc(c.tipo)+' nel perimetro ginocchio: '+esc((c.titolo||'').slice(0,120))+'</div>';}).join('')),
+   (rt.dati.colpiti||[]).length>0);
  }else h+=_rKo('Crossref/Retraction Watch',rt.esito||'assente');
  /* il destino dei verdetti — come la letteratura successiva tratta i PICK passati */
  var ds=F.destino||{};
@@ -1723,8 +1763,20 @@ function rassHTML(rac){
      (nn.length?' · nuovi: '+nn.slice(0,4).map(function(p){return '<a href="https://pubmed.ncbi.nlm.nih.gov/'+esc(p)+'/" target="_blank" rel="noopener">PMID '+esc(p)+' ↗</a>'}).join(' · '):'')+
      '</div></div>';
    }).join(''):'<div class="muted">Nessun verdetto passato nel registro.</div>';
-  h+=_rSez('⚖️ Il destino dei tuoi verdetti'+(conNuovi.length?' — '+conNuovi.length+' con citanti nuovi':''),corpoD);
+  h+=_rSez('⚖️ Il destino dei tuoi verdetti'+(conNuovi.length?' — '+conNuovi.length+' con citanti nuovi':''),corpoD,conNuovi.length>0);
  }else h+=_rKo('Destino dei verdetti (PubMed cited-in)',ds.esito||'assente');
+ /* il polso social della letteratura */
+ var po=F.polso||{};
+ if(po.esito==='ok'&&po.dati){
+  var pv=po.dati.voci||[];
+  h+=_rSez('📣 Di cosa parla la comunità (Altmetric, ultima settimana)',
+   (pv.length?pv.map(function(v){
+     return '<div class="ritem">'+(v.url?'<a href="'+esc(v.url)+'" target="_blank" rel="noopener">':'')+esc((v.titolo||'').slice(0,140))+(v.url?'</a>':'')+
+      '<div class="rmeta">'+esc(v.rivista||'')+' · attenzione '+esc(String(v.punteggio||0))+
+      ' · '+esc(String(v.post_x||0))+' post pubblici · '+esc(String(v.notizie||0))+' testate</div></div>';
+    }).join('')+'<div class="rmeta">Menzioni PUBBLICHE aggregate (X, notizie, blog): dice quali lavori circolano, non chi li posta. Instagram non è tracciabile da alcuna API.</div>'
+    :'<div class="muted">Nessun lavoro sul ginocchio fra i più discussi della settimana.</div>'));
+ }else h+=_rKo('Polso social (Altmetric)',po.esito||'assente');
  /* video della rete */
  var yt=F.youtube||{};
  if(yt.esito==='ok'&&yt.dati&&(yt.dati.video||[]).length){
@@ -1732,6 +1784,17 @@ function rassHTML(rac){
    return '<div class="ritem"><a href="'+esc(v.link||'#')+'" target="_blank" rel="noopener">'+esc(v.titolo||'')+'</a><div class="rmeta">'+esc(v.canale||'')+' · '+esc(v.data||'')+'</div></div>';}).join(''));
  }else if(yt.esito==='ok'){h+=_rSez('🎥 Video della tua rete','<div class="muted">Nessun video nuovo dai canali sorvegliati negli ultimi 14 giorni.</div>');}
  else h+=_rKo('YouTube (feed ufficiali)',yt.esito||'assente');
+ /* preprint: la letteratura prima della revisione — segnalata, mai promossa */
+ var pp=F.preprint||{};
+ if(pp.esito==='ok'&&pp.dati){
+  var pv2=pp.dati.voci||[];
+  h+=_rSez('🧪 Preprint sul ginocchio (Europe PMC, '+(pp.dati.finestra_giorni||30)+' giorni) — NON revisionati',
+   (pv2.length?pv2.slice(0,8).map(function(v){
+     return '<div class="ritem">'+(v.url?'<a href="'+esc(v.url)+'" target="_blank" rel="noopener">':'')+esc((v.titolo||'').slice(0,140))+(v.url?'</a>':'')+
+      '<div class="rmeta">'+esc(v.dove||'archivio preprint')+' · '+esc(v.data||'')+'</div></div>';
+    }).join(''):'<div class="muted">Nessun preprint sul ginocchio nella finestra.</div>')+
+   '<div class="rmeta">Non hanno passato la revisione: si leggono con questo peso, non diventano mai schede.</div>');
+ }else h+=_rKo('Preprint (Europe PMC)',pp.esito||'assente');
  h+='<div class="rmeta" style="margin-top:10px">Raccolta del '+esc(rac.generato||'—')+' · API ufficiali e feed pubblici · le fonti mute sono dichiarate, mai nascoste.</div>';
  return h;}
 /* LA SECONDA PAGINA — il giornale continua per chi ha tempo. EXTRA sono i lavori

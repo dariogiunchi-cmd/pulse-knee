@@ -403,3 +403,32 @@ repeat-back), la voce continua di ChatGPT.
 Viaggio da utente: **39 passi verdi**. Cancello: **583 controlli, due volte**.
 Nota operativa: i monitor CI vanno fatti col tool GitHub — il proxy del sandbox
 blocca api.github.com non autenticato (curl e urllib muti).
+
+### 2026-08-19, sera (3) — le fonti nuove e la Rassegna che si legge in tre secondi
+Mandato: «intuitività e semplicità cardini; fonti e database nuovi; voglio che
+PULSE scopra ciò che oggi scopro dai social» — esempio concreto: un consensus
+americano sul post-operatorio delle suture meniscali, visto su Instagram.
+- **📜 Linee guida e consensus** (PubMed, 60 giorni): rete per TITOLO oltre che
+  per publication type (i consensus escono spesso tipizzati come articoli
+  semplici). Regola nel mandato: consensus nuovo che tocca la sua pratica =
+  scheda 🔴 in cima. È la fonte che avrebbe intercettato il caso Instagram.
+- **📣 Il polso social (Altmetric)**: i lavori sul ginocchio più discussi
+  pubblicamente della settimana (X, notizie, blog), filtrati sul perimetro. La
+  via LEGALE al segnale «i colleghi ne parlano»: si guardano i lavori che
+  circolano, non i profili. Dichiarato nell'app: Instagram non è tracciabile da
+  alcuna API — quel canale resta alla rassegna dal Mac (claude__15). Il
+  punteggio di attenzione non è un criterio di verità: i candidati passano da
+  PubMed come tutto il resto.
+- **🧪 Preprint (Europe PMC, 30 giorni)**: la letteratura prima della revisione.
+  MAI schede, mai EXTRA; vivono solo nella Rassegna con l'avvertenza scritta.
+- **Rassegna ridisegnata** (9 fonti ormai): sommario a colpo d'occhio in testa
+  (conteggi, rosso solo dove scotta) + sezioni a soffietto — si aprono da sole
+  SOLO richiami sorvegliati, ritrattazioni colpite, consensus nuovi e verdetti
+  con citanti nuovi. Rivelazione progressiva, non un muro di testo.
+- GUIDA_V=3 (novità in una riga per chi ha già visto il benvenuto); guida e
+  mandato aggiornati. Il cancello ha intercettato in giornata un index non
+  rigenerato dopo l'ultima modifica al modello — ha fatto esattamente il suo
+  lavoro. Sentinelle nuove collaudate rompendole (consensus che non si apre da
+  solo; preprint senza avvertenza → rossi attesi, ottenuti).
+Viaggio da utente: **41 passi verdi**. Cancello: **590 controlli, due volte**.
+Le fonti nuove partono dalla prossima raccolta notturna (o dal dispatch).
