@@ -92,6 +92,8 @@
   .ritem a{color:inherit}.rmeta{font-size:11.5px;color:var(--dim);margin-top:2px}
   .ritem.rHot{border-color:rgba(255,59,48,.45)}
   .rko{font-size:12.5px;color:var(--dim);border:1px dashed var(--line);border-radius:10px;padding:8px 11px;margin:0 0 8px}
+  .spBtn{display:block;width:100%;margin:8px 0;text-align:center}
+  .spEspl{cursor:pointer;text-decoration:underline;text-underline-offset:2px}
   .tcong{display:flex;gap:10px;align-items:flex-start}.tcong .tt .h{font-size:13px;font-weight:600}.tcong .tt .v{font-size:11.5px;color:var(--dim);margin-top:2px}
   .lab{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin:2px 0 7px}
   .tag{display:inline-flex;align-items:center;gap:6px;background:var(--tint);color:#3a3a3c;font-size:12px;font-weight:500;padding:5px 11px;border-radius:13px;margin:3px 5px 3px 0}.tag b{color:var(--dim2);font-weight:700;cursor:pointer;font-size:14px}
@@ -331,6 +333,7 @@
         <div class="tens2"><div class="tintro">Punti in cui <b>tu fai una cosa</b> e la letteratura <b>ne ha studiata un&rsquo;altra</b>. Non sono errori: sono zone in cui le prove non ti coprono. Tocca per vedere che cosa puoi farci.</div><div id="tensbox"></div></div>
         <div class="sl r-res"><span class="ic">🔬</span>Ricerca scientifica<span class="n" id="resn"></span></div>
         <div class="filters"><button class="fchip on" onclick="setFilter('all',this)">Tutti</button><button class="fchip" onclick="setFilter('orange',this)">🟠 La mia pratica</button><button class="fchip" onclick="setFilter('green',this)">🟢 Mie tecniche</button><button class="fchip" onclick="setFilter('gray',this)">⚪ Contesto</button></div><div class="card" id="researchList"></div>
+        <div id="secpag"></div>
       </div>
       <div>
         <div id="latobox"></div>
@@ -482,7 +485,7 @@ var PREF_SOC=['ESSKA','ISAKOS','AOSSM','AAOS','SFA','SOFCOT','AGA','BASK','SIAGA
 var PREF_AZ=['DePuy Synthes','Zimmer Biomet','Smith & Nephew','Arthrex','Stryker','Medacta','Lima','aziende innovative e asiatiche'];
 var DEF={saved:[],savedItems:[],votes:{},edits:{},weekly:[],blogUrl:'https://www.dariogiunchi.ch/blog',
  journals:PREF_RIVISTE.slice(),kols:PREF_KOL.slice(),societies:PREF_SOC.slice(),companies:PREF_AZ.slice(),
- prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,suggDone:{},topics:[]};
+ prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,suggDone:{},topics:[],scoviste:[]};
 var S=load();function load(){var salvato=null,s;try{var r=localStorage.getItem('pulse4');if(r)salvato=JSON.parse(r)}catch(e){}s=salvato?Object.assign({},DEF,salvato):Object.assign({},DEF);/* La versione va letta da ciò che è SALVATO, non dal risultato della fusione:    DEF porta sempre PREFV e maschererebbe il valore vecchio. */if(salvato&&(salvato.prefv||0)<PREFV){s.journals=unisci(salvato.journals,PREF_RIVISTE);s.kols=unisci(salvato.kols,PREF_KOL);s.societies=unisci(salvato.societies,PREF_SOC);s.companies=unisci(salvato.companies,PREF_AZ);}s.prefv=PREFV;s.suggDone=s.suggDone||{};if(!s.companies||!s.companies.length)s.companies=PREF_AZ.slice();return s;}
 function unisci(a,b){a=(a||[]).slice();b.forEach(function(x){if(a.indexOf(x)<0)a.push(x)});return a;}
 function save(){try{localStorage.setItem('pulse4',JSON.stringify(S))}catch(e){}}
@@ -500,7 +503,8 @@ function itemHTML(a){if(!a)return '';var sv=isSaved(a.n),vt=S.votes[a.n];var has
     (hasSoc?'<span class="ib soc lbl" role="button" tabindex="0" aria-label="Genera contenuti social per questo lavoro" onclick="openSocial(event,'+a.n+')"><span class="t">✎ Social</span></span>':'')+
     '<span class="ib vid lbl'+(inWeek(a.n)?' on':'')+'" role="button" tabindex="0" aria-label="Scegli questo lavoro per il video della settimana" onclick="pickWeek(event,'+a.n+')"><span class="t">📹 Video</span></span>'+
     '<span class="ib lbl" onclick="toggle('+a.n+')"><span class="t">Dettagli</span></span></div>'+
-  '<div class="det">'+fld('Autori',a.authors)+fld('Rivista',a.journal)+fld('Disegno',a.design)+fld('Popolazione',a.pop)+fld('Risultati',a.results)+fld('Conclusione degli autori',a.concl)+fld('Limiti (da revisore)',a.limits)+fld('Per te',a.perte)+muteHTML(a.n)+linksHTML(a.n)+
+  '<div class="det">'+fld('Autori',a.authors)+fld('Rivista',a.journal)+fld('Disegno',a.design)+fld('Popolazione',a.pop)+fld('Risultati',a.results)+fld('Conclusione degli autori',a.concl)+fld('Limiti (da revisore)',a.limits)+fld('Per te',a.perte)+muteHTML(a.n)+
+    (spAffini(a.n).length?'<div class="fld"><div class="k">Nella seconda pagina</div><div class="val"><span class="spEspl" onclick="esplora(event,'+a.n+')">🔍 '+spAffini(a.n).length+' brevi sullo stesso tema — esplora →</span></div></div>':'')+linksHTML(a.n)+
     '<div class="detlinks"><a class="btn pri" href="'+pm(a)+'" target="_blank">PubMed ↗</a><a class="btn" href="'+di(a)+'" target="_blank">Rivista (DOI) ↗</a>'+(hasSoc?'<button class="btn soc" onclick="openSocial(event,'+a.n+')">✎ Contenuti social</button>':'')+'</div></div></div>';}
 function fld(k,v){return '<div class="fld"><div class="k">'+k+'</div><div class="val">'+esc(v)+'</div></div>'}
 function render(){
@@ -1212,6 +1216,62 @@ function rassHTML(rac){
  else h+=_rKo('YouTube (feed ufficiali)',yt.esito||'assente');
  h+='<div class="rmeta" style="margin-top:10px">Raccolta del '+esc(rac.generato||'—')+' · API ufficiali e feed pubblici · le fonti mute sono dichiarate, mai nascoste.</div>';
  return h;}
+/* LA SECONDA PAGINA — il giornale continua per chi ha tempo. EXTRA sono i lavori
+   veri del giorno rimasti fuori dalle schede (verificati come le schede, senza
+   numeri); SCOPERTE sono le deviazioni «fuori dal solito» per il tasto Sorprendimi.
+   Funzioni PURE (dati → esito) così i test le collaudano con materiale sintetico;
+   le viste di Sorprendimi si ricordano PER TITOLO (mai per posizione). */
+var spMostrati=0,spOrdine=null;
+function spBreveHTML(b){return '<div class="ritem"><span class="dot '+esc(b.dot||'gray')+'" style="display:inline-block;vertical-align:middle;margin-right:6px"></span>'+
+ '<b>'+esc(b.j||'')+'</b> — '+esc(b.h||'')+'<div class="rmeta">'+esc(b.v||'')+' · <a href="https://pubmed.ncbi.nlm.nih.gov/'+esc(b.pmid||'')+'/" target="_blank" rel="noopener">PubMed ↗</a></div></div>';}
+function spLista(extra,quanti,ordine){
+ var l=(extra||[]).slice();
+ if(ordine&&ordine.length){var p={};ordine.forEach(function(x,i){p[x]=i});
+  l.sort(function(a,b){return (p[a.pmid]!==undefined?p[a.pmid]:99)-(p[b.pmid]!==undefined?p[b.pmid]:99)});}
+ return l.slice(0,quanti);}
+function spTemiDi(n){
+ var kw=((NLB[n]||{}).kw||'')+' '+((A[n]||{}).h||'');
+ return kw.toLowerCase().split(/[^a-zà-ù]+/).filter(function(w){return w.length>4});}
+function spAffini(n){
+ var mie=spTemiDi(n);
+ return (typeof EXTRA!=='undefined'?EXTRA:[]).filter(function(b){
+  var suoi=((b.temi||[]).join(' ')+' '+(b.h||'')).toLowerCase();
+  return mie.some(function(w){return suoi.indexOf(w)>=0});}).map(function(b){return b.pmid});}
+function spSorpresa(scoperte,viste){
+ if(!scoperte||!scoperte.length)return null;
+ var nuove=scoperte.filter(function(s){return (viste||[]).indexOf(s.t)<0});
+ return nuove.length?nuove[0]:scoperte[(viste||[]).length%scoperte.length];}
+function renderSeconda(){
+ var el=document.getElementById('secpag');if(!el)return;
+ var ex=(typeof EXTRA!=='undefined'?EXTRA:[])||[];
+ if(!ex.length&&!(typeof SCOPERTE!=='undefined'&&SCOPERTE.length)){el.innerHTML='';return;}
+ var h='<div class="sl r-res" style="margin-top:14px"><span class="ic">📖</span>La seconda pagina<span class="n">'+ex.length+' brevi</span></div>';
+ if(spMostrati===0){
+  h+='<button class="btn spBtn" onclick="spApri()" aria-label="Mostra altri lavori del giorno in forma breve">📖 Continua a leggere — altri '+ex.length+' lavori di oggi</button>';
+ }else{
+  h+='<div class="card" style="padding:10px">'+spLista(ex,spMostrati,spOrdine).map(spBreveHTML).join('')+'</div>';
+  if(spMostrati<ex.length)h+='<button class="btn spBtn" onclick="spAncora()" aria-label="Mostra altri lavori brevi">Ancora ↓ ('+(ex.length-spMostrati)+' rimasti)</button>';
+  else h+='<div class="rmeta" style="margin:6px 2px">Fine della seconda pagina: il resto della finestra non superava il perimetro o la soglia di interesse.</div>';
+ }
+ if(typeof SCOPERTE!=='undefined'&&SCOPERTE.length){
+  h+='<button class="btn spBtn" onclick="sorprendimi()" aria-label="Proponi qualcosa fuori dai miei soliti argomenti">🎲 Sorprendimi — qualcosa di diverso</button><div id="spsorp"></div>';
+ }
+ el.innerHTML=h;}
+function spApri(){spMostrati=5;spOrdine=null;renderSeconda();}
+function spAncora(){spMostrati+=5;renderSeconda();}
+function sorprendimi(){
+ var s=spSorpresa(typeof SCOPERTE!=='undefined'?SCOPERTE:[],S.scoviste||[]);
+ if(!s)return;
+ S.scoviste=unisci(S.scoviste||[],[s.t]);save();
+ var el=document.getElementById('spsorp');if(!el)return;
+ el.innerHTML='<div class="ritem" style="border-style:dashed"><b>✦ '+esc(s.t)+'</b><div class="rmeta" style="margin-top:4px">'+esc(s.v||'')+'</div>'+
+  '<div class="rmeta"><a href="https://pubmed.ncbi.nlm.nih.gov/'+esc(s.pmid||'')+'/" target="_blank" rel="noopener">PubMed ↗</a> · DOI '+esc(s.doi||'')+'</div></div>';
+ renderSeconda();var e2=document.getElementById('spsorp');if(e2)e2.innerHTML=el.innerHTML;}
+function esplora(ev,n){
+ if(ev)ev.stopPropagation();
+ spOrdine=spAffini(n);spMostrati=Math.max(spMostrati,Math.min(5,(spOrdine||[]).length||5));
+ renderSeconda();
+ var el=document.getElementById('secpag');if(el&&el.scrollIntoView)el.scrollIntoView({behavior:'smooth'});}
 function apriRassegna(){
  var el=document.getElementById('rassbox');if(!el)return;
  el.innerHTML='<div class="muted">Carico la rassegna…</div>';
@@ -1222,6 +1282,7 @@ function apriRassegna(){
 
 renderVerdict();
 renderCopertura();
+renderSeconda();
 renderPick();
 renderLato();
 renderTens();

@@ -1,6 +1,6 @@
 # PULSE — il cervello
 
-*Indice rigenerato il 2026-08-18.*
+*Indice rigenerato il 2026-08-19.*
 
 Questi file sono la **memoria** del sistema: chi è il Dr. Giunchi, che cosa opera, quali
 lavori sono già stati visti, quali tensioni restano aperte, come si scrivono le schede e
@@ -20,7 +20,7 @@ controllo. In questo aggiornamento: **0 sostituzioni**.
 La pubblicazione ordinaria non richiede più alcun token: la sessione Claude Code spinge
 dal proprio accesso autorizzato. Il token GitHub resta nel Progetto come via di riserva.
 
-## Documenti (16, 140 KB in tutto)
+## Documenti (16, 142 KB in tutto)
 
 | File | Peso | Impronta |
 |---|---|---|
@@ -34,11 +34,11 @@ dal proprio accesso autorizzato. Il token GitHub resta nel Progetto come via di 
 | `14-standard-di-cura.md` | 3.2 KB | `d6d91dc31cf5` |
 | `claude__07-preferenze.md` | 9.3 KB | `764ff5730906` |
 | `claude__08-archivio.md` | 0.4 KB | `aba6dc9d105b` |
-| `claude__09-storico.md` | 24.5 KB | `fc4354384b5f` |
+| `claude__09-storico.md` | 26.0 KB | `622870b65be3` |
 | `claude__10-deploy.md` | 8.5 KB | `96b10a23c26e` |
 | `claude__11-qualita.md` | 23.9 KB | `4f5e2d22760c` |
 | `claude__12-distribuzione.md` | 5.1 KB | `53733f2ec633` |
-| `claude__13-attivita.md` | 8.9 KB | `cdeb5c013635` |
+| `claude__13-attivita.md` | 10.3 KB | `3c3c2531c658` |
 | `claude__15-rassegna-social.md` | 3.3 KB | `249c2a54704b` |
 
 L'impronta è il SHA-256 abbreviato: due copie con la stessa impronta sono identiche

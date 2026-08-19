@@ -32,9 +32,14 @@ def var(nome, default=None):
     return m.group(1).strip() if m else default
 
 # ------------------------------------------------------------ i dati del giorno
-pmid  = re.findall(r"pmid:'(\d+)'", h)
-doi   = re.findall(r"doi:'([^']+)'", h)
-narts = len(re.findall(r"\{n:\d+,mono:", h))
+# PMID e DOI si estraggono dal SOLO blocco ARTICLES: dal 18 agosto anche la seconda
+# pagina (EXTRA/SCOPERTE) porta pmid, e contarli qui gonfierebbe i conteggi delle
+# schede — l'errore è stato commesso e intercettato dal cancello il giorno stesso.
+_blocco_art = re.search(r'var ARTICLES=(\[.*?\]);', h, re.S)
+_art = _blocco_art.group(1) if _blocco_art else h
+pmid  = re.findall(r"pmid:'(\d+)'", _art)
+doi   = re.findall(r"doi:'([^']+)'", _art)
+narts = len(re.findall(r"\{n:\d+,mono:", _art))
 
 chk("ci sono schede", narts > 0, narts)
 chk("ogni scheda ha un PMID", len(pmid) == narts, (len(pmid), narts))
@@ -123,6 +128,28 @@ for nome in ['LINKS', 'DUELS']:
     orf = sorted({r for r in rif if r} - numeri)
     chk(f"«{nome}» non punta a schede inesistenti", not orf, orf[:5])
 
+# --- la seconda pagina risponde alle stesse leggi delle schede -------------------
+_m_ex = re.search(r'var EXTRA=(\[.*?\]);', h, re.S)
+_m_sc = re.search(r'var SCOPERTE=(\[.*?\]);', h, re.S)
+if _m_ex and _m_sc:
+    _exp = re.findall(r"pmid:'(\d+)'", _m_ex.group(1))
+    _scp = re.findall(r"pmid:'(\d+)'", _m_sc.group(1))
+    _tutti2 = _exp + _scp
+    chk("seconda pagina: PMID unici", len(_tutti2) == len(set(_tutti2)),
+        [x for x in _tutti2 if _tutti2.count(x) > 1][:3])
+    chk("seconda pagina: nessun PMID già usato come scheda oggi",
+        not (set(_tutti2) & set(pmid)), sorted(set(_tutti2) & set(pmid))[:3])
+    _malx = [x for x in _tutti2 if not (7 <= len(x) <= 9)]
+    chk("seconda pagina: PMID di forma plausibile", not _malx, _malx[:3])
+    # niente numeri nei brevi: un numero esige la sua incertezza, e il breve
+    # non ha lo spazio per darla. Percentuali e p-value sono il segnale.
+    _testi = re.findall(r"[hv]:\"([^\"]*)\"", _m_ex.group(1))
+    _conNum = [t[:40] for t in _testi if '%' in t or re.search(r'\bp\s*[=<]', t)]
+    chk("i brevi non riportano risultati numerici (li darebbe senza incertezza)",
+        not _conNum, _conNum[:2])
+else:
+    print("⏭️  seconda pagina — assente in questo file (versione precedente al 18 agosto).")
+
 # --- nessun lavoro riproposto: i PMID di oggi non devono comparire nei giorni passati.
 # «Non riproporre due volte lo stesso lavoro» era disciplina della sessione (03-memoria);
 # da qui diventa un controllo. Fonte: lo storico nel repository. Le sezioni con la data
@@ -139,6 +166,9 @@ if os.path.exists(_storico):
             _passati.update(re.findall(r'PMID (\d{7,9})', _sez))
     _doppi = sorted(set(pmid) & _passati)
     chk("nessuna scheda già proposta nei giorni passati (storico)", not _doppi, _doppi[:5])
+    if _m_ex and _m_sc:
+        _dop2 = sorted(set(_tutti2) & _passati)
+        chk("nessun breve che sia stato una scheda dei giorni passati", not _dop2, _dop2[:5])
 else:
     print("⏭️  dedup con lo storico — saltato: cervello/claude__09-storico.md non trovato "
           "(verifica di un file fuori dal repository).")
