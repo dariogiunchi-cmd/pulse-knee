@@ -21,6 +21,12 @@
   .mono{width:36px;height:36px;border-radius:9px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:9px;line-height:1;box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 1px 2px rgba(0,0,0,.14)}
   .m-kssta{background:linear-gradient(160deg,#2a93ad,#1d6b7e)}.m-ojsm{background:linear-gradient(160deg,#37a457,#22823f)}.m-arth{background:linear-gradient(160deg,#d33a46,#a5222d)}.m-knee{background:linear-gradient(160deg,#c8781f,#a05a12)}.m-jeo{background:linear-gradient(160deg,#7d5bc6,#5c3fa6)}.m-jrs{background:linear-gradient(160deg,#17909e,#0d6b77)}.m-gray{background:linear-gradient(160deg,#8b9096,#6b7178)}.m-npj{background:linear-gradient(160deg,#3a3f45,#23272c)}.m-oac{background:linear-gradient(160deg,#6f9a4e,#516f39)}
   .top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .wel{border:1.5px solid var(--acc,#2b6cb0);border-radius:14px;padding:14px;margin:0 0 14px;font-size:14px;line-height:1.55}
+  .wel > b{display:block;margin-bottom:6px;font-size:15px}
+  .gvx{padding:14px 16px;overflow:auto;font-size:14px;line-height:1.55}
+  .gvx details{margin:0 0 8px;background:var(--tint2);border-radius:11px;padding:9px 12px}
+  .gvx summary{font-weight:600;cursor:pointer}
+  .gvx ul{margin:7px 0 2px;padding-left:19px}.gvx li{margin:3px 0}
   .brand{font-size:20px;font-weight:700;letter-spacing:-.03em}.brand span{color:var(--dim2);font-weight:600}
   .date{color:var(--dim);font-size:13px;width:100%;order:5}@media(min-width:560px){.date{width:auto;order:0}}
   .kpi{font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px;background:#fff;box-shadow:var(--sh);color:var(--dim);display:flex;gap:5px;align-items:center}.kpi b{color:var(--txt)}.kpi.v{color:#248a3d}
@@ -308,7 +314,9 @@
     <span class="brand">PULSE<span> · knee</span></span>
     <div style="display:flex;gap:6px;margin-left:auto" id="kpis"></div>
     <span class="date" id="datalunga"></span>
+    <button class="hbtn" onclick="apriGuida()" aria-label="Come funziona PULSE: la guida">❓</button>
   </div>
+  <div id="welbox"></div>
   <div class="audiobar">
     <button class="play" onclick="speakBrief()" id="playbtn" aria-label="Ascolta il riassunto del giorno">▶</button>
     <button class="play" onclick="toggleConversazione()" id="micbtn" aria-label="Parla con PULSE a voce: comandi come apri la tre, seconda pagina, sorprendimi" style="display:none">🎙</button>
@@ -389,6 +397,9 @@
     </div>
     <div class="sec"><h2>🔔 Promemoria</h2><div class="muted">Il briefing viene preparato ogni mattina alle 7 (ora svizzera) e l'avviso ti arriva dall'app Claude, <b>se hai le notifiche attive per quella app</b>. Qui sotto puoi attivare anche gli avvisi del browser: su iPhone funzionano solo se hai aggiunto PULSE alla schermata Home e apri l'app da lì.</div><div class="add" style="margin-top:10px"><button onclick="askNotif()">🔔 Attiva avvisi</button></div><div class="preview" id="notiflbl"></div></div>
     <div class="sec"><h2>🗄 Versioni precedenti</h2><div class="muted">Ogni giorno il PULSE viene salvato così com&rsquo;era. Restano tutti i giorni degli ultimi trenta e il primo di ogni mese, per sempre.</div><div class="add" style="margin-top:10px"><a class="btn" href="versioni/" style="text-decoration:none;display:inline-flex;align-items:center">🗄 Sfoglia le versioni</a></div></div>
+    <div class="sec"><h2>👁 Lettura</h2><div class="muted">La dimensione del testo di tutta l'app. La scelta resta su questo dispositivo.</div>
+      <div class="filters" id="testochips" style="margin-top:9px"><button class="fchip" onclick="setTesto(1,this)">Normale</button><button class="fchip" onclick="setTesto(1.15,this)">Grande</button><button class="fchip" onclick="setTesto(1.3,this)">Molto grande</button></div>
+      <div class="add" style="margin-top:12px"><button class="btn" onclick="apriGuida()" aria-label="Apri la guida che spiega come funziona PULSE">📖 Come funziona PULSE</button></div></div>
     <div class="sec"><h2>📲 Stesso PULSE su un altro dispositivo</h2><div class="muted">PULSE non ha un server: quello che fai su un dispositivo resta lì. Se usi anche il computer, porta i tuoi dati con un link — le due copie si <b>fondono</b>, non si sovrascrivono, quindi non perdi nulla da nessuna delle due parti.</div><div id="syncbox" style="margin-top:10px"></div></div>
     <div class="sec"><h2>♻︎ I tuoi dati</h2><div class="muted">Salvati, voti, preferenze, lavori scelti per la distribuzione e testi che hai adattato vivono <b>solo in questo browser</b>, su questo dispositivo. Non sono su nessun server e non si sincronizzano con altri dispositivi. Se cancelli i dati del sito, si perdono: per questo conviene tenere PULSE nella schermata Home e non cancellare i dati di Safari o Chrome per questo indirizzo. Le schede e i contenuti di ogni giorno restano invece sempre recuperabili dalle versioni precedenti.</div><div class="add" style="margin-top:10px"><button onclick="resetAll()" style="background:#ff3b30">Azzera tutto</button></div></div>
   </div>
@@ -396,6 +407,12 @@
 </div>
 
 <!-- SOCIAL SHEET -->
+<div class="ov" id="gvov" onclick="if(event.target===this)chiudiGuida()">
+  <div class="sheet">
+    <div class="hd"><div class="tt"><h3>Come funziona PULSE</h3><small>tutto quello che vedi, spiegato</small></div><button class="close" onclick="chiudiGuida()" aria-label="Chiudi la guida">✕</button></div>
+    <div class="gvx" id="gvbody"></div>
+  </div>
+</div>
 <div class="ov" id="ov" onclick="if(event.target===this)closeSocial()">
   <div class="sheet">
     <div class="hd"><div class="tt"><h3 id="shTitle"></h3><small id="shSub"></small></div><button class="close" onclick="closeSocial()">✕</button></div>
@@ -486,7 +503,7 @@ var PREF_SOC=['ESSKA','ISAKOS','AOSSM','AAOS','SFA','SOFCOT','AGA','BASK','SIAGA
 var PREF_AZ=['DePuy Synthes','Zimmer Biomet','Smith & Nephew','Arthrex','Stryker','Medacta','Lima','aziende innovative e asiatiche'];
 var DEF={saved:[],savedItems:[],votes:{},edits:{},weekly:[],blogUrl:'https://www.dariogiunchi.ch/blog',
  journals:PREF_RIVISTE.slice(),kols:PREF_KOL.slice(),societies:PREF_SOC.slice(),companies:PREF_AZ.slice(),
- prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,suggDone:{},topics:[],scoviste:[],voce:''};
+ prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,suggDone:{},topics:[],scoviste:[],voce:'',guidav:0,testo:1};
 var S=load();function load(){var salvato=null,s;try{var r=localStorage.getItem('pulse4');if(r)salvato=JSON.parse(r)}catch(e){}s=salvato?Object.assign({},DEF,salvato):Object.assign({},DEF);/* La versione va letta da ciò che è SALVATO, non dal risultato della fusione:    DEF porta sempre PREFV e maschererebbe il valore vecchio. */if(salvato&&(salvato.prefv||0)<PREFV){s.journals=unisci(salvato.journals,PREF_RIVISTE);s.kols=unisci(salvato.kols,PREF_KOL);s.societies=unisci(salvato.societies,PREF_SOC);s.companies=unisci(salvato.companies,PREF_AZ);}s.prefv=PREFV;s.suggDone=s.suggDone||{};if(!s.companies||!s.companies.length)s.companies=PREF_AZ.slice();return s;}
 function unisci(a,b){a=(a||[]).slice();b.forEach(function(x){if(a.indexOf(x)<0)a.push(x)});return a;}
 function save(){try{localStorage.setItem('pulse4',JSON.stringify(S))}catch(e){}}
@@ -647,6 +664,62 @@ function apriTrasferimento(){
   '<div class="add"><button class="btn" onclick="condividiSegnali()" aria-label="Condividi i tuoi segnali con Claude per orientare i prossimi briefing">📡 Manda i segnali a PULSE</button></div>';}
 function copiaTrasferimento(){try{navigator.clipboard.writeText(linkTrasferimento())}catch(e){}toast('Link copiato — aprilo sull’altro dispositivo');}
 function condividiTrasferimento(){if(navigator.share)navigator.share({title:'PULSE',text:'I miei dati PULSE',url:linkTrasferimento()}).catch(function(){});}
+/* BENVENUTO E GUIDA. L'app deve spiegarsi da sola: una card alla PRIMA apertura
+   (mai più dopo «Ho capito»), e la guida ❓ sempre a portata. GUIDA_V è la versione:
+   quando una novità merita di essere annunciata, si alza di 1 e si scrive NOVITA —
+   chi ha già visto il benvenuto vede SOLO la riga di novità, una volta. Le funzioni
+   sono PURE (stato → html) così i test le collaudano. La guida descrive solo cose
+   che esistono davvero: se togli una funzione, togli la sua riga. */
+var GUIDA_V=1,NOVITA='';
+function benvenutoHTML(guidav){
+ if((guidav||0)>=GUIDA_V)return '';
+ if((guidav||0)>0&&NOVITA)return '<div class="wel card"><b>Novità</b>'+NOVITA+
+  '<div class="add" style="margin-top:10px"><button class="btn pri" onclick="chiudiBenvenuto()">Ho capito</button></div></div>';
+ return '<div class="wel card"><b>Benvenuto in PULSE</b>'+
+  'Il tuo giornale del ginocchio: ogni mattina schede nuove dalla letteratura, verificate una a una su PubMed. Quattro cose bastano per iniziare:'+
+  '<ul style="margin:7px 0 2px;padding-left:19px"><li><b>Tocca una scheda</b> per aprirla (scorri a destra per salvarla)</li>'+
+  '<li><b>▶</b> ascolta il briefing del giorno</li>'+
+  '<li><b>🎙</b> comanda a voce: «apri la tre», «sorprendimi»…</li>'+
+  '<li><b>👍 👎</b> sulle schede orientano i giorni successivi</li></ul>'+
+  'Tutto il resto è spiegato nella guida: tocca <span style="font-size:13px;vertical-align:1px">❓</span> in alto a destra quando vuoi.'+
+  '<div class="add" style="margin-top:10px"><button class="btn pri" onclick="chiudiBenvenuto()">Ho capito</button></div></div>';}
+function renderBenvenuto(){var el=document.getElementById('welbox');if(el)el.innerHTML=benvenutoHTML(S.guidav);}
+function chiudiBenvenuto(){S.guidav=GUIDA_V;save();renderBenvenuto();}
+function guidaHTML(){
+ return '<details open><summary>Che cos’è e come si aggiorna</summary>'+
+  '<div>Ogni mattina verso le 7 una ricerca automatica sulla letteratura del ginocchio scrive le schede del giorno: quello che leggi è verificato fonte per fonte, e ciò che non è stato verificato viene dichiarato, mai nascosto. Il banner in alto dice sempre se il giornale di oggi è arrivato.</div></details>'+
+  '<details><summary>I pallini delle schede</summary><ul>'+
+  '<li>🔴 richiamo di dispositivo, ritiro di articolo, qualcosa da guardare oggi</li>'+
+  '<li>🟠 contraddice o mette in discussione una tua tecnica</li>'+
+  '<li>🟢 riguarda una tua tecnica, senza conflitto</li>'+
+  '<li>⚪ nel perimetro del ginocchio, ma non tocca la tua pratica</li></ul>'+
+  '<div>Un solo pallino per scheda, niente punteggi. Le barre indicano la confidenza nelle conclusioni; «cosa NON può dire questo studio» segnala i numeri senza potenza statistica.</div></details>'+
+  '<details><summary>Gesti e tasti</summary><ul>'+
+  '<li>Tocca una scheda per aprirla · scorri a <b>destra</b> per salvarla</li>'+
+  '<li><b>▶</b> legge il briefing — a due voci quando c’è il dialogo del giorno</li>'+
+  '<li><b>🎙</b> ascolta i tuoi comandi e risponde a voce</li>'+
+  '<li><b>👍 👎</b> su ogni scheda · <b>✎ Social</b> genera i testi · <b>📹 Video</b> sceglie il lavoro per la newsletter</li></ul></details>'+
+  '<details><summary>I comandi a voce riconosciuti</summary>'+
+  '<div>«apri (o leggi) la tre» · «salva la due» · «briefing» · «tensioni» · «seconda pagina» · «sorprendimi» · «rassegna» · «aiuto» · «basta» per fermare. I numeri valgono anche in lettere. Fuori da questo vocabolario lo dice, non indovina.</div></details>'+
+  '<details><summary>Le sezioni della pagina Oggi</summary>'+
+  '<div>Il <b>lavoro del giorno</b> è la scheda che vale di più. I filtri in alto restringono l’elenco per pallino. «Cosa non torna» sono le tensioni aperte fra la letteratura e la tua pratica, con cosa fare e cosa le chiuderebbe. In fondo: 📖 la <b>seconda pagina</b> (altri lavori veri del giorno, in breve) e 🎲 <b>Sorprendimi</b> (una proposta fuori dai soliti argomenti, mai ripetuta).</div></details>'+
+  '<details><summary>Le altre schede</summary><ul>'+
+  '<li><b>📡 Rassegna</b>: richiami di dispositivi, Swissmedic, i trial delle tue tensioni, ritrattazioni, ⚖️ il destino dei tuoi verdetti (chi cita i lavori del giorno passati), i video della tua rete. Ogni fonte muta è dichiarata.</li>'+
+  '<li><b>🗓 Archivio</b>: tutte le mattine passate, con ricerca.</li>'+
+  '<li><b>★ Salvati</b>: sopravvivono al ricambio quotidiano, con ricerca.</li>'+
+  '<li><b>✉️ Newsletter</b>: fino a 4 lavori scelti con 📹, testo pronto in tre versioni.</li>'+
+  '<li><b>⚙ Impostazioni</b>: preferenze, dimensione del testo, trasferimento fra dispositivi, copia di sicurezza, 📡 i segnali.</li></ul></details>'+
+  '<details><summary>Dove vivono i tuoi dati</summary>'+
+  '<div>PULSE non ha un server: voti, salvati e preferenze restano su questo dispositivo. Per questo esistono il <b>trasferimento</b> (le copie si fondono, non si sovrascrivono) e la <b>copia di sicurezza</b> su file. 📡 <b>Manda i segnali</b> condivide le tue scelte nella chat con Claude: orientano le schede dei giorni successivi.</div></details>';}
+function apriGuida(){var el=document.getElementById('gvbody');if(el&&!el.innerHTML)el.innerHTML=guidaHTML();
+ var ov=document.getElementById('gvov');if(ov)ov.classList.add('on');}
+function chiudiGuida(){var ov=document.getElementById('gvov');if(ov)ov.classList.remove('on');}
+/* DIMENSIONE DEL TESTO — tre livelli, applicati con zoom (i corpi in px restano
+   proporzionati); la scelta vive in S.testo e si riapplica a ogni apertura. */
+function applicaTesto(){if(!document.body)return;document.body.style.zoom=String(S.testo||1);
+ var ch=document.getElementById('testochips');if(ch){[].forEach.call(ch.children,function(b){
+  b.classList.toggle('on',parseFloat(b.getAttribute('onclick').match(/setTesto\(([\d.]+)/)[1])===(S.testo||1));});}}
+function setTesto(v,btn){S.testo=v;save();applicaTesto();}
 /* SEGNALI A PULSE. Le scelte dell'utente (voti, salvati, newsletter, proposte)
    diventano un testo leggibile che lui incolla nella chat con Claude: è il canale di
    ritorno del giudizio umano verso il briefing del mattino, senza server e senza
@@ -820,6 +893,7 @@ function interpretaComando(t){
  if(/(seconda pagina|continua a leggere|altri lavori)/.test(t))return {az:'seconda'};
  if(/sorprend/.test(t))return {az:'sorprendimi'};
  if(/rassegna/.test(t))return {az:'rassegna'};
+ if(/\b(aiuto|guida)\b|come funziona/.test(t))return {az:'aiuto'};
  if(/(tensioni|cosa non torna|non ti coprono)/.test(t))return {az:'tensioni'};
  if(/salva/.test(t)&&n)return {az:'salva',n:n};
  if(/(apri|leggi|ascolta|scheda|numero)/.test(t)&&n)return {az:'leggi',n:n};
@@ -843,8 +917,9 @@ function eseguiComando(c){
   case 'rassegna':var bt=[].slice.call(document.querySelectorAll('.tabs button')).filter(function(x){return /Rassegna/.test(x.textContent)})[0];if(bt)bt.click();apriRassegna();
    di('Apro la rassegna: richiami, trial e video della tua rete.',fine);return;
   case 'tensioni':di(TENSIONS.map(function(t){return t.t+'. '+t.fare}).join(' '),fine);return;
+  case 'aiuto':apriGuida();di('Ecco la guida: spiega i pallini, i gesti e tutti i comandi.',fine);return;
   case 'niente':if(_convOn)_riascolta();return;
-  default:di('Non ho capito «'+ (c.testo||'') +'». Posso aprire o salvare una scheda, leggere il briefing o le tensioni, aprire la seconda pagina, la rassegna, o sorprenderti.',fine);}}
+  default:di('Non ho capito «'+ (c.testo||'') +'». Posso aprire o salvare una scheda, leggere il briefing o le tensioni, aprire la seconda pagina, la rassegna, o sorprenderti. Di’ aiuto per la guida.',fine);}}
 var _convOn=false,_rec=null;
 function _SR(){return window.SpeechRecognition||window.webkitSpeechRecognition||null;}
 function _aggMic(){var b=document.getElementById('micbtn');if(b)b.textContent=_convOn?'🔴':'🎙';}
@@ -1412,6 +1487,8 @@ function apriRassegna(){
  }).then(function(j){el.innerHTML=rassHTML(j);}).catch(function(e){
   el.innerHTML='<div class="rko">⚠️ Rassegna non raggiungibile ora ('+esc(String(e.message||e))+'). Se sei offline è normale: riprova con la rete.</div>';});}
 
+renderBenvenuto();
+applicaTesto();
 renderVerdict();
 renderCopertura();
 renderSeconda();

@@ -74,7 +74,7 @@ with sync_playwright() as p:
         pg.click('#duelbox .duelbar'); pg.wait_for_timeout(350)
         chk(pg.is_visible('#ov'),'tocco su VS → si apre il confronto')
         chk('duelgrid' in pg.inner_html('#shCnt'),'confronto in due colonne')
-        pg.click('.sheet .close'); pg.wait_for_timeout(200)
+        pg.click('#ov .close'); pg.wait_for_timeout(200)
     # tab archivio + autocritica + ricerca — per NOME, mai per posizione:
     # l'aggiunta della Rassegna ha spostato gli indici e nth=1 apriva un'altra tab.
     pg.click(".tabs button:has-text('Archivio')"); pg.wait_for_timeout(300)
