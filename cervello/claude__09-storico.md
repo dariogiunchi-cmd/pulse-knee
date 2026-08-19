@@ -343,3 +343,34 @@ utente reale e ripeti i test; semplicità essenziale». Spesa aggiuntiva: zero.
   verdi, ripetuto due volte; ha smascherato due errori del copione di prova
   (isSaved per numero; pannello nei ⚙), nessuno dell'app.
 Cancello: **553 controlli verdi**, due volte.
+
+### 2026-08-19, sera — l'app che si spiega da sola
+Mandato: «l'utente deve capire come funziona nel minor tempo e col minimo sforzo;
+verifica anche i concorrenti». Ricognizione fatta (OpenEvidence, QxMD Read, NEJM
+Clinician, letteratura sull'onboarding): la lezione convergente è UNA vittoria
+chiara subito, niente tour a tappe; le funzioni dei concorrenti che valevano
+qualcosa (keyword alert, collezioni, gradi di evidenza, digest settimanale) PULSE
+le ha già in forma propria; scartati giochi e punteggi numerici (contro il formato).
+- **Benvenuto alla prima apertura**: una card sola, quattro gesti essenziali,
+  «Ho capito» e non torna mai più (S.guidav). Meccanismo A VERSIONE: alzando
+  GUIDA_V con un testo NOVITA, chi ha già visto il benvenuto riceve una sola riga
+  di novità — il canale per annunciare le funzioni future senza infastidire.
+- **Guida «Come funziona PULSE»**: ❓ in alto (stesso stile del ↻) e in
+  Impostazioni; a soffietto: che cos'è, i QUATTRO pallini col loro significato
+  canonico (da 05-formato), gesti, IL VOCABOLARIO VOCALE (prima invisibile),
+  le sezioni, dove vivono i dati. Regola scritta nel codice: la guida descrive
+  solo ciò che esiste — se togli una funzione, togli la sua riga.
+- **Dimensione del testo**: tre livelli in Impostazioni (zoom 1/1.15/1.3),
+  persistente (S.testo). Comando vocale nuovo «aiuto» apre la guida; il fuori
+  vocabolario ora suggerisce di dirlo.
+- Difetti veri trovati dal viaggio: COLLISIONE di classe (.hbtn esisteva già: il
+  ❓ ereditava lo stile del ↻ e il copione cliccava il tasto sbagliato — risolto
+  riusando lo stile esistente e selezionando per aria-label); `.wel b{display:block}`
+  spezzava le righe; applicaTesto senza guardia rompeva logica.js in Node.
+  Sentinella dei pallini RAFFORZATA dopo che il break-test l'ha smascherata debole
+  (le emoji comparivano altrove: ora verifica i significati). Errore di procedura
+  pagato: `git checkout --` per ripristinare un break-test ha cancellato modifiche
+  non committate — d'ora in poi i break-test si fanno con copia di riserva, MAI
+  con git checkout.
+Viaggio da utente reale: **30 passi verdi, tre volte**. Cancello: **563 controlli,
+due volte**. Spesa aggiuntiva: zero.

@@ -65,6 +65,8 @@ MARCATORI = [
  ("Voce: lettura a frasi e comandi", ["function _speakQueue", "function interpretaComando", "function toggleConversazione", 'id="micbtn"']),
  ("Podcast a due voci",           ["function dialogoFrasi", "function _voceB", "function _codaBrief"]),
  ("Segnali dell'utente condivisibili", ["function segnaliTesto", "function condividiSegnali"]),
+ ("Benvenuto e guida",             ["function benvenutoHTML", "function guidaHTML", "function apriGuida", 'id="welbox"', 'id="gvov"']),
+ ("Dimensione del testo",          ["function setTesto", "function applicaTesto", 'id="testochips"']),
  ("Destino dei verdetti in Rassegna", ["destino dei verdetti", "F.destino"]),
  ("Versione mista dei testi",     ["setNlVer('mix'", "function wBlurb"]),
  ("Durata video in secondi",      ["function setSec", "function durataNota", "PAROLE_AL_SECONDO"]),

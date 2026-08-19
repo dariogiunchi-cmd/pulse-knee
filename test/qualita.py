@@ -65,7 +65,7 @@ with sync_playwright() as p:
     chk('TESTO MIO DI PROVA' in pg.inner_text('#shCnt'),'la modifica viene salvata e riusata')
     saved=pg.evaluate("()=>JSON.parse(localStorage.getItem('pulse4')).edits")
     chk(bool(saved) and len(saved)>0,'la modifica persiste nella memoria del telefono')
-    pg.click('.sheet .close'); pg.wait_for_timeout(200)
+    pg.click('#ov .close'); pg.wait_for_timeout(200)
     print("\n=== NON-REGRESSIONE ===")
     # Il banner ha TRE stati legittimi (è arrivato · sta arrivando · non è arrivato):
     # pretendere «Aggiornato oggi» in assoluto significava dipendere dall'orologio, e
@@ -171,6 +171,27 @@ with sync_playwright() as p:
         'senza dialogo il tasto ▶ torna con eleganza a BRIEF_TEXT')
     chk(pg3.evaluate("typeof _voceB==='function'"),
         'esiste la scelta della seconda voce italiana')
+
+    # --- benvenuto e guida: l'app si spiega da sola -----------------------------
+    chk(pg3.evaluate("benvenutoHTML(0).indexOf('Benvenuto')>=0 && benvenutoHTML(0).indexOf('Ho capito')>=0"),
+        'alla prima apertura compare il benvenuto con «Ho capito»')
+    chk(pg3.evaluate("benvenutoHTML(GUIDA_V)")=='',
+        'dopo «Ho capito» il benvenuto non torna mai più')
+    g=pg3.evaluate("guidaHTML()")
+    chk(all(w in g for w in ['richiamo di dispositivo','mette in discussione una tua tecnica',
+                             'senza conflitto','non tocca la tua pratica']),
+        'la guida spiega il significato di tutti e quattro i pallini')
+    chk(all(w in g for w in ['Rassegna','Archivio','Salvati','Newsletter','Impostazioni']),
+        'la guida nomina ogni scheda dell\'app')
+    chk(all(w in g for w in ['sorprendimi','seconda pagina','basta','aiuto']),
+        'la guida elenca il vocabolario dei comandi a voce')
+    chk(pg3.evaluate("interpretaComando('aiuto').az")=='aiuto'
+        and pg3.evaluate("interpretaComando('come funziona questa cosa').az")=='aiuto',
+        'la voce capisce «aiuto» e «come funziona»')
+    chk(pg3.evaluate("interpretaComando('riguardando la scheda due').az")!='aiuto',
+        'una parola che contiene «guida» per caso non apre la guida')
+    chk(pg3.evaluate("typeof setTesto==='function' && typeof applicaTesto==='function'"),
+        'la dimensione del testo si può cambiare e riapplicare')
 
     # --- i segnali a PULSE: identità per contenuto, mai per posizione -----------
     chk(pg3.evaluate("(function(){var v=S.votes;S.votes={1:1,99:-1};"
