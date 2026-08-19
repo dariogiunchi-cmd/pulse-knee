@@ -24,6 +24,11 @@ Online: <https://dariogiunchi-cmd.github.io/pulse-knee/> (GitHub Pages, ramo `ma
 Non è un sito informativo: è uno strumento di lavoro che lui apre dall'iPhone. Tutto ciò
 che l'app afferma su sé stessa deve essere vero.
 
+**Mobile prima di tutto — sua indicazione esplicita (19 agosto): l'app si usa quasi
+sempre dal telefono, raramente dal desktop.** Ogni funzione nuova si progetta a
+390 px e si collauda lì per prima; i bersagli di tocco stanno a ≥44 px (minimo
+Apple); il desktop è un adattamento, mai il punto di partenza.
+
 ---
 
 ## Le tre regole che non si negoziano

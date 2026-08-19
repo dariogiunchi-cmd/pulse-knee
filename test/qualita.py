@@ -193,6 +193,26 @@ with sync_playwright() as p:
     chk(pg3.evaluate("typeof setTesto==='function' && typeof applicaTesto==='function'"),
         'la dimensione del testo si può cambiare e riapplicare')
 
+    # --- la modalità auto: playlist annunciata, comandi, velocità ---------------
+    chk(pg3.evaluate("autoLista().length")==pg3.evaluate("ARTICLES.length")+1,
+        'la playlist auto è briefing + tutte le schede del giorno')
+    chk(pg3.evaluate("autoLista()[0].label").find('briefing')>=0
+        and pg3.evaluate("autoLista()[0].n") is None,
+        'la playlist apre col briefing, che non è salvabile')
+    chk(pg3.evaluate("autoLista()[1].coda.join(' ')").startswith('Scheda 1 di '+str(pg3.evaluate("ARTICLES.length"))),
+        'ogni scheda viene annunciata con la sua posizione')
+    chk(pg3.evaluate("autoLista()[1].n")==pg3.evaluate("ARTICLES[0].n"),
+        'la scheda in ascolto è identificata dal suo numero vero, per salvarla')
+    for frase,att in [('prossima','prossima'),('vai avanti','prossima'),('indietro','indietro'),
+                      ('ripeti','ripeti'),('pausa','pausa'),('riprendi','riprendi'),
+                      ('salva questa','salvaquesta'),('più veloce','veloce'),('più piano','piano'),
+                      ('velocità normale','ratenorm'),('modalità auto','auto'),
+                      ('continua a leggere','seconda'),('apri la tre','leggi')]:
+        chk(pg3.evaluate(f"interpretaComando('{frase}').az")==att,
+            f'la voce capisce «{frase}» → {att}')
+    chk(pg3.evaluate("(function(){var v=S.rate;var r1=setRate(2),r2=setRate(0.1);S.rate=v;save();return r1<=1.4&&r2>=0.7})()"),
+        'la velocità di lettura ha limiti sani e si salva')
+
     # --- i segnali a PULSE: identità per contenuto, mai per posizione -----------
     chk(pg3.evaluate("(function(){var v=S.votes;S.votes={1:1,99:-1};"
                      "var t=segnaliTesto();S.votes=v;"
