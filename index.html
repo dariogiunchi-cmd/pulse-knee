@@ -418,7 +418,17 @@
     <div class="sec"><h2>🗄 Versioni precedenti</h2><div class="muted">Ogni giorno il PULSE viene salvato così com&rsquo;era. Restano tutti i giorni degli ultimi trenta e il primo di ogni mese, per sempre.</div><div class="add" style="margin-top:10px"><a class="btn" href="versioni/" style="text-decoration:none;display:inline-flex;align-items:center">🗄 Sfoglia le versioni</a></div></div>
     <div class="sec"><h2>👁 Lettura</h2><div class="muted">La dimensione del testo di tutta l'app. La scelta resta su questo dispositivo.</div>
       <div class="filters" id="testochips" style="margin-top:9px"><button class="fchip" onclick="setTesto(1,this)">Normale</button><button class="fchip" onclick="setTesto(1.15,this)">Grande</button><button class="fchip" onclick="setTesto(1.3,this)">Molto grande</button></div>
+      <div class="muted" style="margin-top:12px">La voce che legge (di sistema). Le più naturali si scaricano sull'iPhone: Impostazioni → Accessibilità → Contenuto letto → Voci → Italiano → scegli una voce «migliorata».</div>
+      <select id="vocesel" onchange="S.voce=this.value;save();" aria-label="Scegli la voce italiana che legge il giornale" style="margin-top:8px;width:100%;max-width:520px;padding:10px;border-radius:11px;border:1px solid var(--line);background:var(--tint2);color:var(--txt);font:inherit"></select>
       <div class="add" style="margin-top:12px"><button class="btn" onclick="apriGuida()" aria-label="Apri la guida che spiega come funziona PULSE">📖 Come funziona PULSE</button></div></div>
+    <div class="sec"><h2>🧠 Il cervello di PULSE</h2>
+      <div class="muted">Facoltativo, a pagamento (nell'ordine di pochi franchi al mese): sblocca la conversazione libera a voce — chiedi qualunque cosa, come a ChatGPT — e la voce naturale per podcast e schede. Le chiavi vivono nel «cervello» esterno (cartella <b>chiedi/</b> del repository, istruzioni comprese); qui si scrivono solo l'indirizzo e la parola d'ordine, che restano su questo dispositivo.</div>
+      <div class="add" style="margin-top:9px;flex-wrap:wrap">
+        <input id="cvurl" placeholder="indirizzo (https://…workers.dev)" aria-label="Indirizzo del cervello esterno" style="flex:1 1 100%;padding:10px;border-radius:11px;border:1px solid var(--line);background:var(--tint2);color:var(--txt);font:inherit">
+        <input id="cvpar" placeholder="parola d'ordine" aria-label="Parola d'ordine del cervello" style="flex:1 1 60%;padding:10px;border-radius:11px;border:1px solid var(--line);background:var(--tint2);color:var(--txt);font:inherit">
+        <button class="btn pri" onclick="salvaCervello()" aria-label="Collega il cervello e prova il collegamento">Collega</button>
+      </div>
+      <div class="muted" id="cvstato" style="margin-top:7px"></div></div>
     <div class="sec"><h2>📲 Stesso PULSE su un altro dispositivo</h2><div class="muted">PULSE non ha un server: quello che fai su un dispositivo resta lì. Se usi anche il computer, porta i tuoi dati con un link — le due copie si <b>fondono</b>, non si sovrascrivono, quindi non perdi nulla da nessuna delle due parti.</div><div id="syncbox" style="margin-top:10px"></div></div>
     <div class="sec"><h2>♻︎ I tuoi dati</h2><div class="muted">Salvati, voti, preferenze, lavori scelti per la distribuzione e testi che hai adattato vivono <b>solo in questo browser</b>, su questo dispositivo. Non sono su nessun server e non si sincronizzano con altri dispositivi. Se cancelli i dati del sito, si perdono: per questo conviene tenere PULSE nella schermata Home e non cancellare i dati di Safari o Chrome per questo indirizzo. Le schede e i contenuti di ogni giorno restano invece sempre recuperabili dalle versioni precedenti.</div><div class="add" style="margin-top:10px"><button onclick="resetAll()" style="background:#ff3b30">Azzera tutto</button></div></div>
   </div>
@@ -727,7 +737,8 @@ var PREF_SOC=['ESSKA','ISAKOS','AOSSM','AAOS','SFA','SOFCOT','AGA','BASK','SIAGA
 var PREF_AZ=['DePuy Synthes','Zimmer Biomet','Smith & Nephew','Arthrex','Stryker','Medacta','Lima','aziende innovative e asiatiche'];
 var DEF={saved:[],savedItems:[],votes:{},edits:{},weekly:[],blogUrl:'https://www.dariogiunchi.ch/blog',
  journals:PREF_RIVISTE.slice(),kols:PREF_KOL.slice(),societies:PREF_SOC.slice(),companies:PREF_AZ.slice(),
- prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,suggDone:{},topics:[],scoviste:[],voce:'',guidav:0,testo:1,rate:1.02};
+ prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,suggDone:{},topics:[],scoviste:[],voce:'',guidav:0,testo:1,rate:1.02,
+ cervello:{url:'',parola:''}};
 var S=load();function load(){var salvato=null,s;try{var r=localStorage.getItem('pulse4');if(r)salvato=JSON.parse(r)}catch(e){}s=salvato?Object.assign({},DEF,salvato):Object.assign({},DEF);/* La versione va letta da ciò che è SALVATO, non dal risultato della fusione:    DEF porta sempre PREFV e maschererebbe il valore vecchio. */if(salvato&&(salvato.prefv||0)<PREFV){s.journals=unisci(salvato.journals,PREF_RIVISTE);s.kols=unisci(salvato.kols,PREF_KOL);s.societies=unisci(salvato.societies,PREF_SOC);s.companies=unisci(salvato.companies,PREF_AZ);}s.prefv=PREFV;s.suggDone=s.suggDone||{};if(!s.companies||!s.companies.length)s.companies=PREF_AZ.slice();return s;}
 function unisci(a,b){a=(a||[]).slice();b.forEach(function(x){if(a.indexOf(x)<0)a.push(x)});return a;}
 function save(){try{localStorage.setItem('pulse4',JSON.stringify(S))}catch(e){}}
@@ -894,7 +905,7 @@ function condividiTrasferimento(){if(navigator.share)navigator.share({title:'PUL
    chi ha già visto il benvenuto vede SOLO la riga di novità, una volta. Le funzioni
    sono PURE (stato → html) così i test le collaudano. La guida descrive solo cose
    che esistono davvero: se togli una funzione, togli la sua riga. */
-var GUIDA_V=3,NOVITA='🚗 <b>Modalità auto</b>: il tasto accanto a ▶ apre l’ascolto continuo a tasti grandi, con comandi a voce come «prossima», «salva questa», «più veloce». E la <b>📡 Rassegna</b> ora sorveglia anche 📜 linee guida e consensus nuovi, 📣 i lavori di cui parla la comunità e 🧪 i preprint, con un sommario a colpo d’occhio in testa.';
+var GUIDA_V=4,NOVITA='🚗 <b>Modalità auto</b>: ascolto continuo a tasti grandi con comandi a voce («prossima», «salva questa», «più veloce»). La <b>📡 Rassegna</b> ora sorveglia anche 📜 linee guida e consensus, 📣 i lavori di cui parla la comunità e 🧪 i preprint. E in Impostazioni c’è <b>🧠 Il cervello di PULSE</b>: collegandolo, le domande libere a voce ricevono risposte vere e il podcast parla con una voce naturale.';
 function benvenutoHTML(guidav){
  if((guidav||0)>=GUIDA_V)return '';
  if((guidav||0)>0&&NOVITA)return '<div class="wel card"><b>Novità</b>'+NOVITA+
@@ -924,7 +935,9 @@ function guidaHTML(){
   '<li><b>🎙</b> ascolta i tuoi comandi e risponde a voce</li>'+
   '<li><b>👍 👎</b> su ogni scheda · <b>✎ Social</b> genera i testi · <b>📹 Video</b> sceglie il lavoro per la newsletter</li></ul></details>'+
   '<details><summary>I comandi a voce riconosciuti</summary>'+
-  '<div>«apri (o leggi) la tre» · «salva la due» · «briefing» · «tensioni» · «seconda pagina» · «sorprendimi» · «rassegna» · «modalità auto» · «prossima» · «indietro» · «ripeti» · «pausa» · «riprendi» · «salva questa» · «più veloce / più piano / velocità normale» · «aiuto» · «basta» per fermare. I numeri valgono anche in lettere. Fuori da questo vocabolario lo dice, non indovina.</div></details>'+
+  '<div>«apri (o leggi) la tre» · «salva la due» · «briefing» · «tensioni» · «seconda pagina» · «sorprendimi» · «rassegna» · «modalità auto» · «prossima» · «indietro» · «ripeti» · «pausa» · «riprendi» · «salva questa» · «più veloce / più piano / velocità normale» · «aiuto» · «basta» per fermare. I numeri valgono anche in lettere. Fuori da questo vocabolario: senza cervello lo dice e basta; col 🧠 cervello collegato la domanda diventa conversazione vera, con risposta parlata.</div></details>'+
+  '<details><summary>🧠 Chiedi a PULSE e voce naturale</summary>'+
+  '<div>Facoltativo e a pagamento (pochi franchi al mese). Un piccolo «cervello» esterno custodisce le chiavi che una pagina come questa non può tenere: collegandolo in Impostazioni, il 🎙 risponde a qualunque domanda — sul giornale del giorno prima di tutto — e ▶ legge il podcast con una voce naturale a due timbri. Se il cervello non risponde, l’app lo dice e torna alla voce del telefono. Le istruzioni per attivarlo sono nella cartella chiedi/ del repository; le regole di verità valgono anche lì: mai citazioni inventate, dati assenti dichiarati.</div></details>'+
   '<details><summary>🚗 In auto</summary>'+
   '<div>Il tasto 🚗 accanto a ▶ apre l’ascolto continuo: il briefing e poi le schede una dopo l’altra, ognuna annunciata con la posizione («Scheda 3 di 8»). Tasti grandi: ⏮ ▶ ⏭ · 🔁 ripete · ★ salva la scheda in ascolto · 🎙 un comando alla volta — l’audio si ferma, parli, riparte da solo. La velocità di lettura si regola a voce e resta memorizzata. Lo schermo resta acceso finché il pannello è aperto. Limite di iPhone, dichiarato: l’app deve restare in primo piano — Safari non legge né ascolta in sottofondo, quindi telefono sul supporto e schermo attivo.</div></details>'+
   '<details><summary>Le sezioni della pagina Oggi</summary>'+
@@ -1065,12 +1078,14 @@ function _codaBrief(){
  var dial=(typeof BRIEF_DIALOGO!=='undefined'&&BRIEF_DIALOGO&&BRIEF_DIALOGO.length)?BRIEF_DIALOGO:null;
  return dial?dialogoFrasi(dial):_frasi(BRIEF_TEXT);}
 function speakBrief(){var b=document.getElementById('playbtn'),l=document.getElementById('voicelbl');
- if(!('speechSynthesis' in window)){l.textContent='voce non supportata su questo browser';return;}
- if(_speaking){_speaking=false;speechSynthesis.cancel();b.textContent='▶';return;}
- var coda=_codaBrief(),v=_pickVoice();
- if(l)l.textContent=(coda.length&&typeof coda[0]==='object'?'podcast a due voci':'voce')+(v?' · '+v.name:'');
- _speakQueue(coda);}
-if('speechSynthesis' in window){speechSynthesis.onvoiceschanged=function(){};speechSynthesis.getVoices();}
+ if(_speaking){fermaVoce();if(b)b.textContent='▶';return;}
+ var items=_briefItems(),due=items.length>1;
+ if(chiediDisponibile()){if(l)l.textContent=(due?'podcast a due voci':'lettura')+' · voce naturale';parla(items);return;}
+ if(!('speechSynthesis' in window)){if(l)l.textContent='voce non supportata su questo browser';return;}
+ var v=_pickVoice();
+ if(l)l.textContent=(due?'podcast a due voci':'voce')+(v?' · '+v.name:'');
+ _speakQueue(_codaBrief());}
+if('speechSynthesis' in window){speechSynthesis.onvoiceschanged=function(){if(typeof popolaVoci==='function')popolaVoci();};speechSynthesis.getVoices();}
 
 
 function renderSaved(){var q=(document.getElementById('savedq')?document.getElementById('savedq').value:'').toLowerCase();
@@ -1140,8 +1155,8 @@ function eseguiComando(c){
  function di(t,poi){_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();_speakQueue(_frasi(t),poi);}
  var fine=_convOn?_riascolta:null;
  switch(c.az){
-  case 'stop':_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();_convOn=false;_aggMic();return;
-  case 'briefing':_speakQueue(_codaBrief(),fine);return;
+  case 'stop':fermaVoce();_convOn=false;_aggMic();return;
+  case 'briefing':parla(_briefItems(),fine);return;
   case 'leggi':var a=A[c.n];if(!a){di('Oggi non c’è una scheda numero '+c.n+'. Le schede vanno da 1 a '+ARTICLES.length+'.',fine);return;}
    toggle(c.n);di(a.h+'. '+a.v+'. Conclusione: '+a.concl+'. Per te: '+a.perte,fine);return;
   case 'salva':if(!A[c.n]){di('Non trovo la scheda '+c.n+'.',fine);return;}
@@ -1158,7 +1173,7 @@ function eseguiComando(c){
   case 'prossima':autoProssima();return;
   case 'indietro':autoIndietro();return;
   case 'ripeti':autoRipeti();return;
-  case 'pausa':_autoAttiva=false;_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();_autoPP('▶');
+  case 'pausa':_autoAttiva=false;fermaVoce();_autoPP('▶');
    di('In pausa. Di’ riprendi quando vuoi.',fine);return;
   case 'riprendi':autoVai(_autoLista?_autoPos:0);return;
   case 'salvaquesta':var sn=autoSalva();
@@ -1167,7 +1182,18 @@ function eseguiComando(c){
   case 'piano':setRate((S.rate||1.02)-0.15);di('Più piano.',function(){_autoRiprendiSeAperto(fine);});return;
   case 'ratenorm':setRate(1.02);di('Velocità normale.',function(){_autoRiprendiSeAperto(fine);});return;
   case 'niente':if(_convOn)_riascolta();return;
-  default:di('Non ho capito «'+ (c.testo||'') +'». Posso aprire o salvare una scheda, leggere il briefing o le tensioni, aprire la seconda pagina, la rassegna, o sorprenderti. Di’ aiuto per la guida.',fine);}}
+  default:
+   if(chiediDisponibile()&&(c.testo||'').trim()){
+    /* fuori vocabolario + cervello collegato = conversazione vera */
+    var ovA=document.getElementById('autoov'),inAuto=ovA&&ovA.classList.contains('on');
+    if(inAuto)_autoTesto('Penso…');else toast('🧠 Chiedo a PULSE…');
+    chiediPulse(c.testo,function(r){
+     if(inAuto)_autoTesto(r);
+     parla([r],fine);
+    },function(){di('Il cervello non risponde ora: controlla il collegamento in Impostazioni.',fine);});
+    return;
+   }
+   di('Non ho capito «'+ (c.testo||'') +'». Posso aprire o salvare una scheda, leggere il briefing o le tensioni, aprire la seconda pagina, la rassegna, o sorprenderti. Di’ aiuto per la guida.',fine);}}
 var _convOn=false,_rec=null;
 function _SR(){return window.SpeechRecognition||window.webkitSpeechRecognition||null;}
 function _aggMic(){var b=document.getElementById('micbtn');if(b)b.textContent=_convOn?'🔴':'🎙';
@@ -1184,8 +1210,90 @@ function toggleConversazione(){
  if(!_SR())return;
  _convOn=!_convOn;_aggMic();
  if(_convOn){_speakQueue(_frasi('Ti ascolto.'),_riascolta);}
- else{try{if(_rec)_rec.stop();}catch(e){};_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();}}
+ else{try{if(_rec)_rec.stop();}catch(e){};fermaVoce();}}
 if(_SR()){var _mb=document.getElementById('micbtn');if(_mb)_mb.style.display='';}
+
+/* CHIEDI A PULSE + VOCE NATURALE — il cervello esterno (chiedi/worker.js su
+   Cloudflare) custodisce le chiavi che una pagina statica non può tenere. L'app
+   conosce solo l'INDIRIZZO e la PAROLA D'ORDINE (S.cervello, scritti una volta in
+   Impostazioni, vivono solo su questo dispositivo: esclusi da trasferimento e
+   backup). Senza cervello tutto funziona come prima: vocabolario + voce di
+   sistema. Col cervello: le domande fuori vocabolario diventano conversazione
+   vera, e il podcast usa la voce naturale — con RITORNO DICHIARATO alla voce di
+   sistema se il cervello non risponde. */
+function chiediDisponibile(){return !!(S.cervello&&S.cervello.url&&S.cervello.parola);}
+var _chStoria=[];
+function chiediPulse(domanda,cb,ko){
+ fetch(S.cervello.url.replace(/\/+$/,'')+'/chiedi',{method:'POST',headers:{'Content-Type':'application/json'},
+  body:JSON.stringify({parola:S.cervello.parola,domanda:domanda,storia:_chStoria.slice(-8)})})
+ .then(function(r){return r.json();})
+ .then(function(j){if(!j||!j.risposta)throw new Error((j&&j.errore)||'risposta vuota');
+  _chStoria.push({ruolo:'utente',t:domanda},{ruolo:'pulse',t:j.risposta});
+  if(_chStoria.length>16)_chStoria=_chStoria.slice(-16);
+  cb(j.risposta);})
+ .catch(function(e){if(ko)ko(e);});}
+function _appiattisci(items){
+ var coda=[];(items||[]).forEach(function(it){
+  var t=(typeof it==='string')?it:(it&&it.t)||'',chi=(typeof it==='object'&&it)?it.chi:null;
+  _frasi(t).forEach(function(f){coda.push(chi?{t:f,chi:chi}:f);});});
+ return coda;}
+var _natAudio=null,_natStop=false;
+function fermaVoce(){_natStop=true;
+ try{if(_natAudio){_natAudio.pause();_natAudio.src='';_natAudio=null;}}catch(e){}
+ _speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();}
+function _natQueue(items,alTermine){
+ _natStop=false;_speaking=true;
+ var b=document.getElementById('playbtn');if(b)b.textContent='⏸';
+ var i=0,pre={};
+ function chiama(k){var it=items[k],t=(typeof it==='string')?it:it.t,chi=(typeof it==='object'&&it.chi==='B')?'B':'A';
+  return fetch(S.cervello.url.replace(/\/+$/,'')+'/voce',{method:'POST',headers:{'Content-Type':'application/json'},
+   body:JSON.stringify({parola:S.cervello.parola,testo:t,voce:chi})})
+   .then(function(r){if(!r.ok)throw new Error('voce '+r.status);return r.blob();});}
+ function fineNat(finita){_speaking=false;if(b)b.textContent='▶';if(alTermine)alTermine(finita);}
+ function prox(){
+  if(_natStop){fineNat(false);return;}
+  if(i>=items.length){fineNat(true);return;}
+  var p=pre[i]||chiama(i);pre[i]=null;
+  if(i+1<items.length&&!pre[i+1])pre[i+1]=chiama(i+1).catch(function(){return null;});
+  p.then(function(blob){
+   if(_natStop){fineNat(false);return;}
+   if(!blob)throw new Error('audio vuoto');
+   _natAudio=new Audio(URL.createObjectURL(blob));
+   _natAudio.onended=function(){i++;prox();};
+   _natAudio.onerror=function(){i++;prox();};
+   var pr=_natAudio.play();if(pr&&pr.catch)pr.catch(function(){i++;prox();});
+  }).catch(function(){
+   var l=document.getElementById('voicelbl');if(l)l.textContent='voce naturale non raggiungibile: uso quella del telefono';
+   var resto=items.slice(i);_speaking=false;
+   _speakQueue(_appiattisci(resto),alTermine);});}
+ prox();}
+/* UN solo punto di ingresso per parlare: sceglie la voce naturale se il cervello
+   è collegato, altrimenti la coda di sistema. items = [{t,chi}] o stringhe. */
+function parla(items,alTermine){
+ if(chiediDisponibile()){_natQueue(items,alTermine);return;}
+ _speakQueue(_appiattisci(items),alTermine);}
+function _briefItems(){
+ var dial=(typeof BRIEF_DIALOGO!=='undefined'&&BRIEF_DIALOGO&&BRIEF_DIALOGO.length)?BRIEF_DIALOGO:null;
+ return dial?dial.map(function(r){return {t:r.t,chi:r.chi==='B'?'B':'A'};}):[BRIEF_TEXT];}
+function salvaCervello(){
+ var u=(document.getElementById('cvurl')||{}).value||'',p=(document.getElementById('cvpar')||{}).value||'';
+ S.cervello={url:u.trim(),parola:p.trim()};save();
+ var st=document.getElementById('cvstato');
+ if(!chiediDisponibile()){if(st)st.textContent='Cervello scollegato: l’app usa vocabolario e voce di sistema.';return;}
+ if(st)st.textContent='Provo il collegamento…';
+ chiediPulse('Rispondi con una sola parola: pronto.',function(r){
+  if(st)st.textContent='✅ Collegato. Le domande libere e la voce naturale sono attive.';},
+  function(e){if(st)st.textContent='⚠️ Non risponde ('+String(e&&e.message||e).slice(0,80)+'): controlla indirizzo e parola.';});}
+function aggCervello(){
+ var u=document.getElementById('cvurl'),p=document.getElementById('cvpar'),st=document.getElementById('cvstato');
+ if(u)u.value=(S.cervello&&S.cervello.url)||'';
+ if(p)p.value=(S.cervello&&S.cervello.parola)||'';
+ if(st)st.textContent=chiediDisponibile()?'Collegato all’ultimo salvataggio.':'Non collegato: funziona tutto con vocabolario e voce di sistema.';}
+function popolaVoci(){
+ var s=document.getElementById('vocesel');if(!s||!('speechSynthesis' in window))return;
+ var vs=speechSynthesis.getVoices().filter(function(v){return /it(-|_)/i.test(v.lang)});
+ s.innerHTML='<option value="">automatica (la migliore disponibile)</option>'+
+  vs.map(function(v){return '<option value="'+esc(v.name)+'"'+(S.voce===v.name?' selected':'')+'>'+esc(v.name)+'</option>';}).join('');}
 
 /* MODALITÀ AUTO — ascolto continuo a tasti grandi, il modello è la car view degli
    ascoltatori di podcast: pannello sempre scuro, quattro gesti, zero lettura.
@@ -1198,11 +1306,13 @@ if(_SR()){var _mb=document.getElementById('micbtn');if(_mb)_mb.style.display='';
 var _autoLista=null,_autoPos=0,_autoAttiva=false,_wl=null;
 function autoLista(){
  var tot=ARTICLES.length;
- var l=[{label:'Il briefing del giorno',n:null,coda:_codaBrief()}];
+ var l=[{label:'Il briefing del giorno',n:null,voci:_briefItems()}];
  ARTICLES.forEach(function(a,i){
   l.push({label:'Scheda '+(i+1)+' di '+tot+' — '+a.h,n:a.n,
-   coda:_frasi('Scheda '+(i+1)+' di '+tot+'. '+a.h+'. '+a.v+'. Conclusione degli autori: '+a.concl+'. Per te: '+a.perte)});});
+   voci:[{t:'Scheda '+(i+1)+' di '+tot+'. '+a.h+'. '+a.v+'. Conclusione degli autori: '+a.concl+'. Per te: '+a.perte,chi:'A'}]});});
  return l;}
+function _autoTesto(t){var el=document.getElementById('autonow');
+ if(el)el.innerHTML='<small>🧠 Chiedi a PULSE</small>'+esc(String(t||'').slice(0,220));}
 function _autoNow(msg){var el=document.getElementById('autonow');if(!el||!_autoLista)return;
  var it=_autoLista[_autoPos];
  el.innerHTML='<small>'+(_autoPos+1)+' di '+_autoLista.length+(msg?' · '+esc(msg):'')+'</small>'+esc(it.label);}
@@ -1213,13 +1323,13 @@ function autoVai(i){
  if(i<0)i=0;
  if(i>=_autoLista.length){_autoAttiva=false;_autoPP('▶');_autoNow('fine del giornale');return;}
  _autoPos=i;_autoAttiva=true;_autoNow();_autoPP('⏸');
- _speakQueue(_autoLista[i].coda,function(finita){if(finita&&_autoAttiva)autoVai(_autoPos+1);else if(!_autoAttiva)_autoPP('▶');});}
+ parla(_autoLista[i].voci,function(finita){if(finita&&_autoAttiva)autoVai(_autoPos+1);else if(!_autoAttiva)_autoPP('▶');});}
 function autoPlayPausa(){
- if(_speaking){_autoAttiva=false;_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();_autoPP('▶');_autoNow('in pausa');}
+ if(_speaking){_autoAttiva=false;fermaVoce();_autoPP('▶');_autoNow('in pausa');}
  else{autoVai(_autoLista?_autoPos:0);}}
-function autoProssima(){_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();autoVai((_autoLista?_autoPos:0)+1);}
-function autoIndietro(){_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();autoVai((_autoLista?_autoPos:1)-1);}
-function autoRipeti(){_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();autoVai(_autoLista?_autoPos:0);}
+function autoProssima(){fermaVoce();autoVai((_autoLista?_autoPos:0)+1);}
+function autoIndietro(){fermaVoce();autoVai((_autoLista?_autoPos:1)-1);}
+function autoRipeti(){fermaVoce();autoVai(_autoLista?_autoPos:0);}
 function autoSalva(){
  var it=_autoLista&&_autoLista[_autoPos];
  if(!it||!it.n){toast('Il briefing non si salva: salva una scheda');return null;}
@@ -1238,7 +1348,7 @@ function apriAuto(){
    esegue, e i comandi che riprendono la lettura la riprendono da soli. */
 function autoMic(){
  if(!_SR())return;
- _autoAttiva=false;_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();
+ _autoAttiva=false;fermaVoce();
  _autoPP('▶');_autoNow('ti ascolto…');
  var b=document.getElementById('automic');if(b){b.textContent='🔴';b.classList.add('on');}
  var r;try{r=new (_SR())();}catch(e){_autoMicFine();return;}
@@ -1252,7 +1362,7 @@ function _autoRiprendiSeAperto(fine){
  if(ov&&ov.classList.contains('on')&&_autoLista)autoVai(_autoPos);
  else if(fine)fine();}
 function chiudiAuto(){
- _autoAttiva=false;_speaking=false;if('speechSynthesis' in window)speechSynthesis.cancel();
+ _autoAttiva=false;fermaVoce();
  if(_convOn)toggleConversazione();
  _wlLascia();var ov=document.getElementById('autoov');if(ov)ov.classList.remove('on');_autoPP('▶');}
 
@@ -1863,6 +1973,8 @@ function apriRassegna(){
 
 renderBenvenuto();
 applicaTesto();
+aggCervello();
+popolaVoci();
 renderVerdict();
 renderCopertura();
 renderSeconda();

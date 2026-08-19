@@ -1,0 +1,15 @@
+name = "pulse-chiedi"
+main = "worker.js"
+compatibility_date = "2026-08-01"
+
+# I secret NON stanno qui (questo file è pubblico). Si impostano con:
+#   wrangler secret put PAROLA
+#   wrangler secret put ANTHROPIC_API_KEY
+#   wrangler secret put OPENAI_API_KEY
+# oppure li imposta il workflow .github/workflows/chiedi-deploy.yml
+# leggendoli dai secret del repository.
+
+[vars]
+MODELLO = "claude-haiku-4-5"
+VOCE_A = "nova"
+VOCE_B = "onyx"

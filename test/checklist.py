@@ -69,6 +69,8 @@ MARCATORI = [
  ("Dimensione del testo",          ["function setTesto", "function applicaTesto", 'id="testochips"']),
  ("Modalità auto",                 ["function autoLista", "function apriAuto", "function autoMic", 'id="autoov"', 'id="autobtn"', 'id="autonow"']),
  ("Velocità di lettura persistente", ["function setRate", "S.rate"]),
+ ("Cervello: conversazione e voce naturale", ["function chiediPulse", "function chiediDisponibile", "function _natQueue", "function parla", "function fermaVoce", 'id="cvurl"', 'id="cvstato"']),
+ ("Selettore della voce",          ["function popolaVoci", 'id="vocesel"']),
  ("Destino dei verdetti in Rassegna", ["destino dei verdetti", "F.destino"]),
  ("Linee guida e polso social",    ["F.linee_guida", "F.polso", "F.preprint", 'id="rsomm"']),
  ("Versione mista dei testi",     ["setNlVer('mix'", "function wBlurb"]),

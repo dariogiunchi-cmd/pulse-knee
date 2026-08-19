@@ -1,0 +1,50 @@
+# PULSE — pubblica il cervello esterno («Chiedi a PULSE») su Cloudflare Workers.
+#
+# Si lancia A MANO (workflow_dispatch) quando i quattro secret del repository
+# esistono (Settings → Secrets and variables → Actions):
+#   CLOUDFLARE_API_TOKEN   token Cloudflare col modello «Edit Cloudflare Workers»
+#   PULSE_PAROLA           la parola d'ordine che poi si scrive nell'app
+#   ANTHROPIC_API_KEY      per la conversazione (console.anthropic.com)
+#   OPENAI_API_KEY         per la voce naturale (platform.openai.com) — facoltativo
+#
+# Al termine stampa l'indirizzo del Worker da incollare in
+# Impostazioni → Il cervello di PULSE.
+
+name: chiedi-deploy
+on:
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pubblica il Worker
+        working-directory: chiedi
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          npx --yes wrangler@4 deploy
+      - name: Imposta i secret del Worker
+        working-directory: chiedi
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          PULSE_PAROLA: ${{ secrets.PULSE_PAROLA }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          printf '%s' "$PULSE_PAROLA"      | npx --yes wrangler@4 secret put PAROLA
+          printf '%s' "$ANTHROPIC_API_KEY" | npx --yes wrangler@4 secret put ANTHROPIC_API_KEY
+          if [ -n "$OPENAI_API_KEY" ]; then
+            printf '%s' "$OPENAI_API_KEY"  | npx --yes wrangler@4 secret put OPENAI_API_KEY
+          else
+            echo "OPENAI_API_KEY assente: /voce risponderà 503 e l'app userà la voce di sistema."
+          fi
+      - name: Indirizzo
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        working-directory: chiedi
+        run: |
+          echo "── L'indirizzo del cervello (da incollare nell'app) ──"
+          npx --yes wrangler@4 deployments list 2>/dev/null | head -5 || true
+          echo "Di norma: https://pulse-chiedi.<tuo-sottodominio>.workers.dev"

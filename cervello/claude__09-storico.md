@@ -432,3 +432,31 @@ americano sul post-operatorio delle suture meniscali, visto su Instagram.
   solo; preprint senza avvertenza → rossi attesi, ottenuti).
 Viaggio da utente: **41 passi verdi**. Cancello: **590 controlli, due volte**.
 Le fonti nuove partono dalla prossima raccolta notturna (o dal dispatch).
+
+### 2026-08-19, sera (4) — il cervello di PULSE: conversazione vera e voce naturale
+Mandato: «parlare dentro il progetto come con ChatGPT; la voce è macchinosa —
+anche a pagamento». L'onestà architetturale scritta nel codice («una pagina
+statica non può nascondere una chiave») si risolve nel modo pulito:
+- **chiedi/worker.js** — il cervello esterno su Cloudflare Workers (gratuito):
+  custodisce le chiavi come secret; `/chiedi` = Claude (claude-haiku-4-5) col
+  giornale del giorno come contesto (letto dal repo pubblico, cache 30'),
+  PRINCIPIO ZERO e brevità imposti nel sistema; `/voce` = OpenAI gpt-4o-mini-tts,
+  due timbri (nova/onyx) per il podcast. Protetto da PAROLA d'ordine. Niente
+  memorizzazione. Deploy pronto: workflow `chiedi-deploy` (manuale) legge i
+  secret del repository. Istruzioni e costi in chiedi/LEGGIMI.md
+  (~5-8 CHF/mese totali, dentro il tetto dei 10).
+- **App**: S.cervello {url, parola} da Impostazioni («🧠 Il cervello di PULSE»),
+  ESCLUSO da trasferimento e backup (sentinella nel cancello, collaudata
+  rompendola). `parla()` è l'unico punto d'ingresso della voce: naturale se il
+  cervello è collegato, di sistema altrimenti; se la naturale cade, RITORNO
+  DICHIARATO alla voce del telefono (collaudato end-to-end con un finto Worker).
+  Le domande fuori vocabolario, col cervello, diventano conversazione vera
+  (storia di 8 turni), con risposta parlata e mostrata anche sul pannello auto.
+  Il tasto «Collega» prova il collegamento e risponde con uno stato onesto.
+- **Gratis e subito**: selettore della voce di sistema in Impostazioni + nota su
+  come scaricare le voci iOS «migliorate» (molto più naturali di quella base).
+- GUIDA_V=4 (novità cumulativa); guida aggiornata (sezione 🧠).
+Viaggio da utente: **45 passi verdi**. Cancello: **601 controlli, due volte**.
+Le UNICHE azioni che restano a lui (chiavi e account, nessuno può farle al posto
+suo): 4 secret su GitHub come da chiedi/LEGGIMI.md, poi «attiva il cervello» in
+chat e una parola d'ordine da scrivere nell'app.
