@@ -275,6 +275,94 @@ def youtube_scopri():
     return trovati
 
 
+# ---------------------------------------------------------------- linee guida
+def linee_guida():
+    """Consensus, linee guida e position statement sul ginocchio, da PubMed.
+    Nasce da un caso reale (19 agosto): un consensus americano sul post-operatorio
+    delle suture meniscali circolava sui social PRIMA che lui lo vedesse altrove.
+    La rete cattura per TITOLO oltre che per publication type, perché i consensus
+    escono spesso tipizzati come semplici articoli."""
+    q = urllib.parse.quote(CFG['linee_guida_query'])
+    gg = CFG.get('linee_guida_giorni', 60)
+    j = json.loads(prendi('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi'
+                          f'?db=pubmed&retmode=json&retmax=40&datetype=edat&reldate={gg}&term=' + q))
+    ids = (j.get('esearchresult', {}) or {}).get('idlist', [])
+    voci = []
+    if ids:
+        time.sleep(1)
+        s = json.loads(prendi('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi'
+                              '?db=pubmed&retmode=json&id=' + ','.join(ids)))
+        r = s.get('result', {})
+        for pid in ids:
+            d = r.get(pid) or {}
+            if not d or not d.get('title'):
+                continue
+            voci.append({'pmid': pid, 'titolo': d.get('title')[:180],
+                         'rivista': d.get('fulljournalname') or d.get('source'),
+                         'data': d.get('epubdate') or d.get('pubdate'),
+                         'tipi': list(d.get('pubtype') or [])[:3]})
+    return {'finestra_giorni': gg, 'voci': voci}
+
+
+# ---------------------------------------------------------------- polso social
+def polso():
+    """Di che cosa parla la comunità: Altmetric aggrega le menzioni PUBBLICHE dei
+    lavori scientifici (X, notizie, blog) — è la via legale al segnale «i colleghi
+    ne parlano sui social»: non si scrutano i profili, si guarda quali LAVORI
+    stanno circolando. Instagram non è tracciabile da nessuna API pubblica: quel
+    canale resta alla rassegna dal Mac (claude__15)."""
+    conf = CFG.get('altmetric', {})
+    parole = [p.lower() for p in CFG['crossref_parole']]
+    voci = []
+    for pag in range(1, conf.get('pagine', 3) + 1):
+        try:
+            j = json.loads(prendi('https://api.altmetric.com/v1/citations/'
+                                  f"{conf.get('finestra', '1w')}?num_results={conf.get('per_pagina', 100)}&page={pag}"))
+        except urllib.error.HTTPError:
+            if pag == 1:
+                raise
+            break
+        for r in j.get('results', []):
+            t = (r.get('title') or '').lower()
+            if any(p in t for p in parole):
+                voci.append({'titolo': (r.get('title') or '')[:160],
+                             'rivista': r.get('journal'),
+                             'doi': r.get('doi'), 'pmid': r.get('pmid'),
+                             'punteggio': round(r.get('score') or 0),
+                             'post_x': r.get('cited_by_tweeters_count') or 0,
+                             'notizie': r.get('cited_by_msm_count') or 0,
+                             'url': ('https://doi.org/' + r['doi']) if r.get('doi') else None})
+        time.sleep(1)
+    visti = set()
+    voci = [v for v in voci if not ((v['doi'] or v['titolo']) in visti or visti.add(v['doi'] or v['titolo']))]
+    voci.sort(key=lambda v: -v['punteggio'])
+    return {'finestra': conf.get('finestra', '1w'), 'voci': voci[:12]}
+
+
+# ---------------------------------------------------------------- preprint
+def preprint():
+    """Preprint sul ginocchio da Europe PMC (medRxiv, bioRxiv, Research Square…):
+    la letteratura PRIMA della revisione. Si segnalano, non diventano mai schede:
+    un preprint non è una prova, e la Rassegna lo dice."""
+    gg = CFG.get('europepmc_giorni', 30)
+    da = (OGGI - timedelta(days=gg)).strftime('%Y-%m-%d')
+    a = OGGI.strftime('%Y-%m-%d')
+    termini = ' OR '.join(f'TITLE:"{p}"' for p in
+                          ('knee', 'meniscus', 'meniscal', 'anterior cruciate', 'patellofemoral', 'knee arthroplasty'))
+    q = urllib.parse.quote(f'SRC:PPR AND FIRST_PDATE:[{da} TO {a}] AND ({termini})')
+    j = json.loads(prendi('https://www.ebi.ac.uk/europepmc/webservices/rest/search'
+                          '?format=json&pageSize=25&sort=P_PDATE_D%20desc&query=' + q))
+    voci = []
+    for r in ((j.get('resultList') or {}).get('result') or []):
+        voci.append({'titolo': (r.get('title') or '')[:160],
+                     'dove': r.get('journalTitle') or r.get('publisher') or 'archivio preprint',
+                     'data': r.get('firstPublicationDate'),
+                     'doi': r.get('doi'),
+                     'url': ('https://doi.org/' + r['doi']) if r.get('doi') else None})
+    return {'finestra_giorni': gg, 'voci': voci,
+            'nota': 'preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove'}
+
+
 # ---------------------------------------------------------------- esecuzione
 if __name__ == '__main__':
     scopri = '--scopri' in sys.argv
@@ -287,6 +375,9 @@ if __name__ == '__main__':
                'ritrattazioni': fonte(ritrattazioni),
                'youtube': fonte(youtube),
                'destino': fonte(destino),
+               'linee_guida': fonte(linee_guida),
+               'polso': fonte(polso),
+               'preprint': fonte(preprint),
            }}
     if scopri:
         out['scoperta'] = {'swissmedic': fonte(swissmedic_scopri), 'youtube': fonte(youtube_scopri)}
