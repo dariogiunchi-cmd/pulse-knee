@@ -142,6 +142,19 @@ with sync_playwright() as p:
     # coerenza col carico del giorno: la sezione esiste se e solo se ci sono dati
     coer2=pg3.evaluate("(document.getElementById('secpag').innerHTML.trim()!=='')===((typeof EXTRA!=='undefined'&&EXTRA.length>0)||(typeof SCOPERTE!=='undefined'&&SCOPERTE.length>0))")
     chk(coer2,'la seconda pagina compare se e solo se il giorno l\'ha riempita')
+
+    # --- la voce: interprete dei comandi PURO, frasi sintetiche -----------------
+    chk(pg3.evaluate("interpretaComando('apri la scheda tre').az")=='leggi'
+        and pg3.evaluate("interpretaComando('apri la scheda tre').n")==3,
+        'la voce capisce «apri la scheda tre» (numeri in lettere compresi)')
+    chk(pg3.evaluate("interpretaComando('salva la 2').az")=='salva',
+        'la voce capisce «salva»')
+    chk(pg3.evaluate("interpretaComando('basta').az")=='stop',
+        'la voce si ferma quando glielo si dice')
+    chk(pg3.evaluate("interpretaComando('parlami del meteo').az")=='boh',
+        'una richiesta fuori vocabolario viene dichiarata, non indovinata')
+    chk(pg3.evaluate("_frasi('Una. Due! Tre?').length")==3,
+        'la lettura spezza il testo in frasi (aggira il taglio di iOS)')
     pg3.close()
     b.close()
 print(f"\n===== PASSATI {ok} · FALLITI {bad} =====")

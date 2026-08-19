@@ -295,3 +295,23 @@ clicco, per continuare a leggere il giornale, e mi propone anche cose diverse»)
   oggi» anche alle 5:42, bloccando ogni verifica notturna — ora accetta i tre stati
   legittimi del banner). Sentinelle collaudate rompendole: breve=scheda di oggi,
   breve=scheda del passato, numero nel breve — tre su tre intercettati.
+
+### 2026-08-19, mattina — l'icona di marca e la voce che ascolta
+Su richiesta del Dr. Giunchi:
+- **Icona dell'app col suo logo**: monogramma DG (dal kit «Logo A – Blu» sul suo Drive,
+  maggio 2026) in bianco sul navy di marca campionato dal file (#272f4a); quattro
+  formati (180/192/512/maskable), manifest allineato ai colori. Nota iOS: l'icona già
+  aggiunta alla home resta quella vecchia finché non si rimuove e si riaggiunge.
+- **Voce**: lettura a FRASI in coda (aggira il taglio silenzioso delle utterance
+  lunghe di Safari iOS) con progresso e stop pulito; scelta automatica della migliore
+  voce italiana (premium/enhanced prima), preferenza persistibile per NOME (S.voce);
+  **modalità conversazione** 🎙 con riconoscimento vocale it-IT: capisce un
+  vocabolario dichiarato (apri/leggi/salva la N — numeri anche in lettere —,
+  briefing, tensioni, seconda pagina, sorprendimi, rassegna, stop), risponde a voce
+  e si rimette in ascolto. Fuori vocabolario: lo dice, non indovina. L'onestà
+  architetturale resta scritta nel codice: la conversazione LIBERA richiede un
+  modello e arriva con «Chiedi a PULSE» alla settimana verde compiuta.
+- interpretaComando è pura e collaudata frase per frase nel cancello (10/10 al primo
+  giro); marcatori in checklist. Email «routine completed» archiviate dalla inbox su
+  sua richiesta, pulizia quotidiana aggiunta al controllo delle 6.15.
+Cancello: **540 controlli verdi**.

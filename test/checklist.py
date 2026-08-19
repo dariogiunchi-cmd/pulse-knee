@@ -62,6 +62,7 @@ MARCATORI = [
  ("Giorni scoperti dichiarati",   ["function copertura", "function renderCopertura", 'id="copbox"']),
  ("Rassegna delle fonti esterne", ["function rassHTML", "function apriRassegna", 'id="rassbox"']),
  ("Seconda pagina del giornale",  ["function renderSeconda", "function spSorpresa", "function spAffini", "function esplora", 'id="secpag"']),
+ ("Voce: lettura a frasi e comandi", ["function _speakQueue", "function interpretaComando", "function toggleConversazione", 'id="micbtn"']),
  ("Versione mista dei testi",     ["setNlVer('mix'", "function wBlurb"]),
  ("Durata video in secondi",      ["function setSec", "function durataNota", "PAROLE_AL_SECONDO"]),
  ("Proposte tracciate per nome",  ["function suggAperte", "suggDone"]),
