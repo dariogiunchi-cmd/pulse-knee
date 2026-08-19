@@ -306,37 +306,45 @@ def linee_guida():
 
 # ---------------------------------------------------------------- polso social
 def polso():
-    """Di che cosa parla la comunità: Altmetric aggrega le menzioni PUBBLICHE dei
-    lavori scientifici (X, notizie, blog) — è la via legale al segnale «i colleghi
-    ne parlano sui social»: non si scrutano i profili, si guarda quali LAVORI
-    stanno circolando. Instagram non è tracciabile da nessuna API pubblica: quel
-    canale resta alla rassegna dal Mac (claude__15)."""
-    conf = CFG.get('altmetric', {})
+    """Di che cosa parla la comunità — la via legale al segnale «i colleghi ne
+    parlano sui social»: si guarda quali LAVORI circolano, non i profili di chi
+    li posta. Due passi: Crossref elenca i lavori sul ginocchio degli ultimi 14
+    giorni; l'endpoint per-DOI di Altmetric (libero, senza chiave — quello di
+    ELENCO invece risponde 403: verificato il 19 agosto) dice quante menzioni
+    pubbliche ha ciascuno (X, notizie, blog). Instagram non è tracciabile da
+    nessuna API: quel canale resta alla rassegna dal Mac (claude__15)."""
     parole = [p.lower() for p in CFG['crossref_parole']]
+    da = (OGGI - timedelta(days=14)).strftime('%Y-%m-%d')
+    url = ('https://api.crossref.org/works?query.bibliographic='
+           + urllib.parse.quote('knee meniscus anterior cruciate ligament arthroplasty')
+           + f'&filter=from-pub-date:{da},type:journal-article&rows=80'
+           + '&select=DOI,title,container-title,issued')
+    j = json.loads(prendi(url))
+    candidati = []
+    for r in (j.get('message', {}).get('items') or []):
+        tit = (r.get('title') or [''])[0]
+        if tit and any(p in tit.lower() for p in parole):
+            candidati.append({'doi': r.get('DOI'), 'titolo': tit[:160],
+                              'rivista': (r.get('container-title') or [''])[0]})
     voci = []
-    for pag in range(1, conf.get('pagine', 3) + 1):
+    for c in candidati[:50]:
         try:
-            j = json.loads(prendi('https://api.altmetric.com/v1/citations/'
-                                  f"{conf.get('finestra', '1w')}?num_results={conf.get('per_pagina', 100)}&page={pag}"))
-        except urllib.error.HTTPError:
-            if pag == 1:
-                raise
-            break
-        for r in j.get('results', []):
-            t = (r.get('title') or '').lower()
-            if any(p in t for p in parole):
-                voci.append({'titolo': (r.get('title') or '')[:160],
-                             'rivista': r.get('journal'),
-                             'doi': r.get('doi'), 'pmid': r.get('pmid'),
-                             'punteggio': round(r.get('score') or 0),
-                             'post_x': r.get('cited_by_tweeters_count') or 0,
-                             'notizie': r.get('cited_by_msm_count') or 0,
-                             'url': ('https://doi.org/' + r['doi']) if r.get('doi') else None})
-        time.sleep(1)
-    visti = set()
-    voci = [v for v in voci if not ((v['doi'] or v['titolo']) in visti or visti.add(v['doi'] or v['titolo']))]
+            a = json.loads(prendi('https://api.altmetric.com/v1/doi/' + urllib.parse.quote(c['doi'])))
+        except urllib.error.HTTPError as e:
+            if e.code == 404:          # 404 = nessuna menzione registrata: punteggio zero
+                time.sleep(0.5)
+                continue
+            raise
+        voci.append({'titolo': c['titolo'], 'rivista': c['rivista'] or a.get('journal'),
+                     'doi': c['doi'], 'pmid': a.get('pmid'),
+                     'punteggio': round(a.get('score') or 0),
+                     'post_x': a.get('cited_by_tweeters_count') or 0,
+                     'notizie': a.get('cited_by_msm_count') or 0,
+                     'url': 'https://doi.org/' + c['doi']})
+        time.sleep(0.5)
     voci.sort(key=lambda v: -v['punteggio'])
-    return {'finestra': conf.get('finestra', '1w'), 'voci': voci[:12]}
+    return {'finestra': '14 giorni', 'esaminati': len(candidati[:50]),
+            'voci': [v for v in voci if v['punteggio'] > 0][:12]}
 
 
 # ---------------------------------------------------------------- preprint
