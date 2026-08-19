@@ -858,9 +858,18 @@ function showFmt(){document.getElementById('shCnt').textContent=socText();docume
 function closeSocial(){document.getElementById('ov').classList.remove('on')}
 function copyCnt(){var t=socText();try{navigator.clipboard.writeText(t)}catch(e){}toast('Copiato');}
 var _speaking=false;
+/* ORDINE DELLE VOCI — pura, così il cancello la collauda con voci sintetiche.
+   Emma in testa (sua scelta esplicita, 19 agosto: ha scaricato Emma Premium);
+   poi la qualità: premium > enhanced/migliorata > le altre voci noti. Il
+   selettore in Impostazioni (S.voce) vince comunque su tutto. */
+function _ordinaVoci(vs){
+ function punti(v){var n=(v.name||'').toLowerCase();
+  return (/emma/.test(n)?8:0)+(/premium/.test(n)?4:0)+(/enhanced|migliorat/.test(n)?2:0)+
+         (/siri|neural|federica|alice|luca/.test(n)?1:0);}
+ return (vs||[]).slice().sort(function(a,b){return punti(b)-punti(a)});}
 function _pickVoice(){var vs=(window.speechSynthesis?speechSynthesis.getVoices():[]).filter(function(v){return /it(-|_)/i.test(v.lang)});
  if(S.voce){var scelta=vs.filter(function(v){return v.name===S.voce})[0];if(scelta)return scelta;}
- vs.sort(function(a,b){function s(v){return /(enhanced|premium|siri|neural|federica|alice|luca|emma)/i.test(v.name)?1:0}return s(b)-s(a)});return vs[0]||null;}
+ return _ordinaVoci(vs)[0]||null;}
 /* LETTURA A FRASI. Un'unica utterance lunga su iOS si tronca senza errore dopo
    qualche frase (difetto noto di Safari): il testo si spezza in frasi e si legge
    in coda. In più la coda dà il progresso e uno stop pulito. */
@@ -872,7 +881,7 @@ function _frasi(t){return (t||'').split(/(?<=[.!?])\s+/).filter(function(s){retu
 function dialogoFrasi(d){var out=[];(d||[]).forEach(function(r){_frasi(r.t).forEach(function(f){out.push({t:f,chi:r.chi==='B'?'B':'A'})})});return out;}
 function _voceB(){var a=_pickVoice();
  var vs=(window.speechSynthesis?speechSynthesis.getVoices():[]).filter(function(v){return /it(-|_)/i.test(v.lang)&&(!a||v.name!==a.name)});
- vs.sort(function(x,y){function s(v){return /(enhanced|premium|siri|neural|federica|alice|luca|emma)/i.test(v.name)?1:0}return s(y)-s(x)});return vs[0]||null;}
+ return _ordinaVoci(vs)[0]||null;}
 var _coda=[],_codaIdx=0;
 function _speakQueue(frasi,alTermine){
  if(!('speechSynthesis' in window)){if(alTermine)alTermine();return;}

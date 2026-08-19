@@ -460,3 +460,11 @@ Viaggio da utente: **45 passi verdi**. Cancello: **601 controlli, due volte**.
 Le UNICHE azioni che restano a lui (chiavi e account, nessuno può farle al posto
 suo): 4 secret su GitHub come da chiedi/LEGGIMI.md, poi «attiva il cervello» in
 chat e una parola d'ordine da scrivere nell'app.
+
+### 2026-08-19, sera (5) — Emma
+Ha scaricato la voce «Emma Premium» sull'iPhone e chiesto di usarla. L'ordine
+delle voci è ora una funzione PURA (_ordinaVoci) con Emma in testa per sua
+scelta esplicita, poi premium > migliorate > note; il selettore in Impostazioni
+(S.voce) vince comunque. Il break-test ha smascherato una sentinella debole
+(«Emma (Premium)» vinceva già per il punteggio premium, il bonus-Emma non era
+sorvegliato): aggiunto il caso Emma-contro-altra-premium. Cancello: 605 ×2.
