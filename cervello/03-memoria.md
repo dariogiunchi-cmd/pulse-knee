@@ -7,11 +7,20 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 18 agosto 2026.*
+*Ultimo aggiornamento: 19 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-08-19 | The Knee | Allineamento assiale (rotazionale) in PTG: SR+meta-regressione, 65 studi, 8.392 protesi | 10.1016/j.knee.2026.104588 | protesi robotica, allineamento, VELYS | aperto — più rotazione esterna femorale/tibiale e minor mismatch = punteggi migliori; 86% degli studi misura solo 1-2 parametri
+2026-08-19 | J Arthroplasty | Psoriasi e protesi di ginocchio: più infezioni e reinterventi a 2 anni (coorte appaiata, 4.191+4.191) | 10.1016/j.arth.2026.08.022 | protesi, fattore di rischio, infezione | aperto — RR 1,5 su PJI e revisione, RR 1,7 su deiscenza di ferita; database sanitario, no dati su gravità psoriasi
+2026-08-19 | AJSM | Condrosi femoro-rotulea e sutura della radice meniscale mediale posteriore (coorte, 115 pz) | 10.1177/03635465261471374 | root, transtibiale, estrusione, condrosi | aperto — rafforza T2b: la condrosi FP non peggiora i sintomi in chi non fallisce ma quasi settuplica la conversione a protesi (14,9% vs 2,1%)
+2026-08-19 | The Knee | Assenza del LCA a RM preoperatoria e protesi cruciate-retaining, 5 anni (coorte, 164) | 10.1016/j.knee.2026.104600 | protesi robotica, VELYS, crociato anteriore | aperto — LCA assente = KSS funzionale più basso a 5 anni (β=-8,9; p=0,014); KOOS/FJS invariati
+2026-08-19 | Res Sports Med | Biomeccanica dello squat monopodalico a 4 mesi predice esiti a 6-12 mesi dopo LCA (coorte prospettica, 53) | 10.1080/15438627.2026.2720158 | ritorno allo sport, criterio di rientro | aperto — rafforza T3/T4: il momento di flessione (non l'angolo) a 4 mesi predice forza e IKDC futuri
+2026-08-19 | J Exp Orthop | Ritorno in campo e rendimento nel calcio femminile d'élite dopo LCA (retrospettivo, 242 infortuni/206 giocatrici) | 10.1002/jeo2.70888 | ritorno allo sport, criterio di rientro | aperto — rafforza T3/T4: RTP 66,8% ma minutaggio -47/-58% nel primo anno, soprattutto centrocampiste
+2026-08-19 | J Exp Orthop | LCA over-the-top + LET dopo i 55 anni (serie retrospettiva, 28 pz, Rizzoli/Bologna) | 10.1002/jeo2.70889 | let, over-the-top, età avanzata | aperto — MUTO: braccio singolo, nessun confronto; tecnica femorale e innesto diversi dai tuoi; tocca T1a solo come segnale di sicurezza in età avanzata
+2026-08-19 | Arthritis Care Res | Segmentazione IA della cartilagine predice la protesi di ginocchio (caso-controllo annidato in OAI, 132 coppie) | 10.1002/acr.80140 | cartilagine, intelligenza artificiale, imaging | aperto — non tocca la tua tecnica; IA pari al metodo manuale esperto nel rilevare la perdita cartilaginea pre-protesi
 
 2026-08-18 | Sports Health | Salto monopodalico dopo LCA sotto carico visivo-cognitivo, 1-5 anni (60 pz) | 10.1177/19417381261471425 | ritorno allo sport, criterio di rientro, deficit residuo | aperto — rafforza T3: il deficit dell'arto operato persiste anni dopo, il carico cognitivo non lo aggrava
 2026-08-18 | JAAOS | Allineamento cinematico vs meccanico in PTG: SR+meta, 1.068 ginocchia | 10.5435/JAAOS-D-25-01576 | protesi robotica, allineamento, VELYS | aperto — più flessione e meno release col cinematico; sicurezza (complicanze PF, revisione) con IC larghi
@@ -96,6 +105,15 @@ Attesa 2029.
 Nel frattempo: GRASE (Copenaghen, 150 pz, BPTB/HT/QT randomizzati, senza LET,
 reclutamento completo) risponderà sull'innesto — non sulla combinazione col LET.
 
+**Nuovo il 19 agosto 2026.** Una piccola serie retrospettiva del gruppo di Bologna
+(Rizzoli — Bini, Lucidi, Grassi, Zaffagnini) su 28 pazienti ≥55 anni con LCA
+ricostruito con tecnica over-the-top più LET mostra un solo fallimento (3,6%) e
+punteggi clinici molto migliorati. Non tocca la lacuna sull'innesto rigido — tecnica
+femorale diversa dalla tua (over-the-top, non anteromediale) e innesto non riportato
+nell'abstract — ma è un segnale di sicurezza del LET in età più avanzata della tua
+casistica tipica. Un trial osservazionale dedicato è in reclutamento (NCT07041242,
+>50 vs <30 anni).
+
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
 **Verificata sul full text di STABILITY 2.** Il protocollo prescrive: banderella di
@@ -143,6 +161,19 @@ Getgood, Karlsson): transtibiale confermata di scelta, e nel RCT citato sulla
 centralizzazione l'estrusione aumenta a 6 mesi nel 96,2% delle ginocchia comunque
 trattate — l'estrusione resta il determinante non corretto da nessuna tecnica attuale.
 
+**Rafforzata il 19 agosto 2026** da un secondo angolo. Coorte AJSM di 115 pazienti
+dopo sutura isolata della radice meniscale mediale posteriore, stratificata per
+condrosi femoro-rotulea (Outerbridge ≥3, 67 pz, vs <3, 48 pz): fra chi non fallisce,
+KOOS-12, IKDC e ritorno allo sport sono sovrapponibili fra i gruppi — la condrosi
+avanzata non peggiora i sintomi a medio termine. Ma la conversione a protesi
+(mono o totale) è quasi sette volte più frequente col danno cartilagineo avanzato
+(14,9% vs 2,1%; p=0,021). Non è l'estrusione, ma lo stesso principio: conta il
+carico degenerativo basale al momento dell'intervento, non il tempo trascorso. Su
+rirottura (11,9% vs 8,3%) e reintervento (1,5% vs 4,2%) lo studio resta muto — gli
+intervalli non escludono un rischio anche più che quadruplicato in un senso o
+nell'altro (calcolato con `test/potenza.py`: RR 1,43 IC 0,46-4,49 e RR 0,36 IC
+0,03-3,84).
+
 ### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22)*
 
 La simmetria di forza è il criterio clinico più usato; la meta-regressione che lo
@@ -166,6 +197,18 @@ la prestazione degli operati rispetto ai controlli — il limite sembra
 dell'arto, non dell'attenzione. Non chiude la tensione (resta trasversale,
 non lega il deficit a un esito duro), ma la rafforza con un secondo segnale
 indipendente dal tuo innesto.
+
+**Aggiornata il 19 agosto 2026, due segnali che si parlano.** Uno studio prospettico
+su 53 pazienti (Hong Kong) mostra che il momento di flessione del ginocchio — non il
+semplice angolo — misurato durante uno squat monopodalico a 4 mesi dalla
+ricostruzione predice in modo indipendente forza estensoria e IKDC a 6 mesi, con
+valore predittivo che persiste a 12 mesi: un possibile segnale biomeccanico precoce,
+oltre la sola simmetria di forza misurata a fine percorso. E su 242 infortuni al LCA
+in 206 calciatrici professioniste delle cinque maggiori leghe europee, il ritorno in
+campo è del 66,8% (mediana 9,8 mesi), ma nel primo anno di rientro il tempo di gioco
+cala del 47-58% (p<0,001), con le centrocampiste più penalizzate (-41,2%) e le
+portiere quasi invariate: anche in una popolazione d'élite, tornare in campo non è
+tornare al livello precedente.
 
 **Cosa la chiude:** studi che leghino il deficit di attivazione a esiti duri —
 rirottura o mancato rientro — non a misure intermedie.

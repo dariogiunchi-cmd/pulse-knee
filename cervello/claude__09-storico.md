@@ -8,7 +8,30 @@
 > `## AAAA-MM-GG  ·  n papers · n rossi · n arancioni`
 > poi: PICK, e l'elenco compatto delle schede con PMID/DOI.
 
-*Ultimo aggiornamento: 4 agosto 2026.*
+*Ultimo aggiornamento: 19 agosto 2026.*
+
+---
+
+## 2026-08-19 · 8 papers · 0 rossi · 0 arancioni
+PICK: AJSM — La cartilagine femoro-rotulea al momento della sutura della radice predice la protesi, non i sintomi · PMID 42610516 · 10.1177/03635465261471374
+- 🟢 The Knee — Allineamento assiale (rotazionale) in PTG: più rotazione esterna e minor mismatch, punteggi migliori (SR+meta-regressione, 65 studi/8.392, liv. II) · PMID 42607449 · 10.1016/j.knee.2026.104588
+- 🟢 J Arthroplasty — Psoriasi e protesi di ginocchio: più infezioni e reinterventi a 2 anni (coorte appaiata per propensione, 4.191+4.191, liv. III) · PMID 42607968 · 10.1016/j.arth.2026.08.022
+- 🟢 AJSM — Condrosi femoro-rotulea alla sutura della radice meniscale: sintomi invariati, protesi quasi 7 volte più frequente (coorte retrospettiva, 115, liv. III) · PMID 42610516 · 10.1177/03635465261471374
+- 🟢 The Knee — Assenza del LCA a RM preoperatoria: KSS funzionale più basso a 5 anni dopo protesi cruciate-retaining (coorte, 164, liv. III) · PMID 42612435 · 10.1016/j.knee.2026.104600
+- 🟢 Res Sports Med — Biomeccanica dello squat monopodalico a 4 mesi predice forza e IKDC a 6-12 mesi dopo LCA (coorte prospettica, 53, liv. II) · PMID 42611046 · 10.1080/15438627.2026.2720158
+- 🟢 J Exp Orthop — Calcio femminile d'élite: rientro in campo 66,8% ma minutaggio -47/-58% nel primo anno (retrospettivo, 242 infortuni/206 giocatrici, liv. III) · PMID 42609982 · 10.1002/jeo2.70888
+- 🟢 J Exp Orthop — LCA over-the-top + LET dopo i 55 anni: pochi fallimenti in piccola serie (retrospettivo a braccio singolo, 28, liv. IV) [Rizzoli/Bologna: Bini, Grassi, Zaffagnini] · PMID 42609622 · 10.1002/jeo2.70889
+- ⚪ Arthritis Care Res — Segmentazione IA della cartilagine predice la protesi di ginocchio, pari al metodo manuale (caso-controllo annidato in OAI, 132 coppie) · PMID 42610508 · 10.1002/acr.80140
+CITAZIONI: verificate 8/8 su PubMed MCP — ogni PMID riaperto e confrontato su titolo, rivista e DOI dai campi identifiers.
+STUDI MUTI: 2 — scheda 3 (rirottura e reintervento non significativi ma intervalli larghi: RR 1,43 IC 0,46-4,49 e RR 0,36 IC 0,03-3,84, calcolati con test/potenza.py) e scheda 7 (serie a braccio singolo, 28 pazienti, nessun confronto).
+TENSIONI MOSSE: T2b (condrosi femoro-rotulea come secondo marcatore di carico degenerativo basale, accanto all'estrusione) · T3/T4 (segnale biomeccanico precoce a 4 mesi dallo squat monopodalico + dato sul calo di rendimento nel calcio femminile d'élite dopo il rientro) · T1a (piccola serie su LET over-the-top dopo i 55 anni: non chiude la lacuna sull'innesto rigido, segnale di sicurezza in età avanzata).
+SUGGERIMENTO (SUGGQ): Prakrit R. Kumar (Warwick, allineamento assiale in PTG) · Laith Jazrawi (NYU Langone, autore senior del PICK) · Patrick Shu-Hang Yung (Chinese University of Hong Kong, biomeccanica del rientro allo sport) · Arata Nakajima (Toho University, Giappone, LCA e protesi cruciate-retaining).
+INDUSTRIA · CONGRESSI · SOCIETÀ: NON VERIFICATI oggi — il raccoglitore notturno (fonti/raccolta.json) non è passato stanotte (ultimo dato: 18 agosto sera, 20:50 UTC, esecuzione manuale); ricerca limitata a PubMed.
+RITRATTAZIONI: ricontrollati su PubMed tutti i 46 PMID già citati nello storico (2-18 agosto) più gli 8 di oggi — nessuna ritrattazione né Expression of Concern. LAST_RETRACTION_CHECK = 19 agosto 2026.
+NON VERIFICATO: Swissmedic · openFDA (raccoglitore notturno non passato) · Retraction Watch (archivio salvati vuoto) · pagine ESSKA/AAOS/ICRS · registri SIRIS/RIPO/NJR/AOANJRR.
+CONSEGNA: app aggiornata, BUILD_DATE 2026-08-19, 8 schede; NLB su tutte, SOCV/TAGS/SOC sulle schede 1 e 3 (il PICK); 523 controlli verdi.
+NOTA DI METODO: finestra edat 15-19 agosto (mirate per tecnica) e 17-19 agosto (ricerca generale per termine-nucleo in titolo). Circa 30 risultati fra le due ricerche principali più le mirate, con sovrapposizioni interne e con le schede del 17-18 agosto (dedup manuale prima della verifica automatica): 24 candidati distinti, tutti aperti e letti per esteso, 8 tenuti. Nessuna scheda rossa o arancione oggi.
+NOTA SUL RACCOGLITORE: `fonti/raccolta.json` risulta fermo alla sera del 18 agosto (quattro esecuzioni manuali via workflow_dispatch fra le 20:38 e le 20:50 UTC, verificate su GitHub Actions), non alla notte del 19. La raccolta pianificata delle 4:15 UTC non risulta essere partita: da controllare il trigger schedulato di `raccolta.yml`. Segnalato in chat.
 
 ---
 
