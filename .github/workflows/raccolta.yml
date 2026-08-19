@@ -13,6 +13,11 @@ name: raccolta
 
 on:
   schedule:
+    # Doppia corsa: il cron di GitHub è dichiaratamente «best effort» e la notte del
+    # 19 agosto la corsa unica delle 4:15 non è partita (segnalato dal briefing).
+    # Due appuntamenti distinti dimezzano la probabilità del buco; lo script
+    # committa solo se qualcosa è cambiato, quindi la doppia corsa non sporca.
+    - cron: '40 3 * * *'
     - cron: '15 4 * * *'
   workflow_dispatch:
     inputs:

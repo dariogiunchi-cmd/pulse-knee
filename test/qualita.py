@@ -67,7 +67,12 @@ with sync_playwright() as p:
     chk(bool(saved) and len(saved)>0,'la modifica persiste nella memoria del telefono')
     pg.click('.sheet .close'); pg.wait_for_timeout(200)
     print("\n=== NON-REGRESSIONE ===")
-    chk('Aggiornato oggi' in pg.inner_text('#freshbox'),'banner freschezza')
+    # Il banner ha TRE stati legittimi (è arrivato · sta arrivando · non è arrivato):
+    # pretendere «Aggiornato oggi» in assoluto significava dipendere dall'orologio, e
+    # bloccava qualunque verifica notturna — trovato alle 5:42 UTC del 19 agosto.
+    _fb=pg.inner_text('#freshbox')
+    chk(('Aggiornato oggi' in _fb) or ('in preparazione' in _fb) or ('non è arrivato' in _fb),
+        'banner freschezza in uno dei suoi tre stati dichiarati')
     if pg.evaluate('typeof duelliVivi==="function" && duelliVivi().length>0'):
         chk('VS' in pg.inner_text('#duelbox'),'barra duello')
     else:
@@ -124,6 +129,19 @@ with sync_playwright() as p:
         'senza storia non si inventa nulla')
     coer=pg3.evaluate("(document.getElementById('copbox').textContent.trim()!=='')===(copertura(HISTORY)!=='')")
     chk(coer,'il riquadro compare se e solo se i dati dicono che serve')
+
+    # --- la seconda pagina: funzioni PURE su materiale sintetico -------------
+    chk(pg3.evaluate("spSorpresa([{t:'a'},{t:'b'}],['a']).t")=='b',
+        'Sorprendimi propone prima ciò che non è mai stato visto')
+    chk(pg3.evaluate("spSorpresa([{t:'a'},{t:'b'}],['a','b']).t") in ('a','b'),
+        'esaurite le novità, Sorprendimi ricomincia il giro invece di tacere')
+    chk(pg3.evaluate("spSorpresa([],[])") is None,
+        'senza scoperte non si inventa nulla')
+    ordinati=pg3.evaluate("spLista([{pmid:'1'},{pmid:'2'},{pmid:'3'}],3,['3','1']).map(function(b){return b.pmid})")
+    chk(ordinati[:2]==['3','1'],'esplora porta in cima i brevi affini, nell\'ordine dato')
+    # coerenza col carico del giorno: la sezione esiste se e solo se ci sono dati
+    coer2=pg3.evaluate("(document.getElementById('secpag').innerHTML.trim()!=='')===((typeof EXTRA!=='undefined'&&EXTRA.length>0)||(typeof SCOPERTE!=='undefined'&&SCOPERTE.length>0))")
+    chk(coer2,'la seconda pagina compare se e solo se il giorno l\'ha riempita')
     pg3.close()
     b.close()
 print(f"\n===== PASSATI {ok} · FALLITI {bad} =====")

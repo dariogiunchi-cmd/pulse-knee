@@ -110,7 +110,8 @@ Tutte come `var` a livello superiore:
 `BUILD_DATE` · `ARTICLES` · `CIT_VERIFICATE` · `CONF` · `MUTE` · `TENSIONS` · `LINKS` ·
 `DUELS` · `HISTORY` · `AUDIT` · `RETRACTED` · `LAST_RETRACTION_CHECK` · `BRIEF_TEXT` ·
 `NLB` · `SOCV` · `TAGS` · `SOC` · `SUGGQ` · `VERDICT` · `PICK` · `INDUSTRIA` ·
-`CONGRESSI` · `SOCIETA` · `NONVERIF`
+`CONGRESSI` · `SOCIETA` · `NONVERIF` · `EXTRA` · `SCOPERTE` (la «seconda pagina»:
+brevi verificati senza numeri + proposte fuori dal solito — regole in claude__13)
 
 ### Da non toccare mai
 

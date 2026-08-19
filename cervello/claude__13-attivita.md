@@ -66,6 +66,25 @@ sola). Ogni fonte ha un campo `esito`: se non è «ok», quella fonte va in NONV
 il file te lo dice, tu lo riporti. Se il file manca o `generato` non è di stanotte,
 il raccoglitore non è passato: dillo in NONVERIF e in chat, e procedi col resto.
 
+LA SECONDA PAGINA — il giornale continua per chi ha tempo. Ogni mattina, oltre alle
+schede, riempi DUE variabili nuove in dati/giorno.js:
+· `EXTRA` = 8-15 «brevi»: lavori VERI del giorno che non sono diventati schede — li
+  hai già davanti, sono gli scartati-per-brevità dello screening. Formato:
+  {dot,j,h,v,pmid,doi,temi:[…]}: h è la notizia in ≤12 parole, v UNA riga sul perché
+  o sul limite, temi 2-4 parole chiave che permettono all'app di collegarli alle
+  schede («esplora il tema»). REGOLE: ogni pmid RIAPERTO su PubMed come le schede
+  (titolo e rivista confermati); NIENTE numeri nei brevi — un numero esige la sua
+  incertezza, e il breve non ha spazio per darla: chi vuole i numeri apre PubMed;
+  mai un pmid già usato come scheda (oggi o nei giorni passati: verita.py blocca);
+  i brevi NON vanno nello storico — domani possono essere promossi a scheda.
+· `SCOPERTE` = 2-3 proposte «fuori dal solito» per il tasto Sorprendimi: l'antibolla
+  quotidiana — AI in ortopedia, bioingegneria, mondo orientale, storia di una
+  tecnica, campi adiacenti. Formato {t,v,pmid,doi,temi}: t il titolo-notizia, v due
+  righe sul perché vale la deviazione. Stesse regole di verità delle schede. Devono
+  essere DIVERSE dai suoi filoni soliti: è il loro unico scopo.
+Il costo è basso (una chiamata batch di verifica in più); il valore è che l'app
+smette di finire quando finiscono le dieci schede.
+
 LA DOMENICA il briefing apre con la settimana: BRIEF_TEXT comincia con una sintesi
 (i 3-5 lavori che contano della settimana dallo storico, le tensioni mosse), poi il
 giorno normale. SUGGQ: considera anche i coautori ricorrenti — un nome comparso in

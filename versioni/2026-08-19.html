@@ -92,6 +92,8 @@
   .ritem a{color:inherit}.rmeta{font-size:11.5px;color:var(--dim);margin-top:2px}
   .ritem.rHot{border-color:rgba(255,59,48,.45)}
   .rko{font-size:12.5px;color:var(--dim);border:1px dashed var(--line);border-radius:10px;padding:8px 11px;margin:0 0 8px}
+  .spBtn{display:block;width:100%;margin:8px 0;text-align:center}
+  .spEspl{cursor:pointer;text-decoration:underline;text-underline-offset:2px}
   .tcong{display:flex;gap:10px;align-items:flex-start}.tcong .tt .h{font-size:13px;font-weight:600}.tcong .tt .v{font-size:11.5px;color:var(--dim);margin-top:2px}
   .lab{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin:2px 0 7px}
   .tag{display:inline-flex;align-items:center;gap:6px;background:var(--tint);color:#3a3a3c;font-size:12px;font-weight:500;padding:5px 11px;border-radius:13px;margin:3px 5px 3px 0}.tag b{color:var(--dim2);font-weight:700;cursor:pointer;font-size:14px}
@@ -331,6 +333,7 @@
         <div class="tens2"><div class="tintro">Punti in cui <b>tu fai una cosa</b> e la letteratura <b>ne ha studiata un&rsquo;altra</b>. Non sono errori: sono zone in cui le prove non ti coprono. Tocca per vedere che cosa puoi farci.</div><div id="tensbox"></div></div>
         <div class="sl r-res"><span class="ic">🔬</span>Ricerca scientifica<span class="n" id="resn"></span></div>
         <div class="filters"><button class="fchip on" onclick="setFilter('all',this)">Tutti</button><button class="fchip" onclick="setFilter('orange',this)">🟠 La mia pratica</button><button class="fchip" onclick="setFilter('green',this)">🟢 Mie tecniche</button><button class="fchip" onclick="setFilter('gray',this)">⚪ Contesto</button></div><div class="card" id="researchList"></div>
+        <div id="secpag"></div>
       </div>
       <div>
         <div id="latobox"></div>
@@ -559,6 +562,23 @@ var HISTORY=[{d:'2026-08-02',label:'domenica 2 agosto',n:11,rossi:0,arancioni:2,
 var AUDIT={settimana:'19 agosto 2026',visti:24,scartati:"16 letti per esteso e scartati: fuori perimetro anca/spalla (cadute dopo artroscopia d'anca, due lettere su lesioni GLAD di spalla) · scienza di base (trascrittoma infiammatorio IL-1β su fibroblasti del moncone del LCA) · generici senza termine-nucleo in titolo (esercizi tradizionali cinesi per patologie muscoloscheletriche, editoriale e simulazione statistica sull'indice di fragilità, clustering di lesioni del semitendinoso in calciatori) · marginali senza dato clinico sostanziale (revisione narrativa su anestesia in artroplastica d'anca e ginocchio, lettera su un percorso di recupero senza dati, analisi bibliometrica sulla protesi robotica, variazione di prezzo della protesi monocompartimentale negli USA, variazione di pratica perioperatoria fra ospedali turchi, parametri glicemici in una piccola coorte indiana, costi del resurfacing rotuleo senza differenza di esito, benchmark di modelli linguistici sulla classificazione Outerbridge).",nonverificate:['Swissmedic (avvisi dispositivi)','openFDA (raccoglitore notturno non passato stanotte)','Retraction Watch (archivio salvati vuoto)','pagine ESSKA · AAOS · ICRS','registri protesici (SIRIS · RIPO · NJR · AOANJRR)'],nota:'Finestra edat 15-19 agosto sulle ricerche mirate per tecnica, 17-19 sulla ricerca generale per termine-nucleo in titolo. Circa 30 risultati fra le due ricerche principali più le mirate, con sovrapposizioni fra loro e con le schede del 17-18 agosto (dedup manuale): 24 candidati distinti dopo dedup, tutti aperti e letti per esteso, 8 tenuti. Nessuna scheda rossa o arancione oggi: 0 è un conteggio, non una rassicurazione. Il raccoglitore notturno (fonti/raccolta.json) non è passato stanotte: ultimo dato del 18 agosto sera, riportato in NONVERIF.'};
 var TENSIONS=[{id:"1",t:"Il rinforzo laterale (LET) su innesto rigido",fai:"Fai il LET su tutti i pazienti che ricostruisci, con innesto di retto femorale.",prove:"Il beneficio del LET è dimostrato su innesto hamstring. Il protocollo STABILITY 2 scrive testualmente che nessuno studio ha stabilito se quel beneficio resta con innesti più rigidi. Aggiornamento del 12 agosto: un database americano su 5.944 gesti combinati conferma che il tempo unico è sicuro — ma non distingue né il costrutto né l'innesto. Nuovo il 17 agosto: il trial GRASE (Copenaghen, 150 pazienti, reclutamento completo) confronterà i tre innesti, quadricipitale compreso — ma senza LET: risponderà sull'innesto, non sulla tua combinazione. Nuovo il 19 agosto: una piccola serie del gruppo di Bologna (Rizzoli) su 28 pazienti ≥55 anni con LCA over-the-top più LET mostra pochi fallimenti (3,6%) — ma con tecnica femorale diversa dalla tua (over-the-top, non anteromediale) e innesto non specificato: non tocca la lacuna sull'innesto rigido, aggiunge solo un segnale di sicurezza del LET in età più avanzata. Un trial osservazionale dedicato (NCT07041242, >50 vs <30 anni) è in reclutamento.",fare:"Non cambiare nulla: non è un errore, è una lacuna della letteratura. Ma se un collega ti chiede perché lo fai su tutti, la risposta onesta è: «beneficio dimostrato su hamstring, esteso per ragionevolezza al quadricipitale».",chiude:"STABILITY 2, braccio quadricipitale con e senza LET, 1292 pazienti. Risultati attesi nel 2029."},{id:"2",t:"Il tuo costrutto non è quello studiato",fai:"Lemaire modificato, fissazione onlay, passaggio superficiale al collaterale laterale.",prove:"I trial usano il passaggio profondo sotto il collaterale e la fissazione con graffa. Sono due costrutti biomeccanicamente diversi, che la letteratura tratta come se fossero la stessa cosa.",fare:"Quando leggi i risultati di un trial sul LET, ricorda che non sono automaticamente i tuoi. Segnale a tuo favore: le note tecniche recenti si stanno spostando verso l'onlay — il campo va dove sei tu, le prove non ancora.",chiude:"Un confronto diretto fra i due costrutti. Oggi non esiste, e nemmeno STABILITY 2 lo risolverà."},{id:"3",t:"Nella radice meniscale conta l'estrusione, non il ritardo",fai:"Rifissazione della radice con tecnica transtibiale. Nel colloquio si tende a pesare il grado condrale e il tempo trascorso dall'infortunio.",prove:"All'analisi multivariata il ritardo NON è predittore indipendente di progressione (p=0,31). Lo sono l'estrusione meniscale (p=0,023) e la larghezza dello spazio articolare preoperatoria. La storia naturale (64 radici non operate, 12 agosto): estrusione da 3,1 a 4,3 mm in 6 mesi mentre il dolore migliora; converte a chirurgia chi ha più varo (soglia HKA 5,5°). E l'osteoporosi più che raddoppia il rischio di frattura subcondrale nella donna (OR 2,29). Lo stato dell'arte J ISAKOS del 17 agosto (Pittsburgh, con Seil, Getgood e Karlsson) conferma la transtibiale come tecnica di scelta e aggiunge il dato che pesa: nel trial sulla centralizzazione l'estrusione aumenta a 6 mesi nel 96,2% delle ginocchia, qualunque cosa si faccia. Nuovo il 19 agosto: in una coorte AJSM di 115 pazienti dopo sutura della radice, la condrosi femoro-rotulea avanzata al momento dell'intervento (non l'estrusione, ma un altro marcatore di carico degenerativo basale) non peggiora i sintomi a medio termine in chi non fallisce, ma si associa a una conversione a protesi quasi 7 volte più frequente (14,9% vs 2,1%; p=0,021) — un secondo marcatore, accanto all'estrusione, dello stesso principio: conta il carico degenerativo di partenza, non il tempo trascorso.",fare:"AZIONE CONCRETA, da subito: misura e referta l'estrusione sulla risonanza preoperatoria, e usa quella nel colloquio sul rischio di progressione, al posto del grado condrale e del tempo trascorso. Aggiungi l'asse (varo oltre ~5,5°), nella donna la densità ossea, e ora anche il grado di condrosi femoro-rotulea osservato in artroscopia: sono gli altri volti del carico basale.",chiude:"Studi prospettici con l'estrusione come variabile principale. Confidenza attuale: media — due retrospettivi piccoli, una coorte prospettica (64 pazienti) e ora una seconda coorte retrospettiva (115 pazienti) nella stessa direzione generale, con marcatori diversi."},{id:"4",t:"Il criterio di rientro non regge sul tuo innesto",fai:"Se usi la simmetria di forza al 90% come criterio per il ritorno allo sport.",prove:"Sul retto femorale, a 6 mesi, il deficit di estensione è del 29% (simmetria 71%), mentre la flessione recupera al 93%. Con una soglia del 90% quasi nessuno passa a 6 mesi. Aggiornamento del 18 agosto: uno studio trasversale su 30 operati (1-5 anni dall'intervento, tutti gli innesti) conferma che il deficit dell'arto chirurgico nel salto monopodalico resta misurabile anche a distanza di anni (-1,2 cm rispetto al controlaterale; p<0,01); un carico visivo-cognitivo aggiuntivo non lo aggrava ulteriormente rispetto ai controlli sani — il limite sembra dell'arto, non dell'attenzione. Nuovo il 19 agosto, due segnali che si parlano: uno studio prospettico su 53 pazienti mostra che il modo di caricare il ginocchio (il momento di flessione, non il semplice angolo) in uno squat monopodalico a 4 mesi predice la forza e la funzione a 6-12 mesi — un possibile segnale precoce, oltre la sola simmetria a fine percorso. E sul calcio femminile d'élite, 242 infortuni al LCA in 206 giocatrici: il 66,8% torna in campo, ma nel primo anno di rientro il tempo di gioco cala del 47-58% (p<0,001), soprattutto nelle centrocampiste — il ritorno in campo non equivale al ritorno al livello precedente.",fare:"Verifica che cosa misuri davvero a 6 mesi. Sul quadricipitale aspettati tempi più lunghi per l'estensione: o sposti la scadenza, o cambi la misura. Considera che un test biomeccanico precoce (4 mesi), non solo la simmetria di forza a fine percorso, potrebbe segnalare prima chi ha bisogno di più tempo — da confermare, non ancora uno strumento pronto. Dato su 31 pazienti, soli maschi, un solo centro.",chiude:"Studi che leghino il deficit di forza a esiti duri (rirottura, mancato rientro) e non a misure intermedie."},{id:"5",t:"Nel minced cartilage varia il tessuto, non solo la tecnica",fai:"Trapianto di cartilagine tritata con filiera dedicata.",prove:"I campioni prelevati da difetti debridati variano oltre dieci volte in peso umido, DNA totale e proteoglicani. Dipende da quale tessuto si raccoglie, non dallo strumento.",fare:"Se un caso va peggio di un altro a parità di gesto chirurgico, la variabile può essere la qualità del tessuto raccolto. Utile saperlo prima di attribuirlo alla tecnica.",chiude:"Una caratterizzazione di vitalità e resa cellulare specifica della filiera che usi. Oggi non esiste."}];
 var MUTE={3:"Rirottura (11,9% vs 8,3%) e reintervento meniscale (1,5% vs 4,2%) fra pazienti con e senza condrosi femoro-rotulea avanzata non raggiungono la significatività, ma gli intervalli sono larghi: sulla rirottura lo studio non può escludere né un rischio quasi dimezzato (RR 0,46) né più che quadruplicato (RR 4,49); sul reintervento non può escludere né un rischio praticamente azzerato (RR 0,03) né quasi quadruplicato (RR 3,84).",7:"Serie a braccio singolo di 28 pazienti, senza gruppo di confronto: il tasso di fallimento del 3,6% (1 caso) non permette di stabilire se sia diverso da quello di altre tecniche o popolazioni — troppo pochi eventi e nessun comparatore per calcolare un intervallo utile."};
+/* LA SECONDA PAGINA — i lavori veri del giorno rimasti fuori dalle schede.
+   Verificati su PubMed come le schede (titolo e rivista riaperti); NIENTE numeri:
+   un numero esige la sua incertezza e il breve non ha spazio per darla. */
+var EXTRA=[
+ {dot:'green',j:'J Knee Surg',h:"Negli USA le giovani donne passano al quadricipitale: meno allograft, più sospensione",v:"il tuo innesto guadagna terreno proprio nel sesso a più alto rischio di rirottura; studio di tendenza, non di esiti",pmid:'42612982',doi:'10.1055/a-2939-2425',temi:['innesto','quadricipitale','donne','tendenze']},
+ {dot:'gray',j:'J Knee Surg',h:"Rivestire la rotula nella protesi totale: costi ed esiti a confronto",v:"il dibattito di sempre, riletto dal lato economico",pmid:'42612981',doi:'10.1055/a-2939-2342',temi:['protesi','rotula','costi']},
+ {dot:'gray',j:'J Knee Surg',h:"Quanto costa una monocompartimentale negli USA: la geografia dei prezzi",v:"per il tuo lato imprenditoriale: la variabilità dei prezzi come specchio dell'organizzazione",pmid:'42612980',doi:'10.1055/a-2939-2278',temi:['protesi','monocompartimentale','costi','organizzazione']},
+ {dot:'gray',j:'J Robot Surg',h:"Bilanciamento dei tessuti molli nella protesi robotica: la mappa della ricerca",v:"analisi bibliometrica: dove sta andando il campo del gap balancing dinamico — il cuore della tua VELYS",pmid:'42611399',doi:'10.1007/s11701-026-03844-1',temi:['robotica','protesi','bilanciamento','velys']},
+ {dot:'gray',j:'Orthopedics',h:"Una rete neurale classifica l'artrosi alla pari dei chirurghi ortopedici",v:"validazione esterna sulla scala di Kellgren-Lawrence: l'AI in refertazione avanza",pmid:'42611013',doi:'10.3928/01477447-20260720-01',temi:['ai','artrosi','radiografia','classificazione']},
+ {dot:'gray',j:'Ann Ital Chir',h:"Isocinetica più esercizio funzionale precoce dopo ricostruzione del crociato",v:"riabilitazione: il filone della forza precoce, da rivista minore — il tema conta più della sede",pmid:'42610294',doi:'10.62713/aic.4757',temi:['riabilitazione','forza','lca','isocinetica']}
+];
+/* SORPRENDIMI — le deviazioni fuori dal solito, una al tocco. */
+var SCOPERTE=[
+ {t:"Sette modelli linguistici alla prova dei referti RM: estrarre il grado di Outerbridge automaticamente",v:"L'AI applicata ai TUOI referti di risonanza: un benchmark multi-lettore su come i modelli linguistici strutturano le lesioni condrali dai referti scritti. È il ponte fra la tua pratica quotidiana e l'automazione che ti interessa.",pmid:'42611194',doi:'10.1007/s00256-026-05342-9',temi:['ai','referti','cartilagine','outerbridge']},
+ {t:"La protesi di ginocchio motorizzata che obbedisce all'intenzione: scavalcare ostacoli col controllo volontario",v:"Bioingegneria pura: un controllore adattivo che legge la volontà del paziente per flettere il ginocchio artificiale. Lontano dalla tua sala operatoria, vicino a dove va la tecnologia dell'arto inferiore.",pmid:'42611649',doi:'10.1109/TNSRE.2026.3724857',temi:['bioingegneria','protesi','controllo','riabilitazione']},
+ {t:"Esosomi per l'artrosi di ginocchio: la network meta-analisi sui modelli animali",v:"Il gradino PRIMA delle terapie cellulari che l'asse ICRS sta normando: quale sorgente cellulare e quale dose funzionano nel ratto. Scienza di base, ma è da qui che arriverà la prossima consensus.",pmid:'42613148',doi:'10.1093/stcltm/szag069',temi:['esosomi','artrosi','terapie cellulari','preclinico']}
+];
 
 var curTone='misto',curLen=2;
 var TONEL={chir:'Chirurghi',misto:'Misto',pazienti:'Pazienti'};
@@ -636,7 +656,7 @@ var PREF_SOC=['ESSKA','ISAKOS','AOSSM','AAOS','SFA','SOFCOT','AGA','BASK','SIAGA
 var PREF_AZ=['DePuy Synthes','Zimmer Biomet','Smith & Nephew','Arthrex','Stryker','Medacta','Lima','aziende innovative e asiatiche'];
 var DEF={saved:[],savedItems:[],votes:{},edits:{},weekly:[],blogUrl:'https://www.dariogiunchi.ch/blog',
  journals:PREF_RIVISTE.slice(),kols:PREF_KOL.slice(),societies:PREF_SOC.slice(),companies:PREF_AZ.slice(),
- prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,suggDone:{},topics:[]};
+ prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,suggDone:{},topics:[],scoviste:[]};
 var S=load();function load(){var salvato=null,s;try{var r=localStorage.getItem('pulse4');if(r)salvato=JSON.parse(r)}catch(e){}s=salvato?Object.assign({},DEF,salvato):Object.assign({},DEF);/* La versione va letta da ciò che è SALVATO, non dal risultato della fusione:    DEF porta sempre PREFV e maschererebbe il valore vecchio. */if(salvato&&(salvato.prefv||0)<PREFV){s.journals=unisci(salvato.journals,PREF_RIVISTE);s.kols=unisci(salvato.kols,PREF_KOL);s.societies=unisci(salvato.societies,PREF_SOC);s.companies=unisci(salvato.companies,PREF_AZ);}s.prefv=PREFV;s.suggDone=s.suggDone||{};if(!s.companies||!s.companies.length)s.companies=PREF_AZ.slice();return s;}
 function unisci(a,b){a=(a||[]).slice();b.forEach(function(x){if(a.indexOf(x)<0)a.push(x)});return a;}
 function save(){try{localStorage.setItem('pulse4',JSON.stringify(S))}catch(e){}}
@@ -654,7 +674,8 @@ function itemHTML(a){if(!a)return '';var sv=isSaved(a.n),vt=S.votes[a.n];var has
     (hasSoc?'<span class="ib soc lbl" role="button" tabindex="0" aria-label="Genera contenuti social per questo lavoro" onclick="openSocial(event,'+a.n+')"><span class="t">✎ Social</span></span>':'')+
     '<span class="ib vid lbl'+(inWeek(a.n)?' on':'')+'" role="button" tabindex="0" aria-label="Scegli questo lavoro per il video della settimana" onclick="pickWeek(event,'+a.n+')"><span class="t">📹 Video</span></span>'+
     '<span class="ib lbl" onclick="toggle('+a.n+')"><span class="t">Dettagli</span></span></div>'+
-  '<div class="det">'+fld('Autori',a.authors)+fld('Rivista',a.journal)+fld('Disegno',a.design)+fld('Popolazione',a.pop)+fld('Risultati',a.results)+fld('Conclusione degli autori',a.concl)+fld('Limiti (da revisore)',a.limits)+fld('Per te',a.perte)+muteHTML(a.n)+linksHTML(a.n)+
+  '<div class="det">'+fld('Autori',a.authors)+fld('Rivista',a.journal)+fld('Disegno',a.design)+fld('Popolazione',a.pop)+fld('Risultati',a.results)+fld('Conclusione degli autori',a.concl)+fld('Limiti (da revisore)',a.limits)+fld('Per te',a.perte)+muteHTML(a.n)+
+    (spAffini(a.n).length?'<div class="fld"><div class="k">Nella seconda pagina</div><div class="val"><span class="spEspl" onclick="esplora(event,'+a.n+')">🔍 '+spAffini(a.n).length+' brevi sullo stesso tema — esplora →</span></div></div>':'')+linksHTML(a.n)+
     '<div class="detlinks"><a class="btn pri" href="'+pm(a)+'" target="_blank">PubMed ↗</a><a class="btn" href="'+di(a)+'" target="_blank">Rivista (DOI) ↗</a>'+(hasSoc?'<button class="btn soc" onclick="openSocial(event,'+a.n+')">✎ Contenuti social</button>':'')+'</div></div></div>';}
 function fld(k,v){return '<div class="fld"><div class="k">'+k+'</div><div class="val">'+esc(v)+'</div></div>'}
 function render(){
@@ -1366,6 +1387,62 @@ function rassHTML(rac){
  else h+=_rKo('YouTube (feed ufficiali)',yt.esito||'assente');
  h+='<div class="rmeta" style="margin-top:10px">Raccolta del '+esc(rac.generato||'—')+' · API ufficiali e feed pubblici · le fonti mute sono dichiarate, mai nascoste.</div>';
  return h;}
+/* LA SECONDA PAGINA — il giornale continua per chi ha tempo. EXTRA sono i lavori
+   veri del giorno rimasti fuori dalle schede (verificati come le schede, senza
+   numeri); SCOPERTE sono le deviazioni «fuori dal solito» per il tasto Sorprendimi.
+   Funzioni PURE (dati → esito) così i test le collaudano con materiale sintetico;
+   le viste di Sorprendimi si ricordano PER TITOLO (mai per posizione). */
+var spMostrati=0,spOrdine=null;
+function spBreveHTML(b){return '<div class="ritem"><span class="dot '+esc(b.dot||'gray')+'" style="display:inline-block;vertical-align:middle;margin-right:6px"></span>'+
+ '<b>'+esc(b.j||'')+'</b> — '+esc(b.h||'')+'<div class="rmeta">'+esc(b.v||'')+' · <a href="https://pubmed.ncbi.nlm.nih.gov/'+esc(b.pmid||'')+'/" target="_blank" rel="noopener">PubMed ↗</a></div></div>';}
+function spLista(extra,quanti,ordine){
+ var l=(extra||[]).slice();
+ if(ordine&&ordine.length){var p={};ordine.forEach(function(x,i){p[x]=i});
+  l.sort(function(a,b){return (p[a.pmid]!==undefined?p[a.pmid]:99)-(p[b.pmid]!==undefined?p[b.pmid]:99)});}
+ return l.slice(0,quanti);}
+function spTemiDi(n){
+ var kw=((NLB[n]||{}).kw||'')+' '+((A[n]||{}).h||'');
+ return kw.toLowerCase().split(/[^a-zà-ù]+/).filter(function(w){return w.length>4});}
+function spAffini(n){
+ var mie=spTemiDi(n);
+ return (typeof EXTRA!=='undefined'?EXTRA:[]).filter(function(b){
+  var suoi=((b.temi||[]).join(' ')+' '+(b.h||'')).toLowerCase();
+  return mie.some(function(w){return suoi.indexOf(w)>=0});}).map(function(b){return b.pmid});}
+function spSorpresa(scoperte,viste){
+ if(!scoperte||!scoperte.length)return null;
+ var nuove=scoperte.filter(function(s){return (viste||[]).indexOf(s.t)<0});
+ return nuove.length?nuove[0]:scoperte[(viste||[]).length%scoperte.length];}
+function renderSeconda(){
+ var el=document.getElementById('secpag');if(!el)return;
+ var ex=(typeof EXTRA!=='undefined'?EXTRA:[])||[];
+ if(!ex.length&&!(typeof SCOPERTE!=='undefined'&&SCOPERTE.length)){el.innerHTML='';return;}
+ var h='<div class="sl r-res" style="margin-top:14px"><span class="ic">📖</span>La seconda pagina<span class="n">'+ex.length+' brevi</span></div>';
+ if(spMostrati===0){
+  h+='<button class="btn spBtn" onclick="spApri()" aria-label="Mostra altri lavori del giorno in forma breve">📖 Continua a leggere — altri '+ex.length+' lavori di oggi</button>';
+ }else{
+  h+='<div class="card" style="padding:10px">'+spLista(ex,spMostrati,spOrdine).map(spBreveHTML).join('')+'</div>';
+  if(spMostrati<ex.length)h+='<button class="btn spBtn" onclick="spAncora()" aria-label="Mostra altri lavori brevi">Ancora ↓ ('+(ex.length-spMostrati)+' rimasti)</button>';
+  else h+='<div class="rmeta" style="margin:6px 2px">Fine della seconda pagina: il resto della finestra non superava il perimetro o la soglia di interesse.</div>';
+ }
+ if(typeof SCOPERTE!=='undefined'&&SCOPERTE.length){
+  h+='<button class="btn spBtn" onclick="sorprendimi()" aria-label="Proponi qualcosa fuori dai miei soliti argomenti">🎲 Sorprendimi — qualcosa di diverso</button><div id="spsorp"></div>';
+ }
+ el.innerHTML=h;}
+function spApri(){spMostrati=5;spOrdine=null;renderSeconda();}
+function spAncora(){spMostrati+=5;renderSeconda();}
+function sorprendimi(){
+ var s=spSorpresa(typeof SCOPERTE!=='undefined'?SCOPERTE:[],S.scoviste||[]);
+ if(!s)return;
+ S.scoviste=unisci(S.scoviste||[],[s.t]);save();
+ var el=document.getElementById('spsorp');if(!el)return;
+ el.innerHTML='<div class="ritem" style="border-style:dashed"><b>✦ '+esc(s.t)+'</b><div class="rmeta" style="margin-top:4px">'+esc(s.v||'')+'</div>'+
+  '<div class="rmeta"><a href="https://pubmed.ncbi.nlm.nih.gov/'+esc(s.pmid||'')+'/" target="_blank" rel="noopener">PubMed ↗</a> · DOI '+esc(s.doi||'')+'</div></div>';
+ renderSeconda();var e2=document.getElementById('spsorp');if(e2)e2.innerHTML=el.innerHTML;}
+function esplora(ev,n){
+ if(ev)ev.stopPropagation();
+ spOrdine=spAffini(n);spMostrati=Math.max(spMostrati,Math.min(5,(spOrdine||[]).length||5));
+ renderSeconda();
+ var el=document.getElementById('secpag');if(el&&el.scrollIntoView)el.scrollIntoView({behavior:'smooth'});}
 function apriRassegna(){
  var el=document.getElementById('rassbox');if(!el)return;
  el.innerHTML='<div class="muted">Carico la rassegna…</div>';
@@ -1376,6 +1453,7 @@ function apriRassegna(){
 
 renderVerdict();
 renderCopertura();
+renderSeconda();
 renderPick();
 renderLato();
 renderTens();

@@ -275,3 +275,23 @@ Su mandato del Dr. Giunchi («procedi con tutto tranne le perizie»):
   settimana, i coautori ricorrenti alimentano SUGGQ.
 - La parte peritale (standard↔tensioni) esclusa per sua scelta: il registro degli
   standard resta, non ci si costruisce sopra.
+
+### 2026-08-19, notte — la seconda pagina del giornale
+Su richiesta del Dr. Giunchi («il sistema mi tira fuori argomenti ogni volta che
+clicco, per continuare a leggere il giornale, e mi propone anche cose diverse»):
+- **«Continua a leggere»**: ogni mattina il briefing riempie `EXTRA` — i lavori veri
+  del giorno rimasti fuori dalle dieci schede, in forma di brevi (verificati su PubMed
+  come le schede, SENZA numeri: un numero esige la sua incertezza e il breve non ha
+  spazio per darla — verita.py lo blocca). Rivelazione progressiva, cinque alla volta.
+- **«Esplora il tema»**: dalla scheda estesa, i brevi affini per tema salgono in cima
+  alla seconda pagina — la catena del giornale.
+- **«Sorprendimi»**: 2-3 `SCOPERTE` quotidiane fuori dal solito (AI, bioingegneria,
+  mondo orientale, campi adiacenti); memoria delle viste PER TITOLO, mai per posizione.
+- Il mandato del mattino si autoalimenta: la sezione «LA SECONDA PAGINA» di
+  claude__13 è il prompt che genera EXTRA e SCOPERTE ogni giorno.
+- Il cancello ha intercettato in giornata DUE difetti veri: l'estrazione dei PMID di
+  verita.py pescava anche i brevi (conteggi gonfiati — scopata al blocco ARTICLES), e
+  il controllo «banner freschezza» dipendeva dall'orologio (pretendeva «Aggiornato
+  oggi» anche alle 5:42, bloccando ogni verifica notturna — ora accetta i tre stati
+  legittimi del banner). Sentinelle collaudate rompendole: breve=scheda di oggi,
+  breve=scheda del passato, numero nel breve — tre su tre intercettati.

@@ -30,7 +30,8 @@ MARCA = '/*__DATI_DEL_GIORNO__*/'
 
 # Le variabili che il briefing riscrive ogni mattina, nell'ordine in cui stavano
 # in index.html. Tutto il resto è codice, e sta nel modello.
-QUOTIDIANE = ['SOC', 'SOCV', 'TAGS', 'NLB', 'ARTICLES', 'SUGGQ', 'BRIEF_TEXT',
+QUOTIDIANE = ['EXTRA', 'SCOPERTE',
+              'SOC', 'SOCV', 'TAGS', 'NLB', 'ARTICLES', 'SUGGQ', 'BRIEF_TEXT',
               'CONF', 'BUILD_DATE', 'PICK', 'INDUSTRIA', 'CONGRESSI', 'SOCIETA',
               'NONVERIF', 'CIT_VERIFICATE', 'LAST_RETRACTION_CHECK', 'RETRACTED',
               'LINKS', 'DUELS', 'HISTORY', 'AUDIT', 'TENSIONS', 'MUTE']
