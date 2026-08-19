@@ -171,6 +171,12 @@ with sync_playwright() as p:
         'senza dialogo il tasto ▶ torna con eleganza a BRIEF_TEXT')
     chk(pg3.evaluate("typeof _voceB==='function'"),
         'esiste la scelta della seconda voce italiana')
+    chk(pg3.evaluate("_ordinaVoci([{name:'Alice'},{name:'Federica (Enhanced)'},{name:'Emma (Premium)'},{name:'Luca'}])[0].name")=='Emma (Premium)',
+        'fra le voci disponibili vince Emma Premium (sua scelta del 19 agosto)')
+    chk(pg3.evaluate("_ordinaVoci([{name:'Alice'},{name:'Federica (Enhanced)'}])[0].name")=='Federica (Enhanced)',
+        'senza Emma, vince comunque la voce di qualità più alta')
+    chk(pg3.evaluate("_ordinaVoci([{name:'Paola (Premium)'},{name:'Emma'}])[0].name")=='Emma',
+        'la preferenza per Emma vale anche contro un\'altra voce premium')
 
     # --- benvenuto e guida: l'app si spiega da sola -----------------------------
     chk(pg3.evaluate("benvenutoHTML(0).indexOf('Benvenuto')>=0 && benvenutoHTML(0).indexOf('Ho capito')>=0"),
