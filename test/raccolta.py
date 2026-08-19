@@ -326,24 +326,56 @@ def polso():
         if tit and any(p in tit.lower() for p in parole):
             candidati.append({'doi': r.get('DOI'), 'titolo': tit[:160],
                               'rivista': (r.get('container-title') or [''])[0]})
+    # Canale primario: Altmetric per-DOI. Il 19 agosto TUTTA l'API v1 è risultata
+    # chiusa senza chiave (403 anche sul per-DOI, verificato dal vivo): quindi si
+    # sonda il primo candidato e, se il canale è chiuso, si passa alla ricerca
+    # PUBBLICA di Bluesky (API aperta) contando i post che citano il titolo.
+    # Qualunque canale si usi, viene DICHIARATO nel risultato.
     voci = []
-    for c in candidati[:50]:
+    canale = None
+    altmetric_ok = False
+    if candidati:
         try:
-            a = json.loads(prendi('https://api.altmetric.com/v1/doi/' + urllib.parse.quote(c['doi'])))
+            json.loads(prendi('https://api.altmetric.com/v1/doi/' + urllib.parse.quote(candidati[0]['doi'])))
+            altmetric_ok = True
         except urllib.error.HTTPError as e:
-            if e.code == 404:          # 404 = nessuna menzione registrata: punteggio zero
-                time.sleep(0.5)
-                continue
-            raise
-        voci.append({'titolo': c['titolo'], 'rivista': c['rivista'] or a.get('journal'),
-                     'doi': c['doi'], 'pmid': a.get('pmid'),
-                     'punteggio': round(a.get('score') or 0),
-                     'post_x': a.get('cited_by_tweeters_count') or 0,
-                     'notizie': a.get('cited_by_msm_count') or 0,
-                     'url': 'https://doi.org/' + c['doi']})
-        time.sleep(0.5)
+            altmetric_ok = (e.code == 404)   # 404 = canale aperto, solo senza menzioni
+        except Exception:
+            altmetric_ok = False
+    for c in candidati[:40]:
+        try:
+            if altmetric_ok:
+                canale = 'Altmetric'
+                try:
+                    a = json.loads(prendi('https://api.altmetric.com/v1/doi/' + urllib.parse.quote(c['doi'])))
+                except urllib.error.HTTPError as e:
+                    if e.code == 404:
+                        time.sleep(0.4)
+                        continue
+                    raise
+                voci.append({'titolo': c['titolo'], 'rivista': c['rivista'] or a.get('journal'),
+                             'doi': c['doi'], 'pmid': a.get('pmid'),
+                             'punteggio': round(a.get('score') or 0),
+                             'post_x': a.get('cited_by_tweeters_count') or 0,
+                             'notizie': a.get('cited_by_msm_count') or 0,
+                             'url': 'https://doi.org/' + c['doi']})
+            else:
+                canale = 'Bluesky (ricerca pubblica)'
+                frase = ' '.join(c['titolo'].split()[:8])
+                q = urllib.parse.quote('"' + frase + '"')
+                b = json.loads(prendi('https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?limit=25&q=' + q))
+                n = len(b.get('posts') or [])
+                if n:
+                    voci.append({'titolo': c['titolo'], 'rivista': c['rivista'],
+                                 'doi': c['doi'], 'pmid': None,
+                                 'punteggio': n, 'post_x': n, 'notizie': 0,
+                                 'url': 'https://doi.org/' + c['doi']})
+        except Exception:
+            pass                             # un candidato che fallisce non ferma il polso
+        time.sleep(0.4)
     voci.sort(key=lambda v: -v['punteggio'])
-    return {'finestra': '14 giorni', 'esaminati': len(candidati[:50]),
+    return {'finestra': '14 giorni', 'canale': canale or 'nessuno raggiungibile',
+            'esaminati': len(candidati[:40]),
             'voci': [v for v in voci if v['punteggio'] > 0][:12]}
 
 
