@@ -191,6 +191,50 @@ def ritrattazioni():
     return esiti
 
 
+# ------------------------------------------- il destino dei verdetti (chi cita i PICK)
+def _pick_passati():
+    """I lavori del giorno (PICK) di tutti i briefing, letti dallo storico."""
+    p = os.path.join(APP, 'cervello', 'claude__09-storico.md')
+    picks = []
+    if os.path.exists(p):
+        for m in re.finditer(r'PICK: ([^·\n]+)·\s*PMID (\d{7,9})', open(p, encoding='utf-8').read()):
+            picks.append({'titolo': m.group(1).strip(' —·'), 'pmid': m.group(2)})
+    visti = set()
+    return [x for x in picks if not (x['pmid'] in visti or visti.add(x['pmid']))]
+
+
+def destino():
+    """Un verdetto non è vero per sempre: conta come la letteratura successiva tratta
+    il lavoro. Qui si chiede a PubMed (elink, cited-in) chi ha citato ogni PICK; i
+    citanti NUOVI rispetto all'ultima raccolta finiscono in evidenza, e il mandato
+    del mattino li legge e li classifica (conferma/contrasta) sugli abstract."""
+    picks = _pick_passati()
+    prima = {}
+    vecchio = os.path.join(APP, 'fonti', 'raccolta.json')
+    if os.path.exists(vecchio):
+        try:
+            v = json.load(open(vecchio, encoding='utf-8'))
+            for d in ((v.get('fonti', {}).get('destino', {}) or {}).get('dati') or []):
+                prima[d.get('pmid')] = set(d.get('citanti') or [])
+        except Exception:
+            pass
+    out = []
+    for pk in picks:
+        url = ('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed'
+               '&linkname=pubmed_pubmed_citedin&retmode=json&id=' + pk['pmid'])
+        j = json.loads(prendi(url))
+        citanti = []
+        for ls in j.get('linksets', []):
+            for db in ls.get('linksetdbs', []):
+                if db.get('linkname') == 'pubmed_pubmed_citedin':
+                    citanti = [str(x) for x in db.get('links', [])]
+        nuovi = sorted(set(citanti) - prima.get(pk['pmid'], set()))
+        out.append({'pmid': pk['pmid'], 'titolo': pk['titolo'][:110],
+                    'citanti': sorted(citanti), 'nuovi': nuovi})
+        time.sleep(1)
+    return out
+
+
 # ---------------------------------------------------------------- YouTube (feed ufficiali)
 def youtube():
     voci = []
@@ -242,6 +286,7 @@ if __name__ == '__main__':
                'trials': fonte(trials),
                'ritrattazioni': fonte(ritrattazioni),
                'youtube': fonte(youtube),
+               'destino': fonte(destino),
            }}
     if scopri:
         out['scoperta'] = {'swissmedic': fonte(swissmedic_scopri), 'youtube': fonte(youtube_scopri)}

@@ -35,16 +35,23 @@ with sync_playwright() as p:
       swissmedic:{esito:'ok',dati:{voci:[{titolo:'Avviso',link:'https://example.org',data:'2026-01-01'}]}},
       trials:{esito:'ok',dati:[{sorveglianza:'Sorveglianza di prova',studi:[{nct:'NCT99999999',titolo:'t',stato:'RECRUITING',aggiornato:'2026-01-01',n:10}]}]},
       ritrattazioni:{esito:'ok',dati:{doi_citati_controllati:5,colpiti:[],nel_perimetro:[]}},
+      destino:{esito:'ok',dati:[{pmid:'11111111',titolo:'PICK di prova',citanti:['22222222','33333333'],nuovi:['33333333']},
+                                {pmid:'44444444',titolo:'PICK recente',citanti:[],nuovi:[]}]},
       youtube:{esito:'ok',dati:{video:[{canale:'Canale',titolo:'video',link:'https://example.org',data:'2026-01-01'}]}}}})""")
     chk('🔴' in h and 'Ditta Sorvegliata' in h, "un richiamo su azienda sorvegliata è rosso")
     chk('⚪' in h, "un richiamo su altra ditta resta bianco")
     chk('NCT99999999' in h and 'Sorveglianza di prova' in h, "i trial delle tensioni compaiono con NCT e stato")
     chk('5' in h and 'ritirato' in h, "il conteggio dei DOI controllati è dichiarato")
+    chk('PICK di prova' in h and 'pubmed.ncbi.nlm.nih.gov/33333333' in h,
+        "il destino dei verdetti: un citante nuovo compare col suo link PubMed")
+    chk('nessun citante ancora' in h, "un PICK senza citanti lo dichiara, non lo nasconde")
+    chk('1 con citanti nuovi' in h, "il titolo della sezione conta i PICK con citanti nuovi")
 
     # ogni fonte muta si dichiara, una per una
     ko = pg.evaluate("""rassHTML({generato:'x',fonti:{openfda:{esito:'non risposto: t'},swissmedic:{esito:'non risposto: t'},
-      trials:{esito:'non risposto: t'},ritrattazioni:{esito:'non risposto: t'},youtube:{esito:'non risposto: t'}}})""")
-    chk(ko.count('non verificata stanotte') == 5, "cinque fonti mute → cinque dichiarazioni, nessuna taciuta")
+      trials:{esito:'non risposto: t'},ritrattazioni:{esito:'non risposto: t'},destino:{esito:'non risposto: t'},
+      youtube:{esito:'non risposto: t'}}})""")
+    chk(ko.count('non verificata stanotte') == 6, "sei fonti mute → sei dichiarazioni, nessuna taciuta")
 
     # un DOI citato colpito da ritrattazione deve urlare
     hot = pg.evaluate("""rassHTML({generato:'x',fonti:{ritrattazioni:{esito:'ok',

@@ -108,7 +108,8 @@ un'istantanea: `costruisci.py --estrai` riallinea modello e dati all'index ripri
 Tutte come `var` a livello superiore:
 
 `BUILD_DATE` · `ARTICLES` · `CIT_VERIFICATE` · `CONF` · `MUTE` · `TENSIONS` · `LINKS` ·
-`DUELS` · `HISTORY` · `AUDIT` · `RETRACTED` · `LAST_RETRACTION_CHECK` · `BRIEF_TEXT` ·
+`DUELS` · `HISTORY` · `AUDIT` · `RETRACTED` · `LAST_RETRACTION_CHECK` · `BRIEF_TEXT` · `BRIEF_DIALOGO` (facoltativa:
+il podcast a due voci; se manca, ▶ legge `BRIEF_TEXT`) ·
 `NLB` · `SOCV` · `TAGS` · `SOC` · `SUGGQ` · `VERDICT` · `PICK` · `INDUSTRIA` ·
 `CONGRESSI` · `SOCIETA` · `NONVERIF` · `EXTRA` · `SCOPERTE` (la «seconda pagina»:
 brevi verificati senza numeri + proposte fuori dal solito — regole in claude__13)
@@ -202,6 +203,11 @@ chiedergli i suoi dati di esito, non trasformare una scadenza congressuale in un
 progetto.
 
 **Non sollecitare** la newsletter, il consenso nLPD, né chiedergli se ha girato il video.
+
+**Se incolla un messaggio che inizia con «SEGNALI PULSE»** (il tasto 📡 dell'app):
+sono i suoi voti, salvati e proposte. Aggiorna `cervello/claude__07-preferenze.md`
+di conseguenza e conferma in una riga. I segnali orientano la selezione dei giorni
+successivi, mai le regole di verità.
 
 Il perimetro clinico, l'ordine delle schede, la rete di riviste e opinion leader, le
 tensioni aperte e il formato esatto delle schede stanno in `cervello/`. **Leggi

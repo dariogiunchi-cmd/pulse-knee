@@ -32,9 +32,14 @@ MARCA = '/*__DATI_DEL_GIORNO__*/'
 # in index.html. Tutto il resto è codice, e sta nel modello.
 QUOTIDIANE = ['EXTRA', 'SCOPERTE',
               'SOC', 'SOCV', 'TAGS', 'NLB', 'ARTICLES', 'SUGGQ', 'BRIEF_TEXT',
+              'BRIEF_DIALOGO',
               'CONF', 'BUILD_DATE', 'PICK', 'INDUSTRIA', 'CONGRESSI', 'SOCIETA',
               'NONVERIF', 'CIT_VERIFICATE', 'LAST_RETRACTION_CHECK', 'RETRACTED',
               'LINKS', 'DUELS', 'HISTORY', 'AUDIT', 'TENSIONS', 'MUTE']
+
+# Variabili che possono legittimamente MANCARE (l'app le tratta con typeof):
+# un'istantanea più vecchia della variabile deve restare ripristinabile.
+FACOLTATIVE = {'BRIEF_DIALOGO'}
 
 
 def _decl(nome, testo):
@@ -56,7 +61,7 @@ def costruisci(scrivi=True):
     # controllo di sanità sui dati: tutte le variabili quotidiane, una volta ciascuna
     for v in QUOTIDIANE:
         n = len(re.findall(r'\bvar %s=' % v, dati))
-        if n != 1:
+        if n != 1 and not (n == 0 and v in FACOLTATIVE):
             raise SystemExit(f"❌ dati/giorno.js: 'var {v}=' compare {n} volte (attesa: 1)")
     if MARCA in dati:
         raise SystemExit("❌ dati/giorno.js contiene il segnaposto: file scambiati?")
@@ -85,10 +90,15 @@ def estrai():
     per il ripristino di un'istantanea o la prima migrazione."""
     testo = open(INDEX, encoding='utf-8').read()
     blocchi = []
+    primo = True
     for v in QUOTIDIANE:
+        if v in FACOLTATIVE and not re.search(r'\bvar %s=' % v, testo):
+            print(f"⚠️ var {v} assente (istantanea precedente alla variabile): si salta")
+            continue
         m = _decl(v, testo)
         blocchi.append(testo[m.start():m.end()])
-        testo = testo[:m.start()] + ('\x00' if v == QUOTIDIANE[0] else '') + testo[m.end():]
+        testo = testo[:m.start()] + ('\x00' if primo else '') + testo[m.end():]
+        primo = False
     testo = testo.replace('\x00', MARCA + '\n')
     os.makedirs(os.path.dirname(DATI), exist_ok=True)
     intestazione = ("/* PULSE — dati del giorno. QUESTO è il file che il briefing riscrive\n"

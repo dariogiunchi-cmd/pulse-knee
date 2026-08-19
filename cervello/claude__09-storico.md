@@ -315,3 +315,31 @@ Su richiesta del Dr. Giunchi:
   giro); marcatori in checklist. Email «routine completed» archiviate dalla inbox su
   sua richiesta, pulizia quotidiana aggiunta al controllo delle 6.15.
 Cancello: **540 controlli verdi**.
+
+### 2026-08-19, pomeriggio — il destino dei verdetti, il podcast a due voci, i segnali
+Mandato: «realizza tutto quello che puoi, massimo 10 CHF al mese, testa come un
+utente reale e ripeti i test; semplicità essenziale». Spesa aggiuntiva: zero.
+- **Il destino dei verdetti**: il raccoglitore notturno chiede a PubMed (elink,
+  cited-in) chi cita ogni PICK passato (letti dallo storico, dedup per PMID) e
+  calcola i citanti NUOVI rispetto alla notte prima; la Rassegna li mostra
+  («⚖️ Il destino dei tuoi verdetti», stato vuoto onesto per i PICK recenti);
+  il mandato del mattino classifica i nuovi su abstract: CONFERMA/CONTRASTA/NEUTRO,
+  e un contrasto serio merita una scheda 🟡 — correggere un verdetto vale più che
+  difenderlo.
+- **Il podcast a due voci**: variabile FACOLTATIVA `BRIEF_DIALOGO` (battute
+  {chi:'A'|'B',t}); lo STESSO tasto ▶ legge il dialogo con due voci italiane
+  diverse (fallback: tono più basso se il dispositivo ne ha una sola), e senza
+  dialogo torna a BRIEF_TEXT — un tasto solo, mai due. Regola nel mandato: solo
+  fatti già in BRIEF_TEXT/schede, mai dati nuovi. Dialogo del 19 agosto scritto
+  (13 battute). costruisci.py ha ora le variabili FACOLTATIVE (un'istantanea
+  precedente resta ripristinabile).
+- **📡 Manda i segnali a PULSE** (Impostazioni): voti/salvati/newsletter/proposte
+  diventano un testo «SEGNALI PULSE» condivisibile (share o appunti); i voti per
+  posizione vengono tradotti SUBITO in PMID+titolo, così il segnale sopravvive alla
+  notte. CLAUDE.md e mandato sanno riceverlo: aggiorna claude__07-preferenze.
+- Guardie `speechSynthesis` dove mancavano. Sentinelle nuove collaudate ROMPENDOLE
+  (destino sparito → 3 rossi; dialogo senza chi → 2 rossi; voto per posizione →
+  1 rosso). **Viaggio da utente reale** su server HTTP (iPhone 390px): 21 passi
+  verdi, ripetuto due volte; ha smascherato due errori del copione di prova
+  (isSaved per numero; pannello nei ⚙), nessuno dell'app.
+Cancello: **553 controlli verdi**, due volte.

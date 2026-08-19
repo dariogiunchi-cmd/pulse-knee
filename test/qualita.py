@@ -155,6 +155,39 @@ with sync_playwright() as p:
         'una richiesta fuori vocabolario viene dichiarata, non indovinata')
     chk(pg3.evaluate("_frasi('Una. Due! Tre?').length")==3,
         'la lettura spezza il testo in frasi (aggira il taglio di iOS)')
+
+    # --- il podcast a due voci: macchina pura, dati sintetici -------------------
+    chk(pg3.evaluate("dialogoFrasi([{chi:'A',t:'Prima frase. Seconda frase.'},{chi:'B',t:'Risposta.'}])"
+                     ".map(function(x){return x.chi}).join('')")=='AAB',
+        'il dialogo si spezza in frasi conservando chi parla')
+    chk(pg3.evaluate("(function(){var v=typeof BRIEF_DIALOGO!=='undefined'?BRIEF_DIALOGO:undefined;"
+                     "BRIEF_DIALOGO=[{chi:'A',t:'Ciao.'},{chi:'B',t:'Ciao a te.'}];"
+                     "var c=_codaBrief();BRIEF_DIALOGO=v;"
+                     "return typeof c[0]==='object'&&c[0].chi==='A'&&c[1].chi==='B'})()"),
+        'con un dialogo presente il tasto ▶ legge il dialogo, a due voci')
+    chk(pg3.evaluate("(function(){var v=typeof BRIEF_DIALOGO!=='undefined'?BRIEF_DIALOGO:undefined;"
+                     "BRIEF_DIALOGO=[];var c=_codaBrief();BRIEF_DIALOGO=v;"
+                     "return typeof c[0]==='string'})()"),
+        'senza dialogo il tasto ▶ torna con eleganza a BRIEF_TEXT')
+    chk(pg3.evaluate("typeof _voceB==='function'"),
+        'esiste la scelta della seconda voce italiana')
+
+    # --- i segnali a PULSE: identità per contenuto, mai per posizione -----------
+    chk(pg3.evaluate("(function(){var v=S.votes;S.votes={1:1,99:-1};"
+                     "var t=segnaliTesto();S.votes=v;"
+                     "return t.indexOf('SEGNALI PULSE')===0&&t.indexOf('PMID '+(A[1]&&A[1].pmid))>=0"
+                     "&&t.indexOf('Meno così')<0})()"),
+        'i segnali traducono i voti in PMID+titolo e ignorano schede inesistenti')
+    chk(pg3.evaluate("(function(){var v=S.votes,s1=S.saved,s2=S.savedItems,w=S.weekly,d=S.suggDone;"
+                     "S.votes={};S.saved=[];S.savedItems=[];S.weekly=[];S.suggDone={};"
+                     "var t=segnaliTesto();S.votes=v;S.saved=s1;S.savedItems=s2;S.weekly=w;S.suggDone=d;"
+                     "return t.indexOf('Nessun segnale ancora')>=0})()"),
+        'senza scelte i segnali lo dichiarano, non fingono')
+    dl=pg3.evaluate("typeof BRIEF_DIALOGO!=='undefined'?BRIEF_DIALOGO:null")
+    if dl is not None:
+        chk(all((r.get('chi') in ('A','B')) and (r.get('t') or '').strip() for r in dl)
+            and {'A','B'} <= set(r.get('chi') for r in dl),
+            'il dialogo del giorno ha battute valide e usa entrambe le voci')
     pg3.close()
     b.close()
 print(f"\n===== PASSATI {ok} · FALLITI {bad} =====")

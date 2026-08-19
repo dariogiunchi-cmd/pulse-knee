@@ -66,6 +66,17 @@ sola). Ogni fonte ha un campo `esito`: se non è «ok», quella fonte va in NONV
 il file te lo dice, tu lo riporti. Se il file manca o `generato` non è di stanotte,
 il raccoglitore non è passato: dillo in NONVERIF e in chat, e procedi col resto.
 
+IL DESTINO DEI VERDETTI — dal 19 agosto raccolta.json contiene anche `destino`: per
+ogni PICK passato (letti dallo storico), chi lo cita su PubMed e quali citanti sono
+NUOVI rispetto alla notte prima. Se un PICK ha citanti nuovi: apri su PubMed gli
+abstract dei nuovi (sono già PMID), classifica ciascuno come CONFERMA / CONTRASTA /
+NEUTRO rispetto al verdetto che avevi dato, e riporta l'esito in chat e nella voce
+storico del giorno (una riga per PICK toccato). Un contrasto serio — un lavoro più
+grande o più lungo che contraddice un verdetto passato — merita una scheda 🟡 dedicata:
+correggere un proprio verdetto vale più che difenderlo. Se `destino` ha esito non-ok
+o non c'è, vale la regola generale: NONVERIF e avanti. La sezione «⚖️ Il destino dei
+tuoi verdetti» nella Rassegna dell'app si popola da sola dal json.
+
 LA SECONDA PAGINA — il giornale continua per chi ha tempo. Ogni mattina, oltre alle
 schede, riempi DUE variabili nuove in dati/giorno.js:
 · `EXTRA` = 8-15 «brevi»: lavori VERI del giorno che non sono diventati schede — li
@@ -84,6 +95,27 @@ schede, riempi DUE variabili nuove in dati/giorno.js:
   essere DIVERSE dai suoi filoni soliti: è il loro unico scopo.
 Il costo è basso (una chiamata batch di verifica in più); il valore è che l'app
 smette di finire quando finiscono le dieci schede.
+
+I SEGNALI DELL'UTENTE — l'app ha un tasto «📡 Manda i segnali a PULSE» che
+condivide un testo che inizia con «SEGNALI PULSE»: i suoi voti (più così / meno
+così, tradotti in PMID+titolo), i salvati, i lavori scelti per la newsletter, le
+proposte accettate o respinte. Se un messaggio del genere compare in chat (in
+qualunque sessione): aggiorna i pesi in claude__07-preferenze.md di conseguenza —
+un «meno così» su un filone ne abbassa la priorità nello screening, un «più così»
+la alza, le proposte respinte non vanno riproposte — e conferma in una riga che
+cosa hai recepito. I segnali NON cambiano mai le regole di verità: orientano la
+selezione, non i fatti.
+
+IL PODCAST A DUE VOCI — dal 19 agosto, accanto a BRIEF_TEXT, scrivi anche
+`BRIEF_DIALOGO` in dati/giorno.js: lo stesso briefing in forma di dialogo, 10-16
+battute [{chi:"A",t:"…"},{chi:"B",t:"…"}]. A conduce, B rilancia con domande e tira
+le conclusioni pratiche («quindi per la tua VELYS…»). REGOLE: solo fatti già presenti
+in BRIEF_TEXT o nelle schede — il dialogo NON introduce dati nuovi; stessa onestà sui
+numeri (un numero senza incertezza nel testo resta senza numero nel dialogo);
+alternanza naturale, entrambe le voci presenti; niente linguaggio pubblicitario
+(vincolo legale, come sempre). Il tasto ▶ dell'app legge il dialogo da solo se la
+variabile esiste; se un giorno non riesci a scriverlo, OMETTI la variabile (l'app
+torna a BRIEF_TEXT senza rompersi — è una variabile facoltativa per costruisci.py).
 
 LA DOMENICA il briefing apre con la settimana: BRIEF_TEXT comincia con una sintesi
 (i 3-5 lavori che contano della settimana dallo storico, le tensioni mosse), poi il
@@ -111,7 +143,7 @@ COSTRUZIONE — dalla sera del 17 agosto index.html è un PRODOTTO, non un file 
 Il codice sta in modello.html (NON toccarlo mai); i contenuti del giorno stanno in
 **dati/giorno.js**, ed è l'UNICO file che riscrivi: BUILD_DATE, ARTICLES,
 CIT_VERIFICATE, CONF, MUTE, TENSIONS, LINKS, DUELS, HISTORY, AUDIT, RETRACTED,
-LAST_RETRACTION_CHECK, BRIEF_TEXT, NLB, SOCV, TAGS, SOC, SUGGQ. Poi rigenera:
+LAST_RETRACTION_CHECK, BRIEF_TEXT, BRIEF_DIALOGO, NLB, SOCV, TAGS, SOC, SUGGQ. Poi rigenera:
   python3 test/costruisci.py
 Il cancello verifica la coerenza (costruisci.py --verifica): un index.html modificato
 a mano BLOCCA la pubblicazione. Regole di qualità, tre registri NLB, durate dei
