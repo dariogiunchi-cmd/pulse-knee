@@ -28,7 +28,7 @@ with sync_playwright() as p:
             ctx.close(); continue
         for n in SCELTI: pg.evaluate(f"pickWeek(null,{n})")
         pg.wait_for_timeout(200)
-        pg.click("button:has-text('✉️ Newsletter'), button:has-text('Newsletter')")
+        pg.click("button:has-text('Newsletter'), button:has-text('Newsletter')")
         pg.wait_for_timeout(250)
 
         if theme=="light" and w==390:
