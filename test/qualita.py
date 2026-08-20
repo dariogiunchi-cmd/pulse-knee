@@ -282,6 +282,14 @@ with sync_playwright() as p:
     chk(pg3.evaluate("(function(){var el=document.getElementById('calgrid');"
                      "return !!el&&el.innerHTML.indexOf('today')>=0&&document.getElementById('calmese').textContent.length>3})()"),
         'il calendario in pagina è generato, non scritto a mano, col suo mese dichiarato')
+    # --- il velo d'avvio: niente scatti, e a fine avvio DEVE essere tolto ----------
+    chk(pg3.evaluate("!document.documentElement.classList.contains('avvio')"),
+        'il velo d\'avvio è stato tolto a caricamento finito (la pagina è visibile)')
+    chk(pg3.evaluate("(function(){var w=document.querySelector('.wrap');"
+                     "document.documentElement.classList.add('avvio');"
+                     "var nascosto=getComputedStyle(w).visibility==='hidden';"
+                     "document.documentElement.classList.remove('avvio');return nascosto})()"),
+        'durante l\'avvio il guscio è invisibile: nessun dipinto intermedio che slitta')
     # --- accessibilità: landmark, gerarchia, tastiera (la macchina, non il carico) ---
     chk(pg3.evaluate("document.querySelectorAll('main').length===1 && document.querySelectorAll('h1').length===1"),
         'un solo landmark main e un solo h1: la gerarchia parte dal marchio')

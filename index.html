@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class="avvio">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -34,6 +34,7 @@
   .mono{width:36px;height:36px;border-radius:9px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;color:var(--su-colore);font-weight:800;font-size:var(--t-badge);line-height:1;box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 1px 2px rgba(0,0,0,.14)}
   .m-kssta{background:#1d6b7e}.m-ojsm{background:#22823f}.m-arth{background:#a5222d}.m-knee{background:#a05a12}.m-jeo{background:#5c3fa6}.m-jrs{background:#0d6b77}.m-gray{background:#6b7178}.m-npj{background:#23272c}.m-oac{background:#516f39}
   .top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  html.avvio .wrap{visibility:hidden}
   .wel{border:1.5px solid var(--acc,#2b6cb0);border-radius:14px;padding:14px;margin:0 0 14px;font-size:var(--t-sec);line-height:1.55}
   .wel > b{display:block;margin-bottom:6px;font-size:var(--t-sec)}
   .gvx{padding:14px 16px;overflow:auto;font-size:var(--t-sec);line-height:1.55}
@@ -399,6 +400,7 @@
 </style>
 </head>
 <body>
+<noscript><style>.wrap{visibility:visible !important}</style></noscript>
 <div class="wrap">
   <div class="top" role="banner">
     <h1 class="brand">PULSE<span> · knee</span></h1>
@@ -415,7 +417,7 @@
     <button onclick="tab('news',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="5" width="14" height="10" rx="1.5"/><path d="M3.5 6l6.5 5 6.5-5"/></svg><span class="tl">Newsletter</span></button><button onclick="tab('settings',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3.5 6.2h13M3.5 10h13M3.5 13.8h13"/><circle cx="7.6" cy="6.2" r="1.7" fill="currentColor" stroke="none"/><circle cx="12.4" cy="10" r="1.7" fill="currentColor" stroke="none"/><circle cx="6.4" cy="13.8" r="1.7" fill="currentColor" stroke="none"/></svg><span class="tl">Impostazioni</span></button>
   </div>
 
-  <main>
+  <main style="min-height:100vh">
   <div class="view on" id="today">
     <section class="eroe">
       <span class="date" id="datalunga"></span>
@@ -552,6 +554,9 @@
 <div id="toast"></div>
 
 <script>
+/* valvola del velo d'avvio: qualunque cosa succeda dopo, la pagina si mostra */
+function _togliVelo(){var de=document.documentElement;if(de&&de.classList)de.classList.remove('avvio');}
+setTimeout(_togliVelo,4000);
 /* PULSE — dati del giorno. QUESTO è il file che il briefing riscrive
    ogni mattina; index.html si rigenera con `python3 test/costruisci.py`.
    Il codice dell'app sta in modello.html e non va toccato. */
@@ -2194,6 +2199,7 @@ document.addEventListener('keydown',function(e){var el=e.target;if((e.key==='Ent
 renderDuel();
 renderAudit();
 render();
+_togliVelo();
 </script>
 </body>
 </html>
