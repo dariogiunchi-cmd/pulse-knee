@@ -7,11 +7,21 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 19 agosto 2026.*
+*Ultimo aggiornamento: 20 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-08-20 | KSSTA | Deutsche Kniegesellschaft, raccomandazioni sullo slope tibiale posteriore aumentato nel LCA (Comitato Osteotomie, 14 esperti) | 10.1002/ksa.70549 | slope, osteotomia, consensus | aperto — no soglia fissa, valutazione individuale del rischio, approccio infratuberositario raccomandato; peso peritale alto
+2026-08-20 | J Exp Orthop | Slope tibiale posteriore associato alla rottura e ri-rottura del LCA (coorte, 1.406) | 10.1002/jeo2.70890 | slope, crociato anteriore, osteotomia | aperto — determinante indipendente dominante dello slope è lo stato del LCA (+2,52°/+3,63° vs controlli); soglia 10° con AUC 0,73-0,79
+2026-08-20 | Surg Radiol Anat | Nervo cutaneo femorale laterale e prelievo del tendine quadricipitale (anatomico cadaverico, 29 arti) | 10.1007/s00276-026-03975-y | innesto quadricipitale, prelievo, anatomia | aperto — rischio massimo al margine superiore del prelievo; la statura, più del sesso, predice la distanza di sicurezza
+2026-08-20 | Surg Radiol Anat | La bendelletta ileotibiale e il LET: revisione anatomica con Robert LaPrade | 10.1007/s00276-026-03956-1 | let, bendelletta ileotibiale, fibre di Kaplan | aperto — revisione narrativa, rafforza il razionale anatomico del LET ma non distingue costrutto onlay da profondo con graffa (T1b)
+2026-08-20 | J Robot Surg | Protesi robot-assistita e rischio di infezione (SR+meta-analisi, 87 studi) | 10.1007/s11701-026-03771-1 | protesi robotica, velys, infezione | aperto — nessun eccesso di rischio infettivo a 2 anni, possibile vantaggio su PJI oltre i 2 anni
+2026-08-20 | J Knee Surg | Tendenze sesso-specifiche nella scelta dell'innesto per il LCA (coorte retrospettiva, 1.781) | 10.1055/a-2939-2425 | innesto quadricipitale, tendenze, sesso | aperto — tendine quadricipitale in crescita in entrambi i sessi, più netta nelle donne under 25
+2026-08-20 | Orthopedics | Nicotina non da tabacco ed esiti dopo meniscectomia artroscopica (coorte appaiata, 9.594+9.594) | 10.3928/01477447-20260710-01 | menisco, artroscopia, fattore di rischio | aperto — più complicanze, reinterventi e uso di oppioidi con NTND; tasso di revisione muto (numeri non riportati)
+2026-08-20 | J Exp Orthop | Validazione esterna dell'algoritmo BABY-Knee per il LCA nell'adolescente (coorte retrospettiva, 109) | 10.1002/jeo2.70891 | lca adolescente, decisione chirurgica, algoritmo | aperto — VPP crollato dal 91,7% italiano al 31,9-51,1% olandese; promemoria contro strumenti decisionali non validati nel proprio contesto
+2026-08-20 | Orthop Surg | Bi-UKA vs protesi totale, recupero precoce (coorte prospettica IPTW, 80) | 10.1111/os.70406 | protesi, monocompartimentale, conservazione articolare | aperto — bi-UKA favorevole nei primi 2 anni; monocentrico, non randomizzato, non è la tua tecnica esatta
 
 2026-08-19 | The Knee | Allineamento assiale (rotazionale) in PTG: SR+meta-regressione, 65 studi, 8.392 protesi | 10.1016/j.knee.2026.104588 | protesi robotica, allineamento, VELYS | aperto — più rotazione esterna femorale/tibiale e minor mismatch = punteggi migliori; 86% degli studi misura solo 1-2 parametri
 2026-08-19 | J Arthroplasty | Psoriasi e protesi di ginocchio: più infezioni e reinterventi a 2 anni (coorte appaiata, 4.191+4.191) | 10.1016/j.arth.2026.08.022 | protesi, fattore di rischio, infezione | aperto — RR 1,5 su PJI e revisione, RR 1,7 su deiscenza di ferita; database sanitario, no dati su gravità psoriasi
@@ -132,6 +142,13 @@ fissazione — che la letteratura tratta come equivalenti.
 contiene almeno sette note tecniche sul LET, tutte orientate a fissazione **onlay
 e knotless** e all'eliminazione dell'hardware. Il campo si sta spostando dove Dario
 è già, mentre l'intera base di evidenza è costruita sulla graffa.
+
+**Nuovo il 20 agosto 2026.** Una revisione narrativa sulla bendelletta ileotibiale
+(*Surgical and Radiologic Anatomy*), con **Robert LaPrade** fra gli autori, descrive
+in dettaglio le fibre di Kaplan e la componente capsulo-ossea profonda del sistema
+anterolaterale — l'anatomia su cui poggia il razionale del LET. Non distingue però
+esplicitamente il costrutto profondo con graffa dall'onlay superficiale: **rafforza
+lo sfondo anatomico della tensione, non la chiude.**
 
 **Cosa la chiude:** uno studio comparativo fra costrutti, oggi inesistente.
 **È il buco più pubblicabile emerso finora:** una serie sull'onlay superficiale con

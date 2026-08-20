@@ -20,6 +20,8 @@
 
 ## 2026
 
+2026-08 | Deutsche Kniegesellschaft (Comitato Osteotomie) | Raccomandazioni sulla gestione dello slope tibiale posteriore aumentato nella deficienza del LCA (revisione narrativa + consenso informale, 14 esperti) | KSSTA | 10.1002/ksa.70549 | misura standardizzata su radiografia laterale in asse lungo; indicazione alla correzione su valutazione individuale del rischio, non su soglia fissa; approccio infratuberositario raccomandato nell'osteotomia di chiusura anteriore | primo documento dedicato del genere — nessun predecessore diretto nel registro
+
 2026-06 | ESSKA + ICRS | Consensus sull'appropriatezza delle iniezioni di terapie cellulari nell'artrosi di ginocchio (RAND/UCLA, 144 scenari) | KSSTA | 10.1002/ksa.70487 | appropriato <65 anni, BMI ≤35, KL II–III; firme Kon · Andriolo · de Caro · Filardo (EOC Lugano) | primo documento di appropriatezza dedicato — nessun predecessore diretto
 
 2026-06 | ICRS + FIFA + Aspetar | Consensus parte 2: chirurgia della cartilagine nel calciatore (RAND/UCLA, 96 scenari) | BJSM | 10.1136/bjsports-2025-110676 | tecniche rigenerative preferite per l'esito a lungo termine; stimolazione midollare giudicata inappropriata o incerta nel calciatore | completa la parte 1 della stessa serie

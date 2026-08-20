@@ -1,6 +1,6 @@
 # PULSE — il cervello
 
-*Indice rigenerato il 2026-08-19.*
+*Indice rigenerato il 2026-08-20.*
 
 Questi file sono la **memoria** del sistema: chi è il Dr. Giunchi, che cosa opera, quali
 lavori sono già stati visti, quali tensioni restano aperte, come si scrivono le schede e
@@ -20,25 +20,25 @@ controllo. In questo aggiornamento: **0 sostituzioni**.
 La pubblicazione ordinaria non richiede più alcun token: la sessione Claude Code spinge
 dal proprio accesso autorizzato. Il token GitHub resta nel Progetto come via di riserva.
 
-## Documenti (16, 153 KB in tutto)
+## Documenti (16, 178 KB in tutto)
 
 | File | Peso | Impronta |
 |---|---|---|
 | `00-istruzioni-del-progetto.md` | 3.4 KB | `78dba04be726` |
 | `01-profilo.md` | 6.3 KB | `a39ce39af586` |
 | `02-cosa-opera.md` | 6.4 KB | `5eab1d69d4be` |
-| `03-memoria.md` | 24.7 KB | `8e90a029fffb` |
+| `03-memoria.md` | 27.9 KB | `7128a16e9aa0` |
 | `04-fonti.md` | 8.4 KB | `4e694c6f7ebf` |
 | `05-formato.md` | 4.9 KB | `3cfd7dd432fa` |
 | `06-social.md` | 3.2 KB | `e798b888fbdf` |
-| `14-standard-di-cura.md` | 3.2 KB | `d6d91dc31cf5` |
+| `14-standard-di-cura.md` | 3.8 KB | `e9637a6a1363` |
 | `claude__07-preferenze.md` | 9.3 KB | `764ff5730906` |
 | `claude__08-archivio.md` | 0.4 KB | `aba6dc9d105b` |
-| `claude__09-storico.md` | 31.8 KB | `a69f81c1ee80` |
+| `claude__09-storico.md` | 49.5 KB | `39900a33711c` |
 | `claude__10-deploy.md` | 8.5 KB | `96b10a23c26e` |
 | `claude__11-qualita.md` | 23.9 KB | `4f5e2d22760c` |
 | `claude__12-distribuzione.md` | 5.1 KB | `53733f2ec633` |
-| `claude__13-attivita.md` | 10.3 KB | `3c3c2531c658` |
+| `claude__13-attivita.md` | 13.6 KB | `04b6c1ae3fa7` |
 | `claude__15-rassegna-social.md` | 3.3 KB | `249c2a54704b` |
 
 L'impronta è il SHA-256 abbreviato: due copie con la stessa impronta sono identiche
