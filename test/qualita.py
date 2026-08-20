@@ -273,6 +273,20 @@ with sync_playwright() as p:
                      "var t=segnaliTesto();S.votes=v;S.saved=s1;S.savedItems=s2;S.weekly=w;S.suggDone=d;"
                      "return t.indexOf('Nessun segnale ancora')>=0})()"),
         'senza scelte i segnali lo dichiarano, non fingono')
+    # --- accessibilità: landmark, gerarchia, tastiera (la macchina, non il carico) ---
+    chk(pg3.evaluate("document.querySelectorAll('main').length===1 && document.querySelectorAll('h1').length===1"),
+        'un solo landmark main e un solo h1: la gerarchia parte dal marchio')
+    chk(pg3.evaluate("(function(){var r=document.querySelector('.item .row');"
+                     "return !!r&&r.getAttribute('role')==='button'&&r.getAttribute('tabindex')==='0'})()"),
+        'ogni scheda è un bottone raggiungibile da tastiera')
+    chk(pg3.evaluate("(function(){var it=document.querySelector('.item'),r=it.querySelector('.row');"
+                     "var era=it.classList.contains('open');r.focus();"
+                     "r.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true}));"
+                     "var dopo=it.classList.contains('open');"
+                     "var buono=(dopo!==era)&&r.getAttribute('aria-expanded')===String(dopo);"
+                     "if(dopo!==era)r.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true}));"
+                     "return buono})()"),
+        'Invio su una scheda la apre e aria-expanded dice il vero')
     dl=pg3.evaluate("typeof BRIEF_DIALOGO!=='undefined'?BRIEF_DIALOGO:null")
     if dl is not None:
         chk(all((r.get('chi') in ('A','B')) and (r.get('t') or '').strip() for r in dl)

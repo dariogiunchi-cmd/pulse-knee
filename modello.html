@@ -17,7 +17,7 @@
   --allerta:#C0362C;--attrito:#B45309;--pratica:#1E7A3C;--contesto:#8A8A8E;--azione:#0A63C4;
   --inchiostro:#1B1B1E;--carta:#fff;--fondo:#F4F4F6;--su-colore:#fff;
   --bg:var(--carta);--tint:#F0F0F3;--tint2:#F6F6F8;--line:rgba(0,0,0,.10);--line2:rgba(0,0,0,.06);
-  --txt:var(--inchiostro);--dim:#5F5F66;--dim2:#8A8A8E;
+  --txt:var(--inchiostro);--dim:#5F5F66;--dim2:#69696E;
   /* alias storici → semantici: il codice esistente continua a valere */
   --blue:var(--azione);--red:var(--allerta);--orange:var(--attrito);--green:var(--pratica);--gray:var(--contesto);--gold:#8a6d00;
   /* SCALA TIPOGRAFICA — 6 corpi (§2); 9px è la micro-etichetta di componente */
@@ -52,9 +52,9 @@
   .autogrid button.on{background:#b00020}
   .autoesci{margin-top:12px;height:52px;border-radius:14px;border:1.5px solid #3a3a3c;background:none;color:#9a9aa2;font-size:var(--t-testo);cursor:pointer}
   .autovel{text-align:center;color:#9a9aa2;font-size:var(--t-sec);margin-top:6px}
-  .brand{font-size:var(--t-titolo);font-weight:700;letter-spacing:-.03em}.brand span{color:var(--dim2);font-weight:600}
+  .brand{font-size:var(--t-titolo);font-weight:700;letter-spacing:-.03em;margin:0}.brand span{color:var(--dim2);font-weight:600}
   .date{color:var(--dim);font-size:var(--t-meta);width:100%;order:5}@media(min-width:560px){.date{width:auto;order:0}}
-  .kpi{font-size:var(--t-meta);font-weight:600;padding:3px 10px;border-radius:20px;background:var(--carta);box-shadow:var(--sh);color:var(--dim);display:flex;gap:5px;align-items:center}.kpi b{color:var(--txt)}.kpi.v{color:#248a3d}
+  .kpi{font-size:var(--t-meta);font-weight:600;padding:3px 10px;border-radius:20px;background:var(--carta);box-shadow:var(--sh);color:var(--dim);display:flex;gap:5px;align-items:center}.kpi b{color:var(--txt)}.kpi.v{color:var(--pratica)}
   /* L'EROE: la prima schermata è la risposta del giorno (direzione A) */
   .eroe{padding:2px 2px var(--s4)}
   .eroe .date{display:block;width:auto;order:0;margin-bottom:var(--s2)}
@@ -91,7 +91,7 @@
   .pick .prev{width:100%;height:104px;border-radius:11px;background:#eef0f2;margin-bottom:12px;display:flex;align-items:center;justify-content:center;color:var(--dim2);font-size:var(--t-meta);border:1px solid var(--line2);text-align:center;padding:10px}
   .ey{display:flex;align-items:center;gap:8px;font-size:var(--t-micro);font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;flex-wrap:wrap}
   .ey .meta{color:var(--dim2);font-weight:600;letter-spacing:0;text-transform:none}
-  .pick h1{margin:0;font-size:var(--t-titolo);line-height:1.28;font-weight:700;letter-spacing:-.02em}
+  .pick .pkh{margin:0;font-size:var(--t-titolo);line-height:1.28;font-weight:700;letter-spacing:-.02em}
   .pick .aut{font-size:var(--t-meta);color:var(--dim2);margin-top:6px}
   .pick .why{font-size:var(--t-meta);color:var(--dim);margin-top:6px;line-height:1.5}
   /* Anche qui «★ Salva» finiva da solo su una riga. Stessa cura della riga delle
@@ -107,7 +107,7 @@
   .sl .ic{width:22px;height:22px;border-radius:6px;background:var(--sc,#c7c7cc);display:flex;align-items:center;justify-content:center;color:var(--su-colore);font-size:var(--t-meta)}
   .sl .ic svg{width:13px;height:13px;display:block}
   .sl .n{margin-left:auto;color:var(--dim2);font-weight:600;text-transform:none}
-  .r-res{--sc:#0071e3}.r-tech{--sc:#30b0c7}.r-cong{--sc:#ff9500}.r-soc{--sc:#af52de}.r-disc{--sc:#34c759}.r-focus{--sc:#b8860b}.r-arch{--sc:#8e8e93}
+  .r-res{--sc:#0071e3}.r-tech{--sc:#147D95}.r-cong{--sc:#B45309}.r-soc{--sc:#af52de}.r-disc{--sc:#1E7A3C}.r-focus{--sc:#b8860b}.r-arch{--sc:#6E6E73}
   .card{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden}
   .item{border-bottom:1px solid var(--line2)}.item:last-child{border-bottom:0}
   .row{display:flex;align-items:flex-start;gap:var(--s3);padding:var(--s3) var(--s4);cursor:pointer}.row:active{background:var(--tint2)}
@@ -148,6 +148,7 @@
   .acts .ib.lbl .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .ib{height:44px;min-width:44px;border-radius:9px;border:1px solid var(--line);background:var(--carta);color:var(--dim);font-size:var(--t-sec);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0 7px}
   .ib>svg{width:20px;height:20px;flex:0 0 auto}
+  button:focus-visible,[role="button"]:focus-visible,a:focus-visible,.fchip:focus-visible{outline:2px solid var(--azione);outline-offset:2px}
   .ib .t svg{width:15px;height:15px;vertical-align:-3px;margin-right:2px}
   .btn svg{width:16px;height:16px;vertical-align:-3px;margin-right:3px}
   .ib.save.on{background:var(--gold);border-color:var(--gold);color:var(--su-colore)}.ib.up.on{background:var(--green);border-color:var(--green);color:var(--su-colore)}.ib.down.on{background:var(--red);border-color:var(--red);color:var(--su-colore)}
@@ -185,9 +186,10 @@
   .tcong{display:flex;gap:10px;align-items:flex-start}.tcong .tt .h{font-size:var(--t-meta);font-weight:600}.tcong .tt .v{font-size:var(--t-meta);color:var(--dim);margin-top:2px}
   .lab{font-size:var(--t-badge);font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin:2px 0 7px}
   .tag{display:inline-flex;align-items:center;gap:6px;background:var(--tint);color:#3a3a3c;font-size:var(--t-meta);font-weight:500;padding:5px 11px;border-radius:13px;margin:3px 5px 3px 0}.tag b{color:var(--dim2);font-weight:700;cursor:pointer;font-size:var(--t-sec)}
-  .sugg{margin-top:10px;font-size:var(--t-meta);background:rgba(52,199,89,.09);border-radius:10px;padding:10px 12px}.sugg b{color:#248a3d}.sugg .sb{display:flex;gap:8px;margin-top:8px}
+  .sugg{margin-top:10px;font-size:var(--t-meta);background:rgba(52,199,89,.09);border-radius:10px;padding:10px 12px}.sugg b{color:var(--pratica)}.sugg .sb{display:flex;gap:8px;margin-top:8px}
   .add{display:flex;gap:8px;margin-top:11px}.add input{flex:1;min-width:0;font:inherit;font-size:var(--t-sec);padding:10px 12px;border-radius:10px;border:1px solid var(--line);outline:none}.add input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,113,227,.12)}
   .add button{font:inherit;font-size:var(--t-meta);font-weight:600;padding:10px 15px;border-radius:10px;border:none;background:var(--blue);color:var(--su-colore);cursor:pointer}
+  .add button.peric{background:#C0362C;color:#fff}
   .seg{display:inline-flex;background:var(--tint);border-radius:10px;padding:3px;gap:2px}.seg button{font:inherit;font-size:var(--t-meta);font-weight:600;padding:6px 13px;border-radius:8px;border:none;background:transparent;color:var(--dim);cursor:pointer}.seg button.on{background:var(--carta);color:var(--txt);box-shadow:0 1px 3px rgba(0,0,0,.12)}
   .rowset{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid var(--line2)}.rowset:first-of-type{border-top:0}.rowset .k{font-size:var(--t-meta);font-weight:600}.rowset .k small{display:block;font-weight:400;color:var(--dim2);font-size:var(--t-meta);margin-top:2px}
   .sec{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:15px 16px;margin-bottom:14px}.sec h2{font-size:var(--t-meta);font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:var(--dim);margin:0 0 10px}
@@ -236,18 +238,23 @@
   .tabs button.on,.seg button.on,.stabs button,.ib,.hbtn,.fchip,.day{background:#2c2c2e !important;color:#f5f5f7}
   .fchip.on{background:#f5f5f7 !important;color:#111}
   .rchip.rHotC{color:#ff7a70}
+  .nuovo{color:#102A43}
+  .fresh.old{color:var(--attrito)}
+  .fresh.dead{color:var(--allerta)}
   .btn{background:#2c2c2e;color:#f5f5f7}
+  .btn.pri,.add button{background:#0A63C4;color:#fff}
+  .audiobar .play{background:#0A63C4}
   .add input,.srch input,.seg{background:#2c2c2e;color:#f5f5f7}
   .tag{background:#2c2c2e !important;color:#e5e5ea !important}
   .fld .val,.sbody .cnt{color:#e5e5ea !important}
   .btn.soc,.ib.soc{background:#f5f5f7 !important;color:#111 !important}
   .ib.save.on{background:var(--gold) !important;color:var(--su-colore) !important}
-  .ib.up.on{background:var(--green) !important;color:var(--su-colore) !important}
-  .ib.down.on{background:var(--red) !important;color:var(--su-colore) !important}
+  .ib.up.on{background:var(--green) !important;color:#0b0b0c !important}
+  .ib.down.on{background:var(--red) !important;color:#0b0b0c !important}
   .ib.vid.on{background:#af52de !important;color:var(--su-colore) !important}
   .stabs button.on{background:#f5f5f7 !important;color:#111 !important}
   .empty div{color:#f5f5f7 !important}
-  .day.today{background:var(--blue) !important;color:var(--su-colore)}
+  .day.today{background:#0A63C4 !important;color:#fff}
   .vitem{background:rgba(255,255,255,.10) !important}
   .verdict.act{background:#1c1c1e !important}.verdict.act .vtop{color:var(--attrito)}
   .vitem,.vtop,.vhint{color:#f0a94a !important}
@@ -274,7 +281,7 @@
   .conflab{font-size:var(--t-badge);color:var(--dim2);font-weight:600}
 
   .fresh{border-radius:12px;padding:9px 13px;margin-bottom:10px;font-size:var(--t-meta);display:flex;gap:9px;align-items:center;font-weight:600}
-  .fresh.ok{background:rgba(52,199,89,.10);color:#248a3d}
+  .fresh.ok{background:rgba(52,199,89,.10);color:var(--pratica)}
   .fresh.old{background:rgba(255,149,0,.15);color:#a35200}
   .fresh.dead{background:rgba(255,59,48,.13);color:#c0362e}
   .duelbar{display:flex;gap:8px;align-items:center;background:rgba(0,113,227,.08);border-radius:12px;padding:9px 13px;margin-bottom:14px;font-size:var(--t-meta);color:var(--txt);cursor:pointer;font-weight:600}
@@ -292,7 +299,7 @@
   .drow2 .k{font-size:var(--t-badge);font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2)}
   .drow2 .v{font-size:var(--t-meta);line-height:1.45;margin-top:2px}
   .audit{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;margin-top:16px;max-width:520px}
-  .audit h4{margin:0 0 8px;font-size:var(--t-meta);font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--dim)}
+  .audit h2{margin:0 0 8px;font-size:var(--t-meta);font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--dim)}
   .audit .li{font-size:var(--t-meta);color:var(--txt);padding:5px 0;border-top:1px solid var(--line2);line-height:1.4}
   .audit .li:first-of-type{border-top:0}
   .audit .n{font-weight:700}
@@ -306,7 +313,7 @@
   /* iOS ingrandisce la pagina se il campo ha testo <16px: qui lo evitiamo */
   .add input,.srch input{font-size:var(--t-testo)}
   /* i testi lunghi vanno a capo invece di allargare la pagina */
-  .row .h,.row .v,.row .aut,.pick h1,.pick .why,.fld .val,.drow2 .v,.lchip,.muted,.sbody .cnt,.audit .li,.tag,.dhead .t{overflow-wrap:anywhere}
+  .row .h,.row .v,.row .aut,.pick .pkh,.pick .why,.fld .val,.drow2 .v,.lchip,.muted,.sbody .cnt,.audit .li,.tag,.dhead .t{overflow-wrap:anywhere}
   .tt,.row .tt,.drow .tt,.pick .body,.audiobar .tx{min-width:0}
   /* la colonna destra non ruba spazio al titolo */
   .row .rt{max-width:32%;align-items:flex-end;text-align:right}
@@ -325,7 +332,7 @@
   @media(max-width:400px){
     body{padding:12px 11px calc(36px + env(safe-area-inset-bottom))}
     .brand{font-size:var(--t-titolo)}
-    .pick h1{font-size:var(--t-testo)}
+    .pick .pkh{font-size:var(--t-testo)}
     .row{gap:9px;padding:11px 12px}
     .mono{width:32px;height:32px;font-size:var(--t-badge)}
     .kpi{font-size:var(--t-meta);padding:3px 9px}
@@ -393,21 +400,22 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="top">
-    <span class="brand">PULSE<span> · knee</span></span>
+  <div class="top" role="banner">
+    <h1 class="brand">PULSE<span> · knee</span></h1>
     <span style="margin-left:auto"></span>
     <button class="hbtn" onclick="location.reload()" title="Aggiorna" aria-label="Ricarica l'app">↻</button>
     <button class="hbtn" onclick="apriGuida()" aria-label="Come funziona PULSE: la guida">?</button>
   </div>
   <div id="welbox"></div>
-  <div class="tabs" role="tablist">
-    <button class="on" onclick="tab('today',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 5.5h12M4 9.5h12M4 13.5h7"/></svg><span class="tl">Oggi</span></button>
+  <div class="tabs" role="navigation" aria-label="Sezioni di PULSE">
+    <button class="on" aria-current="page" onclick="tab('today',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 5.5h12M4 9.5h12M4 13.5h7"/></svg><span class="tl">Oggi</span></button>
     <button onclick="tab('rassegna',this);apriRassegna()"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3.5 14a6.5 6.5 0 0 1 13 0M7 14a3 3 0 0 1 6 0"/><circle cx="10" cy="14" r="1.1" fill="currentColor" stroke="none"/></svg><span class="tl">Rassegna</span></button>
     <button onclick="tab('archive',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.5h13v8h-13zM3.5 7.5l1.6-3h9.8l1.6 3M8 11h4"/></svg><span class="tl">Archivio</span></button>
     <button onclick="tab('saved',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M10 3.2l2.1 4.3 4.7.7-3.4 3.3.8 4.7L10 14l-4.2 2.2.8-4.7-3.4-3.3 4.7-.7z"/></svg><span class="tl">Salvati</span> <span class="b" id="savedCount">0</span></button>
     <button onclick="tab('news',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="5" width="14" height="10" rx="1.5"/><path d="M3.5 6l6.5 5 6.5-5"/></svg><span class="tl">Newsletter</span></button><button onclick="tab('settings',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3.5 6.2h13M3.5 10h13M3.5 13.8h13"/><circle cx="7.6" cy="6.2" r="1.7" fill="currentColor" stroke="none"/><circle cx="12.4" cy="10" r="1.7" fill="currentColor" stroke="none"/><circle cx="6.4" cy="13.8" r="1.7" fill="currentColor" stroke="none"/></svg><span class="tl">Impostazioni</span></button>
   </div>
 
+  <main>
   <div class="view on" id="today">
     <section class="eroe">
       <span class="date" id="datalunga"></span>
@@ -426,7 +434,7 @@
     <div class="grid">
       <div>
         <div class="pick" id="pickbox"></div>
-        <div class="sl" style="--sc:#c77a00"><span class="ic">⚑</span>Dove le prove non ti coprono<span class="n" id="tensn"></span></div>
+        <div class="sl" style="--sc:#B45309"><span class="ic">⚑</span>Dove le prove non ti coprono<span class="n" id="tensn"></span></div>
         <div class="tens2"><div class="tintro">Punti in cui <b>tu fai una cosa</b> e la letteratura <b>ne ha studiata un&rsquo;altra</b>. Non sono errori: sono zone in cui le prove non ti coprono. Tocca per vedere che cosa puoi farci.</div><div id="tensbox"></div></div>
         <div class="sl r-res"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.2 3h3.6M9 3v4.4l-3.7 6.4A2 2 0 0 0 7 16.8h6a2 2 0 0 0 1.7-3L11 7.4V3"/><path d="M7 12.5h6"/></svg></span>Ricerca scientifica<span class="n" id="resn"></span></div>
         <div class="filters"><button class="fchip on" onclick="setFilter('all',this)">Tutti</button><button class="fchip" onclick="setFilter('orange',this)">🟠 La mia pratica</button><button class="fchip" onclick="setFilter('green',this)">🟢 Mie tecniche</button><button class="fchip" onclick="setFilter('gray',this)">⚪ Contesto</button></div><div class="card" id="researchList"></div>
@@ -486,13 +494,13 @@
       <div class="rowset"><div class="k">Lingua pagina</div><div class="seg"><button class="on" onclick="setV('lang','it',this)">Italiano</button><button onclick="setV('lang','en',this)">English</button></div></div>
       <div class="rowset"><div class="k">Lingua audio</div><div class="seg"><button class="on" onclick="setV('audio','it',this)">Italiano</button><button onclick="setV('audio','en',this)">English</button></div></div>
     </div>
-    <div class="sec"><h2>Promemoria</h2><div class="muted">Il briefing viene preparato ogni mattina alle 7 (ora svizzera) e l'avviso ti arriva dall'app Claude, <b>se hai le notifiche attive per quella app</b>. Qui sotto puoi attivare anche gli avvisi del browser: su iPhone funzionano solo se hai aggiunto PULSE alla schermata Home e apri l'app da lì.</div><div class="add" style="margin-top:10px"><button onclick="askNotif()">🔔 Attiva avvisi</button></div><div class="preview" id="notiflbl"></div></div>
+    <div class="sec"><h2>Promemoria</h2><div class="muted">Il briefing viene preparato ogni mattina alle 7 (ora svizzera) e l'avviso ti arriva dall'app Claude, <b>se hai le notifiche attive per quella app</b>. Qui sotto puoi attivare anche gli avvisi del browser: su iPhone funzionano solo se hai aggiunto PULSE alla schermata Home e apri l'app da lì.</div><div class="add" style="margin-top:10px"><button onclick="askNotif()">Attiva avvisi</button></div><div class="preview" id="notiflbl"></div></div>
     <div class="sec"><h2>Versioni precedenti</h2><div class="muted">Ogni giorno il PULSE viene salvato così com&rsquo;era. Restano tutti i giorni degli ultimi trenta e il primo di ogni mese, per sempre.</div><div class="add" style="margin-top:10px"><a class="btn" href="versioni/" style="text-decoration:none;display:inline-flex;align-items:center">🗄 Sfoglia le versioni</a></div></div>
     <div class="sec"><h2>Lettura</h2><div class="muted">La dimensione del testo di tutta l'app. La scelta resta su questo dispositivo.</div>
       <div class="filters" id="testochips" style="margin-top:9px"><button class="fchip" onclick="setTesto(1,this)">Normale</button><button class="fchip" onclick="setTesto(1.15,this)">Grande</button><button class="fchip" onclick="setTesto(1.3,this)">Molto grande</button></div>
       <div class="muted" style="margin-top:12px">La voce che legge (di sistema). Le più naturali si scaricano sull'iPhone: Impostazioni → Accessibilità → Contenuto letto → Voci → Italiano → scegli una voce «migliorata».</div>
       <select id="vocesel" onchange="S.voce=this.value;save();" aria-label="Scegli la voce italiana che legge il giornale" style="margin-top:8px;width:100%;max-width:520px;padding:10px;border-radius:11px;border:1px solid var(--line);background:var(--tint2);color:var(--txt);font:inherit"></select>
-      <div class="add" style="margin-top:12px"><button class="btn" onclick="apriGuida()" aria-label="Apri la guida che spiega come funziona PULSE">Come funziona PULSE</button></div></div>
+      <div class="add" style="margin-top:12px"><button class="btn" onclick="apriGuida()">Come funziona PULSE</button></div></div>
     <div class="sec"><h2>Il cervello di PULSE</h2>
       <div class="muted">Facoltativo, a pagamento (nell'ordine di pochi franchi al mese): sblocca la conversazione libera a voce — chiedi qualunque cosa, come a ChatGPT — e la voce naturale per podcast e schede. Le chiavi vivono nel «cervello» esterno (cartella <b>chiedi/</b> del repository, istruzioni comprese); qui si scrivono solo l'indirizzo e la parola d'ordine, che restano su questo dispositivo.</div>
       <div class="add" style="margin-top:9px;flex-wrap:wrap">
@@ -502,9 +510,10 @@
       </div>
       <div class="muted" id="cvstato" style="margin-top:7px"></div></div>
     <div class="sec"><h2>Stesso PULSE su un altro dispositivo</h2><div class="muted">PULSE non ha un server: quello che fai su un dispositivo resta lì. Se usi anche il computer, porta i tuoi dati con un link — le due copie si <b>fondono</b>, non si sovrascrivono, quindi non perdi nulla da nessuna delle due parti.</div><div id="syncbox" style="margin-top:10px"></div></div>
-    <div class="sec"><h2>I tuoi dati</h2><div class="muted">Salvati, voti, preferenze, lavori scelti per la distribuzione e testi che hai adattato vivono <b>solo in questo browser</b>, su questo dispositivo. Non sono su nessun server e non si sincronizzano con altri dispositivi. Se cancelli i dati del sito, si perdono: per questo conviene tenere PULSE nella schermata Home e non cancellare i dati di Safari o Chrome per questo indirizzo. Le schede e i contenuti di ogni giorno restano invece sempre recuperabili dalle versioni precedenti.</div><div class="add" style="margin-top:10px"><button onclick="resetAll()" style="background:#ff3b30">Azzera tutto</button></div></div>
+    <div class="sec"><h2>I tuoi dati</h2><div class="muted">Salvati, voti, preferenze, lavori scelti per la distribuzione e testi che hai adattato vivono <b>solo in questo browser</b>, su questo dispositivo. Non sono su nessun server e non si sincronizzano con altri dispositivi. Se cancelli i dati del sito, si perdono: per questo conviene tenere PULSE nella schermata Home e non cancellare i dati di Safari o Chrome per questo indirizzo. Le schede e i contenuti di ogni giorno restano invece sempre recuperabili dalle versioni precedenti.</div><div class="add" style="margin-top:10px"><button class="peric" onclick="resetAll()">Azzera tutto</button></div></div>
   </div>
-  <div class="foot" id="foot"></div>
+  </main>
+  <div class="foot" id="foot" role="contentinfo"></div>
 </div>
 
 <!-- SOCIAL SHEET -->
@@ -632,7 +641,7 @@ function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')}
 function pm(a){return 'https://pubmed.ncbi.nlm.nih.gov/'+a.pmid+'/'}function di(a){return 'https://doi.org/'+a.doi}
 function itemHTML(a){if(!a)return '';var sv=isSaved(a.n),vt=S.votes[a.n];var hasSoc=!!SOC[a.n];
  return '<div class="item" id="it-'+a.n+'">'+
-  '<div class="row" onclick="toggle('+a.n+')"><span class="dot '+a.dot+'"></span>'+
+  '<div class="row" role="button" tabindex="0" aria-expanded="false" onclick="toggle('+a.n+')"><span class="dot '+a.dot+'"></span>'+
     '<div class="tt"><div class="h">'+esc(a.h)+'</div><div class="v">'+esc(a.v)+'</div>'+
     '<div class="metar">'+(S.seen.indexOf(a.n)<0?'<span class="nuovo" id="nuovo-'+a.n+'">nuovo</span>':'')+
       '<span class="meta">'+esc(a.j)+' · '+a.meta+'</span>'+confHTML(a.n)+
@@ -679,7 +688,7 @@ function render(){
   var b2=document.getElementById('savebtn-2');if(b2)b2.className='btn'+(isSaved(2)?' on':'');
 }
 function tagX(k,x){return '<span class="tag">'+esc(x)+' <b onclick="rm(\''+k+'\',\''+x.replace(/'/g,"\\'")+'\')">×</b></span>'}
-function toggle(n){var e=document.getElementById('it-'+n);if(e)e.classList.toggle('open');if(S.seen.indexOf(n)<0){S.seen.push(n);save();var nb=document.getElementById('nuovo-'+n);if(nb)nb.style.display='none'}}
+function toggle(n){var e=document.getElementById('it-'+n);if(e){e.classList.toggle('open');var r=e.querySelector('.row');if(r&&r.setAttribute)r.setAttribute('aria-expanded',e.classList.contains('open')?'true':'false');}if(S.seen.indexOf(n)<0){S.seen.push(n);save();var nb=document.getElementById('nuovo-'+n);if(nb)nb.style.display='none'}}
 function scrollToItem(n){var e=document.getElementById('it-'+n);if(e){e.classList.add('open');e.scrollIntoView({behavior:'smooth',block:'center'})}}
 function toast(m){var t=document.getElementById('toast');t.textContent=m;t.style.opacity=1;clearTimeout(window._t);window._t=setTimeout(function(){t.style.opacity=0},1700)}
 /* I salvati sopravvivono al ricambio quotidiano delle schede: si conserva la
@@ -786,11 +795,11 @@ function apriTrasferimento(){
   '<div class="add"><button class="btn pri" onclick="copiaTrasferimento()"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M8.4 11.6l3.2-3.2M7.2 9.2L5 11.4a2.7 2.7 0 0 0 3.8 3.8l2.2-2.2M12.8 10.8l2.2-2.2A2.7 2.7 0 0 0 11.2 4.8L9 7"/></svg> Copia il link di trasferimento</button>'+
   (navigator.share?'<button class="btn" onclick="condividiTrasferimento()">Condividi…</button>':'')+'</div>'+
   '<div class="muted" style="margin:12px 0 9px">La copia di sicurezza è un file: tutto ciò che decidi vive solo su questo dispositivo, e se i dati del sito vengono cancellati non c&rsquo;è altro modo di tornare indietro. Il ripristino fonde le copie, non le sovrascrive.</div>'+
-  '<div class="add"><button class="btn" onclick="esportaBackup()" aria-label="Scarica una copia di sicurezza dei tuoi dati in un file"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3.5v8.2M6.8 8.8l3.2 3.2 3.2-3.2M4 13.5v2a1.2 1.2 0 0 0 1.2 1.2h9.6A1.2 1.2 0 0 0 16 15.5v-2"/></svg> Scarica copia di sicurezza</button>'+
-  '<button class="btn" onclick="document.getElementById(\'bkfile\').click()" aria-label="Ripristina i dati da un file di copia di sicurezza"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 11.7V3.5M6.8 6.7L10 3.5l3.2 3.2M4 13.5v2a1.2 1.2 0 0 0 1.2 1.2h9.6A1.2 1.2 0 0 0 16 15.5v-2"/></svg> Ripristina da file</button>'+
+  '<div class="add"><button class="btn" onclick="esportaBackup()" aria-label="Scarica copia di sicurezza dei tuoi dati in un file"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3.5v8.2M6.8 8.8l3.2 3.2 3.2-3.2M4 13.5v2a1.2 1.2 0 0 0 1.2 1.2h9.6A1.2 1.2 0 0 0 16 15.5v-2"/></svg> Scarica copia di sicurezza</button>'+
+  '<button class="btn" onclick="document.getElementById(\'bkfile\').click()" aria-label="Ripristina da file una copia di sicurezza"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 11.7V3.5M6.8 6.7L10 3.5l3.2 3.2M4 13.5v2a1.2 1.2 0 0 0 1.2 1.2h9.6A1.2 1.2 0 0 0 16 15.5v-2"/></svg> Ripristina da file</button>'+
   '<input type="file" id="bkfile" accept=".json,application/json" style="display:none" onchange="importaBackup(this)" aria-label="File di copia di sicurezza da ripristinare"></div>'+
   '<div class="muted" style="margin:12px 0 9px">I segnali sono le tue scelte — voti, salvati, lavori per la newsletter, proposte accettate o respinte. Incollàti nella chat con Claude, orientano le schede dei giorni successivi.</div>'+
-  '<div class="add"><button class="btn" onclick="condividiSegnali()" aria-label="Condividi i tuoi segnali con Claude per orientare i prossimi briefing"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M10 11.5V17M7.9 9.4a3 3 0 1 1 4.2 0M5.5 11.7a6.3 6.3 0 1 1 9 0"/><circle cx="10" cy="7.2" r="1.2" fill="currentColor" stroke="none"/></svg> Manda i segnali a PULSE</button></div>';}
+  '<div class="add"><button class="btn" onclick="condividiSegnali()" aria-label="Manda i segnali a PULSE: condividi voti, salvati e proposte con Claude per orientare i prossimi briefing"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M10 11.5V17M7.9 9.4a3 3 0 1 1 4.2 0M5.5 11.7a6.3 6.3 0 1 1 9 0"/><circle cx="10" cy="7.2" r="1.2" fill="currentColor" stroke="none"/></svg> Manda i segnali a PULSE</button></div>';}
 function copiaTrasferimento(){try{navigator.clipboard.writeText(linkTrasferimento())}catch(e){}toast('Link copiato — aprilo sull’altro dispositivo');}
 function condividiTrasferimento(){if(navigator.share)navigator.share({title:'PULSE',text:'I miei dati PULSE',url:linkTrasferimento()}).catch(function(){});}
 /* BENVENUTO E GUIDA. L'app deve spiegarsi da sola: una card alla PRIMA apertura
@@ -924,7 +933,7 @@ function leggiTrasferimento(){
  toast(parti.length?('Uniti: '+parti.join(', ')):'Già allineati: niente di nuovo');}
 function setV(k,v,b){S[k]=v;[].forEach.call(b.parentNode.children,function(x){x.classList.remove('on')});b.classList.add('on');save();toast('Salvato')}
 function resetAll(){if(confirm('Azzerare tutto?')){S=JSON.parse(JSON.stringify(DEF));save();render();toast('Azzerato')}}
-function tab(id,btn){document.querySelectorAll('.view').forEach(function(v){v.classList.remove('on')});document.getElementById(id).classList.add('on');document.querySelectorAll('.tabs button').forEach(function(b){b.classList.remove('on')});btn.classList.add('on');window.scrollTo(0,0)}
+function tab(id,btn){document.querySelectorAll('.view').forEach(function(v){v.classList.remove('on')});document.getElementById(id).classList.add('on');document.querySelectorAll('.tabs button').forEach(function(b){b.classList.remove('on');if(b.removeAttribute)b.removeAttribute('aria-current')});btn.classList.add('on');if(btn.setAttribute)btn.setAttribute('aria-current','page');window.scrollTo(0,0)}
 
 // SOCIAL
 var curSoc=null,curFmt='video';
@@ -1303,7 +1312,7 @@ function renderPick(){var el=document.getElementById('pickbox');if(!el)return;
      di distanza. */
   '<div class="pickhead"><span class="pklab">Il lavoro del giorno</span>'+
   '<span class="pkmeta">'+esc(a.j+(occhiello?' · '+occhiello:''))+'</span></div>'+
-  '<h1>'+esc(a.h)+'</h1>'+
+  '<h2 class="pkh">'+esc(a.h)+'</h2>'+
   '<div class="aut">'+esc([a.ax,a.journal,a.date].filter(Boolean).join(' · '))+'</div>'+
   '<div class="why">'+esc(a.concl||a.v||'')+'</div>'+
   '<div class="act"><button class="btn pri" onclick="scrollToItem('+a.n+')">Scheda estesa ▾</button>'+
@@ -1479,7 +1488,7 @@ function searchHist(){var q=(document.getElementById('histq')||{value:''}).value
  el.innerHTML='<div class="card" style="margin-top:12px">'+hits.map(itemHTML).join('')+'</div>';}
 
 function renderAudit(){var el=document.getElementById('auditbox');if(!el)return;
- el.innerHTML='<h4>Autocritica della settimana</h4>'+
+ el.innerHTML='<h2>Autocritica della settimana</h2>'+
   '<div class="li">Periodo: <span class="n">'+esc(AUDIT.settimana)+'</span></div>'+
   '<div class="li">Lavori mostrati: <span class="n">'+AUDIT.visti+'</span> · scartati perché fuori finestra: <span class="n">'+esc(AUDIT.scartati)+'</span></div>'+
   '<div class="li">Fonti che non ho potuto verificare: <span class="n">'+AUDIT.nonverificate.map(esc).join(' · ')+'</span></div>'+
@@ -1871,14 +1880,14 @@ function renderSeconda(){
  if(!ex.length&&!(typeof SCOPERTE!=='undefined'&&SCOPERTE.length)){el.innerHTML='';return;}
  var h='<div class="sl r-res" style="margin-top:14px"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 5.6C8.6 4.4 6.4 4 4 4.2v11.2c2.4-.2 4.6.2 6 1.4 1.4-1.2 3.6-1.6 6-1.4V4.2c-2.4-.2-4.6.2-6 1.4zM10 5.6v11.2"/></svg></span>La seconda pagina<span class="n">'+ex.length+' brevi</span></div>';
  if(spMostrati===0){
-  h+='<button class="btn spBtn" onclick="spApri()" aria-label="Mostra altri lavori del giorno in forma breve">Continua a leggere — altri '+ex.length+' lavori di oggi</button>';
+  h+='<button class="btn spBtn" onclick="spApri()">Continua a leggere — altri '+ex.length+' lavori di oggi</button>';
  }else{
   h+='<div class="card" style="padding:10px">'+spLista(ex,spMostrati,spOrdine).map(spBreveHTML).join('')+'</div>';
   if(spMostrati<ex.length)h+='<button class="btn spBtn" onclick="spAncora()" aria-label="Mostra altri lavori brevi">Ancora ↓ ('+(ex.length-spMostrati)+' rimasti)</button>';
   else h+='<div class="rmeta" style="margin:6px 2px">Fine della seconda pagina: il resto della finestra non superava il perimetro o la soglia di interesse.</div>';
  }
  if(typeof SCOPERTE!=='undefined'&&SCOPERTE.length){
-  h+='<button class="btn spBtn" onclick="sorprendimi()" aria-label="Proponi qualcosa fuori dai miei soliti argomenti">Sorprendimi — qualcosa di diverso</button><div id="spsorp"></div>';
+  h+='<button class="btn spBtn" onclick="sorprendimi()">Sorprendimi — qualcosa di diverso</button><div id="spsorp"></div>';
  }
  el.innerHTML=h;}
 function spApri(){spMostrati=5;spOrdine=null;renderSeconda();}
@@ -1916,6 +1925,7 @@ renderLato();
 renderTens();
 renderFresh();
 window.addEventListener('online',renderFresh);window.addEventListener('offline',renderFresh);
+document.addEventListener('keydown',function(e){var el=e.target;if((e.key==='Enter'||e.key===' ')&&el&&el.getAttribute&&el.getAttribute('role')==='button'&&el.tagName!=='BUTTON'){e.preventDefault();el.click();}});
 renderDuel();
 renderAudit();
 render();
