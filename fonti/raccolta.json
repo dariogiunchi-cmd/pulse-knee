@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-19T15:57:04Z",
+ "generato": "2026-08-20T05:16:22Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -769,59 +769,8 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Arthrex",
-      "titolo": "Core Decompression of the Femoral Head Using the AVN Expandable Reamer and AlloSync™ Pure DBM",
-      "link": "https://www.youtube.com/watch?v=mWYptxD1jjw",
-      "data": "2026-08-18"
-     },
-     {
-      "canale": "Stryker",
-      "titolo": "Voice Interpreter for Sync Badge | U.S.",
-      "link": "https://www.youtube.com/watch?v=Y3dTkvWSFh8",
-      "data": "2026-08-18"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Distal Humerus Shaft Fracture Fixation Using the Arthrex Elbow Plating System",
-      "link": "https://www.youtube.com/watch?v=PDL8DODmBO4",
-      "data": "2026-08-17"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex TightRope® PRO",
-      "link": "https://www.youtube.com/watch?v=e8VS-rrQS84",
-      "data": "2026-08-13"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "SpeedPearl: Automatic Wrist Washout Technique With the NanoNeedle™ Scope 2.0",
-      "link": "https://www.youtube.com/watch?v=HvgciVjo1M8",
-      "data": "2026-08-12"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Successful Setup and Use of the Arthrex Hip Distraction System",
-      "link": "https://www.youtube.com/watch?v=wWzsYOjt46k",
-      "data": "2026-08-11"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "CeMend™ Antibiotic Shoulder Spacers With Arthrex Bone Cement for Two-Stage Revision",
-      "link": "https://www.youtube.com/watch?v=Su2grPQXRqg",
-      "data": "2026-08-10"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "BunionBrace™ Medial Capsule Repair",
-      "link": "https://www.youtube.com/watch?v=AVs84WsSdjo",
-      "data": "2026-08-06"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
@@ -863,6 +812,16 @@
    "dati": {
     "finestra_giorni": 60,
     "voci": [
+     {
+      "pmid": "42616147",
+      "titolo": "The iliotibial band revisited: surgical anatomy and imaging-based guidelines for lateral tenodesis in ACL reconstruction.",
+      "rivista": "Surgical and radiologic anatomy : SRA",
+      "data": "2026 Aug 19",
+      "tipi": [
+       "Journal Article",
+       "Review"
+      ]
+     },
      {
       "pmid": "42596025",
       "titolo": "Asia-Pacific expert consensus on robotic-assisted hip and knee arthroplasty.",
