@@ -86,22 +86,29 @@
   .r-res{--sc:#0071e3}.r-tech{--sc:#30b0c7}.r-cong{--sc:#ff9500}.r-soc{--sc:#af52de}.r-disc{--sc:#34c759}.r-focus{--sc:#b8860b}.r-arch{--sc:#8e8e93}
   .card{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden}
   .item{border-bottom:1px solid var(--line2)}.item:last-child{border-bottom:0}
-  .row{display:flex;align-items:flex-start;gap:11px;padding:12px 14px;cursor:pointer}.row:active{background:var(--tint2)}
-  .row .tt{min-width:0;flex:1}.row .h{font-size:var(--t-sec);font-weight:600;letter-spacing:-.01em;line-height:1.32}
-  .row .v{font-size:var(--t-meta);color:var(--dim);line-height:1.4;margin-top:2px}
-  .row .aut{font-size:var(--t-micro);color:var(--dim2);margin-top:4px}
-  .row .rt{display:flex;flex-direction:column;align-items:flex-end;gap:7px;flex:0 0 auto}.row .meta{font-size:var(--t-badge);color:var(--dim2);white-space:nowrap}
+  .row{display:flex;align-items:flex-start;gap:var(--s3);padding:var(--s3) var(--s4);cursor:pointer}.row:active{background:var(--tint2)}
+  .row .dot{margin-top:7px}
+  .row .tt{min-width:0;flex:1}
+  .row .h{font-size:var(--t-testo);font-weight:600;letter-spacing:-.01em;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .row .v{font-size:var(--t-sec);color:var(--dim);line-height:1.4;margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .metar{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;margin-top:6px;font-size:var(--t-meta);color:var(--dim2)}
+  .metar .meta{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+  .metar .rt2{font-variant-numeric:tabular-nums}
+  .savmark{color:var(--gold);font-weight:700}
   .chev{color:var(--dim2);font-size:var(--t-testo);transition:.2s;line-height:1}.item.open .chev{transform:rotate(90deg)}
   /* I sei pulsanti andavano a capo e «Dettagli» finiva da solo su una riga sua.
      Non basta stringere i margini: con il testo ingrandito nelle impostazioni di iOS
      il problema torna. Qui i tre pulsanti con etichetta si dividono in parti uguali
      lo spazio che avanza dopo le tre icone, quindi la riga sta su una riga sempre,
      su qualunque larghezza e con qualunque dimensione del carattere. */
-  .acts{display:flex;gap:5px;padding:0 14px 12px;flex-wrap:nowrap}
+  /* RIVELAZIONE PROGRESSIVA: le azioni esistono nel DOM (stato e collaudi) ma si
+     mostrano solo a scheda aperta — in lista la scheda è da leggere, non da comandare */
+  .acts{display:none}
+  .item.open .acts{display:flex;gap:6px;padding:0 14px 12px;flex-wrap:nowrap}
   .acts .ib{flex:0 0 auto}
   .acts .ib.lbl{flex:1 1 0;min-width:0}
   .acts .ib.lbl .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .ib{height:34px;min-width:32px;border-radius:9px;border:1px solid var(--line);background:var(--carta);color:var(--dim);font-size:var(--t-sec);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0 7px}
+  .ib{height:44px;min-width:44px;border-radius:9px;border:1px solid var(--line);background:var(--carta);color:var(--dim);font-size:var(--t-sec);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0 7px}
   .ib.save.on{background:var(--gold);border-color:var(--gold);color:var(--su-colore)}.ib.up.on{background:var(--green);border-color:var(--green);color:var(--su-colore)}.ib.down.on{background:var(--red);border-color:var(--red);color:var(--su-colore)}
   .ib .t{font-size:var(--t-meta);font-weight:600;margin-left:4px}.ib.soc{background:#111;color:var(--su-colore);border-color:#111}
   .ib.vid.on{background:#af52de;border-color:#af52de;color:var(--su-colore)}
@@ -577,21 +584,28 @@ function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')}
 function pm(a){return 'https://pubmed.ncbi.nlm.nih.gov/'+a.pmid+'/'}function di(a){return 'https://doi.org/'+a.doi}
 function itemHTML(a){if(!a)return '';var sv=isSaved(a.n),vt=S.votes[a.n];var hasSoc=!!SOC[a.n];
  return '<div class="item" id="it-'+a.n+'">'+
-  '<div class="row" onclick="toggle('+a.n+')"><span class="dot '+a.dot+'" style="margin-top:5px"></span><span class="mono '+a.mono+'">'+esc(a.j)+'</span>'+
-    '<div class="tt"><div class="h">'+esc(a.h)+'</div><div class="v">'+esc(a.v)+'</div><div class="aut">'+esc(a.ax)+' · '+esc(a.date)+'</div>'+confHTML(a.n)+'</div>'+
-    '<div class="rt">'+(S.seen.indexOf(a.n)<0?'<span class="nuovo" id="nuovo-'+a.n+'">nuovo</span>':'')+'<span class="meta">'+a.meta+'</span><span class="rt2">'+readMin(a)+' min</span><span class="chev">›</span></div></div>'+retrHTML(a.n)+
+  '<div class="row" onclick="toggle('+a.n+')"><span class="dot '+a.dot+'"></span>'+
+    '<div class="tt"><div class="h">'+esc(a.h)+'</div><div class="v">'+esc(a.v)+'</div>'+
+    '<div class="metar">'+(S.seen.indexOf(a.n)<0?'<span class="nuovo" id="nuovo-'+a.n+'">nuovo</span>':'')+
+      '<span class="meta">'+esc(a.j)+' · '+a.meta+'</span>'+confHTML(a.n)+
+      '<span class="rt2">'+esc(a.date)+' · '+readMin(a)+' min</span>'+(sv?'<span class="savmark" aria-label="Salvata">★</span>':'')+'</div></div>'+
+    '<span class="chev">›</span></div>'+retrHTML(a.n)+
   '<div class="acts">'+
     '<span class="ib save'+(sv?' on':'')+'" role="button" tabindex="0" aria-label="'+(sv?'Togli dai salvati':'Salva questo lavoro')+'" onclick="toggleSave(event,'+a.n+')">★</span>'+
     '<span class="ib up'+(vt==1?' on':'')+'" role="button" tabindex="0" aria-label="Mostrami più lavori come questo" onclick="vote(event,'+a.n+',1)">👍</span>'+
     '<span class="ib down'+(vt==-1?' on':'')+'" role="button" tabindex="0" aria-label="Mostrami meno lavori come questo" onclick="vote(event,'+a.n+',-1)">👎</span>'+
     (hasSoc?'<span class="ib soc lbl" role="button" tabindex="0" aria-label="Genera contenuti social per questo lavoro" onclick="openSocial(event,'+a.n+')"><span class="t">✎ Social</span></span>':'')+
     '<span class="ib vid lbl'+(inWeek(a.n)?' on':'')+'" role="button" tabindex="0" aria-label="Scegli questo lavoro per il video della settimana" onclick="pickWeek(event,'+a.n+')"><span class="t">📹 Video</span></span>'+
-    '<span class="ib lbl" onclick="toggle('+a.n+')"><span class="t">Dettagli</span></span></div>'+
+    '</div>'+
   '<div class="det">'+fld('Autori',a.authors)+fld('Rivista',a.journal)+fld('Disegno',a.design)+fld('Popolazione',a.pop)+fld('Risultati',a.results)+fld('Conclusione degli autori',a.concl)+fld('Limiti (da revisore)',a.limits)+fld('Per te',a.perte)+muteHTML(a.n)+
     (spAffini(a.n).length?'<div class="fld"><div class="k">Nella seconda pagina</div><div class="val"><span class="spEspl" onclick="esplora(event,'+a.n+')">🔍 '+spAffini(a.n).length+' brevi sullo stesso tema — esplora →</span></div></div>':'')+linksHTML(a.n)+
     '<div class="detlinks"><a class="btn pri" href="'+pm(a)+'" target="_blank">PubMed ↗</a><a class="btn" href="'+di(a)+'" target="_blank">Rivista (DOI) ↗</a>'+(hasSoc?'<button class="btn soc" onclick="openSocial(event,'+a.n+')">✎ Contenuti social</button>':'')+'</div></div></div>';}
 function fld(k,v){return '<div class="fld"><div class="k">'+k+'</div><div class="val">'+esc(v)+'</div></div>'}
 function render(){
+  /* Lo stato APERTO sopravvive al re-render: salvare o votare non deve richiudere
+     la scheda sotto il dito (difetto scovato dalla sentinella della rivelazione
+     progressiva, 20 agosto). Identità per id, mai per posizione. */
+  var aperte=[].map.call(document.querySelectorAll('.item.open'),function(e){return e.id});
   renderResearch();
   document.getElementById('discList').innerHTML=ARTICLES.filter(function(a){return a.sec=='disc'}).map(itemHTML).join('');
   var SL=savedList();var sc=SL.length;document.getElementById('savedCount').textContent=sc;document.getElementById('savedN').textContent=sc;
@@ -603,6 +617,7 @@ function render(){
   renderTop();
   renderFoot();
   renderNl();
+  aperte.forEach(function(id){var e=document.getElementById(id);if(e)e.classList.add('open')});
   document.getElementById('focusJournals').innerHTML=S.journals.map(function(j){return '<span class="tag">'+esc(j)+'</span>'}).join('');
   document.getElementById('focusKols').innerHTML=S.kols.map(function(k){return '<span class="tag">'+esc(k)+'</span>'}).join('');
   var fm=document.getElementById('focusMore');if(fm)fm.innerHTML=(S.societies||[]).concat(S.companies||[]).concat(S.topics||[]).map(function(k){return '<span class="tag">'+esc(k)+'</span>'}).join('');

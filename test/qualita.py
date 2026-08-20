@@ -89,10 +89,23 @@ with sync_playwright() as p:
         chk(bool(apr),'titolo del verdetto apre la scheda'+(f' ({apr})' if apr else ''))
     else:
         chk('niente mette in discussione' in v.lower(), 'verdetto: giornata senza contraddizioni, dichiarata')
+    # azioni visibili solo da aperta (redesign A·2): assicura l'apertura senza
+    # richiudere una scheda già aperta (A1 può coincidere con A2)
+    pg.evaluate(f"var e=document.getElementById('it-{A1}');if(e&&!e.classList.contains('open'))toggle({A1})")
+    pg.wait_for_timeout(250)
     pg.click(f'#it-{A1} .ib.save'); pg.wait_for_timeout(200)
     chk(pg.eval_on_selector('#savedCount','e=>e.textContent')!='0','salvataggio funziona')
     chk(pg.evaluate("()=>document.querySelectorAll('.conf').length")>0,'barre di confidenza')
     chk('min' in pg.inner_text('#researchList'),'tempo di lettura')
+    # rivelazione progressiva (redesign A·2): in lista si legge, i comandi compaiono aprendo
+    chk(pg.evaluate("""() => {
+      var chiuse=[...document.querySelectorAll('#researchList .item:not(.open) .acts')];
+      return chiuse.length>0 && chiuse.every(function(a){return getComputedStyle(a).display==='none'});}"""),
+        'su una scheda chiusa le azioni non si vedono (lista da leggere, non da comandare)')
+    chk(pg.evaluate("""() => {
+      var ap=document.querySelector('#researchList .item.open .acts');
+      return ap && getComputedStyle(ap).display!=='none';}"""),
+        'aprendo la scheda le azioni compaiono, con bersagli a misura di pollice')
     o=pg.evaluate("()=>[...document.querySelectorAll('*')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.right>window.innerWidth+1}).length")
     chk(o==0, f'nessun elemento fuori schermo ({o})')
     chk(len(errs)==0, 'nessun errore JavaScript')
