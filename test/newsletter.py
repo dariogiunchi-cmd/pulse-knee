@@ -50,7 +50,7 @@ with sync_playwright() as p:
                 chk(tag+"stato vuoto spiegato", "Come funziona" in intro, intro[:60])
                 chk(tag+"4 slot vuoti", pg.locator("#nlslots .nlslot").count() == 4)
                 out0 = pg.inner_text("#nlout")
-                chk(tag+"testo vuoto istruttivo", "📹 Video" in out0 and "blog" in out0, out0[:80])
+                chk(tag+"testo vuoto istruttivo", "«Video»" in out0 and "blog" in out0, out0[:80])
                 chk(tag+"contatore 0 di 4", pg.inner_text("#nlcount") == "0 di 4", pg.inner_text("#nlcount"))
 
                 # --- 4. sceglie i lavori del giorno che hanno i testi (i numeri cambiano ogni mattina)
