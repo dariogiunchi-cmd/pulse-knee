@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PULSE — redesign v2, prima e dopo</title>
+<style>
+  :root{color-scheme:light dark}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;margin:24px;background:#f4f4f6;color:#1b1b1e}
+  @media(prefers-color-scheme:dark){body{background:#000;color:#f2f2f4}}
+  h1{font-size:22px}
+  p.nota{max-width:70ch;line-height:1.5}
+  .coppia{margin:28px 0}
+  .coppia h2{font-size:15px;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:#69696e}
+  .due{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap}
+  figure{margin:0;flex:1 1 320px;max-width:480px}
+  figcaption{font-size:12px;font-weight:700;margin-bottom:6px;color:#69696e}
+  img{width:100%;height:auto;border-radius:10px;border:1px solid rgba(128,128,128,.35);display:block}
+</style>
+</head>
+<body>
+<h1>PULSE — redesign v2 · prima / dopo</h1>
+<p class="nota">Stessi 29 scatti, stessi nomi: <code>before/</code> è la baseline
+del 20 agosto 2026 (audit, Fase 1), <code>after/</code> è la direzione A a fine
+Fase 5. Apri questo file dalla cartella <code>docs/</code> del repository.</p>
+<div id="elenco"></div>
+<script>
+var NOMI=["oggi-mobile-light","oggi-mobile-dark","oggi-desktop-light","oggi-desktop-dark",
+"scheda-aperta-mobile-light","benvenuto-mobile-light","social-mobile-light","auto-mobile-light","guida-mobile-light",
+"rassegna-mobile-light","rassegna-mobile-dark","rassegna-desktop-light","rassegna-desktop-dark",
+"archivio-mobile-light","archivio-mobile-dark","archivio-desktop-light","archivio-desktop-dark",
+"salvati-mobile-light","salvati-mobile-dark","salvati-desktop-light","salvati-desktop-dark",
+"newsletter-mobile-light","newsletter-mobile-dark","newsletter-desktop-light","newsletter-desktop-dark",
+"impostazioni-mobile-light","impostazioni-mobile-dark","impostazioni-desktop-light","impostazioni-desktop-dark"];
+var el=document.getElementById('elenco');
+el.innerHTML=NOMI.map(function(n){
+  return '<div class="coppia"><h2>'+n.replace(/-/g,' ')+'</h2><div class="due">'+
+    '<figure><figcaption>PRIMA</figcaption><img loading="lazy" src="before/'+n+'.png" alt="prima: '+n+'"></figure>'+
+    '<figure><figcaption>DOPO</figcaption><img loading="lazy" src="after/'+n+'.png" alt="dopo: '+n+'"></figure>'+
+    '</div></div>';}).join('');
+</script>
+</body>
+</html>
