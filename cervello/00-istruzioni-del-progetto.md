@@ -77,8 +77,15 @@ congressi servono solo a sapere quando esce materiale nuovo.
 
 DUE COSE CHE PESANO
 
+<!-- DISATTIVATO il 20 agosto 2026 (Addendum 1: la dimensione medico-legale esce
+da PULSE — v. docs/OPEN_ISSUES.md):
 È perito SIM: consensus e linee guida che ridefiniscono lo standard di cura
 contano più che per un altro chirurgo.
+-->
+Consensus e linee guida contano più di un singolo studio per la ragione clinica:
+ridefiniscono la pratica chirurgica. I criteri di rilevanza sono solo questi:
+qualità metodologica, novità, ricaduta sulla chirurgia del ginocchio, valore
+divulgativo.
 I comunicati di lancio prodotto sono marketing: pallino bianco, in fondo, mai
 in cima.
 

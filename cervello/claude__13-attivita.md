@@ -175,10 +175,18 @@ FULL TEXT DEL PICK: se il lavoro del giorno è open access su PMC
 (get_copyright_status / get_full_text_article del connettore PubMed), apri il testo
 completo PRIMA di scrivere la scheda estesa: numeri e limiti dall'abstract da solo
 hanno già ingannato una volta (T4).
+<!-- DISATTIVATO il 20 agosto 2026 (Addendum 1 al redesign: la dimensione
+medico-legale esce da PULSE). Il registro cervello/14-standard-di-cura.md resta
+intatto con le righe storiche ma NON si aggiorna più. Riattivazione: togliere
+questo commento. Dettagli in docs/OPEN_ISSUES.md.
 STANDARD DI CURA: se oggi passa un consensus, una linea guida o una presa di posizione
 di società, aggiungi UNA riga a cervello/14-standard-di-cura.md (formato in testa al
 file). È il registro peritale: si scrive nel giorno in cui il documento passa, mai
 ricostruito dopo.
+-->
+I consensus e le linee guida restano la categoria di peso massimo, per la ragione
+CLINICA: ridefiniscono la pratica. Nessun criterio peritale/assicurativo entra
+nella selezione né nel testo delle schede (niente «peso peritale» e simili).
 
 PUBBLICAZIONE — un solo comando, senza token:
   bash test/pubblica.sh "<AAAA-MM-GG>" "PULSE <data>"
