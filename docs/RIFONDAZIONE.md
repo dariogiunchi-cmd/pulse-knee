@@ -218,3 +218,36 @@ mostra ciò che riceve. La rifondazione tocca quindi tre luoghi, con lo stesso
 peso: il mandato (selezione e voce del verdetto), i dati (`dati/giorno.js`:
 schema nuovo, più piccolo), l'app (schermata unica). Il cancello va aggiornato di
 conseguenza, sentinella per sentinella, insieme al codice.
+
+---
+
+## 5. Esiti (20 agosto 2026, fine punto 8)
+
+**Prove obbligatorie (§16):**
+
+- **16.1 Prova del minuto** — sette giorni simulati coi testi REALI di oggi
+  (metodo dichiarato: 3,3 parole/s + 2 s per giudizio + 3 s di orientamento):
+  peggiore **57 s** (3 schede + allerta), giorno vuoto **7 s**. Alla prima stesura
+  il giorno pieno era a 79 s: i testi sono stati asciugati e il contratto è ora
+  MECCANICO — verita.py stima la lettura e blocca sopra i 60 s (collaudato
+  rompendo con un testo gonfiato).
+- **16.2 Prima apertura** — profilo vergine: contenuto reale, nessun tutorial,
+  nessun questionario (`docs/rifondazione/prima-apertura.png`).
+- **16.3 Giorno vuoto** — stato di successo, quieto e definitivo
+  (`docs/rifondazione/giorno-vuoto.png`).
+- **16.4 Settima giornata** — con la stessa regola dei pesi dell'app (±1 per
+  giudizio, −2 per «tema da parte») applicata al pool reale di oggi: dopo sei
+  giorni di ✓/✗ la testa della classifica CAMBIA (le coorti e J Exp Orthop
+  salgono, il cadaverico scende, la robotica giudicata «tema da parte» finisce
+  ultima). Onestà dovuta: la selezione vera la fa la sessione delle 5 col
+  mandato — i pesi dell'app e le risposte alle issue sono i suoi ingressi, la
+  formula qui sopra ne è la meccanica dimostrabile.
+- **16.5 Prova d'ascolto** — tre motori alla cieca sul briefing reale;
+  scelto **B = Kokoro** (costo 0, nessun servizio). Registrato in COSTI.md.
+
+**Il push (§6):** l'email quotidiana è l'issue GitHub aperta da mattino.yml col
+briefing COMPLETO nel corpo (la notifica email di GitHub lo porta intero, senza
+aprire nulla) + il collegamento all'episodio audio. Rispondere all'email è dare
+giudizi: la sessione delle 5 legge i commenti. Zero servizi nuovi, zero costi.
+Limite dichiarato: il feed podcast è a URL offuscato ma il repository è pubblico
+— non è segretezza forte; il feed porta solo ciò che è già pubblico nell'app.

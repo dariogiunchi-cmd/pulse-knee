@@ -224,21 +224,21 @@ var MUTE={5:"Il confronto sull'infezione del sito chirurgico superficiale fra pr
    un numero esige la sua incertezza e il breve non ha spazio per darla. */
 var SELEZIONE={v:1,
  testo:"Due richiami sulle tue aziende sorvegliate. E una coppia sullo slope che conta.",
- allerta:"openFDA, verificato stanotte: richiamo DePuy Synthes sui componenti hinge del sistema ATTUNE Revision (confezionamento sterile) — la stessa azienda della tua VELYS — e kit Medline con ciotole e spatole Zimmer Biomet ritirate. Dettagli nella Rassegna.",
+ allerta:"openFDA stanotte: richiamo DePuy Synthes (hinge ATTUNE Revision, sterilità) — l'azienda della tua VELYS — e kit Medline con componenti Zimmer Biomet ritirati. Dettagli in Rassegna.",
  sotto:"Le altre sei schede di oggi sono in archivio: nessuna decisiva.",
  schede:[
   {pmid:'42545819',
-   dice:"La Deutsche Kniegesellschaft raccomanda un approccio individualizzato — nessuna soglia unica — alla correzione dello slope tibiale posteriore aumentato nella deficienza del crociato, con preferenza per l'osteotomia infratuberositaria.",
-   cambia:"Tocca la tua chirurgia di correzione dello slope: il messaggio pratico converge con la coorte qui sotto, uscita lo stesso giorno.",
-   perche:"Operi correzioni di slope, e i consensus delle società stanno in cima ai tuoi criteri."},
+   dice:"La Deutsche Kniegesellschaft raccomanda la correzione individualizzata dello slope aumentato nella deficienza del crociato: nessuna soglia unica, preferenza infratuberositaria.",
+   cambia:"Tocca la tua chirurgia dello slope; converge con la coorte qui sotto.",
+   perche:"Operi correzioni di slope, e i consensus pesano di più."},
   {pmid:'42614860',
-   dice:"Su 1.406 ginocchia lo slope tibiale posteriore si associa da solo a rottura e ri-rottura del crociato; una soglia di 10° distingue bene i gruppi, con rischio di ri-rottura quasi doppio.",
-   cambia:"Nella tua T3/T4 e nelle revisioni, misurare lo slope prima dell'intervento diventa difficile da evitare.",
-   perche:"Si parla con il consensus qui sopra: una coppia che vale più dei due lavori presi da soli."},
+   dice:"Su 1.406 ginocchia lo slope predice da solo rottura e ri-rottura del crociato; sopra i 10° il rischio di ri-rottura quasi raddoppia.",
+   cambia:"Nella tua T3/T4 e nelle revisioni, misurare lo slope prima diventa difficile da evitare.",
+   perche:"Si parla col consensus qui sopra, uscito lo stesso giorno."},
   {pmid:'42616156',
-   dice:"Il nervo cutaneo femorale laterale corre più vicino al tendine quadricipitale al margine superiore del prelievo: è lì che il rischio di lesione iatrogena è massimo.",
-   cambia:"È il tuo prelievo di routine su ogni ricostruzione: il margine superiore del prelievo è il punto dove stare attenti.",
-   perche:"Usi il tendine quadricipitale come innesto di default."}
+   dice:"Il nervo cutaneo femorale laterale rischia di più al margine superiore del prelievo del tendine quadricipitale.",
+   cambia:"È il tuo prelievo di routine: attenzione al margine superiore.",
+   perche:"Il quadricipitale è il tuo innesto di default."}
  ]};
 var EXTRA=[
  {dot:'green',j:'The Knee',h:"L'acido tranexamico intra-articolare batte quello peri-articolare nella protesi",v:"meno trasfusioni con la dose fissa intra-articolare rispetto a quella peri-articolare calcolata sul peso; RCT monocentrico, piccolo",pmid:'42617482',doi:'10.1016/j.knee.2026.104605',temi:['protesi','sanguinamento','tranexamico']},

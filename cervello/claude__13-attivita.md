@@ -129,7 +129,10 @@ l'app, e DEVE bastare da sola a chiudere la giornata in 60 secondi.
   chirurgica pratica, oppure l'onesta dichiarazione che non ne cambia nessuna;
   `perche` = la ragione della selezione, in una riga (è anche il comando con cui
   l'utente la corregge). Tutto dai campi verificati della scheda: PRINCIPIO ZERO.
-La selezione È la gerarchia: niente riordino nell'app. I criteri sono clinici
+BUDGET DI PAROLE, meccanico: verita.py stima la lettura (3,3 parole/s + 2 s per
+giudizio + 3 s) e BLOCCA sopra i 60 secondi — in pratica: testo ≤ 15 parole,
+allerta ≤ 28, e per scheda dice ≤ 22, cambia ≤ 14, perche ≤ 10. Asciugare, non
+tagliare i fatti. La selezione È la gerarchia: niente riordino nell'app. I criteri sono clinici
 (claude__07-preferenze.md) più i giudizi dell'utente (sotto).
 
 I GIUDIZI DELL'UTENTE — il tasto «Manda i segnali» non esiste più: l'utente giudica

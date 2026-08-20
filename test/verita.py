@@ -195,3 +195,13 @@ if _m_sel:
         and len(re.findall(r'perche:"[^"]{10,}', _sel)) == len(_psel), "campi mancanti o vuoti")
     chk("il verdetto del giorno è scritto e non vuoto",
         bool(re.search(r'testo:"[^"]{10,}"', _sel)), "SELEZIONE.testo")
+
+# IL CONTRATTO DEI 60 SECONDI, meccanizzato (rifondazione §3): la lettura completa
+# della schermata — verdetto + allerta + le schede con giudizio — deve stare nel
+# minuto. Stima dichiarata: 3,3 parole/s + 2 s per giudizio + 3 s di orientamento.
+if _m_sel:
+    _parole = len(re.findall(r"(?:testo|allerta|sotto|dice|cambia|perche):\"((?:[^\"\\]|\\.)*)\"", _sel)
+                  and ' '.join(re.findall(r"(?:testo|allerta|dice|cambia|perche):\"((?:[^\"\\]|\\.)*)\"", _sel)).split())
+    _sec = round(_parole / 3.3) + 2 * len(_psel) + 3
+    chk(f"la giornata si legge nel minuto ({_sec}s stimati, {_parole} parole)",
+        _sec <= 60, f"{_sec}s > 60s: asciugare i testi della selezione")
