@@ -109,7 +109,7 @@ document.getElementById('histq').value='menisco'; searchHist();
 ok(document.getElementById('histres').innerHTML.length>50,'ricerca archivio "menisco" → risultati');
 document.getElementById('histq').value='zzzznope'; searchHist();
 ok(document.getElementById('histres').innerHTML.indexOf('Nessun risultato')>=0,'ricerca senza esito → messaggio corretto');
-document.getElementById('histq').value=''; searchHist(); ok(document.getElementById('histres').innerHTML==='','ricerca vuota → pulita');
+document.getElementById('histq').value=''; searchHist(); ok(document.getElementById('histres').innerHTML.indexOf('Cerca per tecnica')>=0,'ricerca vuota → invito con esempi, non il vuoto');
 
 console.log('\n--- 4. VISTA DUELLO ---');
 renderDuel();

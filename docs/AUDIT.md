@@ -58,7 +58,7 @@ Stati **già progettati** (raro trovarli, qui ci sono): giorno senza allerte («
 Stati **mancanti o deboli**:
 1. **Pre-render**: la pagina arriva vuota e si riempie via JS → **CLS 0,855** (misurato). È il difetto strutturale n.1.
 2. Rassegna in caricamento: testo «Carico la rassegna…», nessuno skeleton.
-3. Ricerca archivio/salvati senza risultati: lista vuota silenziosa, nessun «nessun risultato per “x”».
+3. ~~Ricerca archivio/salvati senza risultati: lista vuota silenziosa.~~ **Correzione (20 ago, fase 4):** l'audit qui sbagliava — i messaggi «Nessun risultato per “x”» esistevano già in entrambe le ricerche. Il difetto reale, più piccolo: campo vuoto senza invito (nessun esempio di cosa cercare) e query non ripetuta con escape nei salvati.
 4. Stato offline esplicito: il SW serve la cache ma l'utente non sa che sta guardando ieri.
 5. Copia riuscita: toast presente ma incoerente tra i flussi (a volte «Copiato», a volte nulla su desktop senza permessi clipboard).
 
