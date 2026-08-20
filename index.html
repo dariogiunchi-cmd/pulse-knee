@@ -1051,7 +1051,7 @@ function condividiTrasferimento(){if(navigator.share)navigator.share({title:'PUL
    chi ha già visto il benvenuto vede SOLO la riga di novità, una volta. Le funzioni
    sono PURE (stato → html) così i test le collaudano. La guida descrive solo cose
    che esistono davvero: se togli una funzione, togli la sua riga. */
-var GUIDA_V=4,NOVITA='🚗 <b>Modalità auto</b>: ascolto continuo a tasti grandi con comandi a voce («prossima», «salva questa», «più veloce»). La <b>📡 Rassegna</b> ora sorveglia anche 📜 linee guida e consensus, 📣 i lavori di cui parla la comunità e 🧪 i preprint. E in Impostazioni c’è <b>🧠 Il cervello di PULSE</b>: collegandolo, le domande libere a voce ricevono risposte vere e il podcast parla con una voce naturale.';
+var GUIDA_V=5,NOVITA='<b>PULSE ha una veste nuova.</b> Il verdetto del giorno apre la pagina; le sezioni si raggiungono dalla barra in basso (in alto sul computer); una scheda si apre toccando la riga, e le azioni compaiono solo quando è aperta. Icone ridisegnate, contrasti rivisti per la leggibilità, il calendario dell\u2019archivio si aggiorna da solo, la ricerca suggerisce esempi e l\u2019app dichiara quando sei senza rete. Tutto quello che c\u2019era resta: nulla da riconfigurare.';
 function benvenutoHTML(guidav){
  if((guidav||0)>=GUIDA_V)return '';
  if((guidav||0)>0&&NOVITA)return '<div class="wel card"><b>Novità</b>'+NOVITA+
@@ -1078,24 +1078,24 @@ function guidaHTML(){
   '<details><summary>Gesti e tasti</summary><ul>'+
   '<li>Tocca una scheda per aprirla · scorri a <b>destra</b> per salvarla</li>'+
   '<li><b>▶</b> legge il briefing — a due voci quando c’è il dialogo del giorno</li>'+
-  '<li><b>🎙</b> ascolta i tuoi comandi e risponde a voce</li>'+
-  '<li><b>👍 👎</b> su ogni scheda · <b>✎ Social</b> genera i testi · <b>📹 Video</b> sceglie il lavoro per la newsletter</li></ul></details>'+
+  '<li><b>il microfono</b> ascolta i tuoi comandi e risponde a voce</li>'+
+  '<li><b>i pollici</b> su ogni scheda · <b>✎ Social</b> genera i testi · <b>Video</b> sceglie il lavoro per la newsletter</li></ul></details>'+
   '<details><summary>I comandi a voce riconosciuti</summary>'+
-  '<div>«apri (o leggi) la tre» · «salva la due» · «briefing» · «tensioni» · «seconda pagina» · «sorprendimi» · «rassegna» · «modalità auto» · «prossima» · «indietro» · «ripeti» · «pausa» · «riprendi» · «salva questa» · «più veloce / più piano / velocità normale» · «aiuto» · «basta» per fermare. I numeri valgono anche in lettere. Fuori da questo vocabolario: senza cervello lo dice e basta; col 🧠 cervello collegato la domanda diventa conversazione vera, con risposta parlata.</div></details>'+
-  '<details><summary>🧠 Chiedi a PULSE e voce naturale</summary>'+
-  '<div>Facoltativo e a pagamento (pochi franchi al mese). Un piccolo «cervello» esterno custodisce le chiavi che una pagina come questa non può tenere: collegandolo in Impostazioni, il 🎙 risponde a qualunque domanda — sul giornale del giorno prima di tutto — e ▶ legge il podcast con una voce naturale a due timbri. Se il cervello non risponde, l’app lo dice e torna alla voce del telefono. Le istruzioni per attivarlo sono nella cartella chiedi/ del repository; le regole di verità valgono anche lì: mai citazioni inventate, dati assenti dichiarati.</div></details>'+
-  '<details><summary>🚗 In auto</summary>'+
-  '<div>Il tasto 🚗 accanto a ▶ apre l’ascolto continuo: il briefing e poi le schede una dopo l’altra, ognuna annunciata con la posizione («Scheda 3 di 8»). Tasti grandi: ⏮ ▶ ⏭ · 🔁 ripete · ★ salva la scheda in ascolto · 🎙 un comando alla volta — l’audio si ferma, parli, riparte da solo. La velocità di lettura si regola a voce e resta memorizzata. Lo schermo resta acceso finché il pannello è aperto. Limite di iPhone, dichiarato: l’app deve restare in primo piano — Safari non legge né ascolta in sottofondo, quindi telefono sul supporto e schermo attivo.</div></details>'+
+  '<div>«apri (o leggi) la tre» · «salva la due» · «briefing» · «tensioni» · «seconda pagina» · «sorprendimi» · «rassegna» · «modalità auto» · «prossima» · «indietro» · «ripeti» · «pausa» · «riprendi» · «salva questa» · «più veloce / più piano / velocità normale» · «aiuto» · «basta» per fermare. I numeri valgono anche in lettere. Fuori da questo vocabolario: senza cervello lo dice e basta; col cervello collegato la domanda diventa conversazione vera, con risposta parlata.</div></details>'+
+  '<details><summary>Chiedi a PULSE e voce naturale</summary>'+
+  '<div>Facoltativo e a pagamento (pochi franchi al mese). Un piccolo «cervello» esterno custodisce le chiavi che una pagina come questa non può tenere: collegandolo in Impostazioni, il microfono risponde a qualunque domanda — sul giornale del giorno prima di tutto — e ▶ legge il podcast con una voce naturale a due timbri. Se il cervello non risponde, l’app lo dice e torna alla voce del telefono. Le istruzioni per attivarlo sono nella cartella chiedi/ del repository; le regole di verità valgono anche lì: mai citazioni inventate, dati assenti dichiarati.</div></details>'+
+  '<details><summary>In auto</summary>'+
+  '<div>Il tasto con l’automobile accanto a ▶ apre l’ascolto continuo: il briefing e poi le schede una dopo l’altra, ognuna annunciata con la posizione («Scheda 3 di 8»). Tasti grandi: ⏮ ▶ ⏭ · le frecce circolari ripetono · ★ salva la scheda in ascolto · il microfono ascolta un comando alla volta — l’audio si ferma, parli, riparte da solo. La velocità di lettura si regola a voce e resta memorizzata. Lo schermo resta acceso finché il pannello è aperto. Limite di iPhone, dichiarato: l’app deve restare in primo piano — Safari non legge né ascolta in sottofondo, quindi telefono sul supporto e schermo attivo.</div></details>'+
   '<details><summary>Le sezioni della pagina Oggi</summary>'+
-  '<div>Il <b>lavoro del giorno</b> è la scheda che vale di più. I filtri in alto restringono l’elenco per pallino. «Cosa non torna» sono le tensioni aperte fra la letteratura e la tua pratica, con cosa fare e cosa le chiuderebbe. In fondo: 📖 la <b>seconda pagina</b> (altri lavori veri del giorno, in breve) e 🎲 <b>Sorprendimi</b> (una proposta fuori dai soliti argomenti, mai ripetuta).</div></details>'+
+  '<div>Il <b>lavoro del giorno</b> è la scheda che vale di più. I filtri in alto restringono l’elenco per pallino. «Cosa non torna» sono le tensioni aperte fra la letteratura e la tua pratica, con cosa fare e cosa le chiuderebbe. In fondo: la <b>seconda pagina</b> (altri lavori veri del giorno, in breve) e <b>Sorprendimi</b> (una proposta fuori dai soliti argomenti, mai ripetuta).</div></details>'+
   '<details><summary>Le altre schede</summary><ul>'+
-  '<li><b>📡 Rassegna</b>: in testa un sommario a colpo d’occhio, poi le sezioni — richiami di dispositivi, Swissmedic, 📜 linee guida e consensus nuovi, ritrattazioni, ⚖️ il destino dei tuoi verdetti, i trial delle tue tensioni, 📣 i lavori di cui parla la comunità, i video della tua rete, 🧪 i preprint (dichiarati non revisionati). Le sezioni che scottano si aprono da sole; ogni fonte muta è dichiarata.</li>'+
-  '<li><b>🗓 Archivio</b>: tutte le mattine passate, con ricerca.</li>'+
+  '<li><b>Rassegna</b>: in testa un sommario a colpo d’occhio, poi le sezioni — richiami di dispositivi, Swissmedic, 📜 linee guida e consensus nuovi, ritrattazioni, ⚖️ il destino dei tuoi verdetti, i trial delle tue tensioni, 📣 i lavori di cui parla la comunità, i video della tua rete, 🧪 i preprint (dichiarati non revisionati). Le sezioni che scottano si aprono da sole; ogni fonte muta è dichiarata.</li>'+
+  '<li><b>Archivio</b>: tutte le mattine passate — il calendario segna i giorni con un\u2019edizione — con ricerca.</li>'+
   '<li><b>★ Salvati</b>: sopravvivono al ricambio quotidiano, con ricerca.</li>'+
-  '<li><b>✉️ Newsletter</b>: fino a 4 lavori scelti con 📹, testo pronto in tre versioni.</li>'+
-  '<li><b>⚙ Impostazioni</b>: preferenze, dimensione del testo, trasferimento fra dispositivi, copia di sicurezza, 📡 i segnali.</li></ul></details>'+
+  '<li><b>Newsletter</b>: fino a 4 lavori scelti con Video, testo pronto in tre versioni.</li>'+
+  '<li><b>Impostazioni</b>: preferenze, dimensione del testo, trasferimento fra dispositivi, copia di sicurezza, i segnali.</li></ul></details>'+
   '<details><summary>Dove vivono i tuoi dati</summary>'+
-  '<div>PULSE non ha un server: voti, salvati e preferenze restano su questo dispositivo. Per questo esistono il <b>trasferimento</b> (le copie si fondono, non si sovrascrivono) e la <b>copia di sicurezza</b> su file. 📡 <b>Manda i segnali</b> condivide le tue scelte nella chat con Claude: orientano le schede dei giorni successivi.</div></details>';}
+  '<div>PULSE non ha un server: voti, salvati e preferenze restano su questo dispositivo. Per questo esistono il <b>trasferimento</b> (le copie si fondono, non si sovrascrivono) e la <b>copia di sicurezza</b> su file. <b>Manda i segnali</b> condivide le tue scelte nella chat con Claude: orientano le schede dei giorni successivi.</div></details>';}
 function apriGuida(){var el=document.getElementById('gvbody');if(el&&!el.innerHTML)el.innerHTML=guidaHTML();
  var ov=document.getElementById('gvov');if(ov)ov.classList.add('on');}
 function chiudiGuida(){var ov=document.getElementById('gvov');if(ov)ov.classList.remove('on');}
