@@ -117,6 +117,20 @@
   .metar .meta{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
   .metar .rt2{font-variant-numeric:tabular-nums}
   .savmark{color:var(--gold);font-weight:700}
+  /* DENSITÀ COMPATTA (dichiarata): righe da scansione per il lavoro settimanale.
+     Da desktop la lista schede si stringe da sola; .card.compatta vale ovunque. */
+  .crow{display:flex;align-items:center;gap:10px;padding:8px 12px;border-bottom:1px solid var(--line2)}
+  .crow:last-child{border-bottom:0}
+  .crow .ct{min-width:0;flex:1;display:flex;flex-direction:column;gap:1px}
+  .crow .ch{display:block;max-width:100%;font-size:var(--t-sec);font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .crow .cm{display:block;max-width:100%;font-size:var(--t-meta);color:var(--dim2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .crow.on .ch{color:var(--azione)}
+  .cpick{width:44px;height:36px;border-radius:9px;border:1px solid var(--line);background:var(--carta);color:var(--dim);font-size:var(--t-testo);cursor:pointer;flex:0 0 auto}
+  .cpick.on{background:var(--azione);border-color:var(--azione);color:var(--su-colore)}
+  @media(min-width:1024px){
+    .row{padding:var(--s2) var(--s4)}
+    .row .v{-webkit-line-clamp:1}
+  }
   .chev{color:var(--dim2);font-size:var(--t-testo);transition:.2s;line-height:1}.item.open .chev{transform:rotate(90deg)}
   /* I sei pulsanti andavano a capo e «Dettagli» finiva da solo su una riga sua.
      Non basta stringere i margini: con il testo ingrandito nelle impostazioni di iOS
@@ -438,7 +452,10 @@
 
   <div class="view" id="news">
       <div class="sl" style="--sc:#af52de"><span class="ic">📤</span>Lavori del mese<span class="n" id="nlcount"></span></div>
-      <div class="nlwrap"><div class="nlempty" id="nlintro"></div><div id="nlslots"></div></div>
+      <div class="nlwrap"><div class="nlempty" id="nlintro"></div>
+      <div class="sl r-res" style="margin-top:8px"><span class="ic">▤</span>I candidati di oggi<span class="n">tocca ▸ per scegliere</span></div>
+      <div class="card compatta" id="nlcand"></div>
+      <div id="nlslots"></div></div>
       <div class="sl" style="--sc:#af52de"><span class="ic">📝</span>Testo pronto<span class="n">3 destinazioni</span></div>
       <div class="nlwrap">
         <div class="seg" id="nldest"><button class="on" onclick="setDest('mail',this)">✉️ Email</button><button onclick="setDest('blog',this)">🌐 Blog</button><button onclick="setDest('gbp',this)">📍 Google</button></div>
@@ -1501,7 +1518,19 @@ function wIdx(n){var p=A[n]&&A[n].pmid;
  return (S.weekly||[]).findIndex(function(x){return x.n==n||(p&&x.a&&x.a.pmid==p)});}
 function inWeek(n){return wIdx(n)>=0}
 function setVid(i,val){var w=(S.weekly||[])[i];if(w){w.v=val;save();renderNlOut();}}
+/* I CANDIDATI — il verdetto settimanale senza rimbalzi: le schede di oggi in
+   righe compatte (densità dichiarata), scelta col toggle, qui dentro. */
+function candidatiHTML(){
+ return ARTICLES.filter(function(a){return a.sec=='res'}).map(function(a){
+  var dentro=inWeek(a.n),pronto=!!(typeof SOCV!=='undefined'&&SOCV[a.n]);
+  return '<div class="crow'+(dentro?' on':'')+'">'+
+   '<span class="dot '+a.dot+'"></span>'+
+   '<span class="ct"><span class="ch">'+esc(a.h)+'</span>'+
+   '<span class="cm">'+esc(a.j)+' · '+a.meta+(pronto?'':' · senza copione video')+'</span></span>'+
+   '<button class="cpick'+(dentro?' on':'')+'" onclick="pickWeek(event,'+a.n+')" aria-label="'+(dentro?'Togli dalla newsletter':'Scegli per la newsletter')+'">'+(dentro?'✓':'▸')+'</button></div>';
+ }).join('');}
 function renderNl(){
+ var cand=document.getElementById('nlcand');if(cand)cand.innerHTML=candidatiHTML();
  var slots=document.getElementById('nlslots'),intro=document.getElementById('nlintro'),cnt=document.getElementById('nlcount');
  if(!slots)return;
  var W=S.weekly||[];
