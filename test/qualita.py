@@ -19,6 +19,7 @@ with sync_playwright() as p:
     pg=b.new_page(viewport={'width':390,'height':844},is_mobile=True,has_touch=True)
     errs=[]; pg.on('pageerror',lambda e:errs.append(str(e)))
     pg.goto(_U); pg.wait_for_timeout(700)
+    pg.evaluate("tab('today')"); pg.wait_for_timeout(200)   # i contenuti del giorno vivono nell'archivio di oggi
     print("=== QUALITÀ: CONTENUTO ===")
     chk('DOVE LE PROVE NON TI COPRONO' in pg.inner_text('body').upper(),'sezione "Dove le prove non ti coprono"')
     nt=pg.evaluate("()=>document.querySelectorAll('.titem').length")
@@ -70,31 +71,38 @@ with sync_playwright() as p:
     # Il banner ha TRE stati legittimi (è arrivato · sta arrivando · non è arrivato):
     # pretendere «Aggiornato oggi» in assoluto significava dipendere dall'orologio, e
     # bloccava qualunque verifica notturna — trovato alle 5:42 UTC del 19 agosto.
-    _fb=pg.inner_text('#freshbox')
-    chk(('Aggiornato oggi' in _fb) or ('in preparazione' in _fb) or ('non è arrivato' in _fb),
-        'banner freschezza in uno dei suoi tre stati dichiarati')
+    _fb=pg.inner_text('#gfresh')
+    chk((_fb.strip()=='') or ('in preparazione' in _fb) or ('non è arrivato' in _fb) or ('arriva verso le' in _fb) or ('giorni fa' in _fb),
+        'freschezza: silenzio quando è tutto in ordine, dichiarata negli altri stati')
     if pg.evaluate('typeof duelliVivi==="function" && duelliVivi().length>0'):
         chk('VS' in pg.inner_text('#duelbox'),'barra duello')
     else:
         salta('duello','nessun confronto fra lavori oggi')
         chk(pg.evaluate("typeof openDuel==='function'"),'la vista duello c\'è comunque')
-    # due stati legittimi: ci sono lavori che lo mettono in discussione, oppure no
-    ar=pg.evaluate("() => ARTICLES.filter(function(a){return a.sec=='res'&&a.dot=='orange'}).length")
-    v=pg.inner_text('#verdict')
-    if ar:
-        chk('mette in discussione' in v or 'mettono in discussione' in v, f'verdetto: {ar} lavori in discussione, con i titoli')
-        chk(pg.locator('.vitem').count()==ar, 'un titolo tappabile per ogni lavoro in discussione')
-        pg.click('.vitem'); pg.wait_for_timeout(300)
-        apr=pg.evaluate("() => { var o=document.querySelector('.item.open'); return o?o.id:null }")
-        chk(bool(apr),'titolo del verdetto apre la scheda'+(f' ({apr})' if apr else ''))
+    # la schermata unica dice ciò che la selezione del mattino ha scritto
+    pg.evaluate("tab('giorno')"); pg.wait_for_timeout(200)
+    chk(pg.inner_text('#gverd')==pg.evaluate("SELEZIONE?SELEZIONE.testo:''"),
+        'il verdetto in cima è quello del mattino, parola per parola')
+    haAll=pg.evaluate("!!(SELEZIONE&&SELEZIONE.allerta)")
+    if haAll:
+        chk(pg.locator('.gall').count()==1,'l\'allerta della rassegna sale nel verdetto, non in una sezione da ricordarsi')
     else:
-        chk('niente mette in discussione' in v.lower(), 'verdetto: giornata senza contraddizioni, dichiarata')
+        chk(pg.locator('.gall').count()==0,'nessuna allerta oggi → nessuna scatola vuota')
+    chk(pg.locator('.gsch').count()==min(3,pg.evaluate("SELEZIONE?SELEZIONE.schede.length:1")),
+        'le schede mostrate sono quelle selezionate, mai più di tre')
+    chk(pg.locator('.gperche').count()==pg.locator('.gsch').count(),
+        'ogni scheda dichiara perché la vedi')
+    pg.click('.gperche >> nth=0'); pg.wait_for_timeout(150)
+    chk(pg.locator('.gmenu >> nth=0').inner_text().find('Meno lavori')>=0,
+        'toccare il perché apre la correzione della selezione')
+    pg.click('.gperche >> nth=0'); pg.wait_for_timeout(100)
+    pg.evaluate("tab('today')"); pg.wait_for_timeout(200)
     # azioni visibili solo da aperta (redesign A·2): assicura l'apertura senza
     # richiudere una scheda già aperta (A1 può coincidere con A2)
     pg.evaluate(f"var e=document.getElementById('it-{A1}');if(e&&!e.classList.contains('open'))toggle({A1})")
     pg.wait_for_timeout(250)
     pg.click(f'#it-{A1} .ib.save'); pg.wait_for_timeout(200)
-    chk(pg.eval_on_selector('#savedCount','e=>e.textContent')!='0','salvataggio funziona')
+    chk(pg.evaluate('S.savedItems.length')>0,'salvataggio funziona')
     chk(pg.evaluate("()=>document.querySelectorAll('.conf').length")>0,'barre di confidenza')
     chk('min' in pg.inner_text('#researchList'),'tempo di lettura')
     # rivelazione progressiva (redesign A·2): in lista si legge, i comandi compaiono aprendo
@@ -191,19 +199,9 @@ with sync_playwright() as p:
     chk(pg3.evaluate("_ordinaVoci([{name:'Paola (Premium)'},{name:'Emma'}])[0].name")=='Emma',
         'la preferenza per Emma vale anche contro un\'altra voce premium')
 
-    # --- benvenuto e guida: l'app si spiega da sola -----------------------------
-    chk(pg3.evaluate("benvenutoHTML(0).indexOf('Benvenuto')>=0 && benvenutoHTML(0).indexOf('Ho capito')>=0"),
-        'alla prima apertura compare il benvenuto con «Ho capito»')
-    chk(pg3.evaluate("benvenutoHTML(GUIDA_V)")=='',
-        'dopo «Ho capito» il benvenuto non torna mai più')
-    g=pg3.evaluate("guidaHTML()")
-    chk(all(w in g for w in ['richiamo di dispositivo','mette in discussione una tua tecnica',
-                             'senza conflitto','non tocca la tua pratica']),
-        'la guida spiega il significato di tutti e quattro i pallini')
-    chk(all(w in g for w in ['Rassegna','Archivio','Salvati','Newsletter','Impostazioni']),
-        'la guida nomina ogni scheda dell\'app')
-    chk(all(w in g for w in ['sorprendimi','seconda pagina','basta','aiuto']),
-        'la guida elenca il vocabolario dei comandi a voce')
+    # --- niente tutorial: l'app parte su contenuto reale --------------------------
+    chk(pg3.evaluate("typeof benvenutoHTML==='undefined'&&typeof guidaHTML==='undefined'"),
+        'nessun benvenuto e nessuna guida-overlay: alla prima apertura c\'è il giornale')
     chk(pg3.evaluate("interpretaComando('aiuto').az")=='aiuto'
         and pg3.evaluate("interpretaComando('come funziona questa cosa').az")=='aiuto',
         'la voce capisce «aiuto» e «come funziona»')
@@ -212,16 +210,11 @@ with sync_playwright() as p:
     chk(pg3.evaluate("typeof setTesto==='function' && typeof applicaTesto==='function'"),
         'la dimensione del testo si può cambiare e riapplicare')
 
-    # --- la modalità auto: playlist annunciata, comandi, velocità ---------------
-    chk(pg3.evaluate("autoLista().length")==pg3.evaluate("ARTICLES.length")+1,
-        'la playlist auto è briefing + tutte le schede del giorno')
-    chk(pg3.evaluate("autoLista()[0].label").find('briefing')>=0
-        and pg3.evaluate("autoLista()[0].n") is None,
-        'la playlist apre col briefing, che non è salvabile')
-    chk(pg3.evaluate("autoLista()[1].voci[0].t").startswith('Scheda 1 di '+str(pg3.evaluate("ARTICLES.length"))),
-        'ogni scheda viene annunciata con la sua posizione')
-    chk(pg3.evaluate("autoLista()[1].n")==pg3.evaluate("ARTICLES[0].n"),
-        'la scheda in ascolto è identificata dal suo numero vero, per salvarla')
+    # --- la modalità auto non esiste più: il podcast la sostituisce ---------------
+    chk(pg3.evaluate("typeof autoLista==='undefined'&&typeof apriAuto==='undefined'"),
+        'la modalità auto è stata tolta davvero, non nascosta')
+    chk(pg3.evaluate("typeof renderPlayer==='function'&&typeof audioSalta==='function'"),
+        'al suo posto: il lettore del briefing pre-generato')
     for frase,att in [('prossima','prossima'),('vai avanti','prossima'),('indietro','indietro'),
                       ('ripeti','ripeti'),('pausa','pausa'),('riprendi','riprendi'),
                       ('salva questa','salvaquesta'),('più veloce','veloce'),('più piano','piano'),
@@ -255,24 +248,22 @@ with sync_playwright() as p:
         'la voce naturale ha partenza, coda e arresto unificati')
     chk(pg3.evaluate("_briefItems().length")>1,
         'il briefing per la voce naturale usa le battute del dialogo')
-    chk(pg3.evaluate("autoLista()[1].voci[0].t").startswith('Scheda 1 di '),
-        'anche in auto ogni scheda porta il suo annuncio di posizione')
     chk(pg3.evaluate("document.getElementById('vocesel')!==null && typeof popolaVoci==='function'"),
         'la voce di sistema si può scegliere dalle Impostazioni')
     chk(pg3.evaluate("JSON.stringify(statoDaTrasferire()).indexOf('cervello')")==-1,
         'indirizzo e parola del cervello NON viaggiano nel trasferimento né nel backup')
 
-    # --- i segnali a PULSE: identità per contenuto, mai per posizione -----------
-    chk(pg3.evaluate("(function(){var v=S.votes;S.votes={1:1,99:-1};"
-                     "var t=segnaliTesto();S.votes=v;"
-                     "return t.indexOf('SEGNALI PULSE')===0&&t.indexOf('PMID '+(A[1]&&A[1].pmid))>=0"
-                     "&&t.indexOf('Meno così')<0})()"),
-        'i segnali traducono i voti in PMID+titolo e ignorano schede inesistenti')
-    chk(pg3.evaluate("(function(){var v=S.votes,s1=S.saved,s2=S.savedItems,w=S.weekly,d=S.suggDone;"
-                     "S.votes={};S.saved=[];S.savedItems=[];S.weekly=[];S.suggDone={};"
-                     "var t=segnaliTesto();S.votes=v;S.saved=s1;S.savedItems=s2;S.weekly=w;S.suggDone=d;"
-                     "return t.indexOf('Nessun segnale ancora')>=0})()"),
-        'senza scelte i segnali lo dichiarano, non fingono')
+    # --- il giudizio unico sostituisce i segnali manuali: pesi per contenuto ------
+    chk(pg3.evaluate("typeof segnaliTesto==='undefined'&&typeof condividiSegnali==='undefined'"),
+        'il giro manuale «manda i segnali» non esiste più')
+    chk(pg3.evaluate("(function(){var g=S.giudizi,p=S.pesi;S.giudizi={};S.pesi={};"
+                     "var pm=ARTICLES[0].pmid;giudica(pm,-1);"
+                     "var okG=S.giudizi[pm]===-1&&(S.pesi.riviste||{})[ARTICLES[0].j]===-1;"
+                     "giudica(pm,-1);var okU=!S.giudizi[pm];"
+                     "S.giudizi=g;S.pesi=p;save();return okG&&okU})()"),
+        'il giudizio per PMID aggiorna i pesi da solo, e si annulla pulito')
+    chk(pg3.evaluate("JSON.stringify(statoDaTrasferire()).indexOf('giudizi')>=0"),
+        'giudizi e pesi viaggiano nel trasferimento e nel backup')
     # --- il calendario dello storico dice il vero (macchina pura, dati sintetici) ---
     chk(pg3.evaluate("(function(){var h=calHTML('2026-08-20',[{d:'2026-08-12'},{d:'2026-08-20'},{d:'2026-07-30'}]);"
                      "return h.indexOf('class=\"day today\"')>=0&&/today[^>]*>20</.test(h.replace(/<span[^>]*mk[^<]*<\\/span>/g,''))"

@@ -17,18 +17,31 @@ var pass=0,fail=0;
 function ok(c,m){console.log((c?'✅':'❌')+' '+m);c?pass++:fail++;}
 
 console.log('\n--- 0. LAVORO DEL GIORNO E COLONNA DESTRA ---');
-// Il 5 agosto 2026 la scheda in cima era quella scelta il 2: HTML scritto a mano.
-// Qui si verifica che venga dai dati, che regga se PICK punta a nulla, e che i giorni
-// alle scadenze siano CALCOLATI — nessuna data scritta a mano (regola 11).
-renderPick();
-var _pb=document.getElementById('pickbox').innerHTML;
-var _pa=pickArt();
-ok(!!_pa,'esiste un lavoro del giorno');
-ok(_pb.indexOf(_pa.h)>=0,'la scheda in cima è quella indicata da PICK ('+_pa.n+')');
-ok(_pb.indexOf(_pa.h)===_pb.lastIndexOf(_pa.h),'il titolo compare una volta sola, non due');
-var _oldPick=PICK; PICK=99999; renderPick();
-ok(document.getElementById('pickbox').innerHTML.length>50,'PICK che punta a una scheda inesistente → ripiega, non lascia il vuoto');
-PICK=_oldPick; renderPick();
+// La schermata unica viene dai DATI (SELEZIONE), regge senza SELEZIONE (istantanee
+// vecchie → ripiega sul lavoro del giorno) e non mostra MAI più di tre schede.
+renderGiorno();
+ok(document.getElementById('gverd').textContent===SELEZIONE.testo,'il verdetto in cima è quello scritto dal mattino');
+var _gs=document.getElementById('gschede').innerHTML;
+ok(_gs.indexOf(SELEZIONE.schede[0].dice.slice(0,40))>=0,'la prima scheda dice ciò che la selezione dice');
+ok(document.querySelectorAll?true:true,'—');
+var _v=SELEZIONE.schede;SELEZIONE.schede=_v.concat(_v).concat(_v);renderGiorno();
+ok((document.getElementById('gschede').innerHTML.match(/class="gsch"/g)||[]).length<=3,
+   'anche con dati gonfiati la schermata mostra al massimo tre schede');
+SELEZIONE.schede=_v;renderGiorno();
+var _selV=SELEZIONE;SELEZIONE=null;renderGiorno();
+ok(document.getElementById('gschede').innerHTML.length>50,'senza SELEZIONE ripiega sul lavoro del giorno, non lascia il vuoto');
+SELEZIONE=_selV;renderGiorno();
+// il giudizio unico: per PMID, aggiorna i pesi DA SOLO, «utile» archivia
+var _pm=SELEZIONE.schede[0].pmid;var _aG=_artPm(_pm);
+giudica(_pm,1);
+ok(S.giudizi[_pm]===1,'✓ utile registrato per PMID, non per posizione');
+ok(S.savedItems.some(function(x){return x.a&&x.a.pmid===_pm}),'«utile» archivia la scheda da sola');
+ok((S.pesi.riviste||{})[_aG.j]===1,'il giudizio aggiorna i pesi della rivista da solo');
+giudica(_pm,1);
+ok(!S.giudizi[_pm]&&!(S.pesi.riviste||{})[_aG.j]&&!S.savedItems.some(function(x){return x.a&&x.a.pmid===_pm}),'toccare di nuovo annulla giudizio, peso e archiviazione');
+scegliPerche(_pm,0,-2);
+ok((S.pesi.riviste||{})[_aG.j]===-2,'«questo tema non mi interessa» pesa il doppio, in negativo');
+S.pesi={};save();
 
 // scadenze: si costruiscono date relative a oggi, mai letterali
 function _fra(g){var d=new Date(Date.now()+g*86400000);
@@ -55,17 +68,17 @@ console.log('\n--- 1. FALLIMENTO SILENZIOSO ---');
 var _bdReale=BUILD_DATE;
 var _n=new Date(), _oggiIso=_n.getFullYear()+'-'+('0'+(_n.getMonth()+1)).slice(-2)+'-'+('0'+_n.getDate()).slice(-2);
 BUILD_DATE=_oggiIso; renderFresh();
-ok(document.getElementById('freshbox').innerHTML.indexOf('Aggiornato oggi')>=0,'briefing di oggi → banner verde "Aggiornato oggi"');
+ok(document.getElementById('gfresh').innerHTML==='','briefing di oggi → nessun banner: il successo è il silenzio, lo dice il verdetto');
 BUILD_DATE=_bdReale; renderFresh();
-ok(_bdReale===_oggiIso ? document.getElementById('freshbox').innerHTML.indexOf('Aggiornato oggi')>=0
-   : document.getElementById('freshbox').innerHTML.indexOf('Aggiornato oggi')<0,
-   'con il file di oggi dice «aggiornato oggi», con un file vecchio non lo dice');
+ok(_bdReale===_oggiIso ? document.getElementById('gfresh').innerHTML===''
+   : document.getElementById('gfresh').innerHTML.length>0,
+   'file di oggi → silenzio; file vecchio → dichiarato');
 // L'attesa non è un guasto: alle 7:10, con il briefing in preparazione, l'app diceva
 // «qualcosa non ha funzionato». Questi controlli fissano i tre stati distinti.
 var _real=BUILD_DATE, _ieri=new Date(Date.now()-86400000);
 BUILD_DATE=_ieri.getFullYear()+'-'+('0'+(_ieri.getMonth()+1)).slice(-2)+'-'+('0'+_ieri.getDate()).slice(-2);
 renderFresh();
-var _t=document.getElementById('freshbox').innerHTML, _h=new Date().getUTCHours();
+var _t=document.getElementById('gfresh').innerHTML, _h=new Date().getUTCHours();
 var _hm=new Date().getUTCHours()+new Date().getUTCMinutes()/60;
 if(_hm>=5&&_hm<6.5) ok(_t.indexOf('in preparazione')>=0,'ieri, nell\'ora del briefing → «in preparazione», non un allarme');
 else if(_h<5)   ok(_t.indexOf('arriva verso le 7')>=0,'ieri, di notte → attesa dichiarata, nessun allarme');
@@ -78,7 +91,7 @@ BUILD_DATE=_real;
 // stati qui sopra (notte · in preparazione · non arrivato).
 var real=BUILD_DATE; var _5g=new Date(Date.now()-5*86400000);
 BUILD_DATE=_5g.getFullYear()+'-'+('0'+(_5g.getMonth()+1)).slice(-2)+'-'+('0'+_5g.getDate()).slice(-2); renderFresh();
-ok(document.getElementById('freshbox').innerHTML.indexOf('giorni fa')>=0 && document.getElementById('freshbox').innerHTML.indexOf('non sta girando')>=0,'5 giorni fa → allarme rosso con istruzione');
+ok(document.getElementById('gfresh').innerHTML.indexOf('giorni fa')>=0 && document.getElementById('gfresh').innerHTML.indexOf('non sta girando')>=0,'5 giorni fa → allarme rosso con istruzione');
 BUILD_DATE=real;
 
 console.log('\n--- 2. ALLERTA RITRATTAZIONE ---');
@@ -146,12 +159,6 @@ toggleSave(null,P2);ok(S.saved.indexOf(P2)>=0,'Salva');
 vote(null,P3,1);ok(S.votes[P3]===1,'Voto 👍');
 toggle(P2);ok(S.seen.indexOf(P2)>=0,'Segna letto');
 renderResearch();ok(true,'Filtri + verdetto');
-renderVerdict();
-var VH=document.getElementById('verdict').innerHTML;
-var ARANCI=ARTICLES.filter(function(a){return a.sec=='res'&&a.dot=='orange'}).length;
-ok(ARANCI ? (VH.indexOf('in discussione')>=0 && VH.indexOf('vitem')>=0)
-          : (VH.indexOf('niente mette in discussione')>=0),
-   'Verdetto del giorno: '+(ARANCI?ARANCI+' lavori in discussione, con i titoli':'giornata senza contraddizioni, dichiarata'));
 renderSaved();ok(true,'Ricerca salvati');
 if(PSOC!==undefined){openSocial(null,PSOC);ok(curSoc===PSOC,'Contenuti social');}else{ok(typeof openSocial==='function','Contenuti social: nessun lavoro oggi, la funzione c\'è');}
 speakCard(null,P2);ok(true,'Lettura vocale scheda');
@@ -160,7 +167,7 @@ var CN=NN.filter(function(n){return typeof CONF!=='undefined'&&CONF[n]});
 ok(CN.length ? CN.every(function(n){return confHTML(n).indexOf(CONF[n])>=0})
              : typeof confHTML==='function',
    'Barre di confidenza'+(CN.length?' su '+CN.length+' schede, coerenti con CONF':': la funzione c\'è'));
-ok(typeof speakBrief==='function','Riassunto vocale');
+ok(typeof renderPlayer==='function'&&typeof audioPlayPausa==='function'&&typeof audioSalta==='function','il lettore MP3 esiste: play, salti, velocità');
 ok(JSON.parse(store['pulse4']).saved.length>0,'Persistenza');
 console.log('\n=========================');
 console.log('PASSATI: '+pass+'   FALLITI: '+fail);

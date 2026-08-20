@@ -28,7 +28,7 @@ with sync_playwright() as p:
             ctx.close(); continue
         for n in SCELTI: pg.evaluate(f"pickWeek(null,{n})")
         pg.wait_for_timeout(200)
-        pg.click("button:has-text('Newsletter'), button:has-text('Newsletter')")
+        pg.evaluate("tab('news')")
         pg.wait_for_timeout(250)
 
         if theme=="light" and w==390:
@@ -94,7 +94,7 @@ with sync_playwright() as p:
             pg.wait_for_timeout(250)
             chk(tag+"google: url personalizzato usato", "post/ginocchio-agosto" in pg.inner_text("#nlout"))
             pg.reload(); pg.wait_for_timeout(400)
-            pg.click("button:has-text('Newsletter')"); pg.wait_for_timeout(200)
+            pg.evaluate("tab('news')"); pg.wait_for_timeout(200)
             pg.click("#nldest button:has-text('Google')"); pg.wait_for_timeout(250)
             chk(tag+"google: url ricordato dopo ricarica", "post/ginocchio-agosto" in pg.inner_text("#nlout"))
             chk(tag+"google: campo ripopolato", pg.input_value("#gbpurl").endswith("ginocchio-agosto"))
@@ -106,7 +106,7 @@ with sync_playwright() as p:
             chk(tag+"google: taglia se supera 1500", over["len"]<=1500, over["len"])
             chk(tag+"google: url resta anche dopo il taglio", "dariogiunchi.ch" in over["tail"], over["tail"])
             pg.reload(); pg.wait_for_timeout(400)
-            pg.click("button:has-text('Newsletter')"); pg.wait_for_timeout(200)
+            pg.evaluate("tab('news')"); pg.wait_for_timeout(200)
 
         # layout su tutte le destinazioni
         for dest,label in [("mail","Email"),("blog","Blog"),("gbp","Google")]:

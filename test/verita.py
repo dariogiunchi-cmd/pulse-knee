@@ -84,8 +84,8 @@ if citv is not None and citv.isdigit():
 # nello storico ma mai nell'app, rimasto visibile all'utente per venti pubblicazioni.
 _visibile = re.sub(r'<script>[\s\S]*?</script>', '', h)
 chk("l'intestazione non contiene numeri scritti a mano",
-    not re.search(r'class="kpi[^"]*"><b>\d+</b>', _visibile) and 'id="kpis"' in h,
-    "i conteggi in cima vanno contati, non scritti")
+    not re.search(r'class="kpi[^"]*"><b>\d+</b>', _visibile) and 'id="gverd"' in h,
+    "i conteggi in cima vanno contati, non scritti; il verdetto si genera")
 chk("la data non è scritta a mano",
     not re.search(r'class="date"[^>]*>\s*\w+\s+\d+\s+\w+\s+\d{4}', _visibile),
     "la data va derivata da BUILD_DATE")
@@ -178,3 +178,20 @@ if ko:
     print(f"❌ CONTROLLI DI VERITÀ FALLITI — {len(ko)}: {ko}")
     sys.exit(1)
 print(f"✅ CONTROLLI DI VERITÀ SUPERATI — {narts} schede, {len(set(pmid))} PMID distinti")
+
+# La SELEZIONE del mattino (schermata unica): al massimo TRE schede, tutte
+# esistenti fra gli ARTICLES del giorno, ognuna con le sue tre risposte piene.
+# Facoltativa: le istantanee precedenti alla variabile restano ripristinabili.
+_m_sel = re.search(r'var SELEZIONE=\{[\s\S]*?\n \]\};|var SELEZIONE=\{[\s\S]*?\]\};', h)
+if _m_sel:
+    _sel = _m_sel.group(0)
+    _psel = re.findall(r"pmid:'(\d+)'", _sel)
+    chk("la selezione del mattino ha al massimo tre schede", 0 < len(_psel) <= 3, len(_psel))
+    chk("ogni scheda selezionata esiste fra gli articoli del giorno",
+        all(x in pmid for x in _psel), [x for x in _psel if x not in pmid][:3])
+    chk("ogni scheda selezionata ha dice, cambia e perché, non vuoti",
+        len(re.findall(r'dice:"[^"]{20,}', _sel)) == len(_psel)
+        and len(re.findall(r'cambia:"[^"]{10,}', _sel)) == len(_psel)
+        and len(re.findall(r'perche:"[^"]{10,}', _sel)) == len(_psel), "campi mancanti o vuoti")
+    chk("il verdetto del giorno è scritto e non vuoto",
+        bool(re.search(r'testo:"[^"]{10,}"', _sel)), "SELEZIONE.testo")
