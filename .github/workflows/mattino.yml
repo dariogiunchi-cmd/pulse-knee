@@ -1,0 +1,160 @@
+# PULSE — la consegna del mattino (rifondazione, Addendum §6 e §10-11).
+#
+# Quando il briefing arriva su main (dati/giorno.js cambia), questo workflow:
+#   1. genera l'AUDIO del giorno con Kokoro (motore locale, scelto per ascolto
+#      alla cieca il 20 agosto: zero costi, zero servizi) sul testo per
+#      l'orecchio (audio/orecchio.py + config/pronuncia.json)
+#   2. aggiorna il FEED podcast (audio/feed.py) e pota gli episodi oltre i 30
+#      giorni — il feed dichiara durata e peso veri
+#   3. apre l'ISSUE quotidiana col briefing COMPLETO: è la consegna push — la
+#      notifica email di GitHub porta tutto il contenuto, senza aprire nulla.
+#      Rispondere all'email = commentare l'issue: il mattino dopo la sessione
+#      delle 5 legge i commenti come giudizi.
+#
+# Niente crediti Claude, niente chiavi, niente servizi terzi. Se questo workflow
+# fallisce l'app resta intatta: il giorno esce senza audio e senza email, e il
+# battito delle 7:15 resta il rilevatore indipendente dei guasti del briefing.
+name: mattino
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['dati/giorno.js']
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: mattino
+  cancel-in-progress: false
+
+jobs:
+  consegna:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: dipendenze
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng
+          pip -q install soundfile kokoro mutagen
+
+      - name: audio del giorno (Kokoro, voce dichiaratamente sintetica)
+        run: |
+          python3 audio/orecchio.py
+          python3 - <<'EOF'
+          from kokoro import KPipeline
+          import soundfile as sf, numpy as np, subprocess, json, re, os
+          from mutagen.mp3 import MP3
+          testo = open('audio/briefing-orecchio.txt', encoding='utf-8').read()
+          dati  = open('dati/giorno.js', encoding='utf-8').read()
+          build = re.search(r"var BUILD_DATE='(\d{4}-\d{2}-\d{2})'", dati).group(1)
+          mp3   = f'audio/{build}.mp3'
+          if os.path.exists(mp3):
+              print(f'{mp3} esiste già: non lo rigenero (stesso giorno, ripubblicazione)')
+              raise SystemExit(0)
+          pipe  = KPipeline(lang_code='i')
+          pezzi = [a for (_, _, a) in pipe(testo, voice='if_sara')]
+          sf.write('grezzo.wav', np.concatenate(pezzi), 24000)
+          subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', 'grezzo.wav',
+                          '-b:a', '96k', mp3], check=True)
+          info = MP3(mp3).info
+          # titolo episodio: data + verdetto in una riga (dalla SELEZIONE, mai inventato)
+          m = re.search(r'var SELEZIONE=\{[\s\S]*?testo:"((?:[^"\\]|\\.)*)"', dati)
+          verdetto = (m.group(1) if m else '').replace('\\"', '"')
+          MESI = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio',
+                  'agosto','settembre','ottobre','novembre','dicembre']
+          a, me, g = build.split('-')
+          titolo = f"{int(g)} {MESI[int(me)-1]} — {verdetto}" if verdetto else f"{int(g)} {MESI[int(me)-1]}"
+          eps = json.load(open('audio/episodi.json', encoding='utf-8')) if os.path.exists('audio/episodi.json') else []
+          eps = [e for e in eps if e['data'] != build]
+          eps.append({'data': build, 'titolo': titolo, 'descrizione': testo,
+                      'file': f'{build}.mp3', 'bytes': os.path.getsize(mp3),
+                      'secondi': int(info.length)})
+          json.dump(eps, open('audio/episodi.json', 'w', encoding='utf-8'),
+                    ensure_ascii=False, indent=1)
+          EOF
+
+      - name: feed e potatura (30 giorni)
+        run: |
+          python3 - <<'EOF'
+          import json, os, re
+          from datetime import date, timedelta
+          if not os.path.exists('audio/episodi.json'):
+              raise SystemExit(0)
+          eps = json.load(open('audio/episodi.json', encoding='utf-8'))
+          soglia = (date.today() - timedelta(days=30)).isoformat()
+          vecchi = [e for e in eps if e['data'] < soglia]
+          for e in vecchi:
+              p = f"audio/{e['file']}"
+              if os.path.exists(p): os.remove(p)
+              print('potato:', e['file'])
+          eps = [e for e in eps if e['data'] >= soglia]
+          json.dump(eps, open('audio/episodi.json', 'w', encoding='utf-8'),
+                    ensure_ascii=False, indent=1)
+          EOF
+          python3 audio/feed.py
+
+      - name: commit di audio e feed
+        run: |
+          git config user.name "pulse-mattino"
+          git config user.email "actions@github.com"
+          git add audio/*.mp3 audio/episodi.json audio/pulse-*.xml audio/briefing-orecchio.txt || true
+          git diff --cached --quiet || git commit -m "mattino: episodio audio e feed del giorno"
+          git push
+
+      - name: issue quotidiana — il briefing completo, in posta
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'EOF'
+          import json, os, re, subprocess
+          dati = open('dati/giorno.js', encoding='utf-8').read()
+          build = re.search(r"var BUILD_DATE='(\d{4}-\d{2}-\d{2})'", dati).group(1)
+          def campo(nome):
+              m = re.search(r'var %s=\{[\s\S]*?testo:"((?:[^"\\]|\\.)*)"' % nome, dati)
+              return (m.group(1) if m else '').replace('\\"', '"')
+          m = re.search(r'var SELEZIONE=(\{[\s\S]*?\n \]\};|\{[\s\S]*?\]\};)', dati)
+          sel = m.group(1) if m else ''
+          verdetto = campo('SELEZIONE')
+          alerta = ''
+          ma = re.search(r'allerta:"((?:[^"\\]|\\.)*)"', sel)
+          if ma: alerta = ma.group(1).replace('\\"', '"')
+          schede = re.findall(r"\{pmid:'(\d+)',\s*dice:\"((?:[^\"\\]|\\.)*)\",\s*cambia:\"((?:[^\"\\]|\\.)*)\",\s*perche:\"((?:[^\"\\]|\\.)*)\"", sel)
+          mb = re.search(r'var BRIEF_TEXT=("(?:[^"\\]|\\.)*")', dati)
+          brief = json.loads(mb.group(1)) if mb else ''
+          MESI = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio',
+                  'agosto','settembre','ottobre','novembre','dicembre']
+          a, me, g = build.split('-')
+          titolo = f"PULSE {int(g)} {MESI[int(me)-1]} — {verdetto}"[:250]
+          # una sola issue per giorno: la ripubblicazione di una correzione non raddoppia la posta
+          gia = subprocess.run(['gh', 'issue', 'list', '--state', 'all', '--search',
+                                f'"PULSE {int(g)} {MESI[int(me)-1]}" in:title', '--json', 'number'],
+                               capture_output=True, text=True,
+                               env={**os.environ, 'GH_REPO': 'dariogiunchi-cmd/pulse-knee'})
+          if gia.returncode == 0 and json.loads(gia.stdout or '[]'):
+              print('issue del giorno già aperta: non la duplico'); raise SystemExit(0)
+          subprocess.run(['gh', 'label', 'create', 'briefing', '--color', '1D76DB'],
+                         env={**os.environ, 'GH_REPO': 'dariogiunchi-cmd/pulse-knee'})
+          corpo = []
+          if alerta: corpo.append(f"⚠︎ **{alerta}**\n")
+          for pm, dice, cambia, perche in schede:
+              dice = dice.replace('\\"', '"'); cambia = cambia.replace('\\"', '"')
+              corpo.append(f"**{dice}**\n\n{cambia}\n\n[PubMed](https://pubmed.ncbi.nlm.nih.gov/{pm}/)\n")
+          corpo.append('---\n\n' + brief)
+          corpo.append(f"\n---\n▶ [Episodio audio]({'https://dariogiunchi-cmd.github.io/pulse-knee/audio/'+build+'.mp3'}) · "
+                       f"[Apri PULSE](https://dariogiunchi-cmd.github.io/pulse-knee/)\n\n"
+                       "_Rispondi a questa email per orientare i prossimi briefing: «utile la prima», "
+                       "«meno robotica», «più su X» — la sessione del mattino legge le risposte._")
+          subprocess.run(['gh', 'issue', 'create', '--title', titolo, '--body', '\n'.join(corpo),
+                          '--label', 'briefing'], check=True,
+                         env={**os.environ, 'GH_REPO': 'dariogiunchi-cmd/pulse-knee'})
+          EOF

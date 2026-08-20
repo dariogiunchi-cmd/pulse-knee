@@ -112,6 +112,8 @@ un'istantanea: `costruisci.py --estrai` riallinea modello e dati all'index ripri
 
 Tutte come `var` a livello superiore:
 
+`SELEZIONE` (la schermata unica: verdetto + ≤3 schede {pmid,dice,cambia,perche};
+facoltativa per le istantanee vecchie, il cancello ne fa rispettare il tetto) ·
 `BUILD_DATE` · `ARTICLES` · `CIT_VERIFICATE` · `CONF` · `MUTE` · `TENSIONS` · `LINKS` ·
 `DUELS` · `HISTORY` · `AUDIT` · `RETRACTED` · `LAST_RETRACTION_CHECK` · `BRIEF_TEXT` · `BRIEF_DIALOGO` (facoltativa:
 il podcast a due voci; se manca, ▶ legge `BRIEF_TEXT`) ·
@@ -163,6 +165,9 @@ modello.html        il codice dell'app (HTML, CSS, JS). Si tocca solo per cambia
 dati/giorno.js      i contenuti del giorno: l'unico file che il briefing riscrive
 manifest.json sw.js PWA — funziona offline; le istantanee non si tengono in cache
 cervello/           l'ORIGINALE del cervello (14-standard-di-cura.md: registro peritale)
+audio/              orecchio.py (testo per l'orecchio) · feed.py (podcast) · gli MP3
+                    del giorno e il feed, generati dal workflow mattino.yml su main
+config/             pronuncia.json — il dizionario di pronuncia per l'audio
 test/               le suite, costruisci.py, potenza.py, verifica.sh, pubblica.sh
 versioni/           istantanee datate, per tornare indietro in un minuto
 fonti/              fonti.json (configurazione) · raccolta.json (deposito notturno del
@@ -172,7 +177,11 @@ fonti/              fonti.json (configurazione) · raccolta.json (deposito nottu
                     briefing non è arrivato, email da GitHub e issue — non consuma
                     crediti Claude: è il rilevatore indipendente della regola 36) ·
                     raccolta.yml (04:15 UTC, scrive fonti/raccolta.json) ·
-                    ripristino.yml (mensile: l'ultima istantanea deve passare il cancello)
+                    ripristino.yml (mensile: l'ultima istantanea deve passare il cancello) ·
+                    mattino.yml (quando dati/giorno.js arriva su main: genera l'MP3
+                    con Kokoro, aggiorna il feed podcast, apre l'issue-email col
+                    briefing completo — la consegna push; le risposte dell'utente
+                    all'email sono giudizi che la sessione delle 5 legge)
 ```
 
 ### Le suite
@@ -189,6 +198,7 @@ fonti/              fonti.json (configurazione) · raccolta.json (deposito nottu
 | `memoria.py` | sopravvivenza delle scelte al ricambio quotidiano |
 | `distribuzione.py` | blog e Google: SEO, limite 1500, **niente pubblicità** |
 | `preferenze.py` `salvati.py` `trasferimento.py` | migrazioni e stato fra dispositivi |
+| `orecchio.py` `podcast.py` | audio: pronuncia e feed — durate e pesi dichiarati veri |
 
 Tutte accettano `PULSE_HTML=<percorso>`; `verifica.sh` lo imposta da solo.
 

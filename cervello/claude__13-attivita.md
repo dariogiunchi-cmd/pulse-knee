@@ -111,15 +111,44 @@ schede, riempi DUE variabili nuove in dati/giorno.js:
 Il costo è basso (una chiamata batch di verifica in più); il valore è che l'app
 smette di finire quando finiscono le dieci schede.
 
-I SEGNALI DELL'UTENTE — l'app ha un tasto «📡 Manda i segnali a PULSE» che
-condivide un testo che inizia con «SEGNALI PULSE»: i suoi voti (più così / meno
-così, tradotti in PMID+titolo), i salvati, i lavori scelti per la newsletter, le
-proposte accettate o respinte. Se un messaggio del genere compare in chat (in
-qualunque sessione): aggiorna i pesi in claude__07-preferenze.md di conseguenza —
-un «meno così» su un filone ne abbassa la priorità nello screening, un «più così»
-la alza, le proposte respinte non vanno riproposte — e conferma in una riga che
-cosa hai recepito. I segnali NON cambiano mai le regole di verità: orientano la
-selezione, non i fatti.
+LA SELEZIONE — la schermata unica (rifondazione del 20 agosto). Oltre alle schede,
+scrivi in dati/giorno.js la variabile `SELEZIONE`: è ciò che l'utente vede aprendo
+l'app, e DEVE bastare da sola a chiudere la giornata in 60 secondi.
+· `testo`: il VERDETTO in linguaggio naturale, una frase — risponde alla domanda
+  prima che venga posta («Oggi niente di rilevante.» · «Un lavoro che cambia
+  qualcosa: …» · «Tre novità, una importante.»). Mai conteggi meccanici.
+· `allerta` (facoltativo): SOLO se stanotte c'è qualcosa che scotta (richiamo su
+  azienda sorvegliata, ritrattazione su un lavoro citato, consensus che ribalta):
+  una riga, entra nel verdetto, non in una sezione da ricordarsi di aprire.
+· `sotto` (facoltativo): una riga onesta su ciò che resta («Le altre sei sono in
+  archivio: nessuna decisiva.») — scade col giorno, mai un arretrato.
+· `schede`: da ZERO a TRE (il cancello blocca la quarta), le sole che meritano il
+  suo tempo oggi. Il giorno vuoto è un successo: schede:[] con un verdetto quieto.
+  Ogni scheda: {pmid,dice,cambia,perche} —
+  `dice` = il RISULTATO in una frase (non il titolo); `cambia` = l'implicazione
+  chirurgica pratica, oppure l'onesta dichiarazione che non ne cambia nessuna;
+  `perche` = la ragione della selezione, in una riga (è anche il comando con cui
+  l'utente la corregge). Tutto dai campi verificati della scheda: PRINCIPIO ZERO.
+La selezione È la gerarchia: niente riordino nell'app. I criteri sono clinici
+(claude__07-preferenze.md) più i giudizi dell'utente (sotto).
+
+I GIUDIZI DELL'UTENTE — il tasto «Manda i segnali» non esiste più: l'utente giudica
+con ✓/✗ nell'app (per ora restano sul suo telefono) e soprattutto RISPONDE all'email
+del briefing (l'issue quotidiana «PULSE <giorno>» che il workflow mattino.yml apre su
+GitHub). PRIMA dello screening: leggi i COMMENTI dell'utente sulle issue `briefing`
+degli ultimi 7 giorni (gh/API GitHub, repo di lavoro). Sono giudizi in linguaggio
+libero («utile la prima», «meno protesica», «più su X»): aggiorna i pesi in
+claude__07-preferenze.md di conseguenza e — se un commento chiede qualcosa —
+rispondi in UNA riga nel commento successivo dell'issue del giorno nuovo, mai con
+un'email a parte. Se arriva ancora un vecchio messaggio «SEGNALI PULSE» in chat,
+vale come prima. I giudizi orientano la selezione, MAI le regole di verità.
+
+L'AUDIO E L'EMAIL NON SONO COMPITI TUOI — quando la tua pubblicazione arriva su
+main, il workflow `mattino.yml` genera da solo l'episodio MP3 (Kokoro sul testo
+per l'orecchio), aggiorna il feed podcast e apre l'issue-email col briefing
+completo. Tu devi solo scrivere bene SELEZIONE e BRIEF_TEXT. Se noti che l'audio
+di ieri non è stato generato (manca audio/<data>.mp3 su main), segnalalo nella
+voce AUDIT, non fermare la pubblicazione.
 
 IL PODCAST A DUE VOCI — dal 19 agosto, accanto a BRIEF_TEXT, scrivi anche
 `BRIEF_DIALOGO` in dati/giorno.js: lo stesso briefing in forma di dialogo, 10-16
@@ -156,7 +185,7 @@ LAST_RETRACTION_CHECK = data di oggi (la data di oggi in lettere).
 
 COSTRUZIONE — dalla sera del 17 agosto index.html è un PRODOTTO, non un file da modificare.
 Il codice sta in modello.html (NON toccarlo mai); i contenuti del giorno stanno in
-**dati/giorno.js**, ed è l'UNICO file che riscrivi: BUILD_DATE, ARTICLES,
+**dati/giorno.js**, ed è l'UNICO file che riscrivi: SELEZIONE, BUILD_DATE, ARTICLES,
 CIT_VERIFICATE, CONF, MUTE, TENSIONS, LINKS, DUELS, HISTORY, AUDIT, RETRACTED,
 LAST_RETRACTION_CHECK, BRIEF_TEXT, BRIEF_DIALOGO, NLB, SOCV, TAGS, SOC, SUGGQ. Poi rigenera:
   python3 test/costruisci.py

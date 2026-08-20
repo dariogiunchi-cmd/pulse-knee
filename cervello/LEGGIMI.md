@@ -20,7 +20,7 @@ controllo. In questo aggiornamento: **0 sostituzioni**.
 La pubblicazione ordinaria non richiede più alcun token: la sessione Claude Code spinge
 dal proprio accesso autorizzato. Il token GitHub resta nel Progetto come via di riserva.
 
-## Documenti (16, 179 KB in tutto)
+## Documenti (16, 181 KB in tutto)
 
 | File | Peso | Impronta |
 |---|---|---|
@@ -38,7 +38,7 @@ dal proprio accesso autorizzato. Il token GitHub resta nel Progetto come via di 
 | `claude__10-deploy.md` | 8.5 KB | `96b10a23c26e` |
 | `claude__11-qualita.md` | 23.9 KB | `4f5e2d22760c` |
 | `claude__12-distribuzione.md` | 5.1 KB | `53733f2ec633` |
-| `claude__13-attivita.md` | 14.1 KB | `ded60f1f8be5` |
+| `claude__13-attivita.md` | 16.3 KB | `4b451d85b645` |
 | `claude__15-rassegna-social.md` | 3.3 KB | `249c2a54704b` |
 
 L'impronta è il SHA-256 abbreviato: due copie con la stessa impronta sono identiche
