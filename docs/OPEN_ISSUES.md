@@ -27,3 +27,27 @@ peritale alto» nella riga di rilevanza — è contenuto quotidiano scritto dal
 briefing prima dell'Addendum, ruota via col ricambio di domani; il mandato
 aggiornato vieta la formula da domani in poi. Non modificata a mano (i dati del
 giorno non si ritoccano fuori dal briefing).
+
+## Dal redesign v2 (20 agosto 2026, fine Fase 5)
+
+1. **FCP 2,3 s su 4G simulato (obiettivo: <1,5 s).** L'app è un file unico coi
+   dati del giorno dentro; il collo è trasferimento+parse. Strada proposta:
+   pre-render statico della vista Oggi in `costruisci.py` (il briefing rigenera
+   già index.html ogni mattina, quindi il pre-render sarebbe sempre fresco) con
+   idratazione al boot. Da fare con le sue sentinelle, non in fretta.
+2. **Il pannello auto ha uno stile proprio scuro-fisso** (fondo nero, bottoni
+   #1c1c1e/#0a84ff) non unificato coi token semantici. Deliberato — in auto il
+   fondo scuro fisso massimizza il contrasto — ma i colori andrebbero comunque
+   espressi coi token.
+3. **Desktop senza idee proprie oltre le due colonne di Oggi.** L'uso reale è
+   quasi solo iPhone (indicazione esplicita del 19 agosto), quindi il desktop è
+   un adattamento corretto e basta. Se l'uso desktop crescesse: colonna destra
+   anche per Rassegna, scorciatoie da tastiera documentate.
+4. **Riordino automatico per rilevanza: deciso di NON farlo** (deviazione dal
+   pattern 3 del benchmark, motivata in CHANGELOG_UX.md): l'ordine del briefing
+   È la gerarchia editoriale. Se un giorno servisse, va fatto lato briefing (che
+   decide l'ordine), mai lato client.
+5. **Emoji nei contenuti della Rassegna** (marcatori di sezione 📜 📣 🧪 ⚖️ e
+   avvisi ⚠️): conservate deliberatamente — lì sono informazione compatta e le
+   sentinelle le esigono. Se si vorrà uniformare anche quelle, va aggiornata
+   `rassHTML` insieme a `test/rassegna.py`.

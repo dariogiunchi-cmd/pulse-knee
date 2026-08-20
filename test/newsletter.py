@@ -44,17 +44,17 @@ with sync_playwright() as p:
                 chk(tag+"tab Newsletter", pg.locator("button:has-text('Newsletter')").count() == 1)
 
                 # --- 3. empty state
-                pg.click("button:has-text('✉️ Newsletter')")
+                pg.click("button:has-text('Newsletter')")
                 pg.wait_for_timeout(200)
                 intro = pg.inner_text("#nlintro")
                 chk(tag+"stato vuoto spiegato", "Come funziona" in intro, intro[:60])
                 chk(tag+"4 slot vuoti", pg.locator("#nlslots .nlslot").count() == 4)
                 out0 = pg.inner_text("#nlout")
-                chk(tag+"testo vuoto istruttivo", "📹 Video" in out0 and "blog" in out0, out0[:80])
+                chk(tag+"testo vuoto istruttivo", "«Video»" in out0 and "blog" in out0, out0[:80])
                 chk(tag+"contatore 0 di 4", pg.inner_text("#nlcount") == "0 di 4", pg.inner_text("#nlcount"))
 
                 # --- 4. sceglie i lavori del giorno che hanno i testi (i numeri cambiano ogni mattina)
-                pg.click("button:has-text('📄 Oggi')")
+                pg.click("button:has-text('Oggi')")
                 pg.wait_for_timeout(150)
                 for n in SCELTI:
                     pg.evaluate(f"pickWeek(null,{n})")
@@ -75,7 +75,7 @@ with sync_playwright() as p:
                 chk(tag+f"{len(SCELTI)} pulsanti Video accesi", on == len(SCELTI), on)
 
                 # --- 7. newsletter view filled
-                pg.click("button:has-text('✉️ Newsletter')")
+                pg.click("button:has-text('Newsletter')")
                 pg.wait_for_timeout(200)
                 chk(tag+f"{len(SCELTI)} slot pieni", pg.locator("#nlslots .nlnum.full").count() == len(SCELTI))
                 chk(tag+f"contatore {len(SCELTI)} di 4", pg.inner_text("#nlcount") == f"{len(SCELTI)} di 4")
@@ -115,7 +115,7 @@ with sync_playwright() as p:
 
                 # --- 11. persistence across reload
                 pg.reload(); pg.wait_for_timeout(400)
-                pg.click("button:has-text('✉️ Newsletter')"); pg.wait_for_timeout(200)
+                pg.click("button:has-text('Newsletter')"); pg.wait_for_timeout(200)
                 chk(tag+"stato salvato dopo ricarica", pg.locator("#nlslots .nlnum.full").count() == len(SCELTI))
                 chk(tag+"link video salvato", "TEST123" in pg.inner_text("#nlout"))
 
@@ -135,7 +135,7 @@ with sync_playwright() as p:
                 pg.wait_for_timeout(200)
 
             # --- layout: nothing overflows on the newsletter view
-            pg.click("button:has-text('✉️ Newsletter')")
+            pg.click("button:has-text('Newsletter')")
             pg.wait_for_timeout(250)
             ow = pg.evaluate("""() => {
               var bad=[]; var vw=document.documentElement.clientWidth;

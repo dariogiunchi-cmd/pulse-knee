@@ -60,7 +60,7 @@ with sync_playwright() as p:
     haL=pg.evaluate('n => !!(typeof LINKS!=="undefined" && LINKS[n] && LINKS[n].length)', PRIMO)
     if haL: chk('COLLEGATI' in pg.inner_text(f'#it-{PRIMO}').upper(),'campo "Collegati nel tempo" presente')
     else: chk(pg.evaluate('typeof linksHTML==="function"'),'collegamenti nel tempo: nessuno oggi, la funzione c\'è')
-    # salva
+    # salva — la scheda è già aperta dal tocco sopra; le azioni sono visibili (redesign A·2)
     pg.click(f'#it-{PRIMO} .ib.save'); pg.wait_for_timeout(200)
     chk(pg.eval_on_selector('#savedCount','e=>e.textContent')=='1','tocco su ★ → contatore Salvati = 1')
     # filtro
@@ -103,10 +103,13 @@ with sync_playwright() as p:
     def tronchi_di(sel):
         return pg.evaluate("""s=>{const a=document.querySelector(s);if(!a)return 0;
           return [...a.children].filter(c=>c.scrollWidth>c.clientWidth+1).length;}""", sel)
+    # redesign A·2: le azioni si mostrano solo a scheda aperta — si misura la
+    # PRIMA scheda tenuta aperta, che è la condizione in cui l'utente le vede
+    pg.evaluate(f"var e=document.getElementById('it-{PRIMO}');if(e&&!e.classList.contains('open'))toggle({PRIMO})")
     for larg in (320, 375, 393):
         pg.set_viewport_size({'width':larg,'height':900})
         pg.click(".tabs button:has-text('Oggi')"); pg.wait_for_timeout(300)
-        for sel, nome in (('.acts','pulsanti della scheda'), ('.pick .act','pulsanti del lavoro del giorno')):
+        for sel, nome in (('.item.open .acts','pulsanti della scheda'), ('.pick .act','pulsanti del lavoro del giorno')):
             r = righe_di(sel)
             chk(r == 1, f'{nome} su una riga sola a {larg} px' + ('' if r==1 else f' (ne servono {r})'))
             chk(tronchi_di(sel) == 0, f'{nome}: nessuna etichetta tagliata a {larg} px')
@@ -115,7 +118,7 @@ with sync_playwright() as p:
     pg.evaluate("""()=>{document.querySelectorAll('.ib .t').forEach(e=>e.style.fontSize='15.5px');
       document.querySelectorAll('.pick .act .btn').forEach(e=>e.style.fontSize='17px');}""")
     pg.wait_for_timeout(200)
-    chk(righe_di('.acts')==1,'pulsanti della scheda su una riga anche con il testo ingrandito del 35%')
+    chk(righe_di('.item.open .acts')==1,'pulsanti della scheda su una riga anche con il testo ingrandito del 35%')
     chk(righe_di('.pick .act')==1,'pulsanti del lavoro del giorno idem')
 
     chk(len(errs)==0,'nessun errore JavaScript durante l\'uso')

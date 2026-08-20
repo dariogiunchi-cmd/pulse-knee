@@ -109,7 +109,7 @@ document.getElementById('histq').value='menisco'; searchHist();
 ok(document.getElementById('histres').innerHTML.length>50,'ricerca archivio "menisco" → risultati');
 document.getElementById('histq').value='zzzznope'; searchHist();
 ok(document.getElementById('histres').innerHTML.indexOf('Nessun risultato')>=0,'ricerca senza esito → messaggio corretto');
-document.getElementById('histq').value=''; searchHist(); ok(document.getElementById('histres').innerHTML==='','ricerca vuota → pulita');
+document.getElementById('histq').value=''; searchHist(); ok(document.getElementById('histres').innerHTML.indexOf('Cerca per tecnica')>=0,'ricerca vuota → invito con esempi, non il vuoto');
 
 console.log('\n--- 4. VISTA DUELLO ---');
 renderDuel();
@@ -133,7 +133,12 @@ ok(NN.every(function(n){return readMin(A[n])>=1}),'tempo calcolato su tutte le '
 console.log('\n--- 6. AUTOCRITICA SETTIMANALE ---');
 renderAudit();
 ok(document.getElementById('auditbox').innerHTML.indexOf('Autocritica della settimana')>=0,'riquadro autocritica presente');
-ok(document.getElementById('auditbox').innerHTML.indexOf('Swissmedic')>=0,'elenca le fonti non verificate');
+// DERIVATO dai dati del giorno, mai una fonte scritta a mano: il 20 agosto la
+// parola fissa «Swissmedic» ha fatto rosso su un briefing VALIDO (quella fonte
+// era verificata, quindi giustamente assente) — difetto della classe vietata.
+ok(AUDIT.nonverificate.length>0 && AUDIT.nonverificate.every(function(n){
+  return document.getElementById('auditbox').innerHTML.indexOf(n)>=0;
+}),'elenca tutte le '+AUDIT.nonverificate.length+' fonti non verificate del giorno');
 ok(document.getElementById('auditbox').innerHTML.indexOf('fuori finestra')>=0,'dichiara quanti lavori ha scartato');
 
 console.log('\n--- 7. NON-REGRESSIONE (tutto il resto) ---');

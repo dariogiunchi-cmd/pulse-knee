@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class="avvio">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#0071e3">
+<meta name="theme-color" content="#0A63C4">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="PULSE">
@@ -12,174 +12,252 @@
 <link rel="icon" href="icon-192.png">
 <title>PULSE · knee</title>
 <style>
-  :root{--bg:#fff;--tint:#f2f2f5;--tint2:#f7f7f9;--line:rgba(0,0,0,.10);--line2:rgba(0,0,0,.06);--txt:#1d1d1f;--dim:#6e6e73;--dim2:#8e8e93;--blue:#0071e3;--red:#ff3b30;--orange:#ff9500;--green:#34c759;--gray:#8e8e93;--gold:#b8860b;--sh:0 1px 2px rgba(0,0,0,.05),0 6px 20px rgba(0,0,0,.06);--sh2:0 1px 2px rgba(0,0,0,.06),0 14px 40px rgba(0,0,0,.10);--r:16px}
+  :root{
+  /* SEMANTICI — il colore è informazione (docs/DESIGN_SYSTEM.md §1) */
+  --allerta:#C0362C;--attrito:#B45309;--pratica:#1E7A3C;--contesto:#8A8A8E;--azione:#0A63C4;
+  --inchiostro:#1B1B1E;--carta:#fff;--fondo:#F4F4F6;--su-colore:#fff;
+  --bg:var(--carta);--tint:#F0F0F3;--tint2:#F6F6F8;--line:rgba(0,0,0,.10);--line2:rgba(0,0,0,.06);
+  --txt:var(--inchiostro);--dim:#5F5F66;--dim2:#69696E;
+  /* alias storici → semantici: il codice esistente continua a valere */
+  --blue:var(--azione);--red:var(--allerta);--orange:var(--attrito);--green:var(--pratica);--gray:var(--contesto);--gold:#8a6d00;
+  /* SCALA TIPOGRAFICA — 6 corpi (§2); 9px è la micro-etichetta di componente */
+  --t-eroe:28px;--t-titolo:20px;--t-testo:17px;--t-sec:15px;--t-meta:13px;--t-micro:11px;--t-badge:9px;
+  /* SPAZIATURA 4px e RAGGI (§3) */
+  --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;
+  --r1:8px;--r2:12px;--r3:16px;--r:var(--r3);
+  --sh:0 1px 2px rgba(0,0,0,.05),0 6px 20px rgba(0,0,0,.06);--sh2:0 1px 2px rgba(0,0,0,.06),0 14px 40px rgba(0,0,0,.10)}
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0}
   body{background:var(--bg);color:var(--txt);font:15px/1.45 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;padding:16px 14px calc(40px + env(safe-area-inset-bottom));letter-spacing:-.01em}
   .wrap{max-width:1160px;margin:0 auto}a{color:var(--blue);text-decoration:none}
   .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto;display:inline-block}
   .red{background:var(--red)}.orange{background:var(--orange)}.green{background:var(--green)}.gray{background:var(--gray)}
-  .mono{width:36px;height:36px;border-radius:9px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:9px;line-height:1;box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 1px 2px rgba(0,0,0,.14)}
-  .m-kssta{background:linear-gradient(160deg,#2a93ad,#1d6b7e)}.m-ojsm{background:linear-gradient(160deg,#37a457,#22823f)}.m-arth{background:linear-gradient(160deg,#d33a46,#a5222d)}.m-knee{background:linear-gradient(160deg,#c8781f,#a05a12)}.m-jeo{background:linear-gradient(160deg,#7d5bc6,#5c3fa6)}.m-jrs{background:linear-gradient(160deg,#17909e,#0d6b77)}.m-gray{background:linear-gradient(160deg,#8b9096,#6b7178)}.m-npj{background:linear-gradient(160deg,#3a3f45,#23272c)}.m-oac{background:linear-gradient(160deg,#6f9a4e,#516f39)}
+  .mono{width:36px;height:36px;border-radius:9px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;color:var(--su-colore);font-weight:800;font-size:var(--t-badge);line-height:1;box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 1px 2px rgba(0,0,0,.14)}
+  .m-kssta{background:#1d6b7e}.m-ojsm{background:#22823f}.m-arth{background:#a5222d}.m-knee{background:#a05a12}.m-jeo{background:#5c3fa6}.m-jrs{background:#0d6b77}.m-gray{background:#6b7178}.m-npj{background:#23272c}.m-oac{background:#516f39}
   .top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
-  .wel{border:1.5px solid var(--acc,#2b6cb0);border-radius:14px;padding:14px;margin:0 0 14px;font-size:14px;line-height:1.55}
-  .wel > b{display:block;margin-bottom:6px;font-size:15px}
-  .gvx{padding:14px 16px;overflow:auto;font-size:14px;line-height:1.55}
+  html.avvio .wrap{visibility:hidden}
+  .wel{border:1.5px solid var(--acc,#2b6cb0);border-radius:14px;padding:14px;margin:0 0 14px;font-size:var(--t-sec);line-height:1.55}
+  .wel > b{display:block;margin-bottom:6px;font-size:var(--t-sec)}
+  .gvx{padding:14px 16px;overflow:auto;font-size:var(--t-sec);line-height:1.55}
   .gvx details{margin:0 0 8px;background:var(--tint2);border-radius:11px;padding:9px 12px}
   .gvx summary{font-weight:600;cursor:pointer}
   .gvx ul{margin:7px 0 2px;padding-left:19px}.gvx li{margin:3px 0}
   /* modalità auto: sempre scura, contrasto massimo, tasti da colpo d'occhio */
   #autoov{align-items:stretch}
-  .autopan{background:#000;color:#fff;width:100%;display:flex;flex-direction:column;justify-content:space-between;padding:max(20px,env(safe-area-inset-top)) 18px max(20px,env(safe-area-inset-bottom))}
-  .autonow{font-size:22px;line-height:1.4;font-weight:600;min-height:92px}
-  .autonow small{display:block;font-size:15px;color:#9a9aa2;font-weight:500;margin-bottom:8px}
+  .autopan{background:#000;color:var(--su-colore);width:100%;display:flex;flex-direction:column;justify-content:space-between;padding:max(20px,env(safe-area-inset-top)) 18px max(20px,env(safe-area-inset-bottom))}
+  .autonow{font-size:var(--t-titolo);line-height:1.4;font-weight:600;min-height:92px}
+  .autonow small{display:block;font-size:var(--t-sec);color:#9a9aa2;font-weight:500;margin-bottom:8px}
   .autogrid{display:flex;gap:14px;justify-content:center;margin:10px 0}
-  .autogrid button{flex:1;max-width:170px;height:96px;border-radius:22px;border:none;background:#1c1c1e;color:#fff;font-size:38px;cursor:pointer}
+  .autogrid button{flex:1;max-width:170px;height:96px;border-radius:22px;border:none;background:#1c1c1e;color:var(--su-colore);font-size:38px;cursor:pointer}
+  .autogrid button svg{width:40px;height:40px;vertical-align:middle}
   .autogrid button.pri{background:#0a84ff}
   .autogrid button.on{background:#b00020}
-  .autoesci{margin-top:12px;height:52px;border-radius:14px;border:1.5px solid #3a3a3c;background:none;color:#9a9aa2;font-size:16px;cursor:pointer}
-  .autovel{text-align:center;color:#9a9aa2;font-size:14px;margin-top:6px}
-  .brand{font-size:20px;font-weight:700;letter-spacing:-.03em}.brand span{color:var(--dim2);font-weight:600}
-  .date{color:var(--dim);font-size:13px;width:100%;order:5}@media(min-width:560px){.date{width:auto;order:0}}
-  .kpi{font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px;background:#fff;box-shadow:var(--sh);color:var(--dim);display:flex;gap:5px;align-items:center}.kpi b{color:var(--txt)}.kpi.v{color:#248a3d}
-  .audiobar{display:flex;align-items:center;gap:12px;background:#fff;border-radius:16px;box-shadow:var(--sh);padding:11px 14px;margin-bottom:16px;flex-wrap:wrap}
-  .audiobar .play{width:46px;height:46px;border-radius:50%;border:none;background:var(--blue);color:#fff;font-size:17px;cursor:pointer;flex:0 0 auto}
-  .audiobar .tx b{font-size:14px}.audiobar .tx small{display:block;color:var(--dim);font-size:12px}
+  .autoesci{margin-top:12px;height:52px;border-radius:14px;border:1.5px solid #3a3a3c;background:none;color:#9a9aa2;font-size:var(--t-testo);cursor:pointer}
+  .autovel{text-align:center;color:#9a9aa2;font-size:var(--t-sec);margin-top:6px}
+  .brand{font-size:var(--t-titolo);font-weight:700;letter-spacing:-.03em;margin:0}.brand span{color:var(--dim2);font-weight:600}
+  .date{color:var(--dim);font-size:var(--t-meta);width:100%;order:5}@media(min-width:560px){.date{width:auto;order:0}}
+  .kpi{font-size:var(--t-meta);font-weight:600;padding:3px 10px;border-radius:20px;background:var(--carta);box-shadow:var(--sh);color:var(--dim);display:flex;gap:5px;align-items:center}.kpi b{color:var(--txt)}.kpi.v{color:var(--pratica)}
+  /* L'EROE: la prima schermata è la risposta del giorno (direzione A) */
+  .eroe{padding:2px 2px var(--s4)}
+  .eroe .date{display:block;width:auto;order:0;margin-bottom:var(--s2)}
+  .eroe #freshbox .fresh{background:none;padding:0;margin:0 0 var(--s2);border-radius:0;font-weight:600}
+  .verdict.calm{display:block;background:none;padding:0;margin:0 0 var(--s3);color:var(--pratica);font-size:var(--t-eroe);line-height:1.22;font-weight:700;letter-spacing:-.02em}
+  .econta{display:flex;flex-wrap:wrap;gap:var(--s2) var(--s4);align-items:center}
+  .kpi.econ{background:none;box-shadow:none;padding:0;font-weight:500}.kpi.econ b{font-variant-numeric:tabular-nums}
+  .spark{display:inline-flex;align-items:flex-end;gap:3px;height:22px}
+  .sbar{width:5px;border-radius:2px;background:var(--line);display:inline-block}
+  .sbar.caldo{background:var(--attrito)}
+  .slab{font-size:var(--t-micro);color:var(--dim2);margin-left:5px;align-self:center}
+  .audiobar{display:flex;align-items:center;gap:10px;background:var(--carta);border-radius:var(--r2);box-shadow:var(--sh);padding:8px 12px;margin-bottom:var(--s4)}
+  .audiobar .play{width:44px;height:44px;border-radius:50%;border:none;background:var(--azione);color:var(--su-colore);font-size:var(--t-testo);cursor:pointer;flex:0 0 auto;display:flex;align-items:center;justify-content:center}
+  .audiobar .play svg{width:22px;height:22px}
+  .play.rec{background:var(--allerta)}
+  .audiobar .tx{min-width:0}.audiobar .tx b{font-size:var(--t-sec)}.audiobar .tx small{display:block;color:var(--dim);font-size:var(--t-meta);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .tabs{display:flex;background:#ececef;border-radius:12px;padding:3px;gap:2px;margin-bottom:16px;overflow:auto}
-  .tabs button{font:inherit;font-size:13px;font-weight:600;padding:8px 12px;border-radius:9px;border:none;background:transparent;color:var(--dim);cursor:pointer;white-space:nowrap;flex:1}
-  .tabs button.on{background:#fff;color:var(--txt);box-shadow:0 1px 3px rgba(0,0,0,.14)}
-  .tabs .b{background:var(--blue);color:#fff;border-radius:20px;padding:0 6px;font-size:10px;margin-left:4px}
+  .tabs button{font:inherit;font-size:var(--t-meta);font-weight:600;padding:8px 10px;border-radius:9px;border:none;background:transparent;color:var(--dim);cursor:pointer;white-space:nowrap;flex:1;display:flex;align-items:center;justify-content:center;gap:6px}
+  .tabs button svg{width:19px;height:19px;flex:0 0 auto}
+  .tabs button.on{background:var(--carta);color:var(--txt);box-shadow:0 1px 3px rgba(0,0,0,.14)}
+  /* Su telefono la navigazione sta sotto il pollice: barra fissa in basso,
+     icona sopra etichetta, bersagli pieni (Apple HIG). */
+  @media(max-width:719px){
+    .tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;margin:0;border-radius:0;padding:6px 4px calc(6px + env(safe-area-inset-bottom));background:var(--carta);box-shadow:0 -1px 0 var(--line2),0 -8px 24px rgba(0,0,0,.06)}
+    .tabs button{flex-direction:column;gap:2px;font-size:var(--t-micro);padding:4px 2px;min-height:48px}
+    .tabs button.on{background:none;box-shadow:none;color:var(--azione)}
+    body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+  }
+  .tabs .b{background:var(--blue);color:var(--su-colore);border-radius:20px;padding:0 6px;font-size:var(--t-badge);margin-left:4px}
   .view{display:none}.view.on{display:block}
   .grid{display:grid;grid-template-columns:1fr;gap:18px}@media(min-width:1000px){.grid{grid-template-columns:minmax(0,1.7fr) minmax(290px,1fr)}}
-  .pick{position:relative;background:#fff;border-radius:var(--r);box-shadow:var(--sh2);padding:15px 16px;margin-bottom:18px;overflow:hidden}
-  .pick::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#e8c15a,#c99b1e)}
-  .pick .prev{width:100%;height:104px;border-radius:11px;background:#eef0f2;margin-bottom:12px;display:flex;align-items:center;justify-content:center;color:var(--dim2);font-size:11.5px;border:1px solid var(--line2);text-align:center;padding:10px}
-  .ey{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;flex-wrap:wrap}
+  .pick{position:relative;background:var(--carta);border-radius:var(--r);box-shadow:var(--sh2);padding:15px 16px;margin-bottom:18px;overflow:hidden}
+  .pick::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:#B8860B}
+  .pick .prev{width:100%;height:104px;border-radius:11px;background:#eef0f2;margin-bottom:12px;display:flex;align-items:center;justify-content:center;color:var(--dim2);font-size:var(--t-meta);border:1px solid var(--line2);text-align:center;padding:10px}
+  .ey{display:flex;align-items:center;gap:8px;font-size:var(--t-micro);font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;flex-wrap:wrap}
   .ey .meta{color:var(--dim2);font-weight:600;letter-spacing:0;text-transform:none}
-  .pick h1{margin:0;font-size:18px;line-height:1.28;font-weight:700;letter-spacing:-.02em}
-  .pick .aut{font-size:11.5px;color:var(--dim2);margin-top:6px}
-  .pick .why{font-size:13px;color:var(--dim);margin-top:6px;line-height:1.5}
+  .pick .pkh{margin:0;font-size:var(--t-titolo);line-height:1.28;font-weight:700;letter-spacing:-.02em}
+  .pick .aut{font-size:var(--t-meta);color:var(--dim2);margin-top:6px}
+  .pick .why{font-size:var(--t-meta);color:var(--dim);margin-top:6px;line-height:1.5}
   /* Anche qui «★ Salva» finiva da solo su una riga. Stessa cura della riga delle
      schede: nessun a capo, e le tre voci si dividono lo spazio. */
   .act{display:flex;gap:6px;margin-top:12px;flex-wrap:nowrap}
   .act .btn{flex:1 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:8px 11px}
   /* sotto i 360 px (iPhone SE, o testo ingrandito) le etichette si stringono invece
      di farsi tagliare: meglio un carattere più piccolo che una parola mozzata */
-  @media(max-width:359px){.act .btn{font-size:11px;padding:8px 7px}.ib .t{font-size:10.5px}}
-  .btn{font-size:12.5px;font-weight:600;padding:8px 14px;border-radius:980px;border:none;cursor:pointer;font-family:inherit;background:var(--tint);color:var(--txt)}
-  .btn.pri{background:var(--blue);color:#fff}.btn.on{background:var(--gold);color:#fff}.btn.soc{background:#111;color:#fff}
-  .sl{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.02em;color:var(--dim);margin:14px 2px 10px;text-transform:uppercase}.sl:first-child{margin-top:0}
-  .sl .ic{width:22px;height:22px;border-radius:6px;background:var(--sc,#c7c7cc);display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px}
+  @media(max-width:359px){.act .btn{font-size:var(--t-micro);padding:8px 7px}.ib .t{font-size:var(--t-badge)}}
+  .btn{font-size:var(--t-meta);font-weight:600;padding:8px 14px;border-radius:980px;border:none;cursor:pointer;font-family:inherit;background:var(--tint);color:var(--txt)}
+  .btn.pri{background:var(--blue);color:var(--su-colore)}.btn.on{background:var(--gold);color:var(--su-colore)}.btn.soc{background:#111;color:var(--su-colore)}
+  .sl{display:flex;align-items:center;gap:9px;font-size:var(--t-meta);font-weight:700;letter-spacing:.02em;color:var(--dim);margin:14px 2px 10px;text-transform:uppercase}.sl:first-child{margin-top:0}
+  .sl .ic{width:22px;height:22px;border-radius:6px;background:var(--sc,#c7c7cc);display:flex;align-items:center;justify-content:center;color:var(--su-colore);font-size:var(--t-meta)}
+  .sl .ic svg{width:13px;height:13px;display:block}
   .sl .n{margin-left:auto;color:var(--dim2);font-weight:600;text-transform:none}
-  .r-res{--sc:#0071e3}.r-tech{--sc:#30b0c7}.r-cong{--sc:#ff9500}.r-soc{--sc:#af52de}.r-disc{--sc:#34c759}.r-focus{--sc:#b8860b}.r-arch{--sc:#8e8e93}
-  .card{background:#fff;border-radius:var(--r);box-shadow:var(--sh);overflow:hidden}
+  .r-res{--sc:#0071e3}.r-tech{--sc:#147D95}.r-cong{--sc:#B45309}.r-soc{--sc:#af52de}.r-disc{--sc:#1E7A3C}.r-focus{--sc:#b8860b}.r-arch{--sc:#6E6E73}
+  .card{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden}
   .item{border-bottom:1px solid var(--line2)}.item:last-child{border-bottom:0}
-  .row{display:flex;align-items:flex-start;gap:11px;padding:12px 14px;cursor:pointer}.row:active{background:var(--tint2)}
-  .row .tt{min-width:0;flex:1}.row .h{font-size:14.5px;font-weight:600;letter-spacing:-.01em;line-height:1.32}
-  .row .v{font-size:12.5px;color:var(--dim);line-height:1.4;margin-top:2px}
-  .row .aut{font-size:11px;color:var(--dim2);margin-top:4px}
-  .row .rt{display:flex;flex-direction:column;align-items:flex-end;gap:7px;flex:0 0 auto}.row .meta{font-size:10.5px;color:var(--dim2);white-space:nowrap}
-  .chev{color:var(--dim2);font-size:16px;transition:.2s;line-height:1}.item.open .chev{transform:rotate(90deg)}
+  .row{display:flex;align-items:flex-start;gap:var(--s3);padding:var(--s3) var(--s4);cursor:pointer}.row:active{background:var(--tint2)}
+  .row .dot{margin-top:7px}
+  .row .tt{min-width:0;flex:1}
+  .row .h{font-size:var(--t-testo);font-weight:600;letter-spacing:-.01em;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .row .v{font-size:var(--t-sec);color:var(--dim);line-height:1.4;margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .metar{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;margin-top:6px;font-size:var(--t-meta);color:var(--dim2)}
+  .metar .meta{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+  .metar .rt2{font-variant-numeric:tabular-nums}
+  .savmark{color:var(--gold);font-weight:700}
+  /* DENSITÀ COMPATTA (dichiarata): righe da scansione per il lavoro settimanale.
+     Da desktop la lista schede si stringe da sola; .card.compatta vale ovunque. */
+  .crow{display:flex;align-items:center;gap:10px;padding:8px 12px;border-bottom:1px solid var(--line2)}
+  .crow:last-child{border-bottom:0}
+  .crow .ct{min-width:0;flex:1;display:flex;flex-direction:column;gap:1px}
+  .crow .ch{display:block;max-width:100%;font-size:var(--t-sec);font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .crow .cm{display:block;max-width:100%;font-size:var(--t-meta);color:var(--dim2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .crow.on .ch{color:var(--azione)}
+  .cpick{width:44px;height:36px;border-radius:9px;border:1px solid var(--line);background:var(--carta);color:var(--dim);font-size:var(--t-testo);cursor:pointer;flex:0 0 auto}
+  .cpick.on{background:var(--azione);border-color:var(--azione);color:var(--su-colore)}
+  @media(min-width:1024px){
+    .row{padding:var(--s2) var(--s4)}
+    .row .v{-webkit-line-clamp:1}
+  }
+  .chev{color:var(--dim2);font-size:var(--t-testo);transition:.2s;line-height:1}.item.open .chev{transform:rotate(90deg)}
   /* I sei pulsanti andavano a capo e «Dettagli» finiva da solo su una riga sua.
      Non basta stringere i margini: con il testo ingrandito nelle impostazioni di iOS
      il problema torna. Qui i tre pulsanti con etichetta si dividono in parti uguali
      lo spazio che avanza dopo le tre icone, quindi la riga sta su una riga sempre,
      su qualunque larghezza e con qualunque dimensione del carattere. */
-  .acts{display:flex;gap:5px;padding:0 14px 12px;flex-wrap:nowrap}
+  /* RIVELAZIONE PROGRESSIVA: le azioni esistono nel DOM (stato e collaudi) ma si
+     mostrano solo a scheda aperta — in lista la scheda è da leggere, non da comandare */
+  .acts{display:none}
+  .item.open .acts{display:flex;gap:6px;padding:0 14px 12px;flex-wrap:nowrap}
   .acts .ib{flex:0 0 auto}
   .acts .ib.lbl{flex:1 1 0;min-width:0}
   .acts .ib.lbl .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .ib{height:34px;min-width:32px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--dim);font-size:14px;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0 7px}
-  .ib.save.on{background:var(--gold);border-color:var(--gold);color:#fff}.ib.up.on{background:var(--green);border-color:var(--green);color:#fff}.ib.down.on{background:var(--red);border-color:var(--red);color:#fff}
-  .ib .t{font-size:11.5px;font-weight:600;margin-left:4px}.ib.soc{background:#111;color:#fff;border-color:#111}
-  .ib.vid.on{background:#af52de;border-color:#af52de;color:#fff}
+  .ib{height:44px;min-width:44px;border-radius:9px;border:1px solid var(--line);background:var(--carta);color:var(--dim);font-size:var(--t-sec);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0 7px}
+  .ib>svg{width:20px;height:20px;flex:0 0 auto}
+  button:focus-visible,[role="button"]:focus-visible,a:focus-visible,.fchip:focus-visible{outline:2px solid var(--azione);outline-offset:2px}
+  .ib .t svg{width:15px;height:15px;vertical-align:-3px;margin-right:2px}
+  .btn svg{width:16px;height:16px;vertical-align:-3px;margin-right:3px}
+  .ib.save.on{background:var(--gold);border-color:var(--gold);color:var(--su-colore)}.ib.up.on{background:var(--green);border-color:var(--green);color:var(--su-colore)}.ib.down.on{background:var(--red);border-color:var(--red);color:var(--su-colore)}
+  .ib .t{font-size:var(--t-meta);font-weight:600;margin-left:4px}.ib.soc{background:#111;color:var(--su-colore);border-color:#111}
+  .ib.vid.on{background:#af52de;border-color:#af52de;color:var(--su-colore)}
   .kpi.w{color:#c77700;background:#fff4e0;border-color:#f2c98a}
-  .sgl.real{margin-top:6px;font-weight:500;color:var(--dim);font-size:11px;letter-spacing:0}
+  .sgl.real{margin-top:6px;font-weight:500;color:var(--dim);font-size:var(--t-micro);letter-spacing:0}
   .sgl.real b{color:var(--txt);font-weight:700}
   .det{display:none;padding:2px 14px 14px}.item.open .det{display:block}
   .fld{padding:9px 0;border-bottom:1px solid var(--line2)}.fld:last-of-type{border-bottom:0}
-  .fld .k{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin-bottom:3px}.fld .val{font-size:13px;line-height:1.5;color:#2a2a2c}
+  .fld .k{font-size:var(--t-badge);font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin-bottom:3px}.fld .val{font-size:var(--t-meta);line-height:1.5;color:#2a2a2c}
   .detlinks{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
-  .tile{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:13px 15px;margin-bottom:12px}
-  .tile.curio{background:linear-gradient(160deg,#fff,#f4f7ff);border:1px solid rgba(0,113,227,.18)}
-  .muted{font-size:12.5px;color:var(--dim);line-height:1.5}.muted b{color:var(--txt)}
-  .copertura{font-size:12.5px;color:var(--dim);line-height:1.5;border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:0 0 10px}
-  .rsez{margin:0 0 14px}.rtit{font-size:13.5px;font-weight:700;color:var(--txt);margin:0 0 6px}
+  .tile{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:13px 15px;margin-bottom:12px}
+  .tile.curio{background:var(--carta);border:1px solid rgba(10,99,196,.22)}
+  .muted{font-size:var(--t-meta);color:var(--dim);line-height:1.5}.muted b{color:var(--txt)}
+  .copertura{font-size:var(--t-meta);color:var(--dim);line-height:1.5;border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:0 0 10px}
+  .rsez{margin:0 0 14px}.rtit{font-size:var(--t-meta);font-weight:700;color:var(--txt);margin:0 0 6px}
   details.rsez{background:var(--tint2);border-radius:11px;padding:9px 12px;margin:0 0 9px}
   details.rsez summary.rtit{cursor:pointer;margin:0}
   details.rsez[open] summary.rtit{margin:0 0 7px}
   .rsomm{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
-  .rchip{font-size:12px;font-weight:600;padding:5px 10px;border-radius:14px;background:var(--tint2);color:var(--dim)}
+  .rchip{font-size:var(--t-meta);font-weight:600;padding:5px 10px;border-radius:14px;background:var(--tint2);color:var(--dim)}
   .rchip.rHotC{background:rgba(255,59,48,.14);color:#c62828}
-  .rgrp{margin:0 0 8px}.rgt{font-size:12px;font-weight:600;color:var(--dim);margin:2px 0}
-  .ritem{font-size:13px;color:var(--txt);line-height:1.45;border:1px solid var(--line);border-radius:10px;padding:8px 11px;margin:0 0 6px;overflow-wrap:anywhere}
-  .ritem a{color:inherit}.rmeta{font-size:11.5px;color:var(--dim);margin-top:2px}
+  .skel{display:flex;flex-direction:column;gap:10px;padding:4px 0}
+  .skb{height:44px;border-radius:11px;background:var(--tint2);animation:skp 1.1s ease-in-out infinite alternate}
+  @keyframes skp{from{opacity:.55}to{opacity:1}}
+  @media(prefers-reduced-motion:reduce){.skb{animation:none}}
+  .rgrp{margin:0 0 8px}.rgt{font-size:var(--t-meta);font-weight:600;color:var(--dim);margin:2px 0}
+  .ritem{font-size:var(--t-meta);color:var(--txt);line-height:1.45;border:1px solid var(--line);border-radius:10px;padding:8px 11px;margin:0 0 6px;overflow-wrap:anywhere}
+  .ritem a{color:inherit}.rmeta{font-size:var(--t-meta);color:var(--dim);margin-top:2px}
   .ritem.rHot{border-color:rgba(255,59,48,.45)}
-  .rko{font-size:12.5px;color:var(--dim);border:1px dashed var(--line);border-radius:10px;padding:8px 11px;margin:0 0 8px}
+  .rko{font-size:var(--t-meta);color:var(--dim);border:1px dashed var(--line);border-radius:10px;padding:8px 11px;margin:0 0 8px}
   .spBtn{display:block;width:100%;margin:8px 0;text-align:center}
   .spEspl{cursor:pointer;text-decoration:underline;text-underline-offset:2px}
-  .tcong{display:flex;gap:10px;align-items:flex-start}.tcong .tt .h{font-size:13px;font-weight:600}.tcong .tt .v{font-size:11.5px;color:var(--dim);margin-top:2px}
-  .lab{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin:2px 0 7px}
-  .tag{display:inline-flex;align-items:center;gap:6px;background:var(--tint);color:#3a3a3c;font-size:12px;font-weight:500;padding:5px 11px;border-radius:13px;margin:3px 5px 3px 0}.tag b{color:var(--dim2);font-weight:700;cursor:pointer;font-size:14px}
-  .sugg{margin-top:10px;font-size:12.5px;background:rgba(52,199,89,.09);border-radius:10px;padding:10px 12px}.sugg b{color:#248a3d}.sugg .sb{display:flex;gap:8px;margin-top:8px}
-  .add{display:flex;gap:8px;margin-top:11px}.add input{flex:1;min-width:0;font:inherit;font-size:14px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);outline:none}.add input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,113,227,.12)}
-  .add button{font:inherit;font-size:13px;font-weight:600;padding:10px 15px;border-radius:10px;border:none;background:var(--blue);color:#fff;cursor:pointer}
-  .seg{display:inline-flex;background:var(--tint);border-radius:10px;padding:3px;gap:2px}.seg button{font:inherit;font-size:12.5px;font-weight:600;padding:6px 13px;border-radius:8px;border:none;background:transparent;color:var(--dim);cursor:pointer}.seg button.on{background:#fff;color:var(--txt);box-shadow:0 1px 3px rgba(0,0,0,.12)}
-  .rowset{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid var(--line2)}.rowset:first-of-type{border-top:0}.rowset .k{font-size:13.5px;font-weight:600}.rowset .k small{display:block;font-weight:400;color:var(--dim2);font-size:11.5px;margin-top:2px}
-  .sec{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:15px 16px;margin-bottom:14px}.sec h2{font-size:12.5px;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:var(--dim);margin:0 0 10px}
-  .empty{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:34px 20px;text-align:center;color:var(--dim)}.empty .big{font-size:34px;margin-bottom:8px}
-  .cal{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;max-width:520px}.calgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}.calgrid .wd{font-size:10px;font-weight:700;color:var(--dim2);text-align:center;padding-bottom:4px}
-  .day{aspect-ratio:1;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:13px;color:var(--dim);background:var(--tint2)}.day.empty{background:transparent}.day.today{background:var(--blue);color:#fff;font-weight:700;cursor:pointer}.day.today .mk{background:#fff}.day .mk{width:5px;height:5px;border-radius:50%;background:var(--orange)}.day.future{color:var(--dim2)}
+  .tcong{display:flex;gap:10px;align-items:flex-start}.tcong .tt .h{font-size:var(--t-meta);font-weight:600}.tcong .tt .v{font-size:var(--t-meta);color:var(--dim);margin-top:2px}
+  .lab{font-size:var(--t-badge);font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin:2px 0 7px}
+  .tag{display:inline-flex;align-items:center;gap:6px;background:var(--tint);color:#3a3a3c;font-size:var(--t-meta);font-weight:500;padding:5px 11px;border-radius:13px;margin:3px 5px 3px 0}.tag b{color:var(--dim2);font-weight:700;cursor:pointer;font-size:var(--t-sec)}
+  .sugg{margin-top:10px;font-size:var(--t-meta);background:rgba(52,199,89,.09);border-radius:10px;padding:10px 12px}.sugg b{color:var(--pratica)}.sugg .sb{display:flex;gap:8px;margin-top:8px}
+  .add{display:flex;gap:8px;margin-top:11px}.add input{flex:1;min-width:0;font:inherit;font-size:var(--t-sec);padding:10px 12px;border-radius:10px;border:1px solid var(--line);outline:none}.add input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,113,227,.12)}
+  .add button{font:inherit;font-size:var(--t-meta);font-weight:600;padding:10px 15px;border-radius:10px;border:none;background:var(--blue);color:var(--su-colore);cursor:pointer}
+  .add button.peric{background:#C0362C;color:#fff}
+  .seg{display:inline-flex;background:var(--tint);border-radius:10px;padding:3px;gap:2px}.seg button{font:inherit;font-size:var(--t-meta);font-weight:600;padding:6px 13px;border-radius:8px;border:none;background:transparent;color:var(--dim);cursor:pointer}.seg button.on{background:var(--carta);color:var(--txt);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+  .rowset{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid var(--line2)}.rowset:first-of-type{border-top:0}.rowset .k{font-size:var(--t-meta);font-weight:600}.rowset .k small{display:block;font-weight:400;color:var(--dim2);font-size:var(--t-meta);margin-top:2px}
+  .sec{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:15px 16px;margin-bottom:14px}.sec h2{font-size:var(--t-meta);font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:var(--dim);margin:0 0 10px}
+  .empty{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:34px 20px;text-align:center;color:var(--dim)}.empty .big{font-size:34px;margin-bottom:8px}
+  .cal{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;max-width:520px}.calgrid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}.calgrid .wd{font-size:var(--t-badge);font-weight:700;color:var(--dim2);text-align:center;padding-bottom:4px}
+  .day{height:44px;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:var(--t-meta);color:var(--dim);background:var(--tint2)}.day.vuoto{background:transparent}.day.today{background:var(--blue);color:var(--su-colore);font-weight:700;cursor:pointer}.day.today .mk{background:var(--carta)}.day .mk{width:5px;height:5px;border-radius:50%;background:var(--orange)}.day.future{color:var(--dim2)}
   /* social sheet */
   .ov{position:fixed;inset:0;background:rgba(0,0,0,.4);backdrop-filter:blur(3px);display:none;align-items:flex-end;justify-content:center;z-index:40}
   .ov.on{display:flex}
-  .sheet{background:#fff;border-radius:20px 20px 0 0;width:100%;max-width:620px;max-height:88vh;display:flex;flex-direction:column;box-shadow:0 -10px 50px rgba(0,0,0,.3)}
+  .sheet{background:var(--carta);border-radius:20px 20px 0 0;width:100%;max-width:620px;max-height:88vh;display:flex;flex-direction:column;box-shadow:0 -10px 50px rgba(0,0,0,.3)}
   @media(min-width:620px){.ov{align-items:center}.sheet{border-radius:20px;max-height:86vh}}
   .sheet .hd{padding:14px 16px;border-bottom:1px solid var(--line2);display:flex;align-items:center;gap:10px}
-  .sheet .hd .tt{flex:1;min-width:0}.sheet .hd h3{margin:0;font-size:15px;line-height:1.3}.sheet .hd small{color:var(--dim);font-size:11.5px}
-  .sheet .close{border:none;background:var(--tint);width:40px;height:40px;border-radius:50%;font-size:17px;color:var(--dim);cursor:pointer;flex:0 0 auto}
+  .sheet .hd .tt{flex:1;min-width:0}.sheet .hd h3{margin:0;font-size:var(--t-sec);line-height:1.3}.sheet .hd small{color:var(--dim);font-size:var(--t-meta)}
+  .sheet .close{border:none;background:var(--tint);width:40px;height:40px;border-radius:50%;font-size:var(--t-testo);color:var(--dim);cursor:pointer;flex:0 0 auto}
   .stabs{display:flex;gap:6px;padding:10px 16px;flex-wrap:wrap;border-bottom:1px solid var(--line2)}
-  .stabs button{font:inherit;font-size:12.5px;font-weight:600;padding:7px 13px;border-radius:20px;border:1px solid var(--line);background:#fff;color:var(--dim);cursor:pointer;white-space:nowrap}
-  .stabs button.on{background:#111;color:#fff;border-color:#111}
+  .stabs button{font:inherit;font-size:var(--t-meta);font-weight:600;padding:7px 13px;border-radius:20px;border:1px solid var(--line);background:var(--carta);color:var(--dim);cursor:pointer;white-space:nowrap}
+  .stabs button.on{background:#111;color:var(--su-colore);border-color:#111}
   .sbody{padding:14px 16px;overflow:auto}
-  .sbody .cnt{font-size:13.5px;line-height:1.55;white-space:pre-wrap;color:#1d1d1f}
-  .sbody .meta{font-size:11px;color:var(--dim2);margin-top:10px}
+  .sbody .cnt{font-size:var(--t-meta);line-height:1.55;white-space:pre-wrap;color:#1d1d1f}
+  .sbody .meta{font-size:var(--t-micro);color:var(--dim2);margin-top:10px}
   .sfoot{padding:12px 16px;border-top:1px solid var(--line2);display:flex;gap:8px}
-  .sfoot button{flex:1;font:inherit;font-size:13px;font-weight:600;padding:11px;border-radius:12px;border:none;cursor:pointer}
-  .sfoot .copy{background:var(--blue);color:#fff}.sfoot .edit{background:var(--tint);color:var(--txt)}
-  .foot{margin-top:16px;font-size:11px;color:var(--dim2);line-height:1.6}
-  .nuovo{font-size:9px;font-weight:800;color:#fff;background:var(--blue);padding:1px 6px;border-radius:8px;letter-spacing:.3px;align-self:flex-end}
-  .srch{display:flex;gap:8px;margin:0 0 12px}.srch input{flex:1;font:inherit;font-size:14px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);outline:none}.srch input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,113,227,.12)}
-  .hbtn{width:44px;height:44px;border-radius:50%;background:#fff;box-shadow:var(--sh);border:none;cursor:pointer;font-size:17px;color:var(--dim)}
+  .sfoot button{flex:1;font:inherit;font-size:var(--t-meta);font-weight:600;padding:11px;border-radius:12px;border:none;cursor:pointer}
+  .sfoot .copy{background:var(--blue);color:var(--su-colore)}.sfoot .edit{background:var(--tint);color:var(--txt)}
+  .foot{margin-top:16px;font-size:var(--t-micro);color:var(--dim2);line-height:1.6}
+  .nuovo{font-size:var(--t-badge);font-weight:800;color:var(--su-colore);background:var(--blue);padding:1px 6px;border-radius:8px;letter-spacing:.3px;align-self:flex-end}
+  .srch{display:flex;gap:8px;margin:0 0 12px}.srch input{flex:1;font:inherit;font-size:var(--t-sec);padding:10px 12px;border-radius:12px;border:1px solid var(--line);outline:none}.srch input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,113,227,.12)}
+  .hbtn{width:44px;height:44px;border-radius:50%;background:var(--carta);box-shadow:var(--sh);border:none;cursor:pointer;font-size:var(--t-testo);color:var(--dim)}
 
   .filters{display:flex;gap:7px;margin:0 2px 12px;flex-wrap:wrap}
-  .fchip{font:inherit;font-size:12.5px;font-weight:600;padding:7px 13px;border-radius:20px;border:1px solid var(--line);background:#fff;color:var(--dim);cursor:pointer;white-space:nowrap;flex:0 0 auto}
+  .fchip{font:inherit;font-size:var(--t-meta);font-weight:600;padding:7px 13px;border-radius:20px;border:1px solid var(--line);background:var(--carta);color:var(--dim);cursor:pointer;white-space:nowrap;flex:0 0 auto}
   .fchip.on{background:var(--txt);color:var(--bg);border-color:var(--txt)}
-  .pick .prev.cover{background:linear-gradient(135deg,#37a457,#175c40);color:#fff;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:14px 16px;height:112px}
-  .covmono{font-size:13px;font-weight:800;letter-spacing:.6px;opacity:.92;z-index:1}
-  .covtitle{font-size:16px;font-weight:700;line-height:1.25;margin-top:6px;max-width:88%;z-index:1}
+  .pickhead{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;padding:12px 16px 0}
+  .pklab{font-size:var(--t-micro);font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--gold)}
+  .pkmeta{font-size:var(--t-meta);color:var(--dim)}
+  .covtitle{font-size:var(--t-testo);font-weight:700;line-height:1.25;margin-top:6px;max-width:88%;z-index:1}
   .covline{position:absolute;left:0;bottom:-2px;width:100%;height:46px;opacity:.55}
 @media (prefers-color-scheme: dark){
-  :root{--bg:#1c1c1e;--page:#000;--tint:#2c2c2e;--tint2:#242426;--line:rgba(255,255,255,.15);--line2:rgba(255,255,255,.09);--txt:#f5f5f7;--dim:#a1a1a6;--dim2:#8e8e93;--sh:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.5);--sh2:0 1px 2px rgba(0,0,0,.5),0 14px 40px rgba(0,0,0,.6)}
+  :root{--allerta:#FF6B5E;--attrito:#F5A524;--pratica:#4ADE80;--contesto:#98989D;--azione:#4B9FFF;
+  --inchiostro:#F2F2F4;--carta:#1c1c1e;--fondo:#000;
+  --bg:#1c1c1e;--page:#000;--tint:#2c2c2e;--tint2:#242426;--line:rgba(255,255,255,.15);--line2:rgba(255,255,255,.09);
+  --txt:#f5f5f7;--dim:#a1a1a6;--dim2:#98989D;
+  --sh:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.5);--sh2:0 1px 2px rgba(0,0,0,.5),0 14px 40px rgba(0,0,0,.6)}
   body{background:#000}
   .kpi,.pill,.pick,.card,.tile,.sec,.empty,.cal,details,.audiobar,.sheet{background:#1c1c1e !important}
   .tabs{background:#2c2c2e}
   .tabs button.on,.seg button.on,.stabs button,.ib,.hbtn,.fchip,.day{background:#2c2c2e !important;color:#f5f5f7}
   .fchip.on{background:#f5f5f7 !important;color:#111}
   .rchip.rHotC{color:#ff7a70}
+  .nuovo{color:#102A43}
+  .fresh.old{color:var(--attrito)}
+  .fresh.dead{color:var(--allerta)}
   .btn{background:#2c2c2e;color:#f5f5f7}
+  .btn.pri,.add button{background:#0A63C4;color:#fff}
+  .audiobar .play{background:#0A63C4}
   .add input,.srch input,.seg{background:#2c2c2e;color:#f5f5f7}
   .tag{background:#2c2c2e !important;color:#e5e5ea !important}
   .fld .val,.sbody .cnt{color:#e5e5ea !important}
   .btn.soc,.ib.soc{background:#f5f5f7 !important;color:#111 !important}
-  .ib.save.on{background:var(--gold) !important;color:#fff !important}
-  .ib.up.on{background:var(--green) !important;color:#fff !important}
-  .ib.down.on{background:var(--red) !important;color:#fff !important}
-  .ib.vid.on{background:#af52de !important;color:#fff !important}
+  .ib.save.on{background:var(--gold) !important;color:var(--su-colore) !important}
+  .ib.up.on{background:var(--green) !important;color:#0b0b0c !important}
+  .ib.down.on{background:var(--red) !important;color:#0b0b0c !important}
+  .ib.vid.on{background:#af52de !important;color:var(--su-colore) !important}
   .stabs button.on{background:#f5f5f7 !important;color:#111 !important}
   .empty div{color:#f5f5f7 !important}
-  .day.today{background:var(--blue) !important;color:#fff}
+  .day.today{background:#0A63C4 !important;color:#fff}
   .vitem{background:rgba(255,255,255,.10) !important}
-  .verdict.act{color:#f0a94a !important}
+  .verdict.act{background:#1c1c1e !important}.verdict.act .vtop{color:var(--attrito)}
   .vitem,.vtop,.vhint{color:#f0a94a !important}
   .tens2,.titem{background:#1c1c1e !important}
   .tbody .p,.tv{color:#d0d0d5 !important}
@@ -194,40 +272,39 @@
   .nlvid{background:#2c2c2e !important;color:#f5f5f7 !important}
 }
 
-  .verdict{border-radius:14px;padding:12px 15px;margin-bottom:14px;font-size:13.5px;font-weight:600;display:flex;gap:10px;align-items:center;line-height:1.35}
-  .verdict.act{background:rgba(255,149,0,.12);color:#b25e00}
-  .verdict.calm{background:rgba(52,199,89,.12);color:#248a3d}
-  .verdict .vi{font-size:18px}
+  .verdict.act{border-left:4px solid var(--attrito);background:var(--carta);box-shadow:var(--sh);border-radius:var(--r2);padding:12px 15px;margin-bottom:var(--s3);font-size:var(--t-sec);font-weight:600;line-height:1.35}
+  .verdict.act .vtop{font-size:var(--t-titolo);font-weight:700;display:flex;gap:8px;align-items:center;color:var(--attrito)}
+  .verdict .vi{font-size:var(--t-titolo)}
   .conf{display:flex;align-items:center;gap:6px;margin-top:6px}
   .confbar{display:flex;gap:3px}
   .confseg{width:15px;height:4px;border-radius:2px;background:var(--line)}
   .confseg.on{background:var(--cc)}
-  .conflab{font-size:10px;color:var(--dim2);font-weight:600}
+  .conflab{font-size:var(--t-badge);color:var(--dim2);font-weight:600}
 
-  .fresh{border-radius:12px;padding:9px 13px;margin-bottom:10px;font-size:12.5px;display:flex;gap:9px;align-items:center;font-weight:600}
-  .fresh.ok{background:rgba(52,199,89,.10);color:#248a3d}
+  .fresh{border-radius:12px;padding:9px 13px;margin-bottom:10px;font-size:var(--t-meta);display:flex;gap:9px;align-items:center;font-weight:600}
+  .fresh.ok{background:rgba(52,199,89,.10);color:var(--pratica)}
   .fresh.old{background:rgba(255,149,0,.15);color:#a35200}
   .fresh.dead{background:rgba(255,59,48,.13);color:#c0362e}
-  .duelbar{display:flex;gap:8px;align-items:center;background:rgba(0,113,227,.08);border-radius:12px;padding:9px 13px;margin-bottom:14px;font-size:12.5px;color:var(--txt);cursor:pointer;font-weight:600}
-  .duelbar .vs{background:var(--blue);color:#fff;border-radius:8px;padding:2px 7px;font-size:10px;font-weight:800}
-  .retr{background:rgba(255,59,48,.13);color:#c0362e;border-radius:9px;padding:7px 10px;font-size:11.5px;font-weight:600;margin:8px 14px 0}
+  .duelbar{display:flex;gap:8px;align-items:center;background:rgba(0,113,227,.08);border-radius:12px;padding:9px 13px;margin-bottom:14px;font-size:var(--t-meta);color:var(--txt);cursor:pointer;font-weight:600}
+  .duelbar .vs{background:var(--blue);color:var(--su-colore);border-radius:8px;padding:2px 7px;font-size:var(--t-badge);font-weight:800}
+  .retr{background:rgba(255,59,48,.13);color:#c0362e;border-radius:9px;padding:7px 10px;font-size:var(--t-meta);font-weight:600;margin:8px 14px 0}
   .links{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
-  .lchip{background:var(--tint);border:1px solid var(--line);border-radius:12px;padding:3px 9px;font-size:11px;color:var(--dim);cursor:pointer}
+  .lchip{background:var(--tint);border:1px solid var(--line);border-radius:12px;padding:3px 9px;font-size:var(--t-micro);color:var(--dim);cursor:pointer}
   .lchip b{color:var(--txt);font-weight:600}
   .duelgrid{display:grid;grid-template-columns:1fr;gap:0}
   @media(min-width:560px){.duelgrid{grid-template-columns:1fr 1fr;gap:0 14px}}
   .dcol{padding:4px 0}
   .dhead{display:flex;gap:9px;align-items:center;padding:10px 0 8px;border-bottom:1px solid var(--line2)}
-  .dhead .t{font-size:13px;font-weight:700;line-height:1.25}
+  .dhead .t{font-size:var(--t-meta);font-weight:700;line-height:1.25}
   .drow2{padding:8px 0;border-bottom:1px solid var(--line2)}
-  .drow2 .k{font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2)}
-  .drow2 .v{font-size:12.5px;line-height:1.45;margin-top:2px}
-  .audit{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;margin-top:16px;max-width:520px}
-  .audit h4{margin:0 0 8px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--dim)}
-  .audit .li{font-size:12.5px;color:var(--txt);padding:5px 0;border-top:1px solid var(--line2);line-height:1.4}
+  .drow2 .k{font-size:var(--t-badge);font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2)}
+  .drow2 .v{font-size:var(--t-meta);line-height:1.45;margin-top:2px}
+  .audit{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;margin-top:16px;max-width:520px}
+  .audit h2{margin:0 0 8px;font-size:var(--t-meta);font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--dim)}
+  .audit .li{font-size:var(--t-meta);color:var(--txt);padding:5px 0;border-top:1px solid var(--line2);line-height:1.4}
   .audit .li:first-of-type{border-top:0}
   .audit .n{font-weight:700}
-  .rt2{font-size:10px;color:var(--dim2)}
+  .rt2{font-size:var(--t-badge);color:var(--dim2)}
 
   /* ===== ADATTAMENTO E RIFINITURE MOBILE ===== */
   .grid,.grid>*{min-width:0}
@@ -235,15 +312,15 @@
   html,body{max-width:100%;overflow-x:hidden}
   img,svg,video{max-width:100%;height:auto}
   /* iOS ingrandisce la pagina se il campo ha testo <16px: qui lo evitiamo */
-  .add input,.srch input{font-size:16px}
+  .add input,.srch input{font-size:var(--t-testo)}
   /* i testi lunghi vanno a capo invece di allargare la pagina */
-  .row .h,.row .v,.row .aut,.pick h1,.pick .why,.fld .val,.drow2 .v,.lchip,.muted,.sbody .cnt,.audit .li,.tag,.dhead .t{overflow-wrap:anywhere}
+  .row .h,.row .v,.row .aut,.pick .pkh,.pick .why,.fld .val,.drow2 .v,.lchip,.muted,.sbody .cnt,.audit .li,.tag,.dhead .t{overflow-wrap:anywhere}
   .tt,.row .tt,.drow .tt,.pick .body,.audiobar .tx{min-width:0}
   /* la colonna destra non ruba spazio al titolo */
   .row .rt{max-width:32%;align-items:flex-end;text-align:right}
   .row .meta{white-space:normal;line-height:1.3}
   /* navigazione sempre raggiungibile col pollice */
-  .tabs{position:sticky;top:6px;z-index:20;box-shadow:0 6px 18px rgba(0,0,0,.07)}
+  @media(min-width:720px){.tabs{position:sticky;top:6px;z-index:20;box-shadow:0 6px 18px rgba(0,0,0,.07)}}
   .item{scroll-margin-top:74px}
   /* pannelli a scomparsa: zona sicura in basso e altezza corretta */
   .sfoot{padding-bottom:calc(12px + env(safe-area-inset-bottom))}
@@ -253,113 +330,115 @@
   @media(max-width:559px){
     .duelgrid .dcol+.dcol{border-top:2px solid var(--line);margin-top:12px;padding-top:6px}
   }
-  @media(max-width:430px){
-    .tabs{gap:2px;padding:3px;flex-wrap:wrap;overflow:visible}
-    .tabs button{padding:8px 4px;font-size:11.5px;letter-spacing:-.02em;flex:1 1 30%}
-  }
   @media(max-width:400px){
     body{padding:12px 11px calc(36px + env(safe-area-inset-bottom))}
-    .brand{font-size:19px}
-    .pick h1{font-size:17px}
+    .brand{font-size:var(--t-titolo)}
+    .pick .pkh{font-size:var(--t-testo)}
     .row{gap:9px;padding:11px 12px}
-    .mono{width:32px;height:32px;font-size:8px}
-    .kpi{font-size:11.5px;padding:3px 9px}
+    .mono{width:32px;height:32px;font-size:var(--t-badge)}
+    .kpi{font-size:var(--t-meta);padding:3px 9px}
   }
 
   .verdict.act{flex-direction:column;align-items:stretch;gap:0}
-  .vtop{display:flex;gap:9px;align-items:center;font-size:13.5px;font-weight:700;line-height:1.3}
+  .vtop{display:flex;gap:9px;align-items:center;font-size:var(--t-meta);font-weight:700;line-height:1.3}
   .vlist{margin-top:9px;display:flex;flex-direction:column;gap:2px}
-  .vitem{font-size:13px;font-weight:600;line-height:1.35;padding:8px 10px;border-radius:9px;background:rgba(255,255,255,.55);cursor:pointer;display:flex;gap:8px;align-items:flex-start}
+  .vitem{font-size:var(--t-meta);font-weight:600;line-height:1.35;padding:8px 10px;border-radius:9px;background:rgba(255,255,255,.55);cursor:pointer;display:flex;gap:8px;align-items:flex-start}
   .vitem:active{background:rgba(255,255,255,.9)}
   .vitem .ar{opacity:.55;flex:0 0 auto}
-  .vhint{font-size:11px;font-weight:500;opacity:.75;margin-top:8px}
+  .vhint{font-size:var(--t-micro);font-weight:500;opacity:.75;margin-top:8px}
 
-  .tens2{background:#fff;border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;margin-bottom:14px}
+  .tens2{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;margin-bottom:14px}
   .titem{padding:13px 15px;border-bottom:1px solid var(--line2);cursor:pointer}
   .titem:last-child{border-bottom:0}
-  .tid{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.05em;color:#fff;background:#c77a00;padding:2px 7px;border-radius:6px;margin-right:8px}
-  .tq{font-size:13.5px;font-weight:600;line-height:1.35;display:inline}
+  .tid{display:inline-block;font-size:var(--t-badge);font-weight:800;letter-spacing:.05em;color:var(--su-colore);background:#c77a00;padding:2px 7px;border-radius:6px;margin-right:8px}
+  .tq{font-size:var(--t-meta);font-weight:600;line-height:1.35;display:inline}
   .tbody{display:none;margin-top:9px}
   .titem.open .tbody{display:block}
-  .tbody .p{font-size:12.5px;line-height:1.5;color:#3a3a3c;margin:6px 0}
-  .tbody .close{font-size:12px;line-height:1.5;color:var(--dim);margin-top:8px;padding-top:8px;border-top:1px solid var(--line2)}
-  .mute{background:rgba(255,149,0,.12);color:#a35200;border-radius:9px;padding:8px 10px;font-size:12px;font-weight:600;line-height:1.4;margin-top:8px}
-  .editbox{width:100%;min-height:180px;font:inherit;font-size:14px;line-height:1.5;padding:11px;border-radius:11px;border:1px solid var(--line);background:var(--bg);color:var(--txt);outline:none}
+  .tbody .p{font-size:var(--t-meta);line-height:1.5;color:#3a3a3c;margin:6px 0}
+  .tbody .close{font-size:var(--t-meta);line-height:1.5;color:var(--dim);margin-top:8px;padding-top:8px;border-top:1px solid var(--line2)}
+  .mute{background:rgba(255,149,0,.12);color:#a35200;border-radius:9px;padding:8px 10px;font-size:var(--t-meta);font-weight:600;line-height:1.4;margin-top:8px}
+  .editbox{width:100%;min-height:180px;font:inherit;font-size:var(--t-sec);line-height:1.5;padding:11px;border-radius:11px;border:1px solid var(--line);background:var(--bg);color:var(--txt);outline:none}
   .thead{display:flex;gap:9px;align-items:flex-start}
-  .tchev{margin-left:auto;color:var(--dim2);font-size:16px;transition:.2s;flex:0 0 auto}
+  .tchev{margin-left:auto;color:var(--dim2);font-size:var(--t-testo);transition:.2s;flex:0 0 auto}
   .titem.open .tchev{transform:rotate(90deg)}
   .tr{padding:9px 0;border-bottom:1px solid var(--line2)}
   .tr:last-child{border-bottom:0}
-  .tk{font-size:9.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--dim2);margin-bottom:3px}
+  .tk{font-size:var(--t-badge);font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--dim2);margin-bottom:3px}
   .tr.act .tk{color:#248a3d}
-  .tv{font-size:12.8px;line-height:1.5;color:#2a2a2c}
+  .tv{font-size:var(--t-meta);line-height:1.5;color:#2a2a2c}
   .tr.act .tv{color:#1d1d1f;font-weight:600}
   .tr.act{background:rgba(52,199,89,.09);border-radius:9px;padding:9px 11px;margin:4px 0;border-bottom:0}
-  .tintro{font-size:12px;color:var(--dim);padding:12px 15px 2px;line-height:1.45}
+  .tintro{font-size:var(--t-meta);color:var(--dim);padding:12px 15px 2px;line-height:1.45}
   .sctrl{display:flex;gap:10px;flex-wrap:wrap;padding:10px 16px 4px;border-bottom:1px solid var(--line2)}
   .sgroup{display:flex;flex-direction:column;gap:4px}
-  .sgl{font-size:9.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2)}
+  .sgl{font-size:var(--t-badge);font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2)}
   .sseg{display:inline-flex;background:var(--tint);border-radius:9px;padding:2px;gap:2px}
-  .sseg button{font:inherit;font-size:11.5px;font-weight:600;padding:5px 10px;border-radius:7px;border:none;background:transparent;color:var(--dim);cursor:pointer;white-space:nowrap}
-  .sseg button.on{background:#fff;color:var(--txt);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+  .sseg button{font:inherit;font-size:var(--t-meta);font-weight:600;padding:5px 10px;border-radius:7px;border:none;background:transparent;color:var(--dim);cursor:pointer;white-space:nowrap}
+  .sseg button.on{background:var(--carta);color:var(--txt);box-shadow:0 1px 3px rgba(0,0,0,.12)}
   .tagbox{margin-top:14px;border-top:1px solid var(--line2);padding-top:12px}
-  .tagl{font-size:9.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin-bottom:4px}
-  .tagv{font-size:12.5px;line-height:1.55;color:#2a2a2c;word-break:break-word}
-  .tagbtn{font:inherit;font-size:11.5px;font-weight:600;padding:5px 11px;border-radius:14px;border:1px solid var(--line);background:var(--bg);color:var(--txt);cursor:pointer;margin-top:7px}
-  .nlwrap{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:15px 16px;margin-bottom:14px}
+  .tagl{font-size:var(--t-badge);font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--dim2);margin-bottom:4px}
+  .tagv{font-size:var(--t-meta);line-height:1.55;color:#2a2a2c;word-break:break-word}
+  .tagbtn{font:inherit;font-size:var(--t-meta);font-weight:600;padding:5px 11px;border-radius:14px;border:1px solid var(--line);background:var(--bg);color:var(--txt);cursor:pointer;margin-top:7px}
+  .nlwrap{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:15px 16px;margin-bottom:14px}
   .nlslot{display:flex;gap:11px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--line2)}
   .nlslot:last-child{border-bottom:0}
-  .nlnum{width:26px;height:26px;border-radius:8px;background:var(--tint);color:var(--dim);font-size:11.5px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
-  .nlnum.full{background:var(--green);color:#fff}
+  .nlnum{width:26px;height:26px;border-radius:8px;background:var(--tint);color:var(--dim);font-size:var(--t-meta);font-weight:800;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .nlnum.full{background:var(--green);color:var(--su-colore)}
   .nlt{min-width:0;flex:1}
-  .nlt .h{font-size:13px;font-weight:600;line-height:1.3}
-  .nlt .v{font-size:11.5px;color:var(--dim);margin-top:2px}
-  .nlvid{width:100%;font:inherit;font-size:16px;padding:8px 10px;border-radius:9px;border:1px solid var(--line);margin-top:6px;outline:none}
+  .nlt .h{font-size:var(--t-meta);font-weight:600;line-height:1.3}
+  .nlt .v{font-size:var(--t-meta);color:var(--dim);margin-top:2px}
+  .nlvid{width:100%;font:inherit;font-size:var(--t-testo);padding:8px 10px;border-radius:9px;border:1px solid var(--line);margin-top:6px;outline:none}
   .nlvid:focus{border-color:var(--blue)}
-  .nlmeta{font-size:11.5px;color:var(--dim);margin-top:9px;line-height:1.45}
+  .nlmeta{font-size:var(--t-meta);color:var(--dim);margin-top:9px;line-height:1.45}
   .nlmeta .okc{color:var(--green);font-weight:700}
   .nlmeta .badc{color:var(--red);font-weight:700}
   #nldest,#nlver{margin-bottom:2px;vertical-align:top}
-  .nlrm{font:inherit;font-size:11.5px;font-weight:600;color:var(--dim);background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:7px 11px;min-height:30px;cursor:pointer}
-  .nlempty{font-size:12.5px;color:var(--dim);line-height:1.5}
-  .nlout{white-space:pre-wrap;font-size:12.5px;line-height:1.6;background:var(--tint2);border-radius:11px;padding:13px;margin-top:11px;max-height:340px;overflow:auto;color:#2a2a2c}
-  #toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom));transform:translateX(-50%);background:#1d1d1f;color:#fff;font-size:13px;font-weight:500;padding:10px 18px;border-radius:22px;opacity:0;transition:.22s;pointer-events:none;box-shadow:0 10px 34px rgba(0,0,0,.22);z-index:50}
+  .nlrm{font:inherit;font-size:var(--t-meta);font-weight:600;color:var(--dim);background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:7px 11px;min-height:30px;cursor:pointer}
+  .nlempty{font-size:var(--t-meta);color:var(--dim);line-height:1.5}
+  .nlout{white-space:pre-wrap;font-size:var(--t-meta);line-height:1.6;background:var(--tint2);border-radius:11px;padding:13px;margin-top:11px;max-height:340px;overflow:auto;color:#2a2a2c}
+  #toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom));transform:translateX(-50%);background:#1d1d1f;color:var(--su-colore);font-size:var(--t-meta);font-weight:500;padding:10px 18px;border-radius:22px;opacity:0;transition:.22s;pointer-events:none;box-shadow:0 10px 34px rgba(0,0,0,.22);z-index:50}
 </style>
 </head>
 <body>
+<noscript><style>.wrap{visibility:visible !important}</style></noscript>
 <div class="wrap">
-  <div class="top">
-    <span class="brand">PULSE<span> · knee</span></span>
-    <div style="display:flex;gap:6px;margin-left:auto" id="kpis"></div>
-    <span class="date" id="datalunga"></span>
-    <button class="hbtn" onclick="apriGuida()" aria-label="Come funziona PULSE: la guida">❓</button>
+  <div class="top" role="banner">
+    <h1 class="brand">PULSE<span> · knee</span></h1>
+    <span style="margin-left:auto"></span>
+    <button class="hbtn" onclick="location.reload()" title="Aggiorna" aria-label="Ricarica l'app">↻</button>
+    <button class="hbtn" onclick="apriGuida()" aria-label="Come funziona PULSE: la guida">?</button>
   </div>
   <div id="welbox"></div>
-  <div class="audiobar">
-    <button class="play" onclick="speakBrief()" id="playbtn" aria-label="Ascolta il riassunto del giorno">▶</button>
-    <button class="play" onclick="toggleConversazione()" id="micbtn" aria-label="Parla con PULSE a voce: comandi come apri la tre, seconda pagina, sorprendimi" style="display:none">🎙</button>
-    <button class="play" onclick="apriAuto()" id="autobtn" aria-label="Modalità auto: ascolto continuo del giornale con tasti grandi">🚗</button>
-    <div class="tx"><b>Riassunto vocale del giorno</b><small id="voicelbl">▶ il podcast del giorno · 🚗 tutto il giornale in ascolto continuo</small></div>
-  </div>
-  <div class="tabs">
-    <button class="on" onclick="tab('today',this)">📄 Oggi</button>
-    <button onclick="tab('rassegna',this);apriRassegna()">📡 Rassegna</button>
-    <button onclick="tab('archive',this)">🗓 Archivio</button>
-    <button onclick="tab('saved',this)">★ Salvati <span class="b" id="savedCount">0</span></button>
-    <button onclick="tab('news',this)">✉️ Newsletter</button><button onclick="tab('settings',this)">⚙ Impostazioni</button>
+  <div class="tabs" role="navigation" aria-label="Sezioni di PULSE">
+    <button class="on" aria-current="page" onclick="tab('today',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 5.5h12M4 9.5h12M4 13.5h7"/></svg><span class="tl">Oggi</span></button>
+    <button onclick="tab('rassegna',this);apriRassegna()"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3.5 14a6.5 6.5 0 0 1 13 0M7 14a3 3 0 0 1 6 0"/><circle cx="10" cy="14" r="1.1" fill="currentColor" stroke="none"/></svg><span class="tl">Rassegna</span></button>
+    <button onclick="tab('archive',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.5h13v8h-13zM3.5 7.5l1.6-3h9.8l1.6 3M8 11h4"/></svg><span class="tl">Archivio</span></button>
+    <button onclick="tab('saved',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M10 3.2l2.1 4.3 4.7.7-3.4 3.3.8 4.7L10 14l-4.2 2.2.8-4.7-3.4-3.3 4.7-.7z"/></svg><span class="tl">Salvati</span> <span class="b" id="savedCount">0</span></button>
+    <button onclick="tab('news',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="5" width="14" height="10" rx="1.5"/><path d="M3.5 6l6.5 5 6.5-5"/></svg><span class="tl">Newsletter</span></button><button onclick="tab('settings',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3.5 6.2h13M3.5 10h13M3.5 13.8h13"/><circle cx="7.6" cy="6.2" r="1.7" fill="currentColor" stroke="none"/><circle cx="12.4" cy="10" r="1.7" fill="currentColor" stroke="none"/><circle cx="6.4" cy="13.8" r="1.7" fill="currentColor" stroke="none"/></svg><span class="tl">Impostazioni</span></button>
   </div>
 
+  <main style="min-height:100vh">
   <div class="view on" id="today">
-    <div id="freshbox"></div>
+    <section class="eroe">
+      <span class="date" id="datalunga"></span>
+      <div id="freshbox"></div>
+      <div class="verdict" id="verdict"></div>
+      <div class="econta" id="kpis"></div>
+    </section>
+    <div class="audiobar">
+      <button class="play" onclick="speakBrief()" id="playbtn" aria-label="Ascolta il riassunto del giorno">▶</button>
+      <button class="play" onclick="toggleConversazione()" id="micbtn" aria-label="Parla con PULSE a voce: comandi come apri la tre, seconda pagina, sorprendimi" style="display:none"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="7.8" y="3" width="4.4" height="8.4" rx="2.2"/><path d="M5.2 9.6a4.8 4.8 0 0 0 9.6 0M10 14.4V17"/></svg></button>
+      <button class="play" onclick="apriAuto()" id="autobtn" aria-label="Modalità auto: ascolto continuo del giornale con tasti grandi"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.2 11.5l1.3-3.6A1.8 1.8 0 0 1 7.2 6.7h5.6a1.8 1.8 0 0 1 1.7 1.2l1.3 3.6M4.2 11.5h11.6v3.3h-1.9M4.2 11.5v3.3h1.9M7.6 14.8h4.8"/><circle cx="6.9" cy="13.6" r=".8" fill="currentColor" stroke="none"/><circle cx="13.1" cy="13.6" r=".8" fill="currentColor" stroke="none"/></svg></button>
+      <div class="tx"><b>Riassunto vocale del giorno</b><small id="voicelbl">il podcast, o tutto il giornale in modalità auto</small></div>
+    </div>
     <div id="copbox"></div>
-    <div class="verdict" id="verdict"></div>
     <div id="duelbox"></div>
     <div class="grid">
       <div>
         <div class="pick" id="pickbox"></div>
-        <div class="sl" style="--sc:#c77a00"><span class="ic">⚑</span>Dove le prove non ti coprono<span class="n" id="tensn"></span></div>
+        <div class="sl" style="--sc:#B45309"><span class="ic">⚑</span>Dove le prove non ti coprono<span class="n" id="tensn"></span></div>
         <div class="tens2"><div class="tintro">Punti in cui <b>tu fai una cosa</b> e la letteratura <b>ne ha studiata un&rsquo;altra</b>. Non sono errori: sono zone in cui le prove non ti coprono. Tocca per vedere che cosa puoi farci.</div><div id="tensbox"></div></div>
-        <div class="sl r-res"><span class="ic">🔬</span>Ricerca scientifica<span class="n" id="resn"></span></div>
+        <div class="sl r-res"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.2 3h3.6M9 3v4.4l-3.7 6.4A2 2 0 0 0 7 16.8h6a2 2 0 0 0 1.7-3L11 7.4V3"/><path d="M7 12.5h6"/></svg></span>Ricerca scientifica<span class="n" id="resn"></span></div>
         <div class="filters"><button class="fchip on" onclick="setFilter('all',this)">Tutti</button><button class="fchip" onclick="setFilter('orange',this)">🟠 La mia pratica</button><button class="fchip" onclick="setFilter('green',this)">🟢 Mie tecniche</button><button class="fchip" onclick="setFilter('gray',this)">⚪ Contesto</button></div><div class="card" id="researchList"></div>
         <div id="secpag"></div>
       </div>
@@ -369,31 +448,32 @@
         <div class="card" id="discList" style="border:1px solid rgba(52,199,89,.25)"></div>
         <div class="tile curio" style="margin-top:12px"><div class="lab">🌏 Curiosità dall'altra parte del mondo</div>
           <div class="tcong"><span class="mono m-ojsm">OJSM</span><div class="tt" onclick="scrollToItem(8)" style="cursor:pointer"><div class="h">Seoul (Kyung Hee): dove passa il taglio dell'osteotomia decide il destino della troclea</div><div class="v">Song … Park · second look artroscopico su 205 osteotomie · [8]</div></div></div></div>
-        <div class="sl r-focus"><span class="ic">🎯</span>Il tuo focus</div>
+        <div class="sl r-focus"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="6.3"/><circle cx="10" cy="10" r="2" fill="currentColor" stroke="none"/></svg></span>Il tuo focus</div>
         <div class="tile"><div class="lab">Riviste</div><div id="focusJournals"></div><div class="lab" style="margin-top:10px">Opinion leader</div><div id="focusKols"></div><div class="lab" style="margin-top:10px">Temi e società</div><div id="focusMore"></div><div class="sugg" id="suggBox"></div></div>
       </div>
     </div>
   </div>
 
   <div class="view" id="rassegna">
-    <div class="sl r-focus"><span class="ic">📡</span>Rassegna — richiami, trial e video della tua rete</div>
+    <div class="sl r-focus"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 14a6.5 6.5 0 0 1 13 0M7 14a3 3 0 0 1 6 0"/><circle cx="10" cy="14" r="1.1" fill="currentColor" stroke="none"/></svg></span>Rassegna — richiami, trial e video della tua rete</div>
     <div id="rassbox"><div class="muted">Apri questa scheda per caricare la rassegna.</div></div>
   </div>
 
   <div class="view" id="archive">
-    <div class="sl r-arch"><span class="ic">🗓</span>Storico delle ricerche<span class="n">agosto 2026</span></div>
-    <div class="cal"><div class="calgrid"><div class="wd">L</div><div class="wd">M</div><div class="wd">M</div><div class="wd">G</div><div class="wd">V</div><div class="wd">S</div><div class="wd">D</div>
-      <div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day">1</div><div class="day">2<span class="mk"></span></div>
-      <div class="day">3</div><div class="day">4<span class="mk"></span></div><div class="day">5</div><div class="day">6<span class="mk"></span></div><div class="day">7<span class="mk"></span></div><div class="day">8</div><div class="day">9<span class="mk"></span></div><div class="day">10</div><div class="day">11</div><div class="day today" onclick="tab('today',document.querySelectorAll('.tabs button')[0])">12<span class="mk"></span></div><div class="day future">13</div><div class="day future">14</div><div class="day future">15</div><div class="day future">16</div><div class="day future">17</div><div class="day future">18</div><div class="day future">19</div><div class="day future">20</div><div class="day future">21</div><div class="day future">22</div><div class="day future">23</div><div class="day future">24</div><div class="day future">25</div><div class="day future">26</div><div class="day future">27</div><div class="day future">28</div><div class="day future">29</div><div class="day future">30</div><div class="day future">31</div></div></div>
+    <div class="sl r-arch" style="max-width:552px"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="13" height="11" rx="1.5"/><path d="M3.5 8.5h13M7 3.5v3M13 3.5v3"/></svg></span>Storico delle ricerche<span class="n" id="calmese"></span></div>
+    <div class="cal"><div class="calgrid" id="calgrid"></div></div>
     <div class="srch" style="max-width:520px;margin-top:14px"><input id="histq" placeholder="Cerca in tutto l'archivio…" oninput="searchHist()"></div><div id="histres" style="max-width:520px"></div><div class="audit" id="auditbox"></div><div class="muted" style="max-width:520px;margin-top:12px">Ogni mattina — anche i giorni “nessuna novità” — finisce qui. Da domani lo storico cresce da solo.</div>
   </div>
 
   <div class="view" id="saved"><div class="sl r-focus"><span class="ic">★</span>Articoli salvati<span class="n" id="savedN">0</span></div><div id="retrbox"></div><div class="srch"><input id="savedq" placeholder="Cerca nei salvati…" oninput="renderSaved()"></div><div id="savedList"></div></div>
 
   <div class="view" id="news">
-      <div class="sl" style="--sc:#af52de"><span class="ic">📤</span>Lavori del mese<span class="n" id="nlcount"></span></div>
-      <div class="nlwrap"><div class="nlempty" id="nlintro"></div><div id="nlslots"></div></div>
-      <div class="sl" style="--sc:#af52de"><span class="ic">📝</span>Testo pronto<span class="n">3 destinazioni</span></div>
+      <div class="sl" style="--sc:#af52de"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 11.7V3.5M6.8 6.7L10 3.5l3.2 3.2M4 13.5v2a1.2 1.2 0 0 0 1.2 1.2h9.6A1.2 1.2 0 0 0 16 15.5v-2"/></svg></span>Lavori del mese<span class="n" id="nlcount"></span></div>
+      <div class="nlwrap"><div class="nlempty" id="nlintro"></div>
+      <div class="sl r-res" style="margin-top:8px"><span class="ic">▤</span>I candidati di oggi<span class="n">tocca + per scegliere</span></div>
+      <div class="card compatta" id="nlcand"></div>
+      <div id="nlslots"></div></div>
+      <div class="sl" style="--sc:#af52de"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.8 3.9l3.3 3.3-8.6 8.6-4.2.9.9-4.2z"/></svg></span>Testo pronto<span class="n">3 destinazioni</span></div>
       <div class="nlwrap">
         <div class="seg" id="nldest"><button class="on" onclick="setDest('mail',this)">✉️ Email</button><button onclick="setDest('blog',this)">🌐 Blog</button><button onclick="setDest('gbp',this)">📍 Google</button></div>
         <div class="seg" id="nlver" style="margin-left:6px"><button class="on" onclick="setNlVer('prof',this)">Professionisti</button><button onclick="setNlVer('mix',this)">Misto</button><button onclick="setNlVer('paz',this)">Pazienti</button></div>
@@ -405,23 +485,23 @@
       </div>
     </div>
     <div class="view" id="settings">
-    <div class="sec"><h2>📚 Riviste in focus</h2><div id="setJournals"></div><div class="add"><input id="jinput" placeholder="Aggiungi rivista" onkeydown="if(event.key==='Enter')addItem('journals','jinput')"><button onclick="addItem('journals','jinput')">Aggiungi</button></div></div>
-    <div class="sec"><h2>🎯 Opinion leader</h2><div id="setKols"></div><div class="add"><input id="kinput" placeholder="Aggiungi autore, es. Helito" onkeydown="if(event.key==='Enter')addItem('kols','kinput')"><button onclick="addItem('kols','kinput')">Aggiungi</button></div></div>
-    <div class="sec"><h2>👥 Società &amp; congressi</h2><div id="setSoc"></div><div class="add"><input id="sinput" placeholder="Aggiungi, es. APKASS (Asia)" onkeydown="if(event.key==='Enter')addItem('societies','sinput')"><button onclick="addItem('societies','sinput')">Aggiungi</button></div></div>
-    <div class="sec"><h2>🏭 Aziende sorvegliate</h2><div id="setAz"></div><div class="add"><input id="ainput" placeholder="Aggiungi azienda" onkeydown="if(event.key==='Enter')addItem('companies','ainput')"><button onclick="addItem('companies','ainput')">Aggiungi</button></div><div class="muted" style="margin-top:9px">Richiami e avvisi di sicurezza su queste aziende interrompono tutto il resto e vanno in cima. I comunicati di lancio prodotto restano in fondo: sono marketing.</div></div>
-    <div class="sec"><h2>🕑 Finestre, lingua, audio</h2>
+    <div class="sec"><h2>Riviste in focus</h2><div id="setJournals"></div><div class="add"><input id="jinput" placeholder="Aggiungi rivista" onkeydown="if(event.key==='Enter')addItem('journals','jinput')"><button onclick="addItem('journals','jinput')">Aggiungi</button></div></div>
+    <div class="sec"><h2>Opinion leader</h2><div id="setKols"></div><div class="add"><input id="kinput" placeholder="Aggiungi autore, es. Helito" onkeydown="if(event.key==='Enter')addItem('kols','kinput')"><button onclick="addItem('kols','kinput')">Aggiungi</button></div></div>
+    <div class="sec"><h2>Società &amp; congressi</h2><div id="setSoc"></div><div class="add"><input id="sinput" placeholder="Aggiungi, es. APKASS (Asia)" onkeydown="if(event.key==='Enter')addItem('societies','sinput')"><button onclick="addItem('societies','sinput')">Aggiungi</button></div></div>
+    <div class="sec"><h2>Aziende sorvegliate</h2><div id="setAz"></div><div class="add"><input id="ainput" placeholder="Aggiungi azienda" onkeydown="if(event.key==='Enter')addItem('companies','ainput')"><button onclick="addItem('companies','ainput')">Aggiungi</button></div><div class="muted" style="margin-top:9px">Richiami e avvisi di sicurezza su queste aziende interrompono tutto il resto e vanno in cima. I comunicati di lancio prodotto restano in fondo: sono marketing.</div></div>
+    <div class="sec"><h2>Finestre, lingua, audio</h2>
       <div class="rowset"><div class="k">Finestra letteratura <small id="wlit">30 giorni</small></div><div class="seg"><button onclick="setV('winLit',14,this)">14</button><button class="on" onclick="setV('winLit',30,this)">30</button><button onclick="setV('winLit',45,this)">45</button></div></div>
       <div class="rowset"><div class="k">Lingua pagina</div><div class="seg"><button class="on" onclick="setV('lang','it',this)">Italiano</button><button onclick="setV('lang','en',this)">English</button></div></div>
       <div class="rowset"><div class="k">Lingua audio</div><div class="seg"><button class="on" onclick="setV('audio','it',this)">Italiano</button><button onclick="setV('audio','en',this)">English</button></div></div>
     </div>
-    <div class="sec"><h2>🔔 Promemoria</h2><div class="muted">Il briefing viene preparato ogni mattina alle 7 (ora svizzera) e l'avviso ti arriva dall'app Claude, <b>se hai le notifiche attive per quella app</b>. Qui sotto puoi attivare anche gli avvisi del browser: su iPhone funzionano solo se hai aggiunto PULSE alla schermata Home e apri l'app da lì.</div><div class="add" style="margin-top:10px"><button onclick="askNotif()">🔔 Attiva avvisi</button></div><div class="preview" id="notiflbl"></div></div>
-    <div class="sec"><h2>🗄 Versioni precedenti</h2><div class="muted">Ogni giorno il PULSE viene salvato così com&rsquo;era. Restano tutti i giorni degli ultimi trenta e il primo di ogni mese, per sempre.</div><div class="add" style="margin-top:10px"><a class="btn" href="versioni/" style="text-decoration:none;display:inline-flex;align-items:center">🗄 Sfoglia le versioni</a></div></div>
-    <div class="sec"><h2>👁 Lettura</h2><div class="muted">La dimensione del testo di tutta l'app. La scelta resta su questo dispositivo.</div>
+    <div class="sec"><h2>Promemoria</h2><div class="muted">Il briefing viene preparato ogni mattina alle 7 (ora svizzera) e l'avviso ti arriva dall'app Claude, <b>se hai le notifiche attive per quella app</b>. Qui sotto puoi attivare anche gli avvisi del browser: su iPhone funzionano solo se hai aggiunto PULSE alla schermata Home e apri l'app da lì.</div><div class="add" style="margin-top:10px"><button onclick="askNotif()">Attiva avvisi</button></div><div class="preview" id="notiflbl"></div></div>
+    <div class="sec"><h2>Versioni precedenti</h2><div class="muted">Ogni giorno il PULSE viene salvato così com&rsquo;era. Restano tutti i giorni degli ultimi trenta e il primo di ogni mese, per sempre.</div><div class="add" style="margin-top:10px"><a class="btn" href="versioni/" style="text-decoration:none;display:inline-flex;align-items:center">🗄 Sfoglia le versioni</a></div></div>
+    <div class="sec"><h2>Lettura</h2><div class="muted">La dimensione del testo di tutta l'app. La scelta resta su questo dispositivo.</div>
       <div class="filters" id="testochips" style="margin-top:9px"><button class="fchip" onclick="setTesto(1,this)">Normale</button><button class="fchip" onclick="setTesto(1.15,this)">Grande</button><button class="fchip" onclick="setTesto(1.3,this)">Molto grande</button></div>
       <div class="muted" style="margin-top:12px">La voce che legge (di sistema). Le più naturali si scaricano sull'iPhone: Impostazioni → Accessibilità → Contenuto letto → Voci → Italiano → scegli una voce «migliorata».</div>
       <select id="vocesel" onchange="S.voce=this.value;save();" aria-label="Scegli la voce italiana che legge il giornale" style="margin-top:8px;width:100%;max-width:520px;padding:10px;border-radius:11px;border:1px solid var(--line);background:var(--tint2);color:var(--txt);font:inherit"></select>
-      <div class="add" style="margin-top:12px"><button class="btn" onclick="apriGuida()" aria-label="Apri la guida che spiega come funziona PULSE">📖 Come funziona PULSE</button></div></div>
-    <div class="sec"><h2>🧠 Il cervello di PULSE</h2>
+      <div class="add" style="margin-top:12px"><button class="btn" onclick="apriGuida()">Come funziona PULSE</button></div></div>
+    <div class="sec"><h2>Il cervello di PULSE</h2>
       <div class="muted">Facoltativo, a pagamento (nell'ordine di pochi franchi al mese): sblocca la conversazione libera a voce — chiedi qualunque cosa, come a ChatGPT — e la voce naturale per podcast e schede. Le chiavi vivono nel «cervello» esterno (cartella <b>chiedi/</b> del repository, istruzioni comprese); qui si scrivono solo l'indirizzo e la parola d'ordine, che restano su questo dispositivo.</div>
       <div class="add" style="margin-top:9px;flex-wrap:wrap">
         <input id="cvurl" placeholder="indirizzo (https://…workers.dev)" aria-label="Indirizzo del cervello esterno" style="flex:1 1 100%;padding:10px;border-radius:11px;border:1px solid var(--line);background:var(--tint2);color:var(--txt);font:inherit">
@@ -429,10 +509,11 @@
         <button class="btn pri" onclick="salvaCervello()" aria-label="Collega il cervello e prova il collegamento">Collega</button>
       </div>
       <div class="muted" id="cvstato" style="margin-top:7px"></div></div>
-    <div class="sec"><h2>📲 Stesso PULSE su un altro dispositivo</h2><div class="muted">PULSE non ha un server: quello che fai su un dispositivo resta lì. Se usi anche il computer, porta i tuoi dati con un link — le due copie si <b>fondono</b>, non si sovrascrivono, quindi non perdi nulla da nessuna delle due parti.</div><div id="syncbox" style="margin-top:10px"></div></div>
-    <div class="sec"><h2>♻︎ I tuoi dati</h2><div class="muted">Salvati, voti, preferenze, lavori scelti per la distribuzione e testi che hai adattato vivono <b>solo in questo browser</b>, su questo dispositivo. Non sono su nessun server e non si sincronizzano con altri dispositivi. Se cancelli i dati del sito, si perdono: per questo conviene tenere PULSE nella schermata Home e non cancellare i dati di Safari o Chrome per questo indirizzo. Le schede e i contenuti di ogni giorno restano invece sempre recuperabili dalle versioni precedenti.</div><div class="add" style="margin-top:10px"><button onclick="resetAll()" style="background:#ff3b30">Azzera tutto</button></div></div>
+    <div class="sec"><h2>Stesso PULSE su un altro dispositivo</h2><div class="muted">PULSE non ha un server: quello che fai su un dispositivo resta lì. Se usi anche il computer, porta i tuoi dati con un link — le due copie si <b>fondono</b>, non si sovrascrivono, quindi non perdi nulla da nessuna delle due parti.</div><div id="syncbox" style="margin-top:10px"></div></div>
+    <div class="sec"><h2>I tuoi dati</h2><div class="muted">Salvati, voti, preferenze, lavori scelti per la distribuzione e testi che hai adattato vivono <b>solo in questo browser</b>, su questo dispositivo. Non sono su nessun server e non si sincronizzano con altri dispositivi. Se cancelli i dati del sito, si perdono: per questo conviene tenere PULSE nella schermata Home e non cancellare i dati di Safari o Chrome per questo indirizzo. Le schede e i contenuti di ogni giorno restano invece sempre recuperabili dalle versioni precedenti.</div><div class="add" style="margin-top:10px"><button class="peric" onclick="resetAll()">Azzera tutto</button></div></div>
   </div>
-  <div class="foot" id="foot"></div>
+  </main>
+  <div class="foot" id="foot" role="contentinfo"></div>
 </div>
 
 <!-- SOCIAL SHEET -->
@@ -446,8 +527,8 @@
         <button onclick="autoProssima()" aria-label="Prossima scheda">⏭</button>
       </div>
       <div class="autogrid">
-        <button onclick="autoRipeti()" aria-label="Ripeti da capo la scheda in ascolto">🔁</button>
-        <button onclick="autoMic()" id="automic" aria-label="Di’ un comando: prossima, ripeti, salva questa, più veloce">🎙</button>
+        <button onclick="autoRipeti()" aria-label="Ripeti da capo la scheda in ascolto"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.8 8.2a5.4 5.4 0 0 1 10-1.5M15.2 11.8a5.4 5.4 0 0 1-10 1.5"/><path d="M15 3.6v3.3h-3.3M5 16.4v-3.3h3.3"/></svg></button>
+        <button onclick="autoMic()" id="automic" aria-label="Di’ un comando: prossima, ripeti, salva questa, più veloce"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="7.8" y="3" width="4.4" height="8.4" rx="2.2"/><path d="M5.2 9.6a4.8 4.8 0 0 0 9.6 0M10 14.4V17"/></svg></button>
         <button onclick="autoSalva()" aria-label="Salva la scheda in ascolto">★</button>
       </div>
       <div class="autovel" id="autovel"></div>
@@ -467,12 +548,15 @@
     <div class="stabs" id="shTabs"></div>
     <div class="sctrl" id="shCtrl"></div>
     <div class="sbody"><div class="cnt" id="shCnt"></div><div class="meta" id="shMeta"></div></div>
-    <div class="sfoot"><button class="edit" id="editbtn" onclick="toggleEdit()">✎ Adatta</button><button class="copy" onclick="copyCnt()">📋 Copia</button></div>
+    <div class="sfoot"><button class="edit" id="editbtn" onclick="toggleEdit()">✎ Adatta</button><button class="copy" onclick="copyCnt(event)">Copia</button></div>
   </div>
 </div>
 <div id="toast"></div>
 
 <script>
+/* valvola del velo d'avvio: qualunque cosa succeda dopo, la pagina si mostra */
+function _togliVelo(){var de=document.documentElement;if(de&&de.classList)de.classList.remove('avvio');}
+setTimeout(_togliVelo,4000);
 /*__DATI_DEL_GIORNO__*/
 
 var curTone='misto',curLen=2;
@@ -526,11 +610,11 @@ function tagsHTML(){var t=TAGS[curSoc];if(!t)return '';
  var ht=(curFmt=='linkedin')?t.linkedin:t.instagram;
  var lab=(curFmt=='linkedin')?'Hashtag (LinkedIn: massimo 3)':'Hashtag';
  return '<div class="tagbox"><div class="tagl">'+lab+'</div><div class="tagv">'+esc(ht)+'</div>'+
-  '<button class="tagbtn" onclick="copyTags()">Copia hashtag</button>'+
+  '<button class="tagbtn" onclick="copyTags(event)">Copia hashtag</button>'+
   '<div class="tagl" style="margin-top:12px">Parole chiave per Google</div><div class="tagv">'+esc(t.kw)+'</div>'+
   '<div class="tagl" style="margin-top:10px;text-transform:none;letter-spacing:0;font-weight:500;color:var(--dim)">Gli hashtag ti fanno trovare su Instagram e LinkedIn. Su Google contano invece le parole chiave dentro al testo: usale nel titolo e nelle prime righe.</div></div>';}
-function copyTags(){var t=TAGS[curSoc];if(!t)return;var ht=(curFmt=='linkedin')?t.linkedin:t.instagram;
- try{navigator.clipboard.writeText(ht)}catch(e){}toast('Hashtag copiati');}
+function copyTags(ev){var t=TAGS[curSoc];if(!t)return;var ht=(curFmt=='linkedin')?t.linkedin:t.instagram;
+ copiaTesto(ev,ht,'Hashtag copiati');}
 var SLAB={video:'🎬 Script video (30–90s)',linkedin:'💼 LinkedIn',instagram:'📸 Instagram',reel:'🎞 Reel'};
 var SMETA={video:'Da leggere in camera · gancio, dato, significato, limite, chiusura',linkedin:'Prima riga autoportante · registro tecnico · 3 hashtag',instagram:'Divulgativo · chiusura concreta',reel:'Una sola idea · testo a schermo tra [ ]'};
 
@@ -560,32 +644,40 @@ function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')}
 function pm(a){return 'https://pubmed.ncbi.nlm.nih.gov/'+a.pmid+'/'}function di(a){return 'https://doi.org/'+a.doi}
 function itemHTML(a){if(!a)return '';var sv=isSaved(a.n),vt=S.votes[a.n];var hasSoc=!!SOC[a.n];
  return '<div class="item" id="it-'+a.n+'">'+
-  '<div class="row" onclick="toggle('+a.n+')"><span class="dot '+a.dot+'" style="margin-top:5px"></span><span class="mono '+a.mono+'">'+esc(a.j)+'</span>'+
-    '<div class="tt"><div class="h">'+esc(a.h)+'</div><div class="v">'+esc(a.v)+'</div><div class="aut">'+esc(a.ax)+' · '+esc(a.date)+'</div>'+confHTML(a.n)+'</div>'+
-    '<div class="rt">'+(S.seen.indexOf(a.n)<0?'<span class="nuovo" id="nuovo-'+a.n+'">nuovo</span>':'')+'<span class="meta">'+a.meta+'</span><span class="rt2">'+readMin(a)+' min</span><span class="chev">›</span></div></div>'+retrHTML(a.n)+
+  '<div class="row" role="button" tabindex="0" aria-expanded="false" onclick="toggle('+a.n+')"><span class="dot '+a.dot+'"></span>'+
+    '<div class="tt"><div class="h">'+esc(a.h)+'</div><div class="v">'+esc(a.v)+'</div>'+
+    '<div class="metar">'+(S.seen.indexOf(a.n)<0?'<span class="nuovo" id="nuovo-'+a.n+'">nuovo</span>':'')+
+      '<span class="meta">'+esc(a.j)+' · '+a.meta+'</span>'+confHTML(a.n)+
+      '<span class="rt2">'+esc(a.date)+' · '+readMin(a)+' min</span>'+(sv?'<span class="savmark" aria-label="Salvata">★</span>':'')+'</div></div>'+
+    '<span class="chev">›</span></div>'+retrHTML(a.n)+
   '<div class="acts">'+
     '<span class="ib save'+(sv?' on':'')+'" role="button" tabindex="0" aria-label="'+(sv?'Togli dai salvati':'Salva questo lavoro')+'" onclick="toggleSave(event,'+a.n+')">★</span>'+
-    '<span class="ib up'+(vt==1?' on':'')+'" role="button" tabindex="0" aria-label="Mostrami più lavori come questo" onclick="vote(event,'+a.n+',1)">👍</span>'+
-    '<span class="ib down'+(vt==-1?' on':'')+'" role="button" tabindex="0" aria-label="Mostrami meno lavori come questo" onclick="vote(event,'+a.n+',-1)">👎</span>'+
+    '<span class="ib up'+(vt==1?' on':'')+'" role="button" tabindex="0" aria-label="Mostrami più lavori come questo" onclick="vote(event,'+a.n+',1)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 9.2h2.5v7H3.5zM6 15.3l1.3.9h6.1a1.7 1.7 0 0 0 1.7-1.4l.9-4.1a1.4 1.4 0 0 0-1.4-1.7h-3.8l.6-3a1.3 1.3 0 0 0-2.4-.9L6 9.6"/></svg></span>'+
+    '<span class="ib down'+(vt==-1?' on':'')+'" role="button" tabindex="0" aria-label="Mostrami meno lavori come questo" onclick="vote(event,'+a.n+',-1)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g transform="rotate(180 10 10)"><path d="M3.5 9.2h2.5v7H3.5zM6 15.3l1.3.9h6.1a1.7 1.7 0 0 0 1.7-1.4l.9-4.1a1.4 1.4 0 0 0-1.4-1.7h-3.8l.6-3a1.3 1.3 0 0 0-2.4-.9L6 9.6"/></g></svg></span>'+
     (hasSoc?'<span class="ib soc lbl" role="button" tabindex="0" aria-label="Genera contenuti social per questo lavoro" onclick="openSocial(event,'+a.n+')"><span class="t">✎ Social</span></span>':'')+
-    '<span class="ib vid lbl'+(inWeek(a.n)?' on':'')+'" role="button" tabindex="0" aria-label="Scegli questo lavoro per il video della settimana" onclick="pickWeek(event,'+a.n+')"><span class="t">📹 Video</span></span>'+
-    '<span class="ib lbl" onclick="toggle('+a.n+')"><span class="t">Dettagli</span></span></div>'+
+    '<span class="ib vid lbl'+(inWeek(a.n)?' on':'')+'" role="button" tabindex="0" aria-label="Scegli questo lavoro per il video della settimana" onclick="pickWeek(event,'+a.n+')"><span class="t"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="6" width="9.4" height="8" rx="1.6"/><path d="M12.2 9.4l4.6-2.4v6l-4.6-2.4"/></svg> Video</span></span>'+
+    '</div>'+
   '<div class="det">'+fld('Autori',a.authors)+fld('Rivista',a.journal)+fld('Disegno',a.design)+fld('Popolazione',a.pop)+fld('Risultati',a.results)+fld('Conclusione degli autori',a.concl)+fld('Limiti (da revisore)',a.limits)+fld('Per te',a.perte)+muteHTML(a.n)+
     (spAffini(a.n).length?'<div class="fld"><div class="k">Nella seconda pagina</div><div class="val"><span class="spEspl" onclick="esplora(event,'+a.n+')">🔍 '+spAffini(a.n).length+' brevi sullo stesso tema — esplora →</span></div></div>':'')+linksHTML(a.n)+
     '<div class="detlinks"><a class="btn pri" href="'+pm(a)+'" target="_blank">PubMed ↗</a><a class="btn" href="'+di(a)+'" target="_blank">Rivista (DOI) ↗</a>'+(hasSoc?'<button class="btn soc" onclick="openSocial(event,'+a.n+')">✎ Contenuti social</button>':'')+'</div></div></div>';}
 function fld(k,v){return '<div class="fld"><div class="k">'+k+'</div><div class="val">'+esc(v)+'</div></div>'}
 function render(){
+  /* Lo stato APERTO sopravvive al re-render: salvare o votare non deve richiudere
+     la scheda sotto il dito (difetto scovato dalla sentinella della rivelazione
+     progressiva, 20 agosto). Identità per id, mai per posizione. */
+  var aperte=[].map.call(document.querySelectorAll('.item.open'),function(e){return e.id});
   renderResearch();
   document.getElementById('discList').innerHTML=ARTICLES.filter(function(a){return a.sec=='disc'}).map(itemHTML).join('');
   var SL=savedList();var sc=SL.length;document.getElementById('savedCount').textContent=sc;document.getElementById('savedN').textContent=sc;
   var sl=document.getElementById('savedList');
-  if(!sc)sl.innerHTML='<div class="empty"><div class="big">★</div><div style="font-weight:600;color:#1d1d1f;font-size:15px;margin-bottom:6px">Nessun articolo salvato</div>Tocca ★ su un lavoro: comparirà qui e ci resterà.</div>';
+  if(!sc)sl.innerHTML='<div class="empty"><div class="big">★</div><div style="font-weight:600;color:#1d1d1f;font-size:var(--t-sec);margin-bottom:6px">Nessun articolo salvato</div>Tocca ★ su un lavoro: comparirà qui e ci resterà.</div>';
   else sl.innerHTML='<div class="card">'+SL.map(itemHTML).join('')+'</div>';
   if(document.getElementById('savedq'))renderSaved();
   renderRetr();
   renderTop();
   renderFoot();
   renderNl();
+  aperte.forEach(function(id){var e=document.getElementById(id);if(e)e.classList.add('open')});
   document.getElementById('focusJournals').innerHTML=S.journals.map(function(j){return '<span class="tag">'+esc(j)+'</span>'}).join('');
   document.getElementById('focusKols').innerHTML=S.kols.map(function(k){return '<span class="tag">'+esc(k)+'</span>'}).join('');
   var fm=document.getElementById('focusMore');if(fm)fm.innerHTML=(S.societies||[]).concat(S.companies||[]).concat(S.topics||[]).map(function(k){return '<span class="tag">'+esc(k)+'</span>'}).join('');
@@ -599,7 +691,7 @@ function render(){
   var b2=document.getElementById('savebtn-2');if(b2)b2.className='btn'+(isSaved(2)?' on':'');
 }
 function tagX(k,x){return '<span class="tag">'+esc(x)+' <b onclick="rm(\''+k+'\',\''+x.replace(/'/g,"\\'")+'\')">×</b></span>'}
-function toggle(n){var e=document.getElementById('it-'+n);if(e)e.classList.toggle('open');if(S.seen.indexOf(n)<0){S.seen.push(n);save();var nb=document.getElementById('nuovo-'+n);if(nb)nb.style.display='none'}}
+function toggle(n){var e=document.getElementById('it-'+n);if(e){e.classList.toggle('open');var r=e.querySelector('.row');if(r&&r.setAttribute)r.setAttribute('aria-expanded',e.classList.contains('open')?'true':'false');}if(S.seen.indexOf(n)<0){S.seen.push(n);save();var nb=document.getElementById('nuovo-'+n);if(nb)nb.style.display='none'}}
 function scrollToItem(n){var e=document.getElementById('it-'+n);if(e){e.classList.add('open');e.scrollIntoView({behavior:'smooth',block:'center'})}}
 function toast(m){var t=document.getElementById('toast');t.textContent=m;t.style.opacity=1;clearTimeout(window._t);window._t=setTimeout(function(){t.style.opacity=0},1700)}
 /* I salvati sopravvivono al ricambio quotidiano delle schede: si conserva la
@@ -621,7 +713,7 @@ function toggleSave(ev,n){if(ev)ev.stopPropagation();var a=A[n];if(!a)return;
  if(i>=0||j>=0){if(i>=0)S.savedItems.splice(i,1);if(j>=0)S.saved.splice(j,1);toast('Rimosso');}
  else{S.savedItems.push({d:BUILD_DATE,a:JSON.parse(JSON.stringify(a))});S.saved.push(n);toast('★ Salvato');}
  save();render();}
-function vote(ev,n,d){if(ev)ev.stopPropagation();if(S.votes[n]==d){delete S.votes[n];toast('Annullato')}else{S.votes[n]=d;toast(d==1?'👍 Più così':'👎 Meno così')}save();render()}
+function vote(ev,n,d){if(ev)ev.stopPropagation();if(S.votes[n]==d){delete S.votes[n];toast('Annullato')}else{S.votes[n]=d;toast(d==1?'Più così':'Meno così')}save();render()}
 function addItem(k,id){var v=document.getElementById(id).value.trim();if(!v)return;if(S[k].indexOf(v)<0)S[k].push(v);document.getElementById(id).value='';save();render();toast('Aggiunto')}
 function rm(k,x){S[k]=S[k].filter(function(y){return y!=x});save();render()}
 /* Le proposte si tracciano PER NOME, non per posizione nell'elenco.
@@ -642,7 +734,7 @@ function renderSugg(){var sb=document.getElementById('suggBox');if(!sb)return;
  var ap=suggAperte(),risposte=Object.keys(S.suggDone||{}).length;
  if(!ap.length){sb.innerHTML='<b>Per ora ho finito le proposte.</b> Ne aggiungo di nuove ogni mattina, in base a chi compare nei lavori che escono.'+(risposte?' Finora hai risposto a '+risposte+'.':'');return;}
  var q=ap[0];var ic={kol:'\ud83c\udf93',journal:'\ud83d\udcda',society:'\ud83c\udfdb',topic:'\ud83e\udded'}[q.k]||'\u2726';
- sb.innerHTML='<div style="font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;opacity:.7">'+(ap.length==1?'Ultima proposta':ap.length+' proposte da vedere')+(risposte?' \u00b7 '+risposte+' gi\u00e0 viste':'')+'</div>'+
+ sb.innerHTML='<div style="font-size:var(--t-badge);font-weight:700;letter-spacing:.05em;text-transform:uppercase;opacity:.7">'+(ap.length==1?'Ultima proposta':ap.length+' proposte da vedere')+(risposte?' \u00b7 '+risposte+' gi\u00e0 viste':'')+'</div>'+
   '<div style="margin-top:5px"><b>'+ic+' '+esc(q.n)+'</b>'+(q.w?' <span style="opacity:.7">\u00b7 '+esc(q.w)+'</span>':'')+'</div>'+
   '<div style="margin-top:4px;line-height:1.45">'+esc(q.r)+'</div>'+
   '<div class="sb"><button class="btn pri" onclick="acceptSugg()">\uff0b Seguilo</button><button class="btn" onclick="dismissSugg()">Non mi interessa</button></div>';}
@@ -703,14 +795,14 @@ function apriTrasferimento(){
  var l=linkTrasferimento(),peso=Math.round(l.length/1024);
  var el=document.getElementById('syncbox');if(!el)return;
  el.innerHTML='<div class="muted" style="margin-bottom:9px">Questo link contiene salvati, voti, lavori scelti, preferenze e i testi che hai adattato ('+peso+' KB). Mandalo a te stesso e aprilo sull&rsquo;altro dispositivo: le due copie si fondono, non si sovrascrivono.</div>'+
-  '<div class="add"><button class="btn pri" onclick="copiaTrasferimento()">🔗 Copia il link di trasferimento</button>'+
+  '<div class="add"><button class="btn pri" onclick="copiaTrasferimento()"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M8.4 11.6l3.2-3.2M7.2 9.2L5 11.4a2.7 2.7 0 0 0 3.8 3.8l2.2-2.2M12.8 10.8l2.2-2.2A2.7 2.7 0 0 0 11.2 4.8L9 7"/></svg> Copia il link di trasferimento</button>'+
   (navigator.share?'<button class="btn" onclick="condividiTrasferimento()">Condividi…</button>':'')+'</div>'+
   '<div class="muted" style="margin:12px 0 9px">La copia di sicurezza è un file: tutto ciò che decidi vive solo su questo dispositivo, e se i dati del sito vengono cancellati non c&rsquo;è altro modo di tornare indietro. Il ripristino fonde le copie, non le sovrascrive.</div>'+
-  '<div class="add"><button class="btn" onclick="esportaBackup()" aria-label="Scarica una copia di sicurezza dei tuoi dati in un file">💾 Scarica copia di sicurezza</button>'+
-  '<button class="btn" onclick="document.getElementById(\'bkfile\').click()" aria-label="Ripristina i dati da un file di copia di sicurezza">📥 Ripristina da file</button>'+
+  '<div class="add"><button class="btn" onclick="esportaBackup()" aria-label="Scarica copia di sicurezza dei tuoi dati in un file"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3.5v8.2M6.8 8.8l3.2 3.2 3.2-3.2M4 13.5v2a1.2 1.2 0 0 0 1.2 1.2h9.6A1.2 1.2 0 0 0 16 15.5v-2"/></svg> Scarica copia di sicurezza</button>'+
+  '<button class="btn" onclick="document.getElementById(\'bkfile\').click()" aria-label="Ripristina da file una copia di sicurezza"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 11.7V3.5M6.8 6.7L10 3.5l3.2 3.2M4 13.5v2a1.2 1.2 0 0 0 1.2 1.2h9.6A1.2 1.2 0 0 0 16 15.5v-2"/></svg> Ripristina da file</button>'+
   '<input type="file" id="bkfile" accept=".json,application/json" style="display:none" onchange="importaBackup(this)" aria-label="File di copia di sicurezza da ripristinare"></div>'+
   '<div class="muted" style="margin:12px 0 9px">I segnali sono le tue scelte — voti, salvati, lavori per la newsletter, proposte accettate o respinte. Incollàti nella chat con Claude, orientano le schede dei giorni successivi.</div>'+
-  '<div class="add"><button class="btn" onclick="condividiSegnali()" aria-label="Condividi i tuoi segnali con Claude per orientare i prossimi briefing">📡 Manda i segnali a PULSE</button></div>';}
+  '<div class="add"><button class="btn" onclick="condividiSegnali()" aria-label="Manda i segnali a PULSE: condividi voti, salvati e proposte con Claude per orientare i prossimi briefing"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M10 11.5V17M7.9 9.4a3 3 0 1 1 4.2 0M5.5 11.7a6.3 6.3 0 1 1 9 0"/><circle cx="10" cy="7.2" r="1.2" fill="currentColor" stroke="none"/></svg> Manda i segnali a PULSE</button></div>';}
 function copiaTrasferimento(){try{navigator.clipboard.writeText(linkTrasferimento())}catch(e){}toast('Link copiato — aprilo sull’altro dispositivo');}
 function condividiTrasferimento(){if(navigator.share)navigator.share({title:'PULSE',text:'I miei dati PULSE',url:linkTrasferimento()}).catch(function(){});}
 /* BENVENUTO E GUIDA. L'app deve spiegarsi da sola: una card alla PRIMA apertura
@@ -719,7 +811,7 @@ function condividiTrasferimento(){if(navigator.share)navigator.share({title:'PUL
    chi ha già visto il benvenuto vede SOLO la riga di novità, una volta. Le funzioni
    sono PURE (stato → html) così i test le collaudano. La guida descrive solo cose
    che esistono davvero: se togli una funzione, togli la sua riga. */
-var GUIDA_V=4,NOVITA='🚗 <b>Modalità auto</b>: ascolto continuo a tasti grandi con comandi a voce («prossima», «salva questa», «più veloce»). La <b>📡 Rassegna</b> ora sorveglia anche 📜 linee guida e consensus, 📣 i lavori di cui parla la comunità e 🧪 i preprint. E in Impostazioni c’è <b>🧠 Il cervello di PULSE</b>: collegandolo, le domande libere a voce ricevono risposte vere e il podcast parla con una voce naturale.';
+var GUIDA_V=5,NOVITA='<b>PULSE ha una veste nuova.</b> Il verdetto del giorno apre la pagina; le sezioni si raggiungono dalla barra in basso (in alto sul computer); una scheda si apre toccando la riga, e le azioni compaiono solo quando è aperta. Icone ridisegnate, contrasti rivisti per la leggibilità, il calendario dell\u2019archivio si aggiorna da solo, la ricerca suggerisce esempi e l\u2019app dichiara quando sei senza rete. Tutto quello che c\u2019era resta: nulla da riconfigurare.';
 function benvenutoHTML(guidav){
  if((guidav||0)>=GUIDA_V)return '';
  if((guidav||0)>0&&NOVITA)return '<div class="wel card"><b>Novità</b>'+NOVITA+
@@ -728,9 +820,9 @@ function benvenutoHTML(guidav){
   'Il tuo giornale del ginocchio: ogni mattina schede nuove dalla letteratura, verificate una a una su PubMed. Quattro cose bastano per iniziare:'+
   '<ul style="margin:7px 0 2px;padding-left:19px"><li><b>Tocca una scheda</b> per aprirla (scorri a destra per salvarla)</li>'+
   '<li><b>▶</b> ascolta il briefing del giorno</li>'+
-  '<li><b>🎙</b> comanda a voce: «apri la tre», «sorprendimi»…</li>'+
-  '<li><b>👍 👎</b> sulle schede orientano i giorni successivi</li></ul>'+
-  'Tutto il resto è spiegato nella guida: tocca <span style="font-size:13px;vertical-align:1px">❓</span> in alto a destra quando vuoi.'+
+  '<li><b>il microfono</b> comanda a voce: «apri la tre», «sorprendimi»…</li>'+
+  '<li><b>i pollici</b> sulle schede orientano i giorni successivi</li></ul>'+
+  'Tutto il resto è spiegato nella guida: tocca <strong>?</strong> in alto a destra quando vuoi.'+
   '<div class="add" style="margin-top:10px"><button class="btn pri" onclick="chiudiBenvenuto()">Ho capito</button></div></div>';}
 function renderBenvenuto(){var el=document.getElementById('welbox');if(el)el.innerHTML=benvenutoHTML(S.guidav);}
 function chiudiBenvenuto(){S.guidav=GUIDA_V;save();renderBenvenuto();}
@@ -746,24 +838,24 @@ function guidaHTML(){
   '<details><summary>Gesti e tasti</summary><ul>'+
   '<li>Tocca una scheda per aprirla · scorri a <b>destra</b> per salvarla</li>'+
   '<li><b>▶</b> legge il briefing — a due voci quando c’è il dialogo del giorno</li>'+
-  '<li><b>🎙</b> ascolta i tuoi comandi e risponde a voce</li>'+
-  '<li><b>👍 👎</b> su ogni scheda · <b>✎ Social</b> genera i testi · <b>📹 Video</b> sceglie il lavoro per la newsletter</li></ul></details>'+
+  '<li><b>il microfono</b> ascolta i tuoi comandi e risponde a voce</li>'+
+  '<li><b>i pollici</b> su ogni scheda · <b>✎ Social</b> genera i testi · <b>Video</b> sceglie il lavoro per la newsletter</li></ul></details>'+
   '<details><summary>I comandi a voce riconosciuti</summary>'+
-  '<div>«apri (o leggi) la tre» · «salva la due» · «briefing» · «tensioni» · «seconda pagina» · «sorprendimi» · «rassegna» · «modalità auto» · «prossima» · «indietro» · «ripeti» · «pausa» · «riprendi» · «salva questa» · «più veloce / più piano / velocità normale» · «aiuto» · «basta» per fermare. I numeri valgono anche in lettere. Fuori da questo vocabolario: senza cervello lo dice e basta; col 🧠 cervello collegato la domanda diventa conversazione vera, con risposta parlata.</div></details>'+
-  '<details><summary>🧠 Chiedi a PULSE e voce naturale</summary>'+
-  '<div>Facoltativo e a pagamento (pochi franchi al mese). Un piccolo «cervello» esterno custodisce le chiavi che una pagina come questa non può tenere: collegandolo in Impostazioni, il 🎙 risponde a qualunque domanda — sul giornale del giorno prima di tutto — e ▶ legge il podcast con una voce naturale a due timbri. Se il cervello non risponde, l’app lo dice e torna alla voce del telefono. Le istruzioni per attivarlo sono nella cartella chiedi/ del repository; le regole di verità valgono anche lì: mai citazioni inventate, dati assenti dichiarati.</div></details>'+
-  '<details><summary>🚗 In auto</summary>'+
-  '<div>Il tasto 🚗 accanto a ▶ apre l’ascolto continuo: il briefing e poi le schede una dopo l’altra, ognuna annunciata con la posizione («Scheda 3 di 8»). Tasti grandi: ⏮ ▶ ⏭ · 🔁 ripete · ★ salva la scheda in ascolto · 🎙 un comando alla volta — l’audio si ferma, parli, riparte da solo. La velocità di lettura si regola a voce e resta memorizzata. Lo schermo resta acceso finché il pannello è aperto. Limite di iPhone, dichiarato: l’app deve restare in primo piano — Safari non legge né ascolta in sottofondo, quindi telefono sul supporto e schermo attivo.</div></details>'+
+  '<div>«apri (o leggi) la tre» · «salva la due» · «briefing» · «tensioni» · «seconda pagina» · «sorprendimi» · «rassegna» · «modalità auto» · «prossima» · «indietro» · «ripeti» · «pausa» · «riprendi» · «salva questa» · «più veloce / più piano / velocità normale» · «aiuto» · «basta» per fermare. I numeri valgono anche in lettere. Fuori da questo vocabolario: senza cervello lo dice e basta; col cervello collegato la domanda diventa conversazione vera, con risposta parlata.</div></details>'+
+  '<details><summary>Chiedi a PULSE e voce naturale</summary>'+
+  '<div>Facoltativo e a pagamento (pochi franchi al mese). Un piccolo «cervello» esterno custodisce le chiavi che una pagina come questa non può tenere: collegandolo in Impostazioni, il microfono risponde a qualunque domanda — sul giornale del giorno prima di tutto — e ▶ legge il podcast con una voce naturale a due timbri. Se il cervello non risponde, l’app lo dice e torna alla voce del telefono. Le istruzioni per attivarlo sono nella cartella chiedi/ del repository; le regole di verità valgono anche lì: mai citazioni inventate, dati assenti dichiarati.</div></details>'+
+  '<details><summary>In auto</summary>'+
+  '<div>Il tasto con l’automobile accanto a ▶ apre l’ascolto continuo: il briefing e poi le schede una dopo l’altra, ognuna annunciata con la posizione («Scheda 3 di 8»). Tasti grandi: ⏮ ▶ ⏭ · le frecce circolari ripetono · ★ salva la scheda in ascolto · il microfono ascolta un comando alla volta — l’audio si ferma, parli, riparte da solo. La velocità di lettura si regola a voce e resta memorizzata. Lo schermo resta acceso finché il pannello è aperto. Limite di iPhone, dichiarato: l’app deve restare in primo piano — Safari non legge né ascolta in sottofondo, quindi telefono sul supporto e schermo attivo.</div></details>'+
   '<details><summary>Le sezioni della pagina Oggi</summary>'+
-  '<div>Il <b>lavoro del giorno</b> è la scheda che vale di più. I filtri in alto restringono l’elenco per pallino. «Cosa non torna» sono le tensioni aperte fra la letteratura e la tua pratica, con cosa fare e cosa le chiuderebbe. In fondo: 📖 la <b>seconda pagina</b> (altri lavori veri del giorno, in breve) e 🎲 <b>Sorprendimi</b> (una proposta fuori dai soliti argomenti, mai ripetuta).</div></details>'+
+  '<div>Il <b>lavoro del giorno</b> è la scheda che vale di più. I filtri in alto restringono l’elenco per pallino. «Cosa non torna» sono le tensioni aperte fra la letteratura e la tua pratica, con cosa fare e cosa le chiuderebbe. In fondo: la <b>seconda pagina</b> (altri lavori veri del giorno, in breve) e <b>Sorprendimi</b> (una proposta fuori dai soliti argomenti, mai ripetuta).</div></details>'+
   '<details><summary>Le altre schede</summary><ul>'+
-  '<li><b>📡 Rassegna</b>: in testa un sommario a colpo d’occhio, poi le sezioni — richiami di dispositivi, Swissmedic, 📜 linee guida e consensus nuovi, ritrattazioni, ⚖️ il destino dei tuoi verdetti, i trial delle tue tensioni, 📣 i lavori di cui parla la comunità, i video della tua rete, 🧪 i preprint (dichiarati non revisionati). Le sezioni che scottano si aprono da sole; ogni fonte muta è dichiarata.</li>'+
-  '<li><b>🗓 Archivio</b>: tutte le mattine passate, con ricerca.</li>'+
+  '<li><b>Rassegna</b>: in testa un sommario a colpo d’occhio, poi le sezioni — richiami di dispositivi, Swissmedic, 📜 linee guida e consensus nuovi, ritrattazioni, ⚖️ il destino dei tuoi verdetti, i trial delle tue tensioni, 📣 i lavori di cui parla la comunità, i video della tua rete, 🧪 i preprint (dichiarati non revisionati). Le sezioni che scottano si aprono da sole; ogni fonte muta è dichiarata.</li>'+
+  '<li><b>Archivio</b>: tutte le mattine passate — il calendario segna i giorni con un\u2019edizione — con ricerca.</li>'+
   '<li><b>★ Salvati</b>: sopravvivono al ricambio quotidiano, con ricerca.</li>'+
-  '<li><b>✉️ Newsletter</b>: fino a 4 lavori scelti con 📹, testo pronto in tre versioni.</li>'+
-  '<li><b>⚙ Impostazioni</b>: preferenze, dimensione del testo, trasferimento fra dispositivi, copia di sicurezza, 📡 i segnali.</li></ul></details>'+
+  '<li><b>Newsletter</b>: fino a 4 lavori scelti con Video, testo pronto in tre versioni.</li>'+
+  '<li><b>Impostazioni</b>: preferenze, dimensione del testo, trasferimento fra dispositivi, copia di sicurezza, i segnali.</li></ul></details>'+
   '<details><summary>Dove vivono i tuoi dati</summary>'+
-  '<div>PULSE non ha un server: voti, salvati e preferenze restano su questo dispositivo. Per questo esistono il <b>trasferimento</b> (le copie si fondono, non si sovrascrivono) e la <b>copia di sicurezza</b> su file. 📡 <b>Manda i segnali</b> condivide le tue scelte nella chat con Claude: orientano le schede dei giorni successivi.</div></details>';}
+  '<div>PULSE non ha un server: voti, salvati e preferenze restano su questo dispositivo. Per questo esistono il <b>trasferimento</b> (le copie si fondono, non si sovrascrivono) e la <b>copia di sicurezza</b> su file. <b>Manda i segnali</b> condivide le tue scelte nella chat con Claude: orientano le schede dei giorni successivi.</div></details>';}
 function apriGuida(){var el=document.getElementById('gvbody');if(el&&!el.innerHTML)el.innerHTML=guidaHTML();
  var ov=document.getElementById('gvov');if(ov)ov.classList.add('on');}
 function chiudiGuida(){var ov=document.getElementById('gvov');if(ov)ov.classList.remove('on');}
@@ -844,7 +936,7 @@ function leggiTrasferimento(){
  toast(parti.length?('Uniti: '+parti.join(', ')):'Già allineati: niente di nuovo');}
 function setV(k,v,b){S[k]=v;[].forEach.call(b.parentNode.children,function(x){x.classList.remove('on')});b.classList.add('on');save();toast('Salvato')}
 function resetAll(){if(confirm('Azzerare tutto?')){S=JSON.parse(JSON.stringify(DEF));save();render();toast('Azzerato')}}
-function tab(id,btn){document.querySelectorAll('.view').forEach(function(v){v.classList.remove('on')});document.getElementById(id).classList.add('on');document.querySelectorAll('.tabs button').forEach(function(b){b.classList.remove('on')});btn.classList.add('on');window.scrollTo(0,0)}
+function tab(id,btn){document.querySelectorAll('.view').forEach(function(v){v.classList.remove('on')});document.getElementById(id).classList.add('on');document.querySelectorAll('.tabs button').forEach(function(b){b.classList.remove('on');if(b.removeAttribute)b.removeAttribute('aria-current')});btn.classList.add('on');if(btn.setAttribute)btn.setAttribute('aria-current','page');window.scrollTo(0,0)}
 
 // SOCIAL
 var curSoc=null,curFmt='video';
@@ -856,7 +948,17 @@ function setFmt(f){curFmt=f;renderCtrl();[].forEach.call(document.getElementById
   var i=['video','linkedin','instagram','reel'].indexOf(f);document.getElementById('shTabs').children[i].classList.add('on');showFmt();}
 function showFmt(){document.getElementById('shCnt').textContent=socText();document.getElementById('shMeta').innerHTML=esc(SMETA[curFmt]||'')+tagsHTML();var sb=document.querySelector('.sbody');if(sb)sb.scrollTop=0;}
 function closeSocial(){document.getElementById('ov').classList.remove('on')}
-function copyCnt(){var t=socText();try{navigator.clipboard.writeText(t)}catch(e){}toast('Copiato');}
+/* UN solo verbo per l'azione più frequente: il bottone che copia dice «Copiato ✓»
+   dove l'hai toccato, entro 100 ms, e torna com'era. Fallback dichiarato. */
+function copiaTesto(ev,testo,etichetta){
+ var b=ev&&(ev.currentTarget||ev.target);
+ function fatto(okk){
+  toast(okk?(etichetta||'Copiato'):'Copia non riuscita su questo browser');
+  if(b&&okk){var prima=b.textContent;b.textContent='Copiato ✓';b.disabled=true;
+   setTimeout(function(){b.textContent=prima;b.disabled=false;},1600);}}
+ try{navigator.clipboard.writeText(testo).then(function(){fatto(true)},function(){fatto(false)});}
+ catch(e){fatto(false);}}
+function copyCnt(ev){copiaTesto(ev,socText());}
 var _speaking=false;
 /* ORDINE DELLE VOCI — pura, così il cancello la collauda con voci sintetiche.
    Emma in testa (sua scelta esplicita, 19 agosto: ha scaricato Emma Premium);
@@ -915,8 +1017,8 @@ function renderSaved(){var q=(document.getElementById('savedq')?document.getElem
  var tutti=savedList();
  var list=tutti.filter(function(a){if(!q)return true;return ((a.h||'')+' '+(a.j||'')+' '+(a.authors||'')+' '+(a.v||'')).toLowerCase().indexOf(q)>=0;});
  var sl=document.getElementById('savedList');
- if(!tutti.length){sl.innerHTML='<div class="empty"><div class="big">★</div><div style="font-weight:600;color:#1d1d1f;font-size:15px;margin-bottom:6px">Nessun articolo salvato</div>Tocca la stella su un lavoro: comparirà qui.</div>';return;}
- if(!list.length){sl.innerHTML='<div class="empty">Nessun salvato corrisponde a “'+q+'”.</div>';return;}
+ if(!tutti.length){sl.innerHTML='<div class="empty"><div class="big">★</div><div style="font-weight:600;color:#1d1d1f;font-size:var(--t-sec);margin-bottom:6px">Nessun articolo salvato</div>Tocca la stella su un lavoro: comparirà qui.</div>';return;}
+ if(!list.length){sl.innerHTML='<div class="empty">Nessun salvato corrisponde a “'+esc(q)+'”.</div>';return;}
  sl.innerHTML='<div class="card">'+list.map(itemHTML).join('')+'</div>';}
 function shareArt(ev,n){if(ev)ev.stopPropagation();var a=A[n];var url=pm(a);var txt=a.h+' — '+a.journal;
  if(navigator.share){navigator.share({title:'PULSE',text:txt,url:url}).catch(function(){});}
@@ -932,7 +1034,7 @@ function renderResearch(){if(document.getElementById('verdict'))renderVerdict();
  if(_rn){var _tot=ARTICLES.filter(function(a){return a.sec=='res'}).length;
   _rn.textContent=_tot+' — tocca per aprire';}var arr=ARTICLES.filter(function(a){return a.sec=='res'&&(curFilter=='all'||a.dot==curFilter)});
  var el=document.getElementById('researchList');
- el.innerHTML=arr.length?arr.map(itemHTML).join(''):'<div style="padding:16px;color:var(--dim);font-size:13px">Nessun lavoro in questa categoria oggi.</div>';}
+ el.innerHTML=arr.length?arr.map(itemHTML).join(''):'<div style="padding:16px;color:var(--dim);font-size:var(--t-meta)">Nessun lavoro in questa categoria oggi.</div>';}
 function setFilter(f,btn){curFilter=f;[].forEach.call(btn.parentNode.children,function(x){x.classList.remove('on')});btn.classList.add('on');renderResearch();}
 function _speakText(t){var b=document.getElementById('playbtn');
  if(!('speechSynthesis' in window)){toast('Voce non supportata');return;}
@@ -1009,7 +1111,7 @@ function eseguiComando(c){
    if(chiediDisponibile()&&(c.testo||'').trim()){
     /* fuori vocabolario + cervello collegato = conversazione vera */
     var ovA=document.getElementById('autoov'),inAuto=ovA&&ovA.classList.contains('on');
-    if(inAuto)_autoTesto('Penso…');else toast('🧠 Chiedo a PULSE…');
+    if(inAuto)_autoTesto('Penso…');else toast('Chiedo a PULSE…');
     chiediPulse(c.testo,function(r){
      if(inAuto)_autoTesto(r);
      parla([r],fine);
@@ -1019,8 +1121,8 @@ function eseguiComando(c){
    di('Non ho capito «'+ (c.testo||'') +'». Posso aprire o salvare una scheda, leggere il briefing o le tensioni, aprire la seconda pagina, la rassegna, o sorprenderti. Di’ aiuto per la guida.',fine);}}
 var _convOn=false,_rec=null;
 function _SR(){return window.SpeechRecognition||window.webkitSpeechRecognition||null;}
-function _aggMic(){var b=document.getElementById('micbtn');if(b)b.textContent=_convOn?'🔴':'🎙';
- var a=document.getElementById('automic');if(a){a.textContent=_convOn?'🔴':'🎙';a.classList.toggle('on',_convOn);}}
+function _aggMic(){var b=document.getElementById('micbtn');if(b)b.classList.toggle('rec',_convOn);
+ var a=document.getElementById('automic');if(a){a.classList.toggle('on',_convOn);a.classList.toggle('rec',_convOn);}}
 function _riascolta(){if(_convOn)setTimeout(_ascolta,250);}
 function _ascolta(){
  var SR=_SR();if(!SR||!_convOn)return;
@@ -1173,13 +1275,13 @@ function autoMic(){
  if(!_SR())return;
  _autoAttiva=false;fermaVoce();
  _autoPP('▶');_autoNow('ti ascolto…');
- var b=document.getElementById('automic');if(b){b.textContent='🔴';b.classList.add('on');}
+ var b=document.getElementById('automic');if(b)b.classList.add('on','rec');
  var r;try{r=new (_SR())();}catch(e){_autoMicFine();return;}
  r.lang='it-IT';r.interimResults=false;r.maxAlternatives=1;
  r.onresult=function(ev){_autoMicFine();eseguiComando(interpretaComando(ev.results[0][0].transcript));};
  r.onerror=function(){_autoMicFine();_autoNow('non ho sentito: riprova');};
  try{r.start();}catch(e){_autoMicFine();}}
-function _autoMicFine(){var b=document.getElementById('automic');if(b){b.textContent='🎙';b.classList.remove('on');}}
+function _autoMicFine(){var b=document.getElementById('automic');if(b)b.classList.remove('on','rec');}
 function _autoRiprendiSeAperto(fine){
  var ov=document.getElementById('autoov');
  if(ov&&ov.classList.contains('on')&&_autoLista)autoVai(_autoPos);
@@ -1211,11 +1313,9 @@ function renderPick(){var el=document.getElementById('pickbox');if(!el)return;
   /* Il titolo sta una volta sola, grande e nero, sotto la fascia: scriverlo anche
      dentro la fascia lo faceva finire sopra l'onda e lo ripeteva a due centimetri
      di distanza. */
-  '<div class="prev cover"><div class="covmono">'+esc(a.j+(disegno?' · '+disegno:''))+'</div>'+
-  '<svg class="covline" viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0 22 Q25 6 50 18 T100 10" fill="none" stroke="#fff" stroke-width="1.4"/></svg></div>'+
-  '<div class="ey">★ Da leggere oggi <span class="mono '+esc(a.mono||'')+'" style="width:22px;height:22px;font-size:6.5px">'+esc(a.j)+'</span>'+
-  '<span class="meta">'+esc(occhiello)+'</span></div>'+
-  '<h1>'+esc(a.h)+'</h1>'+
+  '<div class="pickhead"><span class="pklab">Il lavoro del giorno</span>'+
+  '<span class="pkmeta">'+esc(a.j+(occhiello?' · '+occhiello:''))+'</span></div>'+
+  '<h2 class="pkh">'+esc(a.h)+'</h2>'+
   '<div class="aut">'+esc([a.ax,a.journal,a.date].filter(Boolean).join(' · '))+'</div>'+
   '<div class="why">'+esc(a.concl||a.v||'')+'</div>'+
   '<div class="act"><button class="btn pri" onclick="scrollToItem('+a.n+')">Scheda estesa ▾</button>'+
@@ -1247,14 +1347,14 @@ function renderLato(){var el=document.getElementById('latobox');if(!el)return;
  var soc=(typeof SOCIETA!=='undefined'?SOCIETA:[])||[];
  var cInd=ind.length?ind.map(function(x){return '<div class="tcong"><div class="tt"><div class="h">'+esc(x.t)+'</div><div class="v">'+esc(x.v||'')+'</div></div></div>';}).join('')
    :'<div class="muted"><b>Nulla di verificato negli ultimi 10 giorni.</b></div>';
- var cCong=cong.length?cong.map(function(c){return '<div class="tcong"><span class="mono" style="background:linear-gradient(160deg,#1e6fb0,#0a3d62)">'+esc(c.sig||'')+'</span><div class="tt"><div class="h">'+esc(c.nome)+'</div><div class="v">'+esc((c.nota?c.nota+' ':'')+(c.scad?scadenzaTesto(c.scad):''))+'</div></div></div>';}).join('')
+ var cCong=cong.length?cong.map(function(c){return '<div class="tcong"><span class="mono" style="background:#0a3d62">'+esc(c.sig||'')+'</span><div class="tt"><div class="h">'+esc(c.nome)+'</div><div class="v">'+esc((c.nota?c.nota+' ':'')+(c.scad?scadenzaTesto(c.scad):''))+'</div></div></div>';}).join('')
    :'<div class="muted"><b>Nessuna scadenza verificata oggi.</b></div>';
  var cSoc=soc.length?soc.map(function(s){return '<div class="tcong"><div class="tt"><div class="h">'+esc(s.t)+'</div><div class="v">'+esc(s.v||'')+'</div></div></div>';}).join('')
    :'<div class="muted"><b>Nessun nuovo consensus verificato.</b></div>';
  el.innerHTML=
-  riquadro('Industria &amp; tecnologia','r-tech','🛠',ind.length+' in finestra',cInd,nv.ind)+
-  riquadro('Congressi','r-cong','📅','',cCong,nv.cong)+
-  riquadro('Società scientifiche','r-soc','👥','',cSoc,nv.soc);}
+  riquadro('Industria &amp; tecnologia','r-tech','<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.6 3.6a4 4 0 0 0-5.4 4.9L3.4 13.3l3.3 3.3 4.8-4.8a4 4 0 0 0 4.9-5.4l-2.5 2.5-2.4-.9-.9-2.4z"/></svg>',ind.length+' in finestra',cInd,nv.ind)+
+  riquadro('Congressi','r-cong','<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="13" height="11" rx="1.5"/><path d="M3.5 8.5h13M7 3.5v3M13 3.5v3"/></svg>','',cCong,nv.cong)+
+  riquadro('Società scientifiche','r-soc','<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="7" r="2.5"/><path d="M3.2 16c.4-2.8 2.1-4.4 4.3-4.4s3.9 1.6 4.3 4.4M12.6 4.9a2.4 2.4 0 0 1 0 4.4M13.6 11.9c1.8.5 3 1.9 3.3 4.1"/></svg>','',cSoc,nv.soc);}
 
 function renderVerdict(){var el=document.getElementById('verdict');if(!el)return;
  var oranges=ARTICLES.filter(function(a){return a.sec=='res'&&a.dot=='orange'}).length;
@@ -1263,7 +1363,7 @@ function renderVerdict(){var el=document.getElementById('verdict');if(!el)return
   el.innerHTML='<div class="vtop"><span class="vi">⚠️</span><span>'+oranges+(oranges==1?' lavoro mette in discussione quello che fai':' lavori mettono in discussione quello che fai')+'</span></div>'+
    '<div class="vlist">'+orl.map(function(a){return '<div class="vitem" onclick="goTo('+a.n+')"><span class="ar">→</span><span>'+esc(a.h)+'</span></div>';}).join('')+'</div>'+
    '<div class="vhint">Tocca un titolo per aprirlo: '+(oranges==1?'è il più importante di oggi':'sono i '+oranges+' più importanti di oggi')+'.</div>';}
- else{el.className='verdict calm';el.innerHTML='<span class="vi">✅</span><span>Oggi niente mette in discussione quello che fai. Uno sguardo e via.</span>';}}
+ else{el.className='verdict calm';el.innerHTML='Oggi niente mette in discussione quello che fai. Uno sguardo e via.';}}
 // swipe: destra=salva, sinistra=segna letto
 var _sx=0,_sy=0,_sItem=null;
 document.addEventListener('touchstart',function(e){var r=e.target.closest?e.target.closest('.row'):null;
@@ -1293,6 +1393,7 @@ function linksHTML(n){var L=LINKS[n];if(!L||!L.length)return '';
 function goTo(n){var el=document.getElementById('it-'+n);if(el){el.classList.add('open');el.scrollIntoView({behavior:'smooth',block:'center'});}else{toast('Scheda non in questa vista');}}
 
 function renderFresh(){var el=document.getElementById('freshbox');if(!el)return;
+ var offline=(typeof navigator!=='undefined'&&navigator.onLine===false)?'<div class="fresh" style="color:var(--dim)">Sei senza rete: questa è l\'ultima edizione scaricata.</div>':'';
  /* Il briefing parte alle 5.06 UTC — verso le 7 del mattino in Ticino — e impiega
     mezz'ora abbondante. Prima di questa correzione, alle 7:10, con il sistema che stava
     lavorando regolarmente, l'app diceva «qualcosa non ha funzionato»: un falso allarme
@@ -1307,7 +1408,7 @@ function renderFresh(){var el=document.getElementById('freshbox');if(!el)return;
  var oraUTC=now.getUTCHours()+now.getUTCMinutes()/60;
  var inLavorazione=(oraUTC>=5&&oraUTC<6.5);   /* 7.00-8.30 in Ticino */   /* 7.00-9.00 in Ticino */
  if(giorniIndietro<=0){
-  el.innerHTML='<div class="fresh ok">✓ <span>Aggiornato oggi, '+dl+'</span></div>';}
+  el.innerHTML=offline+'<div class="fresh ok">✓ <span>Aggiornato oggi, '+dl+'</span></div>';}
  else if(giorniIndietro===1&&oraUTC<5){
   el.innerHTML='<div class="fresh ok">🌙 <span>Questo è il briefing di '+dl+'. Quello di oggi arriva verso le 7 del mattino.</span></div>';}
  else if(giorniIndietro===1&&inLavorazione){
@@ -1326,15 +1427,24 @@ function duelliVivi(){/* un duello che punta a schede non più presenti non va m
 /* L'intestazione conteneva quattro numeri scritti a mano: «15» lavori (mentre erano
    11 — era il residuo esatto di un errore corretto nello storico ma mai nell'app), il
    conteggio degli arancioni, «11/11» e la data. Ora si contano. */
+/* La sparkline dei 14 giorni: barre = schede del giorno, calde se quel giorno
+   qualcosa lo toccava (rossi+arancioni). Due colori di STATO dal sistema, testo
+   nei toni d'inchiostro, un title onesto per barra. Dati veri da HISTORY. */
+function sparkHTML(hist){
+ var h=(hist||[]).slice(-14);if(!h.length)return '';
+ var max=1;h.forEach(function(g){if((g.n||0)>max)max=g.n});
+ return '<span class="spark" role="img" aria-label="Il polso degli ultimi '+h.length+' giorni di giornale">'+
+  h.map(function(g){var caldi=(g.rossi||0)+(g.arancioni||0);
+   return '<span class="sbar'+(caldi>0?' caldo':'')+'" style="height:'+Math.max(3,Math.round((g.n||0)/max*20))+'px" title="'+esc(g.label||g.d)+': '+(g.n||0)+' schede'+(caldi>0?', '+caldi+' che ti toccavano':'')+'"></span>';
+  }).join('')+'<span class="slab">'+h.length+' giorni</span></span>';}
 function renderTop(){
  var k=document.getElementById('kpis');
  var tot=ARTICLES.length;
  var ar=ARTICLES.filter(function(a){return a.sec=='res'&&a.dot=='orange'}).length;
  var ver=(typeof CIT_VERIFICATE==='number')?CIT_VERIFICATE:0;
- if(k)k.innerHTML='<span class="kpi"><b>'+tot+'</b></span>'+
-  (ar?'<span class="kpi"><span class="dot orange"></span><b>'+ar+'</b></span>':'')+
-  '<span class="kpi '+(ver>=tot?'v':'w')+'">'+(ver>=tot?'✓ ':'⚠︎ ')+ver+'/'+tot+'</span>'+
-  '<button class="hbtn" onclick="location.reload()" title="Aggiorna" aria-label="Ricarica l\'app">↻</button>';
+ if(k)k.innerHTML='<span class="kpi econ"><b>'+tot+'</b> lett'+(tot==1?'o':'i')+' · <b>'+ar+'</b> che ti '+(ar==1?'tocca':'toccano')+'</span>'+
+  sparkHTML(typeof HISTORY!=='undefined'?HISTORY:[])+
+  '<span class="kpi '+(ver>=tot?'v':'w')+'">'+(ver>=tot?'✓':'⚠︎')+' '+ver+'/'+tot+' citazioni verificate</span>';
  var d=document.getElementById('datalunga');
  if(d){var dt=new Date(BUILD_DATE+'T12:00:00');
   var s=dt.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
@@ -1375,13 +1485,13 @@ function renderRetr(){var el=document.getElementById('retrbox');if(!el)return;
 
 function searchHist(){var q=(document.getElementById('histq')||{value:''}).value.toLowerCase().trim();
  var el=document.getElementById('histres');if(!el)return;
- if(!q){el.innerHTML='';return;}
+ if(!q){el.innerHTML='<div class="muted" style="margin-top:8px">Cerca per tecnica, rivista o autore — per esempio «radice meniscale», «KSSTA», «LaPrade».</div>';return;}
  var hits=ARTICLES.filter(function(a){return ((a.h+' '+a.v+' '+a.j+' '+(a.authors||'')+' '+(a.concl||'')+' '+(a.perte||'')).toLowerCase().indexOf(q)>=0);});
  if(!hits.length){el.innerHTML='<div class="empty" style="margin-top:12px">Nessun risultato per “'+esc(q)+'” nell\'archivio.</div>';return;}
  el.innerHTML='<div class="card" style="margin-top:12px">'+hits.map(itemHTML).join('')+'</div>';}
 
 function renderAudit(){var el=document.getElementById('auditbox');if(!el)return;
- el.innerHTML='<h4>Autocritica della settimana</h4>'+
+ el.innerHTML='<h2>Autocritica della settimana</h2>'+
   '<div class="li">Periodo: <span class="n">'+esc(AUDIT.settimana)+'</span></div>'+
   '<div class="li">Lavori mostrati: <span class="n">'+AUDIT.visti+'</span> · scartati perché fuori finestra: <span class="n">'+esc(AUDIT.scartati)+'</span></div>'+
   '<div class="li">Fonti che non ho potuto verificare: <span class="n">'+AUDIT.nonverificate.map(esc).join(' · ')+'</span></div>'+
@@ -1440,12 +1550,24 @@ function wIdx(n){var p=A[n]&&A[n].pmid;
  return (S.weekly||[]).findIndex(function(x){return x.n==n||(p&&x.a&&x.a.pmid==p)});}
 function inWeek(n){return wIdx(n)>=0}
 function setVid(i,val){var w=(S.weekly||[])[i];if(w){w.v=val;save();renderNlOut();}}
+/* I CANDIDATI — il verdetto settimanale senza rimbalzi: le schede di oggi in
+   righe compatte (densità dichiarata), scelta col toggle, qui dentro. */
+function candidatiHTML(){
+ return ARTICLES.filter(function(a){return a.sec=='res'}).map(function(a){
+  var dentro=inWeek(a.n),pronto=!!(typeof SOCV!=='undefined'&&SOCV[a.n]);
+  return '<div class="crow'+(dentro?' on':'')+'">'+
+   '<span class="dot '+a.dot+'"></span>'+
+   '<span class="ct"><span class="ch">'+esc(a.h)+'</span>'+
+   '<span class="cm">'+esc(a.j)+' · '+a.meta+(pronto?'':' · senza copione video')+'</span></span>'+
+   '<button class="cpick'+(dentro?' on':'')+'" onclick="pickWeek(event,'+a.n+')" aria-label="'+(dentro?'Togli dalla newsletter':'Scegli per la newsletter')+'">'+(dentro?'✓':'+')+'</button></div>';
+ }).join('');}
 function renderNl(){
+ var cand=document.getElementById('nlcand');if(cand)cand.innerHTML=candidatiHTML();
  var slots=document.getElementById('nlslots'),intro=document.getElementById('nlintro'),cnt=document.getElementById('nlcount');
  if(!slots)return;
  var W=S.weekly||[];
  if(cnt)cnt.textContent=W.length+' di 4';
- if(intro)intro.innerHTML=W.length?'I lavori che hai scelto questo mese. Aggiungi il link del video quando lo pubblichi: finisce da solo nei tre testi qui sotto.':'<b>Come funziona.</b> Ogni settimana, quando scegli il lavoro per il tuo video, tocca <b>📹 Video</b> sulla sua scheda. A fine mese trovi qui <b>tre testi già scritti dagli stessi quattro lavori</b>: l\'email, il post per il blog del sito e l\'aggiornamento per Google. Tu copi e incolli.';
+ if(intro)intro.innerHTML=W.length?'I lavori che hai scelto questo mese. Aggiungi il link del video quando lo pubblichi: finisce da solo nei tre testi qui sotto.':'<b>Come funziona.</b> Ogni settimana, quando scegli il lavoro per il tuo video, tocca <b>Video</b> sulla sua scheda. A fine mese trovi qui <b>tre testi già scritti dagli stessi quattro lavori</b>: l\'email, il post per il blog del sito e l\'aggiornamento per Google. Tu copi e incolli.';
  slots.innerHTML=[0,1,2,3].map(function(i){var w=W[i];
   if(!w)return '<div class="nlslot"><div class="nlnum">'+(i+1)+'</div><div class="nlt"><div class="h" style="color:var(--dim2);font-weight:500">Settimana '+(i+1)+' — ancora libera</div></div></div>';
   var a=wArt(w);if(!a)return '';
@@ -1539,7 +1661,7 @@ function gbpText(){
   t=t.replace(/• [\s\S]*?\n\nIl testo completo/, righe.join('\n')+'\n\nIl testo completo');}
  return t;}
 /* ============ USCITA ============ */
-var NL_EMPTY='Scegli almeno un lavoro con il pulsante «📹 Video» su una scheda: qui comparirà il testo già scritto, per l’email, per il blog del sito e per Google.';
+var NL_EMPTY='Scegli almeno un lavoro con il pulsante «Video» su una scheda: qui comparirà il testo già scritto, per l’email, per il blog del sito e per Google.';
 function noDot(s){return (s||'').replace(/\s+$/,'').replace(/\.$/,'')}
 function setDest(d,b){nlDest=d;[].forEach.call(b.parentNode.children,function(x){x.classList.remove('on')});b.classList.add('on');renderNlOut();}
 function setBlogUrl(v){S.blogUrl=v;save();renderNlOut();}
@@ -1556,23 +1678,23 @@ function renderNlOut(){
   else m.textContent='';}
  var A2=document.getElementById('nlacts');
  if(A2){A2.innerHTML=nlDest=='mail'
-   ?'<button class="btn pri" onclick="copyOut()">📋 Copia tutto</button><button class="btn" onclick="copyPart(0)">Copia solo l’oggetto</button>'
+   ?'<button class="btn pri" onclick="copyOut(event)">Copia tutto</button><button class="btn" onclick="copyPart(0,event)">Copia solo l’oggetto</button>'
    :nlDest=='blog'
-   ?'<button class="btn pri" onclick="copyBody()">📋 Copia il testo dell’articolo</button><button class="btn" onclick="copyPart(1)">Copia titolo e descrizione</button>'
-   :'<button class="btn pri" onclick="copyOut()">📋 Copia il post</button>';}
+   ?'<button class="btn pri" onclick="copyBody(event)">Copia il testo dell’articolo</button><button class="btn" onclick="copyPart(1,event)">Copia titolo e descrizione</button>'
+   :'<button class="btn pri" onclick="copyOut(event)">Copia il post</button>';}
  var hh=document.getElementById('nlhint');
  if(hh){hh.textContent=nlDest=='mail'
    ?'Incolla in Brevo (o nel servizio che usi) e programma l’invio: firma e disiscrizione le aggiunge il servizio.'
    :nlDest=='blog'
    ?'Wix: Blog → Crea post. Titolo e descrizione vanno in «Impostazioni SEO», il resto nel corpo. Le righe che iniziano con ## sono i sottotitoli.'
    :'App Google Business Profile → Aggiungi aggiornamento. Nessuna offerta, nessun invito: è informazione, non pubblicità.';}}
-function copyOut(){try{navigator.clipboard.writeText(outText())}catch(e){}toast('Copiato');}
-function copyBody(){var t=outText(),i=t.indexOf('———\n\n');
- try{navigator.clipboard.writeText(i>=0?t.slice(i+5).replace(/^\s+/,''):t)}catch(e){}toast('Testo dell’articolo copiato');}
-function copyPart(k){var t=outText(),v;
+function copyOut(ev){copiaTesto(ev,outText());}
+function copyBody(ev){var t=outText(),i=t.indexOf('———\n\n');
+ copiaTesto(ev,i>=0?t.slice(i+5).replace(/^\s+/,''):t,'Testo dell’articolo copiato');}
+function copyPart(k,ev){var t=outText(),v;
  if(k===0)v=t.split('\n')[0].replace('OGGETTO: ','');
  else{var L=t.split('\n');v=L[1]+'\n\n'+L[4];}
- try{navigator.clipboard.writeText(v)}catch(e){}toast('Copiato');}
+ copiaTesto(ev,v);}
 function copyNl(){copyOut()}
 function copyNlSubj(){copyPart(0)}
 function renderTens(){var el=document.getElementById('tensbox');if(!el)return;
@@ -1602,6 +1724,32 @@ function copertura(hist){
  var da=new Date(a.getTime()+86400000),al=new Date(b.getTime()-86400000);
  if(g===2)return 'Questa edizione copre anche il '+it(da)+', rimasto senza briefing.';
  return 'Questa edizione copre anche i giorni dal '+it(da)+' al '+it(al)+', rimasti senza briefing: la finestra di ricerca li include.';}
+
+/* CALENDARIO dello storico — PURO (dati -> html): il mese di BUILD_DATE, un punto
+   sui giorni che hanno un'edizione in HISTORY. Prima era markup statico scritto a
+   mano: fermo al 12 agosto, dichiarava "oggi" un giorno vecchio di una settimana. */
+function calHTML(build,hist){
+ if(!build)return '';
+ var b=new Date(build+'T00:00:00');if(isNaN(b))return '';
+ var anno=b.getFullYear(),mese=b.getMonth(),oggi=b.getDate();
+ var con={};(hist||[]).forEach(function(x){if(x&&x.d){var d=new Date(x.d+'T00:00:00');
+  if(d.getFullYear()===anno&&d.getMonth()===mese)con[d.getDate()]=1;}});
+ var h='<div class="wd">L</div><div class="wd">M</div><div class="wd">M</div><div class="wd">G</div><div class="wd">V</div><div class="wd">S</div><div class="wd">D</div>';
+ var off=(new Date(anno,mese,1).getDay()+6)%7,tot=new Date(anno,mese+1,0).getDate();
+ for(var i=0;i<off;i++)h+='<div class="day vuoto"></div>';
+ for(var g=1;g<=tot;g++){
+  var mk=con[g]?'<span class="mk"></span>':'';
+  if(g===oggi)h+='<div class="day today" onclick="tab(\'today\',document.querySelectorAll(\'.tabs button\')[0])">'+g+mk+'</div>';
+  else h+='<div class="day'+(g>oggi?' future':'')+'">'+g+mk+'</div>';}
+ return h;}
+function renderCal(){
+ var el=document.getElementById('calgrid');if(!el)return;
+ var bd=typeof BUILD_DATE!=='undefined'?BUILD_DATE:'';
+ el.innerHTML=calHTML(bd,typeof HISTORY!=='undefined'?HISTORY:[]);
+ var lb=document.getElementById('calmese');
+ if(lb&&bd){var b=new Date(bd+'T00:00:00');if(!isNaN(b)){
+  var M=['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'];
+  lb.textContent=M[b.getMonth()]+' '+b.getFullYear();}}}
 function renderCopertura(){
  var el=document.getElementById('copbox');if(!el)return;
  var t=copertura(HISTORY);
@@ -1759,16 +1907,16 @@ function renderSeconda(){
  var el=document.getElementById('secpag');if(!el)return;
  var ex=(typeof EXTRA!=='undefined'?EXTRA:[])||[];
  if(!ex.length&&!(typeof SCOPERTE!=='undefined'&&SCOPERTE.length)){el.innerHTML='';return;}
- var h='<div class="sl r-res" style="margin-top:14px"><span class="ic">📖</span>La seconda pagina<span class="n">'+ex.length+' brevi</span></div>';
+ var h='<div class="sl r-res" style="margin-top:14px"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 5.6C8.6 4.4 6.4 4 4 4.2v11.2c2.4-.2 4.6.2 6 1.4 1.4-1.2 3.6-1.6 6-1.4V4.2c-2.4-.2-4.6.2-6 1.4zM10 5.6v11.2"/></svg></span>La seconda pagina<span class="n">'+ex.length+' brevi</span></div>';
  if(spMostrati===0){
-  h+='<button class="btn spBtn" onclick="spApri()" aria-label="Mostra altri lavori del giorno in forma breve">📖 Continua a leggere — altri '+ex.length+' lavori di oggi</button>';
+  h+='<button class="btn spBtn" onclick="spApri()">Continua a leggere — altri '+ex.length+' lavori di oggi</button>';
  }else{
   h+='<div class="card" style="padding:10px">'+spLista(ex,spMostrati,spOrdine).map(spBreveHTML).join('')+'</div>';
   if(spMostrati<ex.length)h+='<button class="btn spBtn" onclick="spAncora()" aria-label="Mostra altri lavori brevi">Ancora ↓ ('+(ex.length-spMostrati)+' rimasti)</button>';
   else h+='<div class="rmeta" style="margin:6px 2px">Fine della seconda pagina: il resto della finestra non superava il perimetro o la soglia di interesse.</div>';
  }
  if(typeof SCOPERTE!=='undefined'&&SCOPERTE.length){
-  h+='<button class="btn spBtn" onclick="sorprendimi()" aria-label="Proponi qualcosa fuori dai miei soliti argomenti">🎲 Sorprendimi — qualcosa di diverso</button><div id="spsorp"></div>';
+  h+='<button class="btn spBtn" onclick="sorprendimi()">Sorprendimi — qualcosa di diverso</button><div id="spsorp"></div>';
  }
  el.innerHTML=h;}
 function spApri(){spMostrati=5;spOrdine=null;renderSeconda();}
@@ -1788,7 +1936,7 @@ function esplora(ev,n){
  var el=document.getElementById('secpag');if(el&&el.scrollIntoView)el.scrollIntoView({behavior:'smooth'});}
 function apriRassegna(){
  var el=document.getElementById('rassbox');if(!el)return;
- el.innerHTML='<div class="muted">Carico la rassegna…</div>';
+ el.innerHTML='<div class="skel" aria-label="Carico la rassegna">'+new Array(5).join('<div class="skb"></div>')+'</div>';
  fetch('fonti/raccolta.json',{cache:'no-store'}).then(function(r){
   if(!r.ok)throw new Error('HTTP '+r.status);return r.json();
  }).then(function(j){el.innerHTML=rassHTML(j);}).catch(function(e){
@@ -1805,9 +1953,13 @@ renderPick();
 renderLato();
 renderTens();
 renderFresh();
+renderCal();
+window.addEventListener('online',renderFresh);window.addEventListener('offline',renderFresh);
+document.addEventListener('keydown',function(e){var el=e.target;if((e.key==='Enter'||e.key===' ')&&el&&el.getAttribute&&el.getAttribute('role')==='button'&&el.tagName!=='BUTTON'){e.preventDefault();el.click();}});
 renderDuel();
 renderAudit();
 render();
+_togliVelo();
 </script>
 </body>
 </html>
