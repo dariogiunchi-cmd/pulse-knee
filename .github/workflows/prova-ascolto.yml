@@ -11,6 +11,9 @@
 name: prova-ascolto
 on:
   workflow_dispatch:
+  push:
+    branches: [rifondazione/v3]
+    paths: ['audio/richiesta-prova.txt']
 
 permissions:
   contents: write
