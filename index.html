@@ -460,7 +460,7 @@
   </div>
 
   <div class="view" id="archive">
-    <div class="sl r-arch"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="13" height="11" rx="1.5"/><path d="M3.5 8.5h13M7 3.5v3M13 3.5v3"/></svg></span>Storico delle ricerche<span class="n" id="calmese"></span></div>
+    <div class="sl r-arch" style="max-width:552px"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="13" height="11" rx="1.5"/><path d="M3.5 8.5h13M7 3.5v3M13 3.5v3"/></svg></span>Storico delle ricerche<span class="n" id="calmese"></span></div>
     <div class="cal"><div class="calgrid" id="calgrid"></div></div>
     <div class="srch" style="max-width:520px;margin-top:14px"><input id="histq" placeholder="Cerca in tutto l'archivio…" oninput="searchHist()"></div><div id="histres" style="max-width:520px"></div><div class="audit" id="auditbox"></div><div class="muted" style="max-width:520px;margin-top:12px">Ogni mattina — anche i giorni “nessuna novità” — finisce qui. Da domani lo storico cresce da solo.</div>
   </div>
@@ -470,7 +470,7 @@
   <div class="view" id="news">
       <div class="sl" style="--sc:#af52de"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 11.7V3.5M6.8 6.7L10 3.5l3.2 3.2M4 13.5v2a1.2 1.2 0 0 0 1.2 1.2h9.6A1.2 1.2 0 0 0 16 15.5v-2"/></svg></span>Lavori del mese<span class="n" id="nlcount"></span></div>
       <div class="nlwrap"><div class="nlempty" id="nlintro"></div>
-      <div class="sl r-res" style="margin-top:8px"><span class="ic">▤</span>I candidati di oggi<span class="n">tocca ▸ per scegliere</span></div>
+      <div class="sl r-res" style="margin-top:8px"><span class="ic">▤</span>I candidati di oggi<span class="n">tocca + per scegliere</span></div>
       <div class="card compatta" id="nlcand"></div>
       <div id="nlslots"></div></div>
       <div class="sl" style="--sc:#af52de"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.8 3.9l3.3 3.3-8.6 8.6-4.2.9.9-4.2z"/></svg></span>Testo pronto<span class="n">3 destinazioni</span></div>
@@ -1799,7 +1799,7 @@ function candidatiHTML(){
    '<span class="dot '+a.dot+'"></span>'+
    '<span class="ct"><span class="ch">'+esc(a.h)+'</span>'+
    '<span class="cm">'+esc(a.j)+' · '+a.meta+(pronto?'':' · senza copione video')+'</span></span>'+
-   '<button class="cpick'+(dentro?' on':'')+'" onclick="pickWeek(event,'+a.n+')" aria-label="'+(dentro?'Togli dalla newsletter':'Scegli per la newsletter')+'">'+(dentro?'✓':'▸')+'</button></div>';
+   '<button class="cpick'+(dentro?' on':'')+'" onclick="pickWeek(event,'+a.n+')" aria-label="'+(dentro?'Togli dalla newsletter':'Scegli per la newsletter')+'">'+(dentro?'✓':'+')+'</button></div>';
  }).join('');}
 function renderNl(){
  var cand=document.getElementById('nlcand');if(cand)cand.innerHTML=candidatiHTML();
