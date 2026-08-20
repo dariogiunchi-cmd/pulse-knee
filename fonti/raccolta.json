@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-20T05:16:22Z",
+ "generato": "2026-08-20T05:51:32Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 85,
+    "doi_citati_controllati": 94,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -775,6 +775,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42545819",
+     "titolo": "KSSTA — Il ginocchio tedesco raccomanda un approccio individuale allo slope aumentato nel LCA (Deutsche Kniege",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42610516",
      "titolo": "AJSM — La cartilagine femoro-rotulea al momento della sutura della radice predice la protesi, non i sintomi",
