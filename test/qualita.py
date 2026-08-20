@@ -273,6 +273,15 @@ with sync_playwright() as p:
                      "var t=segnaliTesto();S.votes=v;S.saved=s1;S.savedItems=s2;S.weekly=w;S.suggDone=d;"
                      "return t.indexOf('Nessun segnale ancora')>=0})()"),
         'senza scelte i segnali lo dichiarano, non fingono')
+    # --- il calendario dello storico dice il vero (macchina pura, dati sintetici) ---
+    chk(pg3.evaluate("(function(){var h=calHTML('2026-08-20',[{d:'2026-08-12'},{d:'2026-08-20'},{d:'2026-07-30'}]);"
+                     "return h.indexOf('class=\"day today\"')>=0&&/today[^>]*>20</.test(h.replace(/<span[^>]*mk[^<]*<\\/span>/g,''))"
+                     "&&/>12<span class=\"mk\"/.test(h)&&h.indexOf('>21<')>=0&&/future\">21</.test(h)"
+                     "&&!/>30<span class=\"mk\"/.test(h)})()"),
+        'il calendario segna oggi da BUILD_DATE, i punti da HISTORY, e ignora altri mesi')
+    chk(pg3.evaluate("(function(){var el=document.getElementById('calgrid');"
+                     "return !!el&&el.innerHTML.indexOf('today')>=0&&document.getElementById('calmese').textContent.length>3})()"),
+        'il calendario in pagina è generato, non scritto a mano, col suo mese dichiarato')
     # --- accessibilità: landmark, gerarchia, tastiera (la macchina, non il carico) ---
     chk(pg3.evaluate("document.querySelectorAll('main').length===1 && document.querySelectorAll('h1').length===1"),
         'un solo landmark main e un solo h1: la gerarchia parte dal marchio')

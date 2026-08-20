@@ -194,8 +194,8 @@
   .rowset{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid var(--line2)}.rowset:first-of-type{border-top:0}.rowset .k{font-size:var(--t-meta);font-weight:600}.rowset .k small{display:block;font-weight:400;color:var(--dim2);font-size:var(--t-meta);margin-top:2px}
   .sec{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:15px 16px;margin-bottom:14px}.sec h2{font-size:var(--t-meta);font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:var(--dim);margin:0 0 10px}
   .empty{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:34px 20px;text-align:center;color:var(--dim)}.empty .big{font-size:34px;margin-bottom:8px}
-  .cal{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;max-width:520px}.calgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}.calgrid .wd{font-size:var(--t-badge);font-weight:700;color:var(--dim2);text-align:center;padding-bottom:4px}
-  .day{aspect-ratio:1;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:var(--t-meta);color:var(--dim);background:var(--tint2)}.day.empty{background:transparent}.day.today{background:var(--blue);color:var(--su-colore);font-weight:700;cursor:pointer}.day.today .mk{background:var(--carta)}.day .mk{width:5px;height:5px;border-radius:50%;background:var(--orange)}.day.future{color:var(--dim2)}
+  .cal{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:14px 16px;max-width:520px}.calgrid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}.calgrid .wd{font-size:var(--t-badge);font-weight:700;color:var(--dim2);text-align:center;padding-bottom:4px}
+  .day{height:44px;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:var(--t-meta);color:var(--dim);background:var(--tint2)}.day.vuoto{background:transparent}.day.today{background:var(--blue);color:var(--su-colore);font-weight:700;cursor:pointer}.day.today .mk{background:var(--carta)}.day .mk{width:5px;height:5px;border-radius:50%;background:var(--orange)}.day.future{color:var(--dim2)}
   /* social sheet */
   .ov{position:fixed;inset:0;background:rgba(0,0,0,.4);backdrop-filter:blur(3px);display:none;align-items:flex-end;justify-content:center;z-index:40}
   .ov.on{display:flex}
@@ -458,10 +458,8 @@
   </div>
 
   <div class="view" id="archive">
-    <div class="sl r-arch"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="13" height="11" rx="1.5"/><path d="M3.5 8.5h13M7 3.5v3M13 3.5v3"/></svg></span>Storico delle ricerche<span class="n">agosto 2026</span></div>
-    <div class="cal"><div class="calgrid"><div class="wd">L</div><div class="wd">M</div><div class="wd">M</div><div class="wd">G</div><div class="wd">V</div><div class="wd">S</div><div class="wd">D</div>
-      <div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day">1</div><div class="day">2<span class="mk"></span></div>
-      <div class="day">3</div><div class="day">4<span class="mk"></span></div><div class="day">5</div><div class="day">6<span class="mk"></span></div><div class="day">7<span class="mk"></span></div><div class="day">8</div><div class="day">9<span class="mk"></span></div><div class="day">10</div><div class="day">11</div><div class="day today" onclick="tab('today',document.querySelectorAll('.tabs button')[0])">12<span class="mk"></span></div><div class="day future">13</div><div class="day future">14</div><div class="day future">15</div><div class="day future">16</div><div class="day future">17</div><div class="day future">18</div><div class="day future">19</div><div class="day future">20</div><div class="day future">21</div><div class="day future">22</div><div class="day future">23</div><div class="day future">24</div><div class="day future">25</div><div class="day future">26</div><div class="day future">27</div><div class="day future">28</div><div class="day future">29</div><div class="day future">30</div><div class="day future">31</div></div></div>
+    <div class="sl r-arch"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="13" height="11" rx="1.5"/><path d="M3.5 8.5h13M7 3.5v3M13 3.5v3"/></svg></span>Storico delle ricerche<span class="n" id="calmese"></span></div>
+    <div class="cal"><div class="calgrid" id="calgrid"></div></div>
     <div class="srch" style="max-width:520px;margin-top:14px"><input id="histq" placeholder="Cerca in tutto l'archivio…" oninput="searchHist()"></div><div id="histres" style="max-width:520px"></div><div class="audit" id="auditbox"></div><div class="muted" style="max-width:520px;margin-top:12px">Ogni mattina — anche i giorni “nessuna novità” — finisce qui. Da domani lo storico cresce da solo.</div>
   </div>
 
@@ -1961,6 +1959,32 @@ function copertura(hist){
  var da=new Date(a.getTime()+86400000),al=new Date(b.getTime()-86400000);
  if(g===2)return 'Questa edizione copre anche il '+it(da)+', rimasto senza briefing.';
  return 'Questa edizione copre anche i giorni dal '+it(da)+' al '+it(al)+', rimasti senza briefing: la finestra di ricerca li include.';}
+
+/* CALENDARIO dello storico — PURO (dati -> html): il mese di BUILD_DATE, un punto
+   sui giorni che hanno un'edizione in HISTORY. Prima era markup statico scritto a
+   mano: fermo al 12 agosto, dichiarava "oggi" un giorno vecchio di una settimana. */
+function calHTML(build,hist){
+ if(!build)return '';
+ var b=new Date(build+'T00:00:00');if(isNaN(b))return '';
+ var anno=b.getFullYear(),mese=b.getMonth(),oggi=b.getDate();
+ var con={};(hist||[]).forEach(function(x){if(x&&x.d){var d=new Date(x.d+'T00:00:00');
+  if(d.getFullYear()===anno&&d.getMonth()===mese)con[d.getDate()]=1;}});
+ var h='<div class="wd">L</div><div class="wd">M</div><div class="wd">M</div><div class="wd">G</div><div class="wd">V</div><div class="wd">S</div><div class="wd">D</div>';
+ var off=(new Date(anno,mese,1).getDay()+6)%7,tot=new Date(anno,mese+1,0).getDate();
+ for(var i=0;i<off;i++)h+='<div class="day vuoto"></div>';
+ for(var g=1;g<=tot;g++){
+  var mk=con[g]?'<span class="mk"></span>':'';
+  if(g===oggi)h+='<div class="day today" onclick="tab(\'today\',document.querySelectorAll(\'.tabs button\')[0])">'+g+mk+'</div>';
+  else h+='<div class="day'+(g>oggi?' future':'')+'">'+g+mk+'</div>';}
+ return h;}
+function renderCal(){
+ var el=document.getElementById('calgrid');if(!el)return;
+ var bd=typeof BUILD_DATE!=='undefined'?BUILD_DATE:'';
+ el.innerHTML=calHTML(bd,typeof HISTORY!=='undefined'?HISTORY:[]);
+ var lb=document.getElementById('calmese');
+ if(lb&&bd){var b=new Date(bd+'T00:00:00');if(!isNaN(b)){
+  var M=['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'];
+  lb.textContent=M[b.getMonth()]+' '+b.getFullYear();}}}
 function renderCopertura(){
  var el=document.getElementById('copbox');if(!el)return;
  var t=copertura(HISTORY);
@@ -2164,6 +2188,7 @@ renderPick();
 renderLato();
 renderTens();
 renderFresh();
+renderCal();
 window.addEventListener('online',renderFresh);window.addEventListener('offline',renderFresh);
 document.addEventListener('keydown',function(e){var el=e.target;if((e.key==='Enter'||e.key===' ')&&el&&el.getAttribute&&el.getAttribute('role')==='button'&&el.tagName!=='BUTTON'){e.preventDefault();el.click();}});
 renderDuel();
