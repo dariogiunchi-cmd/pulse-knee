@@ -530,7 +530,7 @@
     <div class="stabs" id="shTabs"></div>
     <div class="sctrl" id="shCtrl"></div>
     <div class="sbody"><div class="cnt" id="shCnt"></div><div class="meta" id="shMeta"></div></div>
-    <div class="sfoot"><button class="edit" id="editbtn" onclick="toggleEdit()">✎ Adatta</button><button class="copy" onclick="copyCnt()">📋 Copia</button></div>
+    <div class="sfoot"><button class="edit" id="editbtn" onclick="toggleEdit()">✎ Adatta</button><button class="copy" onclick="copyCnt(event)">Copia</button></div>
   </div>
 </div>
 <div id="toast"></div>
@@ -829,11 +829,11 @@ function tagsHTML(){var t=TAGS[curSoc];if(!t)return '';
  var ht=(curFmt=='linkedin')?t.linkedin:t.instagram;
  var lab=(curFmt=='linkedin')?'Hashtag (LinkedIn: massimo 3)':'Hashtag';
  return '<div class="tagbox"><div class="tagl">'+lab+'</div><div class="tagv">'+esc(ht)+'</div>'+
-  '<button class="tagbtn" onclick="copyTags()">Copia hashtag</button>'+
+  '<button class="tagbtn" onclick="copyTags(event)">Copia hashtag</button>'+
   '<div class="tagl" style="margin-top:12px">Parole chiave per Google</div><div class="tagv">'+esc(t.kw)+'</div>'+
   '<div class="tagl" style="margin-top:10px;text-transform:none;letter-spacing:0;font-weight:500;color:var(--dim)">Gli hashtag ti fanno trovare su Instagram e LinkedIn. Su Google contano invece le parole chiave dentro al testo: usale nel titolo e nelle prime righe.</div></div>';}
-function copyTags(){var t=TAGS[curSoc];if(!t)return;var ht=(curFmt=='linkedin')?t.linkedin:t.instagram;
- try{navigator.clipboard.writeText(ht)}catch(e){}toast('Hashtag copiati');}
+function copyTags(ev){var t=TAGS[curSoc];if(!t)return;var ht=(curFmt=='linkedin')?t.linkedin:t.instagram;
+ copiaTesto(ev,ht,'Hashtag copiati');}
 var SLAB={video:'🎬 Script video (30–90s)',linkedin:'💼 LinkedIn',instagram:'📸 Instagram',reel:'🎞 Reel'};
 var SMETA={video:'Da leggere in camera · gancio, dato, significato, limite, chiusura',linkedin:'Prima riga autoportante · registro tecnico · 3 hashtag',instagram:'Divulgativo · chiusura concreta',reel:'Una sola idea · testo a schermo tra [ ]'};
 
@@ -1167,7 +1167,17 @@ function setFmt(f){curFmt=f;renderCtrl();[].forEach.call(document.getElementById
   var i=['video','linkedin','instagram','reel'].indexOf(f);document.getElementById('shTabs').children[i].classList.add('on');showFmt();}
 function showFmt(){document.getElementById('shCnt').textContent=socText();document.getElementById('shMeta').innerHTML=esc(SMETA[curFmt]||'')+tagsHTML();var sb=document.querySelector('.sbody');if(sb)sb.scrollTop=0;}
 function closeSocial(){document.getElementById('ov').classList.remove('on')}
-function copyCnt(){var t=socText();try{navigator.clipboard.writeText(t)}catch(e){}toast('Copiato');}
+/* UN solo verbo per l'azione più frequente: il bottone che copia dice «Copiato ✓»
+   dove l'hai toccato, entro 100 ms, e torna com'era. Fallback dichiarato. */
+function copiaTesto(ev,testo,etichetta){
+ var b=ev&&(ev.currentTarget||ev.target);
+ function fatto(okk){
+  toast(okk?(etichetta||'Copiato'):'Copia non riuscita su questo browser');
+  if(b&&okk){var prima=b.textContent;b.textContent='Copiato ✓';b.disabled=true;
+   setTimeout(function(){b.textContent=prima;b.disabled=false;},1600);}}
+ try{navigator.clipboard.writeText(testo).then(function(){fatto(true)},function(){fatto(false)});}
+ catch(e){fatto(false);}}
+function copyCnt(ev){copiaTesto(ev,socText());}
 var _speaking=false;
 /* ORDINE DELLE VOCI — pura, così il cancello la collauda con voci sintetiche.
    Emma in testa (sua scelta esplicita, 19 agosto: ha scaricato Emma Premium);
@@ -1886,23 +1896,23 @@ function renderNlOut(){
   else m.textContent='';}
  var A2=document.getElementById('nlacts');
  if(A2){A2.innerHTML=nlDest=='mail'
-   ?'<button class="btn pri" onclick="copyOut()">📋 Copia tutto</button><button class="btn" onclick="copyPart(0)">Copia solo l’oggetto</button>'
+   ?'<button class="btn pri" onclick="copyOut(event)">Copia tutto</button><button class="btn" onclick="copyPart(0,event)">Copia solo l’oggetto</button>'
    :nlDest=='blog'
-   ?'<button class="btn pri" onclick="copyBody()">📋 Copia il testo dell’articolo</button><button class="btn" onclick="copyPart(1)">Copia titolo e descrizione</button>'
-   :'<button class="btn pri" onclick="copyOut()">📋 Copia il post</button>';}
+   ?'<button class="btn pri" onclick="copyBody(event)">Copia il testo dell’articolo</button><button class="btn" onclick="copyPart(1,event)">Copia titolo e descrizione</button>'
+   :'<button class="btn pri" onclick="copyOut(event)">Copia il post</button>';}
  var hh=document.getElementById('nlhint');
  if(hh){hh.textContent=nlDest=='mail'
    ?'Incolla in Brevo (o nel servizio che usi) e programma l’invio: firma e disiscrizione le aggiunge il servizio.'
    :nlDest=='blog'
    ?'Wix: Blog → Crea post. Titolo e descrizione vanno in «Impostazioni SEO», il resto nel corpo. Le righe che iniziano con ## sono i sottotitoli.'
    :'App Google Business Profile → Aggiungi aggiornamento. Nessuna offerta, nessun invito: è informazione, non pubblicità.';}}
-function copyOut(){try{navigator.clipboard.writeText(outText())}catch(e){}toast('Copiato');}
-function copyBody(){var t=outText(),i=t.indexOf('———\n\n');
- try{navigator.clipboard.writeText(i>=0?t.slice(i+5).replace(/^\s+/,''):t)}catch(e){}toast('Testo dell’articolo copiato');}
-function copyPart(k){var t=outText(),v;
+function copyOut(ev){copiaTesto(ev,outText());}
+function copyBody(ev){var t=outText(),i=t.indexOf('———\n\n');
+ copiaTesto(ev,i>=0?t.slice(i+5).replace(/^\s+/,''):t,'Testo dell’articolo copiato');}
+function copyPart(k,ev){var t=outText(),v;
  if(k===0)v=t.split('\n')[0].replace('OGGETTO: ','');
  else{var L=t.split('\n');v=L[1]+'\n\n'+L[4];}
- try{navigator.clipboard.writeText(v)}catch(e){}toast('Copiato');}
+ copiaTesto(ev,v);}
 function copyNl(){copyOut()}
 function copyNlSubj(){copyPart(0)}
 function renderTens(){var el=document.getElementById('tensbox');if(!el)return;
