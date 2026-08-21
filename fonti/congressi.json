@@ -1,0 +1,20 @@
+{
+ "_scopo": "Le scadenze congressuali non hanno un'API: questo deposito è CURATO, con verifica mensile dal mandato del mattino (sito ufficiale alla mano). Ogni voce compare nell'app SOLO quando i suoi campi sono compilati e 'verificato' porta la data del controllo. PRINCIPIO ZERO: una scadenza non verificata non si scrive.",
+ "_campi": "sig · nome · url (sito ufficiale) · citta · date (testo breve) · abstract (AAAA-MM-GG) · early (AAAA-MM-GG) · verificato (AAAA-MM-GG del controllo)",
+ "fonti_totali": 13,
+ "congressi": [
+  {"sig": "ESSKA",  "nome": "European Society of Sports Traumatology, Knee Surgery and Arthroscopy", "url": "https://www.esska.org", "citta": "", "date": "", "abstract": "", "early": "", "verificato": ""},
+  {"sig": "ISAKOS", "nome": "International Society of Arthroscopy, Knee Surgery and Orthopaedic Sports Medicine", "url": "https://www.isakos.com", "citta": "", "date": "", "abstract": "", "early": "", "verificato": ""},
+  {"sig": "ICRS",   "nome": "International Cartilage Regeneration & Joint Preservation Society", "url": "https://cartilage.org", "citta": "", "date": "", "abstract": "", "early": "", "verificato": ""},
+  {"sig": "AAOS",   "nome": "American Academy of Orthopaedic Surgeons", "url": "https://www.aaos.org", "citta": "", "date": "", "abstract": "", "early": "", "verificato": ""},
+  {"sig": "AOSSM",  "nome": "American Orthopaedic Society for Sports Medicine", "url": "https://www.sportsmed.org", "citta": "", "date": "", "abstract": "", "early": "", "verificato": ""},
+  {"sig": "EFORT",  "nome": "European Federation of National Associations of Orthopaedics and Traumatology", "url": "https://www.efort.org", "citta": "", "date": "", "abstract": "", "early": "", "verificato": ""},
+  {"sig": "SIAGASCOT", "nome": "Società Italiana di Artroscopia, Ginocchio, Arto Superiore, Sport, Cartilagine e Tecnologie Ortopediche", "url": "", "citta": "", "date": "", "abstract": "", "early": "", "verificato": ""},
+  {"sig": "SIOT",   "nome": "Società Italiana di Ortopedia e Traumatologia", "url": "https://siot.it", "citta": "", "date": "", "abstract": "", "early": "", "verificato": ""},
+  {"sig": "Swiss Orthopaedics", "nome": "Swiss Orthopaedics", "url": "https://www.swissorthopaedics.ch", "citta": "", "date": "", "abstract": "", "early": "", "verificato": ""},
+  {"sig": "AGA",    "nome": "Gesellschaft für Arthroskopie und Gelenkchirurgie", "url": "", "citta": "", "date": "", "abstract": "", "early": "", "verificato": ""},
+  {"sig": "SFA",    "nome": "Société Francophone d'Arthroscopie", "url": "", "citta": "", "date": "", "abstract": "", "early": "", "verificato": ""},
+  {"sig": "APKASS", "nome": "Asia-Pacific Knee, Arthroscopy and Sports Medicine Society", "url": "", "citta": "", "date": "", "abstract": "", "early": "", "verificato": ""},
+  {"sig": "Corsi europei di ginocchio", "nome": "Principali corsi europei di chirurgia del ginocchio (voce collettiva)", "url": "", "citta": "", "date": "", "abstract": "", "early": "", "verificato": ""}
+ ]
+}

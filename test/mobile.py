@@ -39,14 +39,19 @@ with sync_playwright() as p:
     # nuovo, BUILD_DATE resta indietro ed è giusto che il banner lo dica (regola 11).
     _bd = pg.evaluate('BUILD_DATE')
     _oggi = pg.evaluate("new Date().toLocaleDateString('sv')")   # sv → AAAA-MM-GG
-    _testo = pg.inner_text('#freshbox')
+    _testo = pg.inner_text('#gfresh')
     if _bd == _oggi:
-        chk('Aggiornato oggi' in _testo, 'briefing di oggi → banner «Aggiornato oggi»')
+        chk(_testo.strip() == '', 'briefing di oggi → nessun banner: il verdetto basta')
     else:
         atteso = ('in preparazione' in _testo) or ('non è arrivato' in _testo) \
                  or ('arriva verso le' in _testo) or ('giorni fa' in _testo)
         chk(atteso, f'briefing del {_bd}, oggi è {_oggi} → il banner lo dichiara')
         chk('Aggiornato oggi' not in _testo, 'non dice «aggiornato oggi» quando non lo è')
+    # la schermata unica c'è ed è la prima cosa che si vede
+    chk(pg.evaluate("document.getElementById('giorno').classList.contains('on')"), 'la schermata del giorno è la vista d\'ingresso')
+    chk(pg.locator('.gsch').count() <= 3, 'mai più di tre schede sulla schermata del giorno')
+    chk(pg.locator('.gbtn.ok').count() == pg.locator('.gsch').count(), 'ogni scheda ha il suo ✓ utile')
+    pg.evaluate("tab('today')"); pg.wait_for_timeout(300)
     haD=pg.evaluate('typeof duelliVivi==="function" && duelliVivi().length>0')
     if haD: chk('VS' in pg.inner_text('#duelbox'),'barra duello visibile')
     else: chk(pg.evaluate('typeof openDuel==="function"'),'duello: nessuno oggi, la funzione c\'è')
@@ -62,7 +67,7 @@ with sync_playwright() as p:
     else: chk(pg.evaluate('typeof linksHTML==="function"'),'collegamenti nel tempo: nessuno oggi, la funzione c\'è')
     # salva — la scheda è già aperta dal tocco sopra; le azioni sono visibili (redesign A·2)
     pg.click(f'#it-{PRIMO} .ib.save'); pg.wait_for_timeout(200)
-    chk(pg.eval_on_selector('#savedCount','e=>e.textContent')=='1','tocco su ★ → contatore Salvati = 1')
+    chk(pg.evaluate('S.savedItems.length')==1,'tocco su ★ → un articolo archiviato')
     # filtro
     pg.click('.filters .fchip >> nth=1'); pg.wait_for_timeout(250)
     att=pg.eval_on_selector_all('#researchList .item','e=>e.length')
@@ -77,16 +82,16 @@ with sync_playwright() as p:
         pg.click('#ov .close'); pg.wait_for_timeout(200)
     # tab archivio + autocritica + ricerca — per NOME, mai per posizione:
     # l'aggiunta della Rassegna ha spostato gli indici e nth=1 apriva un'altra tab.
-    pg.click(".tabs button:has-text('Archivio')"); pg.wait_for_timeout(300)
+    pg.evaluate("tab('archive')"); pg.wait_for_timeout(300)
     chk('AUTOCRITICA' in pg.inner_text('#auditbox').upper(),'Archivio → autocritica settimanale')
     pg.fill('#histq','menisco'); pg.wait_for_timeout(350)
     chk(pg.evaluate('typeof searchHist==="function"') and pg.locator('#histres').count()==1,'ricerca nell\'archivio attiva')
     # salvati + ritrattazioni
-    pg.click(".tabs button:has-text('Salvati')"); pg.wait_for_timeout(300)
+    pg.evaluate("tab('saved')"); pg.wait_for_timeout(300)
     chk('Nessun articolo salvato è stato ritirato' in pg.inner_text('#retrbox'),'Salvati → conferma controllo ritrattazioni')
     # impostazioni
-    pg.click(".tabs button:has-text('Impostazioni')"); pg.wait_for_timeout(300)
-    chk('PROMEMORIA' in pg.inner_text('#settings').upper(),'Impostazioni si apre')
+    pg.evaluate("tab('settings')"); pg.wait_for_timeout(300)
+    chk('RIVISTE IN FOCUS' in pg.inner_text('#settings').upper(),'il Profilo si apre')
     # zoom test: focus su input non deve ingrandire (font >=16px)
     fs=pg.eval_on_selector('#jinput','e=>getComputedStyle(e).fontSize')
     chk(float(fs.replace('px',''))>=16, f'campi di testo a {fs} → iPhone non ingrandisce la pagina')
@@ -108,18 +113,20 @@ with sync_playwright() as p:
     pg.evaluate(f"var e=document.getElementById('it-{PRIMO}');if(e&&!e.classList.contains('open'))toggle({PRIMO})")
     for larg in (320, 375, 393):
         pg.set_viewport_size({'width':larg,'height':900})
-        pg.click(".tabs button:has-text('Oggi')"); pg.wait_for_timeout(300)
-        for sel, nome in (('.item.open .acts','pulsanti della scheda'), ('.pick .act','pulsanti del lavoro del giorno')):
+        pg.evaluate("tab('today')"); pg.wait_for_timeout(300)
+        for sel, nome in (('.item.open .acts','pulsanti della scheda'),):
             r = righe_di(sel)
             chk(r == 1, f'{nome} su una riga sola a {larg} px' + ('' if r==1 else f' (ne servono {r})'))
             chk(tronchi_di(sel) == 0, f'{nome}: nessuna etichetta tagliata a {larg} px')
     # con il testo ingrandito del 35%
     pg.set_viewport_size({'width':393,'height':900}); pg.wait_for_timeout(200)
-    pg.evaluate("""()=>{document.querySelectorAll('.ib .t').forEach(e=>e.style.fontSize='15.5px');
-      document.querySelectorAll('.pick .act .btn').forEach(e=>e.style.fontSize='17px');}""")
+    pg.evaluate("""()=>{document.querySelectorAll('.ib .t').forEach(e=>e.style.fontSize='15.5px');}""")
     pg.wait_for_timeout(200)
     chk(righe_di('.item.open .acts')==1,'pulsanti della scheda su una riga anche con il testo ingrandito del 35%')
-    chk(righe_di('.pick .act')==1,'pulsanti del lavoro del giorno idem')
+    # i due giudizi della schermata unica restano fianco a fianco anche stretti
+    pg.evaluate("tab('giorno')"); pg.wait_for_timeout(200)
+    pg.set_viewport_size({'width':320,'height':900}); pg.wait_for_timeout(200)
+    chk(righe_di('.ggiud')==1,'✓ e ✗ fianco a fianco anche a 320 px')
 
     chk(len(errs)==0,'nessun errore JavaScript durante l\'uso')
     pg.screenshot(path='/tmp/shot.png',full_page=False)

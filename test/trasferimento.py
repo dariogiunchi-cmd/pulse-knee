@@ -22,7 +22,7 @@ with sync_playwright() as p:
     A.evaluate("ns => ns.forEach(function(n){pickWeek(null,n)})", NL[:SCELTI])
     # Quante proposte ci siano quel giorno dipende dal briefing: si risponde a
     # quelle che ci sono, non a un numero deciso a priori.
-    A.evaluate("() => { if(suggAperte().length) acceptSugg(); if(suggAperte().length) dismissSugg(); }")
+    A.evaluate("() => { var q=suggAperte(); if(q.length){S.suggDone[q[0].n]='si';} var q2=suggAperte(); if(q2.length){S.suggDone[q2[0].n]='no';} save(); }")
     RISPOSTE = A.evaluate("Object.keys(S.suggDone||{}).length")
     A.evaluate("addItem2 = null; S.kols.push('Nome solo sul telefono'); S.votes[%d]=1; save();" % N[0])
     A.wait_for_timeout(200)
@@ -54,7 +54,7 @@ with sync_playwright() as p:
             B.evaluate("suggAperte().every(function(q){return !S.suggDone[q.n]})"))
     else:
         chk("nessuna proposta oggi: la macchina c'è comunque",
-            B.evaluate("typeof suggAperte==='function' && typeof acceptSugg==='function'"))
+            B.evaluate("typeof suggAperte==='function'"))
     chk("i voti arrivano", str(N[0]) in dopoB["vo"] or N[0] in dopoB["vo"])
     chk("il link sparisce dalla barra", "#stato=" not in B.evaluate("location.href"))
     chk("nessun doppione fra le preferenze", len(dopoB["k"]) == len(set(dopoB["k"])))
@@ -75,7 +75,7 @@ with sync_playwright() as p:
 
     # --- la sezione è visibile e spiega che non c'è sincronizzazione automatica
     B.goto(U); B.wait_for_timeout(500)
-    B.click("button:has-text('Impostazioni')"); B.wait_for_timeout(300)
+    B.evaluate("tab('settings')"); B.wait_for_timeout(300)
     t = B.inner_text("#settings")
     chk("l'app dichiara che non c'è un server", "non ha un server" in t)
     chk("l'app dice che le copie si fondono", "fondono" in t)

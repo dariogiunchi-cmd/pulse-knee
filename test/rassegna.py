@@ -25,8 +25,8 @@ with sync_playwright() as p:
 
     chk(pg.evaluate("typeof rassHTML==='function' && typeof apriRassegna==='function'"),
         "la macchina della rassegna esiste")
-    chk(pg.locator('#rassegna').count() == 1 and pg.locator('.tabs button', has_text='Rassegna').count() == 1,
-        "la scheda Rassegna è raggiungibile con un tocco")
+    chk(pg.locator('#rassegna').count() == 1 and pg.evaluate("document.querySelector('.anav') && document.querySelector('.anav').innerHTML.indexOf('Rassegna')>=0"),
+        "la Rassegna è raggiungibile dall'archivio con un tocco")
 
     # tutte le fonti a posto → tutte le sezioni, col rosso sulle aziende sorvegliate
     h = pg.evaluate("""rassHTML({generato:'2026-01-01T04:15:00Z',fonti:{
@@ -81,7 +81,7 @@ with sync_playwright() as p:
         "senza raccolta l'app lo dice, non finge")
 
     # l'apertura vera: su file:// il fetch fallisce e il fallimento è dichiarato
-    pg.click(".tabs button:has-text('Rassegna')"); pg.wait_for_timeout(500)
+    pg.evaluate("tab('rassegna')"); pg.wait_for_timeout(500)
     t = pg.inner_text('#rassbox')
     chk('non raggiungibile' in t or 'Carico' in t or 'raccoglitore' in t,
         "il caricamento fallito si dichiara invece di lasciare il vuoto")

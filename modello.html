@@ -35,24 +35,11 @@
   .m-kssta{background:#1d6b7e}.m-ojsm{background:#22823f}.m-arth{background:#a5222d}.m-knee{background:#a05a12}.m-jeo{background:#5c3fa6}.m-jrs{background:#0d6b77}.m-gray{background:#6b7178}.m-npj{background:#23272c}.m-oac{background:#516f39}
   .top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
   html.avvio .wrap{visibility:hidden}
-  .wel{border:1.5px solid var(--acc,#2b6cb0);border-radius:14px;padding:14px;margin:0 0 14px;font-size:var(--t-sec);line-height:1.55}
-  .wel > b{display:block;margin-bottom:6px;font-size:var(--t-sec)}
   .gvx{padding:14px 16px;overflow:auto;font-size:var(--t-sec);line-height:1.55}
   .gvx details{margin:0 0 8px;background:var(--tint2);border-radius:11px;padding:9px 12px}
   .gvx summary{font-weight:600;cursor:pointer}
   .gvx ul{margin:7px 0 2px;padding-left:19px}.gvx li{margin:3px 0}
   /* modalità auto: sempre scura, contrasto massimo, tasti da colpo d'occhio */
-  #autoov{align-items:stretch}
-  .autopan{background:#000;color:var(--su-colore);width:100%;display:flex;flex-direction:column;justify-content:space-between;padding:max(20px,env(safe-area-inset-top)) 18px max(20px,env(safe-area-inset-bottom))}
-  .autonow{font-size:var(--t-titolo);line-height:1.4;font-weight:600;min-height:92px}
-  .autonow small{display:block;font-size:var(--t-sec);color:#9a9aa2;font-weight:500;margin-bottom:8px}
-  .autogrid{display:flex;gap:14px;justify-content:center;margin:10px 0}
-  .autogrid button{flex:1;max-width:170px;height:96px;border-radius:22px;border:none;background:#1c1c1e;color:var(--su-colore);font-size:38px;cursor:pointer}
-  .autogrid button svg{width:40px;height:40px;vertical-align:middle}
-  .autogrid button.pri{background:#0a84ff}
-  .autogrid button.on{background:#b00020}
-  .autoesci{margin-top:12px;height:52px;border-radius:14px;border:1.5px solid #3a3a3c;background:none;color:#9a9aa2;font-size:var(--t-testo);cursor:pointer}
-  .autovel{text-align:center;color:#9a9aa2;font-size:var(--t-sec);margin-top:6px}
   .brand{font-size:var(--t-titolo);font-weight:700;letter-spacing:-.03em;margin:0}.brand span{color:var(--dim2);font-weight:600}
   .date{color:var(--dim);font-size:var(--t-meta);width:100%;order:5}@media(min-width:560px){.date{width:auto;order:0}}
   .kpi{font-size:var(--t-meta);font-weight:600;padding:3px 10px;border-radius:20px;background:var(--carta);box-shadow:var(--sh);color:var(--dim);display:flex;gap:5px;align-items:center}.kpi b{color:var(--txt)}.kpi.v{color:var(--pratica)}
@@ -67,24 +54,12 @@
   .sbar{width:5px;border-radius:2px;background:var(--line);display:inline-block}
   .sbar.caldo{background:var(--attrito)}
   .slab{font-size:var(--t-micro);color:var(--dim2);margin-left:5px;align-self:center}
-  .audiobar{display:flex;align-items:center;gap:10px;background:var(--carta);border-radius:var(--r2);box-shadow:var(--sh);padding:8px 12px;margin-bottom:var(--s4)}
-  .audiobar .play{width:44px;height:44px;border-radius:50%;border:none;background:var(--azione);color:var(--su-colore);font-size:var(--t-testo);cursor:pointer;flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-  .audiobar .play svg{width:22px;height:22px}
   .play.rec{background:var(--allerta)}
-  .audiobar .tx{min-width:0}.audiobar .tx b{font-size:var(--t-sec)}.audiobar .tx small{display:block;color:var(--dim);font-size:var(--t-meta);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .tabs{display:flex;background:#ececef;border-radius:12px;padding:3px;gap:2px;margin-bottom:16px;overflow:auto}
-  .tabs button{font:inherit;font-size:var(--t-meta);font-weight:600;padding:8px 10px;border-radius:9px;border:none;background:transparent;color:var(--dim);cursor:pointer;white-space:nowrap;flex:1;display:flex;align-items:center;justify-content:center;gap:6px}
-  .tabs button svg{width:19px;height:19px;flex:0 0 auto}
-  .tabs button.on{background:var(--carta);color:var(--txt);box-shadow:0 1px 3px rgba(0,0,0,.14)}
   /* Su telefono la navigazione sta sotto il pollice: barra fissa in basso,
      icona sopra etichetta, bersagli pieni (Apple HIG). */
   @media(max-width:719px){
-    .tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;margin:0;border-radius:0;padding:6px 4px calc(6px + env(safe-area-inset-bottom));background:var(--carta);box-shadow:0 -1px 0 var(--line2),0 -8px 24px rgba(0,0,0,.06)}
-    .tabs button{flex-direction:column;gap:2px;font-size:var(--t-micro);padding:4px 2px;min-height:48px}
-    .tabs button.on{background:none;box-shadow:none;color:var(--azione)}
     body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
   }
-  .tabs .b{background:var(--blue);color:var(--su-colore);border-radius:20px;padding:0 6px;font-size:var(--t-badge);margin-left:4px}
   .view{display:none}.view.on{display:block}
   .grid{display:grid;grid-template-columns:1fr;gap:18px}@media(min-width:1000px){.grid{grid-template-columns:minmax(0,1.7fr) minmax(290px,1fr)}}
   .pick{position:relative;background:var(--carta);border-radius:var(--r);box-shadow:var(--sh2);padding:15px 16px;margin-bottom:18px;overflow:hidden}
@@ -217,6 +192,36 @@
   .foot{margin-top:16px;font-size:var(--t-micro);color:var(--dim2);line-height:1.6}
   .nuovo{font-size:var(--t-badge);font-weight:800;color:var(--su-colore);background:var(--blue);padding:1px 6px;border-radius:8px;letter-spacing:.3px;align-self:flex-end}
   .srch{display:flex;gap:8px;margin:0 0 12px}.srch input{flex:1;font:inherit;font-size:var(--t-sec);padding:10px 12px;border-radius:12px;border:1px solid var(--line);outline:none}.srch input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,113,227,.12)}
+  #backrow{max-width:1200px;margin:0 auto 10px}
+  .anav{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 14px;font-size:var(--t-sec)}
+  .anav a{color:var(--azione);cursor:pointer;font-weight:600}
+  .gback{font-size:var(--t-sec);font-weight:600;color:var(--azione);cursor:pointer}
+  .gk{font-size:var(--t-badge);font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--dim2);margin-bottom:4px}
+  .gmisura{margin-top:2px;font-size:var(--t-sec);color:var(--dim);font-weight:600}
+  .ievid{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:var(--s4);margin-top:var(--s4);cursor:pointer}
+  .ievt{font-size:var(--t-titolo);line-height:1.3;font-weight:700;letter-spacing:-.01em}
+  .idom{margin-top:var(--s4)}
+  .idom.vuoto{margin-top:var(--s3);font-size:var(--t-sec);color:var(--dim2);font-weight:600}
+  .idh{display:flex;align-items:center;gap:8px;font-size:var(--t-meta);font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--txt);cursor:pointer;min-height:32px}
+  .idh .idn{font-weight:700;color:var(--dim2)}
+  .idh .chev{margin-left:auto;color:var(--dim2);font-size:var(--t-sec)}
+  .idb{background:var(--carta);border-radius:var(--r2);box-shadow:var(--sh);margin-top:var(--s2)}
+  .irow{padding:10px var(--s3);border-bottom:1px solid var(--line2);cursor:pointer;position:relative}
+  .idb .irow:last-child{border-bottom:none}
+  .irt{display:block;font-size:var(--t-sec);line-height:1.4;font-weight:600}
+  .irm{display:block;margin-top:2px;font-size:var(--t-micro);color:var(--dim2)}
+  .ipr{position:absolute;right:10px;top:10px;color:var(--attrito);font-size:var(--t-micro)}
+  .iscad{color:var(--attrito);font-weight:700}
+  .iscad.forte{color:var(--allerta)}
+  .gcopert{margin-top:var(--s5);font-size:var(--t-micro);color:var(--dim2)}
+  .gcopert a{color:var(--dim2);cursor:pointer}
+  .gplayer{display:flex;align-items:center;gap:8px;margin-top:var(--s5)}
+  .gpb{height:44px;min-width:44px;border-radius:var(--r2);border:1px solid var(--line);background:var(--carta);font:inherit;font-size:var(--t-sec);font-weight:700;cursor:pointer;color:var(--txt)}
+  .gpb:first-of-type{background:var(--azione);border-color:var(--azione);color:#fff;min-width:52px}
+  .gpb.sec{color:var(--dim)}
+  .gptime{font-size:var(--t-meta);color:var(--dim)}
+  .gfoot{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--line2);text-align:center;font-size:var(--t-sec);color:var(--dim2)}
+  .gfoot a{color:var(--dim);cursor:pointer;font-weight:600;padding:10px 6px}
   .hbtn{width:44px;height:44px;border-radius:50%;background:var(--carta);box-shadow:var(--sh);border:none;cursor:pointer;font-size:var(--t-testo);color:var(--dim)}
 
   .filters{display:flex;gap:7px;margin:0 2px 12px;flex-wrap:wrap}
@@ -235,8 +240,6 @@
   --sh:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.5);--sh2:0 1px 2px rgba(0,0,0,.5),0 14px 40px rgba(0,0,0,.6)}
   body{background:#000}
   .kpi,.pill,.pick,.card,.tile,.sec,.empty,.cal,details,.audiobar,.sheet{background:#1c1c1e !important}
-  .tabs{background:#2c2c2e}
-  .tabs button.on,.seg button.on,.stabs button,.ib,.hbtn,.fchip,.day{background:#2c2c2e !important;color:#f5f5f7}
   .fchip.on{background:#f5f5f7 !important;color:#111}
   .rchip.rHotC{color:#ff7a70}
   .nuovo{color:#102A43}
@@ -244,7 +247,6 @@
   .fresh.dead{color:var(--allerta)}
   .btn{background:#2c2c2e;color:#f5f5f7}
   .btn.pri,.add button{background:#0A63C4;color:#fff}
-  .audiobar .play{background:#0A63C4}
   .add input,.srch input,.seg{background:#2c2c2e;color:#f5f5f7}
   .tag{background:#2c2c2e !important;color:#e5e5ea !important}
   .fld .val,.sbody .cnt{color:#e5e5ea !important}
@@ -406,36 +408,38 @@
     <h1 class="brand">PULSE<span> · knee</span></h1>
     <span style="margin-left:auto"></span>
     <button class="hbtn" onclick="location.reload()" title="Aggiorna" aria-label="Ricarica l'app">↻</button>
-    <button class="hbtn" onclick="apriGuida()" aria-label="Come funziona PULSE: la guida">?</button>
   </div>
-  <div id="welbox"></div>
-  <div class="tabs" role="navigation" aria-label="Sezioni di PULSE">
-    <button class="on" aria-current="page" onclick="tab('today',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 5.5h12M4 9.5h12M4 13.5h7"/></svg><span class="tl">Oggi</span></button>
-    <button onclick="tab('rassegna',this);apriRassegna()"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3.5 14a6.5 6.5 0 0 1 13 0M7 14a3 3 0 0 1 6 0"/><circle cx="10" cy="14" r="1.1" fill="currentColor" stroke="none"/></svg><span class="tl">Rassegna</span></button>
-    <button onclick="tab('archive',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.5h13v8h-13zM3.5 7.5l1.6-3h9.8l1.6 3M8 11h4"/></svg><span class="tl">Archivio</span></button>
-    <button onclick="tab('saved',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M10 3.2l2.1 4.3 4.7.7-3.4 3.3.8 4.7L10 14l-4.2 2.2.8-4.7-3.4-3.3 4.7-.7z"/></svg><span class="tl">Salvati</span> <span class="b" id="savedCount">0</span></button>
-    <button onclick="tab('news',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="5" width="14" height="10" rx="1.5"/><path d="M3.5 6l6.5 5 6.5-5"/></svg><span class="tl">Newsletter</span></button><button onclick="tab('settings',this)"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3.5 6.2h13M3.5 10h13M3.5 13.8h13"/><circle cx="7.6" cy="6.2" r="1.7" fill="currentColor" stroke="none"/><circle cx="12.4" cy="10" r="1.7" fill="currentColor" stroke="none"/><circle cx="6.4" cy="13.8" r="1.7" fill="currentColor" stroke="none"/></svg><span class="tl">Impostazioni</span></button>
-  </div>
+  <div id="backrow" style="display:none"><a class="gback" role="button" tabindex="0" onclick="tab('giorno')">‹ Oggi</a></div>
+  
 
   <main style="min-height:100vh">
-  <div class="view on" id="today">
-    <section class="eroe">
-      <span class="date" id="datalunga"></span>
-      <div id="freshbox"></div>
-      <div class="verdict" id="verdict"></div>
-      <div class="econta" id="kpis"></div>
-    </section>
-    <div class="audiobar">
-      <button class="play" onclick="speakBrief()" id="playbtn" aria-label="Ascolta il riassunto del giorno">▶</button>
-      <button class="play" onclick="toggleConversazione()" id="micbtn" aria-label="Parla con PULSE a voce: comandi come apri la tre, seconda pagina, sorprendimi" style="display:none"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="7.8" y="3" width="4.4" height="8.4" rx="2.2"/><path d="M5.2 9.6a4.8 4.8 0 0 0 9.6 0M10 14.4V17"/></svg></button>
-      <button class="play" onclick="apriAuto()" id="autobtn" aria-label="Modalità auto: ascolto continuo del giornale con tasti grandi"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.2 11.5l1.3-3.6A1.8 1.8 0 0 1 7.2 6.7h5.6a1.8 1.8 0 0 1 1.7 1.2l1.3 3.6M4.2 11.5h11.6v3.3h-1.9M4.2 11.5v3.3h1.9M7.6 14.8h4.8"/><circle cx="6.9" cy="13.6" r=".8" fill="currentColor" stroke="none"/><circle cx="13.1" cy="13.6" r=".8" fill="currentColor" stroke="none"/></svg></button>
-      <div class="tx"><b>Riassunto vocale del giorno</b><small id="voicelbl">il podcast, o tutto il giornale in modalità auto</small></div>
+  <div class="view on" id="giorno">
+    <span class="date" id="gdata"></span>
+    <div id="gfresh"></div>
+    <div class="gmisura" id="gmisura"></div>
+    <div id="gevid"></div>
+    <div id="gindice"></div>
+    <div class="gplayer" id="gplayer" style="display:none">
+      <audio id="gaudio" preload="metadata"></audio>
+      <button class="gpb" id="gpp" onclick="audioPlayPausa()" aria-label="Riproduci o metti in pausa il briefing">▶</button>
+      <button class="gpb sec" onclick="audioSalta(-15)" aria-label="Indietro di 15 secondi">−15</button>
+      <button class="gpb sec" onclick="audioSalta(15)" aria-label="Avanti di 15 secondi">+15</button>
+      <button class="gpb sec" id="gvel" onclick="audioVelocita()" aria-label="Velocità di riproduzione">1×</button>
+      <span class="gptime" id="gptime"></span>
     </div>
+    <div class="gcopert"><a role="button" tabindex="0" onclick="tab('rassegna')">Copertura delle fonti · dettaglio ›</a></div>
+    <div class="gfoot" role="navigation" aria-label="Altre sezioni">
+      <a role="button" tabindex="0" onclick="tab('archive')">Archivio</a> ·
+      <a role="button" tabindex="0" onclick="tab('news')">Produzione</a> ·
+      <a role="button" tabindex="0" onclick="tab('settings')">Profilo</a>
+    </div>
+  </div>
+  <div class="view" id="today">
+    <div class="sl r-res" style="--sc:#0071e3"><span class="ic">▤</span>Le schede di oggi<span class="n" id="resn2"></span></div>
     <div id="copbox"></div>
     <div id="duelbox"></div>
     <div class="grid">
       <div>
-        <div class="pick" id="pickbox"></div>
         <div class="sl" style="--sc:#B45309"><span class="ic">⚑</span>Dove le prove non ti coprono<span class="n" id="tensn"></span></div>
         <div class="tens2"><div class="tintro">Punti in cui <b>tu fai una cosa</b> e la letteratura <b>ne ha studiata un&rsquo;altra</b>. Non sono errori: sono zone in cui le prove non ti coprono. Tocca per vedere che cosa puoi farci.</div><div id="tensbox"></div></div>
         <div class="sl r-res"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.2 3h3.6M9 3v4.4l-3.7 6.4A2 2 0 0 0 7 16.8h6a2 2 0 0 0 1.7-3L11 7.4V3"/><path d="M7 12.5h6"/></svg></span>Ricerca scientifica<span class="n" id="resn"></span></div>
@@ -443,13 +447,12 @@
         <div id="secpag"></div>
       </div>
       <div>
-        <div id="latobox"></div>
         <div class="sl r-disc"><span class="ic">✦</span>Oltre il consueto<span class="n">scelti per te</span></div>
         <div class="card" id="discList" style="border:1px solid rgba(52,199,89,.25)"></div>
         <div class="tile curio" style="margin-top:12px"><div class="lab">🌏 Curiosità dall'altra parte del mondo</div>
           <div class="tcong"><span class="mono m-ojsm">OJSM</span><div class="tt" onclick="scrollToItem(8)" style="cursor:pointer"><div class="h">Seoul (Kyung Hee): dove passa il taglio dell'osteotomia decide il destino della troclea</div><div class="v">Song … Park · second look artroscopico su 205 osteotomie · [8]</div></div></div></div>
         <div class="sl r-focus"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="6.3"/><circle cx="10" cy="10" r="2" fill="currentColor" stroke="none"/></svg></span>Il tuo focus</div>
-        <div class="tile"><div class="lab">Riviste</div><div id="focusJournals"></div><div class="lab" style="margin-top:10px">Opinion leader</div><div id="focusKols"></div><div class="lab" style="margin-top:10px">Temi e società</div><div id="focusMore"></div><div class="sugg" id="suggBox"></div></div>
+        <div class="tile"><div class="lab">Riviste</div><div id="focusJournals"></div><div class="lab" style="margin-top:10px">Opinion leader</div><div id="focusKols"></div><div class="lab" style="margin-top:10px">Temi e società</div><div id="focusMore"></div></div>
       </div>
     </div>
   </div>
@@ -460,6 +463,7 @@
   </div>
 
   <div class="view" id="archive">
+    <div class="anav"><a role="button" tabindex="0" onclick="tab('today')">Le schede di oggi ›</a><a role="button" tabindex="0" onclick="tab('saved')">I tuoi utili ›</a><a role="button" tabindex="0" onclick="tab('rassegna')">Rassegna — richiami, trial e fonti ›</a></div>
     <div class="sl r-arch" style="max-width:552px"><span class="ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="13" height="11" rx="1.5"/><path d="M3.5 8.5h13M7 3.5v3M13 3.5v3"/></svg></span>Storico delle ricerche<span class="n" id="calmese"></span></div>
     <div class="cal"><div class="calgrid" id="calgrid"></div></div>
     <div class="srch" style="max-width:520px;margin-top:14px"><input id="histq" placeholder="Cerca in tutto l'archivio…" oninput="searchHist()"></div><div id="histres" style="max-width:520px"></div><div class="audit" id="auditbox"></div><div class="muted" style="max-width:520px;margin-top:12px">Ogni mattina — anche i giorni “nessuna novità” — finisce qui. Da domani lo storico cresce da solo.</div>
@@ -494,13 +498,12 @@
       <div class="rowset"><div class="k">Lingua pagina</div><div class="seg"><button class="on" onclick="setV('lang','it',this)">Italiano</button><button onclick="setV('lang','en',this)">English</button></div></div>
       <div class="rowset"><div class="k">Lingua audio</div><div class="seg"><button class="on" onclick="setV('audio','it',this)">Italiano</button><button onclick="setV('audio','en',this)">English</button></div></div>
     </div>
-    <div class="sec"><h2>Promemoria</h2><div class="muted">Il briefing viene preparato ogni mattina alle 7 (ora svizzera) e l'avviso ti arriva dall'app Claude, <b>se hai le notifiche attive per quella app</b>. Qui sotto puoi attivare anche gli avvisi del browser: su iPhone funzionano solo se hai aggiunto PULSE alla schermata Home e apri l'app da lì.</div><div class="add" style="margin-top:10px"><button onclick="askNotif()">Attiva avvisi</button></div><div class="preview" id="notiflbl"></div></div>
     <div class="sec"><h2>Versioni precedenti</h2><div class="muted">Ogni giorno il PULSE viene salvato così com&rsquo;era. Restano tutti i giorni degli ultimi trenta e il primo di ogni mese, per sempre.</div><div class="add" style="margin-top:10px"><a class="btn" href="versioni/" style="text-decoration:none;display:inline-flex;align-items:center">🗄 Sfoglia le versioni</a></div></div>
     <div class="sec"><h2>Lettura</h2><div class="muted">La dimensione del testo di tutta l'app. La scelta resta su questo dispositivo.</div>
       <div class="filters" id="testochips" style="margin-top:9px"><button class="fchip" onclick="setTesto(1,this)">Normale</button><button class="fchip" onclick="setTesto(1.15,this)">Grande</button><button class="fchip" onclick="setTesto(1.3,this)">Molto grande</button></div>
       <div class="muted" style="margin-top:12px">La voce che legge (di sistema). Le più naturali si scaricano sull'iPhone: Impostazioni → Accessibilità → Contenuto letto → Voci → Italiano → scegli una voce «migliorata».</div>
       <select id="vocesel" onchange="S.voce=this.value;save();" aria-label="Scegli la voce italiana che legge il giornale" style="margin-top:8px;width:100%;max-width:520px;padding:10px;border-radius:11px;border:1px solid var(--line);background:var(--tint2);color:var(--txt);font:inherit"></select>
-      <div class="add" style="margin-top:12px"><button class="btn" onclick="apriGuida()">Come funziona PULSE</button></div></div>
+</div>
     <div class="sec"><h2>Il cervello di PULSE</h2>
       <div class="muted">Facoltativo, a pagamento (nell'ordine di pochi franchi al mese): sblocca la conversazione libera a voce — chiedi qualunque cosa, come a ChatGPT — e la voce naturale per podcast e schede. Le chiavi vivono nel «cervello» esterno (cartella <b>chiedi/</b> del repository, istruzioni comprese); qui si scrivono solo l'indirizzo e la parola d'ordine, che restano su questo dispositivo.</div>
       <div class="add" style="margin-top:9px;flex-wrap:wrap">
@@ -508,7 +511,8 @@
         <input id="cvpar" placeholder="parola d'ordine" aria-label="Parola d'ordine del cervello" style="flex:1 1 60%;padding:10px;border-radius:11px;border:1px solid var(--line);background:var(--tint2);color:var(--txt);font:inherit">
         <button class="btn pri" onclick="salvaCervello()" aria-label="Collega il cervello e prova il collegamento">Collega</button>
       </div>
-      <div class="muted" id="cvstato" style="margin-top:7px"></div></div>
+      <div class="muted" id="cvstato" style="margin-top:7px"></div>
+      <div class="add" style="margin-top:10px"><button class="btn" id="micbtn" onclick="toggleConversazione()" style="display:none" aria-label="Parla con PULSE a voce: comandi come apri la tre, o domande libere col cervello collegato"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="7.8" y="3" width="4.4" height="8.4" rx="2.2"/><path d="M5.2 9.6a4.8 4.8 0 0 0 9.6 0M10 14.4V17"/></svg> Parla con PULSE</button></div></div>
     <div class="sec"><h2>Stesso PULSE su un altro dispositivo</h2><div class="muted">PULSE non ha un server: quello che fai su un dispositivo resta lì. Se usi anche il computer, porta i tuoi dati con un link — le due copie si <b>fondono</b>, non si sovrascrivono, quindi non perdi nulla da nessuna delle due parti.</div><div id="syncbox" style="margin-top:10px"></div></div>
     <div class="sec"><h2>I tuoi dati</h2><div class="muted">Salvati, voti, preferenze, lavori scelti per la distribuzione e testi che hai adattato vivono <b>solo in questo browser</b>, su questo dispositivo. Non sono su nessun server e non si sincronizzano con altri dispositivi. Se cancelli i dati del sito, si perdono: per questo conviene tenere PULSE nella schermata Home e non cancellare i dati di Safari o Chrome per questo indirizzo. Le schede e i contenuti di ogni giorno restano invece sempre recuperabili dalle versioni precedenti.</div><div class="add" style="margin-top:10px"><button class="peric" onclick="resetAll()">Azzera tutto</button></div></div>
   </div>
@@ -517,31 +521,8 @@
 </div>
 
 <!-- SOCIAL SHEET -->
-<div class="ov" id="autoov">
-  <div class="autopan">
-    <div class="autonow" id="autonow"><small>Modalità auto</small>Tocca ▶ per ascoltare tutto il giornale.</div>
-    <div>
-      <div class="autogrid">
-        <button onclick="autoIndietro()" aria-label="Scheda precedente">⏮</button>
-        <button onclick="autoPlayPausa()" id="autopp" class="pri" aria-label="Riproduci o metti in pausa">▶</button>
-        <button onclick="autoProssima()" aria-label="Prossima scheda">⏭</button>
-      </div>
-      <div class="autogrid">
-        <button onclick="autoRipeti()" aria-label="Ripeti da capo la scheda in ascolto"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.8 8.2a5.4 5.4 0 0 1 10-1.5M15.2 11.8a5.4 5.4 0 0 1-10 1.5"/><path d="M15 3.6v3.3h-3.3M5 16.4v-3.3h3.3"/></svg></button>
-        <button onclick="autoMic()" id="automic" aria-label="Di’ un comando: prossima, ripeti, salva questa, più veloce"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="7.8" y="3" width="4.4" height="8.4" rx="2.2"/><path d="M5.2 9.6a4.8 4.8 0 0 0 9.6 0M10 14.4V17"/></svg></button>
-        <button onclick="autoSalva()" aria-label="Salva la scheda in ascolto">★</button>
-      </div>
-      <div class="autovel" id="autovel"></div>
-    </div>
-    <button class="autoesci" onclick="chiudiAuto()" aria-label="Esci dalla modalità auto">Esci dalla modalità auto</button>
-  </div>
-</div>
-<div class="ov" id="gvov" onclick="if(event.target===this)chiudiGuida()">
-  <div class="sheet">
-    <div class="hd"><div class="tt"><h3>Come funziona PULSE</h3><small>tutto quello che vedi, spiegato</small></div><button class="close" onclick="chiudiGuida()" aria-label="Chiudi la guida">✕</button></div>
-    <div class="gvx" id="gvbody"></div>
-  </div>
-</div>
+
+
 <div class="ov" id="ov" onclick="if(event.target===this)closeSocial()">
   <div class="sheet">
     <div class="hd"><div class="tt"><h3 id="shTitle"></h3><small id="shSub"></small></div><button class="close" onclick="closeSocial()">✕</button></div>
@@ -636,13 +617,13 @@ var PREF_AZ=['DePuy Synthes','Zimmer Biomet','Smith & Nephew','Arthrex','Stryker
 var DEF={saved:[],savedItems:[],votes:{},edits:{},weekly:[],blogUrl:'https://www.dariogiunchi.ch/blog',
  journals:PREF_RIVISTE.slice(),kols:PREF_KOL.slice(),societies:PREF_SOC.slice(),companies:PREF_AZ.slice(),
  prefv:PREFV,seen:[],winLit:30,lang:'it',audio:'it',suggIdx:0,suggDone:{},topics:[],scoviste:[],voce:'',guidav:0,testo:1,rate:1.02,
- cervello:{url:'',parola:''}};
+ cervello:{url:'',parola:''},giudizi:{},pesi:{},pos:{}};
 var S=load();function load(){var salvato=null,s;try{var r=localStorage.getItem('pulse4');if(r)salvato=JSON.parse(r)}catch(e){}s=salvato?Object.assign({},DEF,salvato):Object.assign({},DEF);/* La versione va letta da ciò che è SALVATO, non dal risultato della fusione:    DEF porta sempre PREFV e maschererebbe il valore vecchio. */if(salvato&&(salvato.prefv||0)<PREFV){s.journals=unisci(salvato.journals,PREF_RIVISTE);s.kols=unisci(salvato.kols,PREF_KOL);s.societies=unisci(salvato.societies,PREF_SOC);s.companies=unisci(salvato.companies,PREF_AZ);}s.prefv=PREFV;s.suggDone=s.suggDone||{};if(!s.companies||!s.companies.length)s.companies=PREF_AZ.slice();return s;}
 function unisci(a,b){a=(a||[]).slice();b.forEach(function(x){if(a.indexOf(x)<0)a.push(x)});return a;}
 function save(){try{localStorage.setItem('pulse4',JSON.stringify(S))}catch(e){}}
 function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')}
 function pm(a){return 'https://pubmed.ncbi.nlm.nih.gov/'+a.pmid+'/'}function di(a){return 'https://doi.org/'+a.doi}
-function itemHTML(a){if(!a)return '';var sv=isSaved(a.n),vt=S.votes[a.n];var hasSoc=!!SOC[a.n];
+function itemHTML(a){if(!a)return '';var sv=isSaved(a.n),vt=S.giudizi[a.pmid]||0;var hasSoc=!!SOC[a.n];
  return '<div class="item" id="it-'+a.n+'">'+
   '<div class="row" role="button" tabindex="0" aria-expanded="false" onclick="toggle('+a.n+')"><span class="dot '+a.dot+'"></span>'+
     '<div class="tt"><div class="h">'+esc(a.h)+'</div><div class="v">'+esc(a.v)+'</div>'+
@@ -668,20 +649,19 @@ function render(){
   var aperte=[].map.call(document.querySelectorAll('.item.open'),function(e){return e.id});
   renderResearch();
   document.getElementById('discList').innerHTML=ARTICLES.filter(function(a){return a.sec=='disc'}).map(itemHTML).join('');
-  var SL=savedList();var sc=SL.length;document.getElementById('savedCount').textContent=sc;document.getElementById('savedN').textContent=sc;
+  var SL=savedList();var sc=SL.length;var _sc=document.getElementById('savedCount');if(_sc)_sc.textContent=sc;var _sn=document.getElementById('savedN');if(_sn)_sn.textContent=sc;
   var sl=document.getElementById('savedList');
   if(!sc)sl.innerHTML='<div class="empty"><div class="big">★</div><div style="font-weight:600;color:#1d1d1f;font-size:var(--t-sec);margin-bottom:6px">Nessun articolo salvato</div>Tocca ★ su un lavoro: comparirà qui e ci resterà.</div>';
   else sl.innerHTML='<div class="card">'+SL.map(itemHTML).join('')+'</div>';
   if(document.getElementById('savedq'))renderSaved();
   renderRetr();
-  renderTop();
+  renderGiorno();
   renderFoot();
   renderNl();
   aperte.forEach(function(id){var e=document.getElementById(id);if(e)e.classList.add('open')});
   document.getElementById('focusJournals').innerHTML=S.journals.map(function(j){return '<span class="tag">'+esc(j)+'</span>'}).join('');
   document.getElementById('focusKols').innerHTML=S.kols.map(function(k){return '<span class="tag">'+esc(k)+'</span>'}).join('');
   var fm=document.getElementById('focusMore');if(fm)fm.innerHTML=(S.societies||[]).concat(S.companies||[]).concat(S.topics||[]).map(function(k){return '<span class="tag">'+esc(k)+'</span>'}).join('');
-  renderSugg();
   document.getElementById('setJournals').innerHTML=S.journals.map(function(j){return tagX('journals',j)}).join('');
   document.getElementById('setKols').innerHTML=S.kols.map(function(k){return tagX('kols',k)}).join('');
   document.getElementById('setSoc').innerHTML=S.societies.map(function(k){return tagX('societies',k)}).join('');
@@ -713,7 +693,7 @@ function toggleSave(ev,n){if(ev)ev.stopPropagation();var a=A[n];if(!a)return;
  if(i>=0||j>=0){if(i>=0)S.savedItems.splice(i,1);if(j>=0)S.saved.splice(j,1);toast('Rimosso');}
  else{S.savedItems.push({d:BUILD_DATE,a:JSON.parse(JSON.stringify(a))});S.saved.push(n);toast('★ Salvato');}
  save();render();}
-function vote(ev,n,d){if(ev)ev.stopPropagation();if(S.votes[n]==d){delete S.votes[n];toast('Annullato')}else{S.votes[n]=d;toast(d==1?'Più così':'Meno così')}save();render()}
+function vote(ev,n,d){if(ev)ev.stopPropagation();var a=A[n];if(a&&a.pmid)giudica(a.pmid,d);}
 function addItem(k,id){var v=document.getElementById(id).value.trim();if(!v)return;if(S[k].indexOf(v)<0)S[k].push(v);document.getElementById(id).value='';save();render();toast('Aggiunto')}
 function rm(k,x){S[k]=S[k].filter(function(y){return y!=x});save();render()}
 /* Le proposte si tracciano PER NOME, non per posizione nell'elenco.
@@ -730,39 +710,150 @@ function suggAperte(){
   for(var q=0;q<S.suggIdx&&q<SUGGQ.length;q++)S.suggDone[SUGGQ[q].n]='vecchio';
   save();}
  var d=S.suggDone;return SUGGQ.filter(function(x){return !d[x.n]});}
-function renderSugg(){var sb=document.getElementById('suggBox');if(!sb)return;
- var ap=suggAperte(),risposte=Object.keys(S.suggDone||{}).length;
- if(!ap.length){sb.innerHTML='<b>Per ora ho finito le proposte.</b> Ne aggiungo di nuove ogni mattina, in base a chi compare nei lavori che escono.'+(risposte?' Finora hai risposto a '+risposte+'.':'');return;}
- var q=ap[0];var ic={kol:'\ud83c\udf93',journal:'\ud83d\udcda',society:'\ud83c\udfdb',topic:'\ud83e\udded'}[q.k]||'\u2726';
- sb.innerHTML='<div style="font-size:var(--t-badge);font-weight:700;letter-spacing:.05em;text-transform:uppercase;opacity:.7">'+(ap.length==1?'Ultima proposta':ap.length+' proposte da vedere')+(risposte?' \u00b7 '+risposte+' gi\u00e0 viste':'')+'</div>'+
-  '<div style="margin-top:5px"><b>'+ic+' '+esc(q.n)+'</b>'+(q.w?' <span style="opacity:.7">\u00b7 '+esc(q.w)+'</span>':'')+'</div>'+
-  '<div style="margin-top:4px;line-height:1.45">'+esc(q.r)+'</div>'+
-  '<div class="sb"><button class="btn pri" onclick="acceptSugg()">\uff0b Seguilo</button><button class="btn" onclick="dismissSugg()">Non mi interessa</button></div>';}
-function acceptSugg(){var q=suggAperte()[0];if(!q)return;
- var m={kol:'kols',journal:'journals',society:'societies',topic:'topics'}[q.k];
- S[m]=S[m]||[];if(S[m].indexOf(q.n)<0)S[m].push(q.n);
- S.suggDone=S.suggDone||{};S.suggDone[q.n]='si';
- save();render();toast(q.n+' aggiunto \u2014 eccone un altro');}
-function dismissSugg(){var q=suggAperte()[0];if(!q)return;
- S.suggDone=S.suggDone||{};S.suggDone[q.n]='no';
- save();render();toast('Va bene \u2014 eccone un altro');}
-/* ================== TRASFERIMENTO FRA DISPOSITIVI ==================
-   PULSE non ha un server: tutto vive nel browser di questo dispositivo. Due
-   dispositivi quindi NON si sincronizzano da soli — e prima o poi divergono, come
-   e' successo con le proposte da seguire, gia' risposte su un telefono e riproposte
-   sull'altro.
-   Qui non si finge una sincronizzazione che non c'e': si genera un link che porta
-   con se' lo stato, e all'apertura sull'altro dispositivo lo FONDE con quello che
-   c'e' gia'. Fondere, non sovrascrivere: altrimenti il dispositivo che riceve
-   perderebbe cio' che era stato fatto solo li'. */
 function b64enc(s){return btoa(unescape(encodeURIComponent(s))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
 function b64dec(s){s=s.replace(/-/g,'+').replace(/_/g,'/');return decodeURIComponent(escape(atob(s)));}
+
+/* ===== LA SCHERMATA UNICA (rifondazione, Addendum §4) =====================
+   Mostra ciò che il mattino ha selezionato (SELEZIONE: verdetto in linguaggio
+   naturale + 0-3 schede). L'app non seleziona e non ordina: consuma. Il tetto di
+   tre è un vincolo: se arrivassero di più, tre si mostrano e il cancello blocca
+   la pubblicazione a monte. */
+function _artPm(pmid){for(var k in A){if(A[k]&&A[k].pmid===pmid)return A[k];}return null;}
+/* ===== L'INDICE DEL GIORNO (correzione di rotta, Addendum 4) ==================
+   Copertura completa, lettura selettiva: OGNI cosa rilevante è presente, ogni
+   voce occupa UNA riga (fatto col verbo · fonte · disegno+numerosità), la
+   profondità si apre con un tocco. L'app non seleziona e non giudica: indicizza.
+   «Tocca la tua pratica» è un'etichetta discreta (●), mai la cornice. */
+var DOMINI=[['menisco','Menisco'],['cartilagine','Cartilagine'],['legamenti','Legamenti'],
+ ['artroscopia','Altra artroscopia e procedure affini'],['osteotomie','Osteotomie'],
+ ['protesi','Protesi'],['trauma','Traumatologia del ginocchio'],
+ ['riab','Riabilitazione e return to sport'],['lineeguida','Linee guida e consensus']];
+function _solidDa(meta){
+ return (meta||'').split('·').map(function(p){return p.trim()})
+  .filter(function(p){return p&&p[0]!=='['}).slice(0,2).join(' · ');}
+function vociIndice(){
+ var out=[];
+ ARTICLES.forEach(function(a){out.push({dom:a.dom||'',riga:a.riga||a.h,
+  solid:_solidDa(a.meta),j:a.j,n:a.n,pmid:a.pmid,
+  pratica:(a.dot==='orange'||a.dot==='red')});});
+ (typeof EXTRA!=='undefined'?EXTRA:[]).forEach(function(e){out.push({dom:e.dom||'',
+  riga:e.h,solid:'',j:e.j,pmid:e.pmid,breve:true,pratica:false});});
+ (typeof SCOPERTE!=='undefined'?SCOPERTE:[]).forEach(function(s){out.push({dom:s.dom||'',
+  riga:s.t,solid:'',j:'',pmid:s.pmid,breve:true,pratica:false});});
+ return out;}
+function _rigaHTML(v){
+ var apre=v.n?('apriInArchivio('+v.n+')'):'apriBreve()';
+ return '<div class="irow" role="button" tabindex="0" onclick="'+apre+'">'
+  +(v.pratica?'<span class="ipr" aria-label="Tocca la tua pratica" title="Tocca la tua pratica">●</span>':'')
+  +'<span class="irt">'+esc(v.riga)+'</span>'
+  +'<span class="irm">'+esc([v.solid,v.j].filter(Boolean).join(' · '))+'</span>'
+  +'</div>';}
+function _gruppoHTML(chiave,nome,righeHTML,conteggio,extraTitolo){
+ var chiuso=S.domChiusi&&S.domChiusi[chiave];
+ if(!conteggio)return '<div class="idom vuoto">'+esc(nome)+' — nulla oggi</div>';
+ return '<div class="idom"><div class="idh" role="button" tabindex="0" aria-expanded="'+(!chiuso)+'" onclick="toggleDom(\''+chiave+'\')">'
+  +esc(nome)+' <span class="idn">'+conteggio+'</span>'
+  +(extraTitolo?'<span class="idx">'+esc(extraTitolo)+'</span>':'')
+  +'<span class="chev">'+(chiuso?'›':'⌄')+'</span></div>'
+  +(chiuso?'':'<div class="idb">'+righeHTML+'</div>')+'</div>';}
+function toggleDom(k){S.domChiusi=S.domChiusi||{};if(S.domChiusi[k])delete S.domChiusi[k];else S.domChiusi[k]=1;save();renderGiorno();}
+function apriBreve(){tab('today');if(typeof spApri==='function')spApri();}
+function congressiRighe(){
+ var C=(typeof CONGRESSI!=='undefined'&&Array.isArray(CONGRESSI))?CONGRESSI.filter(function(c){return c&&c.sig}):[];
+ C=C.filter(function(c){var g=[c.abstract,c.early].filter(Boolean).map(giorniA);return !g.length||g.some(function(x){return x>=0});});
+ C.sort(function(a,b){
+  function sc(x){var g=[x.abstract,x.early].filter(Boolean).map(giorniA).filter(function(d){return d>=0});
+   return g.length?Math.min.apply(null,g):9999;}
+  return sc(a)-sc(b);});
+ var righe=C.map(function(c){
+  var parti=[esc(c.sig)+(c.citta?' · '+esc(c.citta):'')+(c.date?' · '+esc(c.date):'')];
+  function scad(nome,d){if(!d)return '';var g=giorniA(d);if(g<0)return '';
+   var cl=g<=7?'iscad forte':(g<=30?'iscad':'');
+   return '<span class="'+cl+'">'+nome+': '+esc(scadenzaTesto(d))+'</span>';}
+  var s=[scad('abstract',c.abstract),scad('early bird',c.early)].filter(Boolean).join(' · ');
+  return '<div class="irow" role="button" tabindex="0"'+(c.url?' onclick="window.open(\''+esc(c.url)+'\')"':'')+'>'
+   +'<span class="irt">'+parti.join('')+'</span>'
+   +(s?'<span class="irm">'+s+'</span>':'')+'</div>';});
+ return {n:C.length,html:righe.join('')};}
+function industriaRighe(){
+ var I=(typeof INDUSTRIA!=='undefined'&&Array.isArray(INDUSTRIA))?INDUSTRIA.filter(function(x){return x&&x.riga}):[];
+ I=I.slice().sort(function(a,b){return (a.tipo==='richiamo'?1:0)-(b.tipo==='richiamo'?1:0);});
+ return {n:I.length,html:I.map(function(x){
+  return '<div class="irow"><span class="irt">'+esc(x.riga)+'</span>'
+   +'<span class="irm">'+esc([x.fonte,x.tipo].filter(Boolean).join(' · '))+'</span></div>';}).join('')};}
+function renderGiorno(){
+ var el=document.getElementById('gindice');if(!el)return;
+ var d=document.getElementById('gdata');
+ if(d){var b=new Date(BUILD_DATE+'T12:00:00');d.textContent=b.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long'});}
+ var voci=vociIndice();
+ var mis=document.getElementById('gmisura');
+ if(mis){var visti=(typeof AUDIT!=='undefined'&&AUDIT&&AUDIT.visti)?AUDIT.visti:null;
+  mis.textContent=(visti?visti+' lavori esaminati · ':'')+voci.length+' rilevanti';}
+ var ev=document.getElementById('gevid');
+ if(ev){var p=(typeof PICK!=='undefined'&&A[PICK])?A[PICK]:null;
+  ev.innerHTML=p?('<div class="ievid" role="button" tabindex="0" onclick="apriInArchivio('+p.n+')">'
+   +'<div class="gk">In evidenza</div>'
+   +'<div class="ievt">'+esc(p.riga||p.h)+'</div>'
+   +'<div class="irm">'+esc([_solidDa(p.meta),p.j].filter(Boolean).join(' · '))+'</div></div>'):'';}
+ /* l'evidenza È la riga del suo lavoro: mai due volte nella stessa vista (§6.3) */
+ var pickN=(typeof PICK!=='undefined'&&A[PICK])?A[PICK].n:null;
+ var righe=voci.filter(function(v){return v.n!==pickN||pickN===null});
+ var h='';
+ DOMINI.forEach(function(dd){
+  var mie=righe.filter(function(v){return v.dom===dd[0]});
+  h+=_gruppoHTML(dd[0],dd[1],mie.map(_rigaHTML).join(''),mie.length);});
+ var orfane=righe.filter(function(v){return !DOMINI.some(function(dd){return dd[0]===v.dom})});
+ if(orfane.length)h+=_gruppoHTML('altro','Altro',orfane.map(_rigaHTML).join(''),orfane.length);
+ var cg=congressiRighe();
+ h+=cg.n?_gruppoHTML('congressi','Congressi',cg.html,cg.n):'<div class="idom vuoto">Congressi — nulla oggi</div>';
+ var ind=industriaRighe();
+ h+=ind.n?_gruppoHTML('industria','Industria e mercato',ind.html,ind.n):'<div class="idom vuoto">Industria e mercato — nulla oggi</div>';
+ el.innerHTML=h;
+ renderPlayer();}
+function giudica(pmid,d){
+ var prima=S.giudizi[pmid]||0;var a=_artPm(pmid);
+ if(prima===d){delete S.giudizi[pmid];_pesa(a,-d);if(d===1&&a&&a.n&&isSaved(a.n))toggleSave(null,a.n);toast('Annullato');}
+ else{if(prima)_pesa(a,-prima);S.giudizi[pmid]=d;_pesa(a,d);
+  if(d===1&&a&&a.n){if(!isSaved(a.n))toggleSave(null,a.n);toast('Utile — archiviata');}
+  else toast(d===1?'Utile':'Meno così, da domani');}
+ save();render();}
+function _pesa(a,delta){if(!a||!delta)return;S.pesi=S.pesi||{};
+ function add(gr,ch){if(!ch)return;var m=S.pesi[gr]=S.pesi[gr]||{};m[ch]=(m[ch]||0)+delta;if(!m[ch])delete m[ch];}
+ add('riviste',a.j);add('disegni',(a.meta||'').split('·')[0].trim());
+ var tg=(typeof TAGS!=='undefined'&&TAGS&&TAGS[a.n])||[];(Array.isArray(tg)?tg:[]).forEach(function(x){add('temi',x)});}
+/* «Lo vedi perché …» è trasparenza E comando: toccata, corregge la selezione. */
+function apriInArchivio(n){tab('today');var e=document.getElementById('it-'+n);
+ if(e){e.classList.add('open');var r=e.querySelector('.row');if(r&&r.setAttribute)r.setAttribute('aria-expanded','true');e.scrollIntoView({behavior:'smooth',block:'center'});}}
+/* ===== IL LETTORE: un file MP3 pre-generato, riprodotto e basta (Addendum §14) ==== */
+var AUDIO_URL='audio/'+BUILD_DATE+'.mp3';var _vel=[1,1.25,1.5];
+function renderPlayer(){
+ var box=document.getElementById('gplayer'),au=document.getElementById('gaudio');
+ if(!box||!au||typeof au.getAttribute!=='function')return;
+ if(typeof location!=='undefined'&&location.protocol==='file:')return; /* niente richieste (e niente errori in console) nei collaudi da file */
+ if(au.getAttribute('src'))return;
+ au.onerror=function(){box.style.display='none';};
+ au.onloadedmetadata=function(){box.style.display='';
+  var t=document.getElementById('gptime');if(t)t.textContent='Briefing · '+Math.round(au.duration/60)+' min';
+  var p=S.pos||{};if(p.d===BUILD_DATE&&p.t>5&&p.t<au.duration-5)au.currentTime=p.t;};
+ au.ontimeupdate=function(){if(!au.paused&&Math.abs((S.pos&&S.pos.t||0)-au.currentTime)>4){S.pos={d:BUILD_DATE,t:au.currentTime};save();}};
+ au.onended=function(){S.pos={d:BUILD_DATE,t:0};save();_aggPlay();};
+ au.onplay=_aggPlay;au.onpause=_aggPlay;
+ au.setAttribute('src',AUDIO_URL);}
+function _aggPlay(){var b=document.getElementById('gpp'),au=document.getElementById('gaudio');
+ if(b&&au)b.textContent=au.paused?'▶':'⏸';}
+function audioPlayPausa(){var au=document.getElementById('gaudio');if(!au)return;
+ if(au.paused){au.playbackRate=S.rate>1.2?1.25:1;au.play();}else au.pause();}
+function audioSalta(s){var au=document.getElementById('gaudio');if(au)au.currentTime=Math.max(0,au.currentTime+s);}
+function audioVelocita(){var au=document.getElementById('gaudio'),b=document.getElementById('gvel');if(!au)return;
+ var i=(_vel.indexOf(au.playbackRate)+1)%_vel.length;au.playbackRate=_vel[i];if(b)b.textContent=String(_vel[i]).replace('.',',')+'×';}
+
 function statoDaTrasferire(){
  return {v:1,d:BUILD_DATE,
   saved:S.saved,savedItems:S.savedItems,weekly:S.weekly,votes:S.votes,seen:S.seen,
   edits:S.edits,suggDone:S.suggDone,journals:S.journals,kols:S.kols,
   societies:S.societies,companies:S.companies,topics:S.topics,
-  blogUrl:S.blogUrl,winLit:S.winLit,lang:S.lang,audio:S.audio,prefv:S.prefv};}
+  blogUrl:S.blogUrl,winLit:S.winLit,lang:S.lang,audio:S.audio,prefv:S.prefv,
+  giudizi:S.giudizi,pesi:S.pesi};}
 function linkTrasferimento(){
  var base=location.href.split('#')[0];
  return base+'#stato='+b64enc(JSON.stringify(statoDaTrasferire()));}
@@ -800,65 +891,10 @@ function apriTrasferimento(){
   '<div class="muted" style="margin:12px 0 9px">La copia di sicurezza è un file: tutto ciò che decidi vive solo su questo dispositivo, e se i dati del sito vengono cancellati non c&rsquo;è altro modo di tornare indietro. Il ripristino fonde le copie, non le sovrascrive.</div>'+
   '<div class="add"><button class="btn" onclick="esportaBackup()" aria-label="Scarica copia di sicurezza dei tuoi dati in un file"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3.5v8.2M6.8 8.8l3.2 3.2 3.2-3.2M4 13.5v2a1.2 1.2 0 0 0 1.2 1.2h9.6A1.2 1.2 0 0 0 16 15.5v-2"/></svg> Scarica copia di sicurezza</button>'+
   '<button class="btn" onclick="document.getElementById(\'bkfile\').click()" aria-label="Ripristina da file una copia di sicurezza"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 11.7V3.5M6.8 6.7L10 3.5l3.2 3.2M4 13.5v2a1.2 1.2 0 0 0 1.2 1.2h9.6A1.2 1.2 0 0 0 16 15.5v-2"/></svg> Ripristina da file</button>'+
-  '<input type="file" id="bkfile" accept=".json,application/json" style="display:none" onchange="importaBackup(this)" aria-label="File di copia di sicurezza da ripristinare"></div>'+
-  '<div class="muted" style="margin:12px 0 9px">I segnali sono le tue scelte — voti, salvati, lavori per la newsletter, proposte accettate o respinte. Incollàti nella chat con Claude, orientano le schede dei giorni successivi.</div>'+
-  '<div class="add"><button class="btn" onclick="condividiSegnali()" aria-label="Manda i segnali a PULSE: condividi voti, salvati e proposte con Claude per orientare i prossimi briefing"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M10 11.5V17M7.9 9.4a3 3 0 1 1 4.2 0M5.5 11.7a6.3 6.3 0 1 1 9 0"/><circle cx="10" cy="7.2" r="1.2" fill="currentColor" stroke="none"/></svg> Manda i segnali a PULSE</button></div>';}
+  '<input type="file" id="bkfile" accept=".json,application/json" style="display:none" onchange="importaBackup(this)" aria-label="File di copia di sicurezza da ripristinare"></div>';}
+
 function copiaTrasferimento(){try{navigator.clipboard.writeText(linkTrasferimento())}catch(e){}toast('Link copiato — aprilo sull’altro dispositivo');}
 function condividiTrasferimento(){if(navigator.share)navigator.share({title:'PULSE',text:'I miei dati PULSE',url:linkTrasferimento()}).catch(function(){});}
-/* BENVENUTO E GUIDA. L'app deve spiegarsi da sola: una card alla PRIMA apertura
-   (mai più dopo «Ho capito»), e la guida ❓ sempre a portata. GUIDA_V è la versione:
-   quando una novità merita di essere annunciata, si alza di 1 e si scrive NOVITA —
-   chi ha già visto il benvenuto vede SOLO la riga di novità, una volta. Le funzioni
-   sono PURE (stato → html) così i test le collaudano. La guida descrive solo cose
-   che esistono davvero: se togli una funzione, togli la sua riga. */
-var GUIDA_V=5,NOVITA='<b>PULSE ha una veste nuova.</b> Il verdetto del giorno apre la pagina; le sezioni si raggiungono dalla barra in basso (in alto sul computer); una scheda si apre toccando la riga, e le azioni compaiono solo quando è aperta. Icone ridisegnate, contrasti rivisti per la leggibilità, il calendario dell\u2019archivio si aggiorna da solo, la ricerca suggerisce esempi e l\u2019app dichiara quando sei senza rete. Tutto quello che c\u2019era resta: nulla da riconfigurare.';
-function benvenutoHTML(guidav){
- if((guidav||0)>=GUIDA_V)return '';
- if((guidav||0)>0&&NOVITA)return '<div class="wel card"><b>Novità</b>'+NOVITA+
-  '<div class="add" style="margin-top:10px"><button class="btn pri" onclick="chiudiBenvenuto()">Ho capito</button></div></div>';
- return '<div class="wel card"><b>Benvenuto in PULSE</b>'+
-  'Il tuo giornale del ginocchio: ogni mattina schede nuove dalla letteratura, verificate una a una su PubMed. Quattro cose bastano per iniziare:'+
-  '<ul style="margin:7px 0 2px;padding-left:19px"><li><b>Tocca una scheda</b> per aprirla (scorri a destra per salvarla)</li>'+
-  '<li><b>▶</b> ascolta il briefing del giorno</li>'+
-  '<li><b>il microfono</b> comanda a voce: «apri la tre», «sorprendimi»…</li>'+
-  '<li><b>i pollici</b> sulle schede orientano i giorni successivi</li></ul>'+
-  'Tutto il resto è spiegato nella guida: tocca <strong>?</strong> in alto a destra quando vuoi.'+
-  '<div class="add" style="margin-top:10px"><button class="btn pri" onclick="chiudiBenvenuto()">Ho capito</button></div></div>';}
-function renderBenvenuto(){var el=document.getElementById('welbox');if(el)el.innerHTML=benvenutoHTML(S.guidav);}
-function chiudiBenvenuto(){S.guidav=GUIDA_V;save();renderBenvenuto();}
-function guidaHTML(){
- return '<details open><summary>Che cos’è e come si aggiorna</summary>'+
-  '<div>Ogni mattina verso le 7 una ricerca automatica sulla letteratura del ginocchio scrive le schede del giorno: quello che leggi è verificato fonte per fonte, e ciò che non è stato verificato viene dichiarato, mai nascosto. Il banner in alto dice sempre se il giornale di oggi è arrivato.</div></details>'+
-  '<details><summary>I pallini delle schede</summary><ul>'+
-  '<li>🔴 richiamo di dispositivo, ritiro di articolo, qualcosa da guardare oggi</li>'+
-  '<li>🟠 contraddice o mette in discussione una tua tecnica</li>'+
-  '<li>🟢 riguarda una tua tecnica, senza conflitto</li>'+
-  '<li>⚪ nel perimetro del ginocchio, ma non tocca la tua pratica</li></ul>'+
-  '<div>Un solo pallino per scheda, niente punteggi. Le barre indicano la confidenza nelle conclusioni; «cosa NON può dire questo studio» segnala i numeri senza potenza statistica.</div></details>'+
-  '<details><summary>Gesti e tasti</summary><ul>'+
-  '<li>Tocca una scheda per aprirla · scorri a <b>destra</b> per salvarla</li>'+
-  '<li><b>▶</b> legge il briefing — a due voci quando c’è il dialogo del giorno</li>'+
-  '<li><b>il microfono</b> ascolta i tuoi comandi e risponde a voce</li>'+
-  '<li><b>i pollici</b> su ogni scheda · <b>✎ Social</b> genera i testi · <b>Video</b> sceglie il lavoro per la newsletter</li></ul></details>'+
-  '<details><summary>I comandi a voce riconosciuti</summary>'+
-  '<div>«apri (o leggi) la tre» · «salva la due» · «briefing» · «tensioni» · «seconda pagina» · «sorprendimi» · «rassegna» · «modalità auto» · «prossima» · «indietro» · «ripeti» · «pausa» · «riprendi» · «salva questa» · «più veloce / più piano / velocità normale» · «aiuto» · «basta» per fermare. I numeri valgono anche in lettere. Fuori da questo vocabolario: senza cervello lo dice e basta; col cervello collegato la domanda diventa conversazione vera, con risposta parlata.</div></details>'+
-  '<details><summary>Chiedi a PULSE e voce naturale</summary>'+
-  '<div>Facoltativo e a pagamento (pochi franchi al mese). Un piccolo «cervello» esterno custodisce le chiavi che una pagina come questa non può tenere: collegandolo in Impostazioni, il microfono risponde a qualunque domanda — sul giornale del giorno prima di tutto — e ▶ legge il podcast con una voce naturale a due timbri. Se il cervello non risponde, l’app lo dice e torna alla voce del telefono. Le istruzioni per attivarlo sono nella cartella chiedi/ del repository; le regole di verità valgono anche lì: mai citazioni inventate, dati assenti dichiarati.</div></details>'+
-  '<details><summary>In auto</summary>'+
-  '<div>Il tasto con l’automobile accanto a ▶ apre l’ascolto continuo: il briefing e poi le schede una dopo l’altra, ognuna annunciata con la posizione («Scheda 3 di 8»). Tasti grandi: ⏮ ▶ ⏭ · le frecce circolari ripetono · ★ salva la scheda in ascolto · il microfono ascolta un comando alla volta — l’audio si ferma, parli, riparte da solo. La velocità di lettura si regola a voce e resta memorizzata. Lo schermo resta acceso finché il pannello è aperto. Limite di iPhone, dichiarato: l’app deve restare in primo piano — Safari non legge né ascolta in sottofondo, quindi telefono sul supporto e schermo attivo.</div></details>'+
-  '<details><summary>Le sezioni della pagina Oggi</summary>'+
-  '<div>Il <b>lavoro del giorno</b> è la scheda che vale di più. I filtri in alto restringono l’elenco per pallino. «Cosa non torna» sono le tensioni aperte fra la letteratura e la tua pratica, con cosa fare e cosa le chiuderebbe. In fondo: la <b>seconda pagina</b> (altri lavori veri del giorno, in breve) e <b>Sorprendimi</b> (una proposta fuori dai soliti argomenti, mai ripetuta).</div></details>'+
-  '<details><summary>Le altre schede</summary><ul>'+
-  '<li><b>Rassegna</b>: in testa un sommario a colpo d’occhio, poi le sezioni — richiami di dispositivi, Swissmedic, 📜 linee guida e consensus nuovi, ritrattazioni, ⚖️ il destino dei tuoi verdetti, i trial delle tue tensioni, 📣 i lavori di cui parla la comunità, i video della tua rete, 🧪 i preprint (dichiarati non revisionati). Le sezioni che scottano si aprono da sole; ogni fonte muta è dichiarata.</li>'+
-  '<li><b>Archivio</b>: tutte le mattine passate — il calendario segna i giorni con un\u2019edizione — con ricerca.</li>'+
-  '<li><b>★ Salvati</b>: sopravvivono al ricambio quotidiano, con ricerca.</li>'+
-  '<li><b>Newsletter</b>: fino a 4 lavori scelti con Video, testo pronto in tre versioni.</li>'+
-  '<li><b>Impostazioni</b>: preferenze, dimensione del testo, trasferimento fra dispositivi, copia di sicurezza, i segnali.</li></ul></details>'+
-  '<details><summary>Dove vivono i tuoi dati</summary>'+
-  '<div>PULSE non ha un server: voti, salvati e preferenze restano su questo dispositivo. Per questo esistono il <b>trasferimento</b> (le copie si fondono, non si sovrascrivono) e la <b>copia di sicurezza</b> su file. <b>Manda i segnali</b> condivide le tue scelte nella chat con Claude: orientano le schede dei giorni successivi.</div></details>';}
-function apriGuida(){var el=document.getElementById('gvbody');if(el&&!el.innerHTML)el.innerHTML=guidaHTML();
- var ov=document.getElementById('gvov');if(ov)ov.classList.add('on');}
-function chiudiGuida(){var ov=document.getElementById('gvov');if(ov)ov.classList.remove('on');}
 /* DIMENSIONE DEL TESTO — tre livelli, applicati con zoom (i corpi in px restano
    proporzionati); la scelta vive in S.testo e si riapplica a ogni apertura. */
 function applicaTesto(){if(!document.body)return;document.body.style.zoom=String(S.testo||1);
@@ -871,32 +907,6 @@ function setTesto(v,btn){S.testo=v;save();applicaTesto();}
    chiavi. IDENTITÀ PER CONTENUTO: ogni voce porta il suo PMID o il suo nome — i voti
    sono per numero di scheda ma valgono solo per l'oggi, e il testo li traduce
    subito in PMID+titolo, così il segnale sopravvive alla notte. */
-function segnaliTesto(){
- var r=['SEGNALI PULSE — '+BUILD_DATE];
- var su=[],giu=[];
- Object.keys(S.votes||{}).forEach(function(n){var a=A[n];if(!a)return;
-  (S.votes[n]==1?su:giu).push((a.j||'')+' — '+(a.h||'')+' (PMID '+(a.pmid||'non riportato')+')');});
- if(su.length)r.push('Più così: '+su.join(' · '));
- if(giu.length)r.push('Meno così: '+giu.join(' · '));
- var sv=savedList().map(function(a){return (a.h||'')+' (PMID '+(a.pmid||'non riportato')+')'});
- if(sv.length)r.push('Salvati ('+sv.length+'): '+sv.join(' · '));
- var wk=(S.weekly||[]).map(function(w){var a=wArt(w);return a?(a.h||'')+' (PMID '+(a.pmid||'non riportato')+')':null}).filter(Boolean);
- if(wk.length)r.push('Scelti per la newsletter: '+wk.join(' · '));
- var d=S.suggDone||{},si=[],no=[];
- Object.keys(d).forEach(function(nome){if(d[nome]==='si')si.push(nome);else if(d[nome]==='no')no.push(nome);});
- if(si.length)r.push('Proposte accettate: '+si.join(' · '));
- if(no.length)r.push('Proposte respinte: '+no.join(' · '));
- if(r.length===1)r.push('Nessun segnale ancora: nessun voto, salvataggio o scelta registrata su questo dispositivo.');
- return r.join('\n');}
-function condividiSegnali(){
- var t=segnaliTesto();
- if(navigator.share){navigator.share({title:'Segnali PULSE',text:t}).catch(function(){});}
- else{try{navigator.clipboard.writeText(t);toast('Segnali copiati: incollali nella chat con Claude');}
-  catch(e){toast('Copia non riuscita su questo browser');}}}
-/* Copia di sicurezza su FILE. Tutto lo stato vive nel localStorage di questo browser:
-   una pulizia dei dati del sito lo cancella, e non esiste alcun server da cui
-   recuperarlo. Il file è la rete di sicurezza; il ripristino FONDE (fondiStato),
-   non sovrascrive, così un backup vecchio non cancella scelte recenti. */
 function _backupJson(){return JSON.stringify(statoDaTrasferire());}
 function esportaBackup(){
  try{
@@ -936,7 +946,7 @@ function leggiTrasferimento(){
  toast(parti.length?('Uniti: '+parti.join(', ')):'Già allineati: niente di nuovo');}
 function setV(k,v,b){S[k]=v;[].forEach.call(b.parentNode.children,function(x){x.classList.remove('on')});b.classList.add('on');save();toast('Salvato')}
 function resetAll(){if(confirm('Azzerare tutto?')){S=JSON.parse(JSON.stringify(DEF));save();render();toast('Azzerato')}}
-function tab(id,btn){document.querySelectorAll('.view').forEach(function(v){v.classList.remove('on')});document.getElementById(id).classList.add('on');document.querySelectorAll('.tabs button').forEach(function(b){b.classList.remove('on');if(b.removeAttribute)b.removeAttribute('aria-current')});btn.classList.add('on');if(btn.setAttribute)btn.setAttribute('aria-current','page');window.scrollTo(0,0)}
+function tab(id,btn){document.querySelectorAll('.view').forEach(function(v){v.classList.remove('on')});var e=document.getElementById(id);if(e)e.classList.add('on');var br=document.getElementById('backrow');if(br)br.style.display=(id==='giorno')?'none':'';if(id==='rassegna'&&typeof apriRassegna==='function')apriRassegna();window.scrollTo(0,0)}
 
 // SOCIAL
 var curSoc=null,curFmt='video';
@@ -1002,39 +1012,13 @@ function _speakQueue(frasi,alTermine){
 function _codaBrief(){
  var dial=(typeof BRIEF_DIALOGO!=='undefined'&&BRIEF_DIALOGO&&BRIEF_DIALOGO.length)?BRIEF_DIALOGO:null;
  return dial?dialogoFrasi(dial):_frasi(BRIEF_TEXT);}
-function speakBrief(){var b=document.getElementById('playbtn'),l=document.getElementById('voicelbl');
- if(_speaking){fermaVoce();if(b)b.textContent='▶';return;}
- var items=_briefItems(),due=items.length>1;
- if(chiediDisponibile()){if(l)l.textContent=(due?'podcast a due voci':'lettura')+' · voce naturale';parla(items);return;}
- if(!('speechSynthesis' in window)){if(l)l.textContent='voce non supportata su questo browser';return;}
- var v=_pickVoice();
- if(l)l.textContent=(due?'podcast a due voci':'voce')+(v?' · '+v.name:'');
- _speakQueue(_codaBrief());}
-if('speechSynthesis' in window){speechSynthesis.onvoiceschanged=function(){if(typeof popolaVoci==='function')popolaVoci();};speechSynthesis.getVoices();}
-
-
-function renderSaved(){var q=(document.getElementById('savedq')?document.getElementById('savedq').value:'').toLowerCase();
- var tutti=savedList();
- var list=tutti.filter(function(a){if(!q)return true;return ((a.h||'')+' '+(a.j||'')+' '+(a.authors||'')+' '+(a.v||'')).toLowerCase().indexOf(q)>=0;});
- var sl=document.getElementById('savedList');
- if(!tutti.length){sl.innerHTML='<div class="empty"><div class="big">★</div><div style="font-weight:600;color:#1d1d1f;font-size:var(--t-sec);margin-bottom:6px">Nessun articolo salvato</div>Tocca la stella su un lavoro: comparirà qui.</div>';return;}
- if(!list.length){sl.innerHTML='<div class="empty">Nessun salvato corrisponde a “'+esc(q)+'”.</div>';return;}
- sl.innerHTML='<div class="card">'+list.map(itemHTML).join('')+'</div>';}
-function shareArt(ev,n){if(ev)ev.stopPropagation();var a=A[n];var url=pm(a);var txt=a.h+' — '+a.journal;
- if(navigator.share){navigator.share({title:'PULSE',text:txt,url:url}).catch(function(){});}
- else{try{navigator.clipboard.writeText(txt+' '+url)}catch(e){}toast('Link copiato');}}
-function askNotif(){var l=document.getElementById('notiflbl');
- if(!('Notification' in window)){l.textContent='Il tuo browser non supporta gli avvisi.';return;}
- Notification.requestPermission().then(function(p){if(p==='granted'){l.textContent='Avvisi del browser attivi ✓';try{new Notification('PULSE',{body:'Avvisi attivati. Ti avviso quando arriva il nuovo briefing.'})}catch(e){}}else{l.textContent='Avvisi non concessi.';}});}
-
-
-var curFilter='all';
-function renderResearch(){if(document.getElementById('verdict'))renderVerdict();
+function renderResearch(){
  var _rn=document.getElementById('resn');
  if(_rn){var _tot=ARTICLES.filter(function(a){return a.sec=='res'}).length;
   _rn.textContent=_tot+' — tocca per aprire';}var arr=ARTICLES.filter(function(a){return a.sec=='res'&&(curFilter=='all'||a.dot==curFilter)});
  var el=document.getElementById('researchList');
  el.innerHTML=arr.length?arr.map(itemHTML).join(''):'<div style="padding:16px;color:var(--dim);font-size:var(--t-meta)">Nessun lavoro in questa categoria oggi.</div>';}
+var curFilter='all';
 function setFilter(f,btn){curFilter=f;[].forEach.call(btn.parentNode.children,function(x){x.classList.remove('on')});btn.classList.add('on');renderResearch();}
 function _speakText(t){var b=document.getElementById('playbtn');
  if(!('speechSynthesis' in window)){toast('Voce non supportata');return;}
@@ -1090,19 +1074,15 @@ function eseguiComando(c){
    var el=document.getElementById('secpag');if(el&&el.scrollIntoView)el.scrollIntoView();return;
   case 'sorprendimi':sorprendimi();var s=document.getElementById('spsorp');
    di(s&&s.textContent?s.textContent:'Oggi non ho scoperte da proporti.',fine);return;
-  case 'rassegna':var bt=[].slice.call(document.querySelectorAll('.tabs button')).filter(function(x){return /Rassegna/.test(x.textContent)})[0];if(bt)bt.click();apriRassegna();
-   di('Apro la rassegna: richiami, trial e video della tua rete.',fine);return;
+  case 'rassegna':tab('rassegna');di('Apro la rassegna: richiami, trial e video della tua rete.',fine);return;
   case 'tensioni':di(TENSIONS.map(function(t){return t.t+'. '+t.fare}).join(' '),fine);return;
-  case 'aiuto':apriGuida();di('Ecco la guida: spiega i pallini, i gesti e tutti i comandi.',fine);return;
-  case 'auto':apriAuto();return;
-  case 'prossima':autoProssima();return;
-  case 'indietro':autoIndietro();return;
-  case 'ripeti':autoRipeti();return;
-  case 'pausa':_autoAttiva=false;fermaVoce();_autoPP('▶');
-   di('In pausa. Di’ riprendi quando vuoi.',fine);return;
-  case 'riprendi':autoVai(_autoLista?_autoPos:0);return;
-  case 'salvaquesta':var sn=autoSalva();
-   di(sn?'Salvata.':'Il briefing non si salva: chiedimelo mentre ascolti una scheda.',function(){_autoRiprendiSeAperto(fine);});return;
+  case 'aiuto':di('I comandi: apri la tre, salva la due, briefing, seconda pagina, sorprendimi, rassegna, prossima, basta.',fine);return;
+  case 'auto':di('La modalità auto non c\u2019è più: il briefing ora è un episodio podcast, e si ascolta anche in auto con CarPlay.',fine);return;
+  case 'prossima':audioSalta(15);return;
+  case 'indietro':audioSalta(-15);return;
+  case 'ripeti':var _au=document.getElementById('gaudio');if(_au){_au.currentTime=0;_au.play();}return;
+  case 'pausa':fermaVoce();var _a2=document.getElementById('gaudio');if(_a2)_a2.pause();di('In pausa. Di’ riprendi quando vuoi.',fine);return;
+  case 'riprendi':audioPlayPausa();return;
   case 'veloce':setRate((S.rate||1.02)+0.15);di('Più veloce.',function(){_autoRiprendiSeAperto(fine);});return;
   case 'piano':setRate((S.rate||1.02)-0.15);di('Più piano.',function(){_autoRiprendiSeAperto(fine);});return;
   case 'ratenorm':setRate(1.02);di('Velocità normale.',function(){_autoRiprendiSeAperto(fine);});return;
@@ -1110,10 +1090,8 @@ function eseguiComando(c){
   default:
    if(chiediDisponibile()&&(c.testo||'').trim()){
     /* fuori vocabolario + cervello collegato = conversazione vera */
-    var ovA=document.getElementById('autoov'),inAuto=ovA&&ovA.classList.contains('on');
-    if(inAuto)_autoTesto('Penso…');else toast('Chiedo a PULSE…');
+    toast('Chiedo a PULSE…');
     chiediPulse(c.testo,function(r){
-     if(inAuto)_autoTesto(r);
      parla([r],fine);
     },function(){di('Il cervello non risponde ora: controlla il collegamento in Impostazioni.',fine);});
     return;
@@ -1228,106 +1206,40 @@ function popolaVoci(){
    davvero, mai dopo uno stop voluto. Onestà: su iPhone l'app deve restare in primo
    piano — Safari non ascolta né legge in sottofondo; il wake lock tiene lo schermo
    acceso finché il pannello è aperto. */
-var _autoLista=null,_autoPos=0,_autoAttiva=false,_wl=null;
-function autoLista(){
- var tot=ARTICLES.length;
- var l=[{label:'Il briefing del giorno',n:null,voci:_briefItems()}];
- ARTICLES.forEach(function(a,i){
-  l.push({label:'Scheda '+(i+1)+' di '+tot+' — '+a.h,n:a.n,
-   voci:[{t:'Scheda '+(i+1)+' di '+tot+'. '+a.h+'. '+a.v+'. Conclusione degli autori: '+a.concl+'. Per te: '+a.perte,chi:'A'}]});});
- return l;}
-function _autoTesto(t){var el=document.getElementById('autonow');
- if(el)el.innerHTML='<small>🧠 Chiedi a PULSE</small>'+esc(String(t||'').slice(0,220));}
-function _autoNow(msg){var el=document.getElementById('autonow');if(!el||!_autoLista)return;
- var it=_autoLista[_autoPos];
- el.innerHTML='<small>'+(_autoPos+1)+' di '+_autoLista.length+(msg?' · '+esc(msg):'')+'</small>'+esc(it.label);}
-function _autoVel(){var el=document.getElementById('autovel');if(el)el.textContent='velocità '+String((S.rate||1.02).toFixed(2)).replace('.',',')+'× — di’ «più veloce» o «più piano»';}
-function _autoPP(t){var b=document.getElementById('autopp');if(b)b.textContent=t;}
-function autoVai(i){
- if(!_autoLista)_autoLista=autoLista();
- if(i<0)i=0;
- if(i>=_autoLista.length){_autoAttiva=false;_autoPP('▶');_autoNow('fine del giornale');return;}
- _autoPos=i;_autoAttiva=true;_autoNow();_autoPP('⏸');
- parla(_autoLista[i].voci,function(finita){if(finita&&_autoAttiva)autoVai(_autoPos+1);else if(!_autoAttiva)_autoPP('▶');});}
-function autoPlayPausa(){
- if(_speaking){_autoAttiva=false;fermaVoce();_autoPP('▶');_autoNow('in pausa');}
- else{autoVai(_autoLista?_autoPos:0);}}
-function autoProssima(){fermaVoce();autoVai((_autoLista?_autoPos:0)+1);}
-function autoIndietro(){fermaVoce();autoVai((_autoLista?_autoPos:1)-1);}
-function autoRipeti(){fermaVoce();autoVai(_autoLista?_autoPos:0);}
-function autoSalva(){
- var it=_autoLista&&_autoLista[_autoPos];
- if(!it||!it.n){toast('Il briefing non si salva: salva una scheda');return null;}
- if(S.saved.indexOf(it.n)<0){S.saved.push(it.n);save();render();}
- toast('★ Salvata la scheda in ascolto');return it.n;}
-function setRate(v){S.rate=Math.max(0.7,Math.min(1.4,v));save();_autoVel();return S.rate;}
-function _wlPrendi(){try{if(navigator.wakeLock&&navigator.wakeLock.request)navigator.wakeLock.request('screen').then(function(l){_wl=l;}).catch(function(){});}catch(e){}}
-function _wlLascia(){try{if(_wl){_wl.release();_wl=null;}}catch(e){}}
-function apriAuto(){
- var ov=document.getElementById('autoov');if(!ov)return;
- ov.classList.add('on');_wlPrendi();_autoLista=autoLista();_autoPos=0;_autoVel();_autoNow();
- var mb=document.getElementById('automic');if(mb)mb.style.display=_SR()?'':'none';
- autoVai(0);}
-/* Il microfono in auto è PUSH-TO-TALK: ascoltare mentre l'app parla significherebbe
-   farle sentire la propria voce. Un tocco: l'audio si ferma, ascolta UNA frase,
-   esegue, e i comandi che riprendono la lettura la riprendono da soli. */
-function autoMic(){
- if(!_SR())return;
- _autoAttiva=false;fermaVoce();
- _autoPP('▶');_autoNow('ti ascolto…');
- var b=document.getElementById('automic');if(b)b.classList.add('on','rec');
- var r;try{r=new (_SR())();}catch(e){_autoMicFine();return;}
- r.lang='it-IT';r.interimResults=false;r.maxAlternatives=1;
- r.onresult=function(ev){_autoMicFine();eseguiComando(interpretaComando(ev.results[0][0].transcript));};
- r.onerror=function(){_autoMicFine();_autoNow('non ho sentito: riprova');};
- try{r.start();}catch(e){_autoMicFine();}}
-function _autoMicFine(){var b=document.getElementById('automic');if(b)b.classList.remove('on','rec');}
-function _autoRiprendiSeAperto(fine){
- var ov=document.getElementById('autoov');
- if(ov&&ov.classList.contains('on')&&_autoLista)autoVai(_autoPos);
- else if(fine)fine();}
-function chiudiAuto(){
- _autoAttiva=false;fermaVoce();
- if(_convOn)toggleConversazione();
- _wlLascia();var ov=document.getElementById('autoov');if(ov)ov.classList.remove('on');_autoPP('▶');}
-
-
 function confHTML(n){var lvl=CONF[n]||'bassa';var nf={bassa:1,media:2,alta:3}[lvl];var cc={bassa:'#e6902a',media:'#0071e3',alta:'#34c759'}[lvl];
  var seg='';for(var i=1;i<=3;i++){seg+='<span class="confseg'+(i<=nf?' on':'')+'"></span>';}
  return '<div class="conf" style="--cc:'+cc+'"><span class="confbar">'+seg+'</span><span class="conflab">evidenza '+lvl+'</span></div>';}
-/* Il lavoro del giorno. Prima era HTML scritto a mano: il 5 agosto mostrava ancora
-   la scelta del 2. Ora si costruisce dalla scheda indicata da PICK — e se PICK punta
-   a una scheda che oggi non c'è, si ripiega sul primo arancione e poi sulla prima
-   scheda, invece di mostrare un vuoto o, peggio, qualcosa di ieri. */
-function pickArt(){
- var res=ARTICLES.filter(function(a){return a.sec=='res'});
- var p=(typeof PICK!=='undefined')&&res.filter(function(a){return a.n==PICK})[0];
- return p || res.filter(function(a){return a.dot=='orange'})[0] || res[0] || null;}
-function renderPick(){var el=document.getElementById('pickbox');if(!el)return;
- var a=pickArt();
- if(!a){el.style.display='none';return;}
- el.style.display='';
- var disegno=(a.meta||'').split('·')[0].trim();
- var occhiello=[disegno,(a.meta||'').indexOf('·')>=0?(a.meta||'').split('·').slice(1).join('·').trim():''].filter(Boolean).join(' · ');
- el.innerHTML=
-  /* Il titolo sta una volta sola, grande e nero, sotto la fascia: scriverlo anche
-     dentro la fascia lo faceva finire sopra l'onda e lo ripeteva a due centimetri
-     di distanza. */
-  '<div class="pickhead"><span class="pklab">Il lavoro del giorno</span>'+
-  '<span class="pkmeta">'+esc(a.j+(occhiello?' · '+occhiello:''))+'</span></div>'+
-  '<h2 class="pkh">'+esc(a.h)+'</h2>'+
-  '<div class="aut">'+esc([a.ax,a.journal,a.date].filter(Boolean).join(' · '))+'</div>'+
-  '<div class="why">'+esc(a.concl||a.v||'')+'</div>'+
-  '<div class="act"><button class="btn pri" onclick="scrollToItem('+a.n+')">Scheda estesa ▾</button>'+
-  '<button class="btn soc" onclick="openSocial(event,'+a.n+')">✎ Social</button>'+
-  '<button class="btn" id="savebtn-'+a.n+'" onclick="toggleSave(event,'+a.n+')">★ Salva</button></div>';}
 
-/* La colonna di destra. I giorni che mancano a una scadenza NON si scrivono: si
-   calcolano. Il 5 agosto la pagina diceva ancora «entro il 4 ago — 2 giorni», frase
-   scritta il 2 agosto e diventata falsa due volte (il numero, e poi la scadenza). */
+function readMin(a){var t=((a.h||'')+(a.v||'')+(a.authors||'')+(a.design||'')+(a.pop||'')+(a.results||'')+(a.concl||'')+(a.limits||'')+(a.perte||'')).length;
+ return Math.max(1,Math.min(4,Math.round(t/700)));}
+
+function retrHTML(n){if(!RETRACTED[n])return '';return '<div class="retr">⚠︎ Articolo ritirato dalla rivista — '+esc(RETRACTED[n])+'</div>';}
+
+function linksHTML(n){var L=LINKS[n];if(!L||!L.length)return '';
+ return '<div class="fld"><div class="k">Collegati nel tempo</div><div class="links">'+L.map(function(x){var t=A[x.n];if(!t)return '';
+  return '<span class="lchip" onclick="goTo('+x.n+')"><b>['+x.n+']</b> '+esc(t.h.slice(0,42))+(t.h.length>42?'…':'')+' · '+esc(x.rel)+'</span>';}).join('')+'</div></div>';}
+
+function goTo(n){var el=document.getElementById('it-'+n);if(el){el.classList.add('open');el.scrollIntoView({behavior:'smooth',block:'center'});}else{toast('Scheda non in questa vista');}}
+
+
+function renderSaved(){var q=(document.getElementById('savedq')?document.getElementById('savedq').value:'').toLowerCase();
+ var tutti=savedList();
+ var list=tutti.filter(function(a){if(!q)return true;return ((a.h||'')+' '+(a.j||'')+' '+(a.authors||'')+' '+(a.v||'')).toLowerCase().indexOf(q)>=0;});
+ var sl=document.getElementById('savedList');
+ if(!tutti.length){sl.innerHTML='<div class="empty"><div class="big">★</div><div style="font-weight:600;color:#1d1d1f;font-size:var(--t-sec);margin-bottom:6px">Nessun articolo salvato</div>Tocca la stella su un lavoro: comparirà qui.</div>';return;}
+ if(!list.length){sl.innerHTML='<div class="empty">Nessun salvato corrisponde a “'+esc(q)+'”.</div>';return;}
+ sl.innerHTML='<div class="card">'+list.map(itemHTML).join('')+'</div>';}
+
+function shareArt(ev,n){if(ev)ev.stopPropagation();var a=A[n];var url=pm(a);var txt=a.h+' — '+a.journal;
+ if(navigator.share){navigator.share({title:'PULSE',text:txt,url:url}).catch(function(){});}
+ else{try{navigator.clipboard.writeText(txt+' '+url)}catch(e){}toast('Link copiato');}}
+
+function setRate(v){S.rate=Math.max(0.7,Math.min(1.4,v));save();return S.rate;}
+
 function giorniA(iso){
  var oggi=new Date(); var o=new Date(oggi.getFullYear()+'-'+('0'+(oggi.getMonth()+1)).slice(-2)+'-'+('0'+oggi.getDate()).slice(-2)+'T12:00:00');
  return Math.round((new Date(iso+'T12:00:00')-o)/86400000);}
+
 function scadenzaTesto(iso){
  var g=giorniA(iso);
  var d=new Date(iso+'T12:00:00').toLocaleDateString('it-IT',{day:'numeric',month:'long'});
@@ -1336,35 +1248,12 @@ function scadenzaTesto(iso){
  if(g===0)return 'scade oggi, '+d;
  if(g===-1)return 'scaduta ieri, '+d;
  return 'scaduta il '+d;}
-function riquadro(titolo, classe, icona, contatore, corpo, nota){
- return '<div class="sl '+classe+'"><span class="ic">'+icona+'</span>'+titolo+
-  (contatore?'<span class="n">'+esc(contatore)+'</span>':'')+'</div>'+
-  '<div class="tile">'+corpo+(nota?'<div class="muted" style="margin-top:7px">'+esc(nota)+'</div>':'')+'</div>';}
-function renderLato(){var el=document.getElementById('latobox');if(!el)return;
- var nv=(typeof NONVERIF!=='undefined')?NONVERIF:{};
- var ind=(typeof INDUSTRIA!=='undefined'?INDUSTRIA:[])||[];
- var cong=((typeof CONGRESSI!=='undefined'?CONGRESSI:[])||[]).filter(function(c){return !c.scad||giorniA(c.scad)>=-7;});
- var soc=(typeof SOCIETA!=='undefined'?SOCIETA:[])||[];
- var cInd=ind.length?ind.map(function(x){return '<div class="tcong"><div class="tt"><div class="h">'+esc(x.t)+'</div><div class="v">'+esc(x.v||'')+'</div></div></div>';}).join('')
-   :'<div class="muted"><b>Nulla di verificato negli ultimi 10 giorni.</b></div>';
- var cCong=cong.length?cong.map(function(c){return '<div class="tcong"><span class="mono" style="background:#0a3d62">'+esc(c.sig||'')+'</span><div class="tt"><div class="h">'+esc(c.nome)+'</div><div class="v">'+esc((c.nota?c.nota+' ':'')+(c.scad?scadenzaTesto(c.scad):''))+'</div></div></div>';}).join('')
-   :'<div class="muted"><b>Nessuna scadenza verificata oggi.</b></div>';
- var cSoc=soc.length?soc.map(function(s){return '<div class="tcong"><div class="tt"><div class="h">'+esc(s.t)+'</div><div class="v">'+esc(s.v||'')+'</div></div></div>';}).join('')
-   :'<div class="muted"><b>Nessun nuovo consensus verificato.</b></div>';
- el.innerHTML=
-  riquadro('Industria &amp; tecnologia','r-tech','<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.6 3.6a4 4 0 0 0-5.4 4.9L3.4 13.3l3.3 3.3 4.8-4.8a4 4 0 0 0 4.9-5.4l-2.5 2.5-2.4-.9-.9-2.4z"/></svg>',ind.length+' in finestra',cInd,nv.ind)+
-  riquadro('Congressi','r-cong','<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="13" height="11" rx="1.5"/><path d="M3.5 8.5h13M7 3.5v3M13 3.5v3"/></svg>','',cCong,nv.cong)+
-  riquadro('Società scientifiche','r-soc','<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="7" r="2.5"/><path d="M3.2 16c.4-2.8 2.1-4.4 4.3-4.4s3.9 1.6 4.3 4.4M12.6 4.9a2.4 2.4 0 0 1 0 4.4M13.6 11.9c1.8.5 3 1.9 3.3 4.1"/></svg>','',cSoc,nv.soc);}
 
-function renderVerdict(){var el=document.getElementById('verdict');if(!el)return;
- var oranges=ARTICLES.filter(function(a){return a.sec=='res'&&a.dot=='orange'}).length;
- var orl=ARTICLES.filter(function(a){return a.sec=='res'&&a.dot=='orange'});
- if(oranges>0){el.className='verdict act';
-  el.innerHTML='<div class="vtop"><span class="vi">⚠️</span><span>'+oranges+(oranges==1?' lavoro mette in discussione quello che fai':' lavori mettono in discussione quello che fai')+'</span></div>'+
-   '<div class="vlist">'+orl.map(function(a){return '<div class="vitem" onclick="goTo('+a.n+')"><span class="ar">→</span><span>'+esc(a.h)+'</span></div>';}).join('')+'</div>'+
-   '<div class="vhint">Tocca un titolo per aprirlo: '+(oranges==1?'è il più importante di oggi':'sono i '+oranges+' più importanti di oggi')+'.</div>';}
- else{el.className='verdict calm';el.innerHTML='Oggi niente mette in discussione quello che fai. Uno sguardo e via.';}}
-// swipe: destra=salva, sinistra=segna letto
+function pickArt(){
+ var res=ARTICLES.filter(function(a){return a.sec=='res'});
+ var p=(typeof PICK!=='undefined')&&res.filter(function(a){return a.n==PICK})[0];
+ return p || res.filter(function(a){return a.dot=='orange'})[0] || res[0] || null;}
+
 var _sx=0,_sy=0,_sItem=null;
 document.addEventListener('touchstart',function(e){var r=e.target.closest?e.target.closest('.row'):null;
  if(r&&r.parentNode&&(''+r.parentNode.id).indexOf('it-')===0){_sItem=r.parentNode;_sx=e.touches[0].clientX;_sy=e.touches[0].clientY;}else{_sItem=null;}},{passive:true});
@@ -1375,24 +1264,7 @@ document.addEventListener('touchend',function(e){if(!_sItem)return;
   else{if(S.seen.indexOf(n)<0){S.seen.push(n);save();}_sItem.classList.remove('open');var nb=document.getElementById('nuovo-'+n);if(nb)nb.style.display='none';toast('Segnato letto');}}
  _sItem=null;},{passive:true});
 
-
-/* Fino al 5 agosto 2026 il lavoro scelto in cima e tutta la colonna di destra erano
-   HTML scritto a mano il 2 agosto. Il 5 agosto l'app mostrava ancora, in cima, la
-   scelta del 2 agosto (Blackman, OJSM) sopra un elenco del 4; diceva «ISAKOS 2027,
-   abstract entro il 4 agosto — 2 giorni» quando la scadenza era passata; e diceva
-   «nessun nuovo consensus verificato» nel giorno in cui ne erano state aggiunte due
-   dell'ICRS. Tre affermazioni false in cima alla pagina.
-   Ora sono dati, e la pagina li calcola. I giorni residui non si scrivono MAI. */
-
-function readMin(a){var t=((a.h||'')+(a.v||'')+(a.authors||'')+(a.design||'')+(a.pop||'')+(a.results||'')+(a.concl||'')+(a.limits||'')+(a.perte||'')).length;
- return Math.max(1,Math.min(4,Math.round(t/700)));}
-function retrHTML(n){if(!RETRACTED[n])return '';return '<div class="retr">⚠︎ Articolo ritirato dalla rivista — '+esc(RETRACTED[n])+'</div>';}
-function linksHTML(n){var L=LINKS[n];if(!L||!L.length)return '';
- return '<div class="fld"><div class="k">Collegati nel tempo</div><div class="links">'+L.map(function(x){var t=A[x.n];if(!t)return '';
-  return '<span class="lchip" onclick="goTo('+x.n+')"><b>['+x.n+']</b> '+esc(t.h.slice(0,42))+(t.h.length>42?'…':'')+' · '+esc(x.rel)+'</span>';}).join('')+'</div></div>';}
-function goTo(n){var el=document.getElementById('it-'+n);if(el){el.classList.add('open');el.scrollIntoView({behavior:'smooth',block:'center'});}else{toast('Scheda non in questa vista');}}
-
-function renderFresh(){var el=document.getElementById('freshbox');if(!el)return;
+function renderFresh(){var el=document.getElementById('gfresh');if(!el)return;
  var offline=(typeof navigator!=='undefined'&&navigator.onLine===false)?'<div class="fresh" style="color:var(--dim)">Sei senza rete: questa è l\'ultima edizione scaricata.</div>':'';
  /* Il briefing parte alle 5.06 UTC — verso le 7 del mattino in Ticino — e impiega
     mezz'ora abbondante. Prima di questa correzione, alle 7:10, con il sistema che stava
@@ -1408,7 +1280,7 @@ function renderFresh(){var el=document.getElementById('freshbox');if(!el)return;
  var oraUTC=now.getUTCHours()+now.getUTCMinutes()/60;
  var inLavorazione=(oraUTC>=5&&oraUTC<6.5);   /* 7.00-8.30 in Ticino */   /* 7.00-9.00 in Ticino */
  if(giorniIndietro<=0){
-  el.innerHTML=offline+'<div class="fresh ok">✓ <span>Aggiornato oggi, '+dl+'</span></div>';}
+  el.innerHTML=offline;}
  else if(giorniIndietro===1&&oraUTC<5){
   el.innerHTML='<div class="fresh ok">🌙 <span>Questo è il briefing di '+dl+'. Quello di oggi arriva verso le 7 del mattino.</span></div>';}
  else if(giorniIndietro===1&&inLavorazione){
@@ -1430,25 +1302,6 @@ function duelliVivi(){/* un duello che punta a schede non più presenti non va m
 /* La sparkline dei 14 giorni: barre = schede del giorno, calde se quel giorno
    qualcosa lo toccava (rossi+arancioni). Due colori di STATO dal sistema, testo
    nei toni d'inchiostro, un title onesto per barra. Dati veri da HISTORY. */
-function sparkHTML(hist){
- var h=(hist||[]).slice(-14);if(!h.length)return '';
- var max=1;h.forEach(function(g){if((g.n||0)>max)max=g.n});
- return '<span class="spark" role="img" aria-label="Il polso degli ultimi '+h.length+' giorni di giornale">'+
-  h.map(function(g){var caldi=(g.rossi||0)+(g.arancioni||0);
-   return '<span class="sbar'+(caldi>0?' caldo':'')+'" style="height:'+Math.max(3,Math.round((g.n||0)/max*20))+'px" title="'+esc(g.label||g.d)+': '+(g.n||0)+' schede'+(caldi>0?', '+caldi+' che ti toccavano':'')+'"></span>';
-  }).join('')+'<span class="slab">'+h.length+' giorni</span></span>';}
-function renderTop(){
- var k=document.getElementById('kpis');
- var tot=ARTICLES.length;
- var ar=ARTICLES.filter(function(a){return a.sec=='res'&&a.dot=='orange'}).length;
- var ver=(typeof CIT_VERIFICATE==='number')?CIT_VERIFICATE:0;
- if(k)k.innerHTML='<span class="kpi econ"><b>'+tot+'</b> lett'+(tot==1?'o':'i')+' · <b>'+ar+'</b> che ti '+(ar==1?'tocca':'toccano')+'</span>'+
-  sparkHTML(typeof HISTORY!=='undefined'?HISTORY:[])+
-  '<span class="kpi '+(ver>=tot?'v':'w')+'">'+(ver>=tot?'✓':'⚠︎')+' '+ver+'/'+tot+' citazioni verificate</span>';
- var d=document.getElementById('datalunga');
- if(d){var dt=new Date(BUILD_DATE+'T12:00:00');
-  var s=dt.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
-  d.textContent=s.charAt(0).toUpperCase()+s.slice(1);}}
 function renderFoot(){var el=document.getElementById('foot');if(!el)return;
  var tot=ARTICLES.length, ver=(typeof CIT_VERIFICATE==='number')?CIT_VERIFICATE:0;
  var cit = (ver>=tot)
@@ -1942,15 +1795,11 @@ function apriRassegna(){
  }).then(function(j){el.innerHTML=rassHTML(j);}).catch(function(e){
   el.innerHTML='<div class="rko">⚠️ Rassegna non raggiungibile ora ('+esc(String(e.message||e))+'). Se sei offline è normale: riprova con la rete.</div>';});}
 
-renderBenvenuto();
 applicaTesto();
 aggCervello();
 popolaVoci();
-renderVerdict();
 renderCopertura();
 renderSeconda();
-renderPick();
-renderLato();
 renderTens();
 renderFresh();
 renderCal();

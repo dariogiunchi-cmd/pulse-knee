@@ -25,3 +25,14 @@ Regole rispettate: nessuna chiave nel repository (verificato dal cancello,
 controllo credenziali di checklist.py); nessun lock-in — la scomparsa di
 qualunque servizio a pagamento degrada con eleganza dichiarata (voce di sistema,
 vocabolario locale), mai rompe l'app; nessun tracciamento dell'utente introdotto.
+
+## Motore vocale (20 agosto 2026, prova d'ascolto alla cieca)
+
+Scelto **Kokoro** (open-source, 82M, voce it `if_sara`) — il file «B» della prova
+a tre: contro Azure neurale (anteprima edge-tts) e Piper. Costo: **0**. Nessun
+account, nessuna chiave, nessun servizio: il modello gira nel runner GitHub del
+workflow `mattino.yml`. Disattivazione: cancellare il workflow. Se il progetto
+Kokoro sparisse, il modello resta scaricabile/cache-abile: nessun lock-in.
+Volume reale misurato: ~2.500 caratteri/briefing ≈ 76.000/mese (un terzo della
+stima dell'Addendum) — anche i motori a pagamento sarebbero rientrati nei loro
+livelli gratuiti; a maggior ragione non si paga nulla. Budget totale usato: 0/25.

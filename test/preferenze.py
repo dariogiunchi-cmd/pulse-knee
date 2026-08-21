@@ -32,7 +32,7 @@ with sync_playwright() as p:
         chk("rivista "+nome, nome in st["j"])
     for nome in ["DePuy Synthes","Zimmer Biomet","Smith & Nephew","Arthrex","Stryker","Medacta","Lima","aziende innovative e asiatiche"]:
         chk("azienda "+nome, nome in st["c"])
-    pg.click("button:has-text('Impostazioni')"); pg.wait_for_timeout(250)
+    pg.evaluate("tab('settings')"); pg.wait_for_timeout(250)
     chk("sezione Aziende visibile", pg.locator("#setAz .tag").count()==ATT["c"], pg.locator("#setAz .tag").count())
     chk("link alle versioni", pg.locator("a[href='versioni/']").count()==1)
     chk("aziende nel riquadro In focus", "Medacta" in pg.inner_text("#focusMore"))

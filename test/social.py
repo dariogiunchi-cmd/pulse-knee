@@ -16,6 +16,7 @@ with sync_playwright() as p:
     b=p.chromium.launch(); pg=b.new_page(viewport={'width':390,'height':844},is_mobile=True)
     errs=[];pg.on('pageerror',lambda e:errs.append(str(e)))
     pg.goto(_U); pg.wait_for_timeout(700)
+    pg.evaluate("tab('today')"); pg.wait_for_timeout(200)
     SOCN=con_socv(pg)
     if not SOCN:
         salta('contenuti social','nessun lavoro con i contenuti social oggi')

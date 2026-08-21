@@ -35,7 +35,7 @@ with sync_playwright() as p:
       renderNl();
     }""")
     pg.wait_for_timeout(200)
-    pg.click("button:has-text('Newsletter')"); pg.wait_for_timeout(250)
+    pg.evaluate("tab('news')"); pg.wait_for_timeout(250)
     chk(f"{len(SCELTI)} slot sopravvivono al ricambio quotidiano", pg.locator("#nlslots .nlnum.full").count()==len(SCELTI))
     t=pg.inner_text("#nlout")
     chk("testo ancora completo", t.startswith("OGGETTO: ") and f"{len(SCELTI)} novità" in t, t[:60])
