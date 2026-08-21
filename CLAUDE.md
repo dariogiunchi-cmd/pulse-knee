@@ -112,9 +112,9 @@ un'istantanea: `costruisci.py --estrai` riallinea modello e dati all'index ripri
 
 Tutte come `var` a livello superiore:
 
-`SELEZIONE` (la schermata unica: verdetto + ≤3 schede {pmid,dice,cambia,perche};
-facoltativa per le istantanee vecchie, il cancello ne fa rispettare il tetto) ·
-`BUILD_DATE` · `ARTICLES` · `CIT_VERIFICATE` · `CONF` · `MUTE` · `TENSIONS` · `LINKS` ·
+`BUILD_DATE` · `ARTICLES` (ogni scheda con `dom` — dominio clinico dal vocabolario
+chiuso — e `riga`: il risultato in ~90 caratteri per l'indice; il cancello misura
+e blocca) · `CIT_VERIFICATE` · `CONF` · `MUTE` · `TENSIONS` · `LINKS` ·
 `DUELS` · `HISTORY` · `AUDIT` · `RETRACTED` · `LAST_RETRACTION_CHECK` · `BRIEF_TEXT` · `BRIEF_DIALOGO` (facoltativa:
 il podcast a due voci; se manca, ▶ legge `BRIEF_TEXT`) ·
 `NLB` · `SOCV` · `TAGS` · `SOC` · `SUGGQ` · `VERDICT` · `PICK` · `INDUSTRIA` ·

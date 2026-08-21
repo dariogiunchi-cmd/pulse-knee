@@ -111,29 +111,36 @@ schede, riempi DUE variabili nuove in dati/giorno.js:
 Il costo è basso (una chiamata batch di verifica in più); il valore è che l'app
 smette di finire quando finiscono le dieci schede.
 
-LA SELEZIONE — la schermata unica (rifondazione del 20 agosto). Oltre alle schede,
-scrivi in dati/giorno.js la variabile `SELEZIONE`: è ciò che l'utente vede aprendo
-l'app, e DEVE bastare da sola a chiudere la giornata in 60 secondi.
-· `testo`: il VERDETTO in linguaggio naturale, una frase — risponde alla domanda
-  prima che venga posta («Oggi niente di rilevante.» · «Un lavoro che cambia
-  qualcosa: …» · «Tre novità, una importante.»). Mai conteggi meccanici.
-· `allerta` (facoltativo): SOLO se stanotte c'è qualcosa che scotta (richiamo su
-  azienda sorvegliata, ritrattazione su un lavoro citato, consensus che ribalta):
-  una riga, entra nel verdetto, non in una sezione da ricordarsi di aprire.
-· `sotto` (facoltativo): una riga onesta su ciò che resta («Le altre sei sono in
-  archivio: nessuna decisiva.») — scade col giorno, mai un arretrato.
-· `schede`: da ZERO a TRE (il cancello blocca la quarta), le sole che meritano il
-  suo tempo oggi. Il giorno vuoto è un successo: schede:[] con un verdetto quieto.
-  Ogni scheda: {pmid,dice,cambia,perche} —
-  `dice` = il RISULTATO in una frase (non il titolo); `cambia` = l'implicazione
-  chirurgica pratica, oppure l'onesta dichiarazione che non ne cambia nessuna;
-  `perche` = la ragione della selezione, in una riga (è anche il comando con cui
-  l'utente la corregge). Tutto dai campi verificati della scheda: PRINCIPIO ZERO.
-BUDGET DI PAROLE, meccanico: verita.py stima la lettura (3,3 parole/s + 2 s per
-giudizio + 3 s) e BLOCCA sopra i 60 secondi — in pratica: testo ≤ 15 parole,
-allerta ≤ 28, e per scheda dice ≤ 22, cambia ≤ 14, perche ≤ 10. Asciugare, non
-tagliare i fatti. La selezione È la gerarchia: niente riordino nell'app. I criteri sono clinici
-(claude__07-preferenze.md) più i giudizi dell'utente (sotto).
+L'INDICE — la prima pagina (correzione di rotta, Addendum 4 del 21 agosto).
+L'obiettivo non è mettere in discussione la sua pratica: è SAPERE TUTTO ciò che
+succede sul ginocchio, ogni giorno, col minimo sforzo. L'app copre e riporta,
+non seleziona e non giudica: coprire batte selezionare. In pratica:
+· OGNI scheda e OGNI breve porta `dom`, dal vocabolario chiuso: menisco ·
+  cartilagine · legamenti · artroscopia · osteotomie · protesi · trauma · riab ·
+  lineeguida (il cancello blocca i valori fuori lista). L'app raggruppa per
+  dominio nell'ordine di priorità dell'utente: l'ordine dell'array non è più il
+  messaggio.
+· OGNI scheda porta `riga`: il RISULTATO in una riga, verbo in evidenza, ~90
+  caratteri (tetto 100, il cancello misura). Mai il titolo tradotto, mai domande
+  retoriche, mai sensazionalismo; se il lavoro non conclude, la riga lo dice
+  («Nessuna differenza fra le due tecniche, campione piccolo»). Nei brevi la
+  riga è il campo `h` di sempre.
+· `PICK` resta l'EVIDENZA del giorno: una, non tre. La sua riga apre l'app e
+  l'email.
+· Il `dot` resta un'ETICHETTA (● discreto per ciò che tocca la sua pratica),
+  mai la cornice: niente conteggi «mettono in discussione» in testa.
+· INDUSTRIA: dalla fonte `industria` della raccolta notturna (stampa di settore,
+  autorizzazioni 510(k)): scegli le voci pertinenti, RISCRIVILE in righe
+  italiane con la stessa grammatica citando la fonte ({riga,fonte,url,tipo}).
+  I richiami (fonte openfda) vanno in coda e SOLO se nuovi rispetto a ieri.
+· CONGRESSI: copia in dati/giorno.js le voci COMPILATE di fonti/congressi.json
+  ({sig,citta,date,abstract,early,url}). Una volta al mese (il primo del mese)
+  verifica le scadenze sui siti ufficiali e aggiorna il deposito col campo
+  `verificato`; una scadenza non verificata non si scrive.
+· TELEMETRIA: mai parole di sistema nelle superfici di lettura (raccoglitore,
+  feed, json, UTC, interrogate — il cancello le cerca); le assenze si dicono dal
+  punto di vista dell'utente («Congressi — nulla oggi»), la diagnostica vive
+  solo nella Rassegna.
 
 I GIUDIZI DELL'UTENTE — il tasto «Manda i segnali» non esiste più: l'utente giudica
 con ✓/✗ nell'app (per ora restano sul suo telefono) e soprattutto RISPONDE all'email
@@ -188,7 +195,7 @@ LAST_RETRACTION_CHECK = data di oggi (la data di oggi in lettere).
 
 COSTRUZIONE — dalla sera del 17 agosto index.html è un PRODOTTO, non un file da modificare.
 Il codice sta in modello.html (NON toccarlo mai); i contenuti del giorno stanno in
-**dati/giorno.js**, ed è l'UNICO file che riscrivi: SELEZIONE, BUILD_DATE, ARTICLES,
+**dati/giorno.js**, ed è l'UNICO file che riscrivi: BUILD_DATE, ARTICLES (con dom e riga),
 CIT_VERIFICATE, CONF, MUTE, TENSIONS, LINKS, DUELS, HISTORY, AUDIT, RETRACTED,
 LAST_RETRACTION_CHECK, BRIEF_TEXT, BRIEF_DIALOGO, NLB, SOCV, TAGS, SOC, SUGGQ. Poi rigenera:
   python3 test/costruisci.py

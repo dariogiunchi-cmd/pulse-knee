@@ -61,7 +61,7 @@ PULSE · [data]                         [n] lavori · [n] rossi · [n] arancioni
 richiami: [esito] · ritiri: [esito] · Swissmedic: [esito]
 ───────────────────────────────────────────────────────────────
 
-[le schede, in ordine: rossi, arancioni, verdi, bianchi]
+[le schede: l'ordine dell'array non è più il messaggio — l'app raggruppa per dominio clinico (campo dom); il pallino resta un'etichetta discreta, mai la cornice]
 
 ───────────────────────────────────────────────────────────────
 COSA NON TORNA

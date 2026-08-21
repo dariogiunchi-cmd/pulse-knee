@@ -226,3 +226,36 @@ della sezione 1. Il vincolo dei 60 secondi cambia natura ma resta meccanizzabile
 non più budget di parole della selezione, ma budget di **righe per voce** (1) e
 grammatica verificata dal cancello — il tempo di scorrimento resta costante
 perché cresce solo la lunghezza della pagina, non il costo di orientamento.
+
+---
+
+## 4. Esiti dell'implementazione (21 agosto, punto 5 eseguito)
+
+- **Grammatica delle righe**: `dom` (vocabolario chiuso, 9 domini) e `riga`
+  (risultato col verbo, tetto 100 caratteri) su ogni scheda; i brevi usano `h`.
+  Sentinelle in verita.py (dominio, lunghezza, niente domande retoriche) e prove
+  §8.3-8.5 in qualita.py (prosa zero, duplicazione, parole di sistema) —
+  collaudate rompendo davvero.
+- **La schermata «Oggi»** è l'indice dei wireframe: misura in testa, UNA
+  evidenza, domini con conteggi e richiusura, ● discreto, domini vuoti in una
+  riga, riga di copertura unica in fondo (la diagnostica vive nella Rassegna).
+  L'evidenza non duplica la sua riga (§6.3).
+- **Congressi**: `fonti/congressi.json` curato (13 fonti, campi vuoti finché non
+  verificati — una scadenza non verificata non si scrive); l'app ordina per
+  scadenza con evidenze ≤30/≤7 giorni. Verifica mensile nel mandato.
+- **Industria e mercato**: modulo `industria` nel raccoglitore — 4 canali su 5
+  raggiunti al collaudo reale (MD+O, OrthoSpineNews, Fierce, FDA 510k; MassDevice
+  rifiuta i bot sul feed: esito dichiarato, la pagina di ricerca resta
+  raggiungibile come ripiego futuro). Primo giro reale: COBLATION Smith+Nephew,
+  sferoidi condrocitari FibroBiologics, robotica J&J; secondo giro: 510(k) di
+  Arthrex e Maxx Orthopedics, e ZERO doppioni (dedup fra notti verificato).
+  **Prova §8.1 superata sul runner**: la stampa configurata copre la vicenda
+  DePuy Synthes/J&J (asserzione verde sul run 32483696309). Le altre due prove
+  di copertura erano già dimostrate dal vivo: il consensus tedesco sullo slope è
+  stato intercettato dalla fonte linee-guida il 20 agosto ed è scheda.
+- **Telemetria**: via i riquadri di prosa; le assenze parlano la lingua
+  dell'utente; il cancello cerca le parole bandite sulla superficie resa.
+- **Email**: `audio/consegna.py` puro — stessa struttura e ordine dell'app,
+  niente emoji, un collegamento per voce, anteprima che dice già cosa c'è;
+  13 controlli nel cancello; mattino.yml la usa per issue e titolo episodio.
+- **Cancello**: 667 controlli.
