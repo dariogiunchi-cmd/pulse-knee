@@ -111,54 +111,15 @@ schede, riempi DUE variabili nuove in dati/giorno.js:
 Il costo è basso (una chiamata batch di verifica in più); il valore è che l'app
 smette di finire quando finiscono le dieci schede.
 
-L'INDICE — la prima pagina (correzione di rotta, Addendum 4 del 21 agosto).
-L'obiettivo non è mettere in discussione la sua pratica: è SAPERE TUTTO ciò che
-succede sul ginocchio, ogni giorno, col minimo sforzo. L'app copre e riporta,
-non seleziona e non giudica: coprire batte selezionare. In pratica:
-· OGNI scheda e OGNI breve porta `dom`, dal vocabolario chiuso: menisco ·
-  cartilagine · legamenti · artroscopia · osteotomie · protesi · trauma · riab ·
-  lineeguida (il cancello blocca i valori fuori lista). L'app raggruppa per
-  dominio nell'ordine di priorità dell'utente: l'ordine dell'array non è più il
-  messaggio.
-· OGNI scheda porta `riga`: il RISULTATO in una riga, verbo in evidenza, ~90
-  caratteri (tetto 100, il cancello misura). Mai il titolo tradotto, mai domande
-  retoriche, mai sensazionalismo; se il lavoro non conclude, la riga lo dice
-  («Nessuna differenza fra le due tecniche, campione piccolo»). Nei brevi la
-  riga è il campo `h` di sempre.
-· `PICK` resta l'EVIDENZA del giorno: una, non tre. La sua riga apre l'app e
-  l'email.
-· Il `dot` resta un'ETICHETTA (● discreto per ciò che tocca la sua pratica),
-  mai la cornice: niente conteggi «mettono in discussione» in testa.
-· INDUSTRIA: dalla fonte `industria` della raccolta notturna (stampa di settore,
-  autorizzazioni 510(k)): scegli le voci pertinenti, RISCRIVILE in righe
-  italiane con la stessa grammatica citando la fonte ({riga,fonte,url,tipo}).
-  I richiami (fonte openfda) vanno in coda e SOLO se nuovi rispetto a ieri.
-· CONGRESSI: copia in dati/giorno.js le voci COMPILATE di fonti/congressi.json
-  ({sig,citta,date,abstract,early,url}). Una volta al mese (il primo del mese)
-  verifica le scadenze sui siti ufficiali e aggiorna il deposito col campo
-  `verificato`; una scadenza non verificata non si scrive.
-· TELEMETRIA: mai parole di sistema nelle superfici di lettura (raccoglitore,
-  feed, json, UTC, interrogate — il cancello le cerca); le assenze si dicono dal
-  punto di vista dell'utente («Congressi — nulla oggi»), la diagnostica vive
-  solo nella Rassegna.
-
-I GIUDIZI DELL'UTENTE — il tasto «Manda i segnali» non esiste più: l'utente giudica
-con ✓/✗ nell'app (per ora restano sul suo telefono) e soprattutto RISPONDE all'email
-del briefing (l'issue quotidiana «PULSE <giorno>» che il workflow mattino.yml apre su
-GitHub). PRIMA dello screening: leggi i COMMENTI dell'utente sulle issue `briefing`
-degli ultimi 7 giorni (gh/API GitHub, repo di lavoro). Sono giudizi in linguaggio
-libero («utile la prima», «meno protesica», «più su X»): aggiorna i pesi in
-claude__07-preferenze.md di conseguenza e — se un commento chiede qualcosa —
-rispondi in UNA riga nel commento successivo dell'issue del giorno nuovo, mai con
-un'email a parte. Se arriva ancora un vecchio messaggio «SEGNALI PULSE» in chat,
-vale come prima. I giudizi orientano la selezione, MAI le regole di verità.
-
-L'AUDIO E L'EMAIL NON SONO COMPITI TUOI — quando la tua pubblicazione arriva su
-main, il workflow `mattino.yml` genera da solo l'episodio MP3 (Kokoro sul testo
-per l'orecchio), aggiorna il feed podcast e apre l'issue-email col briefing
-completo. Tu devi solo scrivere bene SELEZIONE e BRIEF_TEXT. Se noti che l'audio
-di ieri non è stato generato (manca audio/<data>.mp3 su main), segnalalo nella
-voce AUDIT, non fermare la pubblicazione.
+I SEGNALI DELL'UTENTE — l'app ha un tasto «📡 Manda i segnali a PULSE» che
+condivide un testo che inizia con «SEGNALI PULSE»: i suoi voti (più così / meno
+così, tradotti in PMID+titolo), i salvati, i lavori scelti per la newsletter, le
+proposte accettate o respinte. Se un messaggio del genere compare in chat (in
+qualunque sessione): aggiorna i pesi in claude__07-preferenze.md di conseguenza —
+un «meno così» su un filone ne abbassa la priorità nello screening, un «più così»
+la alza, le proposte respinte non vanno riproposte — e conferma in una riga che
+cosa hai recepito. I segnali NON cambiano mai le regole di verità: orientano la
+selezione, non i fatti.
 
 IL PODCAST A DUE VOCI — dal 19 agosto, accanto a BRIEF_TEXT, scrivi anche
 `BRIEF_DIALOGO` in dati/giorno.js: lo stesso briefing in forma di dialogo, 10-16
@@ -195,7 +156,7 @@ LAST_RETRACTION_CHECK = data di oggi (la data di oggi in lettere).
 
 COSTRUZIONE — dalla sera del 17 agosto index.html è un PRODOTTO, non un file da modificare.
 Il codice sta in modello.html (NON toccarlo mai); i contenuti del giorno stanno in
-**dati/giorno.js**, ed è l'UNICO file che riscrivi: BUILD_DATE, ARTICLES (con dom e riga),
+**dati/giorno.js**, ed è l'UNICO file che riscrivi: BUILD_DATE, ARTICLES,
 CIT_VERIFICATE, CONF, MUTE, TENSIONS, LINKS, DUELS, HISTORY, AUDIT, RETRACTED,
 LAST_RETRACTION_CHECK, BRIEF_TEXT, BRIEF_DIALOGO, NLB, SOCV, TAGS, SOC, SUGGQ. Poi rigenera:
   python3 test/costruisci.py

@@ -41,10 +41,10 @@ with sync_playwright() as p:
                 chk(tag+"pulsanti Video sulle schede", nvid >= 6, nvid)
 
                 # --- 2. Newsletter tab exists
-                chk(tag+"la Produzione è raggiungibile dal piede", pg.evaluate("document.querySelector('.gfoot')&&document.querySelector('.gfoot').innerHTML.indexOf('Produzione')>=0"))
+                chk(tag+"tab Newsletter", pg.locator("button:has-text('Newsletter')").count() == 1)
 
                 # --- 3. empty state
-                pg.evaluate("tab('news')")
+                pg.click("button:has-text('Newsletter')")
                 pg.wait_for_timeout(200)
                 intro = pg.inner_text("#nlintro")
                 chk(tag+"stato vuoto spiegato", "Come funziona" in intro, intro[:60])
@@ -54,7 +54,7 @@ with sync_playwright() as p:
                 chk(tag+"contatore 0 di 4", pg.inner_text("#nlcount") == "0 di 4", pg.inner_text("#nlcount"))
 
                 # --- 4. sceglie i lavori del giorno che hanno i testi (i numeri cambiano ogni mattina)
-                pg.evaluate("tab('today')")
+                pg.click("button:has-text('Oggi')")
                 pg.wait_for_timeout(150)
                 for n in SCELTI:
                     pg.evaluate(f"pickWeek(null,{n})")
@@ -75,7 +75,7 @@ with sync_playwright() as p:
                 chk(tag+f"{len(SCELTI)} pulsanti Video accesi", on == len(SCELTI), on)
 
                 # --- 7. newsletter view filled
-                pg.evaluate("tab('news')")
+                pg.click("button:has-text('Newsletter')")
                 pg.wait_for_timeout(200)
                 chk(tag+f"{len(SCELTI)} slot pieni", pg.locator("#nlslots .nlnum.full").count() == len(SCELTI))
                 chk(tag+f"contatore {len(SCELTI)} di 4", pg.inner_text("#nlcount") == f"{len(SCELTI)} di 4")
@@ -115,7 +115,7 @@ with sync_playwright() as p:
 
                 # --- 11. persistence across reload
                 pg.reload(); pg.wait_for_timeout(400)
-                pg.evaluate("tab('news')"); pg.wait_for_timeout(200)
+                pg.click("button:has-text('Newsletter')"); pg.wait_for_timeout(200)
                 chk(tag+"stato salvato dopo ricarica", pg.locator("#nlslots .nlnum.full").count() == len(SCELTI))
                 chk(tag+"link video salvato", "TEST123" in pg.inner_text("#nlout"))
 
@@ -135,7 +135,7 @@ with sync_playwright() as p:
                 pg.wait_for_timeout(200)
 
             # --- layout: nothing overflows on the newsletter view
-            pg.evaluate("tab('news')")
+            pg.click("button:has-text('Newsletter')")
             pg.wait_for_timeout(250)
             ow = pg.evaluate("""() => {
               var bad=[]; var vw=document.documentElement.clientWidth;
@@ -165,16 +165,15 @@ with sync_playwright() as p:
             fs = pg.evaluate("""() => { var i=document.querySelector('.nlvid'); return i?parseFloat(getComputedStyle(i).fontSize):0 }""")
             chk(tag+"input video >=16px (no zoom iOS)", fs >= 16, fs)
 
-            # --- il piede a tre vie porta a tutte le sezioni secondarie
+            # --- tabs wrap, all 5 reachable
             tb = pg.evaluate("""() => {
-              var f=document.querySelector('.gfoot'); if(!f) return {n:0,bad:['gfoot assente']};
-              var bad=[]; var vw=document.documentElement.clientWidth;
-              f.querySelectorAll('a').forEach(function(b){
-                var r=b.getBoundingClientRect(); if(r.right>vw+1) bad.push(b.textContent.trim());
+              var vw=document.documentElement.clientWidth; var bad=[];
+              document.querySelectorAll('.tabs button').forEach(function(b){
+                var r=b.getBoundingClientRect(); if(r.right>vw+1||r.left<-1) bad.push(b.textContent.trim());
               });
-              return {n:f.querySelectorAll('a').length, bad:bad};
+              return {n:document.querySelectorAll('.tabs button').length, bad:bad};
             }""")
-            chk(tag+"le tre vie del piede esistono e stanno nello schermo", tb["n"] == 3 and len(tb["bad"]) == 0, tb)
+            chk(tag+"tutte le tab visibili", tb["n"] >= 5 and len(tb["bad"]) == 0, tb)
 
             # --- tap target size
             tt = pg.evaluate("""() => {
