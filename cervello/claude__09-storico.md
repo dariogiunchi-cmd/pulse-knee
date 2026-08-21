@@ -8,7 +8,43 @@
 > `## AAAA-MM-GG  ·  n papers · n rossi · n arancioni`
 > poi: PICK, e l'elenco compatto delle schede con PMID/DOI.
 
-*Ultimo aggiornamento: 20 agosto 2026.*
+*Ultimo aggiornamento: 21 agosto 2026.*
+
+---
+
+## 2026-08-21 · 9 papers · 0 rossi · 2 arancioni
+PICK: Lancet — RACER-Knee, il RCT più ampio e rigoroso mai condotto su TKR robot-assistita (Mako): nessun beneficio clinico a 12 mesi, costo maggiore · PMID 42624811 · 10.1016/S0140-6736(26)00986-4
+- 🟠 Lancet — RACER-Knee: RCT pragmatico multicentrico in cieco, 339 pazienti (168 rTKR Mako, 171 cTKR); FJS a 12 mesi -1,5 punti (IC 95% -7,5/+4,5; p=0,62) contro un target di 12; sicurezza sovrapponibile, costo maggiore con la robotica (liv. I) · PMID 42624811 · 10.1016/S0140-6736(26)00986-4
+- 🟠 J Robot Surg — Revisione narrativa 2015-2025: la precisione radiologica della RA-TKA dimezza il rischio di deviazione d'asse, ma il beneficio clinico duraturo resta non dimostrato a standard prevalentemente di livello III; anticipa la conclusione del PICK (liv. V) · PMID 42579229 · 10.1007/s11701-026-03787-7
+- 🟢 AJSM — LET associato a rischio di revisione del LCA più basso indipendentemente dallo slope tibiale (OR 0,37; IC 95% 0,22-0,62), in coorte olandese di 780 pazienti ≤25 anni; innesto aggiustato non stratificato (liv. III) · PMID 42619022 · 10.1177/03635465261473931 [van der Wal, Saris]
+- 🟢 The Knee — Il LET sembra accelerare il recupero di forza e spessore del quadricipite nei primi 9 mesi dopo ricostruzione del LCA (coorte, 268); confronto diretto fra gruppi non riportato — MUTO (liv. II) · PMID 42623902 · 10.1016/j.knee.2026.104607
+- 🟢 Ann Jt — Revisione narrativa sul ruolo del LET nell'atleta infortunato al LCA: quadro favorevole su stabilità e fallimento, nessuna distinzione fra costrutti (liv. V) · PMID 42591508 · 10.21037/aoj-2025-1-97 [con Alan Getgood]
+- 🟢 OTSR — Rassegna storico-concettuale francese: LET e conservazione meniscale fra gli standard internazionali nati in Francia (liv. V) · PMID 42624358 · 10.1016/j.otsr.2026.104866 [con David Dejour]
+- 🟢 KSSTA — ACLR + riparazione all-inside della radice del menisco laterale: sopravvivenza dell'innesto comparabile all'ACLR isolata (coorte, 841); RR grezzo 1,74 (IC 95% 0,72-4,23) — MUTO (liv. III) · PMID 42573128 · 10.1002/ksa.70574 [Carrozzo, Cavaignac]
+- 🟢 Arthroscopy — Analisi del database FDA MAUDE: 2.056 segnalazioni di guasto su dispositivi di sutura meniscale all-inside, pattern diversi per design (liv. IV) · PMID 42624526 · 10.1002/arj.70453
+- ⚪ Orthop Rev — Allineamento funzionale vs meccanico in protesi robot-assistita (sistema CORI): recupero precoce migliore, convergenza a 12 mesi — MUTO (RCT, 100, liv. II) · PMID 42592285 · 10.52965/001c.166120
+CITAZIONI: verificate 9/9 su PubMed MCP — ogni PMID riaperto e confrontato su titolo, rivista e DOI dai campi identifiers.
+STUDI MUTI: 3 — scheda 4 (recupero di forza del quadricipite con LET, solo p entro-gruppo, nessun confronto diretto), scheda 7 (ri-rottura dell'innesto con riparazione della radice combinata, RR 1,74 IC 0,72-4,23 calcolato con test/potenza.py) e scheda 9 (convergenza a 12 mesi fra strategie di allineamento, IC non riportato, campione piccolo).
+TENSIONI MOSSE: T1a (coorte olandese: LET riduce il rischio di revisione indipendentemente dallo slope, innesto non stratificato; coorte cilena: possibile accelerazione del recupero del quadricipite con LET, non dimostrata; due revisioni narrative confermano il quadro generale; il raccoglitore segnala un trial nuovo dedicato — NCT07777458, LET e massa magra, 40 pz, non ancora in reclutamento) · T1b (rassegna storica francese con David Dejour colloca il LET fra gli standard internazionali, non distingue i costrutti) · T2b (coorte francese: riparazione combinata radice+LCA non compromette la sopravvivenza dell'innesto, ma dato muto sul rischio di ri-rottura) · T3 (possibile beneficio del LET sul recupero del quadricipite, non dimostrato). Nessuna tensione chiusa oggi.
+SUGGERIMENTO (SUGGQ): Andrew Metcalfe (Warwick Clinical Trials Unit, autore corrispondente di RACER-Knee) · Wybren A. van der Wal (Gelderse Vallei Hospital, Ede, primo autore dello studio su slope/LET/revisione) · Etienne Cavaignac (CHU Toulouse, autore senior su ACLR+riparazione della radice combinate) · David Dejour (Lione, coautore della rassegna storica su trocleoplastica e LET).
+INDUSTRIA: VERIFICATA oggi — il raccoglitore notturno è passato regolarmente stanotte (generato 21 agosto, 05:17 UTC, tutte le fonti «ok» salvo il feed YouTube). Nessun richiamo nuovo su openFDA; i due richiami di ieri (DePuy Synthes ATTUNE, Zimmer Biomet) restano aperti, classificati. Swissmedic verificato: nessuna voce sui dispositivi del ginocchio questa settimana. CONGRESSI: non ancora coperti dal raccoglitore. SOCIETÀ: nessuna nuova presa di posizione verificata direttamente oltre alle due AAHKS riportate in EXTRA (abstract non disponibile su PubMed).
+RITRATTAZIONI: ricontrollati su PubMed tutti i 39 PMID già citati come schede nello storico (2-20 agosto) più i 9 di oggi — nessuna ritrattazione né Expression of Concern (article_types verificati). Il raccoglitore notturno conferma indipendentemente via Crossref: 94 DOI citati controllati, zero colpiti. LAST_RETRACTION_CHECK = 21 agosto 2026.
+DESTINO DEI VERDETTI: nessun nuovo citante oggi per i sei PICK sorvegliati (fonte: raccoglitore notturno).
+NON VERIFICATO: Retraction Watch (archivio salvati vuoto) · pagine ESSKA/AAOS/ICRS (non interrogate direttamente) · registri protesici (SIRIS/RIPO/NJR/AOANJRR) · scadenze congressuali (fonte non ancora coperta dal raccoglitore).
+CONSEGNA: app aggiornata, BUILD_DATE 2026-08-21, 9 schede; NLB su tutte, SOCV/TAGS/SOC sulle schede 1 (il PICK) e 2; EXTRA 12, SCOPERTE 2 (bioingegneria dei materiali per la cartilagine, embolizzazione dell'arteria genicolare); 616 controlli verdi.
+NOTA DI METODO: raccoglitore notturno passato regolarmente stanotte, letto per intero e incrociato con la ricerca PubMed MCP fatta in parallelo (una ricerca generale per termine-nucleo in titolo, edat 19-21 agosto; ricerche mirate per tecnica — innesto quadricipitale, LET/Lemaire/legamento anterolaterale, radice meniscale, minced cartilage, VELYS/robotica; una ricerca su consensus/linee guida in titolo, edat 60 giorni, incrociata con la voce «linee_guida» del raccoglitore — stesso insieme, salvo la linea guida ACR sul dolore cronico di ginocchio, tenuta come EXTRA; una su multilegamentose/LCP/adolescente; una su temi dell'Asia orientale/campi adiacenti). Circa 89 candidati distinti dopo dedup con i 39 PMID già in storico e i 12 PMID già usati come EXTRA/SCOPERTE nei giorni precedenti (alcuni duplicati con brevi del 20 agosto scoperti solo dopo un primo giro di lettura, poi esclusi): 9 tenuti come schede, 12 come EXTRA, 2 come SCOPERTE, circa 65 scartati (dettaglio in AUDIT).
+
+**Nota di correzione, in chat.** Al momento del primo controllo su GitHub Actions il
+raccoglitore notturno risultava non ancora passato (ultima esecuzione vista: 20
+agosto), e la prima stesura del briefing è partita da quell'informazione. Il
+raccoglitore è invece passato regolarmente alle 05:17 UTC di stamattina — pochi
+minuti dopo quel primo controllo — e il commit è arrivato su `origin/main` mentre
+il briefing era già in scrittura. Rilevato dal controllo di discendenza prima della
+pubblicazione (`git fetch` + confronto con `origin/main`): il file è stato
+riletto, il contenuto corretto (nessun richiamo nuovo, nessuna ritrattazione,
+destino dei verdetti senza citanti nuovi, un trial nuovo pertinente alla T1a) prima
+di pubblicare. Nessun dato falso è arrivato all'utente.
+GIORNATA GROSSA: il PICK di oggi (RACER-Knee, The Lancet) è il primo lavoro dell'intero progetto a contraddire direttamente il razionale della chirurgia protesica robotica con VELYS, nel disegno sperimentale più rigoroso possibile per la domanda (RCT pragmatico, in cieco, multicentrico). Non dimostra che VELYS sia inefficace — piattaforma diversa, chirurghi diversi — ma è il primo dato di questo peso contro l'assunto «più precisione del robot = miglior esito per il paziente», e una seconda pubblicazione dello stesso giorno (revisione J Robot Surg) arriva alla stessa conclusione da tutt'altra fonte. Riportato in cima al briefing e in chat.
 
 ---
 

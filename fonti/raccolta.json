@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-21T12:52:33Z",
+ "generato": "2026-08-21T05:52:56Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -583,14 +583,14 @@
      "sorveglianza": "Innesto quadricipitale",
      "studi": [
       {
-       "nct": "NCT07657195",
-       "titolo": "Dry Needling and Quad Strength After Anterior Cruciate Ligament Reconstruction",
-       "stato": "NOT_YET_RECRUITING",
-       "aggiornato": "2026-08-21",
+       "nct": "NCT07753707",
+       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-08-07",
        "fase": [
         "NA"
        ],
-       "n": 40,
+       "n": 111,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -605,17 +605,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07753707",
-       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 111,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07722104",
        "titolo": "Graft Type and Outcomes After ACL Reconstruction in Female Athletes",
        "stato": "NOT_YET_RECRUITING",
@@ -623,6 +612,17 @@
        "fase": null,
        "n": 82,
        "tipo": "OBSERVATIONAL"
+      },
+      {
+       "nct": "NCT07657195",
+       "titolo": "Dry Needling and Quad Strength After Anterior Cruciate Ligament Reconstruction",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-07-22",
+       "fase": [
+        "NA"
+       ],
+       "n": 40,
+       "tipo": "INTERVENTIONAL"
       },
       {
        "nct": "NCT04039971",
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 94,
+    "doi_citati_controllati": 103,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -769,57 +769,18 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Arthrex",
-      "titolo": "Core Decompression of the Femoral Head Using the AVN Expandable Reamer and AlloSync™ Pure DBM",
-      "link": "https://www.youtube.com/watch?v=mWYptxD1jjw",
-      "data": "2026-08-18"
-     },
-     {
-      "canale": "Stryker",
-      "titolo": "Voice Interpreter for Sync Badge | U.S.",
-      "link": "https://www.youtube.com/watch?v=Y3dTkvWSFh8",
-      "data": "2026-08-18"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Distal Humerus Shaft Fracture Fixation Using the Arthrex Elbow Plating System",
-      "link": "https://www.youtube.com/watch?v=PDL8DODmBO4",
-      "data": "2026-08-17"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex TightRope® PRO",
-      "link": "https://www.youtube.com/watch?v=e8VS-rrQS84",
-      "data": "2026-08-13"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "SpeedPearl: Automatic Wrist Washout Technique With the NanoNeedle™ Scope 2.0",
-      "link": "https://www.youtube.com/watch?v=HvgciVjo1M8",
-      "data": "2026-08-12"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Successful Setup and Use of the Arthrex Hip Distraction System",
-      "link": "https://www.youtube.com/watch?v=wWzsYOjt46k",
-      "data": "2026-08-11"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "CeMend™ Antibiotic Shoulder Spacers With Arthrex Bone Cement for Two-Stage Revision",
-      "link": "https://www.youtube.com/watch?v=Su2grPQXRqg",
-      "data": "2026-08-10"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42624811",
+     "titolo": "Lancet — RACER-Knee, il RCT più ampio e rigoroso mai condotto su TKR robot-assistita (Mako): nessun beneficio ",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42545819",
      "titolo": "KSSTA — Il ginocchio tedesco raccomanda un approccio individuale allo slope aumentato nel LCA (Deutsche Kniege",
@@ -1208,64 +1169,6 @@
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
-   }
-  },
-  "industria": {
-   "esito": "ok",
-   "dati": {
-    "voci": [
-     {
-      "titolo": "Arthrex Bioabsorbable PushLock Suture Anchors — Arthrex, Inc.",
-      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K262357",
-      "fonte": "FDA 510(k)",
-      "data": "2026-08-07",
-      "tipo": "autorizzazione"
-     },
-     {
-      "titolo": "Freedom Total Knee System (E-Poly Tibial Liners) — Maxx Orthopedics, Inc.",
-      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261563",
-      "fonte": "FDA 510(k)",
-      "data": "2026-08-07",
-      "tipo": "autorizzazione"
-     }
-    ],
-    "canali": [
-     {
-      "nome": "MassDevice",
-      "esito": "non risposto: HTTPError"
-     },
-     {
-      "nome": "Medical Design & Outsourcing",
-      "esito": "ok",
-      "voci": 0
-     },
-     {
-      "nome": "OrthoSpineNews",
-      "esito": "ok",
-      "voci": 0
-     },
-     {
-      "nome": "Fierce Biotech Medtech",
-      "esito": "ok",
-      "voci": 0
-     },
-     {
-      "nome": "FDA 510(k)",
-      "esito": "ok",
-      "voci": 2
-     }
-    ],
-    "visti": [
-     "https://www.medicaldesignandoutsourcing.com/jnj-robotics-rd-ottava-folding-arms-soothing-sounds-and-haptics-capability/",
-     "https://orthospinenews.com/2026/08/18/fibrobiologics-announces-chondrocyte-spheroids-demonstrate-cartilage-repair-in-preclinical-study-of-degenerative-joints/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=fibrobiologics-announces-chondrocyte-spheroids-demonstrate-cartilage-repair-in-preclinical-study-of-degenerative-joints",
-     "https://orthospinenews.com/2026/08/17/smithnephews-new-flow-flextend-coblation-wand-improves-access-and-resection-efficiency-for-complex-hip-procedures-vs-fixed-angle-options/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=smithnephews-new-flow-flextend-coblation-wand-improves-access-and-resection-efficiency-for-complex-hip-procedures-vs-fixed-angle-options",
-     "https://www.medicaldesignandoutsourcing.com/first-look-jj-medtech-ottava-surgical-robotics-system/",
-     "https://www.fiercebiotech.com/medtech/johnson-johnson-medtech-nabs-monarch-quest-3-update-lung-cancer-detection",
-     "https://orthospinenews.com/2026/08/20/aclarion-announces-addition-of-university-of-arizona-college-of-medicine-phoenix-as-clarity-trial-site/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=aclarion-announces-addition-of-university-of-arizona-college-of-medicine-phoenix-as-clarity-trial-site",
-     "510k:K262357",
-     "510k:K261563"
-    ],
-    "nota": "prodotti, autorizzazioni e mercato; i richiami vivono nella fonte openfda"
    }
   }
  }
