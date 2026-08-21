@@ -408,9 +408,11 @@ def _industria_pertinente(testo, cfg):
     """Vero se il testo tocca il ginocchio o una delle aziende sorvegliate del mercato.
     Funzione PURA, così il filtro si collauda senza rete."""
     t = testo.lower()
-    if any(a.lower() in t for a in cfg.get('industria_aziende', [])):
+    def intera(parola):
+        return re.search(r'(?<![a-z0-9])' + re.escape(parola.lower()) + r'(?![a-z0-9])', t) is not None
+    if any(intera(a) for a in cfg.get('industria_aziende', [])):
         return True
-    return any(p.lower() in t for p in cfg.get('industria_parole', []))
+    return any(intera(p) for p in cfg.get('industria_parole', []))
 
 
 def industria():
@@ -427,7 +429,12 @@ def industria():
     voci, visti, canali = [], [], []
     for f in CFG.get('industria_feed', []):
         try:
-            xml = prendi(f['url'])
+            try:
+                xml = prendi(f['url'])
+            except urllib.error.HTTPError:
+                req = urllib.request.Request(f['url'], headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'})
+                with urllib.request.urlopen(req, timeout=25) as r:
+                    xml = r.read().decode('utf-8', 'replace')
             items = re.findall(r'<item>([\s\S]*?)</item>', xml)[:60]
             n_presi = 0
             for it in items:
@@ -436,7 +443,7 @@ def industria():
                 md = re.search(r'<pubDate>([\s\S]*?)</pubDate>', it)
                 if not mt or not ml:
                     continue
-                titolo = html.unescape(mt.group(1).strip())
+                titolo = re.sub(r'<[^>]+>', '', html.unescape(mt.group(1))).strip()
                 link = ml.group(1).strip()
                 if not _industria_pertinente(titolo, CFG):
                     continue
@@ -454,7 +461,7 @@ def industria():
         da = (OGGI - timedelta(days=14)).strftime('%Y%m%d')
         a = OGGI.strftime('%Y%m%d')
         u = ('https://api.fda.gov/device/510k.json?search=decision_date:[' + da + '+TO+' + a
-             + ']+AND+advisory_committee:OR&limit=100')
+             + ']&sort=decision_date:desc&limit=100')
         js = json.loads(prendi(u))
         n_presi = 0
         for r in js.get('results', []):

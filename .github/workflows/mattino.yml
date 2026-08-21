@@ -67,13 +67,11 @@ jobs:
           subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', 'grezzo.wav',
                           '-b:a', '96k', mp3], check=True)
           info = MP3(mp3).info
-          # titolo episodio: data + verdetto in una riga (dalla SELEZIONE, mai inventato)
-          m = re.search(r'var SELEZIONE=\{[\s\S]*?testo:"((?:[^"\\]|\\.)*)"', dati)
-          verdetto = (m.group(1) if m else '').replace('\\"', '"')
-          MESI = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio',
-                  'agosto','settembre','ottobre','novembre','dicembre']
-          a, me, g = build.split('-')
-          titolo = f"{int(g)} {MESI[int(me)-1]} — {verdetto}" if verdetto else f"{int(g)} {MESI[int(me)-1]}"
+          # titolo episodio: data + evidenza del giorno (da consegna.py, mai inventato)
+          import sys; sys.path.insert(0, 'audio')
+          from consegna import costruisci_email
+          _t, _c = costruisci_email(dati)
+          titolo = _t.replace('PULSE ', '', 1)
           eps = json.load(open('audio/episodi.json', encoding='utf-8')) if os.path.exists('audio/episodi.json') else []
           eps = [e for e in eps if e['data'] != build]
           eps.append({'data': build, 'titolo': titolo, 'descrizione': testo,
@@ -111,50 +109,27 @@ jobs:
           git diff --cached --quiet || git commit -m "mattino: episodio audio e feed del giorno"
           git push
 
-      - name: issue quotidiana — il briefing completo, in posta
+      - name: issue quotidiana — il giornale completo, in posta
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           python3 - <<'EOF'
-          import json, os, re, subprocess
+          import os, re, json, subprocess, sys
+          sys.path.insert(0, 'audio')
+          from consegna import costruisci_email
           dati = open('dati/giorno.js', encoding='utf-8').read()
-          build = re.search(r"var BUILD_DATE='(\d{4}-\d{2}-\d{2})'", dati).group(1)
-          def campo(nome):
-              m = re.search(r'var %s=\{[\s\S]*?testo:"((?:[^"\\]|\\.)*)"' % nome, dati)
-              return (m.group(1) if m else '').replace('\\"', '"')
-          m = re.search(r'var SELEZIONE=(\{[\s\S]*?\n \]\};|\{[\s\S]*?\]\};)', dati)
-          sel = m.group(1) if m else ''
-          verdetto = campo('SELEZIONE')
-          alerta = ''
-          ma = re.search(r'allerta:"((?:[^"\\]|\\.)*)"', sel)
-          if ma: alerta = ma.group(1).replace('\\"', '"')
-          schede = re.findall(r"\{pmid:'(\d+)',\s*dice:\"((?:[^\"\\]|\\.)*)\",\s*cambia:\"((?:[^\"\\]|\\.)*)\",\s*perche:\"((?:[^\"\\]|\\.)*)\"", sel)
-          mb = re.search(r'var BRIEF_TEXT=("(?:[^"\\]|\\.)*")', dati)
-          brief = json.loads(mb.group(1)) if mb else ''
-          MESI = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio',
-                  'agosto','settembre','ottobre','novembre','dicembre']
-          a, me, g = build.split('-')
-          titolo = f"PULSE {int(g)} {MESI[int(me)-1]} — {verdetto}"[:250]
-          # una sola issue per giorno: la ripubblicazione di una correzione non raddoppia la posta
+          titolo, corpo = costruisci_email(dati)
+          # una sola issue per giorno: la ripubblicazione non raddoppia la posta
+          chiave = titolo.split(' — ')[0]
           gia = subprocess.run(['gh', 'issue', 'list', '--state', 'all', '--search',
-                                f'"PULSE {int(g)} {MESI[int(me)-1]}" in:title', '--json', 'number'],
+                                f'"{chiave}" in:title', '--json', 'number'],
                                capture_output=True, text=True,
                                env={**os.environ, 'GH_REPO': 'dariogiunchi-cmd/pulse-knee'})
           if gia.returncode == 0 and json.loads(gia.stdout or '[]'):
               print('issue del giorno già aperta: non la duplico'); raise SystemExit(0)
           subprocess.run(['gh', 'label', 'create', 'briefing', '--color', '1D76DB'],
                          env={**os.environ, 'GH_REPO': 'dariogiunchi-cmd/pulse-knee'})
-          corpo = []
-          if alerta: corpo.append(f"⚠︎ **{alerta}**\n")
-          for pm, dice, cambia, perche in schede:
-              dice = dice.replace('\\"', '"'); cambia = cambia.replace('\\"', '"')
-              corpo.append(f"**{dice}**\n\n{cambia}\n\n[PubMed](https://pubmed.ncbi.nlm.nih.gov/{pm}/)\n")
-          corpo.append('---\n\n' + brief)
-          corpo.append(f"\n---\n▶ [Episodio audio]({'https://dariogiunchi-cmd.github.io/pulse-knee/audio/'+build+'.mp3'}) · "
-                       f"[Apri PULSE](https://dariogiunchi-cmd.github.io/pulse-knee/)\n\n"
-                       "_Rispondi a questa email per orientare i prossimi briefing: «utile la prima», "
-                       "«meno robotica», «più su X» — la sessione del mattino legge le risposte._")
-          subprocess.run(['gh', 'issue', 'create', '--title', titolo, '--body', '\n'.join(corpo),
+          subprocess.run(['gh', 'issue', 'create', '--title', titolo, '--body', corpo,
                           '--label', 'briefing'], check=True,
                          env={**os.environ, 'GH_REPO': 'dariogiunchi-cmd/pulse-knee'})
           EOF
