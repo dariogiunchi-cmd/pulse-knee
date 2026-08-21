@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-21T12:49:04Z",
+ "generato": "2026-08-21T12:52:33Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -1215,40 +1215,18 @@
    "dati": {
     "voci": [
      {
-      "titolo": "J&J’s robotics R&D head discusses Ottava’s folding arms, soothing sounds and haptics capability",
-      "url": "https://www.medicaldesignandoutsourcing.com/jnj-robotics-rd-ottava-folding-arms-soothing-sounds-and-haptics-capability/",
-      "fonte": "Medical Design & Outsourcing",
-      "data": "Fri, 31 Jul 2026"
+      "titolo": "Arthrex Bioabsorbable PushLock Suture Anchors — Arthrex, Inc.",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K262357",
+      "fonte": "FDA 510(k)",
+      "data": "2026-08-07",
+      "tipo": "autorizzazione"
      },
      {
-      "titolo": "First Look: J&J unveils its Ottava surgical robotics system",
-      "url": "https://www.medicaldesignandoutsourcing.com/first-look-jj-medtech-ottava-surgical-robotics-system/",
-      "fonte": "Medical Design & Outsourcing",
-      "data": "Wed, 22 Jul 2026"
-     },
-     {
-      "titolo": "Aclarion Announces Addition of University of Arizona College of Medicine – Phoenix as CLARITY Trial Site",
-      "url": "https://orthospinenews.com/2026/08/20/aclarion-announces-addition-of-university-of-arizona-college-of-medicine-phoenix-as-clarity-trial-site/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=aclarion-announces-addition-of-university-of-arizona-college-of-medicine-phoenix-as-clarity-trial-site",
-      "fonte": "OrthoSpineNews",
-      "data": "Thu, 20 Aug 2026"
-     },
-     {
-      "titolo": "FibroBiologics Announces Chondrocyte Spheroids Demonstrate Cartilage Repair in Preclinical Study of Degenerative Joints",
-      "url": "https://orthospinenews.com/2026/08/18/fibrobiologics-announces-chondrocyte-spheroids-demonstrate-cartilage-repair-in-preclinical-study-of-degenerative-joints/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=fibrobiologics-announces-chondrocyte-spheroids-demonstrate-cartilage-repair-in-preclinical-study-of-degenerative-joints",
-      "fonte": "OrthoSpineNews",
-      "data": "Tue, 18 Aug 2026"
-     },
-     {
-      "titolo": "Smith+Nephew’s new FLOW FLEXTEND™ COBLATION™ Wand improves access and resection efficiency for complex hip procedures vs. fixed-angle options",
-      "url": "https://orthospinenews.com/2026/08/17/smithnephews-new-flow-flextend-coblation-wand-improves-access-and-resection-efficiency-for-complex-hip-procedures-vs-fixed-angle-options/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=smithnephews-new-flow-flextend-coblation-wand-improves-access-and-resection-efficiency-for-complex-hip-procedures-vs-fixed-angle-options",
-      "fonte": "OrthoSpineNews",
-      "data": "Mon, 17 Aug 2026"
-     },
-     {
-      "titolo": "<a href=\"/medtech/johnson-johnson-medtech-nabs-monarch-quest-3-update-lung-cancer-detection\" hreflang=\"en\">Johnson & Johnson MedTech nabs Monarch Quest 3 update for lung cancer detection </a>",
-      "url": "https://www.fiercebiotech.com/medtech/johnson-johnson-medtech-nabs-monarch-quest-3-update-lung-cancer-detection",
-      "fonte": "Fierce Biotech Medtech",
-      "data": "Aug 18, 2026 7:5"
+      "titolo": "Freedom Total Knee System (E-Poly Tibial Liners) — Maxx Orthopedics, Inc.",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K261563",
+      "fonte": "FDA 510(k)",
+      "data": "2026-08-07",
+      "tipo": "autorizzazione"
      }
     ],
     "canali": [
@@ -1259,30 +1237,33 @@
      {
       "nome": "Medical Design & Outsourcing",
       "esito": "ok",
-      "voci": 2
+      "voci": 0
      },
      {
       "nome": "OrthoSpineNews",
       "esito": "ok",
-      "voci": 3
+      "voci": 0
      },
      {
       "nome": "Fierce Biotech Medtech",
       "esito": "ok",
-      "voci": 1
+      "voci": 0
      },
      {
       "nome": "FDA 510(k)",
-      "esito": "non risposto: HTTPError"
+      "esito": "ok",
+      "voci": 2
      }
     ],
     "visti": [
      "https://www.medicaldesignandoutsourcing.com/jnj-robotics-rd-ottava-folding-arms-soothing-sounds-and-haptics-capability/",
-     "https://www.medicaldesignandoutsourcing.com/first-look-jj-medtech-ottava-surgical-robotics-system/",
-     "https://orthospinenews.com/2026/08/20/aclarion-announces-addition-of-university-of-arizona-college-of-medicine-phoenix-as-clarity-trial-site/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=aclarion-announces-addition-of-university-of-arizona-college-of-medicine-phoenix-as-clarity-trial-site",
      "https://orthospinenews.com/2026/08/18/fibrobiologics-announces-chondrocyte-spheroids-demonstrate-cartilage-repair-in-preclinical-study-of-degenerative-joints/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=fibrobiologics-announces-chondrocyte-spheroids-demonstrate-cartilage-repair-in-preclinical-study-of-degenerative-joints",
      "https://orthospinenews.com/2026/08/17/smithnephews-new-flow-flextend-coblation-wand-improves-access-and-resection-efficiency-for-complex-hip-procedures-vs-fixed-angle-options/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=smithnephews-new-flow-flextend-coblation-wand-improves-access-and-resection-efficiency-for-complex-hip-procedures-vs-fixed-angle-options",
-     "https://www.fiercebiotech.com/medtech/johnson-johnson-medtech-nabs-monarch-quest-3-update-lung-cancer-detection"
+     "https://www.medicaldesignandoutsourcing.com/first-look-jj-medtech-ottava-surgical-robotics-system/",
+     "https://www.fiercebiotech.com/medtech/johnson-johnson-medtech-nabs-monarch-quest-3-update-lung-cancer-detection",
+     "https://orthospinenews.com/2026/08/20/aclarion-announces-addition-of-university-of-arizona-college-of-medicine-phoenix-as-clarity-trial-site/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=aclarion-announces-addition-of-university-of-arizona-college-of-medicine-phoenix-as-clarity-trial-site",
+     "510k:K262357",
+     "510k:K261563"
     ],
     "nota": "prodotti, autorizzazioni e mercato; i richiami vivono nella fonte openfda"
    }
