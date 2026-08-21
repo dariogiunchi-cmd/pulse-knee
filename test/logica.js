@@ -17,41 +17,18 @@ var pass=0,fail=0;
 function ok(c,m){console.log((c?'✅':'❌')+' '+m);c?pass++:fail++;}
 
 console.log('\n--- 0. LAVORO DEL GIORNO E COLONNA DESTRA ---');
-// L'INDICE del giorno: copertura completa, una riga per voce, conteggi derivati.
-renderGiorno();
-var _voci=vociIndice();
-ok(_voci.length===ARTICLES.length+EXTRA.length+SCOPERTE.length,
-   'ogni cosa rilevante del giorno è nell\'indice: '+_voci.length+' voci, nessun tetto');
-var _gi=document.getElementById('gindice').innerHTML;
-ok((_gi.match(/class="irow"/g)||[]).length>=_voci.length-1,
-   'una riga per ogni voce (l\'evidenza conta come riga del suo dominio)');
-ok(document.getElementById('gmisura').textContent.indexOf(String(_voci.length)+' rilevanti')>=0,
-   'l\'intestazione dichiara la misura, contata e mai scritta a mano');
-ok(_gi.indexOf('— nulla oggi')>=0 || DOMINI.every(function(d){return _voci.some(function(v){return v.dom===d[0]})}),
-   'un dominio senza voci si contrae in una riga sola');
-ok(document.getElementById('gevid').innerHTML.indexOf((A[PICK].riga||A[PICK].h).slice(0,40))>=0,
-   'l\'evidenza del giorno è il lavoro indicato da PICK, dai dati');
-var _oldPick=PICK;PICK=99999;renderGiorno();
-ok(document.getElementById('gindice').innerHTML.length>200,'PICK rotto → l\'indice resta in piedi');
-PICK=_oldPick;renderGiorno();
-// la riga: fatto (riga o h), mai il vuoto; senza dominio si finisce in «Altro», non nel nulla
-var _domV=ARTICLES[1].dom;ARTICLES[1].dom='';renderGiorno();
-ok(document.getElementById('gindice').innerHTML.indexOf('Altro')>=0,
-   'una voce senza dominio finisce in «Altro», non sparisce');
-ARTICLES[1].dom=_domV;renderGiorno();
-// il giudizio unico: per PMID, pesi da soli, «utile» archivia, annullo simmetrico
-var _pm=ARTICLES[0].pmid;var _aG=_artPm(_pm);
-giudica(_pm,1);
-ok(S.giudizi[_pm]===1,'✓ utile registrato per PMID, non per posizione');
-ok(S.savedItems.some(function(x){return x.a&&x.a.pmid===_pm}),'«utile» archivia la scheda da sola');
-ok((S.pesi.riviste||{})[_aG.j]===1,'il giudizio aggiorna i pesi della rivista da solo');
-giudica(_pm,1);
-ok(!S.giudizi[_pm]&&!(S.pesi.riviste||{})[_aG.j]&&!S.savedItems.some(function(x){return x.a&&x.a.pmid===_pm}),
-   'toccare di nuovo annulla giudizio, peso e archiviazione');
-vote(null,ARTICLES[1].n,-1);
-ok(S.giudizi[ARTICLES[1].pmid]===-1,'i pollici delle schede parlano la stessa lingua: giudizio per PMID');
-giudica(ARTICLES[1].pmid,-1);
-S.pesi={};save();
+// Il 5 agosto 2026 la scheda in cima era quella scelta il 2: HTML scritto a mano.
+// Qui si verifica che venga dai dati, che regga se PICK punta a nulla, e che i giorni
+// alle scadenze siano CALCOLATI — nessuna data scritta a mano (regola 11).
+renderPick();
+var _pb=document.getElementById('pickbox').innerHTML;
+var _pa=pickArt();
+ok(!!_pa,'esiste un lavoro del giorno');
+ok(_pb.indexOf(_pa.h)>=0,'la scheda in cima è quella indicata da PICK ('+_pa.n+')');
+ok(_pb.indexOf(_pa.h)===_pb.lastIndexOf(_pa.h),'il titolo compare una volta sola, non due');
+var _oldPick=PICK; PICK=99999; renderPick();
+ok(document.getElementById('pickbox').innerHTML.length>50,'PICK che punta a una scheda inesistente → ripiega, non lascia il vuoto');
+PICK=_oldPick; renderPick();
 
 // scadenze: si costruiscono date relative a oggi, mai letterali
 function _fra(g){var d=new Date(Date.now()+g*86400000);
@@ -62,27 +39,14 @@ ok(scadenzaTesto(_fra(1)).indexOf('domani')>=0,'fra un giorno → «domani», no
 ok(scadenzaTesto(_fra(0)).indexOf('scade oggi')>=0,'oggi → «scade oggi»');
 ok(scadenzaTesto(_fra(-2)).indexOf('scaduta')>=0,'passata → dichiarata scaduta, mai un numero positivo');
 var _oc=CONGRESSI;
-CONGRESSI=[{sig:'BBB',citta:'Prova',date:'1-2 dic',abstract:_fra(40)},{sig:'AAA',citta:'X',date:'giu',abstract:_fra(20)},{sig:'VECCHIO',abstract:_fra(-40)}];
-renderGiorno();
-var _gc=document.getElementById('gindice').innerHTML;
-ok(_gc.indexOf('AAA')>=0&&_gc.indexOf('BBB')>=0,'i congressi sono righe strutturate: sigla, città, date, scadenze');
-ok(_gc.indexOf('AAA')<_gc.indexOf('BBB'),'ordinati per scadenza più vicina, non per data del congresso');
-ok(_gc.indexOf('VECCHIO')<0,'un congresso con le scadenze passate sparisce da solo');
-ok(_gc.indexOf('iscad')>=0&&_gc.indexOf('iscad forte')<0,'scadenza entro 30 giorni evidenziata, senza gridare');
-CONGRESSI=[{sig:'SETTE',abstract:_fra(3)}];renderGiorno();
-ok(document.getElementById('gindice').innerHTML.indexOf('iscad forte')>=0,'entro 7 giorni l\'evidenza si rafforza');
-CONGRESSI=[];renderGiorno();
-ok(document.getElementById('gindice').innerHTML.indexOf('Congressi — nulla oggi')>=0,
-   'senza congressi: una riga dal punto di vista dell\'utente, niente scuse di sistema');
-CONGRESSI=_oc;renderGiorno();
-// industria: righe, coi richiami in coda
-var _oi=INDUSTRIA;
-INDUSTRIA=[{tipo:'richiamo',fonte:'openFDA',riga:'Richiamo di prova'},{fonte:'MassDevice',riga:'Lancio di prova di un sistema'}];
-renderGiorno();
-var _gind=document.getElementById('gindice').innerHTML;
-ok(_gind.indexOf('Lancio di prova')<_gind.indexOf('Richiamo di prova'),
-   'in Industria le notizie vengono prima, i richiami in coda');
-INDUSTRIA=_oi;renderGiorno();
+CONGRESSI=[{sig:'X',nome:'Prova vecchia',scad:_fra(-30)},{sig:'Y',nome:'Prova viva',scad:_fra(4)}];
+renderLato();
+var _lb=document.getElementById('latobox').innerHTML;
+ok(_lb.indexOf('Prova viva')>=0,'una scadenza futura si mostra');
+ok(_lb.indexOf('Prova vecchia')<0,'una scadenza di un mese fa sparisce da sola');
+CONGRESSI=[]; renderLato();
+ok(document.getElementById('latobox').innerHTML.indexOf('Nessuna scadenza verificata')>=0,'senza congressi verificati lo dice, invece di tacere');
+CONGRESSI=_oc; renderLato();
 
 console.log('\n--- 1. FALLIMENTO SILENZIOSO ---');
 // Il banner si collauda contro la verità del giorno, non contro l'ipotesi che il file
@@ -91,17 +55,17 @@ console.log('\n--- 1. FALLIMENTO SILENZIOSO ---');
 var _bdReale=BUILD_DATE;
 var _n=new Date(), _oggiIso=_n.getFullYear()+'-'+('0'+(_n.getMonth()+1)).slice(-2)+'-'+('0'+_n.getDate()).slice(-2);
 BUILD_DATE=_oggiIso; renderFresh();
-ok(document.getElementById('gfresh').innerHTML==='','briefing di oggi → nessun banner: il successo è il silenzio, lo dice il verdetto');
+ok(document.getElementById('freshbox').innerHTML.indexOf('Aggiornato oggi')>=0,'briefing di oggi → banner verde "Aggiornato oggi"');
 BUILD_DATE=_bdReale; renderFresh();
-ok(_bdReale===_oggiIso ? document.getElementById('gfresh').innerHTML===''
-   : document.getElementById('gfresh').innerHTML.length>0,
-   'file di oggi → silenzio; file vecchio → dichiarato');
+ok(_bdReale===_oggiIso ? document.getElementById('freshbox').innerHTML.indexOf('Aggiornato oggi')>=0
+   : document.getElementById('freshbox').innerHTML.indexOf('Aggiornato oggi')<0,
+   'con il file di oggi dice «aggiornato oggi», con un file vecchio non lo dice');
 // L'attesa non è un guasto: alle 7:10, con il briefing in preparazione, l'app diceva
 // «qualcosa non ha funzionato». Questi controlli fissano i tre stati distinti.
 var _real=BUILD_DATE, _ieri=new Date(Date.now()-86400000);
 BUILD_DATE=_ieri.getFullYear()+'-'+('0'+(_ieri.getMonth()+1)).slice(-2)+'-'+('0'+_ieri.getDate()).slice(-2);
 renderFresh();
-var _t=document.getElementById('gfresh').innerHTML, _h=new Date().getUTCHours();
+var _t=document.getElementById('freshbox').innerHTML, _h=new Date().getUTCHours();
 var _hm=new Date().getUTCHours()+new Date().getUTCMinutes()/60;
 if(_hm>=5&&_hm<6.5) ok(_t.indexOf('in preparazione')>=0,'ieri, nell\'ora del briefing → «in preparazione», non un allarme');
 else if(_h<5)   ok(_t.indexOf('arriva verso le 7')>=0,'ieri, di notte → attesa dichiarata, nessun allarme');
@@ -114,7 +78,7 @@ BUILD_DATE=_real;
 // stati qui sopra (notte · in preparazione · non arrivato).
 var real=BUILD_DATE; var _5g=new Date(Date.now()-5*86400000);
 BUILD_DATE=_5g.getFullYear()+'-'+('0'+(_5g.getMonth()+1)).slice(-2)+'-'+('0'+_5g.getDate()).slice(-2); renderFresh();
-ok(document.getElementById('gfresh').innerHTML.indexOf('giorni fa')>=0 && document.getElementById('gfresh').innerHTML.indexOf('non sta girando')>=0,'5 giorni fa → allarme rosso con istruzione');
+ok(document.getElementById('freshbox').innerHTML.indexOf('giorni fa')>=0 && document.getElementById('freshbox').innerHTML.indexOf('non sta girando')>=0,'5 giorni fa → allarme rosso con istruzione');
 BUILD_DATE=real;
 
 console.log('\n--- 2. ALLERTA RITRATTAZIONE ---');
@@ -179,9 +143,15 @@ ok(document.getElementById('auditbox').innerHTML.indexOf('fuori finestra')>=0,'d
 
 console.log('\n--- 7. NON-REGRESSIONE (tutto il resto) ---');
 toggleSave(null,P2);ok(S.saved.indexOf(P2)>=0,'Salva');
-vote(null,P3,1);ok(S.giudizi[A[P3].pmid]===1,'Voto ✓ (per PMID)');giudica(A[P3].pmid,1);
+vote(null,P3,1);ok(S.votes[P3]===1,'Voto 👍');
 toggle(P2);ok(S.seen.indexOf(P2)>=0,'Segna letto');
 renderResearch();ok(true,'Filtri + verdetto');
+renderVerdict();
+var VH=document.getElementById('verdict').innerHTML;
+var ARANCI=ARTICLES.filter(function(a){return a.sec=='res'&&a.dot=='orange'}).length;
+ok(ARANCI ? (VH.indexOf('in discussione')>=0 && VH.indexOf('vitem')>=0)
+          : (VH.indexOf('niente mette in discussione')>=0),
+   'Verdetto del giorno: '+(ARANCI?ARANCI+' lavori in discussione, con i titoli':'giornata senza contraddizioni, dichiarata'));
 renderSaved();ok(true,'Ricerca salvati');
 if(PSOC!==undefined){openSocial(null,PSOC);ok(curSoc===PSOC,'Contenuti social');}else{ok(typeof openSocial==='function','Contenuti social: nessun lavoro oggi, la funzione c\'è');}
 speakCard(null,P2);ok(true,'Lettura vocale scheda');
@@ -190,7 +160,7 @@ var CN=NN.filter(function(n){return typeof CONF!=='undefined'&&CONF[n]});
 ok(CN.length ? CN.every(function(n){return confHTML(n).indexOf(CONF[n])>=0})
              : typeof confHTML==='function',
    'Barre di confidenza'+(CN.length?' su '+CN.length+' schede, coerenti con CONF':': la funzione c\'è'));
-ok(typeof renderPlayer==='function'&&typeof audioPlayPausa==='function'&&typeof audioSalta==='function','il lettore MP3 esiste: play, salti, velocità');
+ok(typeof speakBrief==='function','Riassunto vocale');
 ok(JSON.parse(store['pulse4']).saved.length>0,'Persistenza');
 console.log('\n=========================');
 console.log('PASSATI: '+pass+'   FALLITI: '+fail);
