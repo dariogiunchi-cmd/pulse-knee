@@ -7,11 +7,21 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 20 agosto 2026.*
+*Ultimo aggiornamento: 21 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-08-21 | Lancet | RACER-Knee: RCT pragmatico multicentrico in cieco, protesi robot-assistita (Mako) vs convenzionale, nessun beneficio clinico a 12 mesi (339 pz) | 10.1016/S0140-6736(26)00986-4 | protesi robotica, RCT, VELYS | aperto — 🟠 contraddice il razionale della tua chirurgia con VELYS (piattaforma diversa); FJS a 12 mesi -1,5 punti (IC 95% -7,5/+4,5; p=0,62) contro un target di 12; costo maggiore, sicurezza sovrapponibile; PICK del giorno
+2026-08-21 | J Robot Surg | Revisione narrativa 2015-2025 su precisione radiologica ed esiti clinici della protesi robot-assistita | 10.1007/s11701-026-03787-7 | protesi robotica, revisione, VELYS | aperto — 🟠 anticipa la conclusione del RCT dello stesso giorno: precisione reale, beneficio clinico duraturo non dimostrato, standard prevalentemente di livello III
+2026-08-21 | AJSM | Slope tibiale posteriore aumentato e LET indipendentemente associati alla revisione del LCA in popolazione giovane ad alto rischio (coorte multicentrica, 780) | 10.1177/03635465261473931 | let, slope, revisione lca | aperto — LET associato a rischio di revisione più basso indipendentemente dallo slope (OR 0,37; IC 95% 0,22-0,62); innesto aggiustato non stratificato, non conferma il beneficio specifico sul tendine quadricipitale
+2026-08-21 | The Knee | LET e recupero di forza/spessore del quadricipite nei primi 9 mesi dopo ricostruzione del LCA (coorte prospettica, 268) | 10.1016/j.knee.2026.104607 | let, quadricipite, recupero funzionale | aperto — MUTO: incrementi di forza riportati solo come p entro-gruppo (11,2N LET vs 5,9N non-LET), nessun confronto diretto fra gruppi riportato
+2026-08-21 | Ann Jt | Il ruolo del LET nell'atleta infortunato al LCA: revisione narrativa aggiornata | 10.21037/aoj-2025-1-97 | let, atleti, revisione | aperto — quadro generale favorevole (stabilità, tasso di fallimento, nessun eccesso di artrosi laterale con tecnica moderna); non distingue i costrutti di fissazione
+2026-08-21 | OTSR | Innovazioni francesi diventate standard: trocleoplastica, osteotomia Scarf, procedure anterolaterali nella ricostruzione del LCA, conservazione meniscale (con David Dejour) | 10.1016/j.otsr.2026.104866 | let, allr, conservazione meniscale | aperto — livello V, opinione di esperti; colloca il LET fra gli standard internazionali senza distinguere onlay da profondo con graffa
+2026-08-21 | KSSTA | ACLR con riparazione all-inside della radice del menisco laterale: sopravvivenza dell'innesto comparabile alla ricostruzione isolata (coorte, 841) | 10.1002/ksa.70574 | root, menisco laterale, lca | aperto — MUTO: HR 1,5 (IC 95% 0,6-3,9; p=0,407); RR grezzo 1,74 (IC 95% 0,72-4,23), non esclude un rischio quasi quadruplicato; tecnica all-inside e radice laterale, diverse dalla tua transtibiale mediale
+2026-08-21 | Arthroscopy | Analisi del database FDA MAUDE sui guasti dei dispositivi di sutura meniscale all-inside (2.056 segnalazioni) | 10.1002/arj.70453 | menisco, dispositivi, sicurezza | aperto — pattern di guasto specifici per design (frattura per ancore a tutta sutura, incompatibilità per nodo capsulare, errori di attivazione per nodo meniscale); nessun denominatore, non calcolabile un'incidenza reale
+2026-08-21 | Orthop Rev | Allineamento funzionale vs meccanico in protesi robot-assistita, sistema CORI: recupero precoce migliore, convergenza a 12 mesi (RCT, 100) | 10.52965/001c.166120 | protesi robotica, allineamento, CORI | aperto — MUTO a 12 mesi (campione piccolo, IC non riportato); non è VELYS; segnale a favore della personalizzazione dell'allineamento
 
 2026-08-20 | KSSTA | Deutsche Kniegesellschaft, raccomandazioni sullo slope tibiale posteriore aumentato nel LCA (Comitato Osteotomie, 14 esperti) | 10.1002/ksa.70549 | slope, osteotomia, consensus | aperto — no soglia fissa, valutazione individuale del rischio, approccio infratuberositario raccomandato; peso peritale alto
 2026-08-20 | J Exp Orthop | Slope tibiale posteriore associato alla rottura e ri-rottura del LCA (coorte, 1.406) | 10.1002/jeo2.70890 | slope, crociato anteriore, osteotomia | aperto — determinante indipendente dominante dello slope è lo stato del LCA (+2,52°/+3,63° vs controlli); soglia 10° con AUC 0,73-0,79
@@ -124,6 +134,24 @@ nell'abstract — ma è un segnale di sicurezza del LET in età più avanzata de
 casistica tipica. Un trial osservazionale dedicato è in reclutamento (NCT07041242,
 >50 vs <30 anni).
 
+**Nuovo il 21 agosto 2026.** Una coorte multicentrica olandese (van der Wal et al.,
+*AJSM*) su 780 pazienti ≤25 anni mostra che il LET si associa a un rischio di
+revisione del LCA più basso **indipendentemente dal grado di slope tibiale**
+(OR 0,37; IC 95% 0,22-0,62; p<0,001), mentre lo slope aumentato resta un fattore di
+rischio indipendente (OR 1,09/grado). **Il tipo di innesto è incluso come covariata
+aggiustata, non stratificato**: l'abstract non conferma esplicitamente che il
+beneficio si estenda al tendine quadricipitale/rettofemorale. Nello stesso giorno,
+una coorte cilena (Yañez et al., *The Knee*, 268 pazienti) suggerisce che forza e
+spessore del quadricipite recuperano più in fretta nei primi 9 mesi con il LET
+(vasto intermedio in particolare) — ma il confronto statistico diretto fra i due
+gruppi non è riportato: dato suggestivo, non dimostrato (vedi MUTE). Due revisioni
+narrative dello stesso giorno (*Annals of Joint*, con Alan Getgood; *OTSR*, con
+David Dejour) confermano il quadro clinico generale favorevole al LET senza
+aggiungere dati quantitativi sul tuo innesto specifico. Il raccoglitore notturno
+segnala inoltre un trial nuovo, non ancora in reclutamento, disegnato apposta per
+questa domanda: **NCT07777458**, effetto del LET sul recupero della massa magra
+dell'arto dopo ricostruzione del LCA, 40 pazienti.
+
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
 **Verificata sul full text di STABILITY 2.** Il protocollo prescrive: banderella di
@@ -153,6 +181,13 @@ lo sfondo anatomico della tensione, non la chiude.**
 **Cosa la chiude:** uno studio comparativo fra costrutti, oggi inesistente.
 **È il buco più pubblicabile emerso finora:** una serie sull'onlay superficiale con
 Lemaire modificato su innesto quadricipitale non esiste in letteratura.
+
+**Nuovo il 21 agosto 2026.** Una rassegna storico-concettuale francese (Favreau,
+Mehdi, Barouk, Philippeau, **David Dejour**, Graveleau — *OTSR*) colloca la
+ricostruzione anterolaterale associata al LCA fra i contributi francesi diventati
+standard internazionale, insieme alla trocleoplastica e alla conservazione
+meniscale. Livello V, opinione di esperti: **conferma il LET come pratica diffusa,
+non distingue il costrutto onlay dal profondo con graffa — non chiude la tensione.**
 
 ### T2b — L'estrusione, non il timing né il grado condrale *(riformulata 2026-08-01, sostituisce T2)*
 
@@ -191,6 +226,19 @@ intervalli non escludono un rischio anche più che quadruplicato in un senso o
 nell'altro (calcolato con `test/potenza.py`: RR 1,43 IC 0,46-4,49 e RR 0,36 IC
 0,03-3,84).
 
+**Nuovo il 21 agosto 2026, angolo diverso (sopravvivenza dell'innesto, non
+progressione cartilaginea).** Coorte francese monocentrica (Carrozzo, Cavaignac et
+al., *KSSTA*) su 841 ginocchia: combinare la riparazione all-inside della radice
+del menisco **laterale** con la ricostruzione del LCA non è associata in modo
+indipendente a una minore sopravvivenza libera da ri-rottura rispetto al LCA
+isolato (HR 1,5; IC 95% 0,6-3,9; p=0,407). Il gruppo combinato è piccolo (55
+pazienti): calcolo sui conteggi grezzi con `test/potenza.py` dà RR 1,74 (IC 95%
+0,72-4,23) — **non esclude un rischio di ri-rottura fino a 4,23 volte più alto: un
+dato muto, non un'equivalenza dimostrata.** Tecnica all-inside e radice laterale,
+diverse dalla tua transtibiale sulla radice mediale: non tocca direttamente la tua
+tecnica, ma è il primo dato di sopravvivenza dell'innesto su un intervento
+combinato di questo tipo.
+
 ### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22)*
 
 La simmetria di forza è il criterio clinico più usato; la meta-regressione che lo
@@ -226,6 +274,14 @@ campo è del 66,8% (mediana 9,8 mesi), ma nel primo anno di rientro il tempo di 
 cala del 47-58% (p<0,001), con le centrocampiste più penalizzate (-41,2%) e le
 portiere quasi invariate: anche in una popolazione d'élite, tornare in campo non è
 tornare al livello precedente.
+
+**Aggiornata il 21 agosto 2026.** La stessa coorte cilena di 268 pazienti che tocca
+la T1a (Yañez et al., *The Knee*) suggerisce che forza e spessore del quadricipite
+recuperano più in fretta nei primi 9 mesi quando si aggiunge il LET — coerente con
+l'ipotesi che il criterio di rientro debba considerare la componente muscolare, non
+solo la stabilità legamentosa. **Ma il confronto statistico diretto fra il gruppo
+LET e quello senza non è riportato nell'abstract** (solo p entro-gruppo: 11,2N
+p<0,001 vs 5,9N p=0,155): dato suggestivo, non dimostrato.
 
 **Cosa la chiude:** studi che leghino il deficit di attivazione a esiti duri —
 rirottura o mancato rientro — non a misure intermedie.
