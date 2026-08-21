@@ -20,7 +20,7 @@ Uso:  python3 test/raccolta.py            scrive fonti/raccolta.json
                                           canali YouTube candidati (si usa a mano
                                           finché la configurazione non è stabile)
 """
-import json, os, re, sys, time
+import json, html, os, re, sys, time
 import urllib.parse
 import urllib.request, urllib.error
 from datetime import datetime, timedelta, timezone
@@ -403,6 +403,82 @@ def preprint():
             'nota': 'preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove'}
 
 
+
+def _industria_pertinente(testo, cfg):
+    """Vero se il testo tocca il ginocchio o una delle aziende sorvegliate del mercato.
+    Funzione PURA, così il filtro si collauda senza rete."""
+    t = testo.lower()
+    if any(a.lower() in t for a in cfg.get('industria_aziende', [])):
+        return True
+    return any(p.lower() in t for p in cfg.get('industria_parole', []))
+
+
+def industria():
+    """Prodotti e mercato (Addendum 4 §5): stampa di settore via RSS + autorizzazioni
+    FDA 510(k) ortopediche. I richiami NON stanno qui (hanno la loro fonte openfda).
+    Dedup con la notte precedente: si riportano solo le voci mai viste."""
+    visti_prima = set()
+    try:
+        prec = json.load(open(os.path.join(APP, 'fonti', 'raccolta.json'), encoding='utf-8'))
+        ind_prec = (prec.get('fonti', {}).get('industria', {}) or {}).get('dati', {}) or {}
+        visti_prima = set(ind_prec.get('visti', []))
+    except Exception:
+        pass
+    voci, visti, canali = [], [], []
+    for f in CFG.get('industria_feed', []):
+        try:
+            xml = prendi(f['url'])
+            items = re.findall(r'<item>([\s\S]*?)</item>', xml)[:60]
+            n_presi = 0
+            for it in items:
+                mt = re.search(r'<title>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?</title>', it)
+                ml = re.search(r'<link>([\s\S]*?)</link>', it)
+                md = re.search(r'<pubDate>([\s\S]*?)</pubDate>', it)
+                if not mt or not ml:
+                    continue
+                titolo = html.unescape(mt.group(1).strip())
+                link = ml.group(1).strip()
+                if not _industria_pertinente(titolo, CFG):
+                    continue
+                visti.append(link)
+                if link in visti_prima:
+                    continue
+                voci.append({'titolo': titolo, 'url': link, 'fonte': f['nome'],
+                             'data': (md.group(1).strip()[:16] if md else '')})
+                n_presi += 1
+            canali.append({'nome': f['nome'], 'esito': 'ok', 'voci': n_presi})
+        except Exception as e:
+            canali.append({'nome': f['nome'], 'esito': f'non risposto: {type(e).__name__}'})
+    # autorizzazioni 510(k) ortopediche degli ultimi 14 giorni (precedono i lanci)
+    try:
+        da = (OGGI - timedelta(days=14)).strftime('%Y%m%d')
+        a = OGGI.strftime('%Y%m%d')
+        u = ('https://api.fda.gov/device/510k.json?search=decision_date:[' + da + '+TO+' + a
+             + ']+AND+advisory_committee:OR&limit=100')
+        js = json.loads(prendi(u))
+        n_presi = 0
+        for r in js.get('results', []):
+            nome_disp = (r.get('device_name') or '')
+            if not _industria_pertinente(nome_disp, CFG):
+                continue
+            kn = r.get('k_number', '')
+            visti.append('510k:' + kn)
+            if ('510k:' + kn) in visti_prima:
+                continue
+            voci.append({'titolo': nome_disp + ' — ' + (r.get('applicant') or 'richiedente non riportato'),
+                         'url': 'https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=' + kn,
+                         'fonte': 'FDA 510(k)', 'data': r.get('decision_date', ''), 'tipo': 'autorizzazione'})
+            n_presi += 1
+        canali.append({'nome': 'FDA 510(k)', 'esito': 'ok', 'voci': n_presi})
+    except Exception as e:
+        canali.append({'nome': 'FDA 510(k)', 'esito': f'non risposto: {type(e).__name__}'})
+    if not any(c['esito'] == 'ok' for c in canali):
+        raise RuntimeError('nessun canale industria raggiunto')
+    return {'voci': voci[:40], 'canali': canali,
+            'visti': list(dict.fromkeys(list(visti_prima) + visti))[-800:],
+            'nota': 'prodotti, autorizzazioni e mercato; i richiami vivono nella fonte openfda'}
+
+
 # ---------------------------------------------------------------- esecuzione
 if __name__ == '__main__':
     scopri = '--scopri' in sys.argv
@@ -418,6 +494,7 @@ if __name__ == '__main__':
                'linee_guida': fonte(linee_guida),
                'polso': fonte(polso),
                'preprint': fonte(preprint),
+               'industria': fonte(industria),
            }}
     if scopri:
         out['scoperta'] = {'swissmedic': fonte(swissmedic_scopri), 'youtube': fonte(youtube_scopri)}
