@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-20T05:51:32Z",
+ "generato": "2026-08-21T05:17:33Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -8,7 +8,7 @@
     "richiami": [
      {
       "recalling_firm": "Kico Knee Innovation Company",
-      "product_description": "Brand Name: Kico Knee Innovation\r\nProduct Name: ARVIS SURGICAL NAVIGATION SYSTEM GEN 2\r\nModel/Catalog Number: IN-29200\r\nSoftware Version: ARVIS Hip and Knee Gap Balance Software v3.3.2 (IN-28200)\r\nARVIS Shoulder Software v2.0.3 (IN-23630)\r\nProduct Description: The ARVIS system is a computer-controlled navigation system intended to provide intra-operative measurements to the surgeon to aid in selection and positioning of orthopedic implant components. \r\n\r\n \r\n\r\nThe ARVIS Surgical Navigation System is indicated for assisting the surgeon in the positioning and alignment of implants relative to reference alignment axes and landmarks in stereotactic orthopedic surgery. The system aids the surgeon in making intraoperative measurements such as changes in leg length in Hip Arthroplasty. The system is compatible with straight acetabular impactors and with specific offset impactors, identified in the instructions for use, for which an adapter has been validated. Example orthopedic surgical procedures include but are not limited to:  \r\n\r\n\" Total Knee Arthroplasty  \r\n\r\n\" Unicompartmental Knee Arthroplasty: Tibial Transverse Resection  \r\n\r\n\" Hip Arthroplasty \r\n\r\n \r\n\r\nThe ARVIS\" head mounted display is for displaying augmented reality visualization and information to the user intraoperatively. The augmented/virtual displayed information should not be relied upon solely for absolute positional/alignment information and should always be used in conjunction with the displayed stereotaxic information.\r\nComponent: NA",
+      "product_description": "Brand Name: Kico Knee Innovation\nProduct Name: ARVIS SURGICAL NAVIGATION SYSTEM GEN 2\nModel/Catalog Number: IN-29200\nSoftware Version: ARVIS Hip and Knee Gap Balance Software v3.3.2 (IN-28200)\nARVIS Shoulder Software v2.0.3 (IN-23630)\nProduct Description: The ARVIS system is a computer-controlled navigation system intended to provide intra-operative measurements to the surgeon to aid in selection and positioning of orthopedic implant components. \n\n \n\nThe ARVIS Surgical Navigation System is indicated for assisting the surgeon in the positioning and alignment of implants relative to reference alignment axes and landmarks in stereotactic orthopedic surgery. The system aids the surgeon in making intraoperative measurements such as changes in leg length in Hip Arthroplasty. The system is compatible with straight acetabular impactors and with specific offset impactors, identified in the instructions for use, for which an adapter has been validated. Example orthopedic surgical procedures include but are not limited to:  \n\n\" Total Knee Arthroplasty  \n\n\" Unicompartmental Knee Arthroplasty: Tibial Transverse Resection  \n\n\" Hip Arthroplasty \n\n \n\nThe ARVIS\" head mounted display is for displaying augmented reality visualization and information to the user intraoperatively. The augmented/virtual displayed information should not be relied upon solely for absolute positional/alignment information and should always be used in conjunction with the displayed stereotaxic information.\nComponent: NA",
       "reason_for_recall": "Due to an internal sensor issue, image displayed with eyepiece may appear tilted relative to the eyepiece housing",
       "root_cause_description": "Device Design",
       "event_date_initiated": "2026-07-13",
@@ -498,6 +498,17 @@
      "sorveglianza": "LET / tenodesi laterale",
      "studi": [
       {
+       "nct": "NCT07777458",
+       "titolo": "The Effect of Lateral Extra-Articular Tenodesis on Lower-Extremity Lean Mass Recovery Following Anterior Cruciate Ligament Reconstruction",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-08-20",
+       "fase": [
+        "NA"
+       ],
+       "n": 40,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
        "nct": "NCT06868147",
        "titolo": "Long-term Clinical and Radiographic Results of Revision Anterior Cruciate Ligament Reconstruction Using a Single-bundle Technique and External Tenodesis With Achilles Tendon Allograft.",
        "stato": "RECRUITING",
@@ -565,34 +576,12 @@
        "fase": null,
        "n": 335,
        "tipo": "OBSERVATIONAL"
-      },
-      {
-       "nct": "NCT06664047",
-       "titolo": "Over-the-Top vs. Anteromedial ACLR With Lateral Extraarticular Tenodesis",
-       "stato": "RECRUITING",
-       "aggiornato": "2024-10-31",
-       "fase": [
-        "NA"
-       ],
-       "n": 150,
-       "tipo": "INTERVENTIONAL"
       }
      ]
     },
     {
      "sorveglianza": "Innesto quadricipitale",
      "studi": [
-      {
-       "nct": "NCT07580157",
-       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
-       "stato": "ENROLLING_BY_INVITATION",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 20,
-       "tipo": "INTERVENTIONAL"
-      },
       {
        "nct": "NCT07753707",
        "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
@@ -602,6 +591,17 @@
         "NA"
        ],
        "n": 111,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07580157",
+       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 20,
        "tipo": "INTERVENTIONAL"
       },
       {
