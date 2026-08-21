@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-21T05:17:33Z",
+ "generato": "2026-08-21T05:52:56Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 94,
+    "doi_citati_controllati": 103,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -775,6 +775,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42624811",
+     "titolo": "Lancet — RACER-Knee, il RCT più ampio e rigoroso mai condotto su TKR robot-assistita (Mako): nessun beneficio ",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42545819",
      "titolo": "KSSTA — Il ginocchio tedesco raccomanda un approccio individuale allo slope aumentato nel LCA (Deutsche Kniege",
