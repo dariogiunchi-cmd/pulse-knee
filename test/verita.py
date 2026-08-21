@@ -39,7 +39,7 @@ _blocco_art = re.search(r'var ARTICLES=(\[.*?\]);', h, re.S)
 _art = _blocco_art.group(1) if _blocco_art else h
 pmid  = re.findall(r"pmid:'(\d+)'", _art)
 doi   = re.findall(r"doi:'([^']+)'", _art)
-narts = len(re.findall(r"\{n:\d+,mono:", _art))
+narts = len(re.findall(r"\{n:\d+,", _art))
 
 chk("ci sono schede", narts > 0, narts)
 chk("ogni scheda ha un PMID", len(pmid) == narts, (len(pmid), narts))
@@ -84,8 +84,8 @@ if citv is not None and citv.isdigit():
 # nello storico ma mai nell'app, rimasto visibile all'utente per venti pubblicazioni.
 _visibile = re.sub(r'<script>[\s\S]*?</script>', '', h)
 chk("l'intestazione non contiene numeri scritti a mano",
-    not re.search(r'class="kpi[^"]*"><b>\d+</b>', _visibile) and 'id="gverd"' in h,
-    "i conteggi in cima vanno contati, non scritti; il verdetto si genera")
+    not re.search(r'class="kpi[^"]*"><b>\d+</b>', _visibile) and 'id="gmisura"' in h,
+    "i conteggi in cima vanno contati, non scritti; la misura si genera")
 chk("la data non è scritta a mano",
     not re.search(r'class="date"[^>]*>\s*\w+\s+\d+\s+\w+\s+\d{4}', _visibile),
     "la data va derivata da BUILD_DATE")
@@ -115,7 +115,7 @@ for nome, chiave in [('CONF', 'livello di evidenza'), ('MUTE', 'studi muti'),
         chiavi = re.findall(r'[\{,]\s*"?(\d+)"?\s*:', m.group(1))
     except Exception:
         continue
-    numeri = set(re.findall(r"\{n:(\d+),mono:", h))
+    numeri = set(re.findall(r"\{n:(\d+),", h))
     orfani = sorted(set(chiavi) - numeri)
     chk(f"«{chiave}» non punta a schede inesistenti", not orfani, orfani[:5])
 
@@ -124,7 +124,7 @@ for nome in ['LINKS', 'DUELS']:
     if not m: continue
     rif = set(re.findall(r'[ab]:(\d+)|\{n:(\d+),rel', m.group(1)))
     rif = {x or y for x, y in rif} if rif and isinstance(next(iter(rif)), tuple) else rif
-    numeri = set(re.findall(r"\{n:(\d+),mono:", h))
+    numeri = set(re.findall(r"\{n:(\d+),", h))
     orf = sorted({r for r in rif if r} - numeri)
     chk(f"«{nome}» non punta a schede inesistenti", not orf, orf[:5])
 
@@ -179,29 +179,28 @@ if ko:
     sys.exit(1)
 print(f"✅ CONTROLLI DI VERITÀ SUPERATI — {narts} schede, {len(set(pmid))} PMID distinti")
 
-# La SELEZIONE del mattino (schermata unica): al massimo TRE schede, tutte
-# esistenti fra gli ARTICLES del giorno, ognuna con le sue tre risposte piene.
-# Facoltativa: le istantanee precedenti alla variabile restano ripristinabili.
-_m_sel = re.search(r'var SELEZIONE=\{[\s\S]*?\n \]\};|var SELEZIONE=\{[\s\S]*?\]\};', h)
-if _m_sel:
-    _sel = _m_sel.group(0)
-    _psel = re.findall(r"pmid:'(\d+)'", _sel)
-    chk("la selezione del mattino ha al massimo tre schede", 0 < len(_psel) <= 3, len(_psel))
-    chk("ogni scheda selezionata esiste fra gli articoli del giorno",
-        all(x in pmid for x in _psel), [x for x in _psel if x not in pmid][:3])
-    chk("ogni scheda selezionata ha dice, cambia e perché, non vuoti",
-        len(re.findall(r'dice:"[^"]{20,}', _sel)) == len(_psel)
-        and len(re.findall(r'cambia:"[^"]{10,}', _sel)) == len(_psel)
-        and len(re.findall(r'perche:"[^"]{10,}', _sel)) == len(_psel), "campi mancanti o vuoti")
-    chk("il verdetto del giorno è scritto e non vuoto",
-        bool(re.search(r'testo:"[^"]{10,}"', _sel)), "SELEZIONE.testo")
-
-# IL CONTRATTO DEI 60 SECONDI, meccanizzato (rifondazione §3): la lettura completa
-# della schermata — verdetto + allerta + le schede con giudizio — deve stare nel
-# minuto. Stima dichiarata: 3,3 parole/s + 2 s per giudizio + 3 s di orientamento.
-if _m_sel:
-    _parole = len(re.findall(r"(?:testo|allerta|sotto|dice|cambia|perche):\"((?:[^\"\\]|\\.)*)\"", _sel)
-                  and ' '.join(re.findall(r"(?:testo|allerta|dice|cambia|perche):\"((?:[^\"\\]|\\.)*)\"", _sel)).split())
-    _sec = round(_parole / 3.3) + 2 * len(_psel) + 3
-    chk(f"la giornata si legge nel minuto ({_sec}s stimati, {_parole} parole)",
-        _sec <= 60, f"{_sec}s > 60s: asciugare i testi della selezione")
+# L'INDICE DEL GIORNO (correzione di rotta): dominio chiuso e riga da indice.
+# La grammatica è meccanica: fatto in una riga (~90, tetto 100 caratteri), niente
+# domande retoriche; ogni voce porta il suo dominio. I campi sono facoltativi per
+# le istantanee precedenti; quando ci sono, il cancello li esige giusti.
+_DOMINI = {'menisco','cartilagine','legamenti','artroscopia','osteotomie',
+           'protesi','trauma','riab','lineeguida'}
+_righe_idx = re.findall(r'riga:"((?:[^"\\]|\\.)*)"', _art)
+if _righe_idx or re.search(r"\bdom:'", _art):
+    _dom_art = re.findall(r"dom:'([a-z]+)'", _art)
+    chk("ogni scheda ha il suo dominio, dal vocabolario chiuso",
+        len(_dom_art) == narts and all(d in _DOMINI for d in _dom_art),
+        [d for d in _dom_art if d not in _DOMINI][:3] or f"{len(_dom_art)}/{narts}")
+    lunghe = [r[:50] for r in _righe_idx if len(r) > 100]
+    chk("ogni riga dell'indice sta in una riga (tetto 100 caratteri)", not lunghe, lunghe[:2])
+    domande = [r[:50] for r in _righe_idx if r.rstrip().endswith('?')]
+    chk("nessuna domanda retorica nelle righe dell'indice", not domande, domande[:2])
+    if _m_ex:
+        _dom_ex = re.findall(r"dom:'([a-z]+)'", _m_ex.group(1))
+        _n_ex = len(re.findall(r"pmid:'", _m_ex.group(1)))
+        chk("ogni breve ha il suo dominio, dal vocabolario chiuso",
+            len(_dom_ex) == _n_ex and all(d in _DOMINI for d in _dom_ex),
+            f"{len(_dom_ex)}/{_n_ex}")
+        _h_ex = re.findall(r'h:"((?:[^"\\]|\\.)*)"', _m_ex.group(1))
+        _lex = [x[:50] for x in _h_ex if len(x) > 100]
+        chk("anche i brevi stanno in una riga (tetto 100 caratteri)", not _lex, _lex[:2])

@@ -196,23 +196,25 @@
   .anav{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 14px;font-size:var(--t-sec)}
   .anav a{color:var(--azione);cursor:pointer;font-weight:600}
   .gback{font-size:var(--t-sec);font-weight:600;color:var(--azione);cursor:pointer}
-  .gverd{margin:6px 0 0;font-size:var(--t-eroe);line-height:1.22;letter-spacing:-.02em;font-weight:800;color:var(--txt);max-width:24ch}
-  .gall{margin-top:var(--s3);background:rgba(255,59,48,.10);color:var(--allerta);border-radius:var(--r2);padding:10px 13px;font-size:var(--t-sec);font-weight:600;line-height:1.45;cursor:pointer}
-  .gsch{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:var(--s4);margin-top:var(--s4)}
   .gk{font-size:var(--t-badge);font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--dim2);margin-bottom:4px}
-  .gdice{font-size:var(--t-testo);line-height:1.45;font-weight:600}
-  .gsolid{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:var(--s3) 0;font-size:var(--t-meta);color:var(--dim)}
-  .gcambia{font-size:var(--t-sec);line-height:1.5;color:var(--txt)}
-  .gperche{margin-top:var(--s3);font-size:var(--t-meta);color:var(--azione);cursor:pointer;min-height:24px}
-  .gmenu{display:flex;gap:8px;flex-wrap:wrap;margin-top:var(--s2)}
-  .ggiud{display:flex;gap:10px;margin-top:var(--s3)}
-  .gbtn{flex:1;height:44px;border-radius:var(--r2);border:1px solid var(--line);background:var(--tint2);color:var(--txt);font:inherit;font-size:var(--t-sec);font-weight:600;cursor:pointer}
-  .gbtn.sec{flex:0 1 auto;height:38px;font-size:var(--t-meta);padding:0 12px}
-  .gbtn.ok.on{background:var(--pratica);border-color:var(--pratica);color:#fff}
-  .gbtn.no.on{background:var(--contesto);border-color:var(--contesto);color:#fff}
-  .gdet{display:inline-block;margin-top:var(--s3);font-size:var(--t-meta);color:var(--dim);cursor:pointer}
-  .gsotto{margin-top:var(--s4);font-size:var(--t-sec);color:var(--dim);line-height:1.5}
-  .gsotto a{color:var(--azione);cursor:pointer;font-weight:600}
+  .gmisura{margin-top:2px;font-size:var(--t-sec);color:var(--dim);font-weight:600}
+  .ievid{background:var(--carta);border-radius:var(--r);box-shadow:var(--sh);padding:var(--s4);margin-top:var(--s4);cursor:pointer}
+  .ievt{font-size:var(--t-titolo);line-height:1.3;font-weight:700;letter-spacing:-.01em}
+  .idom{margin-top:var(--s4)}
+  .idom.vuoto{margin-top:var(--s3);font-size:var(--t-sec);color:var(--dim2);font-weight:600}
+  .idh{display:flex;align-items:center;gap:8px;font-size:var(--t-meta);font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--txt);cursor:pointer;min-height:32px}
+  .idh .idn{font-weight:700;color:var(--dim2)}
+  .idh .chev{margin-left:auto;color:var(--dim2);font-size:var(--t-sec)}
+  .idb{background:var(--carta);border-radius:var(--r2);box-shadow:var(--sh);margin-top:var(--s2)}
+  .irow{padding:10px var(--s3);border-bottom:1px solid var(--line2);cursor:pointer;position:relative}
+  .idb .irow:last-child{border-bottom:none}
+  .irt{display:block;font-size:var(--t-sec);line-height:1.4;font-weight:600}
+  .irm{display:block;margin-top:2px;font-size:var(--t-micro);color:var(--dim2)}
+  .ipr{position:absolute;right:10px;top:10px;color:var(--attrito);font-size:var(--t-micro)}
+  .iscad{color:var(--attrito);font-weight:700}
+  .iscad.forte{color:var(--allerta)}
+  .gcopert{margin-top:var(--s5);font-size:var(--t-micro);color:var(--dim2)}
+  .gcopert a{color:var(--dim2);cursor:pointer}
   .gplayer{display:flex;align-items:center;gap:8px;margin-top:var(--s5)}
   .gpb{height:44px;min-width:44px;border-radius:var(--r2);border:1px solid var(--line);background:var(--carta);font:inherit;font-size:var(--t-sec);font-weight:700;cursor:pointer;color:var(--txt)}
   .gpb:first-of-type{background:var(--azione);border-color:var(--azione);color:#fff;min-width:52px}
@@ -414,10 +416,9 @@
   <div class="view on" id="giorno">
     <span class="date" id="gdata"></span>
     <div id="gfresh"></div>
-    <h2 class="gverd" id="gverd"></h2>
-    <div id="gallerta"></div>
-    <div id="gschede"></div>
-    <div class="gsotto" id="gsotto"></div>
+    <div class="gmisura" id="gmisura"></div>
+    <div id="gevid"></div>
+    <div id="gindice"></div>
     <div class="gplayer" id="gplayer" style="display:none">
       <audio id="gaudio" preload="metadata"></audio>
       <button class="gpb" id="gpp" onclick="audioPlayPausa()" aria-label="Riproduci o metti in pausa il briefing">▶</button>
@@ -426,6 +427,7 @@
       <button class="gpb sec" id="gvel" onclick="audioVelocita()" aria-label="Velocità di riproduzione">1×</button>
       <span class="gptime" id="gptime"></span>
     </div>
+    <div class="gcopert"><a role="button" tabindex="0" onclick="tab('rassegna')">Copertura delle fonti · dettaglio ›</a></div>
     <div class="gfoot" role="navigation" aria-label="Altre sezioni">
       <a role="button" tabindex="0" onclick="tab('archive')">Archivio</a> ·
       <a role="button" tabindex="0" onclick="tab('news')">Produzione</a> ·
@@ -445,7 +447,6 @@
         <div id="secpag"></div>
       </div>
       <div>
-        <div id="latobox"></div>
         <div class="sl r-disc"><span class="ic">✦</span>Oltre il consueto<span class="n">scelti per te</span></div>
         <div class="card" id="discList" style="border:1px solid rgba(52,199,89,.25)"></div>
         <div class="tile curio" style="margin-top:12px"><div class="lab">🌏 Curiosità dall'altra parte del mondo</div>
@@ -622,7 +623,7 @@ function unisci(a,b){a=(a||[]).slice();b.forEach(function(x){if(a.indexOf(x)<0)a
 function save(){try{localStorage.setItem('pulse4',JSON.stringify(S))}catch(e){}}
 function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')}
 function pm(a){return 'https://pubmed.ncbi.nlm.nih.gov/'+a.pmid+'/'}function di(a){return 'https://doi.org/'+a.doi}
-function itemHTML(a){if(!a)return '';var sv=isSaved(a.n),vt=S.votes[a.n];var hasSoc=!!SOC[a.n];
+function itemHTML(a){if(!a)return '';var sv=isSaved(a.n),vt=S.giudizi[a.pmid]||0;var hasSoc=!!SOC[a.n];
  return '<div class="item" id="it-'+a.n+'">'+
   '<div class="row" role="button" tabindex="0" aria-expanded="false" onclick="toggle('+a.n+')"><span class="dot '+a.dot+'"></span>'+
     '<div class="tt"><div class="h">'+esc(a.h)+'</div><div class="v">'+esc(a.v)+'</div>'+
@@ -692,7 +693,7 @@ function toggleSave(ev,n){if(ev)ev.stopPropagation();var a=A[n];if(!a)return;
  if(i>=0||j>=0){if(i>=0)S.savedItems.splice(i,1);if(j>=0)S.saved.splice(j,1);toast('Rimosso');}
  else{S.savedItems.push({d:BUILD_DATE,a:JSON.parse(JSON.stringify(a))});S.saved.push(n);toast('★ Salvato');}
  save();render();}
-function vote(ev,n,d){if(ev)ev.stopPropagation();if(S.votes[n]==d){delete S.votes[n];toast('Annullato')}else{S.votes[n]=d;toast(d==1?'Più così':'Meno così')}save();render()}
+function vote(ev,n,d){if(ev)ev.stopPropagation();var a=A[n];if(a&&a.pmid)giudica(a.pmid,d);}
 function addItem(k,id){var v=document.getElementById(id).value.trim();if(!v)return;if(S[k].indexOf(v)<0)S[k].push(v);document.getElementById(id).value='';save();render();toast('Aggiunto')}
 function rm(k,x){S[k]=S[k].filter(function(y){return y!=x});save();render()}
 /* Le proposte si tracciano PER NOME, non per posizione nell'elenco.
@@ -718,63 +719,109 @@ function b64dec(s){s=s.replace(/-/g,'+').replace(/_/g,'/');return decodeURICompo
    tre è un vincolo: se arrivassero di più, tre si mostrano e il cancello blocca
    la pubblicazione a monte. */
 function _artPm(pmid){for(var k in A){if(A[k]&&A[k].pmid===pmid)return A[k];}return null;}
-function _selezioneAttiva(){
- if(typeof SELEZIONE!=='undefined'&&SELEZIONE&&SELEZIONE.schede)return SELEZIONE;
- /* istantanee precedenti alla variabile: il lavoro del giorno, da campi già verificati */
- var out={testo:(typeof VERDICT!=='undefined'&&VERDICT&&(VERDICT.calm||VERDICT.act))||'',sotto:'',schede:[]};
- var p=(typeof PICK!=='undefined'&&A[PICK])?A[PICK]:null;
- if(p)out.schede=[{pmid:p.pmid,dice:p.concl||p.v||'',cambia:p.perte||'',perche:'È il lavoro del giorno scelto dal briefing.'}];
+/* ===== L'INDICE DEL GIORNO (correzione di rotta, Addendum 4) ==================
+   Copertura completa, lettura selettiva: OGNI cosa rilevante è presente, ogni
+   voce occupa UNA riga (fatto col verbo · fonte · disegno+numerosità), la
+   profondità si apre con un tocco. L'app non seleziona e non giudica: indicizza.
+   «Tocca la tua pratica» è un'etichetta discreta (●), mai la cornice. */
+var DOMINI=[['menisco','Menisco'],['cartilagine','Cartilagine'],['legamenti','Legamenti'],
+ ['artroscopia','Altra artroscopia e procedure affini'],['osteotomie','Osteotomie'],
+ ['protesi','Protesi'],['trauma','Traumatologia del ginocchio'],
+ ['riab','Riabilitazione e return to sport'],['lineeguida','Linee guida e consensus']];
+function _solidDa(meta){
+ return (meta||'').split('·').map(function(p){return p.trim()})
+  .filter(function(p){return p&&p[0]!=='['}).slice(0,2).join(' · ');}
+function vociIndice(){
+ var out=[];
+ ARTICLES.forEach(function(a){out.push({dom:a.dom||'',riga:a.riga||a.h,
+  solid:_solidDa(a.meta),j:a.j,n:a.n,pmid:a.pmid,
+  pratica:(a.dot==='orange'||a.dot==='red')});});
+ (typeof EXTRA!=='undefined'?EXTRA:[]).forEach(function(e){out.push({dom:e.dom||'',
+  riga:e.h,solid:'',j:e.j,pmid:e.pmid,breve:true,pratica:false});});
+ (typeof SCOPERTE!=='undefined'?SCOPERTE:[]).forEach(function(s){out.push({dom:s.dom||'',
+  riga:s.t,solid:'',j:'',pmid:s.pmid,breve:true,pratica:false});});
  return out;}
+function _rigaHTML(v){
+ var apre=v.n?('apriInArchivio('+v.n+')'):'apriBreve()';
+ return '<div class="irow" role="button" tabindex="0" onclick="'+apre+'">'
+  +(v.pratica?'<span class="ipr" aria-label="Tocca la tua pratica" title="Tocca la tua pratica">●</span>':'')
+  +'<span class="irt">'+esc(v.riga)+'</span>'
+  +'<span class="irm">'+esc([v.solid,v.j].filter(Boolean).join(' · '))+'</span>'
+  +'</div>';}
+function _gruppoHTML(chiave,nome,righeHTML,conteggio,extraTitolo){
+ var chiuso=S.domChiusi&&S.domChiusi[chiave];
+ if(!conteggio)return '<div class="idom vuoto">'+esc(nome)+' — nulla oggi</div>';
+ return '<div class="idom"><div class="idh" role="button" tabindex="0" aria-expanded="'+(!chiuso)+'" onclick="toggleDom(\''+chiave+'\')">'
+  +esc(nome)+' <span class="idn">'+conteggio+'</span>'
+  +(extraTitolo?'<span class="idx">'+esc(extraTitolo)+'</span>':'')
+  +'<span class="chev">'+(chiuso?'›':'⌄')+'</span></div>'
+  +(chiuso?'':'<div class="idb">'+righeHTML+'</div>')+'</div>';}
+function toggleDom(k){S.domChiusi=S.domChiusi||{};if(S.domChiusi[k])delete S.domChiusi[k];else S.domChiusi[k]=1;save();renderGiorno();}
+function apriBreve(){tab('today');if(typeof spApri==='function')spApri();}
+function congressiRighe(){
+ var C=(typeof CONGRESSI!=='undefined'&&Array.isArray(CONGRESSI))?CONGRESSI.filter(function(c){return c&&c.sig}):[];
+ C=C.filter(function(c){var g=[c.abstract,c.early].filter(Boolean).map(giorniA);return !g.length||g.some(function(x){return x>=0});});
+ C.sort(function(a,b){
+  function sc(x){var g=[x.abstract,x.early].filter(Boolean).map(giorniA).filter(function(d){return d>=0});
+   return g.length?Math.min.apply(null,g):9999;}
+  return sc(a)-sc(b);});
+ var righe=C.map(function(c){
+  var parti=[esc(c.sig)+(c.citta?' · '+esc(c.citta):'')+(c.date?' · '+esc(c.date):'')];
+  function scad(nome,d){if(!d)return '';var g=giorniA(d);if(g<0)return '';
+   var cl=g<=7?'iscad forte':(g<=30?'iscad':'');
+   return '<span class="'+cl+'">'+nome+': '+esc(scadenzaTesto(d))+'</span>';}
+  var s=[scad('abstract',c.abstract),scad('early bird',c.early)].filter(Boolean).join(' · ');
+  return '<div class="irow" role="button" tabindex="0"'+(c.url?' onclick="window.open(\''+esc(c.url)+'\')"':'')+'>'
+   +'<span class="irt">'+parti.join('')+'</span>'
+   +(s?'<span class="irm">'+s+'</span>':'')+'</div>';});
+ return {n:C.length,html:righe.join('')};}
+function industriaRighe(){
+ var I=(typeof INDUSTRIA!=='undefined'&&Array.isArray(INDUSTRIA))?INDUSTRIA.filter(function(x){return x&&x.riga}):[];
+ I=I.slice().sort(function(a,b){return (a.tipo==='richiamo'?1:0)-(b.tipo==='richiamo'?1:0);});
+ return {n:I.length,html:I.map(function(x){
+  return '<div class="irow"><span class="irt">'+esc(x.riga)+'</span>'
+   +'<span class="irm">'+esc([x.fonte,x.tipo].filter(Boolean).join(' · '))+'</span></div>';}).join('')};}
 function renderGiorno(){
- var el=document.getElementById('gschede');if(!el)return;
- var sel=_selezioneAttiva();
+ var el=document.getElementById('gindice');if(!el)return;
  var d=document.getElementById('gdata');
  if(d){var b=new Date(BUILD_DATE+'T12:00:00');d.textContent=b.toLocaleDateString('it-IT',{weekday:'long',day:'numeric',month:'long'});}
- var v=document.getElementById('gverd');if(v)v.textContent=sel.testo||'';
- var al=document.getElementById('gallerta');if(al)al.innerHTML=sel.allerta?'<div class="gall" role="button" tabindex="0" onclick="tab(\'rassegna\')">'+esc(sel.allerta)+'</div>':'';
- var so=document.getElementById('gsotto');if(so)so.innerHTML=sel.sotto?esc(sel.sotto)+' <a role="button" tabindex="0" onclick="tab(\'today\')">Apri l\u2019archivio di oggi ›</a>':'';
- el.innerHTML=sel.schede.slice(0,3).map(gschedaHTML).join('');
+ var voci=vociIndice();
+ var mis=document.getElementById('gmisura');
+ if(mis){var visti=(typeof AUDIT!=='undefined'&&AUDIT&&AUDIT.visti)?AUDIT.visti:null;
+  mis.textContent=(visti?visti+' lavori esaminati · ':'')+voci.length+' rilevanti';}
+ var ev=document.getElementById('gevid');
+ if(ev){var p=(typeof PICK!=='undefined'&&A[PICK])?A[PICK]:null;
+  ev.innerHTML=p?('<div class="ievid" role="button" tabindex="0" onclick="apriInArchivio('+p.n+')">'
+   +'<div class="gk">In evidenza</div>'
+   +'<div class="ievt">'+esc(p.riga||p.h)+'</div>'
+   +'<div class="irm">'+esc([_solidDa(p.meta),p.j].filter(Boolean).join(' · '))+'</div></div>'):'';}
+ /* l'evidenza È la riga del suo lavoro: mai due volte nella stessa vista (§6.3) */
+ var pickN=(typeof PICK!=='undefined'&&A[PICK])?A[PICK].n:null;
+ var righe=voci.filter(function(v){return v.n!==pickN||pickN===null});
+ var h='';
+ DOMINI.forEach(function(dd){
+  var mie=righe.filter(function(v){return v.dom===dd[0]});
+  h+=_gruppoHTML(dd[0],dd[1],mie.map(_rigaHTML).join(''),mie.length);});
+ var orfane=righe.filter(function(v){return !DOMINI.some(function(dd){return dd[0]===v.dom})});
+ if(orfane.length)h+=_gruppoHTML('altro','Altro',orfane.map(_rigaHTML).join(''),orfane.length);
+ var cg=congressiRighe();
+ h+=cg.n?_gruppoHTML('congressi','Congressi',cg.html,cg.n):'<div class="idom vuoto">Congressi — nulla oggi</div>';
+ var ind=industriaRighe();
+ h+=ind.n?_gruppoHTML('industria','Industria e mercato',ind.html,ind.n):'<div class="idom vuoto">Industria e mercato — nulla oggi</div>';
+ el.innerHTML=h;
  renderPlayer();}
-function gschedaHTML(s,i){
- var a=_artPm(s.pmid)||{};
- var g=S.giudizi[s.pmid]||0;
- var solid=[(a.meta||''),(a.j||'')].filter(Boolean).join(' · ');
- return '<article class="gsch" id="gs-'+i+'">'
-  +'<div class="gk">Cosa dice</div><div class="gdice">'+esc(s.dice||a.concl||'')+'</div>'
-  +(solid?'<div class="gsolid">'+(typeof confHTML==='function'&&a.n?confHTML(a.n):'')+'<span>'+esc(solid)+'</span></div>':'')
-  +'<div class="gk">Cosa cambia per te</div><div class="gcambia">'+esc(s.cambia||'')+'</div>'
-  +'<div class="gperche" role="button" tabindex="0" aria-label="Perché vedi questa scheda: tocca per correggere la selezione" onclick="apriPerche(event,\''+s.pmid+'\','+i+')">Lo vedi perché: '+esc(s.perche||'')+' ›</div>'
-  +'<div class="gmenu" id="gmenu-'+i+'"></div>'
-  +'<div class="ggiud">'
-   +'<button class="gbtn ok'+(g===1?' on':'')+'" onclick="giudica(\''+s.pmid+'\',1)">✓ utile</button>'
-   +'<button class="gbtn no'+(g===-1?' on':'')+'" onclick="giudica(\''+s.pmid+'\',-1)">✗ non utile</button>'
-  +'</div>'
-  +(a.n?'<a class="gdet" role="button" tabindex="0" onclick="apriInArchivio('+a.n+')">scheda estesa ›</a>':'')
-  +'</article>';}
-/* ✓/✗: l'UNICA azione. Identità per PMID (sopravvive alla notte). «Utile» archivia
-   anche la scheda (assorbe la stella); il giudizio aggiorna i pesi DA SOLO. */
 function giudica(pmid,d){
  var prima=S.giudizi[pmid]||0;var a=_artPm(pmid);
  if(prima===d){delete S.giudizi[pmid];_pesa(a,-d);if(d===1&&a&&a.n&&isSaved(a.n))toggleSave(null,a.n);toast('Annullato');}
  else{if(prima)_pesa(a,-prima);S.giudizi[pmid]=d;_pesa(a,d);
   if(d===1&&a&&a.n){if(!isSaved(a.n))toggleSave(null,a.n);toast('Utile — archiviata');}
   else toast(d===1?'Utile':'Meno così, da domani');}
- save();renderGiorno();}
+ save();render();}
 function _pesa(a,delta){if(!a||!delta)return;S.pesi=S.pesi||{};
  function add(gr,ch){if(!ch)return;var m=S.pesi[gr]=S.pesi[gr]||{};m[ch]=(m[ch]||0)+delta;if(!m[ch])delete m[ch];}
  add('riviste',a.j);add('disegni',(a.meta||'').split('·')[0].trim());
  var tg=(typeof TAGS!=='undefined'&&TAGS&&TAGS[a.n])||[];(Array.isArray(tg)?tg:[]).forEach(function(x){add('temi',x)});}
 /* «Lo vedi perché …» è trasparenza E comando: toccata, corregge la selezione. */
-function apriPerche(ev,pmid,i){if(ev)ev.stopPropagation();
- var m=document.getElementById('gmenu-'+i);if(!m)return;
- if(m.innerHTML){m.innerHTML='';return;}
- m.innerHTML='<button class="gbtn sec" onclick="scegliPerche(\''+pmid+'\','+i+',1)">Più lavori così</button>'
-  +'<button class="gbtn sec" onclick="scegliPerche(\''+pmid+'\','+i+',-1)">Meno lavori così</button>'
-  +'<button class="gbtn sec" onclick="scegliPerche(\''+pmid+'\','+i+',-2)">Questo tema non mi interessa</button>';}
-function scegliPerche(pmid,i,d){var a=_artPm(pmid);
- if(d===-2){_pesa(a,-2);toast('Tema messo da parte: peserà molto meno');}
- else{_pesa(a,d);toast(d>0?'Ne vedrai di più':'Ne vedrai di meno');}
- save();var m=document.getElementById('gmenu-'+i);if(m)m.innerHTML='';}
 function apriInArchivio(n){tab('today');var e=document.getElementById('it-'+n);
  if(e){e.classList.add('open');var r=e.querySelector('.row');if(r&&r.setAttribute)r.setAttribute('aria-expanded','true');e.scrollIntoView({behavior:'smooth',block:'center'});}}
 /* ===== IL LETTORE: un file MP3 pre-generato, riprodotto e basta (Addendum §14) ==== */
@@ -1188,27 +1235,6 @@ function shareArt(ev,n){if(ev)ev.stopPropagation();var a=A[n];var url=pm(a);var 
  else{try{navigator.clipboard.writeText(txt+' '+url)}catch(e){}toast('Link copiato');}}
 
 function setRate(v){S.rate=Math.max(0.7,Math.min(1.4,v));save();return S.rate;}
-
-function riquadro(titolo, classe, icona, contatore, corpo, nota){
- return '<div class="sl '+classe+'"><span class="ic">'+icona+'</span>'+titolo+
-  (contatore?'<span class="n">'+esc(contatore)+'</span>':'')+'</div>'+
-  '<div class="tile">'+corpo+(nota?'<div class="muted" style="margin-top:7px">'+esc(nota)+'</div>':'')+'</div>';}
-function renderLato(){var el=document.getElementById('latobox');if(!el)return;
- var nv=(typeof NONVERIF!=='undefined')?NONVERIF:{};
- var ind=(typeof INDUSTRIA!=='undefined'?INDUSTRIA:[])||[];
- var cong=((typeof CONGRESSI!=='undefined'?CONGRESSI:[])||[]).filter(function(c){return !c.scad||giorniA(c.scad)>=-7;});
- var soc=(typeof SOCIETA!=='undefined'?SOCIETA:[])||[];
- var cInd=ind.length?ind.map(function(x){return '<div class="tcong"><div class="tt"><div class="h">'+esc(x.t)+'</div><div class="v">'+esc(x.v||'')+'</div></div></div>';}).join('')
-   :'<div class="muted"><b>Nulla di verificato negli ultimi 10 giorni.</b></div>';
- var cCong=cong.length?cong.map(function(c){return '<div class="tcong"><span class="mono" style="background:#0a3d62">'+esc(c.sig||'')+'</span><div class="tt"><div class="h">'+esc(c.nome)+'</div><div class="v">'+esc((c.nota?c.nota+' ':'')+(c.scad?scadenzaTesto(c.scad):''))+'</div></div></div>';}).join('')
-   :'<div class="muted"><b>Nessuna scadenza verificata oggi.</b></div>';
- var cSoc=soc.length?soc.map(function(s){return '<div class="tcong"><div class="tt"><div class="h">'+esc(s.t)+'</div><div class="v">'+esc(s.v||'')+'</div></div></div>';}).join('')
-   :'<div class="muted"><b>Nessun nuovo consensus verificato.</b></div>';
- el.innerHTML=
-  riquadro('Industria &amp; tecnologia','r-tech','<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.6 3.6a4 4 0 0 0-5.4 4.9L3.4 13.3l3.3 3.3 4.8-4.8a4 4 0 0 0 4.9-5.4l-2.5 2.5-2.4-.9-.9-2.4z"/></svg>',ind.length+' in finestra',cInd,nv.ind)+
-  riquadro('Congressi','r-cong','<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="13" height="11" rx="1.5"/><path d="M3.5 8.5h13M7 3.5v3M13 3.5v3"/></svg>','',cCong,nv.cong)+
-  riquadro('Società scientifiche','r-soc','<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="7" r="2.5"/><path d="M3.2 16c.4-2.8 2.1-4.4 4.3-4.4s3.9 1.6 4.3 4.4M12.6 4.9a2.4 2.4 0 0 1 0 4.4M13.6 11.9c1.8.5 3 1.9 3.3 4.1"/></svg>','',cSoc,nv.soc);}
-
 
 function giorniA(iso){
  var oggi=new Date(); var o=new Date(oggi.getFullYear()+'-'+('0'+(oggi.getMonth()+1)).slice(-2)+'-'+('0'+oggi.getDate()).slice(-2)+'T12:00:00');
@@ -1774,7 +1800,6 @@ aggCervello();
 popolaVoci();
 renderCopertura();
 renderSeconda();
-renderLato();
 renderTens();
 renderFresh();
 renderCal();

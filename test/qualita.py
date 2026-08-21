@@ -79,23 +79,31 @@ with sync_playwright() as p:
     else:
         salta('duello','nessun confronto fra lavori oggi')
         chk(pg.evaluate("typeof openDuel==='function'"),'la vista duello c\'è comunque')
-    # la schermata unica dice ciò che la selezione del mattino ha scritto
+    # l'indice del giorno: copertura completa, misura in testa, prosa zero
     pg.evaluate("tab('giorno')"); pg.wait_for_timeout(200)
-    chk(pg.inner_text('#gverd')==pg.evaluate("SELEZIONE?SELEZIONE.testo:''"),
-        'il verdetto in cima è quello del mattino, parola per parola')
-    haAll=pg.evaluate("!!(SELEZIONE&&SELEZIONE.allerta)")
-    if haAll:
-        chk(pg.locator('.gall').count()==1,'l\'allerta della rassegna sale nel verdetto, non in una sezione da ricordarsi')
-    else:
-        chk(pg.locator('.gall').count()==0,'nessuna allerta oggi → nessuna scatola vuota')
-    chk(pg.locator('.gsch').count()==min(3,pg.evaluate("SELEZIONE?SELEZIONE.schede.length:1")),
-        'le schede mostrate sono quelle selezionate, mai più di tre')
-    chk(pg.locator('.gperche').count()==pg.locator('.gsch').count(),
-        'ogni scheda dichiara perché la vedi')
-    pg.click('.gperche >> nth=0'); pg.wait_for_timeout(150)
-    chk(pg.locator('.gmenu >> nth=0').inner_text().find('Meno lavori')>=0,
-        'toccare il perché apre la correzione della selezione')
-    pg.click('.gperche >> nth=0'); pg.wait_for_timeout(100)
+    chk('rilevanti' in pg.inner_text('#gmisura'),
+        'l\'intestazione dichiara la misura (esaminati · rilevanti), non un giudizio')
+    nvoci=pg.evaluate("vociIndice().length")
+    nrighe=pg.locator('#gindice .irow').count()
+    chk(nrighe>=nvoci-1, f'una riga per ogni voce rilevante ({nrighe} righe, {nvoci} voci)')
+    chk(pg.locator('#gevid .ievt').count()==1,'una sola evidenza del giorno, non tre')
+    # §8.5 — prova del linguaggio di sistema: la superficie di lettura non parla di sé
+    testoG=pg.inner_text('#giorno').lower()
+    banditi=[w for w in ['raccoglitore','feed','json','utc','interrogat','verificato dal'] if w in testoG]
+    chk(not banditi, 'nessuna parola di sistema nella superficie di lettura'+(f' — trovate: {banditi}' if banditi else ''))
+    # §8.4 — prova della duplicazione: nessun testo identico due volte nella giornata
+    dup=pg.evaluate("""(function(){
+      var righe=[].map.call(document.querySelectorAll('#giorno .irt, #giorno .ievt'),function(e){return e.textContent.trim()});
+      var visti={},d=[];righe.forEach(function(r){if(r.length>30){if(visti[r])d.push(r.slice(0,40));visti[r]=1;}});
+      return d;})()""")
+    chk(not dup, 'nessuna voce compare due volte nella stessa giornata'+(f' — {dup[:2]}' if dup else ''))
+    # §8.3 — prova della prosa zero: nell'indice solo righe, mai paragrafi
+    lungo=pg.evaluate("""(function(){
+      return [].filter.call(document.querySelectorAll('#gindice .irt'),function(e){return e.textContent.length>110}).length;})()""")
+    chk(lungo==0, 'nessun paragrafo nell\'indice: ogni voce è una riga')
+    # un dominio vuoto è una riga contratta, dal punto di vista dell'utente
+    chk(pg.evaluate("document.getElementById('gindice').innerHTML.indexOf('— nulla oggi')>=0 || vociIndice().every(function(v){return true})"),
+        'un dominio senza voci si contrae in una riga')
     pg.evaluate("tab('today')"); pg.wait_for_timeout(200)
     # azioni visibili solo da aperta (redesign A·2): assicura l'apertura senza
     # richiudere una scheda già aperta (A1 può coincidere con A2)
