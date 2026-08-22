@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-21T05:52:56Z",
+ "generato": "2026-08-22T05:03:07Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -583,14 +583,14 @@
      "sorveglianza": "Innesto quadricipitale",
      "studi": [
       {
-       "nct": "NCT07753707",
-       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-08-07",
+       "nct": "NCT07657195",
+       "titolo": "Dry Needling and Quad Strength After Anterior Cruciate Ligament Reconstruction",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-08-21",
        "fase": [
         "NA"
        ],
-       "n": 111,
+       "n": 40,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -605,6 +605,17 @@
        "tipo": "INTERVENTIONAL"
       },
       {
+       "nct": "NCT07753707",
+       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 111,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
        "nct": "NCT07722104",
        "titolo": "Graft Type and Outcomes After ACL Reconstruction in Female Athletes",
        "stato": "NOT_YET_RECRUITING",
@@ -612,17 +623,6 @@
        "fase": null,
        "n": 82,
        "tipo": "OBSERVATIONAL"
-      },
-      {
-       "nct": "NCT07657195",
-       "titolo": "Dry Needling and Quad Strength After Anterior Cruciate Ligament Reconstruction",
-       "stato": "NOT_YET_RECRUITING",
-       "aggiornato": "2026-07-22",
-       "fase": [
-        "NA"
-       ],
-       "n": 40,
-       "tipo": "INTERVENTIONAL"
       },
       {
        "nct": "NCT04039971",
@@ -769,7 +769,7 @@
    }
   },
   "youtube": {
-   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "esito": "non risposto: HTTPError HTTP Error 500: Internal Server Error",
    "dati": null
   },
   "destino": {
@@ -993,6 +993,48 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Astragalus-Angelica sinensis-Derived Extracellular Vesicles Attenuate Knee Osteoarthritis with Periarticular Muscle Atrophy via PPARγ-Mediated Regulation of Ske",
+      "dove": "archivio preprint",
+      "data": "2026-08-20",
+      "doi": "10.21203/rs.3.rs-10556770/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10556770/v1"
+     },
+     {
+      "titolo": "Is ROSA Always Reliable? High Accuracy but Notable Deviations in Medial Tibial Resection and Femoral Component Sizing in Mechanically-Aligned Total Knee Arthrop",
+      "dove": "archivio preprint",
+      "data": "2026-08-20",
+      "doi": "10.21203/rs.3.rs-10095661/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10095661/v1"
+     },
+     {
+      "titolo": "Acute popliteal artery thrombosis after simultaneous bilateral total knee arthroplasty: a case report with long-term follow-up",
+      "dove": "archivio preprint",
+      "data": "2026-08-20",
+      "doi": "10.21203/rs.3.rs-10595496/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10595496/v1"
+     },
+     {
+      "titolo": "Structural relationships among osteoporosis knowledge, health beliefs, self- efficacy and activities of daily living in patients with knee osteoarthritis: a cro",
+      "dove": "archivio preprint",
+      "data": "2026-08-19",
+      "doi": "10.21203/rs.3.rs-10570868/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10570868/v1"
+     },
+     {
+      "titolo": "Effectiveness and Potential Benefits of the Use of Laser Light Therapy in Musculoskeletal Rehabilitation Programs for Knee Osteoarthritis: A Narrative Review",
+      "dove": "archivio preprint",
+      "data": "2026-08-17",
+      "doi": "10.20944/preprints202608.1113.v1",
+      "url": "https://doi.org/10.20944/preprints202608.1113.v1"
+     },
+     {
+      "titolo": "Process evaluation protocol of a trial evaluating app-based post knee arthroplasty telerehabilitation strategy in India",
+      "dove": "archivio preprint",
+      "data": "2026-08-17",
+      "doi": "10.12688/wellcomeopenres.26007.2",
+      "url": "https://doi.org/10.12688/wellcomeopenres.26007.2"
+     },
+     {
       "titolo": "Finite Element Analysis of Fixed-bearing Unicompartmental Knee Arthroplasty: Coronal Alignment of the Tibial Component under Physiological Alignment",
       "dove": "archivio preprint",
       "data": "2026-08-14",
@@ -1124,48 +1166,6 @@
       "data": "2026-08-10",
       "doi": "10.21203/rs.3.rs-10034416/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10034416/v1"
-     },
-     {
-      "titolo": "Optimal distraction force for evaluating joint laxity following total knee arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-08-10",
-      "doi": "10.21203/rs.3.rs-10334257/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10334257/v1"
-     },
-     {
-      "titolo": "Yiqi Yangxue Qufeng Mixture alleviates knee osteoarthritis by modulating mitochondrialoxidative stress and suppressing ferroptosis via the PRKCA-MAPK/ERK axis",
-      "dove": "archivio preprint",
-      "data": "2026-08-10",
-      "doi": "10.21203/rs.3.rs-10091914/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10091914/v1"
-     },
-     {
-      "titolo": "Efficacy and safety of a single-injection BDDE-crosslinked hyaluronic acid versus a three- injection hyaluronic acid for knee osteoarthritis: A multicenter, dou",
-      "dove": "archivio preprint",
-      "data": "2026-08-07",
-      "doi": "10.21203/rs.3.rs-10419108/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10419108/v1"
-     },
-     {
-      "titolo": "Compartment-Specific Focused Shockwave and Extracorporeal Magnetotransduction Therapy Followed by Platelet-Rich Plasma and Hyaluronic Acid for Lateral Knee Oste",
-      "dove": "archivio preprint",
-      "data": "2026-08-07",
-      "doi": "10.21203/rs.3.rs-10616929/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10616929/v1"
-     },
-     {
-      "titolo": "Quantitative Radiographic Assessment of Medial Tibial Rim Osteophyte Morphology in Knee Osteoarthritis: Association with Kellgren-Lawrence Grade",
-      "dove": "archivio preprint",
-      "data": "2026-08-07",
-      "doi": "10.21203/rs.3.rs-9759038/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-9759038/v1"
-     },
-     {
-      "titolo": "Isokinetic Strength Asymmetries of Trunk Rotation and Knee Joint in Adolescent Female Amateur Boxers: Implications for Injury Prevention",
-      "dove": "archivio preprint",
-      "data": "2026-08-07",
-      "doi": "10.21203/rs.3.rs-9974532/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-9974532/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
