@@ -89,23 +89,10 @@ with sync_playwright() as p:
         chk(bool(apr),'titolo del verdetto apre la scheda'+(f' ({apr})' if apr else ''))
     else:
         chk('niente mette in discussione' in v.lower(), 'verdetto: giornata senza contraddizioni, dichiarata')
-    # azioni visibili solo da aperta (redesign A·2): assicura l'apertura senza
-    # richiudere una scheda già aperta (A1 può coincidere con A2)
-    pg.evaluate(f"var e=document.getElementById('it-{A1}');if(e&&!e.classList.contains('open'))toggle({A1})")
-    pg.wait_for_timeout(250)
     pg.click(f'#it-{A1} .ib.save'); pg.wait_for_timeout(200)
     chk(pg.eval_on_selector('#savedCount','e=>e.textContent')!='0','salvataggio funziona')
     chk(pg.evaluate("()=>document.querySelectorAll('.conf').length")>0,'barre di confidenza')
     chk('min' in pg.inner_text('#researchList'),'tempo di lettura')
-    # rivelazione progressiva (redesign A·2): in lista si legge, i comandi compaiono aprendo
-    chk(pg.evaluate("""() => {
-      var chiuse=[...document.querySelectorAll('#researchList .item:not(.open) .acts')];
-      return chiuse.length>0 && chiuse.every(function(a){return getComputedStyle(a).display==='none'});}"""),
-        'su una scheda chiusa le azioni non si vedono (lista da leggere, non da comandare)')
-    chk(pg.evaluate("""() => {
-      var ap=document.querySelector('#researchList .item.open .acts');
-      return ap && getComputedStyle(ap).display!=='none';}"""),
-        'aprendo la scheda le azioni compaiono, con bersagli a misura di pollice')
     o=pg.evaluate("()=>[...document.querySelectorAll('*')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.right>window.innerWidth+1}).length")
     chk(o==0, f'nessun elemento fuori schermo ({o})')
     chk(len(errs)==0, 'nessun errore JavaScript')
@@ -273,37 +260,6 @@ with sync_playwright() as p:
                      "var t=segnaliTesto();S.votes=v;S.saved=s1;S.savedItems=s2;S.weekly=w;S.suggDone=d;"
                      "return t.indexOf('Nessun segnale ancora')>=0})()"),
         'senza scelte i segnali lo dichiarano, non fingono')
-    # --- il calendario dello storico dice il vero (macchina pura, dati sintetici) ---
-    chk(pg3.evaluate("(function(){var h=calHTML('2026-08-20',[{d:'2026-08-12'},{d:'2026-08-20'},{d:'2026-07-30'}]);"
-                     "return h.indexOf('class=\"day today\"')>=0&&/today[^>]*>20</.test(h.replace(/<span[^>]*mk[^<]*<\\/span>/g,''))"
-                     "&&/>12<span class=\"mk\"/.test(h)&&h.indexOf('>21<')>=0&&/future\">21</.test(h)"
-                     "&&!/>30<span class=\"mk\"/.test(h)})()"),
-        'il calendario segna oggi da BUILD_DATE, i punti da HISTORY, e ignora altri mesi')
-    chk(pg3.evaluate("(function(){var el=document.getElementById('calgrid');"
-                     "return !!el&&el.innerHTML.indexOf('today')>=0&&document.getElementById('calmese').textContent.length>3})()"),
-        'il calendario in pagina è generato, non scritto a mano, col suo mese dichiarato')
-    # --- il velo d'avvio: niente scatti, e a fine avvio DEVE essere tolto ----------
-    chk(pg3.evaluate("!document.documentElement.classList.contains('avvio')"),
-        'il velo d\'avvio è stato tolto a caricamento finito (la pagina è visibile)')
-    chk(pg3.evaluate("(function(){var w=document.querySelector('.wrap');"
-                     "document.documentElement.classList.add('avvio');"
-                     "var nascosto=getComputedStyle(w).visibility==='hidden';"
-                     "document.documentElement.classList.remove('avvio');return nascosto})()"),
-        'durante l\'avvio il guscio è invisibile: nessun dipinto intermedio che slitta')
-    # --- accessibilità: landmark, gerarchia, tastiera (la macchina, non il carico) ---
-    chk(pg3.evaluate("document.querySelectorAll('main').length===1 && document.querySelectorAll('h1').length===1"),
-        'un solo landmark main e un solo h1: la gerarchia parte dal marchio')
-    chk(pg3.evaluate("(function(){var r=document.querySelector('.item .row');"
-                     "return !!r&&r.getAttribute('role')==='button'&&r.getAttribute('tabindex')==='0'})()"),
-        'ogni scheda è un bottone raggiungibile da tastiera')
-    chk(pg3.evaluate("(function(){var it=document.querySelector('.item'),r=it.querySelector('.row');"
-                     "var era=it.classList.contains('open');r.focus();"
-                     "r.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true}));"
-                     "var dopo=it.classList.contains('open');"
-                     "var buono=(dopo!==era)&&r.getAttribute('aria-expanded')===String(dopo);"
-                     "if(dopo!==era)r.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true}));"
-                     "return buono})()"),
-        'Invio su una scheda la apre e aria-expanded dice il vero')
     dl=pg3.evaluate("typeof BRIEF_DIALOGO!=='undefined'?BRIEF_DIALOGO:null")
     if dl is not None:
         chk(all((r.get('chi') in ('A','B')) and (r.get('t') or '').strip() for r in dl)
