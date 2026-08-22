@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-22T05:03:07Z",
+ "generato": "2026-08-22T05:45:16Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 103,
+    "doi_citati_controllati": 109,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -769,12 +769,18 @@
    }
   },
   "youtube": {
-   "esito": "non risposto: HTTPError HTTP Error 500: Internal Server Error",
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
    "dati": null
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42597838",
+     "titolo": "JOCR — Riparare la radice mediale in varo senza correggere l'asse spesso fallisce (revisione narrativa su oste",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42624811",
      "titolo": "Lancet — RACER-Knee, il RCT più ampio e rigoroso mai condotto su TKR robot-assistita (Mako): nessun beneficio ",
