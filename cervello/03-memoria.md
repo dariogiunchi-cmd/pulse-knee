@@ -7,11 +7,18 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 21 agosto 2026.*
+*Ultimo aggiornamento: 22 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-08-22 | JOCR | Necessità di osteotomia di riallineamento concomitante nella riparazione della radice meniscale mediale posteriore in ginocchia in varo (revisione narrativa) | 10.13107/jocr.2026.v16.i08.7962 | radice meniscale, osteotomia, slope | aperto — 🟢 PICK del giorno; riparazione isolata in varo: fallimento RM 88,5%, progressione artrosica 2,37×; HTO-MRR migliore della sola HTO; soglia proposta varo ≥5° correggibile; IC aggregati non riportati
+2026-08-22 | J ISAKOS | Il fenotipo CPAK preoperatorio non predice i PROM dopo osteotomia tibiale alta valgizzante mediale (coorte retrospettiva, 130 ginocchia) | 10.1016/j.jisako.2026.101204 | osteotomia, allineamento, cpak | aperto — differenze univariate non sopravvivono a correzione/aggiustamento; MUTO: possibile sottopotenza per sottogruppo di fenotipo
+2026-08-22 | Int Orthop | Innesto di peroneo lungo vs semitendinoso in ACLR: deficit di forza e asimmetria funzionale alla caviglia a 12 mesi nonostante ginocchio equivalente (coorte retrospettiva appaiata, 60) | 10.1007/s00264-026-06998-7 | innesto, biomeccanica, caviglia | aperto — non è l'innesto quadricipitale/rettofemorale; benchmark sul costo funzionale del sito donatore
+2026-08-22 | Front Pediatr | LCA nello scheletricamente immaturo: revisione su tecnica risparmia-fisi/rispetta-fisi, ri-rottura 6-11%, disturbo della crescita 1-2% | 10.3389/fped.2026.1840962 | lca adolescente, revisione | aperto — perimetro dai 14 anni; intervalli aggregati, non un singolo studio
+2026-08-22 | Cartilage | Eterogeneità delle PROM per il ritorno allo sport dopo ACI/MACI (revisione sistematica, 85 studi) | 10.1177/19476035251379214 | cartilagine, criterio di rientro, metodo | aperto — non è AMIC/AutoCart; problema di metodo trasversale, tocca T4
+2026-08-22 | Arthrosc Tech | Sequenza artroscopica combinata: riparazione della radice meniscale mediale, ricostruzione del LCA e osteotomia tibiale alta nello stesso tempo chirurgico (nota tecnica, con Robert LaPrade) | 10.1002/atn2.70123 | radice meniscale, lca, osteotomia | aperto — nota tecnica, nessun dato clinico; le tre componenti sono tutte nella tua pratica
 
 2026-08-21 | Lancet | RACER-Knee: RCT pragmatico multicentrico in cieco, protesi robot-assistita (Mako) vs convenzionale, nessun beneficio clinico a 12 mesi (339 pz) | 10.1016/S0140-6736(26)00986-4 | protesi robotica, RCT, VELYS | aperto — 🟠 contraddice il razionale della tua chirurgia con VELYS (piattaforma diversa); FJS a 12 mesi -1,5 punti (IC 95% -7,5/+4,5; p=0,62) contro un target di 12; costo maggiore, sicurezza sovrapponibile; PICK del giorno
 2026-08-21 | J Robot Surg | Revisione narrativa 2015-2025 su precisione radiologica ed esiti clinici della protesi robot-assistita | 10.1007/s11701-026-03787-7 | protesi robotica, revisione, VELYS | aperto — 🟠 anticipa la conclusione del RCT dello stesso giorno: precisione reale, beneficio clinico duraturo non dimostrato, standard prevalentemente di livello III
@@ -238,6 +245,22 @@ dato muto, non un'equivalenza dimostrata.** Tecnica all-inside e radice laterale
 diverse dalla tua transtibiale sulla radice mediale: non tocca direttamente la tua
 tecnica, ma è il primo dato di sopravvivenza dell'innesto su un intervento
 combinato di questo tipo.
+
+**Nuovo il 22 agosto 2026, terzo marcatore dello stesso principio, questa volta sulla
+soglia operativa.** Una revisione narrativa (Bharadwaj, Jeyaraman et al., *J Orthop
+Case Rep*) sulla necessità di osteotomia tibiale alta concomitante nella riparazione
+della radice meniscale mediale posteriore mostra che, nel ginocchio in varo, la
+riparazione isolata fallisce alla RM nell'88,5% dei casi e la progressione radiografica
+dell'artrosi è 2,37 volte più frequente rispetto alle ginocchia ad asse neutro;
+aggiungere l'osteotomia (soglia proposta: varo ≥5° correggibile, età <65 anni, KL≤2)
+migliora nettamente i punteggi funzionali e i tassi di guarigione della radice. Non è
+l'estrusione né la condrosi femoro-rotulea, ma lo stesso principio generale — il carico
+degenerativo/meccanico basale conta più del tempo trascorso — applicato questa volta
+all'asse della gamba, con un numero soglia concreto. **Limite:** sintesi narrativa di
+studi eterogenei, nessun intervallo di confidenza aggregato riportato. Lo stesso giorno,
+una nota tecnica (Vosoughi, con Robert LaPrade) descrive come sequenziare radice
+meniscale, LCA e osteotomia nello stesso tempo chirurgico — nessun dato clinico, solo
+il metodo.
 
 ### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22)*
 

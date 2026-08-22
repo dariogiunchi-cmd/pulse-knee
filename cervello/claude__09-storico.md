@@ -8,7 +8,28 @@
 > `## AAAA-MM-GG  ·  n papers · n rossi · n arancioni`
 > poi: PICK, e l'elenco compatto delle schede con PMID/DOI.
 
-*Ultimo aggiornamento: 21 agosto 2026.*
+*Ultimo aggiornamento: 22 agosto 2026.*
+
+---
+
+## 2026-08-22 · 6 papers · 0 rossi · 0 arancioni
+PICK: JOCR — Riparare la radice mediale in varo senza correggere l'asse spesso fallisce (revisione narrativa su osteotomia concomitante) · PMID 42597838 · 10.13107/jocr.2026.v16.i08.7962
+- 🟢 JOCR — Necessità di osteotomia tibiale alta concomitante nella riparazione della radice meniscale mediale posteriore in ginocchia in varo: fallimento RM 88,5% e progressione artrosica 2,37× per la riparazione isolata, soglia proposta varo ≥5° correggibile (revisione narrativa, liv. V) · PMID 42597838 · 10.13107/jocr.2026.v16.i08.7962 [Bharadwaj, Jeyaraman]
+- 🟢 J ISAKOS — Il fenotipo CPAK preoperatorio non predice i punteggi riferiti dal paziente dopo osteotomia tibiale alta valgizzante mediale (coorte retrospettiva, 130 ginocchia/111 pz, liv. III) · PMID 42628879 · 10.1016/j.jisako.2026.101204 [Sydney: Parker]
+- 🟢 Int Orthop — Innesto di peroneo lungo vs semitendinoso in ricostruzione del LCA: deficit di forza e asimmetria funzionale alla caviglia a 12 mesi nonostante ginocchio equivalente (coorte retrospettiva appaiata per propensione, 60, liv. III) · PMID 42624924 · 10.1007/s00264-026-06998-7
+- 🟢 Front Pediatr — LCA nello scheletricamente immaturo: revisione su tecnica risparmia-fisi/rispetta-fisi, ri-rottura 6-11%, disturbo della crescita 1-2% (revisione narrativa, liv. V) · PMID 42591583 · 10.3389/fped.2026.1840962 [Boston Children's: Kocher]
+- 🟢 Cartilage — Eterogeneità delle PROM per il ritorno allo sport dopo ACI/MACI: solo il 15,3% degli studi riporta il RTS come percentuale, il 22,4% usa strumenti non validati (revisione sistematica, 85 studi/807 vagliati, liv. II) · PMID 42598988 · 10.1177/19476035251379214
+- 🟢 Arthrosc Tech — Sequenza artroscopica combinata: riparazione della radice meniscale mediale, ricostruzione del LCA e osteotomia tibiale alta nello stesso tempo chirurgico (nota tecnica, liv. V) · PMID 42625662 · 10.1002/atn2.70123 [con Robert LaPrade]
+CITAZIONI: verificate 6/6 su PubMed MCP — ogni PMID riaperto e confrontato su titolo, rivista e DOI dai campi identifiers.
+STUDI MUTI: 1 — scheda 2 (differenze del fenotipo CPAK Tipo 2 non sopravvissute alla correzione per confronti multipli né all'aggiustamento multivariabile, effect size e IC non riportati per il confronto).
+TENSIONI MOSSE: T2b (terzo marcatore dello stesso principio — carico degenerativo/asse conta più del tempo trascorso — questa volta come soglia operativa esplicita: varo ≥5° correggibile giustifica l'osteotomia concomitante alla riparazione della radice; nota tecnica dello stesso giorno, con Robert LaPrade, su come sequenziare i tre gesti insieme). Nessuna tensione chiusa oggi.
+SUGGERIMENTO (SUGGQ): Naveen Jeyaraman (ACS Medical College, Chennai, coautore del PICK) · David Parker (Sydney Orthopaedic Research Institute, autore senior sul fenotipo CPAK) · Ali Kerim Yılmaz (Ondokuz Mayıs University, Turchia, autore senior sul peroneo lungo) · Mininder S. Kocher (Boston Children's Hospital, autore senior sulla revisione del LCA adolescente).
+INDUSTRIA: VERIFICATA oggi — il raccoglitore notturno è passato regolarmente stanotte (generato 22 agosto, 05:03 UTC, tutte le fonti «ok» salvo il feed YouTube). Nessun aggiornamento sui due richiami nucleo (DePuy Synthes ATTUNE, Zimmer Biomet), entrambi restano aperti; emerso per la prima volta nel monitoraggio un richiamo Classe II su Encore Medical/Enovis (EMPOWR 3D Knee, scambio di taglie in imballaggio, avviato 15 luglio 2026, nessun rischio di sterilità dichiarato). Swissmedic verificato: nessuna voce sui dispositivi del ginocchio questa settimana. CONGRESSI: non ancora coperti dal raccoglitore. SOCIETÀ: nessuna nuova presa di posizione verificata direttamente oggi.
+RITRATTAZIONI: ricontrollati su PubMed tutti i 72 PMID già citati come schede nello storico (2-21 agosto) più i 6 di oggi — nessuna ritrattazione né Expression of Concern (article_types verificati). Il raccoglitore notturno conferma indipendentemente via Crossref: 103 DOI citati controllati, zero colpiti. LAST_RETRACTION_CHECK = 22 agosto 2026.
+DESTINO DEI VERDETTI: nessun nuovo citante oggi per i sette PICK sorvegliati (fonte: raccoglitore notturno).
+NON VERIFICATO: Retraction Watch (archivio salvati vuoto) · pagine ESSKA/AAOS/ICRS (non interrogate direttamente) · registri protesici (SIRIS/RIPO/NJR/AOANJRR) · scadenze congressuali (fonte non ancora coperta dal raccoglitore).
+CONSEGNA: app aggiornata, BUILD_DATE 2026-08-22, 6 schede; NLB su tutte, SOCV/TAGS/SOC sulla scheda 1 (il PICK); EXTRA 12, SCOPERTE 2 (terapia mini-invasiva sotto ecografia per il dolore dopo protesi, Corea del Sud; esosomi da cellule staminali per la cartilagine su modelli animali, Cina); 614 controlli verdi.
+NOTA DI METODO: giornata più leggera delle precedenti — nessun trial randomizzato di grande peso in finestra, nessuna consensus nuova (finestra 60 giorni: zero voci nuove). Ricerca PubMed: una generale per termine-nucleo in titolo (edat 20-22 agosto, 85 risultati), mirate per tecnica (LET/ALL/innesto quadricipitale, minced cartilage/AMIC, VELYS/robotica, radice meniscale, LCA adolescente), una su consensus/linee guida (zero nuove), una sui temi dell'Asia orientale/medicina tradizionale e una su affiliazioni asiatiche incrociata con le tecniche del perimetro. Circa 74 candidati distinti dopo dedup con i 72 PMID già in storico e i 14 PMID già usati come EXTRA/SCOPERTE il 21 agosto: 6 tenuti come schede (una promossa da EXTRA a scheda per la sesta posizione), 12 come EXTRA, 2 come SCOPERTE, circa 54 scartati (dettaglio in AUDIT). Un solo evento di rilievo nel raccoglitore: un richiamo openFDA Classe II, minore, su una terza azienda sorvegliata (Enovis), mai emerso prima nel monitoraggio.
 
 ---
 
