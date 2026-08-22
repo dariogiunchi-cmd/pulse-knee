@@ -22,7 +22,6 @@ with sync_playwright() as p:
         chk(pg.evaluate("typeof openSocial==='function' && typeof socText==='function' && typeof setTone==='function' && typeof setLen==='function'"),'la macchina dei contenuti social c\'è comunque')
         chk(len(errs)==0,'nessun errore JavaScript')
         b.close(); print(f'== SOCIAL: {ok} verificati · {bad} errori =='); sys.exit(1 if bad else 0)
-    pg.click(f'#it-{SOCN[0]} .row'); pg.wait_for_timeout(250)   # azioni visibili solo da aperta (redesign A·2)
     pg.click(f'#it-{SOCN[0]} .ib.soc'); pg.wait_for_timeout(400)
     chk(pg.is_visible('#shCtrl'),'controlli tono e lunghezza')
     c=pg.inner_text('#shCtrl').upper()
