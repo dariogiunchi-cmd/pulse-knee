@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-23T05:05:22Z",
+ "generato": "2026-08-23T05:49:35Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 109,
+    "doi_citati_controllati": 114,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -821,6 +821,12 @@
    "esito": "ok",
    "dati": [
     {
+     "pmid": "42631105",
+     "titolo": "Asia-Pac J Sports Med Arthrosc Rehabil Technol — Consensus APKASS 2024 (parte II, 23 esperti/8 paesi): nella r",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
      "pmid": "42597838",
      "titolo": "JOCR — Riparare la radice mediale in varo senza correggere l'asse spesso fallisce (revisione narrativa su oste",
      "citanti": [],
@@ -874,7 +880,158 @@
    "esito": "ok",
    "dati": {
     "finestra_giorni": 60,
-    "voci": []
+    "voci": [
+     {
+      "pmid": "42631105",
+      "titolo": "APKASS 2024 consensus statement on anterior cruciate ligament reconstruction, Part II: Management of anterior cruciate ligament revision in adults.",
+      "rivista": "Asia-Pacific journal of sports medicine, arthroscopy, rehabilitation and technology",
+      "data": "2026 Aug 13",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42616147",
+      "titolo": "The iliotibial band revisited: surgical anatomy and imaging-based guidelines for lateral tenodesis in ACL reconstruction.",
+      "rivista": "Surgical and radiologic anatomy : SRA",
+      "data": "2026 Aug 19",
+      "tipi": [
+       "Journal Article",
+       "Review"
+      ]
+     },
+     {
+      "pmid": "42596025",
+      "titolo": "Asia-Pacific expert consensus on robotic-assisted hip and knee arthroplasty.",
+      "rivista": "Arthroplasty (London, England)",
+      "data": "2026 Aug 13",
+      "tipi": [
+       "Journal Article",
+       "Review"
+      ]
+     },
+     {
+      "pmid": "42549304",
+      "titolo": "ACL rehabilitation after reconstruction: Evidence-based consensus recommendations from the German Knee Society-Part IV.",
+      "rivista": "Journal of experimental orthopaedics",
+      "data": "2026 Aug 3",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42545819",
+      "titolo": "Management of increased posterior tibial slope in ACL deficiency: A narrative review and recommendation of the Osteotomy Committee of the German Knee Society.",
+      "rivista": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+      "data": "2026 Aug 3",
+      "tipi": [
+       "Journal Article",
+       "Review"
+      ]
+     },
+     {
+      "pmid": "42535925",
+      "titolo": "Osteochondral Lesions of the Tibial Plafond (OLTPs): Proceedings of the International Consensus Meeting on Cartilage Repair of the Ankle.",
+      "rivista": "Foot & ankle specialist",
+      "data": "2026 Jul 31",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42522736",
+      "titolo": "Surgical Intervention for Moderate-To-Large lesions (1-2.9 cm(2)): Proceedings of the International Consensus Meetings on Cartilage Repair of the Ankle.",
+      "rivista": "Foot & ankle specialist",
+      "data": "2026 Jul 29",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42506877",
+      "titolo": "Clinical practice guideline for physical therapist management of total knee arthroplasty: revision 2026.",
+      "rivista": "Physical therapy",
+      "data": "2026 Jul 2",
+      "tipi": [
+       "Journal Article",
+       "Practice Guideline"
+      ]
+     },
+     {
+      "pmid": "42495946",
+      "titolo": "Bridging Conservative Management With Injectable Orthobiologic Therapies: Proceedings of the International Consensus Meetings on Cartilage Repair of the Ankle.",
+      "rivista": "Foot & ankle specialist",
+      "data": "2026 Jul 24",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42487072",
+      "titolo": "Genicular Artery Embolization for Chronic Knee Pain: Expert Consensus Recommendations on Indications, Technique and Clinical Care Using a Delphi Process.",
+      "rivista": "Cardiovascular and interventional radiology",
+      "data": "2026 Jul 22",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42435867",
+      "titolo": "The American Association of Hip and Knee Surgeons Position Statement on OrthoBiologics for Advanced Hip and Knee Osteoarthritis.",
+      "rivista": "The Journal of arthroplasty",
+      "data": "2026 Jul 11",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42400934",
+      "titolo": "General practitioners' perceptions and experiences of knee osteoarthritis management: a qualitative study of barriers and facilitators to delivering guideline-recommended treatment",
+      "rivista": "Scandinavian journal of primary health care",
+      "data": "2026 Jul 4",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42399861",
+      "titolo": "Major discrepancies in recommendations regarding long-term activity restrictions following knee replacement: a survey among Swedish physiotherapists.",
+      "rivista": "BMC musculoskeletal disorders",
+      "data": "2026 Jul 4",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42364858",
+      "titolo": "The American Association of Hip and Knee Surgeons Position Statement on Outpatient Joint Replacement.",
+      "rivista": "The Journal of arthroplasty",
+      "data": "2026 Jun 27",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42360177",
+      "titolo": "Cell-based therapy injections for the management of knee osteoarthritis: The ESSKA-ICRS consensus. Recommendations using the RAND/UCLA appropriateness method for different clinical",
+      "rivista": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+      "data": "2026 Jun 26",
+      "tipi": [
+       "Journal Article",
+       "Consensus Statement"
+      ]
+     },
+     {
+      "pmid": "42340275",
+      "titolo": "ACR Appropriateness Criteria® Chronic Knee Pain: Update 2026.",
+      "rivista": "Journal of the American College of Radiology : JACR",
+      "data": "2026 Jun 23",
+      "tipi": [
+       "Journal Article",
+       "Practice Guideline"
+      ]
+     }
+    ]
    }
   },
   "polso": {
