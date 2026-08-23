@@ -7,11 +7,17 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 22 agosto 2026.*
+*Ultimo aggiornamento: 23 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-08-23 | Asia-Pac J Sports Med Arthrosc Rehabil Technol | APKASS 2024 consensus statement, parte II: revisione della ricostruzione del LCA (23 esperti, 8 paesi) | 10.1016/j.asmart.2026.06.001 | lca, revisione, let, consensus | aperto — 🟠 PICK del giorno; LET indicato in modo selettivo secondo i fattori del paziente (non come tuo gesto universale); innesto BTB prima scelta, tendine quadricipitale alternativa valida; malposizionamento dei tunnel = causa principale di fallimento
+2026-08-23 | Front Cell Dev Biol | Terapia con cellule staminali mesenchimali per i difetti cartilaginei nell'artrosi (meta-analisi di 24 RCT, 1.389 pz) | 10.3389/fcell.2026.1880031 | terapie cellulari, artrosi, meta-analisi | aperto — dolore SMD -1,31 (IC 95% -1,82/-0,81), WOMAC SMD -0,78, volume cartilagineo SMD 0,91; MUTO sugli eventi avversi (OR 1,58; IC 95% 0,72-3,47, non esclude un rischio quasi 3,5×); iniezioni, non la tua chirurgia AMIC/AutoCart
+2026-08-23 | J Robot Surg | Allineamento funzionale vs meccanico in protesi robot-assistita su base CPAK (coorte retrospettiva, 271) | 10.1007/s11701-026-03835-2 | protesi robotica, allineamento, cpak | aperto — OKS più alto col funzionale (43,0 vs 41,0; p<0,001), FJS-12/VAS sovrapponibili; differenza piccola, piattaforma non specificata come VELYS
+2026-08-23 | J Exp Orthop | Altezza patellare e impegno trocleare alla RM nell'instabilità patellare del ginocchio scheletricamente immaturo (coorte comparativa, 85 ginocchia/83 pz) | 10.1002/jeo2.70896 | mpfl, instabilità rotulea, adolescente | aperto — OR 10,25 (IC 95% 2,16-48,66) per patella alta funzionale; soglie esplorative su singola coorte, non validate esternamente; con David Dejour e Pietro Randelli
+2026-08-23 | Arthrosc Tech | Perforazione subcondrale retrograda + cartilagine autologa/micronizzata con BMAC per lesioni patellofemorali (nota tecnica) | 10.1002/atn2.70177 | cartilagine, patellofemorale, tecnica chirurgica | aperto — nota tecnica, nessun dato clinico; non è la filiera AMIC/AutoCart
 
 2026-08-22 | JOCR | Necessità di osteotomia di riallineamento concomitante nella riparazione della radice meniscale mediale posteriore in ginocchia in varo (revisione narrativa) | 10.13107/jocr.2026.v16.i08.7962 | radice meniscale, osteotomia, slope | aperto — 🟢 PICK del giorno; riparazione isolata in varo: fallimento RM 88,5%, progressione artrosica 2,37×; HTO-MRR migliore della sola HTO; soglia proposta varo ≥5° correggibile; IC aggregati non riportati
 2026-08-22 | J ISAKOS | Il fenotipo CPAK preoperatorio non predice i PROM dopo osteotomia tibiale alta valgizzante mediale (coorte retrospettiva, 130 ginocchia) | 10.1016/j.jisako.2026.101204 | osteotomia, allineamento, cpak | aperto — differenze univariate non sopravvivono a correzione/aggiustamento; MUTO: possibile sottopotenza per sottogruppo di fenotipo
@@ -131,6 +137,22 @@ perito avversario userebbe contro l'indicazione universale.
 Attesa 2029.
 Nel frattempo: GRASE (Copenaghen, 150 pz, BPTB/HT/QT randomizzati, senza LET,
 reclutamento completo) risponderà sull'innesto — non sulla combinazione col LET.
+
+**Nuovo il 23 agosto 2026, una dimensione mai toccata finora: non l'innesto rigido,
+l'indicazione stessa.** Il consensus APKASS 2024 (parte II — Cao, Hoshino, Moatshe,
+Ong et al., *Asia-Pacific Journal of Sports Medicine, Arthroscopy, Rehabilitation and
+Technology*), costruito sulle risposte di 23 chirurghi esperti di 8 paesi membri
+confrontate con la letteratura corrente, indica il LET nella **revisione** del LCA
+come procedura da aggiungere **in base ai fattori individuali del paziente**, non come
+gesto automatico su ogni intervento. È la prima fonte autorevole che descrive il LET
+come procedura selettiva anziché sistematica — filosofia esplicitamente diversa dalla
+tua indicazione universale su tutti i pazienti operati di LCA. Non è una prova che la
+tua scelta sia sbagliata (livello V, opinione di esperti), ma alimenta la tensione
+sul terreno nuovo della revisione. Sull'innesto per la revisione, gli stessi esperti
+indicano il tendine osso-rotuleo-osso come prima scelta, con il **tendine
+quadricipitale riconosciuto come alternativa valida**, non marginale — e il
+malposizionamento dei tunnel della prima ricostruzione come causa principale di
+fallimento.
 
 **Nuovo il 19 agosto 2026.** Una piccola serie retrospettiva del gruppo di Bologna
 (Rizzoli — Bini, Lucidi, Grassi, Zaffagnini) su 28 pazienti ≥55 anni con LCA

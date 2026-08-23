@@ -409,3 +409,16 @@ il fermo (`checklist.py`) è stato collaudato togliendo il fermo: suona.
 39. **`PREFV` era tornato a 2 e Filardo e de Caro erano spariti dalle liste**, stessa
     causa. Ripristinati. Nota: entrambi i nomi erano stati riaperti su PubMed prima di
     scriverli — «Filaro», come era stato dettato, è **Giuseppe Filardo**, EOC Lugano.
+
+40. **Un conteggio assoluto scritto a mano era sopravvissuto dentro una suite, per
+    settimane, perché ogni giorno aveva sempre avuto abbastanza schede da non farlo
+    inciampare.** `test/newsletter.py` verificava `nvid >= 6` (almeno sei pulsanti
+    «📹 Video»): la mattina del 23 agosto, con una giornata leggera di 5 schede, il
+    cancello si è fermato su un briefing valido — esattamente il difetto 18/34, la
+    stessa famiglia di errore, non ancora spenta del tutto. Corretto derivando il
+    numero atteso da `ARTICLES` (`nvid == len(TUTTI)`), come impone `test/comune.py`
+    fin dal 2 agosto. Collaudato rompendolo davvero: con il pulsante rimosso dal
+    rendering, la sentinella corretta segnala `(0, 5)` invece di tacere.
+    **Regola che se ne ricava:** una regola di collaudo scritta bene in un file
+    (`comune.py`) non protegge le suite che non la usano — ogni conteggio in ogni
+    suite va controllato, non solo quelli aggiunti dopo la regola.

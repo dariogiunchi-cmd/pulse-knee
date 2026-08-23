@@ -36,9 +36,11 @@ with sync_playwright() as p:
                 ctx.close(); continue
 
             if theme == "light" and w == 390:
-                # --- 1. Video button exists on every card
+                # --- 1. Video button exists on every card. Conteggio derivato da
+                # ARTICLES, non scritto a mano: un giorno con poche schede (difetto
+                # 18/34) non deve far fallire un cancello altrimenti valido.
                 nvid = pg.locator('.ib.vid').count()
-                chk(tag+"pulsanti Video sulle schede", nvid >= 6, nvid)
+                chk(tag+"pulsanti Video sulle schede", nvid == len(TUTTI), (nvid, len(TUTTI)))
 
                 # --- 2. Newsletter tab exists
                 chk(tag+"tab Newsletter", pg.locator("button:has-text('Newsletter')").count() == 1)
