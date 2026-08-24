@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-23T05:49:35Z",
+ "generato": "2026-08-24T05:54:23Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 114,
+    "doi_citati_controllati": 115,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -769,57 +769,18 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Arthrex",
-      "titolo": "Core Decompression of the Femoral Head Using the AVN Expandable Reamer and AlloSync™ Pure DBM",
-      "link": "https://www.youtube.com/watch?v=mWYptxD1jjw",
-      "data": "2026-08-18"
-     },
-     {
-      "canale": "Stryker",
-      "titolo": "Voice Interpreter for Sync Badge | U.S.",
-      "link": "https://www.youtube.com/watch?v=Y3dTkvWSFh8",
-      "data": "2026-08-18"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Distal Humerus Shaft Fracture Fixation Using the Arthrex Elbow Plating System",
-      "link": "https://www.youtube.com/watch?v=PDL8DODmBO4",
-      "data": "2026-08-17"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex TightRope® PRO",
-      "link": "https://www.youtube.com/watch?v=e8VS-rrQS84",
-      "data": "2026-08-13"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "SpeedPearl: Automatic Wrist Washout Technique With the NanoNeedle™ Scope 2.0",
-      "link": "https://www.youtube.com/watch?v=HvgciVjo1M8",
-      "data": "2026-08-12"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Successful Setup and Use of the Arthrex Hip Distraction System",
-      "link": "https://www.youtube.com/watch?v=wWzsYOjt46k",
-      "data": "2026-08-11"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "CeMend™ Antibiotic Shoulder Spacers With Arthrex Bone Cement for Two-Stage Revision",
-      "link": "https://www.youtube.com/watch?v=Su2grPQXRqg",
-      "data": "2026-08-10"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42633011",
+     "titolo": "Orthop J Sports Med — Meta-analisi di 10 RCT (1.419 pz): il LET riduce i fallimenti dell'innesto, ma gli autor",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42631105",
      "titolo": "Asia-Pac J Sports Med Arthrosc Rehabil Technol — Consensus APKASS 2024 (parte II, 23 esperti/8 paesi): nella r",
@@ -1019,16 +980,6 @@
       "tipi": [
        "Journal Article",
        "Consensus Statement"
-      ]
-     },
-     {
-      "pmid": "42340275",
-      "titolo": "ACR Appropriateness Criteria® Chronic Knee Pain: Update 2026.",
-      "rivista": "Journal of the American College of Radiology : JACR",
-      "data": "2026 Jun 23",
-      "tipi": [
-       "Journal Article",
-       "Practice Guideline"
       ]
      }
     ]
