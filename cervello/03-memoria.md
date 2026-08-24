@@ -7,11 +7,13 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 23 agosto 2026.*
+*Ultimo aggiornamento: 24 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-08-24 | Orthop J Sports Med | Meta-analisi di 10 RCT (1.419 pz) sulla tenodesi extra-articolare laterale (LET) nella ricostruzione primaria del LCA | 10.1177/23259671261470939 | let, tenodesi, meta-analisi, rct | aperto — 🟠 PICK del giorno; livello I, la sintesi di RCT più ampia oggi disponibile: riduce i fallimenti dell'innesto (log OR -1,19; IC 95% -1,73/-0,65) e migliora il pivot shift (log OR -0,81; IC 95% -1,11/-0,52), guadagni piccoli su Lysholm/IKDC soggettivo; campione dominato da hamstring/BPTB e dal trial STABILITY (fissazione a graffa, 43,6% del totale); gli stessi autori raccomandano un uso selettivo basato sul rischio, non di routine su tutti — prima raccomandazione di livello I contro l'indicazione universale
 
 2026-08-23 | Asia-Pac J Sports Med Arthrosc Rehabil Technol | APKASS 2024 consensus statement, parte II: revisione della ricostruzione del LCA (23 esperti, 8 paesi) | 10.1016/j.asmart.2026.06.001 | lca, revisione, let, consensus | aperto — 🟠 PICK del giorno; LET indicato in modo selettivo secondo i fattori del paziente (non come tuo gesto universale); innesto BTB prima scelta, tendine quadricipitale alternativa valida; malposizionamento dei tunnel = causa principale di fallimento
 2026-08-23 | Front Cell Dev Biol | Terapia con cellule staminali mesenchimali per i difetti cartilaginei nell'artrosi (meta-analisi di 24 RCT, 1.389 pz) | 10.3389/fcell.2026.1880031 | terapie cellulari, artrosi, meta-analisi | aperto — dolore SMD -1,31 (IC 95% -1,82/-0,81), WOMAC SMD -0,78, volume cartilagineo SMD 0,91; MUTO sugli eventi avversi (OR 1,58; IC 95% 0,72-3,47, non esclude un rischio quasi 3,5×); iniezioni, non la tua chirurgia AMIC/AutoCart
@@ -120,6 +122,25 @@
 
 ### T1a — Il LET serve su innesto rigido? *(dal 2026-07-21)*
 
+**Nuovo il 24 agosto 2026, il tassello più diretto finora.** Una meta-analisi di 10
+RCT (11 studi randomizzati, 1.419 pazienti: 725 ACLR+LET, 694 ACLR isolata — la
+sintesi più ampia mai pubblicata sul tema, Alkhunein·Alhamzah, *OJSM*) conferma il
+beneficio del LET su fallimento dell'innesto (log OR -1,19; IC 95% -1,73/-0,65;
+p<0,001) e stabilità rotazionale al pivot shift (log OR -0,81; IC 95% -1,11/-0,52;
+p<0,001), con guadagni piccoli ma statisticamente significativi su Lysholm (+1,98
+punti) e IKDC soggettivo (+1,65 punti). Nessuna differenza su KT-1000, Lachman,
+IKDC oggettivo, KOOS, Tegner o ritorno allo sport. **Il punto che conta di più:**
+gli stessi autori concludono per «un uso selettivo e basato sul rischio... piuttosto
+che l'uso di routine in tutti i casi primari di ACLR» — la prima raccomandazione
+esplicita di **livello I** (non più solo opinione di esperti) contro l'indicazione
+universale che Dario segue. Non risolve però né la questione dell'innesto né quella
+del costrutto: solo 1 studio su 11 ammetteva il tendine quadricipitale (mescolato
+al rotuleo, non isolato), e il 43,6% del campione pooled proviene dal solo trial
+STABILITY, fissazione profonda a graffa — non la sua onlay. Nessuna sottoanalisi
+per innesto, tecnica o profilo di rischio: dichiarato dagli stessi autori come
+limite.
+
+
 La meta-analisi *Arthroscopy* dimostra il beneficio del LET su **hamstring**.
 Dario usa il **retto femorale**. Il protocollo STABILITY 2 conferma testualmente
 che *«no study has determined if the reduced rate of ACLR failure seen with the
@@ -217,6 +238,12 @@ ricostruzione anterolaterale associata al LCA fra i contributi francesi diventat
 standard internazionale, insieme alla trocleoplastica e alla conservazione
 meniscale. Livello V, opinione di esperti: **conferma il LET come pratica diffusa,
 non distingue il costrutto onlay dal profondo con graffa — non chiude la tensione.**
+
+**Nuovo il 24 agosto 2026.** La meta-analisi di 10 RCT sul LET che aggiorna anche
+la T1a non stratifica per costrutto — profondo con graffa vs onlay superficiale —
+e il 43,6% del campione pooled proviene dal solo trial STABILITY, fissazione a
+graffa. Non chiude la tensione, la conferma: la base di evidenza resta quella del
+costrutto profondo, non quella di Dario.
 
 ### T2b — L'estrusione, non il timing né il grado condrale *(riformulata 2026-08-01, sostituisce T2)*
 
