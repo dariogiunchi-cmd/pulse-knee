@@ -19,7 +19,7 @@ with sync_playwright() as p:
     chk(f"{QUANTI} salvati oggi", pg.evaluate("savedList().length")==QUANTI)
     chk("fotografia conservata", pg.evaluate("(S.savedItems||[]).every(function(i){return i.a&&i.a.pmid&&i.a.h})"))
     pmids=pg.evaluate("(S.savedItems||[]).map(function(i){return i.a.pmid})")
-    chk("stella accesa sulle schede", pg.locator(".ib.save.on").count()>=3, pg.locator(".ib.save.on").count())
+    chk("stella accesa sulle schede", pg.locator(".ib.save.on").count()>=QUANTI, pg.locator(".ib.save.on").count())
 
     # DOMANI: le schede cambiano tutte
     pg.evaluate("""() => {
