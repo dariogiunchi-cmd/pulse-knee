@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-25T05:18:25Z",
+ "generato": "2026-08-25T05:52:48Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -753,19 +753,25 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 115,
+    "doi_citati_controllati": 119,
     "colpiti": [],
     "nel_perimetro": [],
     "tipi_falliti": []
    }
   },
   "youtube": {
-   "esito": "non risposto: HTTPError HTTP Error 500: Internal Server Error",
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
    "dati": null
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42636872",
+     "titolo": "J Knee Surg — Revisione sistematica di 24 studi (21.261 pz): l'osteotomia tibiale alta resta un'opzione valida",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42633011",
      "titolo": "Orthop J Sports Med — Meta-analisi di 10 RCT (1.419 pz): il LET riduce i fallimenti dell'innesto, ma gli autor",
