@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-24T06:06:03Z",
+ "generato": "2026-08-25T05:18:25Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Swissmedic Portal Release Notes – 24.08.2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/egov-services/smc-portal/release-notes/release-note-240826.html",
+      "data": "Mon, 24 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "I-SMI.TI.10e Starting Material Identity Guarantee",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/bewilligungen_zertifikate/autorizzazioni-d-esercizio0/ispettorati.html",
       "data": "Mon, 17 Aug 2026 00:00:00 +0000"
@@ -368,12 +374,6 @@
       "titolo": "DHPC – Aranesp (darbepoetinum alfa)",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-aranesp-darbepoetinum-alfa.html",
       "data": "Thu, 06 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Ritiro di lotti – Viscum album Qu 200mg, ampoules / Viscum album Qu-F 100mg, ampoules",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/hargenrueckruf-viscum-album-qu-200mg-ampullen-viscum-album-qu-f-100mg-ampullen.html",
-      "data": "Tue, 04 Aug 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
@@ -594,17 +594,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07580157",
-       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
-       "stato": "ENROLLING_BY_INVITATION",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 20,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07753707",
        "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
        "stato": "ACTIVE_NOT_RECRUITING",
@@ -613,6 +602,17 @@
         "NA"
        ],
        "n": 111,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07580157",
+       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 20,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -674,6 +674,17 @@
      "sorveglianza": "Radice meniscale",
      "studi": [
       {
+       "nct": "NCT05985772",
+       "titolo": "Operative vs Non-operative Management of Posterior-medial Meniscal Root Tears: A Randomized Multicenter Trial (RCT)",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-08-24",
+       "fase": [
+        "NA"
+       ],
+       "n": 140,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
        "nct": "NCT07089316",
        "titolo": "Preoperative MRI and Radiographic Parameters in Medial Meniscus Root Tears and Repair Outcomes",
        "stato": "COMPLETED",
@@ -716,17 +727,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT05985772",
-       "titolo": "Operative vs Non-operative Management of Posterior-medial Meniscal Root Tears: A Randomized Multicenter Trial (RCT)",
-       "stato": "RECRUITING",
-       "aggiornato": "2025-08-21",
-       "fase": [
-        "NA"
-       ],
-       "n": 140,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT06707948",
        "titolo": "A Study on Different Treatments for Knee Osteoarthritis Caused by Damaged Roots of the Medial Meniscus.",
        "stato": "NOT_YET_RECRUITING",
@@ -755,21 +755,12 @@
    "dati": {
     "doi_citati_controllati": 115,
     "colpiti": [],
-    "nel_perimetro": [
-     {
-      "tipo": "retraction",
-      "avviso": "10.1177/10732748231190122",
-      "bersaglio": [
-       "10.1177/1073274821997444"
-      ],
-      "titolo": "Retracted: “Efficacy and Safety of Cetuximab Plus Cisplatin Alone or in Combination With Paclitaxel in Patients With Head and Neck Squamous Cell Carcinoma: A Ra"
-     }
-    ],
+    "nel_perimetro": [],
     "tipi_falliti": []
    }
   },
   "youtube": {
-   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "esito": "non risposto: HTTPError HTTP Error 500: Internal Server Error",
    "dati": null
   },
   "destino": {
