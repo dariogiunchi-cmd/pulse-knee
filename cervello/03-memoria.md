@@ -7,11 +7,16 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 24 agosto 2026.*
+*Ultimo aggiornamento: 25 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-08-25 | J Knee Surg | Revisione sistematica di 24 studi (21.261 pz) sull'osteotomia tibiale alta oltre i 55 anni | 10.1055/a-2939-2700 | osteotomia, over 55, condrosi mediale | aperto — 🟢 PICK del giorno; conversione a protesi 8,6%, complicanze 2,3%, miglioramento sostenuto di VAS/Lysholm/JOA Knee a follow-up medio 57,5 mesi; nessun gruppo di controllo più giovane, nessun IC riportato — sintesi di proporzioni aggregate
+2026-08-25 | The Knee | Revisione sistematica di 25 studi di imaging sulla rotazione tibiofemorale nella patologia femoro-rotulea | 10.1016/j.knee.2026.104609 | patellofemorale, rotazione tibiofemorale, imaging | aperto — associazione fra rotazione esterna aumentata e malallineamento/instabilità, ma overlap sostanziale fra range sani (-8,7° a 11,7°) e patologici (-6,5° a 21,6°); nessuno standard di misura condiviso fra gli studi
+2026-08-25 | J Robot Surg | Revisione sistematica PROSPERO di 13 studi (1.787 RA-TKA) sul ginocchio in valgo fisso grave | 10.1007/s11701-026-03828-1 | protesi robotica, valgo grave, allineamento | aperto — allineamento entro 1-3° dal target, outlier <20% vs 42,3% manuale; livello di evidenza IV dichiarato dagli autori; piattaforma non specificata come VELYS
+2026-08-25 | J Robot Surg | Coorte retrospettiva (229 pz, sistema Mako) su allineamento meccanico vs cinematico del femore in RA-TKA | 10.1007/s11701-026-03847-y | protesi robotica, allineamento, patella | aperto — FMA comprime il condilo laterale, più release retinacolari, WOMAC/Feller peggiori vs FKA; cifre esatte dei confronti non riportate; sistema Mako, non VELYS
 
 2026-08-24 | Orthop J Sports Med | Meta-analisi di 10 RCT (1.419 pz) sulla tenodesi extra-articolare laterale (LET) nella ricostruzione primaria del LCA | 10.1177/23259671261470939 | let, tenodesi, meta-analisi, rct | aperto — 🟠 PICK del giorno; livello I, la sintesi di RCT più ampia oggi disponibile: riduce i fallimenti dell'innesto (log OR -1,19; IC 95% -1,73/-0,65) e migliora il pivot shift (log OR -0,81; IC 95% -1,11/-0,52), guadagni piccoli su Lysholm/IKDC soggettivo; campione dominato da hamstring/BPTB e dal trial STABILITY (fissazione a graffa, 43,6% del totale); gli stessi autori raccomandano un uso selettivo basato sul rischio, non di routine su tutti — prima raccomandazione di livello I contro l'indicazione universale
 
@@ -354,6 +359,17 @@ l'ipotesi che il criterio di rientro debba considerare la componente muscolare, 
 solo la stabilità legamentosa. **Ma il confronto statistico diretto fra il gruppo
 LET e quello senza non è riportato nell'abstract** (solo p entro-gruppo: 11,2N
 p<0,001 vs 5,9N p=0,155): dato suggestivo, non dimostrato.
+
+**Aggiornata il 25 agosto 2026, due segnali che allargano il profilo oltre la sola
+simmetria di forza.** Uno studio biomeccanico mostra che aggiungere un carico
+cognitivo durante l'atterraggio dopo la ricostruzione del LCA modifica la meccanica
+del salto in modo diverso rispetto a chi non è mai stato operato — un secondo
+segnale, indipendente da quello del 18 agosto, che il test motorio da solo può non
+cogliere tutto ciò che conta per il rientro. Uno studio caso-controllo esplora
+insieme, dopo la ricostruzione, la propriocezione in valgo, l'attività muscolare,
+gli esiti riferiti dal paziente e il controllo dinamico dell'equilibrio: un profilo
+più ampio della sola forza, ancora descrittivo, non ancora un criterio di rientro
+alternativo pronto all'uso.
 
 **Cosa la chiude:** studi che leghino il deficit di attivazione a esiti duri —
 rirottura o mancato rientro — non a misure intermedie.
