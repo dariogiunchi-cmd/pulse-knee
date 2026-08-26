@@ -7,11 +7,16 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 25 agosto 2026.*
+*Ultimo aggiornamento: 26 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-08-26 | Knee | Revisione sistematica e meta-analisi di 14 studi (1.680 ginocchia) su strumentazione paziente-specifica vs convenzionale in protesi monocompartimentale | 10.1016/j.knee.2026.104608 | protesi monocompartimentale, strumentazione, allineamento | aperto — nessuna differenza nell'Oxford Knee Score a 1 anno (differenza media 0,90; IC 95% -2,65/4,45; I²=0%); dati di revisione troppo eterogenei per la sintesi
+2026-08-26 | Knee | Coorte retrospettiva (452 pz) su indice di larghezza del notch intercondiloideo e fallimento dell'innesto dopo ricostruzione del LCA | 10.1016/j.knee.2026.104610 | lca, fallimento innesto, let | aperto — 🟢 PICK del giorno; NWI non associato al fallimento (p=0,237); età più giovane (OR 0,91; IC 95% 0,84-1,00) e diametro tibiale dell'innesto più piccolo (OR 0,48; IC 95% 0,23-1,00) fattori indipendenti; zero fallimenti fra i 18 pz con LET concomitante, ma muto (RR 0,59; IC 95% 0,04-9,36) — alimenta T1a
+2026-08-26 | Arthroscopy | Studio caso-controllo (7 casi vs coorte appaiata, follow-up medio 16,2 anni) su infezione postoperatoria dopo ACLR e artrosi a lungo termine | 10.1002/arj.70489 | lca, infezione, artrosi | aperto — 100% (7/7) di artrosi a 3 compartimenti negli infetti vs 35% dei controlli (p=0,0058); nessuna differenza nei punteggi clinici; campione degli infetti minimo
+2026-08-26 | JBJS Case Connect | Caso clinico: osteomielite fungina (Aspergillus versicolor) dopo rifissazione artroscopica della radice meniscale mediale, prima descrizione | 10.2106/JBJS.CC.25.00493 | radice meniscale, infezione, complicanza rara | aperto — caso singolo, risolto con debridement e voriconazolo; nessuna incidenza calcolabile
 
 2026-08-25 | J Knee Surg | Revisione sistematica di 24 studi (21.261 pz) sull'osteotomia tibiale alta oltre i 55 anni | 10.1055/a-2939-2700 | osteotomia, over 55, condrosi mediale | aperto — 🟢 PICK del giorno; conversione a protesi 8,6%, complicanze 2,3%, miglioramento sostenuto di VAS/Lysholm/JOA Knee a follow-up medio 57,5 mesi; nessun gruppo di controllo più giovane, nessun IC riportato — sintesi di proporzioni aggregate
 2026-08-25 | The Knee | Revisione sistematica di 25 studi di imaging sulla rotazione tibiofemorale nella patologia femoro-rotulea | 10.1016/j.knee.2026.104609 | patellofemorale, rotazione tibiofemorale, imaging | aperto — associazione fra rotazione esterna aumentata e malallineamento/instabilità, ma overlap sostanziale fra range sani (-8,7° a 11,7°) e patologici (-6,5° a 21,6°); nessuno standard di misura condiviso fra gli studi
@@ -126,6 +131,19 @@
 ## TENSIONI APERTE
 
 ### T1a — Il LET serve su innesto rigido? *(dal 2026-07-21)*
+
+**Nuovo il 26 agosto 2026, un segnale piccolo ma nella direzione di Dario.** Una
+coorte retrospettiva di 452 ricostruzioni primarie del LCA (Nicholas et al., *The
+Knee*) non trova alcun fallimento dell'innesto fra i 18 pazienti che hanno ricevuto
+anche un LET concomitante (0/18), contro il 4,4% del resto della coorte (19/434).
+Ricalcolato con `test/potenza.py` sui conteggi grezzi: rischio relativo 0,59, IC
+95% 0,04-9,36 — un intervallo che non esclude né una forte protezione né un rischio
+quasi decuplicato. Non è una dimostrazione, è un segnale muto che va nella
+direzione della sua pratica; il dato più solido dello studio riguarda un'altra
+domanda — il diametro dell'innesto, non il costrutto del LET, predice il
+fallimento in modo indipendente (OR 0,48 per innesto più piccolo; IC 95%
+0,23-1,00), un argomento per non sottodimensionare l'innesto nei pazienti più
+giovani ad alto rischio.
 
 **Nuovo il 24 agosto 2026, il tassello più diretto finora.** Una meta-analisi di 10
 RCT (11 studi randomizzati, 1.419 pazienti: 725 ACLR+LET, 694 ACLR isolata — la
