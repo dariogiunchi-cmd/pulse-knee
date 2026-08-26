@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-25T05:52:48Z",
+ "generato": "2026-08-26T05:17:50Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,24 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "DHPC – Alecensa® (alectinib)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-alecensa-alectinib.html",
+      "data": "Tue, 25 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Ojemda®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ojemda.html",
+      "data": "Tue, 25 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Vyvgart®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-vyvgart-1.html",
+      "data": "Tue, 25 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Swissmedic Portal Release Notes – 24.08.2026",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/services/egov-services/smc-portal/release-notes/release-note-240826.html",
       "data": "Mon, 24 Aug 2026 00:00:00 +0000"
@@ -358,28 +376,10 @@
       "data": "Fri, 07 Aug 2026 00:00:00 +0000"
      },
      {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – RYSTIGGO®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-rystiggo-rozanolixizumab.html",
-      "data": "Fri, 07 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "DHPC – Tavneos® (avacopan)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-tavneos-avacopan.html",
-      "data": "Thu, 06 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "DHPC – Aranesp (darbepoetinum alfa)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-aranesp-darbepoetinum-alfa.html",
-      "data": "Thu, 06 Aug 2026 00:00:00 +0000"
-     },
-     {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
-      "titolo": "DHPC – Rhophylac (immunoglobulinum humanum anti-D)Out-of-Stock – Extencilline, 1 200 000 et 2 400 000 UI, poudre et solvant pour...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-rhophylac-immunoglobulinum-humanum-anti-d1.html",
-      "data": "Mon, 17 Aug 2026 11:16:37 +0000"
+      "titolo": "DHPC – Alecensa® (alectinib)DHPC – Rhophylac (immunoglobulinum humanum anti-D)Out-of-Stock – Extencilline, 1 200 000 et 2 400 00...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-alecensa-alectinib.html",
+      "data": "Wed, 26 Aug 2026 00:50:50 +0000"
      }
     ]
    }
@@ -594,17 +594,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07753707",
-       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 111,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07580157",
        "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
        "stato": "ENROLLING_BY_INVITATION",
@@ -613,6 +602,17 @@
         "NA"
        ],
        "n": 20,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07753707",
+       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 111,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -840,6 +840,17 @@
     "finestra_giorni": 60,
     "voci": [
      {
+      "pmid": "42642184",
+      "titolo": "[Expert consensus on clinical pathway of high-conformity total knee arthroplasty under the enhanced recovery after surgery protocol].",
+      "rivista": "Zhongguo xiu fu chong jian wai ke za zhi = Zhongguo xiufu chongjian waike zazhi = Chinese journal of reparative and reconstructive surgery",
+      "data": "2026 Aug 15",
+      "tipi": [
+       "Journal Article",
+       "Consensus Statement",
+       "English Abstract"
+      ]
+     },
+     {
       "pmid": "42631105",
       "titolo": "APKASS 2024 consensus statement on anterior cruciate ligament reconstruction, Part II: Management of anterior cruciate ligament revision in adults.",
       "rivista": "Asia-Pacific journal of sports medicine, arthroscopy, rehabilitation and technology",
@@ -997,6 +1008,48 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Robotic-assisted surgery has less soft tissue damage than traditional total knee arthroplasty, with better early recovery and prosthesis placement",
+      "dove": "archivio preprint",
+      "data": "2026-08-25",
+      "doi": "10.21203/rs.3.rs-10579282/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10579282/v1"
+     },
+     {
+      "titolo": "Comparison of Clinical Outcomes Between Asymmetric Reconstruction and Mechanical Alignment Total Knee Arthroplasty for Coronal Plane Alignment of the Knee Type ",
+      "dove": "archivio preprint",
+      "data": "2026-08-25",
+      "doi": "10.21203/rs.3.rs-10691327/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10691327/v1"
+     },
+     {
+      "titolo": "Surgeon's task-load performing surgery around the knee with and without a tourniquet: a prospective cohort study",
+      "dove": "archivio preprint",
+      "data": "2026-08-25",
+      "doi": "10.21203/rs.3.rs-10528768/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10528768/v1"
+     },
+     {
+      "titolo": "Influence of Extensile Medial Parapatellar Arthrotomy on Quadriceps Strength Recovery Following Primary Total Knee Arthroplasty: A Comparative Cohort Study",
+      "dove": "archivio preprint",
+      "data": "2026-08-25",
+      "doi": "10.21203/rs.3.rs-10569080/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10569080/v1"
+     },
+     {
+      "titolo": "An Open-Label Single-Arm Phase I/IIa Study to Evaluate the Safety of Human Allogeneic Bone-Marrow-Derived Mesenchymal Stromal Cell Product StromaForte ® for the",
+      "dove": "archivio preprint",
+      "data": "2026-08-25",
+      "doi": "10.21203/rs.3.rs-9847505/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-9847505/v1"
+     },
+     {
+      "titolo": "The Wikidata Knee Replacement Ecosphere: A Clinician Curated, Openly Licensed Knowledge Graph Dataset of Knee Replacement Surgical Techniques, Instruments, Advo",
+      "dove": "archivio preprint",
+      "data": "2026-08-24",
+      "doi": "10.20944/preprints202608.1650.v1",
+      "url": "https://doi.org/10.20944/preprints202608.1650.v1"
+     },
+     {
       "titolo": "Astragalus-Angelica sinensis-Derived Extracellular Vesicles Attenuate Knee Osteoarthritis with Periarticular Muscle Atrophy via PPARγ-Mediated Regulation of Ske",
       "dove": "archivio preprint",
       "data": "2026-08-20",
@@ -1128,48 +1181,6 @@
       "data": "2026-08-13",
       "doi": "10.21203/rs.3.rs-10534422/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10534422/v1"
-     },
-     {
-      "titolo": "The capacity knee of a physics-based Li-ion model is governed by one unmeasured exponent.",
-      "dove": "archivio preprint",
-      "data": "2026-08-13",
-      "doi": "10.21203/rs.3.rs-10672642/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10672642/v1"
-     },
-     {
-      "titolo": "Robot-assisted intraoperative manual stress assessment in extension position predicts postoperative soft-tissue balance and clinical outcomes after total knee a",
-      "dove": "archivio preprint",
-      "data": "2026-08-11",
-      "doi": "10.21203/rs.3.rs-10418210/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10418210/v1"
-     },
-     {
-      "titolo": "Evaluation of the Lateral Femoral Notch Sign as a Diagnostic Test for Anterior Cruciate Ligament Rupture",
-      "dove": "archivio preprint",
-      "data": "2026-08-11",
-      "doi": "10.21203/rs.3.rs-10395468/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10395468/v1"
-     },
-     {
-      "titolo": "Efficacy of Psychological self-monitoring and goal-setting Intervention in Anterior Cruciate Ligament Reconstruction Rehabilitation mid-phase: A Randomized Cont",
-      "dove": "archivio preprint",
-      "data": "2026-08-10",
-      "doi": "10.64898/2026.08.07.26359958",
-      "url": "https://doi.org/10.64898/2026.08.07.26359958"
-     },
-     {
-      "titolo": "Subchondral Bone Metabolic Responses to Acute Mechanical Loading in Unilateral Knee Pain: A Quantitative [  <sup>18</sup>  F]NaF PET/MRI Study",
-      "dove": "archivio preprint",
-      "data": "2026-08-10",
-      "doi": "10.64898/2026.08.07.26359981",
-      "url": "https://doi.org/10.64898/2026.08.07.26359981"
-     },
-     {
-      "titolo": "Distinct Microbiological Profiles and Treatment Outcomes in Periprosthetic Knee Infections: A Comparative Study of TKA, UKA, and Native Knee Septic Arthritis",
-      "dove": "archivio preprint",
-      "data": "2026-08-10",
-      "doi": "10.21203/rs.3.rs-10034416/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10034416/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
