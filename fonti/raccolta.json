@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-26T05:58:37Z",
+ "generato": "2026-08-27T14:38:25Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -753,19 +753,58 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 123,
+    "doi_citati_controllati": 131,
     "colpiti": [],
     "nel_perimetro": [],
     "tipi_falliti": []
    }
   },
   "youtube": {
-   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthroscopic Bankart Repair Using the Knotless 1.8 FiberTak® System With Pivot Guide",
+      "link": "https://www.youtube.com/watch?v=X35vd2_PFOg",
+      "data": "2026-08-27"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Segmental Meniscal Allograft Transplantation Using the Segmental Meniscus Procedure Pack",
+      "link": "https://www.youtube.com/watch?v=0XmDt8f-4Ps",
+      "data": "2026-08-24"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Core Decompression of the Femoral Head Using the AVN Expandable Reamer and AlloSync™ Pure DBM",
+      "link": "https://www.youtube.com/watch?v=mWYptxD1jjw",
+      "data": "2026-08-18"
+     },
+     {
+      "canale": "Stryker",
+      "titolo": "Voice Interpreter for Sync Badge | U.S.",
+      "link": "https://www.youtube.com/watch?v=Y3dTkvWSFh8",
+      "data": "2026-08-18"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Distal Humerus Shaft Fracture Fixation Using the Arthrex Elbow Plating System",
+      "link": "https://www.youtube.com/watch?v=PDL8DODmBO4",
+      "data": "2026-08-17"
+     }
+    ]
+   }
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42647020",
+     "titolo": "Knee Surg Sports Traumatol Arthrosc — Coorte prospettica (90 pz: 30 retto femorale, 30 tendine quadricipitale,",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42641205",
      "titolo": "The Knee — Coorte retrospettiva (452 pz): il fallimento dell'innesto dopo ricostruzione del LCA non dipende da",
@@ -985,16 +1024,6 @@
       "tipi": [
        "Journal Article"
       ]
-     },
-     {
-      "pmid": "42360177",
-      "titolo": "Cell-based therapy injections for the management of knee osteoarthritis: The ESSKA-ICRS consensus. Recommendations using the RAND/UCLA appropriateness method for different clinical",
-      "rivista": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
-      "data": "2026 Jun 26",
-      "tipi": [
-       "Journal Article",
-       "Consensus Statement"
-      ]
      }
     ]
    }
@@ -1012,7 +1041,183 @@
    "esito": "ok",
    "dati": {
     "finestra_giorni": 30,
-    "voci": [],
+    "voci": [
+     {
+      "titolo": "Robotic-assisted surgery has less soft tissue damage than traditional total knee arthroplasty, with better early recovery and prosthesis placement",
+      "dove": "archivio preprint",
+      "data": "2026-08-25",
+      "doi": "10.21203/rs.3.rs-10579282/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10579282/v1"
+     },
+     {
+      "titolo": "Comparison of Clinical Outcomes Between Asymmetric Reconstruction and Mechanical Alignment Total Knee Arthroplasty for Coronal Plane Alignment of the Knee Type ",
+      "dove": "archivio preprint",
+      "data": "2026-08-25",
+      "doi": "10.21203/rs.3.rs-10691327/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10691327/v1"
+     },
+     {
+      "titolo": "Surgeon's task-load performing surgery around the knee with and without a tourniquet: a prospective cohort study",
+      "dove": "archivio preprint",
+      "data": "2026-08-25",
+      "doi": "10.21203/rs.3.rs-10528768/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10528768/v1"
+     },
+     {
+      "titolo": "Influence of Extensile Medial Parapatellar Arthrotomy on Quadriceps Strength Recovery Following Primary Total Knee Arthroplasty: A Comparative Cohort Study",
+      "dove": "archivio preprint",
+      "data": "2026-08-25",
+      "doi": "10.21203/rs.3.rs-10569080/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10569080/v1"
+     },
+     {
+      "titolo": "An Open-Label Single-Arm Phase I/IIa Study to Evaluate the Safety of Human Allogeneic Bone-Marrow-Derived Mesenchymal Stromal Cell Product StromaForte ® for the",
+      "dove": "archivio preprint",
+      "data": "2026-08-25",
+      "doi": "10.21203/rs.3.rs-9847505/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-9847505/v1"
+     },
+     {
+      "titolo": "The Wikidata Knee Replacement Ecosphere: A Clinician Curated, Openly Licensed Knowledge Graph Dataset of Knee Replacement Surgical Techniques, Instruments, Advo",
+      "dove": "archivio preprint",
+      "data": "2026-08-24",
+      "doi": "10.20944/preprints202608.1650.v1",
+      "url": "https://doi.org/10.20944/preprints202608.1650.v1"
+     },
+     {
+      "titolo": "Astragalus-Angelica sinensis-Derived Extracellular Vesicles Attenuate Knee Osteoarthritis with Periarticular Muscle Atrophy via PPARγ-Mediated Regulation of Ske",
+      "dove": "archivio preprint",
+      "data": "2026-08-20",
+      "doi": "10.21203/rs.3.rs-10556770/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10556770/v1"
+     },
+     {
+      "titolo": "Is ROSA Always Reliable? High Accuracy but Notable Deviations in Medial Tibial Resection and Femoral Component Sizing in Mechanically-Aligned Total Knee Arthrop",
+      "dove": "archivio preprint",
+      "data": "2026-08-20",
+      "doi": "10.21203/rs.3.rs-10095661/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10095661/v1"
+     },
+     {
+      "titolo": "Acute popliteal artery thrombosis after simultaneous bilateral total knee arthroplasty: a case report with long-term follow-up",
+      "dove": "archivio preprint",
+      "data": "2026-08-20",
+      "doi": "10.21203/rs.3.rs-10595496/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10595496/v1"
+     },
+     {
+      "titolo": "Structural relationships among osteoporosis knowledge, health beliefs, self- efficacy and activities of daily living in patients with knee osteoarthritis: a cro",
+      "dove": "archivio preprint",
+      "data": "2026-08-19",
+      "doi": "10.21203/rs.3.rs-10570868/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10570868/v1"
+     },
+     {
+      "titolo": "Effectiveness and Potential Benefits of the Use of Laser Light Therapy in Musculoskeletal Rehabilitation Programs for Knee Osteoarthritis: A Narrative Review",
+      "dove": "archivio preprint",
+      "data": "2026-08-17",
+      "doi": "10.20944/preprints202608.1113.v1",
+      "url": "https://doi.org/10.20944/preprints202608.1113.v1"
+     },
+     {
+      "titolo": "Process evaluation protocol of a trial evaluating app-based post knee arthroplasty telerehabilitation strategy in India",
+      "dove": "archivio preprint",
+      "data": "2026-08-17",
+      "doi": "10.12688/wellcomeopenres.26007.2",
+      "url": "https://doi.org/10.12688/wellcomeopenres.26007.2"
+     },
+     {
+      "titolo": "Finite Element Analysis of Fixed-bearing Unicompartmental Knee Arthroplasty: Coronal Alignment of the Tibial Component under Physiological Alignment",
+      "dove": "archivio preprint",
+      "data": "2026-08-14",
+      "doi": "10.21203/rs.3.rs-10561184/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10561184/v1"
+     },
+     {
+      "titolo": "Sustainability of whole-body electromyostimulation in knee osteoarthritis – 6-month post-intervention follow-up of the randomized controlled EMSOAT study",
+      "dove": "archivio preprint",
+      "data": "2026-08-14",
+      "doi": "10.21203/rs.3.rs-10229284/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10229284/v1"
+     },
+     {
+      "titolo": "Effect of Mesenchymal Stem Cell-Derived Secretome Injection on Functional Outcomes After Anterior Cruciate Ligament Reconstruction Using Peroneus Longus Tendon ",
+      "dove": "archivio preprint",
+      "data": "2026-08-14",
+      "doi": "10.21203/rs.3.rs-10642292/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10642292/v1"
+     },
+     {
+      "titolo": "The Effect of Lower-Limb Coronal Alignment Correction and Component Positioning on Coronal Ankle Alignment After Total Knee Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-08-14",
+      "doi": "10.21203/rs.3.rs-10465742/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10465742/v1"
+     },
+     {
+      "titolo": "Comparison of hamstring stretch position with modified rider sitting position on patient comfort in patients with fracture around the knee undergoing spinal ana",
+      "dove": "archivio preprint",
+      "data": "2026-08-14",
+      "doi": "10.21203/rs.3.rs-10305855/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10305855/v1"
+     },
+     {
+      "titolo": "Tuberculosis of the knee in an immunocompetent adult: A case report",
+      "dove": "archivio preprint",
+      "data": "2026-08-13",
+      "doi": "10.1099/acmi.0.001095.v3",
+      "url": "https://doi.org/10.1099/acmi.0.001095.v3"
+     },
+     {
+      "titolo": "No Significant Difference in Short-Term Results between Mobile-Bearing and Fixed- Bearing Unicompartmental knee arthroplasty for Medial Osteoarthritis: A Random",
+      "dove": "archivio preprint",
+      "data": "2026-08-13",
+      "doi": "10.21203/rs.3.rs-10164560/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10164560/v1"
+     },
+     {
+      "titolo": "Probiotics and related microbiota-targeted interventions for knee osteoarthritis: a systematic review and meta-analysis of randomized controlled trials",
+      "dove": "archivio preprint",
+      "data": "2026-08-13",
+      "doi": "10.21203/rs.3.rs-10539377/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10539377/v1"
+     },
+     {
+      "titolo": "Step width as a robust predictor of fall risk in patients with moderate-to-severe knee osteoarthritis: A gait-based prediction model",
+      "dove": "archivio preprint",
+      "data": "2026-08-13",
+      "doi": "10.21203/rs.3.rs-10344489/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10344489/v1"
+     },
+     {
+      "titolo": "Identifying patients with a phenotype consistent with chronic postsurgical pain after hip and knee arthroplasty using robust, scalable k-medoids clustering anal",
+      "dove": "archivio preprint",
+      "data": "2026-08-12",
+      "doi": "10.64898/2026.08.11.26360161",
+      "url": "https://doi.org/10.64898/2026.08.11.26360161"
+     },
+     {
+      "titolo": "Knee Joint Biomechanics During Lunges at Different Tibial Angles and External Loads: A Musculoskeletal Analysis with Finite Element Insights",
+      "dove": "archivio preprint",
+      "data": "2026-08-12",
+      "doi": "10.64898/2026.08.07.743401",
+      "url": "https://doi.org/10.64898/2026.08.07.743401"
+     },
+     {
+      "titolo": "Genicular artery embolization for symptomatic knee osteoarthritis: discordance between functional and patient-reported outcomes",
+      "dove": "archivio preprint",
+      "data": "2026-08-12",
+      "doi": "10.21203/rs.3.rs-10383247/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10383247/v1"
+     },
+     {
+      "titolo": "Association between abnormal native tibial torsion and poorer clinical outcomes following robotic-assisted total knee arthroplasty: follow-up of at least two ye",
+      "dove": "archivio preprint",
+      "data": "2026-08-13",
+      "doi": "10.21203/rs.3.rs-10534422/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10534422/v1"
+     }
+    ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
    }
   }
