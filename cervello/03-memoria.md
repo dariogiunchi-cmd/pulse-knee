@@ -7,11 +7,20 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 26 agosto 2026.*
+*Ultimo aggiornamento: 27 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-08-27 | Knee Surg Sports Traumatol Arthrosc | Coorte prospettica di 90 pazienti (30 retto femorale, 30 tendine quadricipitale, 30 hamstring, tutti con augmentazione anterolaterale sistematica) su accordo fra soglia PASS e simmetria isocinetica del quadricipite a 1 anno dopo ricostruzione del LCA | 10.1002/ksa.70584 | lca, criterio di rientro, quadricipite, let | aperto — 🟠 PICK del giorno; accordo assente fra PASS sul KOOS Sport e LSI≥90% (kappa=0,060; IC 95% -0,071/0,191); 76% di chi supera il PASS ha comunque LSI<90%; schema coerente nei tre innesti (RF 50%, QT 47%, HS 43%; p=0,875) — alimenta T3 con un dato costruito esattamente sulla combinazione innesto+LET della sua pratica
+2026-08-27 | Knee Surg Sports Traumatol Arthrosc | Revisione sistematica e meta-analisi di 6 studi comparativi (309 pz) su centralizzazione + sutura della radice meniscale mediale vs sutura isolata | 10.1002/ksa.70583 | root, transtibiale, estrusione | aperto — 🟢 aggiunta di centralizzazione non riduce significativamente l'estrusione (differenza media 0,4 mm; IC 95% -0,34/1,22; I²=89%) né migliora Lysholm/IKDC/VAS — alimenta T2b, non chiude la tensione
+2026-08-27 | Knee Surg Sports Traumatol Arthrosc | Registro nazionale inglese (Hospital Episode Statistics), 24.947 osteotomie di ginocchio in 25 anni | 10.1002/ksa.70550 | osteotomia, slope, sicurezza, registro | aperto — 🟢 PICK candidato; reintervento 2,27% a 90 gg (IC 95% 2,08-2,47), 7,26% a 1 anno (IC 95% 6,93-7,61); comorbidità, non età, predice le complicanze
+2026-08-27 | J Arthroplasty | Coorte retrospettiva monocentrica, 113 protesi monocompartimentali laterali fixed-bearing, follow-up fino a 22 anni | 10.1016/j.arth.2026.08.026 | protesi monocompartimentale, compartimento laterale, sopravvivenza | aperto — 🟢 sopravvivenza 97% a 5 anni, 93% a 10, 89% a 15, 87% a 20; OKS +19,75 punti (IC 95% 16,84-22,66); nessun gruppo di confronto
+2026-08-27 | Physical Therapy | Revisione 2026 della linea guida APTA per la riabilitazione dopo protesi totale di ginocchio, 20 raccomandazioni | 10.1093/ptj/pzag058 | protesi, riabilitazione, consensus | aperto — 🟢 contro l'uso routinario di CPM, tutori precoci, drenaggio linfatico manuale; a favore di crioterapia e strumenti di salute digitale come complemento
+2026-08-27 | J Robot Surg | Coorte retrospettiva, 210 protesi totali robot-assistite ad allineamento funzionale, su aggiustamento rotazionale femorale intraoperatorio e recupero precoce | 10.1007/s11701-026-03860-1 | protesi robotica, allineamento, VELYS | aperto — 🟢 ogni grado di aggiustamento rotazionale del femore riduce il miglioramento del FJS-12 di 3,3-4,6 punti nei primi 6 mesi (p<0,001), non più significativo a 12 mesi; piattaforma non specificata come VELYS
+2026-08-27 | Bone & Joint Open | Studio prospettico, 251 protesi totali robot-assistite, su resezione del LCA e gap di lassità mediolaterale | 10.1302/2633-1462.78.BJO-2025-0343.R1 | protesi robotica, VELYS, crociato anteriore | aperto — 🟢 la resezione del LCA non altera in modo clinicamente rilevante i gap in estensione/flessione (variazioni 0,0-0,2 mm, sotto MCID 0,3 mm); il sacrificio del LCA non è necessario per la misura del gap; promosso da EXTRA del 26 agosto
+2026-08-27 | Frontiers in Medicine | Meta-analisi di 11 RCT, grasso adiposo microframmentato (MFAT) vs PRP/acido ialuronico/fisiologica nell'artrosi di ginocchio | 10.3389/fmed.2026.1901713 | terapie cellulari, artrosi, orthobiologics | aperto — ⚪ MFAT superiore su VAS/KOOS a 6-12 mesi, ma tutte le dimensioni dell'effetto restano sotto la soglia MCID — significativo statisticamente, non necessariamente per il paziente
 
 2026-08-26 | Knee | Revisione sistematica e meta-analisi di 14 studi (1.680 ginocchia) su strumentazione paziente-specifica vs convenzionale in protesi monocompartimentale | 10.1016/j.knee.2026.104608 | protesi monocompartimentale, strumentazione, allineamento | aperto — nessuna differenza nell'Oxford Knee Score a 1 anno (differenza media 0,90; IC 95% -2,65/4,45; I²=0%); dati di revisione troppo eterogenei per la sintesi
 2026-08-26 | Knee | Coorte retrospettiva (452 pz) su indice di larghezza del notch intercondiloideo e fallimento dell'innesto dopo ricostruzione del LCA | 10.1016/j.knee.2026.104610 | lca, fallimento innesto, let | aperto — 🟢 PICK del giorno; NWI non associato al fallimento (p=0,237); età più giovane (OR 0,91; IC 95% 0,84-1,00) e diametro tibiale dell'innesto più piccolo (OR 0,48; IC 95% 0,23-1,00) fattori indipendenti; zero fallimenti fra i 18 pz con LET concomitante, ma muto (RR 0,59; IC 95% 0,04-9,36) — alimenta T1a
@@ -334,6 +343,18 @@ una nota tecnica (Vosoughi, con Robert LaPrade) descrive come sequenziare radice
 meniscale, LCA e osteotomia nello stesso tempo chirurgico — nessun dato clinico, solo
 il metodo.
 
+**Nuovo il 27 agosto 2026, sul gesto aggiuntivo più discusso per ridurre l'estrusione
+residua.** Una revisione sistematica e meta-analisi di 6 studi comparativi (Vasiliadis,
+Hantes et al., *KSSTA*, 309 pazienti: 167 sutura isolata della radice meniscale mediale,
+142 con l'aggiunta di una centralizzazione) mostra che aggiungere la centralizzazione
+alla sutura transtibiale — la stessa tecnica che usi — non riduce in modo significativo
+l'estrusione rispetto alla sola sutura (differenza media 0,4 mm; IC 95% -0,34/1,22;
+p=0,27; I²=89%), né migliora Lysholm (p=0,93), IKDC (p=0,13) o dolore VAS (p=0,10). Non
+chiude la tensione — con un intervallo così ampio e un'eterogeneità così alta, lo studio
+non dimostra un beneficio della centralizzazione, ma nemmeno lo esclude con certezza —
+però toglie peso all'idea che aggiungerla sia la soluzione al problema dell'estrusione
+residua che nessuna tecnica attuale, transtibiale compresa, risolve con sicurezza.
+
 ### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22)*
 
 La simmetria di forza è il criterio clinico più usato; la meta-regressione che lo
@@ -388,6 +409,20 @@ insieme, dopo la ricostruzione, la propriocezione in valgo, l'attività muscolar
 gli esiti riferiti dal paziente e il controllo dinamico dell'equilibrio: un profilo
 più ampio della sola forza, ancora descrittivo, non ancora un criterio di rientro
 alternativo pronto all'uso.
+
+**Aggiornata il 27 agosto 2026, il segnale più diretto finora sul tuo innesto
+specifico.** Una coorte prospettica di 90 pazienti (Pineda, Ollivier et al., *KSSTA*:
+30 retto femorale, 30 tendine quadricipitale, 30 hamstring), tutti con augmentazione
+anterolaterale sistematica come nella tua pratica, mostra che il questionario di
+soddisfazione soggettiva (PASS, sul KOOS Sport) e la simmetria isocinetica del
+quadricipite a 12 mesi non si accordano quasi per niente (kappa di Cohen 0,060; IC 95%
+-0,071/0,191; McNemar p<0,001): il 76% di chi raggiunge la soglia PASS ha comunque un
+indice di simmetria del quadricipite (LSI) sotto il 90%. Lo schema è coerente nei tre
+innesti (RF 50%, QT 47%, HS 43%; p=0,875) — la discordanza non dipende dal tipo di
+innesto. È la prima volta che questo scarto viene misurato esattamente sulla tua
+combinazione di innesto e LET: un paziente che dice di stare bene al controllo del
+primo anno non garantisce affatto un quadricipite recuperato, e il dato riguarda
+proprio i tre innesti e l'augmentazione che usi tu, non una popolazione generica.
 
 **Cosa la chiude:** studi che leghino il deficit di attivazione a esiti duri —
 rirottura o mancato rientro — non a misure intermedie.
