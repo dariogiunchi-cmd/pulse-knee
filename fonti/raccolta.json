@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-27T15:15:37Z",
+ "generato": "2026-08-28T15:39:15Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,24 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "DHPC – Gabapentin Viatris (gabapentinum)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-gabapentin-viatris-gabapentinum.html",
+      "data": "Fri, 28 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Livmarli®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-livmarli-1.html",
+      "data": "Fri, 28 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Ora online: Regulatory & Beyond 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/veranstaltungen/regulatory-beyond-2026.html",
+      "data": "Thu, 27 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "DHPC – Alecensa® (alectinib)",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-alecensa-alectinib.html",
       "data": "Tue, 25 Aug 2026 00:00:00 +0000"
@@ -358,28 +376,10 @@
       "data": "Mon, 10 Aug 2026 00:00:00 +0000"
      },
      {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – MenQuadfi®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/menquadfi-wirkstoff-polysaccharide-von-neis-seria-meningitidis-der-gruppen-a-c-w-135-und-y-konjugiert-an-tetanus-toxoid-traegerprotein.html",
-      "data": "Mon, 10 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Swissmedic Journal",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/swissmedic-journal.html",
-      "data": "Mon, 10 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Application Manager (80-100%)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/posti-liberi/application-manager.html",
-      "data": "Fri, 07 Aug 2026 00:00:00 +0000"
-     },
-     {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
-      "titolo": "DHPC – Alecensa® (alectinib)DHPC – Rhophylac (immunoglobulinum humanum anti-D)Out-of-Stock – Extencilline, 1 200 000 et 2 400 00...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-alecensa-alectinib.html",
-      "data": "Wed, 26 Aug 2026 00:50:50 +0000"
+      "titolo": "DHPC – Gabapentin Viatris (gabapentinum)DHPC – Alecensa® (alectinib)DHPC – Rhophylac (immunoglobulinum humanum anti-D)Out-of-Sto...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-gabapentin-viatris-gabapentinum.html",
+      "data": "Fri, 28 Aug 2026 15:23:42 +0000"
      }
     ]
    }
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 131,
+    "doi_citati_controllati": 136,
     "colpiti": [],
     "nel_perimetro": [],
     "tipi_falliti": []
@@ -799,6 +799,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42656738",
+     "titolo": "J Clin Orthop Trauma — RCT prospettico su 200 protesi totali di ginocchio: piattaforma robotica VELYS vs tecni",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42647020",
      "titolo": "Knee Surg Sports Traumatol Arthrosc — Coorte prospettica (90 pz: 30 retto femorale, 30 tendine quadricipitale,",
@@ -1012,15 +1018,6 @@
       "titolo": "Major discrepancies in recommendations regarding long-term activity restrictions following knee replacement: a survey among Swedish physiotherapists.",
       "rivista": "BMC musculoskeletal disorders",
       "data": "2026 Jul 4",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42364858",
-      "titolo": "The American Association of Hip and Knee Surgeons Position Statement on Outpatient Joint Replacement.",
-      "rivista": "The Journal of arthroplasty",
-      "data": "2026 Jun 27",
       "tipi": [
        "Journal Article"
       ]
