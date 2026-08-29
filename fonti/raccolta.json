@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-28T16:39:37Z",
+ "generato": "2026-08-29T10:25:12Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 136,
+    "doi_citati_controllati": 145,
     "colpiti": [],
     "nel_perimetro": [],
     "tipi_falliti": []
@@ -799,6 +799,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42654439",
+     "titolo": "Medicina (Kaunas) — Revisione sistematica di 33 studi sulla fissazione femorale del LET: la fissazione onlay c",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42656738",
      "titolo": "J Clin Orthop Trauma — RCT prospettico su 200 protesi totali di ginocchio: piattaforma robotica VELYS vs tecni",
