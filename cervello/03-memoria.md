@@ -7,11 +7,21 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 28 agosto 2026.*
+*Ultimo aggiornamento: 29 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-08-29 | Medicina (Kaunas) | Revisione sistematica di 33 studi sulla fissazione femorale del LET nella ricostruzione del LCA | 10.3390/medicina62081542 | let, fissazione, costrutto | aperto — 🟠 PICK del giorno; quattro famiglie di costrutto (inlay/socket, onlay corticale, sospensiva, alternativa); differenze biomeccaniche documentate ma confronto clinico diretto ancora assente — prima volta che l'onlay è descritto come famiglia distinta, alimenta T1b
+2026-08-29 | J ISAKOS | Current Concepts Review sulle fibre di Kaplan nel ginocchio con lesione del LCA | 10.1016/j.jisako.2026.101208 | let, fibre di kaplan, anatomia | aperto — 🟢 lesione RM nel 18,6%-43% dei LCA acuti, spesso si risolve dopo ricostruzione; augmentazione laterale selettiva nei casi ad alto rischio, non di routine — rafforza lo sfondo anatomico di T1b
+2026-08-29 | J Exp Orthop | Revisione sistematica e meta-analisi sul fallimento della sutura meniscale a manico di secchio | 10.1002/jeo2.70854 | menisco, sutura, fallimento | aperto — 🟢 fallimento aggregato 21,5% (IC 95% 16,3-27,8%), più alto e più tardivo al mediale (OR 2,20; p<0,001); eterogeneità alta, bias di pubblicazione suggerito
+2026-08-29 | J ISAKOS | Coorte di 262 atleti di livello 1 in revisione del LCA, BPTB o HT con o senza LEAT | 10.1016/j.jisako.2026.101209 | let, revisione lca, tenodesi | aperto — 🟢 nessuna differenza nel ritorno allo sport o nel reinfortunio con l'aggiunta del LEAT, riservato a pazienti giovani e lassi; RR 4,80 (IC 95% 0,45-50,96) sul sottogruppo HT, muto — alimenta T1a
+2026-08-29 | Medicina (Kaunas) | Angolo sagittale del tunnel tibiale ed esiti dopo rifissazione transtibiale pull-out della radice meniscale mediale | 10.3390/medicina62081596 | root, transtibiale, estrusione | aperto — 🟢 soglia esplorativa 51,5°: sopra la soglia, estrusione minore (3,0 vs 4,0 mm; p<0,001) e IKDC più alto (71,6 vs 53,0; p<0,001); soglia non validata esternamente — alimenta T2b con un parametro tecnico controllabile
+2026-08-29 | Arthroscopy | Analisi del cammino dopo rifissazione transtibiale della radice meniscale mediale, coorte di 58 ginocchia | 10.1002/arj.70464 | root, transtibiale, biomeccanica | aperto — 🟢 la riparazione migliora IKDC/KOOS Jr/VAS ma non normalizza varus thrust né rotazione tibiale interna durante il cammino, alterati come nella lesione non riparata — alimenta T2b
+2026-08-29 | OJSM | Effetto di ricalibrazione della risposta nei punteggi PROM dopo ricostruzione del LCA | 10.1177/23259671261463386 | criterio di rientro, prom, metodo | aperto — 🟢 tre pazienti su quattro mostrano un effetto di ricalibrazione nei punteggi KOOS/IKDC a 1-2 anni (3-18 punti); metodo then-test soggetto a bias di memoria — alimenta T3
+2026-08-29 | AJSM | Effetto di suture di centralizzazione multiple sull'estrusione e la pressione di contatto, modello cadaverico della radice meniscale mediale | 10.1177/03635465261475396 | root, centralizzazione, cadavere | aperto — 🟢 con Robert LaPrade; più punti di sutura riducono pressione ed estrusione in laboratorio, ma la SR del 27 agosto sui pazienti reali non trovava beneficio clinico — segnale meccanico senza conferma clinica, alimenta T2b
+2026-08-29 | Video J Sports Med | Ricostruzione mininvasiva in un solo tempo di LCP, angolo postero-laterale e collaterale laterale, caso singolo | 10.1177/26350254261416544 | multilegamentose, lcp, tecnica chirurgica | aperto — ⚪ caso singolo, nessun dato di esito; promosso da EXTRA del 27 agosto
 
 2026-08-28 | J Clin Orthop Trauma | RCT prospettico monocentrico (200 pz, India), protesi totale di ginocchio robot-assistita VELYS vs tecnica convenzionale | 10.1016/j.jcot.2026.103594 | velys, protesi robotica, allineamento | aperto — 🟢 PICK del giorno; primo RCT trovato sulla piattaforma VELYS specifica; deviazione HKA 0,09°±0,2 vs 0,32°±0,66 (p=0,001), perdita ematica 124,6 vs 201,7 mL (p<0,001), tempo operatorio +27 min (p<0,001); follow-up di soli 6 mesi, nessun PROM riportato — arriva pochi giorni dopo RACER-Knee (piattaforma Mako, nessun beneficio clinico a 12 mesi)
 2026-08-28 | Chin J Repar Reconstr Surg | Coorte retrospettiva (181 pz: 45 LCA insufficiente vs 136 integro), protesi monocompartimentale fixed-bearing | 10.7507/1002-1892.202602058 | protesi monocompartimentale, crociato anteriore | aperto — 🟢 forza isocinetica e punteggi HSS/Lysholm/VAS sovrapponibili a 12 mesi fra i due gruppi (tutti p>0,05), zero complicanze protesiche; sottogruppo LCA-insufficiente di soli 45 pazienti, muto — segnale nella direzione opposta alla cautela abituale su questa indicazione, non ancora un cambio
@@ -160,6 +170,19 @@ fallimento in modo indipendente (OR 0,48 per innesto più piccolo; IC 95%
 0,23-1,00), un argomento per non sottodimensionare l'innesto nei pazienti più
 giovani ad alto rischio.
 
+**Nuovo il 29 agosto 2026, sul terreno della revisione.** Una coorte irlandese di
+262 atleti di livello 1 sottoposti a revisione del LCA (McAleese, Devitt et al.,
+*J ISAKOS*) mostra che aggiungere una tenodesi extra-articolare laterale —
+riservata dal centro a pazienti più giovani e più lassi, non a tutti — non
+cambia in modo significativo il tasso di rientro allo sport (65,2% contro
+62,8%; p=0,400) né il reinfortunio dell'innesto. Ricalcolato con
+`test/potenza.py` sui conteggi grezzi più piccoli (2/30 contro 1/72
+sull'innesto hamstring): rischio relativo 4,80, IC 95% 0,45-50,96 — un
+intervallo che non esclude né una forte protezione né un rischio quasi
+cinquantuplicato: un segnale muto, non una dimostrazione. Coerente comunque,
+nella filosofia, con il consensus APKASS del 23 agosto: selettivo, non
+automatico.
+
 **Nuovo il 24 agosto 2026, il tassello più diretto finora.** Una meta-analisi di 10
 RCT (11 studi randomizzati, 1.419 pazienti: 725 ACLR+LET, 694 ACLR isolata — la
 sintesi più ampia mai pubblicata sul tema, Alkhunein·Alhamzah, *OJSM*) conferma il
@@ -283,6 +306,25 @@ e il 43,6% del campione pooled proviene dal solo trial STABILITY, fissazione a
 graffa. Non chiude la tensione, la conferma: la base di evidenza resta quella del
 costrutto profondo, non quella di Dario.
 
+**Nuovo il 29 agosto 2026, il primo tentativo di dare un nome al costrutto di
+Dario.** Una revisione sistematica di 33 studi sulla fissazione femorale del
+LET (Gkekas, Hantes et al., *Medicina*, Larissa) classifica per la prima volta
+le tecniche in quattro famiglie — fissazione inlay in tunnel o socket,
+fissazione onlay corticale (la sua), concetti sospensivi o indiretti, disegni
+alternativi — invece di trattarle come intercambiabili. Gli studi biomeccanici
+e di imaging citati documentano differenze specifiche per costrutto nel
+comportamento del vincolo e nel rischio di convergenza dei tunnel, ma gli
+stessi autori dichiarano che l'evidenza clinica comparativa diretta fra le
+famiglie resta limitata ed eterogenea: non chiude la tensione, ma è la prima
+fonte che la descrive con una tassonomia esplicita invece di lasciarla
+implicita. Nello stesso giorno, una revisione narrativa sulle fibre di Kaplan
+(Ayati Firoozabadi et al., *J ISAKOS*), l'inserzione femorale profonda su cui
+poggia il razionale anatomico del LET, conferma che le anomalie visibili alla
+RM (18,6%-43% dei LCA acuti) spesso si risolvono dopo la ricostruzione e che
+gli studi comparativi a breve termine non mostrano differenze consistenti di
+lassità o funzione — rafforza lo sfondo anatomico, non distingue il costrutto
+onlay dal profondo con graffa.
+
 ### T2b — L'estrusione, non il timing né il grado condrale *(riformulata 2026-08-01, sostituisce T2)*
 
 T2 ipotizzava che l'equivalenza di AJSM sui gradi Outerbridge alti fosse un effetto
@@ -361,6 +403,26 @@ non dimostra un beneficio della centralizzazione, ma nemmeno lo esclude con cert
 però toglie peso all'idea che aggiungerla sia la soluzione al problema dell'estrusione
 residua che nessuna tecnica attuale, transtibiale compresa, risolve con sicurezza.
 
+**Nuovo il 29 agosto 2026, tre angoli diversi sullo stesso problema.** Una
+coorte retrospettiva turca di 81 pazienti operati con la tecnica transtibiale
+pull-out di Dario (Torun et al., *Medicina*) lega per la prima volta un
+parametro tecnico che il chirurgo controlla — l'angolo sagittale del tunnel
+tibiale — sia all'estrusione residua sia agli esiti clinici nella stessa
+coorte: sopra una soglia esplorativa di 51,5° l'estrusione a 6 mesi è minore
+(3,0 contro 4,0 mm, p<0,001) e l'IKDC più alto (71,6 contro 53,0, p<0,001);
+soglia derivata dalla stessa coorte, non ancora validata esternamente. Uno
+studio del cammino su 58 ginocchia (Gonzalez, Chahla et al., *Arthroscopy*)
+mostra che la riparazione transtibiale migliora nettamente i punteggi
+funzionali rispetto alla lesione non trattata, ma non normalizza il varus
+thrust né la rotazione tibiale interna durante il cammino, che restano
+alterati come nella lesione non riparata — la biomeccanica di carico persiste
+anche dopo un buon risultato clinico. E un modello cadaverico su 9 ginocchia
+con Robert LaPrade (Andersen et al., *AJSM*) mostra che aggiungere più suture
+di centralizzazione riduce pressione di contatto ed estrusione in laboratorio
+— ma la revisione sistematica del 27 agosto, sugli stessi pazienti reali, non
+trovava un beneficio clinico significativo: il segnale meccanico e il dato
+clinico, per ora, non si parlano.
+
 ### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22)*
 
 La simmetria di forza è il criterio clinico più usato; la meta-regressione che lo
@@ -432,6 +494,19 @@ proprio i tre innesti e l'augmentazione che usi tu, non una popolazione generica
 
 **Cosa la chiude:** studi che leghino il deficit di attivazione a esiti duri —
 rirottura o mancato rientro — non a misure intermedie.
+
+**Nuovo il 29 agosto 2026, un tassello metodologico.** Uno studio prospettico
+canadese su 171 pazienti operati di LCA (Marmura, Getgood, Bryant, *OJSM*)
+mostra che tre quarti dei pazienti presentano un effetto di «ricalibrazione
+della risposta» nei punteggi KOOS e IKDC a 1-2 anni: il cambiamento calcolato
+nel modo tradizionale (punteggio post meno punteggio pre) differisce in modo
+significativo da quello aggiustato per la prospettiva del paziente, con
+un'entità fra 3 e 18 punti, in entrambe le direzioni. Non tocca direttamente
+la simmetria di forza come criterio di rientro, ma aggiunge un avvertimento
+generale su come si leggono i questionari dopo LCA: un miglioramento riferito
+dal paziente può in parte riflettere un cambiamento nel suo metro di
+giudizio, non solo nel ginocchio — un limite che vale anche per i punteggi
+usati nel colloquio di rientro allo sport.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
