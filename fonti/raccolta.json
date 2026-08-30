@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-29T11:06:25Z",
+ "generato": "2026-08-30T09:27:39Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -311,14 +311,14 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Ojemda®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ojemda.html",
+      "titolo": "Rapporto sintetico di omologazione – Vyvgart®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-vyvgart-1.html",
       "data": "Tue, 25 Aug 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Vyvgart®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-vyvgart-1.html",
+      "titolo": "Rapporto sintetico di omologazione – Ojemda®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ojemda.html",
       "data": "Tue, 25 Aug 2026 00:00:00 +0000"
      },
      {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 145,
+    "doi_citati_controllati": 152,
     "colpiti": [],
     "nel_perimetro": [],
     "tipi_falliti": []
@@ -799,6 +799,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42291753",
+     "titolo": "Asia-Pac J Sports Med — Consensus APKASS 2024, parte I: gestione delle lesioni del LCA pediatrico e adolescenz",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42654439",
      "titolo": "Medicina (Kaunas) — Revisione sistematica di 33 studi sulla fissazione femorale del LET: la fissazione onlay c",
