@@ -7,11 +7,19 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 29 agosto 2026.*
+*Ultimo aggiornamento: 30 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-08-30 | Asia-Pacific J Sports Med Arthrosc Rehabil Technol | Consensus APKASS 2024 parte I, gestione delle lesioni del LCA pediatrico e adolescenziale | 10.1016/j.asmart.2026.05.007 | lca pediatrico, consensus, apkass | aperto — 🟠 PICK del giorno; 23 esperti/8 paesi, forte accordo su prevenzione (85%) e screening di lesioni associate (91,3%), nessun consenso su tecnica nello scheletricamente immaturo né su diametro dell'innesto; completa sul fronte pediatrico la parte II sulla revisione già archiviata il 23 agosto
+2026-08-30 | Knee Surg Relat Res | VELYS robotic-assisted solution vs navigazione portatile su accelerometro in TKA ad allineamento cinematico ground | 10.1186/s43019-026-00344-2 | velys, protesi robotica, allineamento | aperto — 🟢 coorte prospettica 35+35: errore dal target minore col VELYS su taglio femorale (0,7°±0,8° vs 1,5°±1,1°) e asse meccanico ground (1,6%±1,8% vs 3,0%±2,4%; p<0,05); ROM e Knee Society Score sovrapponibili a 1 anno, campione piccolo per il confronto clinico
+2026-08-30 | J ISAKOS | Tre pattern di tracking rotuleo coronale nativo associati all'allineamento coronale in TKA robot-assistita (sistema CORI) | 10.1016/j.jisako.2026.101211 | protesi robotica, rotula, allineamento | aperto — 🟢 252 ginocchia: tracking centrale 58%, laterale 35%, mediale 7%, associazione significativa con la categoria CPAK (p=0,006); studio preliminare, nessun esito clinico, sistema CORI non VELYS
+2026-08-30 | Arthroscopy | Percorso da biopsia a impianto MACI per difetti condrali del ginocchio, serie Mayo Clinic | 10.1002/arj.70429 | cartilagine, maci, condrociti | aperto — 🟢 208 ginocchia/202 pz: 31% arriva all'impianto (mediana 9,4 mesi, IC 95% 7,2-12,2), 60% delle non impiantate migliora comunque sintomaticamente; tecnica MACI in due tempi, non la filiera AutoCart/minced cartilage
+2026-08-30 | Archives of Orthopaedic and Trauma Surgery | Esiti riferiti dal paziente dopo protesi monocompartimentale laterale vs protesi totale, coorte con propensity score matching | 10.1007/s00402-026-06491-1 | protesi monocompartimentale, protesi totale, esiti | aperto — 🟢 31 coppie appaiate: OKS senza differenza significativa (differenza 0,94; IC 95% -2,57/4,44; p=0,590); gli autori dichiarano esplicitamente che il campione non dimostra equivalenza
+2026-08-30 | The Knee | Equazioni di riferimento per coppia isocinetica e rapporto H:Q con e senza correzione di gravità, coorte di 439 pazienti LCA | 10.1016/j.knee.2026.104616 | isocinetica, criterio di rientro, metodo | aperto — 🟢 correzione di gravità cambia i numeri della forza fino a un terzo (H:Q -17,2/-33,1%); protocolli con e senza correzione non sono direttamente confrontabili — studio metodologico, non su una tecnica chirurgica, alimenta T3
+2026-08-30 | Journal of Experimental Orthopaedics | Sopravvivenza della protesi femoro-rotulea e fattori associati, revisione sistematica di coorti e registri | 10.1002/jeo2.70868 | protesi femoro-rotulea, sopravvivenza, registri | aperto — ⚪ 9 studi (1.071+9.021 ginocchia): sopravvivenza 96% a 2 anni, 73-76% a 10-11 anni; tecnica che Dario non esegue, fattori predittivi dichiarati non confermabili dagli stessi autori
 
 2026-08-29 | Medicina (Kaunas) | Revisione sistematica di 33 studi sulla fissazione femorale del LET nella ricostruzione del LCA | 10.3390/medicina62081542 | let, fissazione, costrutto | aperto — 🟠 PICK del giorno; quattro famiglie di costrutto (inlay/socket, onlay corticale, sospensiva, alternativa); differenze biomeccaniche documentate ma confronto clinico diretto ancora assente — prima volta che l'onlay è descritto come famiglia distinta, alimenta T1b
 2026-08-29 | J ISAKOS | Current Concepts Review sulle fibre di Kaplan nel ginocchio con lesione del LCA | 10.1016/j.jisako.2026.101208 | let, fibre di kaplan, anatomia | aperto — 🟢 lesione RM nel 18,6%-43% dei LCA acuti, spesso si risolve dopo ricostruzione; augmentazione laterale selettiva nei casi ad alto rischio, non di routine — rafforza lo sfondo anatomico di T1b
@@ -507,6 +515,21 @@ generale su come si leggono i questionari dopo LCA: un miglioramento riferito
 dal paziente può in parte riflettere un cambiamento nel suo metro di
 giudizio, non solo nel ginocchio — un limite che vale anche per i punteggi
 usati nel colloquio di rientro allo sport.
+
+**Nuovo il 30 agosto 2026, un fattore di confondimento nella misura stessa.**
+Uno studio metodologico su 439 pazienti con rottura del LCA confermata
+(Tirosh, Pranata et al., *The Knee*) mostra che il rapporto H:Q e la coppia
+isocinetica, misurati con o senza correzione di gravità, differiscono fino a
+un terzo — coppia estensoria corretta maggiore del 4,2-11,1%, coppia
+flessoria minore del 13,1-25,5%, rapporto H:Q minore del 17,2-33,1% rispetto
+al non corretto — con lo scarto che cresce alle velocità angolari più alte.
+Non è uno studio sul tuo innesto né sulla tua tecnica: è un avvertimento
+metodologico diretto per come si legge il criterio di rientro basato su
+LSI/simmetria di forza che questa tensione mette in discussione. Un
+protocollo di misura non dichiarato — corretto o non corretto per gravità —
+può da solo spostare l'esito del confronto con la soglia del 90%,
+indipendentemente da qualunque intervento chirurgico. Non chiude la
+tensione, aggiunge un fattore di confondimento nella misura stessa.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
