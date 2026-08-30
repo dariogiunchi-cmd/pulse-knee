@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-30T09:27:39Z",
+ "generato": "2026-08-30T09:57:15Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -902,6 +902,15 @@
    "dati": {
     "finestra_giorni": 60,
     "voci": [
+     {
+      "pmid": "42668741",
+      "titolo": "Arthrofibrosis After Total Knee Arthroplasty: Biological Mechanisms, Diagnosis, and Treatment: An International Consensus Symposium.",
+      "rivista": "HSS journal : the musculoskeletal journal of Hospital for Special Surgery",
+      "data": "2026 Aug 28",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
      {
       "pmid": "42642184",
       "titolo": "[Expert consensus on clinical pathway of high-conformity total knee arthroplasty under the enhanced recovery after surgery protocol].",
