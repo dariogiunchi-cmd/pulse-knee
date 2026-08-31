@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-30T09:57:15Z",
+ "generato": "2026-08-31T10:04:22Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 152,
+    "doi_citati_controllati": 141,
     "colpiti": [],
     "nel_perimetro": [],
     "tipi_falliti": []
@@ -786,12 +786,6 @@
       "titolo": "Voice Interpreter for Sync Badge | U.S.",
       "link": "https://www.youtube.com/watch?v=Y3dTkvWSFh8",
       "data": "2026-08-18"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Distal Humerus Shaft Fracture Fixation Using the Arthrex Elbow Plating System",
-      "link": "https://www.youtube.com/watch?v=PDL8DODmBO4",
-      "data": "2026-08-17"
      }
     ]
    }
@@ -799,6 +793,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42668741",
+     "titolo": "HSS Journal — Consensus internazionale sull'artrofibrosi dopo protesi totale di ginocchio (Hospital for Specia",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42291753",
      "titolo": "Asia-Pac J Sports Med — Consensus APKASS 2024, parte I: gestione delle lesioni del LCA pediatrico e adolescenz",
@@ -1061,6 +1061,48 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Outcomes of Ipsilateral Versus Contralateral Bone–Patellar Tendon–Bone (BPTB) Autografts in Anterior Cruciate Ligament Reconstruction: A Systematic Review and M",
+      "dove": "archivio preprint",
+      "data": "2026-08-28",
+      "doi": "10.21203/rs.3.rs-10440567/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10440567/v1"
+     },
+     {
+      "titolo": "Revisional augmentation of residual neuromusculature and training facilitate embodiment and control of a bionic knee prosthesis",
+      "dove": "archivio preprint",
+      "data": "2026-08-27",
+      "doi": "10.64898/2026.08.24.26343866",
+      "url": "https://doi.org/10.64898/2026.08.24.26343866"
+     },
+     {
+      "titolo": "Predictive value of bone mineral density assessment methods for postoperative complications after unicompartmental knee arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-08-27",
+      "doi": "10.21203/rs.3.rs-10443989/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10443989/v1"
+     },
+     {
+      "titolo": "Investigation of the Relationship Between Frontal Plane Knee Projection Angle and Dynamic Balance, Agility, and Ankle Dorsiflexion Mobility in Adolescent Female",
+      "dove": "archivio preprint",
+      "data": "2026-08-27",
+      "doi": "10.21203/rs.3.rs-10617844/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10617844/v1"
+     },
+     {
+      "titolo": "Comparison of Early Postoperative Inflammation, Immune Stress, and Functional Recovery After Robot-Assisted and Conventional Total Knee Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-08-27",
+      "doi": "10.21203/rs.3.rs-10640346/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10640346/v1"
+     },
+     {
+      "titolo": "Lateral Extra-articular Tenodesis Is Associated With Improved Rotational Stability but Not Superior Short-Term Patient-Reported Outcomes After Primary Anterior ",
+      "dove": "archivio preprint",
+      "data": "2026-08-27",
+      "doi": "10.21203/rs.3.rs-10641403/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10641403/v1"
+     },
+     {
       "titolo": "Robotic-assisted surgery has less soft tissue damage than traditional total knee arthroplasty, with better early recovery and prosthesis placement",
       "dove": "archivio preprint",
       "data": "2026-08-25",
@@ -1192,48 +1234,6 @@
       "data": "2026-08-13",
       "doi": "10.21203/rs.3.rs-10164560/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10164560/v1"
-     },
-     {
-      "titolo": "Probiotics and related microbiota-targeted interventions for knee osteoarthritis: a systematic review and meta-analysis of randomized controlled trials",
-      "dove": "archivio preprint",
-      "data": "2026-08-13",
-      "doi": "10.21203/rs.3.rs-10539377/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10539377/v1"
-     },
-     {
-      "titolo": "Step width as a robust predictor of fall risk in patients with moderate-to-severe knee osteoarthritis: A gait-based prediction model",
-      "dove": "archivio preprint",
-      "data": "2026-08-13",
-      "doi": "10.21203/rs.3.rs-10344489/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10344489/v1"
-     },
-     {
-      "titolo": "Identifying patients with a phenotype consistent with chronic postsurgical pain after hip and knee arthroplasty using robust, scalable k-medoids clustering anal",
-      "dove": "archivio preprint",
-      "data": "2026-08-12",
-      "doi": "10.64898/2026.08.11.26360161",
-      "url": "https://doi.org/10.64898/2026.08.11.26360161"
-     },
-     {
-      "titolo": "Knee Joint Biomechanics During Lunges at Different Tibial Angles and External Loads: A Musculoskeletal Analysis with Finite Element Insights",
-      "dove": "archivio preprint",
-      "data": "2026-08-12",
-      "doi": "10.64898/2026.08.07.743401",
-      "url": "https://doi.org/10.64898/2026.08.07.743401"
-     },
-     {
-      "titolo": "Genicular artery embolization for symptomatic knee osteoarthritis: discordance between functional and patient-reported outcomes",
-      "dove": "archivio preprint",
-      "data": "2026-08-12",
-      "doi": "10.21203/rs.3.rs-10383247/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10383247/v1"
-     },
-     {
-      "titolo": "Association between abnormal native tibial torsion and poorer clinical outcomes following robotic-assisted total knee arthroplasty: follow-up of at least two ye",
-      "dove": "archivio preprint",
-      "data": "2026-08-13",
-      "doi": "10.21203/rs.3.rs-10534422/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10534422/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
