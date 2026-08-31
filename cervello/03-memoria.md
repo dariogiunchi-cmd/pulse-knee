@@ -7,11 +7,20 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 30 agosto 2026.*
+*Ultimo aggiornamento: 31 agosto 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-08-31 | HSS Journal | Consensus internazionale sull'artrofibrosi dopo protesi totale di ginocchio (Hospital for Special Surgery) | 10.1177/15563316261474517 | protesi totale, artrofibrosi, consensus | aperto — 🟠 PICK del giorno; simposio internazionale, tre panel su diagnosi/rischio, gestione chirurgica/riabilitazione, prevenzione; sposta l'enfasi dal salvataggio tardivo alla prevenzione precoce; livello V, nessun dato quantitativo
+2026-08-31 | OJSM | Asimmetria cinetica interarto al rientro allo sport associata a rischio più alto di infortunio controlaterale del LCA | 10.1177/23259671261477570 | lca, criterio di rientro, biomeccanica | aperto — 🟠 PICK candidato; coorte prospettica di 500 pz, follow-up medio 36 mesi; HR aggiustato 1,47 (IC 95% 1,23-1,75) per 1 DS di asimmetria; il modello combinato discrimina meglio (C-index 0,76 contro 0,64) del solo criterio convenzionale; alimenta T3
+2026-08-31 | Asia-Pacific J Sports Med Arthrosc Rehabil Technol | Nota tecnica: osteotomia "a V invertita" più rifissazione pull-out della radice mediale nel varo severo | 10.1016/j.asmart.2026.08.001 | root, osteotomia, transtibiale | aperto — 🟢 gruppo di Okayama; preserva il patrimonio osseo mediale necessario al tunnel della rifissazione pull-out quando il varo è severo; nessun dato clinico, nota di tecnica; alimenta T2b
+2026-08-31 | Arthroscopy | Sutura meniscale combinata con ricostruzione del LCP fallisce meno della sutura isolata | 10.1002/arj.70506 | menisco, lcp, database assicurativo | aperto — 🟢 coorte su 21.358 pz (PearlDiver): fallimento a 2 anni HR aggiustato 0,41 (IC 95% 0,20-0,82); entità simile al beneficio già noto con il LCA; database amministrativo, dettagli tecnici mancanti
+2026-08-31 | Pakistan J Med Sci | La fragilità preoperatoria predice complicanze e mortalità dopo protesi totale di ginocchio | 10.12669/pjms.42.8.16131 | protesi totale, fragilità, meta-analisi | aperto — 🟢 SR+meta-analisi di 16 studi, oltre 14 milioni di pz; mortalità a 30 giorni RR 4,40 (IC 95% 2,18-8,91); più complicanze, riammissioni, reinterventi; eterogeneità negli strumenti di misura della fragilità
+2026-08-31 | Skeletal Radiology | Reperti RM dopo ricostruzione del LCP a doppio fascio non correlati alla stabilità clinica | 10.1007/s00256-026-05348-3 | lcp, imaging, ricostruzione | aperto — 🟢 coorte di imaging, 23 pz/37 RM: edema, segnale e sinovite comuni nel primo anno, nessuna correlazione con la stabilità clinica (p 0,085-0,815); campione piccolo, muto
+2026-08-31 | European Journal of Radiology | Un punteggio RM a 4 gradi predice la riparabilità delle lesioni meniscali a manico di secchio | 10.1016/j.ejrad.2026.113183 | menisco, imaging, tecnica | aperto — 🟢 coorte di imaging, 101 casi (Vellore); segnale centrale (OR 4,96) ed estensione alla radice posteriore (OR 6,79) predittori indipendenti di non-riparabilità; "riparabilità" definita dalla decisione intraoperatoria
+2026-08-31 | Asia-Pacific J Sports Med Arthrosc Rehabil Technol | La propriocezione dopo LCA recupera in modo simile con quasi ogni innesto | 10.1016/j.asmart.2026.07.001 | lca, propriocezione, network meta-analisi | aperto — ⚪ revisione sistematica e meta-analisi in rete di 19 studi; nessuna differenza significativa fra tecniche oltre i 6 mesi nella maggior parte degli angoli; hamstring e allograft di tibiale anteriore peggiori a piccolo angolo; retto femorale/quadricipitale non isolato come categoria propria
 
 2026-08-30 | Asia-Pacific J Sports Med Arthrosc Rehabil Technol | Consensus APKASS 2024 parte I, gestione delle lesioni del LCA pediatrico e adolescenziale | 10.1016/j.asmart.2026.05.007 | lca pediatrico, consensus, apkass | aperto — 🟠 PICK del giorno; 23 esperti/8 paesi, forte accordo su prevenzione (85%) e screening di lesioni associate (91,3%), nessun consenso su tecnica nello scheletricamente immaturo né su diametro dell'innesto; completa sul fronte pediatrico la parte II sulla revisione già archiviata il 23 agosto
 2026-08-30 | Knee Surg Relat Res | VELYS robotic-assisted solution vs navigazione portatile su accelerometro in TKA ad allineamento cinematico ground | 10.1186/s43019-026-00344-2 | velys, protesi robotica, allineamento | aperto — 🟢 coorte prospettica 35+35: errore dal target minore col VELYS su taglio femorale (0,7°±0,8° vs 1,5°±1,1°) e asse meccanico ground (1,6%±1,8% vs 3,0%±2,4%; p<0,05); ROM e Knee Society Score sovrapponibili a 1 anno, campione piccolo per il confronto clinico
@@ -127,37 +136,18 @@
 2026-08-04 | Arch Orthop Trauma Surg | Minced cartilage implantation: survey of current clinical practices (AGA, 927 risposte) | 10.1007/s00402-026-06443-9 | minced cartilage, autocart, eterogeneità pratica | aperto — MUTO: survey autoriferita 19%; conferma variabilità della pratica (rilevante per T4)
 2026-08-04 | Int Orthop | Femoral pin tracker and periprosthetic fractures in robotic-assisted TKA (688) | 10.1007/s00264-026-06975-0 | protesi robotica, velys, pin, frattura | aperto — MUTO: 1 sola frattura, endpoint troppo raro per escludere una differenza
 
-2026-07-29 | BMJ Open | STABILITY 2: protocol RCT, patellar or quadriceps tendon autograft ± LET | 10.1136/bmjopen-2026-120915 | lca, let, quadricipitale, bptb, protocollo | **RISOLTO** — full text letto 01-08, tecnica LET estratta
 2026-07-21 | Arthroscopy | Lateral Extra-articular Procedures Decrease Rates of Graft Failure and Positive Pivot Shift in Primary ACLR | 10.1002/arj.70413 | let, lca, pivot shift | aperto
-2026-07-15 | J Knee Surg | LET Not Associated with Improved Mid-Term Outcomes After Primary BPTB ACLR in Amateur Soccer Players | 10.1055/a-2908-2103 | let, lemaire, bptb, artrosi laterale | aperto
 2026-07-09 | Arthroscopy | Editorial Commentary: Lateral Extra-articular Augmentation Is Safe but Not Risk Free. Should We Be Doing This in Everyone? | 10.1002/arj.70345 | let, indicazione universale | aperto — editoriale, evidenza V
-2026-07-02 | Arthroscopy | Modified Lemaire ALC Reconstruction Does Not Impact FJS-12 at 2 Years in Hamstring Graft ACLR | 10.1002/arj.70339 | let, lemaire, hamstring, fjs-12 | aperto — innesto non coincide
 2026-07-28 | OJSM | The Rectus Femoris Tendon Graft for ACLR: Predictive Anthropometry and Surgical Pearls | 10.1177/23259671261463926 | innesto retto femorale, dimensioni, complicanze prelievo | aperto
-2026-07 | Arthrosc Sports Med Rehabil | Significant Deficits in Extensor but Not Flexor Muscle Performance 6 Months After ACLR Using Rectus Femoris Autograft | 10.1002/ars2.70024 | retto femorale, isocinetica, ritorno allo sport | aperto
 2026-07-18 | KSSTA | Current concepts of management of ACL revision in adults | 10.1002/ksa.70534 | revisione, lca | aperto
 2026-07-28 | J Exp Orthop | Age-specific over-the-top ACLR and LET in skeletally immature patients | 10.1002/jeo2.70852 | lca adolescente, let, rizzoli | aperto — innesto non riportato
-2026-06-17 | Osteoarthr Cartil Open | Arthroscopically and manually minced cartilage: lower cell viability and proteoglycan deposition | 10.1016/j.ocarto.2026.100843 | minced cartilage, autocart, vitalita | **RISOLTO** — full text letto 01-08
 2026-07-17 | AJSM | Prospective Clinical and MRI Follow-up Beyond 10 Years After Arthroscopic MACI | 10.1177/03635465261459242 | cartilagine, maci, lungo termine | aperto
 2026-07-14 | AJSM | Comparable Midterm Survival After Medial Meniscus Root Repair for High and Low Outerbridge Grades | 10.1177/03635465261460747 | root, menisco, cartilagine | aperto
-2026-07-15 | OJSM | Osteoarthritis Progression After Medial Meniscus Posterior Root Repair: Surgical Timing | 10.1177/23259671261422729 | root, timing, estrusione | **RISOLTO** — abstract completo letto, T2 riformulata
 2026-07-28 | OJSM | All-Suture Anchor vs Transtibial Pullout for Posterior Medial Meniscal Root Tears | 10.1177/23259671261464696 | root, transtibiale | aperto — conclusione non sostenuta dai numeri
 2026-07-20 | J Exp Orthop | Not all meniscal repair failures are equal: early vs late failure risk factors | 10.1002/jeo2.70856 | sutura meniscale, fallimento, ancore | aperto — ≥3 ancore protettive
-2026-07 | J ISAKOS | Medial meniscus root repair with ACLR in non-degenerative knees | 10.1016/j.jisako.2026.101189 | root, lca, artrofibrosi | aperto — 23 pz
-2026-07 | Arthrosc Sports Med Rehabil | Chondral pathology and root repair failure | 10.1002/ars2.70043 | root, cartilagine | aperto — confermativo per assenza di potenza
 2026-07-22 | J Sport Health Sci | Deficits in quadriceps voluntary activation following ACLR do not improve over time | 10.1016/j.jshs.2026.101160 | ritorno allo sport, quadricipite | aperto
 2026-07-28 | JBJS | International Expert Consensus Statement on Orthobiologics | 10.2106/JBJS.26.00723 | prp, bmac, consensus, medico-legale | aperto — peso peritale alto
-2026-07-14 | Comput Assist Surg | The VELYS robotic-assisted solution: strategic technology evaluation | 10.1080/24699322.2026.2699503 | velys, protesi robotica, costo-efficacia | aperto
-2026-07 | OTSR | What would be the ideal robotic companion in orthopaedic surgery in 10 years? | 10.1016/j.otsr.2026.104803 | robotica, opinione esperti | aperto — evidenza V
 2026-07-28 | Arthroscopy | Sex and Height Impact TT-TG Thresholds for Malalignment on MRI | 10.1002/arj.70428 | mpfl, tt-tg, instabilita rotulea | aperto
-2026-07-31 | JAAOS | Risk and Timing of TKA After High Tibial Osteotomy: 10-Year Follow-Up | 10.5435/JAAOS-D-25-01393 | osteotomia, sopravvivenza, prognosi | aperto — dati sintetici deidentificati
-2026-07 | KSSTA | Posterior tibial slope and failure of primary ACL repair | 10.1002/ksa.70543 | slope, riparazione primaria | aperto — fuori pratica, principio valido
-2026-07 | J ISAKOS | Tibial tubercle distalisation and patellofemoral engagement | 10.1016/j.jisako.2026.101177 | rotula, tto, dejour | aperto
-2026-07 | J Knee Surg | KD-V multiligament fracture-dislocations | 10.1055/a-2908-2434 | multilegamentose, prognosi | aperto — 11 pz
-2026-07 | Knee Surg Relat Res | ALL graft position and outcomes | 10.1186/s43019-026-00342-4 | all, posizione femorale | aperto — costrutto diverso
-2026-07 | J Knee Surg | Meta-analisi lesioni cartilaginee trocleari isolate | 10.1055/a-2908-2370 | cartilagine, troclea, aci/maci | aperto
-2026-07 | The Knee | PCL dopo protesi cruciate-retaining, ecografia | 10.1016/j.knee.2026.104572 | pcl, protesi | aperto — r=-0,18 trascurabile
-2026-07 | BMC Musculoskelet Disord | K-wire di rinforzo nella OWHTO | 10.1186/s12891-026-10134-2 | osteotomia, frattura iatrogena | aperto — tasso base anomalo
-2026-07 | Arthrosc Tech | Avoiding tunnel-anchor convergence with modified Lemaire | 10.1002/atn2.70178 | let, convergenza tunnel | aperto — nota tecnica
 
 ---
 
@@ -431,6 +421,18 @@ di centralizzazione riduce pressione di contatto ed estrusione in laboratorio
 trovava un beneficio clinico significativo: il segnale meccanico e il dato
 clinico, per ora, non si parlano.
 
+**Nuovo il 31 agosto 2026, la prima tecnica per unire pull-out e osteotomia
+senza sacrificare l'osso.** Una nota tecnica giapponese (Kohara et al., *Asia-
+Pacific Journal of Sports Medicine, Arthroscopy, Rehabilitation and
+Technology*, Okayama) descrive un'osteotomia tibiale a cuneo di chiusura "a V
+invertita" che preserva il patrimonio osseo corticale mediale necessario per
+il tunnel tibiale della rifissazione pull-out, nei pazienti con varo severo
+dove l'apertura standard non è indicata — esattamente la combinazione che
+questa tensione raccomanda dal 22 agosto quando il varo è ≥5° e correggibile.
+Nessun dato clinico: è una nota di tecnica, non una casistica, ma è il primo
+dettaglio pratico su come integrare le due procedure quando il patrimonio
+osseo mediale è scarso.
+
 ### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22)*
 
 La simmetria di forza è il criterio clinico più usato; la meta-regressione che lo
@@ -530,6 +532,20 @@ protocollo di misura non dichiarato — corretto o non corretto per gravità —
 può da solo spostare l'esito del confronto con la soglia del 90%,
 indipendentemente da qualunque intervento chirurgico. Non chiude la
 tensione, aggiunge un fattore di confondimento nella misura stessa.
+
+**Nuovo il 31 agosto 2026, il rischio si sposta anche sul ginocchio sano.**
+Una coorte prospettica di 500 pazienti (Rivarola et al., *Orthopaedic Journal
+of Sports Medicine*, Buenos Aires) mostra che l'asimmetria cinetica interarto
+— misurata con un atterraggio monopodalico su piattaforma di forza al momento
+della liberazione clinica per il rientro allo sport — si associa in modo
+indipendente a un rischio più alto di infortunio controlaterale del LCA
+(hazard ratio 1,47 per ogni deviazione standard di asimmetria; IC 95%
+1,23-1,75), non solo di reinfortunio sull'arto operato. Un modello che
+aggiunge questa misura ai criteri di rientro convenzionali discrimina meglio
+(C-index 0,76) del solo modello classico (C-index 0,64). Non tocca il tuo
+innesto specifico — l'abstract non lo riporta — ma allarga la tensione oltre
+la sola simmetria di forza sull'arto operato: anche il carico sull'arto sano,
+misurato al momento del rientro, porta informazione sul rischio futuro.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
