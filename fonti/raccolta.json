@@ -1,5 +1,5 @@
 {
- "generato": "2026-08-31T10:52:27Z",
+ "generato": "2026-09-01T08:54:01Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,18 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Ora online: Regulatory & Beyond 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/veranstaltungen/regulatory-beyond-2026.html",
+      "data": "Mon, 31 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Out-of-Stock – Natulan 50 mg, capsule rigide",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-natulan-hartkapseln.html",
+      "data": "Mon, 31 Aug 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "DHPC – Gabapentin Viatris (gabapentinum)",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-gabapentin-viatris-gabapentinum.html",
       "data": "Fri, 28 Aug 2026 00:00:00 +0000"
@@ -296,12 +308,6 @@
       "titolo": "Rapporto sintetico di omologazione – Livmarli®",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-livmarli-1.html",
       "data": "Fri, 28 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Ora online: Regulatory & Beyond 2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/veranstaltungen/regulatory-beyond-2026.html",
-      "data": "Thu, 27 Aug 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
@@ -370,16 +376,10 @@
       "data": "Wed, 12 Aug 2026 00:00:00 +0000"
      },
      {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Out-of-Stock – Thiopental Inresa 0.5 g, poudre pour solution injectable / solution pour perfusion",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-thiopental-inresa-pulver-zur-herstellung-einer-injektionsloesung-infusionsloesung.html",
-      "data": "Mon, 10 Aug 2026 00:00:00 +0000"
-     },
-     {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
-      "titolo": "DHPC – Gabapentin Viatris (gabapentinum)DHPC – Alecensa® (alectinib)DHPC – Rhophylac (immunoglobulinum humanum anti-D)Out-of-Sto...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-gabapentin-viatris-gabapentinum.html",
-      "data": "Fri, 28 Aug 2026 15:23:42 +0000"
+      "titolo": "Out-of-Stock – Natulan 50 mg, capsule rigideDHPC – Gabapentin Viatris (gabapentinum)DHPC – Alecensa® (alectinib)DHPC – Rhophylac...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-natulan-hartkapseln.html",
+      "data": "Tue, 01 Sep 2026 01:29:08 +0000"
      }
     ]
    }
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 141,
+    "doi_citati_controllati": 150,
     "colpiti": [],
     "nel_perimetro": [],
     "tipi_falliti": []
@@ -765,6 +765,12 @@
     "video": [
      {
       "canale": "Arthrex",
+      "titolo": "ApolloRF® H50 Probe",
+      "link": "https://www.youtube.com/watch?v=-gzhkJw182I",
+      "data": "2026-08-31"
+     },
+     {
+      "canale": "Arthrex",
       "titolo": "Arthroscopic Bankart Repair Using the Knotless 1.8 FiberTak® System With Pivot Guide",
       "link": "https://www.youtube.com/watch?v=X35vd2_PFOg",
       "data": "2026-08-27"
@@ -774,18 +780,6 @@
       "titolo": "Segmental Meniscal Allograft Transplantation Using the Segmental Meniscus Procedure Pack",
       "link": "https://www.youtube.com/watch?v=0XmDt8f-4Ps",
       "data": "2026-08-24"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Core Decompression of the Femoral Head Using the AVN Expandable Reamer and AlloSync™ Pure DBM",
-      "link": "https://www.youtube.com/watch?v=mWYptxD1jjw",
-      "data": "2026-08-18"
-     },
-     {
-      "canale": "Stryker",
-      "titolo": "Voice Interpreter for Sync Badge | U.S.",
-      "link": "https://www.youtube.com/watch?v=Y3dTkvWSFh8",
-      "data": "2026-08-18"
      }
     ]
    }
@@ -793,6 +787,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42671659",
+     "titolo": "Journal of Robotic Surgery — Revisione critica narrativa sulla protesi di ginocchio robot-assistita: accuratez",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42668741",
      "titolo": "HSS Journal — Consensus internazionale sull'artrofibrosi dopo protesi totale di ginocchio (Hospital for Specia",
@@ -1061,6 +1061,27 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Mechanical elements related to the development of patellofemoral pain syndrome, pain intensity, and functional disability: A cross-sectional study",
+      "dove": "archivio preprint",
+      "data": "2026-08-31",
+      "doi": "10.64898/2026.08.26.26361453",
+      "url": "https://doi.org/10.64898/2026.08.26.26361453"
+     },
+     {
+      "titolo": "The Stanford Knee Osteoarthritis PET/MRI Evaluation (SKOPE) Study Protocol",
+      "dove": "archivio preprint",
+      "data": "2026-08-31",
+      "doi": "10.64898/2026.08.26.26361112",
+      "url": "https://doi.org/10.64898/2026.08.26.26361112"
+     },
+     {
+      "titolo": "Association between pre-operative body mass index and post-operative activities of daily living in patients with total knee arthroplasty.",
+      "dove": "archivio preprint",
+      "data": "2026-08-31",
+      "doi": "10.21203/rs.3.rs-10633502/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10633502/v1"
+     },
+     {
       "titolo": "Outcomes of Ipsilateral Versus Contralateral Bone–Patellar Tendon–Bone (BPTB) Autografts in Anterior Cruciate Ligament Reconstruction: A Systematic Review and M",
       "dove": "archivio preprint",
       "data": "2026-08-28",
@@ -1213,27 +1234,6 @@
       "data": "2026-08-14",
       "doi": "10.21203/rs.3.rs-10465742/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10465742/v1"
-     },
-     {
-      "titolo": "Comparison of hamstring stretch position with modified rider sitting position on patient comfort in patients with fracture around the knee undergoing spinal ana",
-      "dove": "archivio preprint",
-      "data": "2026-08-14",
-      "doi": "10.21203/rs.3.rs-10305855/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10305855/v1"
-     },
-     {
-      "titolo": "Tuberculosis of the knee in an immunocompetent adult: A case report",
-      "dove": "archivio preprint",
-      "data": "2026-08-13",
-      "doi": "10.1099/acmi.0.001095.v3",
-      "url": "https://doi.org/10.1099/acmi.0.001095.v3"
-     },
-     {
-      "titolo": "No Significant Difference in Short-Term Results between Mobile-Bearing and Fixed- Bearing Unicompartmental knee arthroplasty for Medial Osteoarthritis: A Random",
-      "dove": "archivio preprint",
-      "data": "2026-08-13",
-      "doi": "10.21203/rs.3.rs-10164560/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10164560/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
