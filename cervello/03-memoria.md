@@ -7,11 +7,20 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 1 settembre 2026.*
+*Ultimo aggiornamento: 2 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-02 | Journal of ISAKOS | Revisione sistematica di 51 studi (4.153 pazienti pediatrici/adolescenziali) su innesto e timing del rientro allo sport dopo ricostruzione del LCA | 10.1016/j.jisako.2026.101213 | lca adolescente, let, innesto quadricipitale, consensus | aperto — 🟠 PICK del giorno; primo dato diretto che lega tendine quadricipitale e LET nel pediatrico: re-rottura 0% con LET contro 7,7% senza (studi comparativi); nessun RCT nello scheletricamente immaturo, IC non riportati per i sottoanalisi; alimenta T1a
+2026-09-02 | Journal of Experimental Orthopaedics | Coorte di 103 ginocchia, target di correzione 70% vs 62% della linea di carico in osteotomia tibiale alta, follow-up 10 anni | 10.1002/jeo2.70900 | osteotomia, slope, target correzione | aperto — 🟢 target 62% sotto-corretto più spesso (45% vs 13%, p<0,001) e più conversioni a TKA quando sotto-corretti (36,7% vs 9,6%, p=0,012); conversione complessiva sottopotente (RR 0,90, IC 95% 0,44-1,81 con potenza.py)
+2026-09-02 | Arthroscopy, Sports Medicine, and Rehabilitation | Sutura vs meniscectomia pediatrica, incidenza di artrosi post-traumatica a 10 anni (registro PearlDiver, 10.352 pz) | 10.1002/ars2.70067 | menisco, adolescente, registro | aperto — 🟢 artrosi a 10 anni 1,5% (sutura) vs 2,3% (meniscectomia), RR 0,65 IC 95% 0,47-0,91 con potenza.py; secondo intervento per rigidità articolare predittore più forte in entrambi i gruppi; diagnosi per codice amministrativo
+2026-09-02 | SICOT-J | Allineamento funzionale vs meccanico in protesi totale di ginocchio robot-assistita, meta-analisi di 6 studi comparativi (645 TKA) | 10.1051/sicotj/2026061 | protesi robotica, allineamento, meta-analisi | aperto — 🟢 funzionale: meno release dei tessuti molli (OR 5,38), recupero più rapido del movimento a 6 settimane; a 1 anno miglioramento funzionale sovrapponibile; VELYS non isolato come categoria propria
+2026-09-02 | Clinical and Applied Thrombosis/Hemostasis | Tromboprofilassi e gestione perioperatoria dell'anticoagulazione cronica in protesi totale di anca e ginocchio (revisione narrativa multidisciplinare) | 10.1177/10760296261483876 | protesi totale, trombosi, anticoagulanti | aperto — 🟢 nessun dato originale, raccomandazione di un regime paziente-specifico costruito in team (chirurgo, internista, farmacista clinico)
+2026-09-02 | Medicine | BMI, intervallo trauma-chirurgia e lesioni meniscali come fattori di rischio indipendenti per danno cartilagineo dopo rottura del LCA (coorte cinese, 80 pz) | 10.1097/MD.0000000000050374 | lca, cartilagine, fattore di rischio | aperto — 🟢 BMI più alto, attesa più lunga e lesioni meniscali bilaterali indipendentemente associati al danno cartilagineo; campione modesto (32/80), risultati dichiarati esplorativi dagli autori
+2026-09-02 | Medicine | Ricostruzione RM assistita da intelligenza artificiale per il grading del LCP, accuratezza diagnostica contro artroscopia (110 pz) | 10.1097/MD.0000000000050292 | lcp, imaging, intelligenza artificiale | aperto — 🟢 qualità d'immagine nettamente superiore; AUC 0,79 su lesioni complete, solo 0,54 e 0,17 su parziali di grado 1 e 2; accordo con artroscopia solo moderato (kappa 0,57)
+2026-09-02 | The Journal of Arthroplasty | Predittori dell'incapacità di inginocchiarsi e/o accovacciarsi a 1 anno da protesi di ginocchio, coorte di Singapore (888 ginocchia) | 10.1016/j.arth.2026.08.053 | protesi totale, esiti riferiti dal paziente, aspettative | aperto — ⚪ a 1 anno 42% accovacciarsi, 36% inginocchiarsi, 30% entrambe; incapacità predetta da BMI, ROM/flessione preoperatori, fiducia preoperatoria, età, sesso; popolazione del Sud-Est asiatico, trasferibilità da verificare
 
 2026-09-01 | Journal of Robotic Surgery | Revisione critica narrativa sulla protesi di ginocchio robot-assistita: precisione dimostrata, beneficio clinico ancora da provare | 10.1007/s11701-026-03854-z | protesi robotica, VELYS, revisione critica | aperto — 🟠 PICK del giorno; revisione non sistematica: accuratezza tecnica/radiografica costantemente superiore, ma esiti riferiti dal paziente, sopravvivenza a lungo termine e costo-efficacia insufficientemente provati; conferma il messaggio di RACER-Knee (21 agosto) per l'intera categoria, VELYS compreso
 2026-09-01 | The Bone & Joint Journal | RCT interim, protesi monocompartimentale mediale robot-assistita vs convenzionale con navigazione (107 pz) | 10.1302/0301-620X.108B9.BJJ-2025-1481.R1 | protesi monocompartimentale, protesi robotica, allineamento | aperto — 🟠 accuratezza di posizionamento superiore col robot (p<0,001), dolore/oppioidi/degenza ridotti; OKS/KOOS/WOMAC sovrapponibili a 2 anni, Forgotten Joint Score migliore col robot; reclutamento calato per perdita di equipoise, bias dichiarato dagli autori
@@ -164,6 +173,22 @@
 ## TENSIONI APERTE
 
 ### T1a — Il LET serve su innesto rigido? *(dal 2026-07-21)*
+
+**Nuovo il 2 settembre 2026, il primo dato diretto sul tuo innesto nel paziente
+pediatrico/adolescente.** Una revisione sistematica PRISMA (51 studi, 4.153
+pazienti ≤19 anni; Olivelle, Guevel, Sarraf, *J ISAKOS*) sulla scelta
+dell'innesto e sul timing del rientro allo sport dopo ricostruzione pediatrica
+del LCA riporta, come obiettivo secondario, l'effetto del LET come
+augmentazione: negli studi comparativi la re-rottura scende con il LET per
+ogni tipo di innesto, hamstring compreso (0-5,3% con LET contro 11,9-15%
+senza) e per la prima volta anche per il tendine quadricipitale (0% con LET
+contro 7,7% senza, nei soli studi comparativi disponibili) — proprio la
+combinazione innesto+LET che usi tu, qui nella fascia di età più giovane della
+tua casistica (dai 14 anni). È un segnale che va nella tua direzione, non una
+dimostrazione: la base resta fatta di serie retrospettive di qualità perlopiù
+moderata (MCMS medio 58,5), senza intervalli di confidenza riportati per i
+confronti fra sottogruppi, e nessun RCT ha mai confrontato innesto o LET nello
+scheletricamente immaturo.
 
 **Nuovo il 26 agosto 2026, un segnale piccolo ma nella direzione di Dario.** Una
 coorte retrospettiva di 452 ricostruzioni primarie del LCA (Nicholas et al., *The
