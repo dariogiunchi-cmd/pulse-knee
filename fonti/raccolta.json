@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-01T09:24:55Z",
+ "generato": "2026-09-02T08:07:37Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,24 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Semplificazione delle domande di cambiamento di stato tra omologazione principale e omologazione all’esportazione per medicament...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/vereinfachung-der-Gesuche-um-satuswechsel-zwischen-haupt-und-exportzulassung-fuer-tierarzneimittel.html",
+      "data": "Tue, 01 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "MU100_00_001i_WL_Requisiti per la persona responsabile della farmacovigilanza",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/farmacovigilanza/gateway.html",
+      "data": "Tue, 01 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "01.09.2026 – Novità: FAQ relativa all’ordinanza di Swissmedic sui suoi emolumenti",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/fragen-und-antworten-zur-gebuehrenverordnung-swissmedic.html",
+      "data": "Tue, 01 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Ora online: Regulatory & Beyond 2026",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/services/veranstaltungen/regulatory-beyond-2026.html",
       "data": "Mon, 31 Aug 2026 00:00:00 +0000"
@@ -317,14 +335,14 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Vyvgart®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-vyvgart-1.html",
+      "titolo": "Rapporto sintetico di omologazione – Ojemda®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ojemda.html",
       "data": "Tue, 25 Aug 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Ojemda®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ojemda.html",
+      "titolo": "Rapporto sintetico di omologazione – Vyvgart®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-vyvgart-1.html",
       "data": "Tue, 25 Aug 2026 00:00:00 +0000"
      },
      {
@@ -358,28 +376,10 @@
       "data": "Thu, 13 Aug 2026 00:00:00 +0000"
      },
      {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Ritiro di lotti – Movicol, polvere per soluzione orale",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-movicol-pulver-zur-herstellung-einer-loesung-zum-einnehmen.html",
-      "data": "Thu, 13 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Ispezioni ospedaliere di Swissmedic 2025: la sorveglianza è efficace, ma non basta",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/dispositivi-medici/panoramica-dispositivi-medici/jahresbericht-spitalinspektionen-2025.html",
-      "data": "Thu, 13 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "DHPC – Bonviva 150 mg (acidum ibandronicum)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-bonviva-150-mg-acidum-ibandronicum.html",
-      "data": "Wed, 12 Aug 2026 00:00:00 +0000"
-     },
-     {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
-      "titolo": "Out-of-Stock – Natulan 50 mg, capsule rigideDHPC – Gabapentin Viatris (gabapentinum)DHPC – Alecensa® (alectinib)DHPC – Rhophylac...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-natulan-hartkapseln.html",
-      "data": "Tue, 01 Sep 2026 01:29:08 +0000"
+      "titolo": "Ritiro di lotti – Diamox 250mg, comprimésésOut-of-Stock – Natulan 50 mg, capsule rigideDHPC – Gabapentin Viatris (gabapentinum)D...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-diamox-250-mg-tabletten.html",
+      "data": "Wed, 02 Sep 2026 08:07:42 +0000"
      }
     ]
    }
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 150,
+    "doi_citati_controllati": 158,
     "colpiti": [],
     "nel_perimetro": [],
     "tipi_falliti": []
@@ -763,6 +763,12 @@
    "esito": "ok",
    "dati": {
     "video": [
+     {
+      "canale": "Stryker",
+      "titolo": "Stryker's SportSuite Vision: A new chapter in digital surgery starts now",
+      "link": "https://www.youtube.com/watch?v=lTfZ-Z9b9LU",
+      "data": "2026-09-01"
+     },
      {
       "canale": "Arthrex",
       "titolo": "ApolloRF® H50 Probe",
@@ -787,6 +793,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42680067",
+     "titolo": "Journal of ISAKOS — Revisione sistematica di 51 studi (4.153 pazienti pediatrici/adolescenziali) su innesto e ",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42671659",
      "titolo": "Journal of Robotic Surgery — Revisione critica narrativa sulla protesi di ginocchio robot-assistita: accuratez",
@@ -1061,6 +1073,48 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "The epidemiology of knee injuries in New Zealand, 2015–2024",
+      "dove": "archivio preprint",
+      "data": "2026-09-01",
+      "doi": "10.64898/2026.08.27.26361563",
+      "url": "https://doi.org/10.64898/2026.08.27.26361563"
+     },
+     {
+      "titolo": "Association of Knee Ligament Injury with Pelvic and Acetabular Fractures: A Retrospective Cohort Study",
+      "dove": "archivio preprint",
+      "data": "2026-09-01",
+      "doi": "10.21203/rs.3.rs-10635107/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10635107/v1"
+     },
+     {
+      "titolo": "A Multimodal Machine Learning Model for Predicting Prolonged Hospital Stay After Total Hip and Knee Arthroplasty：Development, Internal Validation, and External ",
+      "dove": "archivio preprint",
+      "data": "2026-09-01",
+      "doi": "10.21203/rs.3.rs-10673621/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10673621/v1"
+     },
+     {
+      "titolo": "Delayed Anterior Cruciate Ligament Reconstruction and Meniscal or Chondral Injury: A Systematic Review",
+      "dove": "archivio preprint",
+      "data": "2026-09-01",
+      "doi": "10.21203/rs.3.rs-10856088/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10856088/v1"
+     },
+     {
+      "titolo": "Microporous Polysaccharide Hemospheres in Hip and Knee Revision Arthroplasty for Periprosthetic Joint Infection: A Matched Cohort Study",
+      "dove": "archivio preprint",
+      "data": "2026-09-01",
+      "doi": "10.21203/rs.3.rs-10645692/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10645692/v1"
+     },
+     {
+      "titolo": "Effect of Autologous Platelet-Rich Plasma with Autologous thrombin Serum in a Refractory Non-Healing Below-Knee Amputation Stump Wound: A Case Report",
+      "dove": "archivio preprint",
+      "data": "2026-08-28",
+      "doi": "10.20944/preprints202608.2075.v1",
+      "url": "https://doi.org/10.20944/preprints202608.2075.v1"
+     },
+     {
       "titolo": "Mechanical elements related to the development of patellofemoral pain syndrome, pain intensity, and functional disability: A cross-sectional study",
       "dove": "archivio preprint",
       "data": "2026-08-31",
@@ -1192,48 +1246,6 @@
       "data": "2026-08-19",
       "doi": "10.21203/rs.3.rs-10570868/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10570868/v1"
-     },
-     {
-      "titolo": "Effectiveness and Potential Benefits of the Use of Laser Light Therapy in Musculoskeletal Rehabilitation Programs for Knee Osteoarthritis: A Narrative Review",
-      "dove": "archivio preprint",
-      "data": "2026-08-17",
-      "doi": "10.20944/preprints202608.1113.v1",
-      "url": "https://doi.org/10.20944/preprints202608.1113.v1"
-     },
-     {
-      "titolo": "Process evaluation protocol of a trial evaluating app-based post knee arthroplasty telerehabilitation strategy in India",
-      "dove": "archivio preprint",
-      "data": "2026-08-17",
-      "doi": "10.12688/wellcomeopenres.26007.2",
-      "url": "https://doi.org/10.12688/wellcomeopenres.26007.2"
-     },
-     {
-      "titolo": "Finite Element Analysis of Fixed-bearing Unicompartmental Knee Arthroplasty: Coronal Alignment of the Tibial Component under Physiological Alignment",
-      "dove": "archivio preprint",
-      "data": "2026-08-14",
-      "doi": "10.21203/rs.3.rs-10561184/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10561184/v1"
-     },
-     {
-      "titolo": "Sustainability of whole-body electromyostimulation in knee osteoarthritis – 6-month post-intervention follow-up of the randomized controlled EMSOAT study",
-      "dove": "archivio preprint",
-      "data": "2026-08-14",
-      "doi": "10.21203/rs.3.rs-10229284/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10229284/v1"
-     },
-     {
-      "titolo": "Effect of Mesenchymal Stem Cell-Derived Secretome Injection on Functional Outcomes After Anterior Cruciate Ligament Reconstruction Using Peroneus Longus Tendon ",
-      "dove": "archivio preprint",
-      "data": "2026-08-14",
-      "doi": "10.21203/rs.3.rs-10642292/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10642292/v1"
-     },
-     {
-      "titolo": "The Effect of Lower-Limb Coronal Alignment Correction and Component Positioning on Coronal Ankle Alignment After Total Knee Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-08-14",
-      "doi": "10.21203/rs.3.rs-10465742/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10465742/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
