@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-02T08:47:20Z",
+ "generato": "2026-09-03T08:16:49Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,60 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog Blutspende Zürich, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-blutspende-zh.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog KSGR, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-ksgr.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog LUKS, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-luks.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog Insel, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-insel.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog Universitätsspital Basel, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-usb.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Sérum autologue USZ, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-usz.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Sérum autologue HOJG, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-hojg.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Sérum autologue ICH, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-ich.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Ritiro di lotti – Diamox 250mg, comprimésés",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-diamox-250-mg-tabletten.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Semplificazione delle domande di cambiamento di stato tra omologazione principale e omologazione all’esportazione per medicament...",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/vereinfachung-der-Gesuche-um-satuswechsel-zwischen-haupt-und-exportzulassung-fuer-tierarzneimittel.html",
       "data": "Tue, 01 Sep 2026 00:00:00 +0000"
@@ -320,60 +374,6 @@
       "titolo": "DHPC – Gabapentin Viatris (gabapentinum)",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-gabapentin-viatris-gabapentinum.html",
       "data": "Fri, 28 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Livmarli®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-livmarli-1.html",
-      "data": "Fri, 28 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "DHPC – Alecensa® (alectinib)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-alecensa-alectinib.html",
-      "data": "Tue, 25 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Ojemda®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ojemda.html",
-      "data": "Tue, 25 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Vyvgart®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-vyvgart-1.html",
-      "data": "Tue, 25 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Swissmedic Portal Release Notes – 24.08.2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/egov-services/smc-portal/release-notes/release-note-240826.html",
-      "data": "Mon, 24 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "I-SMI.TI.10e Starting Material Identity Guarantee",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/bewilligungen_zertifikate/autorizzazioni-d-esercizio0/ispettorati.html",
-      "data": "Mon, 17 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "DHPC – Rhophylac (immunoglobulinum humanum anti-D)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-rhophylac-immunoglobulinum-humanum-anti-d1.html",
-      "data": "Fri, 14 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Kisunla®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-kisunla.html",
-      "data": "Fri, 14 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Out-of-Stock – Extencilline, 1 200 000 et 2 400 000 UI, poudre et solvant pour suspension injectable",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-extencilline-1200000-und-2400000-ui-pulver-undloesungsmittel-zur-herstellung-einer-injektionssuspension.html",
-      "data": "Thu, 13 Aug 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
@@ -594,17 +594,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07580157",
-       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
-       "stato": "ENROLLING_BY_INVITATION",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 20,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07753707",
        "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
        "stato": "ACTIVE_NOT_RECRUITING",
@@ -613,6 +602,17 @@
         "NA"
        ],
        "n": 111,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07580157",
+       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 20,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 158,
+    "doi_citati_controllati": 165,
     "colpiti": [],
     "nel_perimetro": [],
     "tipi_falliti": []
@@ -793,6 +793,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42682852",
+     "titolo": "Orthopaedic Journal of Sports Medicine — Studio caso-controllo su 72 rifissazioni della radice meniscale media",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42680067",
      "titolo": "Journal of ISAKOS — Revisione sistematica di 51 studi (4.153 pazienti pediatrici/adolescenziali) su innesto e ",
@@ -1045,15 +1051,6 @@
       "tipi": [
        "Journal Article"
       ]
-     },
-     {
-      "pmid": "42399861",
-      "titolo": "Major discrepancies in recommendations regarding long-term activity restrictions following knee replacement: a survey among Swedish physiotherapists.",
-      "rivista": "BMC musculoskeletal disorders",
-      "data": "2026 Jul 4",
-      "tipi": [
-       "Journal Article"
-      ]
      }
     ]
    }
@@ -1072,6 +1069,48 @@
    "dati": {
     "finestra_giorni": 30,
     "voci": [
+     {
+      "titolo": "The effect of high-dose glucocorticoids on opioid consumption in the first 24 hours after elective hip and knee arthroplasty: A natural experiment study of 47,3",
+      "dove": "archivio preprint",
+      "data": "2026-09-02",
+      "doi": "10.64898/2026.08.31.26361793",
+      "url": "https://doi.org/10.64898/2026.08.31.26361793"
+     },
+     {
+      "titolo": "Single-Incision Dual Intramedullary Fixation of Floating Knee Injuries: A Retrospective Case Series",
+      "dove": "archivio preprint",
+      "data": "2026-09-02",
+      "doi": "10.21203/rs.3.rs-10408463/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10408463/v1"
+     },
+     {
+      "titolo": "Structural Cost Dynamics and Determinants of Total Hospitalization Expenditure in ACL Reconstruction and Total Knee Arthroplasty Under Fee-for-Service Care",
+      "dove": "archivio preprint",
+      "data": "2026-09-02",
+      "doi": "10.21203/rs.3.rs-10885360/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10885360/v1"
+     },
+     {
+      "titolo": "Characteristics and influencing factors of health literacy in elderly patients with knee osteoarthritis: a latent profile analysis",
+      "dove": "archivio preprint",
+      "data": "2026-09-02",
+      "doi": "10.21203/rs.3.rs-10504746/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10504746/v1"
+     },
+     {
+      "titolo": "Six-Degree-of-Freedom Patellofemoral Kinematic Coupling Characteristics in Recurrent Patellar Dislocation: A Dual-Plane Fluoroscopic Analysis",
+      "dove": "archivio preprint",
+      "data": "2026-09-02",
+      "doi": "10.21203/rs.3.rs-10654738/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10654738/v1"
+     },
+     {
+      "titolo": "Thirty-Day Periprosthetic Joint Infection After Hip and Knee Arthroplasty: Clinical Correlates and Microbiology in a Tertiary Referral Cohort",
+      "dove": "archivio preprint",
+      "data": "2026-09-02",
+      "doi": "10.21203/rs.3.rs-10594955/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10594955/v1"
+     },
      {
       "titolo": "The epidemiology of knee injuries in New Zealand, 2015–2024",
       "dove": "archivio preprint",
@@ -1204,48 +1243,6 @@
       "data": "2026-08-25",
       "doi": "10.21203/rs.3.rs-10569080/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10569080/v1"
-     },
-     {
-      "titolo": "An Open-Label Single-Arm Phase I/IIa Study to Evaluate the Safety of Human Allogeneic Bone-Marrow-Derived Mesenchymal Stromal Cell Product StromaForte ® for the",
-      "dove": "archivio preprint",
-      "data": "2026-08-25",
-      "doi": "10.21203/rs.3.rs-9847505/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-9847505/v1"
-     },
-     {
-      "titolo": "The Wikidata Knee Replacement Ecosphere: A Clinician Curated, Openly Licensed Knowledge Graph Dataset of Knee Replacement Surgical Techniques, Instruments, Advo",
-      "dove": "archivio preprint",
-      "data": "2026-08-24",
-      "doi": "10.20944/preprints202608.1650.v1",
-      "url": "https://doi.org/10.20944/preprints202608.1650.v1"
-     },
-     {
-      "titolo": "Astragalus-Angelica sinensis-Derived Extracellular Vesicles Attenuate Knee Osteoarthritis with Periarticular Muscle Atrophy via PPARγ-Mediated Regulation of Ske",
-      "dove": "archivio preprint",
-      "data": "2026-08-20",
-      "doi": "10.21203/rs.3.rs-10556770/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10556770/v1"
-     },
-     {
-      "titolo": "Is ROSA Always Reliable? High Accuracy but Notable Deviations in Medial Tibial Resection and Femoral Component Sizing in Mechanically-Aligned Total Knee Arthrop",
-      "dove": "archivio preprint",
-      "data": "2026-08-20",
-      "doi": "10.21203/rs.3.rs-10095661/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10095661/v1"
-     },
-     {
-      "titolo": "Acute popliteal artery thrombosis after simultaneous bilateral total knee arthroplasty: a case report with long-term follow-up",
-      "dove": "archivio preprint",
-      "data": "2026-08-20",
-      "doi": "10.21203/rs.3.rs-10595496/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10595496/v1"
-     },
-     {
-      "titolo": "Structural relationships among osteoporosis knowledge, health beliefs, self- efficacy and activities of daily living in patients with knee osteoarthritis: a cro",
-      "dove": "archivio preprint",
-      "data": "2026-08-19",
-      "doi": "10.21203/rs.3.rs-10570868/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10570868/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
