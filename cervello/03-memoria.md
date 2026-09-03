@@ -7,11 +7,19 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 2 settembre 2026.*
+*Ultimo aggiornamento: 3 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-03 | Orthopaedic Journal of Sports Medicine | Studio caso-controllo, due centri coreani (72 pz), su slope tibiale posteriore mediale e mancato consolidamento della radice meniscale mediale dopo rifissazione all-inside con ancora | 10.1177/23259671261477913 | root, slope, transtibiale | aperto — 🟠 PICK del giorno; slope significativamente più alto nel gruppo non guarito (5,9°±2,2° vs 4,4°±2,5°; p=0,017), OR 1,31 per grado (IC 95% 1,04-1,73; p=0,022); età e BMI non associati; tecnica all-inside con ancora, non la transtibiale pull-out; alimenta T2b
+2026-09-03 | Experimental and Therapeutic Medicine | Expression of Concern su un lavoro cinese sul plasma ricco di piastrine nell'artrosi di ginocchio | 10.3892/etm.2026.13269 | prp, artrosi, integrità scientifica | aperto — 🔴 non un lavoro mai citato in PULSE (verificato contro l'intero storico, 146 PMID, nessuna ritrattazione); nessun dettaglio pubblico sul motivo dell'avviso
+2026-09-03 | Frontiers in Bioengineering and Biotechnology | Meta-analisi di 9 studi comparativi (937 TKA) sul robot MAKO vs tecnica convenzionale | 10.3389/fbioe.2026.1892225 | protesi robotica, MAKO, meta-analisi | aperto — 🟠 allineamento HKA più preciso (MD -0,96°; IC 95% -1,26/-0,65) e punteggi funzionali migliori (SMD 0,46); dolore/ROM/Forgotten Joint Score non significativi con intervalli ampi (muti, non negativi); nessuno studio randomizzato incluso; piattaforma MAKO, non VELYS
+2026-09-03 | Orthopaedic Journal of Sports Medicine | Revisione sistematica di spin bias su 16 revisioni/meta-analisi del PRP nella sutura meniscale | 10.1177/23259671261471384 | prp, menisco, metodologia | aperto — 🟠 almeno una distorsione a favore del trattamento nel 93,8% delle revisioni (15/16), AMSTAR 2 criticamente basso nel 68,8%; livello IV dichiarato dagli autori
+2026-09-03 | Journal of Clinical Practice and Research | Serie retrospettiva turca (42 pz su 76 operati) di resezione artroscopica della plica mediopatellare con degenerazione cartilaginea, follow-up medio 14 anni | 10.14744/cpr.2026.40961 | plica, cartilagine, lungo termine | aperto — 🟢 WOMAC buono/eccellente nel 92,9% al follow-up finale, nessun peggioramento riportato; nessun gruppo di controllo, serie a braccio singolo
+2026-09-03 | Orthopaedic Journal of Sports Medicine | Studio retrospettivo cinese (59 pz), second-look artroscopico dopo LCA combinato a sutura di lesione meniscale a manico di secchio | 10.1177/23259671261472645 | lca, menisco, second-look | aperto — 🟢 sinovializzazione del neolegamento correlata alla guarigione meniscale (r=0,724; p<0,001); guarigione 100%/44,4%/0% per grado di sinovializzazione buono/discreto/scarso, numerosità dei sottogruppi non riportata
+2026-09-03 | Orthopaedic Journal of Sports Medicine | Studio trasversale su registro riabilitativo svedese (1.508 pz: primaria/revisione/controlaterale) | 10.1177/23259671261470914 | lca, revisione, ritorno allo sport | aperto — 🟢 rientro allo sport preinfortunio a 24 mesi 43,9% (primaria) vs 27,1% (revisione) vs 25,7% (controlaterale); dimensioni dell'effetto dichiarate piccole dagli autori
 
 2026-09-02 | Journal of ISAKOS | Revisione sistematica di 51 studi (4.153 pazienti pediatrici/adolescenziali) su innesto e timing del rientro allo sport dopo ricostruzione del LCA | 10.1016/j.jisako.2026.101213 | lca adolescente, let, innesto quadricipitale, consensus | aperto — 🟠 PICK del giorno; primo dato diretto che lega tendine quadricipitale e LET nel pediatrico: re-rottura 0% con LET contro 7,7% senza (studi comparativi); nessun RCT nello scheletricamente immaturo, IC non riportati per i sottoanalisi; alimenta T1a
 2026-09-02 | Journal of Experimental Orthopaedics | Coorte di 103 ginocchia, target di correzione 70% vs 62% della linea di carico in osteotomia tibiale alta, follow-up 10 anni | 10.1002/jeo2.70900 | osteotomia, slope, target correzione | aperto — 🟢 target 62% sotto-corretto più spesso (45% vs 13%, p<0,001) e più conversioni a TKA quando sotto-corretti (36,7% vs 9,6%, p=0,012); conversione complessiva sottopotente (RR 0,90, IC 95% 0,44-1,81 con potenza.py)
@@ -468,6 +476,18 @@ Nessun dato clinico: è una nota di tecnica, non una casistica, ma è il primo
 dettaglio pratico su come integrare le due procedure quando il patrimonio
 osseo mediale è scarso.
 
+**Nuovo il 3 settembre 2026, il primo fattore di rischio preoperatorio dedicato
+specificamente al mancato consolidamento della radice.** Uno studio caso-controllo
+coreano su 72 rifissazioni della radice meniscale mediale (Choi, Yang, Lee,
+Victoroff, *OJSM*) mostra che uno slope tibiale posteriore più alto predice, in
+modo indipendente, il mancato consolidamento a 6 mesi (5,9°±2,2° nel gruppo non
+guarito contro 4,4°±2,5° nel guarito; OR 1,31 per grado, IC 95% 1,04-1,73, p=0,022),
+mentre età e BMI non sono associati. La tecnica di fissazione studiata è però
+quella all-inside con ancora, non la transtibiale pull-out di Dario: il principio
+biomeccanico — più forza di taglio anteriore con slope aumentato — è verosimilmente
+lo stesso, ma il numero esatto (OR 1,31) non è automaticamente trasferibile al suo
+costrutto.
+
 ### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22)*
 
 La simmetria di forza è il criterio clinico più usato; la meta-regressione che lo
@@ -581,6 +601,19 @@ aggiunge questa misura ai criteri di rientro convenzionali discrimina meglio
 innesto specifico — l'abstract non lo riporta — ma allarga la tensione oltre
 la sola simmetria di forza sull'arto operato: anche il carico sull'arto sano,
 misurato al momento del rientro, porta informazione sul rischio futuro.
+
+**Nuovo il 3 settembre 2026, un ulteriore tassello sul carico cognitivo.** Uno
+studio biomeccanico cinese su 30 calciatori di alto livello (Liu, Wang Zilong,
+Wang Zhuangzhuang et al., *Frontiers in Physiology*) mostra che il cambio di
+direzione non anticipato — rispetto a quello anticipato — aumenta angolo e
+momento di abduzione del ginocchio, marcatori biomeccanici di rischio per il
+LCA; le prestazioni cognitive di base (tempo di reazione, errori di commissione
+e omissione a un test Go/No-Go) modulano in modo significativo queste risposte
+biomeccaniche. Non riguarda il rientro dopo ricostruzione ma il rischio nel
+gesto atletico non pianificato in generale: rafforza, con un terzo segnale
+indipendente dopo quelli del 18 e 25 agosto, l'idea che un test motorio isolato
+— o la sola simmetria di forza — non cattura tutto ciò che conta per il rischio
+di infortunio.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
