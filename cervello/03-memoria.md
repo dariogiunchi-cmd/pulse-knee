@@ -7,11 +7,18 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 3 settembre 2026.*
+*Ultimo aggiornamento: 4 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-04 | British Journal of Sports Medicine | Coorte nazionale su registro svedese collegato alla federazione calcio (10.693 giocatori), tipo di innesto e rischio di revisione/LCA controlaterale dopo ricostruzione primaria del LCA | 10.1136/bjsports-2026-111547 | lca, innesto quadricipitale, registro | aperto — 🟠 PICK del giorno; nessuna associazione fra tipo di innesto e revisione dell'LCA operato; nelle donne il tendine quadricipitale si associa a un rischio più alto di LCA controlaterale (HR 1,98; IC 95% 1,17-3,36); alimenta T1a con il primo dato di registro nazionale specifico sull'innesto
+2026-09-04 | Frontiers in Medicine | Coorte retrospettiva cinese (60 ginocchia, abbinamento 1:1:1 per propensione), protesi monocompartimentale mediale combinata a ricostruzione del LCA con legamento LARS o tendine autologo | 10.3389/fmed.2026.1935913 | protesi monocompartimentale, lca, lars | aperto — 🟢 esiti funzionali sovrapponibili alla protesi isolata a 61 mesi; LARS recupero più rapido a 1 mese, tendine autologo 2/20 dolore al sito di prelievo; sopravvivenza impianto 100% in tutti i gruppi
+2026-09-04 | European Journal of Trauma and Emergency Surgery | Serie di casi retrospettiva-prospettica (4 pazienti, 12-16 anni), lussazione tibiofemorale con cartilagini di crescita aperte, follow-up medio 7,3 anni | 10.1007/s00068-026-03309-y | multilegamentose, adolescente, trauma | aperto — 🟢 nessun disturbo di crescita, esiti funzionali da moderati a eccellenti (KOOS 59-92%, IKDC 62-100%), ma 3/4 pazienti con disagio psicologico persistente nonostante il buon recupero fisico
+2026-09-04 | Arthroscopy | Serie retrospettiva (22 pz di 33 valutati), fissazione artroscopica a 3 tunnel con ponte di sutura per frattura da avulsione tibiale del LCP, con editoriale di accompagnamento | 10.1002/arj.70502 | lcp, traumatologia, tecnica chirurgica | aperto — 🟢 miglioramento significativo di IKDC/Lysholm/Tegner e traslazione tibiale posteriore (KT-1000: 8,4→2,9mm) a 24 mesi, nessuna complicanza; editoriale (Meyer, Silva-Mendoza, Levy) segnala la difficoltà tecnica del gesto
+2026-09-04 | Acta Orthopaedica | Coorte di registro nazionale finlandese, abbinamento per propensione (1.318+1.318 protesi), protesi totale di ginocchio robot-assistita (MAKO) vs convenzionale | 10.2340/17453674.2026.46462 | protesi robotica, registro, infezione | aperto — 🟢 sopravvivenza libera da revisione a 12 mesi sovrapponibile (HR 0,61; IC 95% 0,28-1,34, muto); sopravvivenza libera da infezione periprotesica significativamente migliore col robot (HR 0,29; IC 95% 0,10-0,90); sistema MAKO, non VELYS
+2026-09-04 | Cardiovascular and Interventional Radiology | Consensus Delphi (29 radiologi interventisti, 3 turni), indicazioni e tecnica dell'embolizzazione delle arterie genicolate per il dolore cronico di ginocchio | 10.1007/s00270-026-04547-8 | dolore cronico, radiologia interventistica, consensus | aperto — ⚪ tecnica non chirurgica, non sua; primo consensus strutturato su indicazioni (dolore refrattario ≥3 mesi) e tecnica (accesso transfemorale, embolizzazione mirata); livello V, opinione di esperti
 
 2026-09-03 | Orthopaedic Journal of Sports Medicine | Studio caso-controllo, due centri coreani (72 pz), su slope tibiale posteriore mediale e mancato consolidamento della radice meniscale mediale dopo rifissazione all-inside con ancora | 10.1177/23259671261477913 | root, slope, transtibiale | aperto — 🟠 PICK del giorno; slope significativamente più alto nel gruppo non guarito (5,9°±2,2° vs 4,4°±2,5°; p=0,017), OR 1,31 per grado (IC 95% 1,04-1,73; p=0,022); età e BMI non associati; tecnica all-inside con ancora, non la transtibiale pull-out; alimenta T2b
 2026-09-03 | Experimental and Therapeutic Medicine | Expression of Concern su un lavoro cinese sul plasma ricco di piastrine nell'artrosi di ginocchio | 10.3892/etm.2026.13269 | prp, artrosi, integrità scientifica | aperto — 🔴 non un lavoro mai citato in PULSE (verificato contro l'intero storico, 146 PMID, nessuna ritrattazione); nessun dettaglio pubblico sul motivo dell'avviso
@@ -303,6 +310,19 @@ aggiungere dati quantitativi sul tuo innesto specifico. Il raccoglitore notturno
 segnala inoltre un trial nuovo, non ancora in reclutamento, disegnato apposta per
 questa domanda: **NCT07777458**, effetto del LET sul recupero della massa magra
 dell'arto dopo ricostruzione del LCA, 40 pazienti.
+
+**Nuovo il 4 settembre 2026, il primo dato di registro nazionale specifico sul tuo innesto.** Un registro
+svedese collegato alla federazione calcio (Sandon, Forssblad, *BJSM*), 10.693 calciatori con ricostruzione
+primaria del LCA fra il 2014 e il 2023, non trova alcuna associazione fra tipo di innesto e revisione
+dell'LCA operato — né hamstring, né osso-tendine-osso, né tendine quadricipitale predicono da soli il
+reintervento, in modelli di Cox aggiustati per età e livello di gioco preinfortunio. Nelle donne, però, il
+tendine quadricipitale — il tuo di scelta — è l'unico innesto associato a un rischio più alto di lesione
+del LCA controlaterale rispetto all'hamstring (HR 1,98; IC 95% 1,17-3,36). Non tocca né il costrutto del
+LET né la fissazione onlay che usi: la domanda del registro è solo sull'innesto. Studio osservazionale, non
+causale — l'associazione nelle donne può riflettere selezione del paziente più che un effetto diretto
+dell'innesto, e gli stessi autori non la interpretano come tale. Resta comunque il primo segnale di scala
+nazionale, specifico sul tendine quadricipitale, utile nel colloquio pre-operatorio con le pazienti più
+giovani ed esposte al gesto sportivo.
 
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
@@ -614,6 +634,19 @@ gesto atletico non pianificato in generale: rafforza, con un terzo segnale
 indipendente dopo quelli del 18 e 25 agosto, l'idea che un test motorio isolato
 — o la sola simmetria di forza — non cattura tutto ciò che conta per il rischio
 di infortunio.
+
+**Nuovo il 4 settembre 2026, due tasselli sul recupero neuromuscolare e biomeccanico oltre la sola
+forza.** Una revisione sistematica e meta-analisi di 20 studi (*Journal of Sport and Health Science*)
+mostra che l'eccitabilità corticospinale e spinale del quadricipite resta alterata nell'arto operato non
+solo durante la riabilitazione precoce (<12 mesi) ma anche al momento del rientro allo sport (≥12 mesi),
+con le alterazioni associate alla forza muscolare residua — un ulteriore argomento per criteri di rientro
+che guardino oltre la sola simmetria di forza misurata con un dinamometro. E in una coorte di adolescenti
+in tarda riabilitazione dopo ricostruzione del LCA (*JOSPT Open*), pur con un'altezza di salto
+monopodalico quasi simmetrica fra i due arti (indice di simmetria mediano 92,3%), angoli e momenti di
+flessione del ginocchio restano diversi durante il salto — la simmetria dell'altezza raggiunta nasconde
+un'asimmetria biomeccanica ancora presente. Certezza dell'evidenza bassa in entrambi i casi (piccoli
+campioni, disegni osservazionali); non chiudono la tensione, la rafforzano su un fronte diverso dalla sola
+forza: la qualità del movimento, non solo la sua simmetria in altezza o in newton.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
