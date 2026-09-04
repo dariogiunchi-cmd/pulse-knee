@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-03T08:56:53Z",
+ "generato": "2026-09-04T08:13:02Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "swissdamed Webinar 10 November 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/veranstaltungen/swissdamed-webinar-nov-2026.html",
+      "data": "Thu, 03 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Rapporto sintetico di omologazione – Serum autolog Blutspende Zürich, collirio®",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-blutspende-zh.html",
       "data": "Wed, 02 Sep 2026 00:00:00 +0000"
@@ -368,12 +374,6 @@
       "titolo": "Out-of-Stock – Natulan 50 mg, capsule rigide",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-natulan-hartkapseln.html",
       "data": "Mon, 31 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "DHPC – Gabapentin Viatris (gabapentinum)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-gabapentin-viatris-gabapentinum.html",
-      "data": "Fri, 28 Aug 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
@@ -594,17 +594,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07753707",
-       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 111,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07580157",
        "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
        "stato": "ENROLLING_BY_INVITATION",
@@ -613,6 +602,17 @@
         "NA"
        ],
        "n": 20,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07753707",
+       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 111,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 165,
+    "doi_citati_controllati": 171,
     "colpiti": [],
     "nel_perimetro": [],
     "tipi_falliti": []
@@ -763,6 +763,18 @@
    "esito": "ok",
    "dati": {
     "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Tibial Nail System: Features and Benefits",
+      "link": "https://www.youtube.com/watch?v=gxxtNT_Uhps",
+      "data": "2026-09-03"
+     },
+     {
+      "canale": "Stryker",
+      "titolo": "Blueprint 4.3.1 hype video",
+      "link": "https://www.youtube.com/watch?v=DikvTq65mbs",
+      "data": "2026-09-03"
+     },
      {
       "canale": "Stryker",
       "titolo": "Stryker's SportSuite Vision: A new chapter in digital surgery starts now",
@@ -793,6 +805,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42692807",
+     "titolo": "British Journal of Sports Medicine — Coorte nazionale su registro svedese collegato alla federazione calcio, 1",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42682852",
      "titolo": "Orthopaedic Journal of Sports Medicine — Studio caso-controllo su 72 rifissazioni della radice meniscale media",
@@ -1039,15 +1057,6 @@
       "titolo": "The American Association of Hip and Knee Surgeons Position Statement on OrthoBiologics for Advanced Hip and Knee Osteoarthritis.",
       "rivista": "The Journal of arthroplasty",
       "data": "2026 Jul 11",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42400934",
-      "titolo": "General practitioners' perceptions and experiences of knee osteoarthritis management: a qualitative study of barriers and facilitators to delivering guideline-recommended treatment",
-      "rivista": "Scandinavian journal of primary health care",
-      "data": "2026 Jul 4",
       "tipi": [
        "Journal Article"
       ]
