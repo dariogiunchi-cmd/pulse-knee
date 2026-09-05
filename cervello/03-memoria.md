@@ -7,11 +7,20 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 4 settembre 2026.*
+*Ultimo aggiornamento: 5 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-05 | Orthopaedics & Traumatology: Surgery & Research | Studio prospettico comparativo (140 calciatori agonisti, 70+70, follow-up minimo 5 anni), tendine rotuleo isolato vs tendine hamstring + tenodesi extra-articolare laterale (LET) nella ricostruzione primaria del LCA | 10.1016/j.otsr.2026.104819 | lca, let, tenodesi, calciatori | aperto — 🟠 PICK del giorno; nessuna differenza significativa su IKDC/Lysholm/Tegner, fallimento dell'innesto (RR 1,50; IC 95% 0,45-5,01), reintervento, rientro allo sport o artrosi radiografica (RR 0,71; IC 95% 0,36-1,37 con potenza.py); il disegno confonde innesto e LET insieme, non isola l'effetto della tenodesi — gli stessi autori lo dichiarano; alimenta T1a
+2026-09-05 | Knee Surgery & Related Research | Studio biomeccanico cadaverico (9 innesti di tendine quadricipite a tutto tessuto molle rinforzati con nastro di sutura vs 11 di semitendinoso quadruplicato) | 10.1186/s43019-026-00337-1 | lca, innesto quadricipitale, biomeccanica | aperto — 🟠 il costrutto di quadricipite cede a un carico inferiore (577,9 N contro 806,1 N; p<0,001), sempre per taglio del nastro nell'interfaccia di fissazione, mai per rottura del tendine; gli autori escludono un'inferiorità intrinseca del tendine quadricipite, limitano il risultato al rinforzo con nastro; alimenta T1a
+2026-09-05 | Journal of Clinical Orthopaedics and Trauma | Coorte prospettica multicentrica (216 atleti agonisti, con Camilo Helito), tenodesi extra-articolare laterale (LET) e sovraccarico cinetico compensatorio dopo ricostruzione del LCA | 10.1016/j.jcot.2026.103574 | lca, let, rientro allo sport, biomeccanica | aperto — 🟢 il gruppo con LET mostra un indice di sovraccarico cinetico più basso (p<0,01) e un rischio più basso di infortunio controlaterale del LCA (5,5% contro 12,9%; hazard ratio aggiustato 0,39; IC 95% 0,17-0,91); indice composito nuovo, non ancora validato esternamente; gruppo di confronto su tendine rotuleo, non quadricipitale; alimenta T1a
+2026-09-05 | Journal of Orthopaedic Case Reports | Coorte retrospettiva descrittiva, senza gruppo di confronto (1.137 ginocchia, sistema VELYS), effetto della resezione tibiale sulla simmetria del gap in protesi totale robot-assistita | 10.13107/jocr.2026.v16.i08.7932 | velys, protesi robotica, allineamento | aperto — 🟢 simmetria del gap migliorata nell'88,4% dei casi in estensione e nel 63,9% in flessione, 99,8% di allineamento neutro; nessun gruppo di confronto né esito clinico riportato — precisione tecnica, non beneficio clinico
+2026-09-05 | Acta Orthopaedica Belgica | Coorte retrospettiva comparativa, monocentrica (342 protesi totali, 198 convenzionali + 144 VELYS) | 10.52628/92.2.15070 | velys, protesi robotica, allineamento | aperto — 🟢 intaglio femorale anteriore ridotto (13,9% contro 25,3%; p=0,04), stelo tibiale meno necessario (15,3% contro 24,2%; p=0,01), spessore dell'inserto più costante (p=0,003); nessun esito funzionale riferito dal paziente riportato
+2026-09-05 | American Journal of Sports Medicine | Studio di laboratorio controllato (30 innesti da 15 ginocchia cadaveriche appaiate, con Adam Yanke), tecnica di prelievo del tendine quadricipite e sezione/forza dell'innesto | 10.1177/03635465261478369 | lca, innesto quadricipitale, biomeccanica | aperto — 🟢 il prelievo a tutto spessore con bisturi a doppia lama produce sezione (0,97 contro 0,64 cm² del prelievo cilindrico e 0,44 del tendine rotuleo) e carico di rottura maggiori (tutti i confronti p<0,01/p<0,001); modello cadaverico a tempo zero, campione ridotto per i due sottogruppi di quadricipite
+2026-09-05 | Zeitschrift für Orthopädie und Unfallchirurgie | Revisione narrativa sullo stato corrente delle osteotomie intorno al ginocchio | 10.1055/a-2882-4087 | osteotomia, slope, revisione | aperto — 🟢 conferma l'osteotomia tibiale alta ad apertura come standard per il varo tibiale e la biplanare distale femorale per il malallineamento femorale; nessun dato quantitativo proprio, sintesi narrativa non sistematica
+2026-09-05 | Radiology | Consensus Delphi interdisciplinare, 3 turni (33 esperti di 23 istituzioni), refertazione RM standardizzata del menisco su 11 argomenti incluse le radici meniscali | 10.1148/radiol.251833 | menisco, root, consensus, imaging | aperto — ⚪ consenso raggiunto su tutte le affermazioni al terzo turno, accordo fra radiologi rafforzato specificamente su radici meniscali e descrittori di ri-lesione; livello V, opinione di esperti; contenuto esatto delle nuove definizioni non riportato nell'abstract
 
 2026-09-04 | British Journal of Sports Medicine | Coorte nazionale su registro svedese collegato alla federazione calcio (10.693 giocatori), tipo di innesto e rischio di revisione/LCA controlaterale dopo ricostruzione primaria del LCA | 10.1136/bjsports-2026-111547 | lca, innesto quadricipitale, registro | aperto — 🟠 PICK del giorno; nessuna associazione fra tipo di innesto e revisione dell'LCA operato; nelle donne il tendine quadricipitale si associa a un rischio più alto di LCA controlaterale (HR 1,98; IC 95% 1,17-3,36); alimenta T1a con il primo dato di registro nazionale specifico sull'innesto
 2026-09-04 | Frontiers in Medicine | Coorte retrospettiva cinese (60 ginocchia, abbinamento 1:1:1 per propensione), protesi monocompartimentale mediale combinata a ricostruzione del LCA con legamento LARS o tendine autologo | 10.3389/fmed.2026.1935913 | protesi monocompartimentale, lca, lars | aperto — 🟢 esiti funzionali sovrapponibili alla protesi isolata a 61 mesi; LARS recupero più rapido a 1 mese, tendine autologo 2/20 dolore al sito di prelievo; sopravvivenza impianto 100% in tutti i gruppi
@@ -323,6 +332,36 @@ causale — l'associazione nelle donne può riflettere selezione del paziente pi
 dell'innesto, e gli stessi autori non la interpretano come tale. Resta comunque il primo segnale di scala
 nazionale, specifico sul tendine quadricipitale, utile nel colloquio pre-operatorio con le pazienti più
 giovani ed esposte al gesto sportivo.
+
+**Nuovo il 5 settembre 2026, tre studi nello stesso giorno, in direzioni diverse.** Uno studio prospettico
+comparativo su 140 calciatori agonisti argentini (Bitar, Bustos, Pezzutti et al., *OTSR*), seguiti almeno 5
+anni, non trova alcuna superiorità statisticamente significativa dell'hamstring più LET sul tendine rotuleo
+isolato: IKDC 87,1 contro 88,3 (p=0,48), Lysholm 91,5 contro 92,0 (p=0,62), Tegner 7,8 contro 7,9 (p=0,71),
+fallimento dell'innesto 5,7% contro 8,6% (RR 1,50; IC 95% 0,45-5,01), reintervento 11% contro 13% (RR 1,13;
+IC 95% 0,46-2,76), rientro allo sport 85,7% contro 80,0%, artrosi radiografica 17,1% contro 24,3% (RR 0,71;
+IC 95% 0,36-1,37, ricalcolato con `test/potenza.py`). Il disegno confonde però innesto e LET insieme — non
+isola l'effetto della tenodesi da sola — e gli stessi autori lo dichiarano esplicitamente: «i risultati vanno
+letti come il confronto fra due strategie chirurgiche complete, non come una prova dell'effetto indipendente
+del LET». È il confronto prospettico più diretto uscito finora sul valore aggiunto del LET, in una
+popolazione di calciatori agonisti simile alla tua, ma non chiude la domanda sul tuo innesto (tendine
+quadricipitale) né sul tuo costrutto (Lemaire onlay), che qui non compaiono in nessuno dei due bracci.
+
+Nello stesso giorno, una coorte prospettica multicentrica di 216 atleti (Rivarola, Helito et al., *Journal of
+Clinical Orthopaedics and Trauma*) mostra che il LET si associa a un sovraccarico cinetico compensatorio
+minore sul ginocchio controlaterale (p<0,01) e a un rischio più basso di un secondo infortunio al LCA sul
+lato sano — non quello operato — rispetto al tendine rotuleo isolato (5,5% contro 12,9%; hazard ratio
+aggiustato 0,39; IC 95% 0,17-0,91), con un indice biomeccanico composito (KCI) che predice l'infortunio
+controlaterale con buona accuratezza (AUC 0,81), ancora da validare esternamente. Un meccanismo e un esito —
+la protezione del ginocchio sano — che la letteratura sul LET aveva toccato meno finora.
+
+Un terzo studio, cadaverico (Sator, Pichler, Kiss et al., *Knee Surgery & Related Research*), sembra a prima
+vista una sfida diretta al tuo innesto: un costrutto di tendine quadricipite a tutto tessuto molle rinforzato
+con nastro di sutura cede a un carico inferiore (577,9 N contro 806,1 N; p<0,001) e con rigidità minore del
+semitendinoso quadruplicato. Ma tutti i cedimenti del quadricipite sono avvenuti per taglio del nastro
+nell'interfaccia di fissazione, mai per rottura del tendine stesso — gli autori scrivono esplicitamente che
+il limite è del rinforzo con nastro su tessuto degenerato, non un'inferiorità intrinseca del tendine
+quadricipite, e che il costrutto testato (tutto tessuto molle, nastro, cappio regolabile) potrebbe non
+corrispondere alla tua tecnica di prelievo e fissazione.
 
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
