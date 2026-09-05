@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-04T08:51:32Z",
+ "generato": "2026-09-05T07:51:14Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -116,7 +116,7 @@
      },
      {
       "recalling_firm": "Medline Industries, LP",
-      "product_description": "MEDLINE Medical Procedure Kits labeled as:  \n1) CRANI, Medline Kit Number/SKU DYNJ908097; \n2) CRANI, Medline Kit Number/SKU DYNJ908097A; \n3) CRANI, Medline Kit Number/SKU DYNJ908097B; \n4) CRANI, Medline Kit Number/SKU DYNJ908097C; \n5) CRANI, Medline Kit Number/SKU DYNJ908097D; \n6) DR TUCKER ANT TOTAL HIP, Medline Kit Number/SKU DYNJ912029; \n7) JEWISH CRANI PACK, Medline Kit Number/SKU DYNJ55637B; \n8) L SCOPE PACK, Medline Kit Number/SKU DYNJ43930A; \n9) LAMI PACK, Medline Kit Number/SKU DYNJ67767; \n10) LAVH NEW BRAUNFELS, Medline Kit Number/SKU DYNJ61136F; \n11) SOI KNEE ARTHROSCOPY, Medline Kit Number/SKU DYNJV0172Q; \n12) T AND A PACK, Medline Kit Number/SKU DYNJ86229.",
+      "product_description": "MEDLINE Medical Procedure Kits labeled as:  \r\n1) CRANI, Medline Kit Number/SKU DYNJ908097; \r\n2) CRANI, Medline Kit Number/SKU DYNJ908097A; \r\n3) CRANI, Medline Kit Number/SKU DYNJ908097B; \r\n4) CRANI, Medline Kit Number/SKU DYNJ908097C; \r\n5) CRANI, Medline Kit Number/SKU DYNJ908097D; \r\n6) DR TUCKER ANT TOTAL HIP, Medline Kit Number/SKU DYNJ912029; \r\n7) JEWISH CRANI PACK, Medline Kit Number/SKU DYNJ55637B; \r\n8) L SCOPE PACK, Medline Kit Number/SKU DYNJ43930A; \r\n9) LAMI PACK, Medline Kit Number/SKU DYNJ67767; \r\n10) LAVH NEW BRAUNFELS, Medline Kit Number/SKU DYNJ61136F; \r\n11) SOI KNEE ARTHROSCOPY, Medline Kit Number/SKU DYNJV0172Q; \r\n12) T AND A PACK, Medline Kit Number/SKU DYNJ86229.",
       "reason_for_recall": "During an internal review, Medline identified representative samples did not meet applicable performance specifications. Identified issues include irregularities in catheter surface finish, instances where the catheter connector detached prematurely from the catheter funnel, and limited cases where the catheter outer diameter did not meet specification.",
       "root_cause_description": "Nonconforming Material/Component",
       "event_date_initiated": "2026-05-04",
@@ -287,38 +287,26 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Opdualag®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-opdualag-1.html",
+      "data": "Fri, 04 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "ElViS 2.0",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/elvis2-0-elektronisches-vigilanzsystem-wird-durch-modernisiertes-meldetool-abgeloest.html",
+      "data": "Fri, 04 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "swissdamed Webinar 10 November 2026",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/services/veranstaltungen/swissdamed-webinar-nov-2026.html",
       "data": "Thu, 03 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog Blutspende Zürich, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-blutspende-zh.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog KSGR, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-ksgr.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog LUKS, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-luks.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Rapporto sintetico di omologazione – Serum autolog Insel, collirio®",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-insel.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog Universitätsspital Basel, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-usb.html",
       "data": "Wed, 02 Sep 2026 00:00:00 +0000"
      },
      {
@@ -337,6 +325,30 @@
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Rapporto sintetico di omologazione – Sérum autologue ICH, collirio®",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-ich.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog Blutspende Zürich, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-blutspende-zh.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog LUKS, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-luks.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog KSGR, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-ksgr.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog Universitätsspital Basel, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-usb.html",
       "data": "Wed, 02 Sep 2026 00:00:00 +0000"
      },
      {
@@ -364,18 +376,6 @@
       "data": "Tue, 01 Sep 2026 00:00:00 +0000"
      },
      {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Ora online: Regulatory & Beyond 2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/veranstaltungen/regulatory-beyond-2026.html",
-      "data": "Mon, 31 Aug 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Out-of-Stock – Natulan 50 mg, capsule rigide",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-natulan-hartkapseln.html",
-      "data": "Mon, 31 Aug 2026 00:00:00 +0000"
-     },
-     {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
       "titolo": "Ritiro di lotti – Diamox 250mg, comprimésésOut-of-Stock – Natulan 50 mg, capsule rigideDHPC – Gabapentin Viatris (gabapentinum)D...",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-diamox-250-mg-tabletten.html",
@@ -390,6 +390,15 @@
     {
      "sorveglianza": "STABILITY 2 (T1a)",
      "studi": [
+      {
+       "nct": "NCT07041242",
+       "titolo": "Outcomes and Complication Rates of Anterior Cruciate Ligament Reconstruction Using the \"Over-the-top\" Technique Combined With Lateral Extra-articular Tenodesis in Patients Over 50 Years Old, Compared With a Control Group of Patients Under 30",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-09-04",
+       "fase": null,
+       "n": 164,
+       "tipo": "OBSERVATIONAL"
+      },
       {
        "nct": "NCT03935750",
        "titolo": "STABILITY 2: Anterior Cruciate Ligament Reconstruction +/- Lateral Tenodesis With Patellar vs Quad Tendon",
@@ -446,15 +455,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07041242",
-       "titolo": "Outcomes and Complication Rates of Anterior Cruciate Ligament Reconstruction Using the \"Over-the-top\" Technique Combined With Lateral Extra-articular Tenodesis in Patients Over 50 Years Old, Compared With a Control Group of Patients Under 30",
-       "stato": "RECRUITING",
-       "aggiornato": "2025-07-17",
-       "fase": null,
-       "n": 164,
-       "tipo": "OBSERVATIONAL"
-      },
-      {
        "nct": "NCT06664047",
        "titolo": "Over-the-Top vs. Anteromedial ACLR With Lateral Extraarticular Tenodesis",
        "stato": "RECRUITING",
@@ -497,6 +497,15 @@
     {
      "sorveglianza": "LET / tenodesi laterale",
      "studi": [
+      {
+       "nct": "NCT07041242",
+       "titolo": "Outcomes and Complication Rates of Anterior Cruciate Ligament Reconstruction Using the \"Over-the-top\" Technique Combined With Lateral Extra-articular Tenodesis in Patients Over 50 Years Old, Compared With a Control Group of Patients Under 30",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-09-04",
+       "fase": null,
+       "n": 164,
+       "tipo": "OBSERVATIONAL"
+      },
       {
        "nct": "NCT07777458",
        "titolo": "The Effect of Lateral Extra-Articular Tenodesis on Lower-Extremity Lean Mass Recovery Following Anterior Cruciate Ligament Reconstruction",
@@ -558,15 +567,6 @@
        ],
        "n": 60,
        "tipo": "INTERVENTIONAL"
-      },
-      {
-       "nct": "NCT07041242",
-       "titolo": "Outcomes and Complication Rates of Anterior Cruciate Ligament Reconstruction Using the \"Over-the-top\" Technique Combined With Lateral Extra-articular Tenodesis in Patients Over 50 Years Old, Compared With a Control Group of Patients Under 30",
-       "stato": "RECRUITING",
-       "aggiornato": "2025-07-17",
-       "fase": null,
-       "n": 164,
-       "tipo": "OBSERVATIONAL"
       },
       {
        "nct": "NCT06961292",
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 171,
+    "doi_citati_controllati": 179,
     "colpiti": [],
     "nel_perimetro": [],
     "tipi_falliti": []
@@ -805,6 +805,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42551742",
+     "titolo": "Orthopaedics & Traumatology: Surgery & Research — Studio prospettico comparativo su 140 calciatori agonisti ar",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42692807",
      "titolo": "British Journal of Sports Medicine — Coorte nazionale su registro svedese collegato alla federazione calcio, 1",
@@ -1079,6 +1085,41 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Adverse Event Reports for Semi-Constrained Mobile Bearing and Hinged Metal/Metal Knee Prostheses: An Analysis of the FDA MAUDE Database (2011–2026)",
+      "dove": "archivio preprint",
+      "data": "2026-09-04",
+      "doi": "10.21203/rs.3.rs-10271632/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10271632/v1"
+     },
+     {
+      "titolo": "Multilevel Neuroplastic Changes in Intracortical, Corticospinal, and Spinal Reflex Excitability Following Total Knee Arthroplasty: A One-Year Longitudinal Cohor",
+      "dove": "archivio preprint",
+      "data": "2026-09-04",
+      "doi": "10.21203/rs.3.rs-10741317/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10741317/v1"
+     },
+     {
+      "titolo": "Evaluation of EQ-5D-5L and WOMAC Instruments in Assessing Health-Related Quality of Life Among Women Over 40 with Knee Osteoarthritis and Obesity",
+      "dove": "archivio preprint",
+      "data": "2026-09-04",
+      "doi": "10.21203/rs.3.rs-10798137/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10798137/v1"
+     },
+     {
+      "titolo": "Residual Hybrid Quantum Vision Transformers for Edge-Compatible Knee Osteoarthritis Grading",
+      "dove": "archivio preprint",
+      "data": "2026-09-04",
+      "doi": "10.21203/rs.3.rs-8977180/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-8977180/v1"
+     },
+     {
+      "titolo": "Dual GIP/GLP-1 Receptor Agonist Versus Selective GLP-1 Receptor Agonist in Patients Undergoing Primary Total Knee or Hip Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-09-04",
+      "doi": "10.21203/rs.3.rs-10744245/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10744245/v1"
+     },
+     {
       "titolo": "The effect of high-dose glucocorticoids on opioid consumption in the first 24 hours after elective hip and knee arthroplasty: A natural experiment study of 47,3",
       "dove": "archivio preprint",
       "data": "2026-09-02",
@@ -1217,41 +1258,6 @@
       "data": "2026-08-27",
       "doi": "10.21203/rs.3.rs-10640346/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10640346/v1"
-     },
-     {
-      "titolo": "Lateral Extra-articular Tenodesis Is Associated With Improved Rotational Stability but Not Superior Short-Term Patient-Reported Outcomes After Primary Anterior ",
-      "dove": "archivio preprint",
-      "data": "2026-08-27",
-      "doi": "10.21203/rs.3.rs-10641403/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10641403/v1"
-     },
-     {
-      "titolo": "Robotic-assisted surgery has less soft tissue damage than traditional total knee arthroplasty, with better early recovery and prosthesis placement",
-      "dove": "archivio preprint",
-      "data": "2026-08-25",
-      "doi": "10.21203/rs.3.rs-10579282/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10579282/v1"
-     },
-     {
-      "titolo": "Comparison of Clinical Outcomes Between Asymmetric Reconstruction and Mechanical Alignment Total Knee Arthroplasty for Coronal Plane Alignment of the Knee Type ",
-      "dove": "archivio preprint",
-      "data": "2026-08-25",
-      "doi": "10.21203/rs.3.rs-10691327/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10691327/v1"
-     },
-     {
-      "titolo": "Surgeon's task-load performing surgery around the knee with and without a tourniquet: a prospective cohort study",
-      "dove": "archivio preprint",
-      "data": "2026-08-25",
-      "doi": "10.21203/rs.3.rs-10528768/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10528768/v1"
-     },
-     {
-      "titolo": "Influence of Extensile Medial Parapatellar Arthrotomy on Quadriceps Strength Recovery Following Primary Total Knee Arthroplasty: A Comparative Cohort Study",
-      "dove": "archivio preprint",
-      "data": "2026-08-25",
-      "doi": "10.21203/rs.3.rs-10569080/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10569080/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
