@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-05T08:21:44Z",
+ "generato": "2026-09-06T08:06:38Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -753,9 +753,18 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 179,
+    "doi_citati_controllati": 184,
     "colpiti": [],
-    "nel_perimetro": [],
+    "nel_perimetro": [
+     {
+      "tipo": "withdrawal",
+      "avviso": "10.1016/j.jor.2019.02.032",
+      "bersaglio": [
+       "10.1016/j.jor.2019.02.032"
+      ],
+      "titolo": "Withdrawn: Aspirin for venous thromboembolism prophylaxis after hip or knee arthroplasty: An updated meta-analysis of randomized controlled trials"
+     }
+    ],
     "tipi_falliti": []
    }
   },
@@ -805,6 +814,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42678638",
+     "titolo": "Journal of Robotic Surgery — Revisione narrativa su sei piattaforme robotiche ortopediche commerciali (MAKO, R",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42551742",
      "titolo": "Orthopaedics & Traumatology: Surgery & Research — Studio prospettico comparativo su 140 calciatori agonisti ar",
@@ -1085,6 +1100,20 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Large Language Model Responses to Patient Questions About Return to Activities of Daily Living After Knee Arthroplasty: A Multidimensional Evaluation Before and",
+      "dove": "archivio preprint",
+      "data": "2026-09-05",
+      "doi": "10.21203/rs.3.rs-10776810/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10776810/v1"
+     },
+     {
+      "titolo": "Bidirectional Longitudinal Association Between Sleep Duration and Knee Osteoarthritis and the Mediating Role of Depressive Symptoms Among Middle-Aged and Older ",
+      "dove": "archivio preprint",
+      "data": "2026-09-05",
+      "doi": "10.21203/rs.3.rs-10424336/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10424336/v1"
+     },
+     {
       "titolo": "Adverse Event Reports for Semi-Constrained Mobile Bearing and Hinged Metal/Metal Knee Prostheses: An Analysis of the FDA MAUDE Database (2011–2026)",
       "dove": "archivio preprint",
       "data": "2026-09-04",
@@ -1244,20 +1273,6 @@
       "data": "2026-08-27",
       "doi": "10.21203/rs.3.rs-10443989/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10443989/v1"
-     },
-     {
-      "titolo": "Investigation of the Relationship Between Frontal Plane Knee Projection Angle and Dynamic Balance, Agility, and Ankle Dorsiflexion Mobility in Adolescent Female",
-      "dove": "archivio preprint",
-      "data": "2026-08-27",
-      "doi": "10.21203/rs.3.rs-10617844/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10617844/v1"
-     },
-     {
-      "titolo": "Comparison of Early Postoperative Inflammation, Immune Stress, and Functional Recovery After Robot-Assisted and Conventional Total Knee Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-08-27",
-      "doi": "10.21203/rs.3.rs-10640346/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10640346/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
