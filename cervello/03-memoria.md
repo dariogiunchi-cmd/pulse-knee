@@ -7,11 +7,17 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 5 settembre 2026.*
+*Ultimo aggiornamento: 6 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-06 | Journal of Robotic Surgery | Revisione narrativa su sei piattaforme robotiche ortopediche commerciali (MAKO, ROSA, CORI/NAVIO, VELYS, ExcelsiusGPS, TSolution One) rispetto ai criteri tecnici dell'intelligenza artificiale «incarnata» | 10.1007/s11701-026-03913-5 | velys, intelligenza artificiale, protesi robotica | aperto — 🟠 PICK del giorno; nessuna delle sei piattaforme, VELYS compreso, soddisfa i criteri tecnici di un'IA autonoma; tutte restano assistenza di precisione, non sistemi che percepiscono/ragionano/si adattano da soli; revisione narrativa, nessun dato clinico originale
+2026-09-06 | Knee Surgery & Related Research | Coorte retrospettiva su 132 lesioni del LCA in 115 calciatori professionisti spagnoli (Transfermarkt/BeSoccer, verificati su referti medici), rientro in campo e carriera fino a 5 anni | 10.1186/s43019-026-00346-0 | lca, rientro allo sport, calciatori | aperto — 🟢 rientro in campo 97,7%, ma il 35,2% scende di categoria al primo anno (61,3% al quinto), minuti giocati -46% nella prima stagione (p<0,001), valore di mercato fino a -47,7% a 5 anni; nessun gruppo di controllo, nessun dato su innesto o tecnica
+2026-09-06 | Knee Surgery & Related Research | Coorte retrospettiva monocentrica (Pechino, 85 pazienti con instabilità rotulea ricorrente), segno del jumping patella e fattori di rischio ossei predittori di esito dopo ricostruzione dell'MPFL | 10.1186/s43019-026-00347-z | mpfl, instabilità rotulea, imaging | aperto — 🟢 torsione tibiale (OR 7,16) e sperone sovratrocleare (OR 30,5) predicono il jumping; gruppo jumping con Lysholm/Kujala più bassi e più malracking/lassità/ri-lussazione dopo MPFL isolata (tutti p≤0,01); fissazione e innesto non specificati, tecnica diversa dalla tua (FiberTak onlay)
+2026-09-06 | The Knee | Revisione sistematica e meta-analisi di 8 studi comparativi sul templating preoperatorio assistito da intelligenza artificiale vs convenzionale per la taglia di componente in protesi totale di ginocchio | 10.1016/j.knee.2026.104618 | protesi totale, intelligenza artificiale, planning | aperto — 🟢 nessun beneficio significativo sulla previsione esatta della componente femorale (RR 1,38; IC 95% 0,92-2,08; p=0,09), segnale al limite sulla tibiale (p=0,05); il planning 3D su TC fa meglio del 2D, il contributo della sola IA non è isolabile
+2026-09-06 | American Journal of Sports Medicine | Coorte retrospettiva monocentrica (Pittsburgh, gruppo Musahl/Freddie Fu, 160 pazienti), sopravvivenza del trapianto di menisco da allograft fino a 25 anni | 10.1177/03635465261470172 | menisco, allograft, sopravvivenza | aperto — ⚪ tecnica che Dario non esegue (ripara/rifissa, non trapianta); sopravvivenza 84% a 10 anni, 76% a 15, 52% a 25; sesso femminile predittore di fallimento solo dopo aggiustamento statistico (p=0,04), non all'univariata — segnale fragile
 
 2026-09-05 | Orthopaedics & Traumatology: Surgery & Research | Studio prospettico comparativo (140 calciatori agonisti, 70+70, follow-up minimo 5 anni), tendine rotuleo isolato vs tendine hamstring + tenodesi extra-articolare laterale (LET) nella ricostruzione primaria del LCA | 10.1016/j.otsr.2026.104819 | lca, let, tenodesi, calciatori | aperto — 🟠 PICK del giorno; nessuna differenza significativa su IKDC/Lysholm/Tegner, fallimento dell'innesto (RR 1,50; IC 95% 0,45-5,01), reintervento, rientro allo sport o artrosi radiografica (RR 0,71; IC 95% 0,36-1,37 con potenza.py); il disegno confonde innesto e LET insieme, non isola l'effetto della tenodesi — gli stessi autori lo dichiarano; alimenta T1a
 2026-09-05 | Knee Surgery & Related Research | Studio biomeccanico cadaverico (9 innesti di tendine quadricipite a tutto tessuto molle rinforzati con nastro di sutura vs 11 di semitendinoso quadruplicato) | 10.1186/s43019-026-00337-1 | lca, innesto quadricipitale, biomeccanica | aperto — 🟠 il costrutto di quadricipite cede a un carico inferiore (577,9 N contro 806,1 N; p<0,001), sempre per taglio del nastro nell'interfaccia di fissazione, mai per rottura del tendine; gli autori escludono un'inferiorità intrinseca del tendine quadricipite, limitano il risultato al rinforzo con nastro; alimenta T1a
@@ -362,6 +368,24 @@ nell'interfaccia di fissazione, mai per rottura del tendine stesso — gli autor
 il limite è del rinforzo con nastro su tessuto degenerato, non un'inferiorità intrinseca del tendine
 quadricipite, e che il costrutto testato (tutto tessuto molle, nastro, cappio regolabile) potrebbe non
 corrispondere alla tua tecnica di prelievo e fissazione.
+
+**Trovato il 6 settembre 2026 durante la ricerca di sfondo su quadricipite/LET nella finestra dei 90
+giorni, il primo dato retrospettivo diretto sulla tua esatta combinazione — sfuggito alle ricerche di
+luglio perché fuori dalla finestra dei 30 giorni quando è uscito.** Una coorte retrospettiva monocentrica
+della Mayo Clinic Arizona (Renfree, Brinkman, Tummala, Hoffer, Economopoulos, *Arthroscopy*, 1 luglio
+2026) confronta per la prima volta tendine quadricipitale con e senza LET Lemaire modificato: 122
+pazienti con QA+LET contro 152 con QA isolato, follow-up minimo 2 anni. Il fallimento dell'innesto è
+significativamente più basso con l'aggiunta del LET (14,8% contro 29,6%; p=0,02), così come il pivot
+shift residuo di grado ≥2 (11,3% contro 26,3%; p=0,01); nessuna differenza sul tasso di ri-rottura isolata
+(p=0,37); rientro allo sport più rapido con LET (8,8 contro 9,7 mesi; p=0,038). È il primo studio —
+comparativo, retrospettivo, livello III, singolo centro — costruito esattamente sulla combinazione
+innesto+LET che usi, e va nella tua direzione. L'editoriale di accompagnamento (Murray, Super, C.
+LaPrade, Tollefson, **R. LaPrade**) pone però la domanda giusta: se l'aggiunta del LET riduce il
+fallimento anche abbassando la soglia di ciò che si definisce «fallimento» (includendo il pivot shift
+residuo, non solo la rottura vera e propria), parte del guadagno numerico — 14,8% contro 29,6% — potrebbe
+riflettere una definizione più sensibile, non solo un effetto reale. Non cambia la pratica — la conferma
+già — ma è il primo tassello davvero costruito sul tuo innesto e sul tuo costrutto insieme, non su
+hamstring o BPTB.
 
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
