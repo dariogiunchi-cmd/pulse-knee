@@ -7,11 +7,20 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 6 settembre 2026.*
+*Ultimo aggiornamento: 7 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-07 | Arthroscopy | Coorte retrospettiva comparativa (Sapporo Medical University, 55 ginocchia/44 pazienti), estrusione meniscale mediale preoperatoria e perdita di correzione in varo a 5 anni dopo osteotomia tibiale alta ad apertura mediale | 10.1002/arj.70505 | osteotomia, menisco, estrusione | aperto — 🟠 PICK del giorno; estrusione ≥3mm predice indipendentemente la perdita di correzione (WBL finale <50%; p=0,004) nonostante allineamento osseo stabile; editoriale di accompagnamento: senza estrusione patologica probabilità di miglioramento ICRS più che tripla; MCID non raggiunte non calcolabili con potenza.py (frequenze assolute non riportate); alimenta T2b
+2026-09-07 | Archives of Orthopaedic and Trauma Surgery | Revisione sistematica e meta-analisi di 25 studi osservazionali sui fattori di rischio per infezione periprotesica dopo protesi totale di ginocchio | 10.1007/s00402-026-06492-0 | protesi totale, infezione, meta-analisi | aperto — 🟢 patologia polmonare (OR 5,54), obesità BMI≥30 (OR 5,72), terapia ormonale pregressa (OR 4,88) i fattori più forti fra 13 quantificati; studi osservazionali eterogenei, associazione non causalità
+2026-09-07 | Arthroscopy | Consensus Delphi internazionale modificato (45 chirurghi sportivi, 3 turni), gestione delle lesioni radiali del menisco | 10.1002/arj.70456 | menisco, consensus, riparazione | aperto — 🟢 riparazione indicata per lesioni acute e associate a lesione dei crociati; croniche degenerative caso per caso; età da sola non controindica la riparazione; livello V, con Robert LaPrade fra gli estensori
+2026-09-07 | Arthroscopy | Studio biomeccanico cadaverico (10 ginocchia), ramp lesion combinata a lesione della radice del menisco laterale in ginocchio LCA-carente | 10.1002/arj.70536 | menisco, lca, biomeccanica | aperto — 🟢 la combinazione delle due lesioni aumenta rotazione interna/esterna e traslazione anteriore molto più di ciascuna isolata, anche al pivot-shift simulato; «nuova triade terribile»; tempo zero, valori esatti non riportati nell'abstract
+2026-09-07 | Arthroscopy | Coorte retrospettiva (Rush University, 153 pz), confronto TT-PCL vs TT-TG nella displasia trocleare e instabilità femoro-rotulea | 10.1002/arj.70544 | mpfl, instabilità rotulea, imaging | aperto — 🟢 con Adam Yanke; TT-PCL non differisce fra gradi di displasia (p=0,387), TT-TG sì (p=0,002); 44,6% dei casi ad alto grado patologici per TT-TG con TT-PCL normale; il TT-PCL sottostima la candidabilità al riallineamento nella displasia severa
+2026-09-07 | Journal of Orthopaedic Surgery (Hong Kong) | Coorte retrospettiva su database TriNetX, abbinamento per propensione verificato per lateralità, uso di agonisti del GLP-1 e infezione periprotesica dopo protesi totale di ginocchio | 10.1177/10225536261488188 | protesi totale, infezione, farmacologia | aperto — 🟢 PJI più bassa negli utilizzatori di GLP-1 RA (1,5% vs 2,0%; RR 0,74; p=0,02), ancora più nei diabetici (RR 0,68); nessuna differenza su complicanze meccaniche; associazione, non causalità
+2026-09-07 | Osteoarthritis and Cartilage Open | Revisione sistematica e metanalisi in rete di 20 RCT (1.095 pz), otto modalità di prehabilitazione preoperatoria prima di protesi totale di ginocchio | 10.1016/j.ocarto.2026.100863 | protesi totale, prehabilitazione, meta-analisi | aperto — 🟢 nessuna modalità supera la cura standard a 3 mesi su funzione/dolore/QoL; solo il rinforzo migliora la forza del quadricipite a breve termine; confidenza CINeMA per lo più bassa/molto bassa
+2026-09-07 | Cureus | Revisione sistematica e metanalisi esplorativa (10 studi, 4 in pooling), superficie di gioco ed infortunio del LCA nell'NFL | 10.7759/cureus.113994 | lca, atleti, epidemiologia | aperto — ⚪ stima aggregata modestamente sopra il nullo per rischio su erba sintetica, nessun confronto individuale né la stima aggregata statisticamente significativi; segnale precoce dichiarato non definitivo dagli autori
 
 2026-09-06 | Journal of Robotic Surgery | Revisione narrativa su sei piattaforme robotiche ortopediche commerciali (MAKO, ROSA, CORI/NAVIO, VELYS, ExcelsiusGPS, TSolution One) rispetto ai criteri tecnici dell'intelligenza artificiale «incarnata» | 10.1007/s11701-026-03913-5 | velys, intelligenza artificiale, protesi robotica | aperto — 🟠 PICK del giorno; nessuna delle sei piattaforme, VELYS compreso, soddisfa i criteri tecnici di un'IA autonoma; tutte restano assistenza di precisione, non sistemi che percepiscono/ragionano/si adattano da soli; revisione narrativa, nessun dato clinico originale
 2026-09-06 | Knee Surgery & Related Research | Coorte retrospettiva su 132 lesioni del LCA in 115 calciatori professionisti spagnoli (Transfermarkt/BeSoccer, verificati su referti medici), rientro in campo e carriera fino a 5 anni | 10.1186/s43019-026-00346-0 | lca, rientro allo sport, calciatori | aperto — 🟢 rientro in campo 97,7%, ma il 35,2% scende di categoria al primo anno (61,3% al quinto), minuti giocati -46% nella prima stagione (p<0,001), valore di mercato fino a -47,7% a 5 anni; nessun gruppo di controllo, nessun dato su innesto o tecnica
@@ -450,6 +459,22 @@ lassità o funzione — rafforza lo sfondo anatomico, non distingue il costrutto
 onlay dal profondo con graffa.
 
 ### T2b — L'estrusione, non il timing né il grado condrale *(riformulata 2026-08-01, sostituisce T2)*
+
+**Nuovo il 7 settembre 2026, per la prima volta il legame è con un'osteotomia, non con la
+radice meniscale.** Una coorte retrospettiva giapponese di 55 ginocchia/44 pazienti operati
+di osteotomia tibiale alta ad apertura mediale (Horita, Okimura et al., *Arthroscopy*,
+follow-up medio 6,9 anni) mostra che un'estrusione meniscale mediale preoperatoria ≥3 mm
+predice in modo indipendente la perdita di correzione in varo a 5 anni (WBL finale <50%;
+p=0,004), nonostante un allineamento osseo stabile e confermato radiograficamente. Un
+editoriale di accompagnamento (Keuneke, Solomon) rilancia la lettura: i pazienti senza
+estrusione patologica hanno più di tre volte la probabilità di un miglioramento cartilagineo
+ICRS nel comparto mediale — a sostegno dell'idea che sia la funzione meniscale preservata,
+non l'osteotomia da sola, a mantenere la correzione nel tempo. Studio retrospettivo di
+livello III, 55 ginocchia: le frequenze assolute del raggiungimento della MCID non sono
+riportate, solo un intervallo percentuale (57,5%-65,0% contro 80,0%-86,7%), non calcolabile
+con `test/potenza.py`. **Ricaduta operativa aggiuntiva:** prima di un'osteotomia valgizzante,
+misura anche tu l'estrusione meniscale mediale sulla RM preoperatoria — non solo prima di
+una riparazione della radice.
 
 T2 ipotizzava che l'equivalenza di AJSM sui gradi Outerbridge alti fosse un effetto
 di selezione mediato dal ritardo. **L'ipotesi non regge:** all'analisi multivariata
