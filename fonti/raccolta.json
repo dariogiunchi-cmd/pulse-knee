@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-06T08:40:28Z",
+ "generato": "2026-09-07T08:37:25Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -305,8 +305,32 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog Blutspende Zürich, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-blutspende-zh.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog KSGR, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-ksgr.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog LUKS, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-luks.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Rapporto sintetico di omologazione – Serum autolog Insel, collirio®",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-insel.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog Universitätsspital Basel, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-usb.html",
       "data": "Wed, 02 Sep 2026 00:00:00 +0000"
      },
      {
@@ -325,30 +349,6 @@
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Rapporto sintetico di omologazione – Sérum autologue ICH, collirio®",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-ich.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog Blutspende Zürich, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-blutspende-zh.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog LUKS, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-luks.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog KSGR, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-ksgr.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog Universitätsspital Basel, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-usb.html",
       "data": "Wed, 02 Sep 2026 00:00:00 +0000"
      },
      {
@@ -377,9 +377,9 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
-      "titolo": "Ritiro di lotti – Diamox 250mg, comprimésésOut-of-Stock – Natulan 50 mg, capsule rigideDHPC – Gabapentin Viatris (gabapentinum)D...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-diamox-250-mg-tabletten.html",
-      "data": "Wed, 02 Sep 2026 08:07:42 +0000"
+      "titolo": "Out-of-Stock – Nordimet 7.5 mg/0.3 ml, solution pour injection dans un stylo prérempliRitiro di lotti – Diamox 250mg, comprimésé...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-nordimet-7-5-mg-0-3-ml-injektionsloesung-im-fertigpen.html",
+      "data": "Mon, 07 Sep 2026 08:37:29 +0000"
      }
     ]
    }
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 184,
+    "doi_citati_controllati": 192,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -801,12 +801,6 @@
       "titolo": "Arthroscopic Bankart Repair Using the Knotless 1.8 FiberTak® System With Pivot Guide",
       "link": "https://www.youtube.com/watch?v=X35vd2_PFOg",
       "data": "2026-08-27"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Segmental Meniscal Allograft Transplantation Using the Segmental Meniscus Procedure Pack",
-      "link": "https://www.youtube.com/watch?v=0XmDt8f-4Ps",
-      "data": "2026-08-24"
      }
     ]
    }
@@ -814,6 +808,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42701875",
+     "titolo": "Arthroscopy — Coorte retrospettiva giapponese (55 ginocchia/44 pazienti, follow-up medio 6,9 anni), estrusione",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42678638",
      "titolo": "Journal of Robotic Surgery — Revisione narrativa su sei piattaforme robotiche ortopediche commerciali (MAKO, R",
@@ -959,6 +959,15 @@
    "dati": {
     "finestra_giorni": 60,
     "voci": [
+     {
+      "pmid": "42701879",
+      "titolo": "An International Delphi Consensus on Meniscus Radial Tears: From Diagnosis to Management and Rehabilitation.",
+      "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
+      "data": "2026 Sep 6",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
      {
       "pmid": "42668741",
       "titolo": "Arthrofibrosis After Total Knee Arthroplasty: Biological Mechanisms, Diagnosis, and Treatment: An International Consensus Symposium.",
