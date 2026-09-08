@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-07T09:21:44Z",
+ "generato": "2026-09-08T08:19:45Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -116,7 +116,7 @@
      },
      {
       "recalling_firm": "Medline Industries, LP",
-      "product_description": "MEDLINE Medical Procedure Kits labeled as:  \r\n1) CRANI, Medline Kit Number/SKU DYNJ908097; \r\n2) CRANI, Medline Kit Number/SKU DYNJ908097A; \r\n3) CRANI, Medline Kit Number/SKU DYNJ908097B; \r\n4) CRANI, Medline Kit Number/SKU DYNJ908097C; \r\n5) CRANI, Medline Kit Number/SKU DYNJ908097D; \r\n6) DR TUCKER ANT TOTAL HIP, Medline Kit Number/SKU DYNJ912029; \r\n7) JEWISH CRANI PACK, Medline Kit Number/SKU DYNJ55637B; \r\n8) L SCOPE PACK, Medline Kit Number/SKU DYNJ43930A; \r\n9) LAMI PACK, Medline Kit Number/SKU DYNJ67767; \r\n10) LAVH NEW BRAUNFELS, Medline Kit Number/SKU DYNJ61136F; \r\n11) SOI KNEE ARTHROSCOPY, Medline Kit Number/SKU DYNJV0172Q; \r\n12) T AND A PACK, Medline Kit Number/SKU DYNJ86229.",
+      "product_description": "MEDLINE Medical Procedure Kits labeled as:  \n1) CRANI, Medline Kit Number/SKU DYNJ908097; \n2) CRANI, Medline Kit Number/SKU DYNJ908097A; \n3) CRANI, Medline Kit Number/SKU DYNJ908097B; \n4) CRANI, Medline Kit Number/SKU DYNJ908097C; \n5) CRANI, Medline Kit Number/SKU DYNJ908097D; \n6) DR TUCKER ANT TOTAL HIP, Medline Kit Number/SKU DYNJ912029; \n7) JEWISH CRANI PACK, Medline Kit Number/SKU DYNJ55637B; \n8) L SCOPE PACK, Medline Kit Number/SKU DYNJ43930A; \n9) LAMI PACK, Medline Kit Number/SKU DYNJ67767; \n10) LAVH NEW BRAUNFELS, Medline Kit Number/SKU DYNJ61136F; \n11) SOI KNEE ARTHROSCOPY, Medline Kit Number/SKU DYNJV0172Q; \n12) T AND A PACK, Medline Kit Number/SKU DYNJ86229.",
       "reason_for_recall": "During an internal review, Medline identified representative samples did not meet applicable performance specifications. Identified issues include irregularities in catheter surface finish, instances where the catheter connector detached prematurely from the catheter funnel, and limited cases where the catheter outer diameter did not meet specification.",
       "root_cause_description": "Nonconforming Material/Component",
       "event_date_initiated": "2026-05-04",
@@ -143,6 +143,15 @@
      }
     ],
     "enforcement": [
+     {
+      "recall_number": "Z-2957-2026",
+      "recalling_firm": "Kico Knee Innovation Company",
+      "product_description": "Brand Name: Kico Knee Innovation  Product Name: ARVIS SURGICAL NAVIGATION SYSTEM GEN 2  Model/Catalog Number: IN-29200  Software Version: ARVIS Hip and Knee Gap Balance Software v3.3.2 (IN-28200)  ARVIS Shoulder Software v2.0.3 (IN-23630)  Product Description: The ARVIS system is a computer-controlled navigation system intended to provide intra-operative measurements to the surgeon to aid in selection and positioning of orthopedic implant components.          The ARVIS Surgical Navigation System is indicated for assisting the surgeon in the positioning and alignment of implants relative to reference alignment axes and landmarks in stereotactic orthopedic surgery. The system aids the surgeon in making intraoperative measurements such as changes in leg length in Hip Arthroplasty. The system is compatible with straight acetabular impactors and with specific offset impactors, identified in the instructions for use, for which an adapter has been validated. Example orthopedic surgical procedures include but are not limited to:      \" Total Knee Arthroplasty      \" Unicompartmental Knee Arthroplasty: Tibial Transverse Resection      \" Hip Arthroplasty          The ARVIS\" head mounted display is for displaying augmented reality visualization and information to the user intraoperatively. The augmented/virtual displayed information should not be relied upon solely for absolute positional/alignment information and should always be used in conjunction with the displayed stereotaxic information.  Component: NA",
+      "reason_for_recall": "Due to an internal sensor issue, image displayed with eyepiece may appear tilted relative to the eyepiece housing",
+      "report_date": "20260826",
+      "classification": "Class II",
+      "sorvegliata": false
+     },
      {
       "recall_number": "Z-2885-2026",
       "recalling_firm": "United Orthopedic Corp.",
@@ -268,15 +277,6 @@
       "report_date": "20260708",
       "classification": "Class II",
       "sorvegliata": true
-     },
-     {
-      "recall_number": "Z-2616-2026",
-      "recalling_firm": "DEPUY (IRELAND)",
-      "product_description": "Depuy Synthes, ATTUNE Revision Hinge Knee Hinge Housing Components with the below product descriptions and Part Codes.    1. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN B; Part Number: 151730010.     2. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN C; Part Number: 151730012.     3. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN D; Part Number: 151730014.     4. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN E; Part Number: 151730016.     5. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN F; Part Number: 151730018.     6. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN G; Part Number: 151730020.     7. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN H; Part Number: 151730022.     8. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN I; Part Number: 151730024.     9. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN J; Part Number: 151730026.     10. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN K; Part Number: 151730028.     11. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN L; Part Number: 151730030.     12. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN M; Part Number: 151730032.     13. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN N; Part Number: 151730034.     14. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN P; Part Number: 151730038.     15. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN Q; Part Number: 151730040.     16. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN R; Part Number: 151730042.     17. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN S; Part Number: 151730044.     18. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN T; Part Number: 151730046.     19. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN U; Part Number: 151730048.     20. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN V; Part Number: 151730050.     21. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN W; Part Number: 151730052.     22. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN X; Part Number: 151730036.",
-      "reason_for_recall": "The external sterile packaging was found adhered to the internal sterile packaging, potentially compromising sterility.",
-      "report_date": "20260708",
-      "classification": "Class II",
-      "sorvegliata": true
      }
     ]
    }
@@ -285,6 +285,18 @@
    "esito": "ok",
    "dati": {
     "voci": [
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Out-of-Stock – Nordimet 7.5 mg/0.3 ml, solution pour injection dans un stylo prérempli",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-nordimet-7-5-mg-0-3-ml-injektionsloesung-im-fertigpen.html",
+      "data": "Mon, 07 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "I-SMI.TI.06e Market release and distribution in cooperation with a pre-wholesaler",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/bewilligungen_zertifikate/autorizzazioni-d-esercizio0/ispettorati.html",
+      "data": "Mon, 07 Sep 2026 00:00:00 +0000"
+     },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Rapporto sintetico di omologazione – Opdualag®",
@@ -364,22 +376,10 @@
       "data": "Tue, 01 Sep 2026 00:00:00 +0000"
      },
      {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "MU100_00_001i_WL_Requisiti per la persona responsabile della farmacovigilanza",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/farmacovigilanza/gateway.html",
-      "data": "Tue, 01 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "01.09.2026 – Novità: FAQ relativa all’ordinanza di Swissmedic sui suoi emolumenti",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/fragen-und-antworten-zur-gebuehrenverordnung-swissmedic.html",
-      "data": "Tue, 01 Sep 2026 00:00:00 +0000"
-     },
-     {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
-      "titolo": "Out-of-Stock – Nordimet 7.5 mg/0.3 ml, solution pour injection dans un stylo prérempliRitiro di lotti – Diamox 250mg, comprimésé...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-nordimet-7-5-mg-0-3-ml-injektionsloesung-im-fertigpen.html",
-      "data": "Mon, 07 Sep 2026 08:37:29 +0000"
+      "titolo": "Ritiro di lotti – Cosyrel, comprimés pelliculés / Coversum N 10 mg, comprimés pelliculésOut-of-Stock – Nordimet 7.5 mg/0.3 ml, s...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-cosyrel-filmtabletten-coversum-n-10-mg-filmtabletten.html",
+      "data": "Tue, 08 Sep 2026 08:19:49 +0000"
      }
     ]
    }
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 192,
+    "doi_citati_controllati": 201,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -772,6 +772,12 @@
    "esito": "ok",
    "dati": {
     "video": [
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "Intertrochanteric Hip Fracture Fixation with INTERTAN◊  Nail: Tips and Tricks",
+      "link": "https://www.youtube.com/watch?v=gH6pupTQ0l8",
+      "data": "2026-09-07"
+     },
      {
       "canale": "Arthrex",
       "titolo": "Arthrex Tibial Nail System: Features and Benefits",
@@ -808,6 +814,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42690546",
+     "titolo": "Journal of Robotic Surgery — Analisi descrittiva delle segnalazioni di sicurezza australiane (TGA), 140 segnal",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42701875",
      "titolo": "Arthroscopy — Coorte retrospettiva giapponese (55 ginocchia/44 pazienti, follow-up medio 6,9 anni), estrusione",
@@ -1109,6 +1121,27 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Autograft Selection in Anterior Cruciate Ligament Reconstruction: A Meta-Analysis of Patellar Tendon versus Hamstring Tendon Outcomes in Randomized Controlled T",
+      "dove": "archivio preprint",
+      "data": "2026-09-06",
+      "doi": "10.64898/2026.09.02.26361916",
+      "url": "https://doi.org/10.64898/2026.09.02.26361916"
+     },
+     {
+      "titolo": "Human knee osteoarthritis patient-specific cartilage-on-a-chip model captures donor differences to stressors and treatments",
+      "dove": "archivio preprint",
+      "data": "2026-09-07",
+      "doi": "10.64898/2026.09.03.748852",
+      "url": "https://doi.org/10.64898/2026.09.03.748852"
+     },
+     {
+      "titolo": "Effect of Cervical Forward Flexion Compensation on Isokinetic Knee Strength Test Outcomes in University Soccer Players via Wearable Flexible Strain Sensor: A Se",
+      "dove": "archivio preprint",
+      "data": "2026-09-07",
+      "doi": "10.21203/rs.3.rs-10804337/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10804337/v1"
+     },
+     {
       "titolo": "Large Language Model Responses to Patient Questions About Return to Activities of Daily Living After Knee Arthroplasty: A Multidimensional Evaluation Before and",
       "dove": "archivio preprint",
       "data": "2026-09-05",
@@ -1261,27 +1294,6 @@
       "data": "2026-08-31",
       "doi": "10.21203/rs.3.rs-10633502/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10633502/v1"
-     },
-     {
-      "titolo": "Outcomes of Ipsilateral Versus Contralateral Bone–Patellar Tendon–Bone (BPTB) Autografts in Anterior Cruciate Ligament Reconstruction: A Systematic Review and M",
-      "dove": "archivio preprint",
-      "data": "2026-08-28",
-      "doi": "10.21203/rs.3.rs-10440567/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10440567/v1"
-     },
-     {
-      "titolo": "Revisional augmentation of residual neuromusculature and training facilitate embodiment and control of a bionic knee prosthesis",
-      "dove": "archivio preprint",
-      "data": "2026-08-27",
-      "doi": "10.64898/2026.08.24.26343866",
-      "url": "https://doi.org/10.64898/2026.08.24.26343866"
-     },
-     {
-      "titolo": "Predictive value of bone mineral density assessment methods for postoperative complications after unicompartmental knee arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-08-27",
-      "doi": "10.21203/rs.3.rs-10443989/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10443989/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
