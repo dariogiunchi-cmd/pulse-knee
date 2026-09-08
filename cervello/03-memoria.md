@@ -7,11 +7,21 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 7 settembre 2026.*
+*Ultimo aggiornamento: 8 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-08 | Journal of Robotic Surgery | Analisi descrittiva delle segnalazioni di sicurezza australiane (TGA), 140 segnalazioni in 13 anni su cinque piattaforme di protesi robot-assistita | 10.1007/s11701-026-03890-9 | protesi robotica, VELYS, sicurezza | aperto — 🟢 PICK del giorno; ROSA Recon 46, MAKO 45, NAVIO/Cori 33, Zimmer CAS 15, VELYS 1 segnalazione; pattern di guasto specifico per piattaforma (registrazione/resezione per MAKO, software per NAVIO/Cori); nessun denominatore sul volume di interventi per piattaforma, non è un tasso di incidenza comparato
+2026-09-08 | Knee Surgery, Sports Traumatology, Arthroscopy | Scoping review PRISMA-ScR, 9 studi, sulla revisione di ricostruzioni del LCA fallite dopo combinazione con procedure extra-articolari laterali (LET/ricostruzione ALL) | 10.1002/ksa.70593 | let, revisione lca, lacuna di evidenza | aperto — 🟢 solo 23 pazienti su 594 identificati esplicitamente come revisione di un fallimento combinato; 3 strategie descritte (conservare/revisare il LET, convertire in ALLR), esiti quantificati solo in 2 case report; alimenta T1a da un angolo mai toccato — il vuoto di evidenza sulla revisione, non il beneficio del gesto primario
+2026-09-08 | Osteoarthritis and Cartilage | Studio metodologico (ROBIS + RoB NMA tool) su 21 metanalisi in rete su interventi per artrosi di ginocchio/anca, pubblicate in 22 riviste di primo piano | 10.1016/j.joca.2026.09.002 | metanalisi in rete, metodologia, artrosi | aperto — ⚪ 13/21 (62%) ad alto rischio di bias, soprattutto su raggruppamento degli interventi e transitività; accordo fra revisori 67-71%; promemoria di lettura critica per le NMA su artrosi/protesi robotica che compaiono con regolarità
+2026-09-08 | The Journal of Arthroplasty | Metanalisi di rete bayesiana, 54 studi/10.055 pazienti, revisione in uno, uno e mezzo o due tempi per l'infezione periprotesica cronica di anca/ginocchio | 10.1016/j.arth.2026.08.069 | protesi totale, infezione, revisione | aperto — 🟢 uno e mezzo tempo: miglior controllo dell'infezione (OR 1,64) ma mobilizzazione asettica più alta (OR 4,80); due tempi più sicuri su questo fronte; evidenza in gran parte osservazionale, confondimento per indicazione dichiarato dagli autori
+2026-09-08 | The American Journal of Sports Medicine | Coorte retrospettiva, 581 pazienti/follow-up minimo 6 anni, slope tibiale posteriore ed età nella rirottura del LCA dopo ricostruzione con hamstring | 10.1177/03635465261479079 | lca, slope, rischio rirottura | aperto — 🟢 nessuna interazione slope×età (p=0,685): effetto relativo costante, ma rischio assoluto crolla con l'età (slope 15°: 36,6% a 18 anni contro 3,9% a 45); solo hamstring, 38 eventi totali, non verificato sul tendine quadricipitale
+2026-09-08 | Orthopaedic Journal of Sports Medicine | Studio retrospettivo monocentrico, 130 pazienti, formula continua basata sulla RM preoperatoria per predire il diametro dell'innesto di tendine quadricipitale nel LCA | 10.1177/23259671261477950 | lca, innesto quadricipitale, imaging | aperto — 🟢 soglia <8,3mm predice diametro finale <10mm (AUC 0,818, sensibilità 98,2%, specificità 39,1%); formula continua entro ±1mm nel 90,0% dei casi; popolazione giovane e sportiva (età media 16,4 anni), non verificata sugli adulti
+2026-09-08 | Arthroscopy | Studio caso-controllo retrospettivo multicentrico, 919 pazienti, KneeFusionNet — modello di IA multimodale per la diagnosi di lesioni di LCA/LCP/MCL/LCL alla RM | 10.1002/arj.70510 | intelligenza artificiale, imaging, diagnostica | aperto — 🟢 AUC esterna 0,862-0,888, supera 3 modelli di confronto; con assistenza IA l'accuratezza dei chirurghi meno esperti sale dall'81,8% al 90,0% (tutti p<0,05); livello III, validazione prospettica reale da verificare
+2026-09-08 | The Archives of Bone and Joint Surgery | Rassegna narrativa, con Robert F. LaPrade, su prevenzione e trattamento dell'infezione dopo ricostruzione del LCA | 10.22038/abjs.2026.96314.4319 | lca, infezione, revisione | aperto — 🟢 incidenza stimata 0,14%-2,6%; il presoak dell'innesto in vancomicina («vancomycin wrap») ha ridotto i tassi di infezione; debridement artroscopico urgente con antibiotico mirato per salvare l'innesto; rassegna narrativa, non sistematica — promosso da EXTRA del 7 settembre
+2026-09-08 | Journal of Clinical Orthopaedics and Trauma | Serie di casi retrospettiva, 10 pazienti, malunione tibiale prossimale mediale trascurata con deformità multiplanare, osteotomia correttiva + ricostruzione legamentosa selettiva | 10.1016/j.jcot.2026.103602 | osteotomia, slope, traumatologia | aperto — 🟢 algoritmo individualizzato per pattern di deformità; 7/10 Lysholm eccellente, 2 buono, 1 discreto; follow-up minimo 18 mesi, senza gruppo di controllo — promosso da EXTRA del 7 settembre
 
 2026-09-07 | Arthroscopy | Coorte retrospettiva comparativa (Sapporo Medical University, 55 ginocchia/44 pazienti), estrusione meniscale mediale preoperatoria e perdita di correzione in varo a 5 anni dopo osteotomia tibiale alta ad apertura mediale | 10.1002/arj.70505 | osteotomia, menisco, estrusione | aperto — 🟠 PICK del giorno; estrusione ≥3mm predice indipendentemente la perdita di correzione (WBL finale <50%; p=0,004) nonostante allineamento osseo stabile; editoriale di accompagnamento: senza estrusione patologica probabilità di miglioramento ICRS più che tripla; MCID non raggiunte non calcolabili con potenza.py (frequenze assolute non riportate); alimenta T2b
 2026-09-07 | Archives of Orthopaedic and Trauma Surgery | Revisione sistematica e meta-analisi di 25 studi osservazionali sui fattori di rischio per infezione periprotesica dopo protesi totale di ginocchio | 10.1007/s00402-026-06492-0 | protesi totale, infezione, meta-analisi | aperto — 🟢 patologia polmonare (OR 5,54), obesità BMI≥30 (OR 5,72), terapia ormonale pregressa (OR 4,88) i fattori più forti fra 13 quantificati; studi osservazionali eterogenei, associazione non causalità
@@ -396,6 +406,22 @@ riflettere una definizione più sensibile, non solo un effetto reale. Non cambia
 già — ma è il primo tassello davvero costruito sul tuo innesto e sul tuo costrutto insieme, non su
 hamstring o BPTB.
 
+**Nuovo l'8 settembre 2026, per la prima volta il tema non è il beneficio del LET, ma che cosa fare
+quando fallisce.** Una scoping review PRISMA-ScR (Duru, O'Brien, Bouchard, Vivekanantha, Hantouly, de Sa,
+Ayeni, Kay, *KSSTA*) sulla revisione di una ricostruzione del LCA fallita dopo un intervento combinato con
+una procedura extra-articolare laterale (LET o ricostruzione del legamento antero-laterale) trova solo 9
+studi pertinenti in tutta la letteratura (Ovid MEDLINE, Embase, PubMed dall'inizio delle banche dati a
+febbraio 2026), di cui appena 3 con una strategia di revisione descritta in dettaglio (revisione in tempo
+unico con ricostruzione del legamento antero-laterale, revisione a doppio fascio con conservazione del LET,
+revisione all-epifisaria dopo fallimento del LET) e solo 23 pazienti, in totale, identificabili
+esplicitamente come revisione di un fallimento combinato — su 594 pazienti complessivi nelle coorti più
+ampie da cui provengono. Le strategie riportate sono eterogenee sia nell'innesto sia nella gestione del
+gesto extra-articolare precedente, ed esiti clinici quantificati mancano quasi ovunque, riportati solo in
+due case report con esito favorevole dopo conservazione del LET. Non tocca il beneficio del gesto primario
+— che resta il tema centrale di questa tensione — ma espone un vuoto di evidenza mai descritto prima con
+questa chiarezza: eseguendo il LET su tutti i pazienti, ogni fallimento combinato che incontri è, per la
+letteratura mondiale, un caso fra ventitré.
+
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
 **Verificata sul full text di STABILITY 2.** Il protocollo prescrive: banderella di
@@ -735,6 +761,17 @@ flessione del ginocchio restano diversi durante il salto — la simmetria dell'a
 un'asimmetria biomeccanica ancora presente. Certezza dell'evidenza bassa in entrambi i casi (piccoli
 campioni, disegni osservazionali); non chiudono la tensione, la rafforzano su un fronte diverso dalla sola
 forza: la qualità del movimento, non solo la sua simmetria in altezza o in newton.
+
+**Nuovo l'8 settembre 2026, un inquadramento concettuale più che un dato.** Un Masterclass a firma singola
+(Forelli, *Physical Therapy in Sport*) propone un framework di «allineamento dei determinanti» per la
+riabilitazione tardiva e il rientro allo sport dopo LCA: la forza, il salto e i questionari restano
+necessari ma coprono solo una parte del sistema — percezione, cognizione, contesto e domanda specifica
+dello sport pesano quanto la capacità fisica. Gli stessi autori lo definiscono un'euristica clinica
+generatrice di ipotesi, non una tassonomia validata né un algoritmo predittivo, e non porta alcun dato che
+dimostri come un rientro allo sport più ampio riduca davvero il reinfortunio. Non chiude nulla, ma converge
+con i segnali degli ultimi mesi (carico cognitivo, biomeccanica del salto, asimmetria interarto): la
+direzione del campo è verso un profilo più ampio della sola simmetria di forza, ancora senza uno strumento
+pronto all'uso.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
