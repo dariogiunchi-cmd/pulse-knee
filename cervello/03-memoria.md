@@ -7,11 +7,20 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 8 settembre 2026.*
+*Ultimo aggiornamento: 9 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-09 | The Journal of Knee Surgery | Studio retrospettivo con abbinamento per propensione, 294 protesi (181 TC-based/113 CT-free), confronto fra un sistema robotico basato su TC e uno senza immagini nella protesi totale di ginocchio | 10.1055/a-2939-2755 | protesi robotica, VELYS, allineamento | aperto — 🟠 PICK del giorno per l'ordine di apertura; TC-based ottiene KSS-F migliore (oltre MCID) e allineamento più preciso (MPTA 90,0° vs 87,8°, HKA -0,22° vs -2,52°); OKS significativo ma sotto MCID (MUTE); piattaforme non nominate, VELYS è image-free ma non incluso nello studio
+2026-09-09 | Journal of ISAKOS | Coorte retrospettiva monocentrica, 7657 ricostruzioni del LCA in 26 anni (2000-2025), UPMC/Pittsburgh, con Volker Musahl | 10.1016/j.jisako.2026.101214 | innesto quadricipitale, tendenze, pittsburgh | aperto — 🟢 scelto come lavoro del giorno; QT primario in aumento significativo dal 2016 (OR 1,19, p<0,01), hamstring in calo -8,3%/anno per tutto il periodo; dati di un solo centro, non tocca l'uso del LET
+2026-09-09 | Journal of Experimental Orthopaedics | Guida tecnica di 8 chirurghi europei su errori di landmarking e gap balance nella TKA robot-assistita con sistema VELYS | 10.1002/jeo2.70902 | VELYS, protesi robotica, tecnica chirurgica | aperto — 🟢 livello V, opinione di esperti; nessun dato quantitativo su frequenza degli errori; materiale operativo diretto per la piattaforma di Dario
+2026-09-09 | Journal of Robotic Surgery | Analisi retrospettiva dati robotici (sistema MAKO), 241 TKA con conservazione del crociato, overstuffing del condilo laterale e tracking rotuleo | 10.1007/s11701-026-03915-3 | protesi robotica, rotula, allineamento | aperto — 🟢 overstuffing laterale associato a maggiore release del retinacolo e inclinazione rotulea postoperatoria; effetti e IC non quantificati nell'abstract; dati di un sistema diverso da VELYS
+2026-09-09 | Journal of Experimental Orthopaedics | Coorte retrospettiva monocentrica giapponese, 40 ginocchia, differenza standing-supine in JLCA e predizione dell'esito dell'osteotomia tibiale alta a cuneo di chiusura | 10.1002/jeo2.70904 | osteotomia, pianificazione, JLCA | aperto — 🟢 dJLCA correla con il cambiamento postoperatorio (r fino a 0,52, p=0,001), confermato in multivariabile; livello IV, solo tecnica a cuneo di chiusura
+2026-09-09 | Journal of Experimental Orthopaedics | Revisione sistematica di 17 studi comparativi (1271 ginocchia) su HTO valgizzante con o senza trattamento artroscopico associato di cartilagine/menisco | 10.1002/jeo2.70903 | osteotomia, artroscopia, menisco | aperto — 🟢 nessun gesto associato (microfrattura, meniscectomia, centralizzazione) mostra beneficio clinico costante nonostante miglioramento cartilagineo alla seconda artroscopia; eterogeneità troppo alta per metanalisi (MUTE); alimenta T2b
+2026-09-09 | Arthroscopy, Sports Medicine, and Rehabilitation | Coorte retrospettiva comparativa (Hospital for Special Surgery), 130 pazienti operati di sutura meniscale, confronto <40 vs ≥40 anni | 10.1002/ars2.70071 | menisco, età, sutura meniscale | aperto — 🟢 nessuna differenza significativa a 2 anni fra i gruppi di età su IKDC, RTS o fallimento; sottogruppo ≥40 anni piccolo (39 pz), MUTE
+2026-09-09 | Journal of Investigative Surgery | Metanalisi di 31 studi osservazionali sull'effetto di una pregressa artroscopia sul rischio di infezione dopo protesi di ginocchio, anca e spalla | 10.1080/08941939.2026.2702155 | protesi totale, infezione, artroscopia pregressa | aperto — 🟢 artroscopia pregressa associata a maggiore rischio di infezione dopo protesi di ginocchio (OR 1,33-1,38) e spalla, non per l'anca; studi osservazionali, confondimento per indicazione possibile
 
 2026-09-08 | Journal of Robotic Surgery | Analisi descrittiva delle segnalazioni di sicurezza australiane (TGA), 140 segnalazioni in 13 anni su cinque piattaforme di protesi robot-assistita | 10.1007/s11701-026-03890-9 | protesi robotica, VELYS, sicurezza | aperto — 🟢 PICK del giorno; ROSA Recon 46, MAKO 45, NAVIO/Cori 33, Zimmer CAS 15, VELYS 1 segnalazione; pattern di guasto specifico per piattaforma (registrazione/resezione per MAKO, software per NAVIO/Cori); nessun denominatore sul volume di interventi per piattaforma, non è un tasso di incidenza comparato
 2026-09-08 | Knee Surgery, Sports Traumatology, Arthroscopy | Scoping review PRISMA-ScR, 9 studi, sulla revisione di ricostruzioni del LCA fallite dopo combinazione con procedure extra-articolari laterali (LET/ricostruzione ALL) | 10.1002/ksa.70593 | let, revisione lca, lacuna di evidenza | aperto — 🟢 solo 23 pazienti su 594 identificati esplicitamente come revisione di un fallimento combinato; 3 strategie descritte (conservare/revisare il LET, convertire in ALLR), esiti quantificati solo in 2 case report; alimenta T1a da un angolo mai toccato — il vuoto di evidenza sulla revisione, non il beneficio del gesto primario
@@ -621,6 +630,16 @@ quella all-inside con ancora, non la transtibiale pull-out di Dario: il principi
 biomeccanico — più forza di taglio anteriore con slope aumentato — è verosimilmente
 lo stesso, ma il numero esatto (OR 1,31) non è automaticamente trasferibile al suo
 costrutto.
+
+**Nuovo il 9 settembre 2026, un'ulteriore conferma dallo stesso lato del problema.** Una revisione
+sistematica di 17 studi comparativi (Duru, Mussie et al., *J Exp Orthop*, 1271 ginocchia) sull'aggiunta di
+un trattamento artroscopico all'osteotomia tibiale alta valgizzante mostra che la centralizzazione
+meniscale, quando aggiunta all'HTO, non porta a un beneficio clinico costante rispetto alla sola osteotomia
+— risultati incoerenti su KOOS e allineamento, nonostante un miglioramento dell'aspetto cartilagineo alla
+seconda artroscopia. Eterogeneità troppo alta per una metanalisi: sintesi descrittiva, non un effetto
+quantificato. Non è la stessa procedura della sutura transtibiale della radice discussa sopra, ma è un
+secondo segnale, da un angolo diverso, nella stessa direzione della revisione del 27 agosto: aggiungere la
+centralizzazione meniscale non risolve da solo il problema dell'estrusione residua.
 
 ### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22)*
 
