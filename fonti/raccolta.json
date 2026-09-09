@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-08T08:52:28Z",
+ "generato": "2026-09-09T08:22:19Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Ritiro di lotti – Cosyrel, comprimés pelliculés / Coversum N 10 mg, comprimés pelliculés",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-cosyrel-filmtabletten-coversum-n-10-mg-filmtabletten.html",
+      "data": "Tue, 08 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Out-of-Stock – Nordimet 7.5 mg/0.3 ml, solution pour injection dans un stylo prérempli",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-nordimet-7-5-mg-0-3-ml-injektionsloesung-im-fertigpen.html",
       "data": "Mon, 07 Sep 2026 00:00:00 +0000"
@@ -317,32 +323,8 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog Blutspende Zürich, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-blutspende-zh.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog KSGR, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-ksgr.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog LUKS, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-luks.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Rapporto sintetico di omologazione – Serum autolog Insel, collirio®",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-insel.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog Universitätsspital Basel, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-usb.html",
       "data": "Wed, 02 Sep 2026 00:00:00 +0000"
      },
      {
@@ -365,15 +347,33 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Ritiro di lotti – Diamox 250mg, comprimésés",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-diamox-250-mg-tabletten.html",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog Blutspende Zürich, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-blutspende-zh.html",
       "data": "Wed, 02 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Semplificazione delle domande di cambiamento di stato tra omologazione principale e omologazione all’esportazione per medicament...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/vereinfachung-der-Gesuche-um-satuswechsel-zwischen-haupt-und-exportzulassung-fuer-tierarzneimittel.html",
-      "data": "Tue, 01 Sep 2026 00:00:00 +0000"
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog LUKS, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-luks.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog KSGR, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-ksgr.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog Universitätsspital Basel, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-usb.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Ritiro di lotti – Diamox 250mg, comprimésés",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-diamox-250-mg-tabletten.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
@@ -594,17 +594,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07580157",
-       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
-       "stato": "ENROLLING_BY_INVITATION",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 20,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07753707",
        "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
        "stato": "ACTIVE_NOT_RECRUITING",
@@ -613,6 +602,17 @@
         "NA"
        ],
        "n": 111,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07580157",
+       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 20,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 201,
+    "doi_citati_controllati": 209,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -814,6 +814,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42710782",
+     "titolo": "Journal of ISAKOS — Coorte retrospettiva monocentrica su 7657 ricostruzioni del LCA in 26 anni (2000-2025) al ",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42690546",
      "titolo": "Journal of Robotic Surgery — Analisi descrittiva delle segnalazioni di sicurezza australiane (TGA), 140 segnal",
@@ -1121,6 +1127,20 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "A Comparative Study of Bone Age Assessment of the Knee: MRI Versus Radiography in Living Individuals",
+      "dove": "archivio preprint",
+      "data": "2026-09-08",
+      "doi": "10.21203/rs.3.rs-10815948/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10815948/v1"
+     },
+     {
+      "titolo": "SMOC Approach in Minimally Invasive Total Knee Arthroplasty for Severe Varus Deformity: Technical Innovations and Clinical Outcomes Using Conventional Instrumen",
+      "dove": "archivio preprint",
+      "data": "2026-09-08",
+      "doi": "10.21203/rs.3.rs-10784288/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10784288/v1"
+     },
+     {
       "titolo": "Autograft Selection in Anterior Cruciate Ligament Reconstruction: A Meta-Analysis of Patellar Tendon versus Hamstring Tendon Outcomes in Randomized Controlled T",
       "dove": "archivio preprint",
       "data": "2026-09-06",
@@ -1280,20 +1300,6 @@
       "data": "2026-08-31",
       "doi": "10.64898/2026.08.26.26361453",
       "url": "https://doi.org/10.64898/2026.08.26.26361453"
-     },
-     {
-      "titolo": "The Stanford Knee Osteoarthritis PET/MRI Evaluation (SKOPE) Study Protocol",
-      "dove": "archivio preprint",
-      "data": "2026-08-31",
-      "doi": "10.64898/2026.08.26.26361112",
-      "url": "https://doi.org/10.64898/2026.08.26.26361112"
-     },
-     {
-      "titolo": "Association between pre-operative body mass index and post-operative activities of daily living in patients with total knee arthroplasty.",
-      "dove": "archivio preprint",
-      "data": "2026-08-31",
-      "doi": "10.21203/rs.3.rs-10633502/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10633502/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
