@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-09T08:58:27Z",
+ "generato": "2026-09-10T08:23:22Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,24 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Nuova linea guida «Bonnes pratiques suisses de matériovigilance dans le domaine du diagnostic in vitro» (BPMV-DIV)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/dispositivi-medici/notificare-eventi---fsca/utilizzatori.html",
+      "data": "Thu, 10 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "DHPC – Tavneos® (avacopan)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-tavneos-avacopan-1.html",
+      "data": "Thu, 10 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Swissmedic Journal",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/swissmedic-journal.html",
+      "data": "Wed, 09 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Ritiro di lotti – Cosyrel, comprimés pelliculés / Coversum N 10 mg, comprimés pelliculés",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-cosyrel-filmtabletten-coversum-n-10-mg-filmtabletten.html",
       "data": "Tue, 08 Sep 2026 00:00:00 +0000"
@@ -355,24 +373,6 @@
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Rapporto sintetico di omologazione – Sérum autologue USZ, collirio®",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-usz.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Sérum autologue HOJG, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-hojg.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Sérum autologue ICH, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-ich.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Ritiro di lotti – Diamox 250mg, comprimésés",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-diamox-250-mg-tabletten.html",
       "data": "Wed, 02 Sep 2026 00:00:00 +0000"
      },
      {
@@ -594,17 +594,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07753707",
-       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 111,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07580157",
        "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
        "stato": "ENROLLING_BY_INVITATION",
@@ -613,6 +602,17 @@
         "NA"
        ],
        "n": 20,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07753707",
+       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 111,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 209,
+    "doi_citati_controllati": 217,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -772,6 +772,12 @@
    "esito": "ok",
    "dati": {
     "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Subscapularis Tears Presentation Series (Part 2): Outcomes",
+      "link": "https://www.youtube.com/watch?v=j5ez6qsqEuA",
+      "data": "2026-09-09"
+     },
      {
       "canale": "Smith+Nephew",
       "titolo": "Intertrochanteric Hip Fracture Fixation with INTERTAN◊  Nail: Tips and Tricks",
@@ -801,12 +807,6 @@
       "titolo": "ApolloRF® H50 Probe",
       "link": "https://www.youtube.com/watch?v=-gzhkJw182I",
       "data": "2026-08-31"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthroscopic Bankart Repair Using the Knotless 1.8 FiberTak® System With Pivot Guide",
-      "link": "https://www.youtube.com/watch?v=X35vd2_PFOg",
-      "data": "2026-08-27"
      }
     ]
    }
@@ -814,6 +814,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42713242",
+     "titolo": "Journal of Sports Science & Medicine — Revisione sistematica e meta-analisi di 43 studi (17.350 pazienti) sull",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42710782",
      "titolo": "Journal of ISAKOS — Coorte retrospettiva monocentrica su 7657 ricostruzioni del LCA in 26 anni (2000-2025) al ",
@@ -978,6 +984,15 @@
     "finestra_giorni": 60,
     "voci": [
      {
+      "pmid": "42711866",
+      "titolo": "Clinical Work-up, Diagnostic Imaging, and Radiographic Classification Systems for Osteochondral Lesions of the Talus: Proceedings of the International Consensus Meetings on Cartila",
+      "rivista": "Foot & ankle specialist",
+      "data": "2026 Sep 8",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
       "pmid": "42701879",
       "titolo": "An International Delphi Consensus on Meniscus Radial Tears: From Diagnosis to Management and Rehabilitation.",
       "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
@@ -1126,6 +1141,13 @@
    "dati": {
     "finestra_giorni": 30,
     "voci": [
+     {
+      "titolo": "Fourfold Faster Knee Valgus Development During Single-Leg Landing Compared with Countermovement Jump: A Novel Approach to ACL Injury Risk Assessment",
+      "dove": "archivio preprint",
+      "data": "2026-09-08",
+      "doi": "10.20944/preprints202609.0670.v1",
+      "url": "https://doi.org/10.20944/preprints202609.0670.v1"
+     },
      {
       "titolo": "A Comparative Study of Bone Age Assessment of the Knee: MRI Versus Radiography in Living Individuals",
       "dove": "archivio preprint",
@@ -1293,13 +1315,6 @@
       "data": "2026-08-28",
       "doi": "10.20944/preprints202608.2075.v1",
       "url": "https://doi.org/10.20944/preprints202608.2075.v1"
-     },
-     {
-      "titolo": "Mechanical elements related to the development of patellofemoral pain syndrome, pain intensity, and functional disability: A cross-sectional study",
-      "dove": "archivio preprint",
-      "data": "2026-08-31",
-      "doi": "10.64898/2026.08.26.26361453",
-      "url": "https://doi.org/10.64898/2026.08.26.26361453"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
