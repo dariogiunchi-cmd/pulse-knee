@@ -7,11 +7,21 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 9 settembre 2026.*
+*Ultimo aggiornamento: 10 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-10 | Journal of Sports Science & Medicine | Revisione sistematica e meta-analisi di 43 studi (17.350 pazienti) sulla performance al test del salto come predittore di rientro allo sport e reinfortunio dopo ricostruzione del LCA | 10.52082/jssm.2026.772 | lca, rientro allo sport, hop test | aperto — 🟠 PICK del giorno; LSI ≥90% nel salto monopodalico (OR 1,20) e nel triplo incrociato (OR 1,18) associato a maggiore probabilità di rientro; LSI ≥90% nel triplo semplice associato a maggiore reinfortunio (OR 1,05; IC 95% 1,01-1,09); certezza GRADE bassa; alimenta T3
+2026-09-10 | Chinese Journal of Reparative and Reconstructive Surgery | Consensus Delphi modificato di un panel multidisciplinare cinese sul percorso clinico ERAS per la protesi totale di ginocchio ad alta conformità personalizzata | 10.7507/1002-1892.202606094 | protesi personalizzata, consensus, ERAS | aperto — 🟢 livello V, nessun dato originale su pazienti; impianto personalizzato, categoria diversa da VELYS; autori non riportati individualmente nei metadati
+2026-09-10 | Journal of Robotic Surgery | Coorte comparativa propensity-matched, 259 protesi di ginocchio (110 manuali, 99 guida laser, 50 robot senza immagini), Corea del Sud | 10.1007/s11701-026-03895-4 | protesi robotica, VELYS, allineamento | aperto — 🟢 errore HKA robot non differisce da guida laser nella coorte completa (-0,03°; p=0,612); guida laser batte manuale (-1,01°; p<0,001); segnale nel sottogruppo di varo grave (n=16) non confermato in sensitivity analysis; sistema diverso da VELYS, stessa categoria imageless
+2026-09-10 | The Knee | Coorte retrospettiva monocentrica, 147 ginocchia, protesi robot-assistita con conservazione del crociato e allineamento funzionale, Corea del Sud | 10.1016/j.knee.2026.104594 | protesi robotica, linea articolare, allineamento funzionale | aperto — 🟢 elevazione della linea articolare mediale associata a Forgotten Joint Score-12 significativamente peggiore a 1 anno (Δ 28,5 punti; d di Cohen 1,09); depressione ben tollerata; laterale non associato; diretto sulla pratica VELYS
+2026-09-10 | Arthroscopy | Serie retrospettiva monocentrica, 45 ginocchia/39 pazienti, osteotomia tibiale alta ad apertura mediale, Giappone | 10.1002/arj.70533 | osteotomia, femoro-rotuleo, allineamento coronale | aperto — 🟢 cambiamenti coronali femoro-rotulei significativamente più piccoli dell'angolo di correzione osseo (9,3°); >70% raggiunge la MCID KOOS; ICRS rotuleo peggiora leggermente (p=0,004) senza correlazione clinica
+2026-09-10 | The Journal of Arthroplasty | Coorte retrospettiva monocentrica, 370 pazienti, protesi postero-stabilizzata, follow-up minimo 48 mesi, Turchia | 10.1016/j.arth.2026.09.001 | protesi totale, slope tibiale, esiti funzionali | aperto — 🟢 né direzione né ampiezza del cambiamento di slope tibiale posteriore associate a esiti funzionali (tutti p>0,05); stato funzionale preoperatorio predittore più forte; disegno postero-stabilizzato, diverso da CR
+2026-09-10 | Archives of Orthopaedic and Trauma Surgery | Studio di registro osservazionale descrittivo, 291 protesi di ginocchio, misurazione intraoperatoria diretta del carico femoro-rotuleo, Regno Unito | 10.1007/s00402-026-06500-3 | protesi totale, carico femoro-rotuleo, registro | aperto — 🟢 variabilità inter-individuale marcata, sottogruppo con aumento cumulativo >+70%, più frequente in TKR che in PFJR isolata; descrittivo, nessun aggiustamento per confondenti; sistemi di impianto non nominati
+2026-09-10 | Clinical Biomechanics | Studio sperimentale controllato, 39 pazienti 6-12 mesi post-ACLR, biofeedback del cammino in tempo reale, USA | 10.1016/j.clinbiomech.2026.106949 | lca, rientro allo sport, biofeedback | aperto — 🟢 impulso vGRF significativamente più basso nel carico dinamico vs sostenuto (0,51 vs 0,54 BW·s; p=0,03); nessuna differenza nei momenti articolari; nessuna soglia clinica nota; alimenta T3
+
 
 2026-09-09 | The Journal of Knee Surgery | Studio retrospettivo con abbinamento per propensione, 294 protesi (181 TC-based/113 CT-free), confronto fra un sistema robotico basato su TC e uno senza immagini nella protesi totale di ginocchio | 10.1055/a-2939-2755 | protesi robotica, VELYS, allineamento | aperto — 🟠 PICK del giorno per l'ordine di apertura; TC-based ottiene KSS-F migliore (oltre MCID) e allineamento più preciso (MPTA 90,0° vs 87,8°, HKA -0,22° vs -2,52°); OKS significativo ma sotto MCID (MUTE); piattaforme non nominate, VELYS è image-free ma non incluso nello studio
 2026-09-09 | Journal of ISAKOS | Coorte retrospettiva monocentrica, 7657 ricostruzioni del LCA in 26 anni (2000-2025), UPMC/Pittsburgh, con Volker Musahl | 10.1016/j.jisako.2026.101214 | innesto quadricipitale, tendenze, pittsburgh | aperto — 🟢 scelto come lavoro del giorno; QT primario in aumento significativo dal 2016 (OR 1,19, p<0,01), hamstring in calo -8,3%/anno per tutto il periodo; dati di un solo centro, non tocca l'uso del LET
@@ -791,6 +801,29 @@ dimostri come un rientro allo sport più ampio riduca davvero il reinfortunio. N
 con i segnali degli ultimi mesi (carico cognitivo, biomeccanica del salto, asimmetria interarto): la
 direzione del campo è verso un profilo più ampio della sola simmetria di forza, ancora senza uno strumento
 pronto all'uso.
+
+**Nuovo il 10 settembre 2026, la base di evidenza più ampia finora sul test motorio usato per il rientro.**
+Una meta-analisi di 43 studi (17.350 partecipanti — Liu, Sun, Cao et al., *Journal of Sports Science &
+Medicine*) mostra che superare la soglia LSI ≥90% nel salto monopodalico in distanza o nel salto triplo
+incrociato si associa a un rientro allo sport più probabile entro due anni (OR 1,20 e 1,18), ma lo stesso
+indice ≥90% nel salto triplo in distanza semplice si associa a un rischio più alto, non più basso, di
+reinfortunio (OR 1,05; IC 95% 1,01-1,09 — un intervallo così vicino all'unità da pesare poco nella pratica
+nonostante la significatività). Certezza GRADE bassa in tutte le stime, nessuna sottoanalisi per innesto
+oltre al confronto hamstring/altro né per l'aggiunta di un rinforzo laterale: non tocca il tuo innesto né il
+LET, ma con 17.350 pazienti in pooling è il segnale più solido finora che il test del salto, basato sulla
+sola distanza, non è uno strumento sufficiente a prevedere chi si reinfortunerà.
+
+Nello stesso giorno, un piccolo studio sperimentale su 39 pazienti 6-12 mesi dopo la ricostruzione (Buck,
+Armitano-Lago et al., *Clinical Biomechanics*) mostra che un biofeedback in tempo reale che aumenta il picco
+di forza di reazione al terreno durante il cammino riduce il carico compressivo cumulativo sull'arto
+operato, senza aumentare in modo rilevabile i momenti articolari al ginocchio — un primo strumento tecnico,
+non ancora validato su esiti clinici, per modulare il carico del cammino oltre la sola misura della
+simmetria di forza.
+
+**Cosa la chiude, aggiornamento del 10 settembre:** il 10 settembre una meta-analisi di 43 studi ha
+finalmente collegato la performance al test del salto a un esito duro, il reinfortunio — ma con un OR di
+1,05 (IC 95% 1,01-1,09), troppo debole per dirsi risolutiva: il tipo di studio che chiuderebbe la tensione
+comincia a esistere in questa forma, il segnale resta però ancora troppo fragile per chiuderla.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
