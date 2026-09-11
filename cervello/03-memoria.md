@@ -651,6 +651,17 @@ quantificato. Non è la stessa procedura della sutura transtibiale della radice 
 secondo segnale, da un angolo diverso, nella stessa direzione della revisione del 27 agosto: aggiungere la
 centralizzazione meniscale non risolve da solo il problema dell'estrusione residua.
 
+**Nuovo l'11 settembre 2026, il primo profilo di rischio sulla sutura stessa, non sulla progressione
+successiva.** Una serie retrospettiva monocentrica di 53 riparazioni della radice meniscale posteriore mediale
+(Wynveen, Henson-Vendrell, Glover et al., *Arthroscopy, Sports Medicine, and Rehabilitation*) trova un fallimento
+nel 22,6% dei casi a un anno, associato a sesso femminile (92% contro 63%, p=0,033), edema osseo tibiale
+preoperatorio (58% contro 12%, p=0,001) e Outerbridge mediale più alto (2,8±0,9 contro 1,9±1,1, p=0,015).
+**L'estrusione preoperatoria — la variabile su cui insiste tutta questa tensione — qui non risulta associata al
+fallimento**, e nemmeno lo sono età, BMI o metodo di fissazione: un angolo diverso dello stesso principio generale
+(conta il carico degenerativo/meccanico basale), ma misurato questa volta sul fallimento della sutura stessa, non
+sulla progressione cartilaginea dopo un intervento riuscito. Serie piccola, monocentrica, livello IV: un primo
+profilo di rischio preoperatorio, non una dimostrazione.
+
 ### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22)*
 
 La simmetria di forza è il criterio clinico più usato; la meta-regressione che lo
