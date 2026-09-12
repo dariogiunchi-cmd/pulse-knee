@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-11T08:55:44Z",
+ "generato": "2026-09-12T08:07:27Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -347,32 +347,32 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog Blutspende Zürich, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-blutspende-zh.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog KSGR, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-ksgr.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog LUKS, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-luks.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Rapporto sintetico di omologazione – Serum autolog Insel, collirio®",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-insel.html",
       "data": "Wed, 02 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog Universitätsspital Basel, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-usb.html",
+      "titolo": "Rapporto sintetico di omologazione – Sérum autologue USZ, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-usz.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Sérum autologue HOJG, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-hojg.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Sérum autologue ICH, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-ich.html",
+      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog Blutspende Zürich, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-blutspende-zh.html",
       "data": "Wed, 02 Sep 2026 00:00:00 +0000"
      },
      {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 223,
+    "doi_citati_controllati": 232,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -826,6 +826,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42724261",
+     "titolo": "Orthopaedic Journal of Sports Medicine — Rianalisi di fragilità di 8 RCT (562 pazienti allocati, 482 disponibi",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42719661",
      "titolo": "Arthroscopy, Sports Medicine, and Rehabilitation — Serie retrospettiva monocentrica di 53 riparazioni artrosco",
@@ -1151,6 +1157,20 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Preoperative clinical, functional, and psychological factors associated with kinesiophobia at 6 months after anterior cruciate ligament reconstruction: a prospe",
+      "dove": "archivio preprint",
+      "data": "2026-09-11",
+      "doi": "10.21203/rs.3.rs-10826415/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10826415/v1"
+     },
+     {
+      "titolo": "Multidomain gait phenotyping in knee osteoarthritis: spatiotemporal, plantar-pressure and lower-limb kinematic findings from a retrospective cross-sectional stu",
+      "dove": "archivio preprint",
+      "data": "2026-09-11",
+      "doi": "10.21203/rs.3.rs-10816633/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10816633/v1"
+     },
+     {
       "titolo": "The Knee Osteoarthritis Sex Gap Is Not a Biological Constant: A Global Ecological Study Across 204 Countries Revealing a Nine-Fold Range Shaped by Development, ",
       "dove": "archivio preprint",
       "data": "2026-09-10",
@@ -1310,20 +1330,6 @@
       "data": "2026-09-02",
       "doi": "10.21203/rs.3.rs-10654738/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10654738/v1"
-     },
-     {
-      "titolo": "Thirty-Day Periprosthetic Joint Infection After Hip and Knee Arthroplasty: Clinical Correlates and Microbiology in a Tertiary Referral Cohort",
-      "dove": "archivio preprint",
-      "data": "2026-09-02",
-      "doi": "10.21203/rs.3.rs-10594955/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10594955/v1"
-     },
-     {
-      "titolo": "The epidemiology of knee injuries in New Zealand, 2015–2024",
-      "dove": "archivio preprint",
-      "data": "2026-09-01",
-      "doi": "10.64898/2026.08.27.26361563",
-      "url": "https://doi.org/10.64898/2026.08.27.26361563"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
