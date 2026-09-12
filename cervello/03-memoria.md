@@ -7,11 +7,28 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 10 settembre 2026.*
+*Ultimo aggiornamento: 12 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-12 | Orthopaedic Journal of Sports Medicine | Rianalisi di fragilità di 8 RCT (562 pazienti) sugli esiti continui non significativi fra innesto hamstring e tendine quadricipitale nella ricostruzione del LCA | 10.1177/23259671261479032 | lca, innesto quadricipitale, metodologia | aperto — 🟢 PICK del giorno; indice di fragilità continua inversa medio 17,4±7,3, sempre superiore alla perdita al follow-up: la conclusione «esiti comparabili» è statisticamente robusta; nessuno degli 8 RCT include il LET; alimenta T1a
+2026-09-12 | Knee Surgery, Sports Traumatology, Arthroscopy | Meta-analisi di 13 studi (3905 pazienti) sulla lassità articolare generalizzata e ricostruzione del LCA | 10.1002/ksa.70598 | lca, lassità articolare, meta-analisi | aperto — 🟢 IKDC e Lysholm più bassi, Lachman/pivot shift più frequenti nel gruppo con lassità generalizzata; fallimento dell'innesto 9,2% vs 6,1%, non significativo (OR 3,15; p=0,07, IC non riportato) — muto, non equivalenza dimostrata
+2026-09-12 | Journal of ISAKOS | Revisione sistematica di 11 studi osservazionali (oltre 9500 pazienti) su timing della ricostruzione del LCA e patologia intra-articolare associata | 10.1016/j.jisako.2026.101215 | lca, timing chirurgico, menisco | aperto — 🟢 ricostruzione entro 3 mesi associata a minore prevalenza di lesione meniscale (49,5% vs 59,6%); nessun vantaggio chiaro su PROM per nessuna delle due tempistiche; tutti studi osservazionali
+2026-09-12 | Sports Health | Coorte prospettica con caso-controllo annidato, 127 atleti professionisti, LSI e prontezza psicologica (ACL-RSI) nel rientro allo sport dopo LCA | 10.1177/19417381261480055 | lca, rientro allo sport, criterio psicologico | aperto — 🟢 LSI discrimina poco il reinfortunio (1/10 test significativo, solo nelle donne); performance di hop test correlano fortemente con ACL-RSI (r=0,43-0,73); alimenta T3
+2026-09-12 | Sports Health | Coorte prospettica, 59 pazienti, traiettorie di recupero della forza del quadricipite e biomeccanica del cammino nel primo anno dopo LCA | 10.1177/19417381261479680 | lca, forza quadricipite, biomeccanica del cammino | aperto — 🟢 due traiettorie distinte; recupero minore associato a minore flessione/momento estensorio del ginocchio nel cammino fino a 12 mesi; nessuna normalizzazione completa nemmeno nel gruppo con recupero maggiore; alimenta T3
+2026-09-12 | Knee Surgery, Sports Traumatology, Arthroscopy | Coorte retrospettiva longitudinale coreana, 388 pazienti/764 ginocchia, fenotipi funzionali del ginocchio e progressione dell'artrosi oltre 10 anni | 10.1002/ksa.70591 | osteotomia, allineamento, artrosi | aperto — 🟢 tre combinazioni di angolo femorale e tibiale (non il solo HKA) associate a progressione artrosica fino a 7 volte più alta (OR aggiustati 3,10-7,50); sottogruppi piccoli con IC ampi
+2026-09-12 | Journal of Robotic Surgery | Coorte comparativa retrospettiva, 430 protesi totali di ginocchio (221 robot-assistite, 209 manuali), esiti riferiti dal paziente ed esperienza del chirurgo | 10.1007/s11701-026-03944-y | protesi robotica, esperienza chirurgo, esiti funzionali | aperto — 🟢 KOOS JR più alto col robot a 3 mesi (+4,71; IC 95% 2,35-7,08), non a 12 mesi; beneficio maggiore nei chirurghi junior (+6,48), analisi post hoc esplorativa; sistema non specificato
+2026-09-12 | The Knee | Coorte retrospettiva propensity-matched su TriNetX, 830 pazienti diabetici, semaglutide vs tirzepatide prima di protesi totale di ginocchio | 10.1016/j.knee.2026.104639 | protesi totale, farmacologia, diabete | aperto — 🟢 nessuna differenza su complicanze mediche (OR 1,122) o chirurgiche (OR 1,632) a 90/180gg; eventi singoli con IC ampi (infezione sito chirurgico OR 1,726; IC 95% 0,782-3,810) — muto sui singoli eventi
+2026-09-12 | Arthroscopy | Editoriale di commento su un'analisi del database FDA MAUDE per dispositivi di sutura meniscale all-inside | 10.1002/arj.70591 | menisco, dispositivi, sicurezza | aperto — 🟢 ancore rigide senza nodo esposto associate a meno segnalazioni di eventi avversi rispetto a tutto-sutura o ancore con nodo esposto; livello V, nomi dei dispositivi non riportati
+
+2026-09-11 | Arthroscopy, Sports Medicine, and Rehabilitation | Serie retrospettiva monocentrica di 53 riparazioni artroscopiche della radice meniscale posteriore mediale, follow-up minimo 1 anno | 10.1002/ars2.70065 | root, menisco, fattori di rischio | aperto — 🟠 PICK del giorno; fallimento 22,6% (12/53), associato a sesso femminile (92% vs 63%, p=0,033), edema osseo tibiale preoperatorio (58% vs 12%, p=0,001) e Outerbridge mediale più alto (2,8 vs 1,9, p=0,015); età, BMI, fissazione ed estrusione preoperatoria non associati; alimenta T2b da un angolo diverso (fallimento della sutura, non progressione successiva)
+2026-09-11 | Journal of ISAKOS | Current Concepts Review sui sintomi neurologici dopo riparazione meniscale | 10.1016/j.jisako.2026.101217 | menisco, complicanze, revisione narrativa | aperto — 🟢 framework di sospetto clinico stratificato per rischio (fenotipo neurologico, fattori procedura-specifici, esame seriale, ecografia/neurografia RM/elettrodiagnostica); livello V, evidenza dichiarata scarsa e prevalentemente aneddotica
+2026-09-11 | Orthopaedic Journal of Sports Medicine | Coorte di 109 ginocchia/96 pazienti, osteotomia tibiale alta a V invertita per varo severo, correzioni ampie vs piccole | 10.1177/23259671261447195 | osteotomia, correzione ampia, complicanze | aperto — 🟢 correzioni ≥13° (media 15,6°) non prolungano il consolidamento (12,7 vs 12,4 settimane) né aumentano le complicanze (4,1% vs 3,3%; RR 1,22, IC 95% 0,18-8,38 con potenza.py) rispetto a correzioni <13°
+2026-09-11 | The Journal of the American Academy of Orthopaedic Surgeons | Coorte retrospettiva cinese, 203 ginocchia/177 pazienti, fragilità preoperatoria e progressione artrosica del compartimento laterale dopo mono mediale | 10.5435/JAAOS-D-25-01604 | protesi monocompartimentale, fragilità, artrosi | aperto — 🟢 Clinical Frailty Scale >3 predice in modo indipendente la progressione artrosica del compartimento laterale (OR 4,36; IC 95% 1,37-13,90; p=0,013), follow-up medio 70,8 mesi
+2026-09-11 | Journal of Robotic Surgery | Revisione sistematica e meta-analisi (protocollo PROSPERO), 10 studi/11 report, fissazione cementata vs non cementata nella protesi totale robot-assistita | 10.1007/s11701-026-03858-9 | protesi robotica, fissazione, meta-analisi | aperto — 🟢 RR di revisione a medio termine 0,63 (IC 95% 0,09-4,53), certezza GRADE molto bassa su ogni esito aggregato, nessuna strategia favorita — muto
+2026-09-11 | The American Journal of Sports Medicine | Studio caso-controllo, 284 ginocchia (142 instabilità femoro-rotulea, 142 controlli), nuovo indice RM (PTIA) per l'instabilità femoro-rotulea negli adolescenti | 10.1177/03635465261478742 | rotula, mpfl, imaging | aperto — 🟢 PTIA e distanza PT-LTR discriminano l'instabilità con buona accuratezza (AUC 0,866 e 0,903), informativi anche a TT-TG normale; Hospital for Special Surgery, con Daniel W. Green
 
 2026-09-10 | Journal of Sports Science & Medicine | Revisione sistematica e meta-analisi di 43 studi (17.350 pazienti) sulla performance al test del salto come predittore di rientro allo sport e reinfortunio dopo ricostruzione del LCA | 10.52082/jssm.2026.772 | lca, rientro allo sport, hop test | aperto — 🟠 PICK del giorno; LSI ≥90% nel salto monopodalico (OR 1,20) e nel triplo incrociato (OR 1,18) associato a maggiore probabilità di rientro; LSI ≥90% nel triplo semplice associato a maggiore reinfortunio (OR 1,05; IC 95% 1,01-1,09); certezza GRADE bassa; alimenta T3
 2026-09-10 | Chinese Journal of Reparative and Reconstructive Surgery | Consensus Delphi modificato di un panel multidisciplinare cinese sul percorso clinico ERAS per la protesi totale di ginocchio ad alta conformità personalizzata | 10.7507/1002-1892.202606094 | protesi personalizzata, consensus, ERAS | aperto — 🟢 livello V, nessun dato originale su pazienti; impianto personalizzato, categoria diversa da VELYS; autori non riportati individualmente nei metadati
@@ -441,6 +458,15 @@ due case report con esito favorevole dopo conservazione del LET. Non tocca il be
 questa chiarezza: eseguendo il LET su tutti i pazienti, ogni fallimento combinato che incontri è, per la
 letteratura mondiale, un caso fra ventitré.
 
+**Nuovo il 12 settembre 2026, sul terreno del confronto fra innesti in sé, non del LET.** Una rianalisi di
+fragilità di 8 RCT (562 pazienti; Tseng, Fu et al., *OJSM*) sugli esiti continui non significativi che
+confrontano hamstring e tendine quadricipitale conferma che la conclusione «esiti comparabili a breve
+termine» è statisticamente robusta (indice di fragilità continua inversa medio 17,4±7,3, sempre superiore
+alla perdita al follow-up di ciascuno studio). Non tocca la combinazione con il LET né la fissazione
+onlay — la domanda di questa rianalisi riguarda solo il tipo di innesto — ma rafforza metodologicamente il
+terreno su cui poggia la scelta del tendine quadricipitale rispetto all'hamstring, l'innesto che questa
+tensione discute da sempre.
+
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
 **Verificata sul full text di STABILITY 2.** Il protocollo prescrive: banderella di
@@ -835,6 +861,20 @@ simmetria di forza.
 finalmente collegato la performance al test del salto a un esito duro, il reinfortunio — ma con un OR di
 1,05 (IC 95% 1,01-1,09), troppo debole per dirsi risolutiva: il tipo di studio che chiuderebbe la tensione
 comincia a esistere in questa forma, il segnale resta però ancora troppo fragile per chiuderla.
+
+**Nuovo il 12 settembre 2026, due tasselli sul criterio di rientro oltre la sola forza.** Uno studio
+prospettico su 127 atleti professionisti (Rahimi Khoygani, Esmaeili, *Sports Health*) con caso-controllo
+annidato (32 reinfortunati contro 32 controlli) mostra che l'indice di simmetria degli arti (LSI) ha un
+valore discriminante limitato — un solo risultato significativo, e solo nelle atlete donne (p=0,03) —
+mentre le performance assolute di hop test correlano fortemente con la prontezza psicologica misurata
+dalla scala ACL-RSI (r=0,43-0,73). E uno studio prospettico su 59 pazienti (Lemus, Pietrosimone et al.,
+*Sports Health*, Chapel Hill) mostra due traiettorie distinte di recupero della forza del quadricipite nel
+primo anno: chi recupera meno forza mantiene un'alterazione della biomeccanica del cammino (minore
+flessione e momento estensorio del ginocchio) rispetto a chi ne recupera di più, senza però che
+quest'ultimo gruppo si normalizzi del tutto verso i controlli sani. Insieme, i due lavori rafforzano
+l'idea che il criterio di rientro basato sulla sola LSI sia insufficiente, aggiungendo sia una dimensione
+psicologica misurabile sia una traiettoria di recupero della forza collegata alla biomeccanica del
+cammino — il fattore di rischio per l'artrosi post-traumatica che questa tensione segue dal 30 agosto.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
