@@ -13,6 +13,13 @@
 
 ## LAVORI ARCHIVIATI
 
+2026-09-13 | Knee Surgery, Sports Traumatology, Arthroscopy | Coorte retrospettiva propensity-matched su database TriNetX, 5021+5021 pazienti, ACLR con vs senza tenodesi extra-articolare laterale (LET) | 10.1002/ksa.70600 | lca, LET, sicurezza | aperto — 🟠 PICK del giorno; con il LET più artrofibrosi a 1 anno (OR 1,65; IC 95% 1,29-2,11), più chirurgia meniscale a 2 anni (HR 1,25) e più artrosi codificata a 5 anni (HR 2,24; IC 95% 1,76-2,85), senza riduzione della nuova ACLR; sottogruppo 12-25 anni in direzione opposta; nessuna stratificazione per innesto; alimenta T1a
+2026-09-13 | Orthopaedic Journal of Sports Medicine | Studio cadaverico su 10 rotule pediatriche, fissazione patellare per MPFL con ancora a sutura vs tunnel osseo | 10.1177/23259671261465205 | mpfl, rotula pediatrica, fissazione | aperto — 🟠 carico di rottura molto più alto con tunnel osseo (169,8±88,6N vs 55,3±20,1N; p=0,002); rigidità sovrapponibile ma su soli 5 campioni per gruppo (MUTE); tocca la fissazione con ancore FiberTak onlay usata anche negli adolescenti
+2026-09-13 | The American Journal of Sports Medicine | Serie di casi, 19 atleti d'élite, LCA fallito e slope tibiale ≥10°, revisione + osteotomia di riduzione dello slope, 2 centri (Barcellona/Lione, con David Dejour) | 10.1177/03635465261479920 | osteotomia, slope, revisione LCA | aperto — 🟢 rientro allo sport al 100% (media 12,1 mesi), IKDC 44,2→92,3, nessun fallimento dell'innesto; serie a braccio unico senza confronto (MUTE)
+2026-09-13 | Journal of Experimental Orthopaedics | Studio cadaverico, 12 ginocchia appaiate, fissazione bioplacca vs placca angolo-stabile dopo osteotomia tibiale a cuneo di chiusura per correzione dello slope | 10.1002/jeo2.70911 | osteotomia, slope, biomeccanica | aperto — 🟢 nessuna differenza nel carico di rottura (p=0,422); micromovimento crescente con bioplacca sotto carico ciclico (p=0,025); autori: superiorità non concludibile (MUTE)
+2026-09-13 | Orthopaedics & Traumatology: Surgery & Research | Studio di affidabilità, 44 pazienti/48 ginocchia, misura della flessione femorale nativa su radiografia laterale standard vs riferimento TC 3D | 10.1016/j.otsr.2026.104874 | protesi totale, pianificazione sagittale, affidabilità | aperto — 🟢 ICC intra/interosservatore 0,94/0,92; concordanza con la TC molto forte (ICC 0,86; IC 95% 0,77-0,92); utile per la pianificazione personalizzata anche in VELYS
+2026-09-13 | Archives of Orthopaedic and Trauma Surgery | Coorte retrospettiva, 145 ginocchia/119 pazienti, kneeling stress radiography e posterior sag sign per l'instabilità in flessione dopo TKA postero-stabilizzata | 10.1007/s00402-026-06448-4 | protesi totale, instabilità in flessione, diagnostica | aperto — 🟢 Δ-TPFA predittore indipendente (OR 1,30/mm; AUC 0,68, discriminazione solo modesta); posterior sag sign specificità 82,6%; cassetto anteriore a 90° non discrimina
+
 2026-09-12 | Orthopaedic Journal of Sports Medicine | Rianalisi di fragilità di 8 RCT (562 pazienti) sugli esiti continui non significativi fra innesto hamstring e tendine quadricipitale nella ricostruzione del LCA | 10.1177/23259671261479032 | lca, innesto quadricipitale, metodologia | aperto — 🟢 PICK del giorno; indice di fragilità continua inversa medio 17,4±7,3, sempre superiore alla perdita al follow-up: la conclusione «esiti comparabili» è statisticamente robusta; nessuno degli 8 RCT include il LET; alimenta T1a
 2026-09-12 | Knee Surgery, Sports Traumatology, Arthroscopy | Meta-analisi di 13 studi (3905 pazienti) sulla lassità articolare generalizzata e ricostruzione del LCA | 10.1002/ksa.70598 | lca, lassità articolare, meta-analisi | aperto — 🟢 IKDC e Lysholm più bassi, Lachman/pivot shift più frequenti nel gruppo con lassità generalizzata; fallimento dell'innesto 9,2% vs 6,1%, non significativo (OR 3,15; p=0,07, IC non riportato) — muto, non equivalenza dimostrata
 2026-09-12 | Journal of ISAKOS | Revisione sistematica di 11 studi osservazionali (oltre 9500 pazienti) su timing della ricostruzione del LCA e patologia intra-articolare associata | 10.1016/j.jisako.2026.101215 | lca, timing chirurgico, menisco | aperto — 🟢 ricostruzione entro 3 mesi associata a minore prevalenza di lesione meniscale (49,5% vs 59,6%); nessun vantaggio chiaro su PROM per nessuna delle due tempistiche; tutti studi osservazionali
@@ -466,6 +473,21 @@ alla perdita al follow-up di ciascuno studio). Non tocca la combinazione con il 
 onlay — la domanda di questa rianalisi riguarda solo il tipo di innesto — ma rafforza metodologicamente il
 terreno su cui poggia la scelta del tendine quadricipitale rispetto all'hamstring, l'innesto che questa
 tensione discute da sempre.
+
+**Nuovo il 13 settembre 2026, il primo segnale di sicurezza su scala reale, non di efficacia.** Uno studio
+retrospettivo propensity-matched sul database claims TriNetX (Rteil, Jason Koh, Amirouche, *KSSTA*), 5021
+ACLR+LET contro 5021 ACLR isolata dopo matching 1:1, mostra che l'aggiunta del LET si associa a più
+procedure per artrofibrosi a 1 anno (3,4% contro 2,1%; OR 1,65; IC 95% 1,29-2,11; p<0,001), più chirurgia
+meniscale successiva a 2 anni (HR 1,25; p<0,05) e più artrosi codificata a 5 anni (HR 2,24; IC 95%
+1,76-2,85; p<0,001) — senza una riduzione significativa della nuova ACLR nell'analisi primaria a 2 anni.
+Nel sottogruppo giovane ad alto rischio (12-25 anni), invece, il LET si associa a minori probabilità di
+una nuova ACLR a 1 anno: un segnale nella direzione opposta, proprio nella fascia d'età che comprende la
+sua pratica adolescenziale. Lo studio non stratifica per tipo di innesto — non risponde quindi alla
+domanda specifica di questa tensione sul tendine quadricipitale — ma è la base dati più ampia finora sul
+rischio complessivo del gesto che esegue su ogni paziente, e gli stessi autori dichiarano il limite
+maggiore: disegno retrospettivo su dati amministrativi, possibile confondimento per indicazione, nessuna
+misura diretta di instabilità o di forza. Non chiude la domanda sull'innesto rigido, apre però per la
+prima volta un conto sul lato dei costi del gesto universale, non solo dei benefici.
 
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
