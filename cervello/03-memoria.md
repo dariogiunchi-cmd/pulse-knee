@@ -7,11 +7,17 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 12 settembre 2026.*
+*Ultimo aggiornamento: 14 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-14 | Arthroscopy | Consenso Delphi in tre round (40 esperti internazionali) su indicazioni, biomeccanica e tecnica del rinforzo laterale extra-articolare (ALLR/LEAP) nella ricostruzione del LCA | 10.1002/arj.70532 | let, consenso, indicazione | aperto — 🟠 PICK del giorno; consenso unanime per pivot shift alto e revisione, forte per iperlassità e sport ad alto rischio; disaccordo esplicito sull'uso di routine in tutti i pazienti operati di LCA; fissazione femorale raccomandata posteriore e prossimale all'epicondilo laterale; livello V, nessun dato di paziente; alimenta T1a e T1b
+2026-09-14 | Arthroscopy | Studio caso-controllo propensity-matched, Mayo Clinic, 50+50 ginocchia, nuova distanza RM (PT-LTR) per l'instabilità femoro-rotulea | 10.1002/arj.70545 | mpfl, instabilità rotulea, imaging | aperto — 🟢 PT-LTR più specifico del TT-TG (AUC 0,80; soglia ≥4,6mm: sensibilità 66%, specificità 92%); differenza media 7,0mm fra i gruppi (p<0,001); popolazione mista pediatrica/adulta, non ancora validato fuori Mayo Clinic
+2026-09-14 | Journal of Experimental Orthopaedics | Studio retrospettivo con TC cinematica dinamica, 21 pazienti/42 ginocchia, comportamento dell'apTTTG con la flessione del ginocchio nell'instabilità femoro-rotulea | 10.1002/jeo2.70893 | mpfl, instabilità rotulea, imaging | aperto — 🟢 apTTTG diminuisce linearmente con la flessione (0,29mm/grado; R²=0,75; p<0,001), a differenza degli altri parametri di allineamento; livello IV, 21 pazienti, nessun controllo sano, nessun esito clinico
+2026-09-14 | Arthroscopy, Sports Medicine, and Rehabilitation | Revisione sistematica di 6 studi (841 pazienti), posizione del tunnel femorale (anteromediale vs centrale) nella ricostruzione anatomica a fascio singolo del LCA | 10.1002/ars2.70075 | lca, tunnel femorale, revisione sistematica | aperto — 🟢 tunnel anteromediale associato a riduzione del 74-77% del rischio di fallimento dell'innesto in 2 studi, ma rischio di bias serio in 4/6 studi; nessuna differenza sulla lassità rotazionale (MUTE); differenze su PROM e stabilità anteriore piccole nonostante la significatività statistica
+2026-09-14 | Arthroscopy | Coorte retrospettiva comparativa, Hospital for Special Surgery, 398 pazienti, diametro delle viti di fissazione nell'osteotomia della tuberosità tibiale | 10.1002/arj.70541 | osteotomia, femoro-rotuleo, fissazione | aperto — 🟢 viti da 3,5mm associate a fallimento della fissazione quasi sei volte più frequente delle viti da 4,5mm (7,9% contro 1,4%; OR 8,1; IC 95% 1,1-59,8; p=0,04); evento raro (2,0% complessivo), intervallo di confidenza ampio
 
 2026-09-13 | Knee Surgery, Sports Traumatology, Arthroscopy | Coorte retrospettiva propensity-matched su database TriNetX, 5021+5021 pazienti, ACLR con vs senza tenodesi extra-articolare laterale (LET) | 10.1002/ksa.70600 | lca, LET, sicurezza | aperto — 🟠 PICK del giorno; con il LET più artrofibrosi a 1 anno (OR 1,65; IC 95% 1,29-2,11), più chirurgia meniscale a 2 anni (HR 1,25) e più artrosi codificata a 5 anni (HR 2,24; IC 95% 1,76-2,85), senza riduzione della nuova ACLR; sottogruppo 12-25 anni in direzione opposta; nessuna stratificazione per innesto; alimenta T1a
 2026-09-13 | Orthopaedic Journal of Sports Medicine | Studio cadaverico su 10 rotule pediatriche, fissazione patellare per MPFL con ancora a sutura vs tunnel osseo | 10.1177/23259671261465205 | mpfl, rotula pediatrica, fissazione | aperto — 🟠 carico di rottura molto più alto con tunnel osseo (169,8±88,6N vs 55,3±20,1N; p=0,002); rigidità sovrapponibile ma su soli 5 campioni per gruppo (MUTE); tocca la fissazione con ancore FiberTak onlay usata anche negli adolescenti
@@ -489,6 +495,25 @@ maggiore: disegno retrospettivo su dati amministrativi, possibile confondimento 
 misura diretta di instabilità o di forza. Non chiude la domanda sull'innesto rigido, apre però per la
 prima volta un conto sul lato dei costi del gesto universale, non solo dei benefici.
 
+**Nuovo il 14 settembre 2026, il primo giudizio di merito internazionale esplicito
+sull'indicazione universale.** Un consenso Delphi in tre round (Hohmann, Imhoff, Perry et al.,
+*Arthroscopy*, 40 esperti internazionali) su indicazioni, biomeccanica, tecnica e complicanze
+del rinforzo laterale extra-articolare (ALLR o LEAP) associato alla ricostruzione del LCA
+raggiunge consenso unanime solo per pivot shift di alto grado e revisione chirurgica, e
+consenso forte per iperlassità generalizzata e atleti ad alto rischio in sport di pivot. Il
+punto che conta di più: disaccordo esplicito sull'uso di routine del rinforzo laterale in
+tutti i pazienti operati di LCA, indipendentemente da attività sportiva o compliance — gli
+autori scrivono che l'uso di routine in pazienti con LCA insufficiente o a bassa domanda
+funzionale non è raccomandato. È opinione di esperti, livello V, senza pazienti né dati di
+efficacia propri, e non specifica quale innesto accompagni ciascuna indicazione né distingue
+fra costrutto onlay e profondo con graffa — non tocca quindi né il suo innesto rigido né il
+suo costrutto specifico. Ma è il primo documento internazionale strutturato che affronta
+esplicitamente la domanda dell'indicazione stessa, non solo quella dell'innesto: per il panel
+il rinforzo laterale va riservato a pivot shift alto, revisione, iperlassità e sport ad alto
+rischio, non eseguito come automatismo su ogni paziente — la posizione più esplicita finora
+contro l'indicazione universale che segue, dopo quella più cauta del consensus APKASS del 23
+agosto e della meta-analisi di RCT del 24 agosto.
+
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
 **Verificata sul full text di STABILITY 2.** Il protocollo prescrive: banderella di
@@ -550,6 +575,16 @@ RM (18,6%-43% dei LCA acuti) spesso si risolvono dopo la ricostruzione e che
 gli studi comparativi a breve termine non mostrano differenze consistenti di
 lassità o funzione — rafforza lo sfondo anatomico, non distingue il costrutto
 onlay dal profondo con graffa.
+
+**Nuovo il 14 settembre 2026.** Il consenso Delphi che aggiorna anche la T1a (Hohmann, Imhoff,
+Perry et al., *Arthroscopy*, 40 esperti) raggiunge consenso molto forte su un dettaglio di
+costrutto: la fissazione femorale del rinforzo laterale va posizionata posteriore e prossimale
+all'epicondilo laterale per la funzione biomeccanica ottimale — resistere alla rotazione
+tibiale interna senza sovravincolare il ginocchio. È un dato coerente con l'anatomia su cui
+poggia anche la sua fissazione onlay, ma il consenso non distingue esplicitamente le famiglie
+di costrutto (onlay corticale vs inlay profondo con graffa) descritte dalla tassonomia di
+Gkekas del 29 agosto: non chiude la tensione, aggiunge però un secondo standard di
+posizionamento condiviso da un ampio panel di esperti, dopo l'anatomia delle fibre di Kaplan.
 
 ### T2b — L'estrusione, non il timing né il grado condrale *(riformulata 2026-08-01, sostituisce T2)*
 
