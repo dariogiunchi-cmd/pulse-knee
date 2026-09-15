@@ -7,11 +7,17 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 14 settembre 2026.*
+*Ultimo aggiornamento: 15 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-15 | Knee Surgery, Sports Traumatology, Arthroscopy | Coorte di registro nazionale svizzero (Swiss Implant Registry), 121.692 protesi totali di ginocchio, rischio procedura-specifico di revisione per infezione dopo chirurgia omolaterale precedente | 10.1002/ksa.70599 | protesi totale, infezione, registro | aperto — 🟢 PICK del giorno; qualunque intervento precedente OR 1,33 per revisione totale, OR 1,22 per infezione; per tipo: chirurgia per infezione pregressa OR 3,30, osteotomia tibiale OR 2,12, sinovectomia OR 2,18, osteosintesi tibiale OR 1,71, LCA OR 1,44; oltre due interventi precedenti OR 2,01; dati amministrativi, nessun dettaglio su tecnica/innesto delle procedure precedenti
+2026-09-15 | Frontiers in Public Health | Revisione sistematica e meta-analisi di 30 studi (RCT e non randomizzati) sull'allenamento neuromuscolare per la prevenzione degli infortuni al ginocchio nello sport | 10.3389/fpubh.2026.1822715 | prevenzione, allenamento neuromuscolare, meta-analisi | aperto — 🟢 riduzione significativa del rischio (effect estimate 0,670; IC 95% 0,547-0,820), protettivo sopra e sotto i 18 anni senza differenza significativa; programmi multicomponente (0,643) e standardizzati (0,592) superiori ai generici; analisi su dose/componenti dichiarate esplorative
+2026-09-15 | Knee Surgery, Sports Traumatology, Arthroscopy | Coorte retrospettiva comparativa within-patient, 69 pazienti, prontezza psicologica e consapevolezza articolare a lungo termine dopo ricostruzione isolata del LCA con hamstring | 10.1002/ksa.70604 | lca, rientro allo sport, criterio psicologico | aperto — 🟢 FJS-12 più basso nel ginocchio operato vs controlaterale sano (81,2±6,4 vs 90,1±5,0; p<0,001); ACL-RSI predittore indipendente del FJS-12 (β=0,833; p<0,001) e mediatore fra instabilità rotazionale residua e consapevolezza articolare; solo innesto hamstring, nessuna tenodesi laterale; alimenta T3
+2026-09-15 | Medicine and Science in Sports and Exercise | Studio caso-controllo biomeccanico, 22 pazienti dopo ACLR unilaterale vs 16 controlli, sinergie muscolari durante atterraggio ad alto rischio | 10.1249/MSS.0000000000004147 | lca, biomeccanica, rientro allo sport | aperto — 🟢 assenza di una sinergia di stabilizzazione sul piano frontale (gluteo medio/peroneo lungo) nel ginocchio operato durante l'impatto; peso pre-atterraggio eccessivo sul quadricipite; nessun valore di significatività riportato per i singoli confronti, innesto non specificato; alimenta T3
+2026-09-15 | Journal of ISAKOS | Studio biomeccanico controllato su modello porcino, 28 menischi mediali, confronto di 4 costrutti di riparazione della radice meniscale posteriore (doppio-cinch/Mason-Allen modificato × placca corticale/ancora knotless) | 10.1016/j.jisako.2026.101219 | menisco, root, biomeccanica | aperto — 🟢 nessuna differenza significativa fra i 4 costrutti su rigidità, carico di snervamento, carico massimo o ultimo (p 0,11-0,35); cedimento sempre all'interfaccia menisco-sutura; studio muto (n=7/gruppo, tempo zero); nessuna fissazione testata è la tecnica transtibiale pull-out
 
 2026-09-14 | Arthroscopy | Consenso Delphi in tre round (40 esperti internazionali) su indicazioni, biomeccanica e tecnica del rinforzo laterale extra-articolare (ALLR/LEAP) nella ricostruzione del LCA | 10.1002/arj.70532 | let, consenso, indicazione | aperto — 🟠 PICK del giorno; consenso unanime per pivot shift alto e revisione, forte per iperlassità e sport ad alto rischio; disaccordo esplicito sull'uso di routine in tutti i pazienti operati di LCA; fissazione femorale raccomandata posteriore e prossimale all'epicondilo laterale; livello V, nessun dato di paziente; alimenta T1a e T1b
 2026-09-14 | Arthroscopy | Studio caso-controllo propensity-matched, Mayo Clinic, 50+50 ginocchia, nuova distanza RM (PT-LTR) per l'instabilità femoro-rotulea | 10.1002/arj.70545 | mpfl, instabilità rotulea, imaging | aperto — 🟢 PT-LTR più specifico del TT-TG (AUC 0,80; soglia ≥4,6mm: sensibilità 66%, specificità 92%); differenza media 7,0mm fra i gruppi (p<0,001); popolazione mista pediatrica/adulta, non ancora validato fuori Mayo Clinic
@@ -918,6 +924,26 @@ simmetria di forza.
 finalmente collegato la performance al test del salto a un esito duro, il reinfortunio — ma con un OR di
 1,05 (IC 95% 1,01-1,09), troppo debole per dirsi risolutiva: il tipo di studio che chiuderebbe la tensione
 comincia a esistere in questa forma, il segnale resta però ancora troppo fragile per chiuderla.
+
+**Nuovo il 15 settembre 2026, tre tasselli nello stesso giorno, dalla percezione soggettiva al comando
+muscolare.** Uno studio retrospettivo turco su 69 pazienti (Uslu, Ergişi et al., *KSSTA*) confronta, a
+quasi sei anni dalla ricostruzione isolata del LCA con hamstring, il ginocchio operato con il controlaterale
+sano: il Forgotten Joint Score-12 resta significativamente più basso nel ginocchio operato (81,2±6,4 contro
+90,1±5,0; p<0,001), e la prontezza psicologica (ACL-RSI) — non la sola stabilità clinica — ne è il
+predittore più forte (β=0,833; p<0,001), mediando anche la relazione fra instabilità rotazionale residua e
+mancata «dimenticanza» del ginocchio (IC bootstrap 95% da -11,06 a -5,29). Solo innesto hamstring,
+ricostruzione isolata senza tenodesi laterale: non trasferibile senza verifica alla tua combinazione. Uno
+studio caso-controllo biomeccanico cinese (Gong, Zhang, Ao et al., *Medicine and Science in Sports and
+Exercise*, 22 operati di LCA contro 16 controlli) analizza per la prima volta in questa tensione le sinergie
+muscolari, non solo la forza, durante un atterraggio ad alto rischio: il ginocchio operato mostra un peso
+pre-atterraggio eccessivo sul quadricipite e, soprattutto, l'assenza di una sinergia dedicata alla
+stabilizzazione sul piano frontale — il piano del valgo dinamico — presente invece nei controlli; l'abstract
+non riporta valori di significatività per i singoli confronti, solo la direzione dell'effetto, e l'innesto
+non è specificato. Una meta-analisi di 30 studi (Yao, Pan, Niu, *Frontiers in Public Health*) sull'allenamento
+neuromuscolare per la prevenzione degli infortuni al ginocchio (non specifica al reinfortunio dopo LCA)
+mostra che i programmi multicomponente e standardizzati riducono il rischio in modo più netto di quelli
+generici, a ogni età: un argomento indiretto per il tipo di allenamento da proporre nella fase di rientro,
+oltre alla sola misura della forza o del salto.
 
 **Nuovo il 12 settembre 2026, due tasselli sul criterio di rientro oltre la sola forza.** Uno studio
 prospettico su 127 atleti professionisti (Rahimi Khoygani, Esmaeili, *Sports Health*) con caso-controllo
