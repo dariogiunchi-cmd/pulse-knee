@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-14T09:52:58Z",
+ "generato": "2026-09-15T08:57:19Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -89,7 +89,7 @@
      },
      {
       "recalling_firm": "DEPUY (IRELAND)",
-      "product_description": "Depuy Synthes, ATTUNE Revision Hinge Knee Hinge Housing Components with the below product descriptions and Part Codes.\n\n1. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN B; Part Number: 151730010. \n\n2. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN C; Part Number: 151730012. \n\n3. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN D; Part Number: 151730014. \n\n4. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN E; Part Number: 151730016. \n\n5. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN F; Part Number: 151730018. \n\n6. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN G; Part Number: 151730020. \n\n7. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN H; Part Number: 151730022. \n\n8. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN I; Part Number: 151730024. \n\n9. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN J; Part Number: 151730026. \n\n10. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN K; Part Number: 151730028. \n\n11. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN L; Part Number: 151730030. \n\n12. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN M; Part Number: 151730032. \n\n13. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN N; Part Number: 151730034. \n\n14. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN P; Part Number: 151730038. \n\n15. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN Q; Part Number: 151730040. \n\n16. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN R; Part Number: 151730042. \n\n17. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN S; Part Number: 151730044. \n\n18. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN T; Part Number: 151730046. \n\n19. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN U; Part Number: 151730048. \n\n20. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN V; Part Number: 151730050. \n\n21. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN W; Part Number: 151730052. \n\n22. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN X; Part Number: 151730036.",
+      "product_description": "Depuy Synthes, ATTUNE Revision Hinge Knee Hinge Housing Components with the below product descriptions and Part Codes.\r\n\r\n1. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN B; Part Number: 151730010. \r\n\r\n2. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN C; Part Number: 151730012. \r\n\r\n3. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN D; Part Number: 151730014. \r\n\r\n4. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN E; Part Number: 151730016. \r\n\r\n5. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN F; Part Number: 151730018. \r\n\r\n6. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN G; Part Number: 151730020. \r\n\r\n7. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN H; Part Number: 151730022. \r\n\r\n8. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN I; Part Number: 151730024. \r\n\r\n9. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN J; Part Number: 151730026. \r\n\r\n10. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN K; Part Number: 151730028. \r\n\r\n11. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN L; Part Number: 151730030. \r\n\r\n12. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN M; Part Number: 151730032. \r\n\r\n13. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN N; Part Number: 151730034. \r\n\r\n14. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN P; Part Number: 151730038. \r\n\r\n15. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN Q; Part Number: 151730040. \r\n\r\n16. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN R; Part Number: 151730042. \r\n\r\n17. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN S; Part Number: 151730044. \r\n\r\n18. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN T; Part Number: 151730046. \r\n\r\n19. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN U; Part Number: 151730048. \r\n\r\n20. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN V; Part Number: 151730050. \r\n\r\n21. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN W; Part Number: 151730052. \r\n\r\n22. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN X; Part Number: 151730036.",
       "reason_for_recall": "The external sterile packaging was found adhered to the internal sterile packaging, potentially compromising sterility.",
       "root_cause_description": "Under Investigation by firm",
       "event_date_initiated": "2026-05-19",
@@ -98,7 +98,7 @@
      },
      {
       "recalling_firm": "DEPUY (IRELAND)",
-      "product_description": "Depuy Synthes, ATTUNE Revision Hinge Knee Hinge Insert Components with the below product descriptions and Part Codes.\n\n1. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 10mm B; Part Number: 151730410. \n\n2. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 12mm B; Part Number: 151730412. \n\n3. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 14mm B; Part Number: 151730414. \n\n4. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 16mm B; Part Number: 151730416. \n\n5. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 18mm B; Part Number: 151730418. \n\n6. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 20mm B; Part Number: 151730420. \n\n7. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 22mm B; Part Number: 151730422. \n\n8. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 24mm B; Part Number: 151730424. \n\n9. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 26mm B; Part Number: 151730426. \n\n10. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 8mm B; Part Number: 151730408. \n\n11. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 10mm C; Part Number: 151730510. \n\n12. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 12mm C; Part Number: 151730512. \n\n13. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 14mm C; Part Number: 151730514. \n\n14. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 16mm C; Part Number: 151730516. \n\n15. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 18mm C; Part Number: 151730518. \n\n16. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 20mm C; Part Number: 151730520. \n\n17. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 22mm C; Part Number: 151730522. \n\n18. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 24mm C; Part Number: 151730524. \n\n19. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 26mm C; Part Number: 151730526. \n\n20. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 8mm C; Part Number: 151730508. \n\n21. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 10mm E; Part Number: 151730710. \n\n22. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 12mm E; Part Number: 151730712. \n\n23. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 14mm E; Part Number: 151730714. \n\n24. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 16mm E; Part Number: 151730716. \n\n25. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 18mm E; Part Number: 151730718. \n\n26. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 20mm E; Part Number: 151730720. \n\n27. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 22mm E; Part Number: 151730722. \n\n28. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 24mm E; Part Number: 151730724. \n\n29. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 26mm E; Part Number: 151730726. \n\n30. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 8mm E; Part Number: 151730708. \n\n31. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 10mm W; Part Number: 151730810. \n\n32. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 12mm W; Part Number: 151730812. \n\n33. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 14mm W; Part Number: 151730814. \n\n34. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 16mm W; Part Number: 151730816. \n\n35. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 18mm W; Part Number: 151730818. \n\n36. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 20mm W; Part Number: 151730820. \n\n37. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 22mm W; Part Number: 151730822. \n\n38. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 8mm F; Part Number: 151730808. \n\n39. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 24mm W; Part Number: 151730824. \n\n40. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 26mm W; Part Number: 151730826.",
+      "product_description": "Depuy Synthes, ATTUNE Revision Hinge Knee Hinge Insert Components with the below product descriptions and Part Codes.\r\n\r\n1. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 10mm B; Part Number: 151730410. \r\n\r\n2. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 12mm B; Part Number: 151730412. \r\n\r\n3. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 14mm B; Part Number: 151730414. \r\n\r\n4. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 16mm B; Part Number: 151730416. \r\n\r\n5. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 18mm B; Part Number: 151730418. \r\n\r\n6. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 20mm B; Part Number: 151730420. \r\n\r\n7. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 22mm B; Part Number: 151730422. \r\n\r\n8. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 24mm B; Part Number: 151730424. \r\n\r\n9. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 26mm B; Part Number: 151730426. \r\n\r\n10. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 8mm B; Part Number: 151730408. \r\n\r\n11. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 10mm C; Part Number: 151730510. \r\n\r\n12. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 12mm C; Part Number: 151730512. \r\n\r\n13. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 14mm C; Part Number: 151730514. \r\n\r\n14. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 16mm C; Part Number: 151730516. \r\n\r\n15. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 18mm C; Part Number: 151730518. \r\n\r\n16. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 20mm C; Part Number: 151730520. \r\n\r\n17. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 22mm C; Part Number: 151730522. \r\n\r\n18. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 24mm C; Part Number: 151730524. \r\n\r\n19. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 26mm C; Part Number: 151730526. \r\n\r\n20. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 8mm C; Part Number: 151730508. \r\n\r\n21. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 10mm E; Part Number: 151730710. \r\n\r\n22. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 12mm E; Part Number: 151730712. \r\n\r\n23. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 14mm E; Part Number: 151730714. \r\n\r\n24. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 16mm E; Part Number: 151730716. \r\n\r\n25. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 18mm E; Part Number: 151730718. \r\n\r\n26. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 20mm E; Part Number: 151730720. \r\n\r\n27. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 22mm E; Part Number: 151730722. \r\n\r\n28. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 24mm E; Part Number: 151730724. \r\n\r\n29. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 26mm E; Part Number: 151730726. \r\n\r\n30. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 8mm E; Part Number: 151730708. \r\n\r\n31. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 10mm W; Part Number: 151730810. \r\n\r\n32. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 12mm W; Part Number: 151730812. \r\n\r\n33. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 14mm W; Part Number: 151730814. \r\n\r\n34. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 16mm W; Part Number: 151730816. \r\n\r\n35. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 18mm W; Part Number: 151730818. \r\n\r\n36. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 20mm W; Part Number: 151730820. \r\n\r\n37. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 22mm W; Part Number: 151730822. \r\n\r\n38. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 8mm F; Part Number: 151730808. \r\n\r\n39. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 24mm W; Part Number: 151730824. \r\n\r\n40. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 26mm W; Part Number: 151730826.",
       "reason_for_recall": "The external sterile packaging was found adhered to the internal sterile packaging, potentially compromising sterility.",
       "root_cause_description": "Under Investigation by firm",
       "event_date_initiated": "2026-05-19",
@@ -287,6 +287,24 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Abrysvo®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-abrysvo-1.html",
+      "data": "Tue, 15 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Tranylcypromine Rivopharm®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-tranylcypromine-rivopharm.html",
+      "data": "Tue, 15 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Rapporto sintetico di omologazione – Ogsiveo®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ogsiveo.html",
+      "data": "Tue, 15 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Nuova linea guida «Bonnes pratiques suisses de matériovigilance dans le domaine du diagnostic in vitro» (BPMV-DIV)",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/dispositivi-medici/notificare-eventi---fsca/utilizzatori.html",
       "data": "Thu, 10 Sep 2026 00:00:00 +0000"
@@ -355,24 +373,6 @@
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Rapporto sintetico di omologazione – Sérum autologue USZ, collirio®",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-usz.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Sérum autologue HOJG, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-hojg.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Sérum autologue ICH, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-ich.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog Blutspende Zürich, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-blutspende-zh.html",
       "data": "Wed, 02 Sep 2026 00:00:00 +0000"
      },
      {
@@ -594,17 +594,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07753707",
-       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 111,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07580157",
        "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
        "stato": "ENROLLING_BY_INVITATION",
@@ -613,6 +602,17 @@
         "NA"
        ],
        "n": 20,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07753707",
+       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 111,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 243,
+    "doi_citati_controllati": 248,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -807,12 +807,6 @@
       "titolo": "Blueprint 4.3.1 hype video",
       "link": "https://www.youtube.com/watch?v=DikvTq65mbs",
       "data": "2026-09-03"
-     },
-     {
-      "canale": "Stryker",
-      "titolo": "Stryker's SportSuite Vision: A new chapter in digital surgery starts now",
-      "link": "https://www.youtube.com/watch?v=lTfZ-Z9b9LU",
-      "data": "2026-09-01"
      }
     ]
    }
@@ -820,6 +814,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42735046",
+     "titolo": "Knee Surgery, Sports Traumatology, Arthroscopy — Coorte di registro nazionale svizzero (Swiss Implant Registry",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42732043",
      "titolo": "Arthroscopy — Consenso Delphi in tre round (40 esperti internazionali) su indicazioni, biomeccanica, tecnica e",
@@ -1172,6 +1172,34 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Multimodal mean and variability gait features for machine- learning discrimination between healthy middle-aged and older adults and participants with knee osteo",
+      "dove": "archivio preprint",
+      "data": "2026-09-14",
+      "doi": "10.21203/rs.3.rs-10537844/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10537844/v1"
+     },
+     {
+      "titolo": "Mid- to Long-Term Outcomes of Unicompartmental Knee Arthroplasty: The Significant Impact of Patient Age on Revision Rates",
+      "dove": "archivio preprint",
+      "data": "2026-09-14",
+      "doi": "10.21203/rs.3.rs-10586372/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10586372/v1"
+     },
+     {
+      "titolo": "Development of a model for evaluating knee extensor muscle strength using ultrasound-derived indicators and physical characteristics: An exploratory study",
+      "dove": "archivio preprint",
+      "data": "2026-09-14",
+      "doi": "10.21203/rs.3.rs-10919998/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10919998/v1"
+     },
+     {
+      "titolo": "A Comparative Study on Early Clinical Outcomes of Navigation-Assisted Functional Alignment Total Knee Arthroplasty versus Mechanical Alignment Total Knee Arthro",
+      "dove": "archivio preprint",
+      "data": "2026-09-14",
+      "doi": "10.21203/rs.3.rs-9935639/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-9935639/v1"
+     },
+     {
       "titolo": "Preoperative clinical, functional, and psychological factors associated with kinesiophobia at 6 months after anterior cruciate ligament reconstruction: a prospe",
       "dove": "archivio preprint",
       "data": "2026-09-11",
@@ -1317,34 +1345,6 @@
       "data": "2026-09-02",
       "doi": "10.64898/2026.08.31.26361793",
       "url": "https://doi.org/10.64898/2026.08.31.26361793"
-     },
-     {
-      "titolo": "Single-Incision Dual Intramedullary Fixation of Floating Knee Injuries: A Retrospective Case Series",
-      "dove": "archivio preprint",
-      "data": "2026-09-02",
-      "doi": "10.21203/rs.3.rs-10408463/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10408463/v1"
-     },
-     {
-      "titolo": "Structural Cost Dynamics and Determinants of Total Hospitalization Expenditure in ACL Reconstruction and Total Knee Arthroplasty Under Fee-for-Service Care",
-      "dove": "archivio preprint",
-      "data": "2026-09-02",
-      "doi": "10.21203/rs.3.rs-10885360/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10885360/v1"
-     },
-     {
-      "titolo": "Characteristics and influencing factors of health literacy in elderly patients with knee osteoarthritis: a latent profile analysis",
-      "dove": "archivio preprint",
-      "data": "2026-09-02",
-      "doi": "10.21203/rs.3.rs-10504746/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10504746/v1"
-     },
-     {
-      "titolo": "Six-Degree-of-Freedom Patellofemoral Kinematic Coupling Characteristics in Recurrent Patellar Dislocation: A Dual-Plane Fluoroscopic Analysis",
-      "dove": "archivio preprint",
-      "data": "2026-09-02",
-      "doi": "10.21203/rs.3.rs-10654738/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10654738/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
