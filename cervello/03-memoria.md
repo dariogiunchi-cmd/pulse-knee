@@ -7,11 +7,18 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 15 settembre 2026.*
+*Ultimo aggiornamento: 16 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-16 | The Journal of Arthroplasty | Coorte retrospettiva monocentrica, 623 pazienti (124 impianto su misura, 499 di serie), protesi monocompartimentale mediale, follow-up minimo 2 anni | 10.1016/j.arth.2026.09.008 | protesi monocompartimentale, impianto su misura, revisione | aperto — 🟢 PICK del giorno; PROM comparabili fra impianto custom e off-the-shelf (tutti p>0,05), ma revisione più frequente con il custom (8,9% contro 3,8%; p=0,010), soprattutto per mobilizzazione asettica (4,8% contro 0,8%; p=0,006); monocentrico, non randomizzato, marchio dell'impianto custom non specificato
+2026-09-16 | Arthroscopy | Revisione sistematica PRISMA, 41 studi (2116 pazienti: 1590 ACI/MACI, 302 microfrattura, 224 AMCI/minced cartilage) | 10.1002/arj.70511 | cartilagine, minced cartilage, revisione sistematica | aperto — 🟢 esiti clinici comparabili fra le tre tecniche; fallimento più basso con AMCI (0% contro 1,32% MFX e 3,21% ACI/MACI); follow-up medio AMCI 29,3 mesi, meno della metà di ACI/MFX (58,6-61,1); nessun pooling statistico; alimenta T4
+2026-09-16 | Journal of Clinical Medicine | Revisione sistematica PRISMA/SWiM, 47 studi (oltre 3400 pazienti), protocollo PROSPERO, tipo di innesto e performance al salto verticale dopo ricostruzione del LCA | 10.3390/jcm15176588 | lca, innesto quadricipitale, rientro allo sport | aperto — 🟢 altezza di salto con tendine quadricipitale comparabile a hamstring; BPTB più asimmetrico nella fase precoce (pareggia a 9-12 mesi); deficit di altezza/potenza fino a 5 anni con ogni innesto; 89,4% studi non randomizzati, GRADE basso/molto basso; alimenta T3
+2026-09-16 | Arthroscopy | Coorte retrospettiva, 441 pazienti, follow-up 5 anni (UPMC Sports Surgery Clinic, Dublino), lesione condrale associata e rientro allo sport dopo ricostruzione del LCA | 10.1002/arj.70567 | lca, cartilagine, rientro allo sport | aperto — 🟢 gravità/sede della lesione condrale non predicono RTP (83% globale) né performance; lesione mediale alto grado + danno meniscale + età predicono IKDC peggiore (p<0,05); alimenta T3
+2026-09-16 | Journal of ISAKOS | Studio biomeccanico controllato, modello porcino, 10 ginocchia, forza di trazione sulla sutura di una lesione radiale della radice meniscale prima/dopo osteotomia tibiale alta | 10.1016/j.jisako.2026.101216 | menisco, osteotomia, biomeccanica | aperto — 🟢 HTO riduce la forza di trazione a 90° di flessione di 6,16N (mediale) e 6,71N (laterale) (p≤0,003), nessuna differenza a 30-60°; modello animale, non la tecnica pull-out transtibiale; alimenta T2b
+2026-09-16 | Journal of Clinical Medicine | Coorte retrospettiva osservazionale, 203 ginocchia, follow-up medio 70 mesi, ansia/depressione preoperatoria e progressione artrosica del compartimento laterale dopo protesi monocompartimentale mediale | 10.3390/jcm15176568 | protesi monocompartimentale, fattori psicologici, artrosi | aperto — 🟢 progressione artrosica laterale nel 60,0% con ansia/depressione preoperatoria (HADS≥8) contro 20,2% senza; associazione confermata in multivariabile; gruppo a rischio piccolo (26/203), risultati esplorativi dichiarati dagli autori
 
 2026-09-15 | Knee Surgery, Sports Traumatology, Arthroscopy | Coorte di registro nazionale svizzero (Swiss Implant Registry), 121.692 protesi totali di ginocchio, rischio procedura-specifico di revisione per infezione dopo chirurgia omolaterale precedente | 10.1002/ksa.70599 | protesi totale, infezione, registro | aperto — 🟢 PICK del giorno; qualunque intervento precedente OR 1,33 per revisione totale, OR 1,22 per infezione; per tipo: chirurgia per infezione pregressa OR 3,30, osteotomia tibiale OR 2,12, sinovectomia OR 2,18, osteosintesi tibiale OR 1,71, LCA OR 1,44; oltre due interventi precedenti OR 2,01; dati amministrativi, nessun dettaglio su tecnica/innesto delle procedure precedenti
 2026-09-15 | Frontiers in Public Health | Revisione sistematica e meta-analisi di 30 studi (RCT e non randomizzati) sull'allenamento neuromuscolare per la prevenzione degli infortuni al ginocchio nello sport | 10.3389/fpubh.2026.1822715 | prevenzione, allenamento neuromuscolare, meta-analisi | aperto — 🟢 riduzione significativa del rischio (effect estimate 0,670; IC 95% 0,547-0,820), protettivo sopra e sotto i 18 anni senza differenza significativa; programmi multicomponente (0,643) e standardizzati (0,592) superiori ai generici; analisi su dose/componenti dichiarate esplorative
@@ -751,6 +758,18 @@ fallimento**, e nemmeno lo sono età, BMI o metodo di fissazione: un angolo dive
 sulla progressione cartilaginea dopo un intervento riuscito. Serie piccola, monocentrica, livello IV: un primo
 profilo di rischio preoperatorio, non una dimostrazione.
 
+**Nuovo il 16 settembre 2026, un meccanismo mai misurato prima.** Uno studio biomeccanico
+controllato su 10 ginocchia porcine (Hamaoka, Kamiya, Shiwaku, Horita et al., stesso gruppo di
+Sapporo del 7 settembre, *J ISAKOS*) misura per la prima volta la forza di trazione al sito di
+sutura di una lesione radiale del segmento posteriore del menisco mediale, prima e dopo
+un'osteotomia tibiale alta sullo stesso ginocchio: a 90° di flessione l'HTO riduce la forza di
+trazione di 6,16N in direzione mediale e 6,71N in direzione laterale (entrambi p≤0,003), senza
+differenza a 30° o 60°. Non è la tua tecnica esatta (sutura orizzontale su lesione radiale, non
+pull-out transtibiale della radice), ma è il primo dato meccanicistico che quantifica perché
+combinare le due procedure protegga la riparazione: conferma indirettamente la soglia di varo
+≥5° già raccomandata dal 22 agosto, e aggiunge un argomento per limitare la flessione profonda
+sotto carico nella riabilitazione precoce, anche quando l'osteotomia è già stata eseguita.
+
 ### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22)*
 
 La simmetria di forza è il criterio clinico più usato; la meta-regressione che lo
@@ -959,6 +978,20 @@ l'idea che il criterio di rientro basato sulla sola LSI sia insufficiente, aggiu
 psicologica misurabile sia una traiettoria di recupero della forza collegata alla biomeccanica del
 cammino — il fattore di rischio per l'artrosi post-traumatica che questa tensione segue dal 30 agosto.
 
+**Nuovo il 16 settembre 2026, due tasselli aggiuntivi.** Una revisione sistematica PRISMA/SWiM di 47 studi
+(oltre 3400 pazienti, protocollo PROSPERO; Kasicki et al., *J Clin Med*) sul tipo di innesto e la performance
+al salto verticale dopo ricostruzione del LCA trova che l'altezza di salto con tendine quadricipitale non
+differisce da hamstring, con un singolo studio di 26 pazienti che segnala un profilo di valgo dinamico più
+favorevole con il tuo innesto; il decorso resta bifasico in generale — simmetria che si normalizza intorno
+ai 2 anni, ma altezza e potenza ridotte fino a 5 anni — e nessuno dei 47 studi lega la performance di salto
+a un esito duro come il reinfortunio (certezza GRADE bassa o molto bassa ovunque, 89,4% degli studi non
+randomizzati). Una coorte retrospettiva di 441 pazienti a 5 anni (McAleese, Devitt et al., UPMC Sports
+Surgery Clinic Dublino, *Arthroscopy*) mostra che gravità e sede della lesione condrale associata non
+predicono né il tasso né il tempo di rientro allo sport, ma la combinazione di lesione condrale mediale di
+alto grado con danno meniscale associato, insieme all'età più avanzata, predice esiti riferiti dal paziente
+peggiori a 5 anni — un profilo di rischio diverso dalla sola forza o dal solo salto che questa tensione già
+discute.
+
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
 **La versione iniziale era un falso allarme, verificato sul full text.** I metodi
@@ -983,6 +1016,20 @@ regolazione della qualità non è raccomandato.
 
 **Cosa la chiude:** una caratterizzazione della vitalità e della resa cellulare
 specifica della filiera AutoCart, oggi inesistente.
+
+**Nuovo il 16 settembre 2026, il primo confronto sistematico su esiti clinici.** Una
+revisione sistematica PRISMA di 41 studi (2116 pazienti: 224 con impianto di
+cartilagine tritata autologa, AMCI; Caplan, Sardesai, Cole et al., Midwest
+Orthopaedics at Rush, *Arthroscopy*) mostra esiti clinici sovrapponibili fra AMCI,
+microfrattura e ACI/MACI, con fallimento numericamente più basso per l'AMCI (0%
+contro 1,32% e 3,21%) — ma il follow-up medio dell'AMCI (29,3 mesi) è meno della
+metà di quello delle altre due tecniche (58,6-61,1 mesi), e nessun pooling
+statistico è stato eseguito per l'eterogeneità. Non risponde alla domanda
+specifica di questa tensione — nessuno studio caratterizza la filiera AutoCart né
+la vitalità cellulare del tessuto triturato — ma è la prima volta che il minced
+cartilage in generale viene messo a confronto sistematico, su esiti clinici, con
+le due tecniche di riferimento: un segnale favorevole, da confermare a lungo
+termine.
 
 ---
 

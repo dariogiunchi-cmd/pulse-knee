@@ -54,8 +54,17 @@ curiosità dal mondo orientale. Criterio SUGGQ: corrispondenza tecnica con la su
 pratica, mai la fama. NB: eutils.ncbi.nlm.nih.gov è BLOCCATO dal proxy del sandbox —
 niente ripiego via curl.
 
-FONTI ESTERNE — dal 18 agosto il raccoglitore notturno (GitHub Actions, 4.15 UTC)
-deposita **fonti/raccolta.json**: leggilo SEMPRE, subito dopo il cervello. Contiene:
+FONTI ESTERNE — dal 18 agosto il raccoglitore notturno (GitHub Actions, cron 1:40/2:15
+UTC dal 16 settembre — prima 3:40/4:15, spostato perché il cron eseguiva sistematicamente
+con ore di ritardo, ben oltre le 5:00) deposita **fonti/raccolta.json**: leggilo SEMPRE,
+subito dopo il cervello. Se `generato` è del pomeriggio/sera del giorno PRIMA (non della
+notte appena trascorsa), non è detto che il raccoglitore sia «non passato»: il cron di
+GitHub Actions è «best effort» e può eseguire in ritardo rispetto all'orario dichiarato.
+Guarda `esito` di ogni fonte, non solo l'orario: se tutte dicono «ok» e i dati hanno meno
+di 24-30 ore, usali come i più recenti disponibili e dillo con questa cornice in NONVERIF
+— non ripetere meccanicamente «raccoglitore non passato» se i dati sono in realtà validi,
+solo non letteralmente notturni (successo il 16 settembre 2026, dopo dodici mattine di
+falso allarme). Il file contiene:
 richiami openFDA/Swissmedic (un richiamo che tocca un'azienda sorvegliata o un
 dispositivo che lui usa = scheda 🔴, SEMPRE in cima — è la categoria mai coperta
 finora); i trial delle tensioni da ClinicalTrials.gov (se uno cambia stato o deposita
