@@ -1,6 +1,6 @@
 # PULSE — la raccolta notturna delle fonti esterne.
 #
-# Il sandbox delle sessioni Claude non esce su internet; questi runner sì. Alle 4.15
+# Il sandbox delle sessioni Claude non esce su internet; questi runner sì. Alle 1.40/2.15
 # UTC lo script interroga le API ufficiali (openFDA, ClinicalTrials.gov, Crossref,
 # feed YouTube, Swissmedic) e deposita fonti/raccolta.json nel repository: la sessione
 # del briefing delle 5.00 lo trova come file locale. Nessuno scraping di piattaforme
@@ -17,8 +17,18 @@ on:
     # 19 agosto la corsa unica delle 4:15 non è partita (segnalato dal briefing).
     # Due appuntamenti distinti dimezzano la probabilità del buco; lo script
     # committa solo se qualcosa è cambiato, quindi la doppia corsa non sporca.
-    - cron: '40 3 * * *'
-    - cron: '15 4 * * *'
+    #
+    # Spostati alle 1:40/2:15 UTC il 16 settembre 2026: con gli orari originali
+    # (3:40/4:15) la corsa arrivava sistematicamente a fine corsa fra le 8:58 e le
+    # 9:35 UTC — ore DOPO la sessione delle 5:00, non prima — per il ritardo «best
+    # effort» del cron di GitHub Actions sotto carico. Il sintomo: dodici mattine
+    # di fila con NONVERIF che dichiarava il raccoglitore «non passato», quando in
+    # realtà aveva funzionato, solo troppo tardi per la finestra utile. Anticipare
+    # l'orario dichiarato non elimina il ritardo della piattaforma, ma allarga il
+    # margine prima delle 5:00: se il sintomo si ripresenta, è di nuovo un limite
+    # noto di GitHub Actions da segnalare, non un guasto da rincorrere ogni giorno.
+    - cron: '40 1 * * *'
+    - cron: '15 2 * * *'
   workflow_dispatch:
     inputs:
       scopri:
