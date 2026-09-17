@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-17T06:38:10Z",
+ "generato": "2026-09-17T07:40:39Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -769,8 +769,77 @@
    }
   },
   "youtube": {
-   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Wide-Awake Endoscopic Carpal Tunnel Release Using the NanoScopic™ Release Disposable System",
+      "link": "https://www.youtube.com/watch?v=0v649CNsl74",
+      "data": "2026-09-16"
+     },
+     {
+      "canale": "DePuy Synthes",
+      "titolo": "How VELYS Robotics Helped Cassandra Get Back in the Classroom",
+      "link": "https://www.youtube.com/watch?v=GJwmH0C1QIU",
+      "data": "2026-09-16"
+     },
+     {
+      "canale": "DePuy Synthes",
+      "titolo": "VELYS Robotic-Assisted Knee Replacement Patient Education",
+      "link": "https://www.youtube.com/watch?v=sclPFS69LeU",
+      "data": "2026-09-16"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Dr. Robert Anderson Surgeon Testimonial",
+      "link": "https://www.youtube.com/watch?v=xh8EbRxYz-Q",
+      "data": "2026-09-15"
+     },
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "EVOS◊ SMALL Ankle Surgical Video",
+      "link": "https://www.youtube.com/watch?v=bLr9NFBlzdE",
+      "data": "2026-09-15"
+     },
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "MAVERICK◊ Unilateral External Fixation System | Construct Animation",
+      "link": "https://www.youtube.com/watch?v=ww4nCPmqAPw",
+      "data": "2026-09-15"
+     },
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "Comparing the TRIGEN◊  INTERTAN◊ Intertrochanteric Antegrade Nail to a Single Screw Device",
+      "link": "https://www.youtube.com/watch?v=I1auQ-neTKw",
+      "data": "2026-09-15"
+     },
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "MAVERICK ◊  Unilateral External Fixation System | Tibial Plateau Fracture Stabilization",
+      "link": "https://www.youtube.com/watch?v=uOgoP_gllRs",
+      "data": "2026-09-10"
+     },
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "Trochanteric Fracture Repair with TRIGEN◊  INTERTAN◊  Intramedullary Nail System",
+      "link": "https://www.youtube.com/watch?v=6UBNE2G63z4",
+      "data": "2026-09-10"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Subscapularis Tears Presentation Series (Part 2): Outcomes",
+      "link": "https://www.youtube.com/watch?v=j5ez6qsqEuA",
+      "data": "2026-09-09"
+     },
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "Intertrochanteric Hip Fracture Fixation with INTERTAN◊  Nail: Tips and Tricks",
+      "link": "https://www.youtube.com/watch?v=gH6pupTQ0l8",
+      "data": "2026-09-07"
+     }
+    ]
+   }
   },
   "destino": {
    "esito": "ok",
