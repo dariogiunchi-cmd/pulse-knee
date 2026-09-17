@@ -7,11 +7,18 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 16 settembre 2026.*
+*Ultimo aggiornamento: 17 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-17 | Knee Surgery, Sports Traumatology, Arthroscopy | Consenso formale internazionale (106 esperti, ESSKA/EKA insieme a EHS e APAS, metodologia Delphi-simile in due round), 63 raccomandazioni su percorsi fast-track/ERAS per protesi di anca e ginocchio | 10.1002/ksa.70594 | protesi totale, ERAS, consenso | aperto — 🔴 PICK del giorno, nuovo consenso che tocca la pratica di protesi totale; 39/63 raccomandazioni gradate A o B, 24 C o D, accordo medio 7,7-8,9/9; 24 raccomandazioni restano opinione di esperti, nessuna specifica per singola piattaforma robotica
+2026-09-17 | International Orthopaedics | Coorte retrospettiva monocentrica (Istituto Ortopedico Rizzoli, Bologna), 168 protesi monocompartimentali mediali, follow-up medio 119,7±29,3 mesi | 10.1007/s00264-026-07029-1 | protesi monocompartimentale, sopravvivenza, chirurgia pregressa | aperto — 🟢 sopravvivenza 100% a 5 anni, 96% a 7, 86% a 10, 78% a 15; nessuna comorbidità associata alla revisione; chirurgia ipsilaterale pregressa associata a KSS più basso (73,6±14,1 contro 80,7±12,5; p=0,036) e trend non significativo a più complicanze (28,6% contro 8,1%; OR 4,56; p=0,054) — richiama da un angolo diverso il registro svizzero del 15 settembre
+2026-09-17 | Knee Surgery, Sports Traumatology, Arthroscopy | Coorte retrospettiva monocentrica (Marsiglia), 319 pazienti operati di ricostruzione primaria del LCA con autoinnesto di semitendinoso | 10.1002/ksa.70597 | lca, slope tibiale, let | aperto — 🟢 slope tibiale mediale più ripido predittore indipendente di maggiore traslazione tibiale anteriore residua (r=0,2-0,3; p<0,01); LET associato a traslazione residua più bassa a 2 anni (6,1 contro 7,3mm; p=0,009); solo autoinnesto di semitendinoso, costrutto del LET non descritto; alimenta T1a
+2026-09-17 | Arthroscopy | Coorte retrospettiva monocentrica (Hospital for Special Surgery, New York, tecnica DiFelice), 281 riparazioni primarie del LCA, 234 con follow-up 2-5 anni | 10.1002/arj.70554 | lca, riparazione primaria, difelice | aperto — 🟢 fallimento 10% (24/234); integrità della guaina sinoviale <50% (OR 3,31; p=0,049) ed età più giovane (+6%/anno; p<0,001) predittori indipendenti; tecnica che Dario non esegue, riferimento per il colloquio col paziente
+2026-09-17 | Cartilage | Studio radiografico retrospettivo (Utrecht), 20 pazienti candidati a osteotomia tibiale alta valgizzante | 10.1177/19476035261489417 | osteotomia, allineamento, metodologia | aperto — 🟢 misurare dal punto di carico laterale (62,5%) invece che dal centro del ginocchio sposta tutti i parametri angolari (tutti p<0,001) e riclassifica la deformità in un terzo dei femori (4→10/20); nessun esito clinico, solo un effetto di misura
+2026-09-17 | The American Journal of Sports Medicine | Studio caso-controllo (Basilea/Stanford), 90 ginocchia in 3 coorti pediatriche appaiate per età/sesso, età media 12,5 anni (8-16) | 10.1177/03635465261479922 | lca, osteocondrite dissecante, anatomia | aperto — ⚪ nell'OCD del condilo femorale laterale il fascio postero-laterale del LCA si inserisce più in basso e più orizzontale (p<0,001 su entrambe le misure); LCA integro, popolazione in parte sotto i 14 anni, fuori dalla pratica diretta
 
 2026-09-16 | The Journal of Arthroplasty | Coorte retrospettiva monocentrica, 623 pazienti (124 impianto su misura, 499 di serie), protesi monocompartimentale mediale, follow-up minimo 2 anni | 10.1016/j.arth.2026.09.008 | protesi monocompartimentale, impianto su misura, revisione | aperto — 🟢 PICK del giorno; PROM comparabili fra impianto custom e off-the-shelf (tutti p>0,05), ma revisione più frequente con il custom (8,9% contro 3,8%; p=0,010), soprattutto per mobilizzazione asettica (4,8% contro 0,8%; p=0,006); monocentrico, non randomizzato, marchio dell'impianto custom non specificato
 2026-09-16 | Arthroscopy | Revisione sistematica PRISMA, 41 studi (2116 pazienti: 1590 ACI/MACI, 302 microfrattura, 224 AMCI/minced cartilage) | 10.1002/arj.70511 | cartilagine, minced cartilage, revisione sistematica | aperto — 🟢 esiti clinici comparabili fra le tre tecniche; fallimento più basso con AMCI (0% contro 1,32% MFX e 3,21% ACI/MACI); follow-up medio AMCI 29,3 mesi, meno della metà di ACI/MFX (58,6-61,1); nessun pooling statistico; alimenta T4
@@ -526,6 +533,20 @@ il rinforzo laterale va riservato a pivot shift alto, revisione, iperlassità e 
 rischio, non eseguito come automatismo su ogni paziente — la posizione più esplicita finora
 contro l'indicazione universale che segue, dopo quella più cauta del consensus APKASS del 23
 agosto e della meta-analisi di RCT del 24 agosto.
+
+**Nuovo il 17 settembre 2026, il rinforzo laterale entra dal lato della stabilità radiografica,
+non del fallimento.** Una coorte retrospettiva monocentrica di Marsiglia (Paul, Jacquet,
+Ollivier et al., *KSSTA*, 319 pazienti operati di ricostruzione primaria del LCA con
+autoinnesto di semitendinoso) mostra che uno slope tibiale mediale più ripido predice, in
+analisi multivariabile, un aumento progressivo — seppure debole (r=0,2-0,3) — della
+traslazione tibiale anteriore residua nel tempo rispetto al ginocchio sano, e che l'aggiunta
+di un rinforzo laterale extra-articolare si associa a una traslazione residua più bassa a 2
+anni (6,1 contro 7,3mm; p=0,009). Solo autoinnesto di semitendinoso — non tocca il tendine
+quadricipitale/retto femorale che usi tu — e il costrutto del rinforzo laterale (tecnica,
+fissazione onlay o profonda) non è descritto nell'abstract: non chiude né la domanda
+sull'innesto rigido né quella sul costrutto (T1b), ma aggiunge un ulteriore segnale, questa
+volta radiografico più che clinico, coerente con la tua indicazione universale al rinforzo
+laterale.
 
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
