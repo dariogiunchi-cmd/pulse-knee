@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-15T09:29:10Z",
+ "generato": "2026-09-17T06:38:10Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Preavviso relativo alla release del portale di Swissmedic del 23 settembre 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/kpa/aktuell-kpa/info-kpa-portalrelease-09-2026.html",
+      "data": "Thu, 17 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Rapporto sintetico di omologazione – Abrysvo®",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-abrysvo-1.html",
       "data": "Tue, 15 Sep 2026 00:00:00 +0000"
@@ -367,12 +373,6 @@
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Rapporto sintetico di omologazione – Serum autolog Insel, collirio®",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-insel.html",
-      "data": "Wed, 02 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Sérum autologue USZ, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autologe-usz.html",
       "data": "Wed, 02 Sep 2026 00:00:00 +0000"
      },
      {
@@ -586,22 +586,11 @@
        "nct": "NCT07657195",
        "titolo": "Dry Needling and Quad Strength After Anterior Cruciate Ligament Reconstruction",
        "stato": "NOT_YET_RECRUITING",
-       "aggiornato": "2026-08-21",
+       "aggiornato": "2026-09-16",
        "fase": [
         "NA"
        ],
        "n": 40,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
-       "nct": "NCT07580157",
-       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
-       "stato": "ENROLLING_BY_INVITATION",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 20,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -613,6 +602,17 @@
         "NA"
        ],
        "n": 111,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07580157",
+       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 20,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 248,
+    "doi_citati_controllati": 260,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -769,51 +769,24 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "MAVERICK ◊  Unilateral External Fixation System | Tibial Plateau Fracture Stabilization",
-      "link": "https://www.youtube.com/watch?v=uOgoP_gllRs",
-      "data": "2026-09-10"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Trochanteric Fracture Repair with TRIGEN◊  INTERTAN◊  Intramedullary Nail System",
-      "link": "https://www.youtube.com/watch?v=6UBNE2G63z4",
-      "data": "2026-09-10"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Subscapularis Tears Presentation Series (Part 2): Outcomes",
-      "link": "https://www.youtube.com/watch?v=j5ez6qsqEuA",
-      "data": "2026-09-09"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Intertrochanteric Hip Fracture Fixation with INTERTAN◊  Nail: Tips and Tricks",
-      "link": "https://www.youtube.com/watch?v=gH6pupTQ0l8",
-      "data": "2026-09-07"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Tibial Nail System: Features and Benefits",
-      "link": "https://www.youtube.com/watch?v=gxxtNT_Uhps",
-      "data": "2026-09-03"
-     },
-     {
-      "canale": "Stryker",
-      "titolo": "Blueprint 4.3.1 hype video",
-      "link": "https://www.youtube.com/watch?v=DikvTq65mbs",
-      "data": "2026-09-03"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42748364",
+     "titolo": "Knee Surgery, Sports Traumatology, Arthroscopy — Consenso formale internazionale (106 esperti, ESSKA/EKA insie",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42735864",
+     "titolo": "The Journal of Arthroplasty — Coorte retrospettiva monocentrica, 623 pazienti (124 impianto su misura, 499 di ",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42735046",
      "titolo": "Knee Surgery, Sports Traumatology, Arthroscopy — Coorte di registro nazionale svizzero (Swiss Implant Registry",
@@ -1014,6 +987,26 @@
     "finestra_giorni": 60,
     "voci": [
      {
+      "pmid": "42749319",
+      "titolo": "[Expert consensus on clinical pathway for high-conformity total knee arthroplasty through a minimally invasive surgical approach].",
+      "rivista": "Zhongguo xiu fu chong jian wai ke za zhi = Zhongguo xiufu chongjian waike zazhi = Chinese journal of reparative and reconstructive surgery",
+      "data": "2026 Sep 15",
+      "tipi": [
+       "Journal Article",
+       "Consensus Statement",
+       "English Abstract"
+      ]
+     },
+     {
+      "pmid": "42748364",
+      "titolo": "Formal consensus on fast-track hip and knee arthroplasty: ESSKA/EKA, EHS and APAS recommendations for optimised recovery pathways in joint replacement surgeries.",
+      "rivista": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+      "data": "2026 Sep 16",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
       "pmid": "42732043",
       "titolo": "Delphi Expert Consensus Identifies Revision Surgery, High-Grade Pivot Shift, and High-Risk Athletes in Pivoting Sports as Indications for Anterolateral Ligament Reconstruction or L",
       "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
@@ -1172,6 +1165,34 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Influence of Anaesthesia Technique on Patient-Reported Outcomes After Total Knee Arthroplasty: A Prospective Randomized Comparison of Complete Peripheral Nerve ",
+      "dove": "archivio preprint",
+      "data": "2026-09-16",
+      "doi": "10.21203/rs.3.rs-10529465/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10529465/v1"
+     },
+     {
+      "titolo": "Three-Month Clinical Outcomes and Exploratory Gait Changes After Intra- Articular Platelet-Rich Plasma for Mild-to-Moderate Knee Osteoarthritis: A Prospective S",
+      "dove": "archivio preprint",
+      "data": "2026-09-16",
+      "doi": "10.21203/rs.3.rs-10853879/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10853879/v1"
+     },
+     {
+      "titolo": "Toward the use of simulated environments to evaluate sEMG-informed knee-angle prediction: RMSE predicts simulated instability only above a threshold error",
+      "dove": "archivio preprint",
+      "data": "2026-09-16",
+      "doi": "10.21203/rs.3.rs-10843698/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10843698/v1"
+     },
+     {
+      "titolo": "Individualized Alignment Restoration and Forgotten Joint Status After Medial Unicompartmental Knee Arthroplasty: Development and Internal Validation of a Clinic",
+      "dove": "archivio preprint",
+      "data": "2026-09-15",
+      "doi": "10.21203/rs.3.rs-10786125/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10786125/v1"
+     },
+     {
       "titolo": "Multimodal mean and variability gait features for machine- learning discrimination between healthy middle-aged and older adults and participants with knee osteo",
       "dove": "archivio preprint",
       "data": "2026-09-14",
@@ -1317,34 +1338,6 @@
       "data": "2026-09-04",
       "doi": "10.21203/rs.3.rs-10741317/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10741317/v1"
-     },
-     {
-      "titolo": "Evaluation of EQ-5D-5L and WOMAC Instruments in Assessing Health-Related Quality of Life Among Women Over 40 with Knee Osteoarthritis and Obesity",
-      "dove": "archivio preprint",
-      "data": "2026-09-04",
-      "doi": "10.21203/rs.3.rs-10798137/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10798137/v1"
-     },
-     {
-      "titolo": "Residual Hybrid Quantum Vision Transformers for Edge-Compatible Knee Osteoarthritis Grading",
-      "dove": "archivio preprint",
-      "data": "2026-09-04",
-      "doi": "10.21203/rs.3.rs-8977180/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-8977180/v1"
-     },
-     {
-      "titolo": "Dual GIP/GLP-1 Receptor Agonist Versus Selective GLP-1 Receptor Agonist in Patients Undergoing Primary Total Knee or Hip Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-09-04",
-      "doi": "10.21203/rs.3.rs-10744245/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10744245/v1"
-     },
-     {
-      "titolo": "The effect of high-dose glucocorticoids on opioid consumption in the first 24 hours after elective hip and knee arthroplasty: A natural experiment study of 47,3",
-      "dove": "archivio preprint",
-      "data": "2026-09-02",
-      "doi": "10.64898/2026.08.31.26361793",
-      "url": "https://doi.org/10.64898/2026.08.31.26361793"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
