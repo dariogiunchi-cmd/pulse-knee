@@ -1,11 +1,29 @@
 {
- "generato": "2026-09-17T07:40:39Z",
+ "generato": "2026-09-18T06:38:08Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
    "esito": "ok",
    "dati": {
     "richiami": [
+     {
+      "recalling_firm": "Howmedica Osteonics Corp.",
+      "product_description": "ALL POLY CONSTRAINED INSERT 54MM\t\r\n\t69-2854\r\n\t\r\nNRG KNEE CR\t\r\n\t82-2-0512\t\r\n\t82-2-0518\r\n\t82-2-0912\r\n\r\nNRG KNEE P/S\t\r\n\t82-3-0318\r\n\t\r\nSCORPIO + MOBILE BEARING PCS\t\r\n\t78-5-0910\r\n\r\nSCORPIO C-DOME PATELLA\t\r\n\t73-2710\r\n\t\t\r\nSCORPIO INSET PATELLA\t\r\n\t73-2610\r\n\t\r\n\t\t\r\nSCORPIO M-DOME PATELLA\t\r\n\t73-0110\r\n\t73-0710\r\n\t73-0910\r\n\t\r\nSCORPIO RECESSED PATELLA 26MM\t\r\n\t3044-0026\r\n\r\nSCORPIO TS TIB INS\t\r\n\t72-4-9114\r\n\t\t\r\nSCORPIO TS TIBIAL INSERT\t\r\n\t72-4-0324\r\n\t\t\r\nSCORPIOFLEX TOTAL KNEE CR\t\r\n\t72-16-0512\r\n\t72-16-0518\r\n\t72-16-0912\r\n\t72-16-1112\r\n\t\r\nSERIES II TIBIAL BEAR INSERT NO 11 15MM\t\r\n\t3052-1115\r\n\t\r\nUHR BIPOLAR 26X52mm\t\r\n\tUH1-52-26\r\n\t\r\nUHR BIPOLAR 26X58mm\t\r\n\tUH1-58-26\r\n\t\r\nUHR BIPOLAR 28X48mm\t\r\n\tUH1-48-28\r\n\r\nUHR BIPOLAR 28X52mm\t\r\n\tUH1-52-28\t\r\n\t\r\nUHR BIPOLAR 28X55mm\t\r\n\tUH1-55-28\t\r\n\t\r\nUHR BIPOLAR 32X49MM\t\r\n\tUH1-49-32\t\r\n\t\r\nUHR BIPOLAR 32X51MM\t\r\n\tUH1-51-32\t\r\n\t\r\nUHR BIPOLAR 32X52MM\t\r\n\tUH1-52-32\t\t\r\n\t\r\nUHR BIPOLAR 32X54MM\t\r\n\tUH1-54-32\r\n\t\r\nOrthopaedic implant components manufactured from UHMWPE (polyethylene)",
+      "reason_for_recall": "Affected devices were manufactured with Ultra High Molecular Weight Polyethylene (UHMWPE) raw material aged in excess of five years. Product has the potential for elevated levels of oxidation, which may result in increased wear, leading to hazards such as excessive wear debris, material fragments, fractured device, or disassociated device. Potential harms include revision surgery, pain, and inflammation.",
+      "root_cause_description": "Process change control",
+      "event_date_initiated": "2026-07-30",
+      "recall_status": "Open, Classified",
+      "sorvegliata": false
+     },
+     {
+      "recalling_firm": "Howmedica Osteonics Corp.",
+      "product_description": "ABG I ACETABULAR INSERT  HOODED 28mm ID X 48mm\t\r\n\tC-M079-2-801\r\n\t\r\n\t\r\nARC2F ACETABULAR INSERT 48/50/52mm OD x 28mm ID\t\r\n\tC-M071-6-700\r\n\t\r\n\t\r\nARC2F ACETABULAR INSERT 50mm OD x 28mm ID 10DEGREE HOOD\t\r\n\tC-M071-8-400\r\n\t\r\n\t\r\nBEARING AND AXLE BUSHING ASSY STANDARD ELBOW\t\r\n\tC-M110-1-201\r\n\t\r\n\t\r\nBUSHING AND BEARING USE C-MM100253-00\t\r\n\tC-MM100253-02\r\n\t\r\n\t\r\nDURACON TIB INSERT LG 12MM MED 14MM LAT\t\r\n\tC-M066-3-000\r\n\t\r\n\t\r\nEXETER WINGLESS CENTRALISER FOR C-M082-7-302\t\r\n\tC-M082-7-303\r\n\t\r\n\t\r\nEXETER WINGLESS CENTRALIZER XSM\t\r\n\tC-M107-5-301\r\n\t\r\n\t\r\nGMRS EXTRA SM ALL-POLY TIBIA SIZE 11mm\t\r\n\tC-MM100616-02\r\n\t\r\n\t\r\nGMRS EXTRA SM ALL-POLY TIBIA SIZE 16mm\t\r\n\tC-MM100616-03\r\n\t\r\n\t\r\nGMRS EXTRA SM ALL-POLY TIBIA SIZE 8mm\t\r\n\tC-MM100616-01\r\n\t\r\n\t\r\nGMRS SML POLY TIBIA 11MM CASE 100520\t\r\n\tC-MM100520-03\r\n\t\r\n\t\r\nGMRS SML POLY TIBIA 16MM CASE 100520\t\r\n\tC-MM100520-04\r\n\t\r\n\t\r\nGMRS SML POLY TIBIA 8MM CASE 100520\t\r\n\tC-MM100520-02\r\n\t\r\n\t\r\nGMRS SML TIBIA  11MM WITH CASE 100411\t\r\n\tC-MM100411-03\r\n\t\r\n\t\r\nGMRS SML TIBIA  14MM WITH CASE 100411\t\r\n\tC-MM100411-04\r\n\t\r\n\t\r\nGMRS SML TIBIA  8MM WITH CASE 100411\t\r\n\tC-MM100411-02\r\n\t\r\n\t\r\nGMRS TIB INSRT SML 10MM WITH CASE 100507\t\r\n\tC-MM100507-04\r\n\t\r\n\t\r\nGMRS TIB INSRT SML 16MM WITH CASE 100507\t\r\n\tC-MM100507-06\r\n\t\r\n\t\r\nKALI TIBIAL INSERT LARGE RIGHT 8mm\t\r\n\tC-M071-6-601\r\n\t\r\n\t\r\nKRH REV TIB INS 16mm THK .655 DIA STEM\t\r\n\tC-M113-5-603\r\n\t\r\n\t\r\nMRH KNEE TIBIAL INSERT FOR THIN POST\t\r\n\tC-M067-3-103\r\n\t\r\n\t\r\nMRS RADIAL BUSHING FORITH C-M107-7-800\t\r\n\tC-M107-7-801\r\n\t\r\n\t\r\nSELF-PRESSURIZING GLENOID SIZE 9\t\r\n\tC-M064-4-300\r\n\t\r\n\t\r\nTRIATHLON NO. 9 TIBIAL INSERT 11MM\t\r\n\tC-M067-5-003\r\n\t\r\n\t\r\nTRIATHLON NO. 9 TIBIAL INSERT 9MM\t\r\n\tC-M067-5-002\r\n\t\r\n\t\r\nTRIDENT ALL POLY CUP 44 X 66MM\t\r\n\tC-M066-0-901\r\n\t\r\n\t\r\nTRIDENT CONSTRAINED ACETABULAR INSERT SIZE A X 22mm ID  UH1\t\r\n\tC-M104-2-002\r\n\t\r\n\t\r\nTRIDENT CONSTRAINED ACETABULAR INSERT SIZE B X 22mm ID  UH1\t\r\n\tC-M104-2-003\r\n\t\r\n\t\r\nUHR BIPOLAR 22X38MM\t\r\n\tUH1-38-22\r\n\r\nUHR BIPOLAR 22X40MM\t\r\n\tUH1-40-22\r\n\r\nUHR BIPOLAR 22X41MM\t\r\n\tUH1-41-22\r\n\r\nUHR BIPOLAR 22X42MM\t\r\n\tUH1-42-22\r\n\r\nUHR BIPOLAR 22X43MM\t\r\n\tUH1-43-22\r\n\r\nUHR BIPOLAR 22X45MM\t\r\n\tUH1-45-22\r\n\r\nUHR BIPOLAR 26X41mm\t\r\n\tUH1-41-26\r\n\t\r\nUHR BIPOLAR 26X42mm\t\r\n\tUH1-42-26\r\n\t\r\nUHR BIPOLAR 26X43mm\t\r\n\tUH1-43-26\r\n\t\r\nUHR BIPOLAR 26X44mm\t\r\n\tUH1-44-26\r\n\t\r\nUHR BIPOLAR 26X45mm\t\r\n\tUH1-45-26\r\n\t\r\nUHR BIPOLAR 26X46mm\t\r\n\tUH1-46-26\r\n\r\nUHR BIPOLAR 26X47mm\t\r\n\tUH1-47-26\r\n\t\r\nUHR BIPOLAR 26X48mm\t\r\n\tUH1-48-26\r\n\t\r\nUHR BIPOLAR 28X42mm\t\r\n\tUH1-42-28\r\n\t\r\nUHR BIPOLAR 28X44mm\t\r\n\tUH1-44-28\r\n\t\r\nUHR BIPOLAR 28X45mm\t\r\n\tUH1-45-28\r\n\r\nUHR BIPOLAR 28X46mm\t\r\n\tUH1-46-28\r\n\r\nUHR BIPOLAR 28X47mm\t\r\n\tUH1-47-28\r\n\r\nUHR BIPOLAR 28X48mm\t\r\n\tUH1-48-28\r\n\r\n\t\r\nOrthopaedic implant components manufactured from UHMWPE (polyethylene)",
+      "reason_for_recall": "Affected devices were manufactured with Ultra High Molecular Weight Polyethylene (UHMWPE) raw material aged in excess of five years. Product has the potential for elevated levels of oxidation, which may result in increased wear, leading to hazards such as excessive wear debris, material fragments, fractured device, or disassociated device. Potential harms include revision surgery, pain, and inflammation.",
+      "root_cause_description": "Process change control",
+      "event_date_initiated": "2026-07-30",
+      "recall_status": "Open, Classified",
+      "sorvegliata": false
+     },
      {
       "recalling_firm": "Kico Knee Innovation Company",
       "product_description": "Brand Name: Kico Knee Innovation\nProduct Name: ARVIS SURGICAL NAVIGATION SYSTEM GEN 2\nModel/Catalog Number: IN-29200\nSoftware Version: ARVIS Hip and Knee Gap Balance Software v3.3.2 (IN-28200)\nARVIS Shoulder Software v2.0.3 (IN-23630)\nProduct Description: The ARVIS system is a computer-controlled navigation system intended to provide intra-operative measurements to the surgeon to aid in selection and positioning of orthopedic implant components. \n\n \n\nThe ARVIS Surgical Navigation System is indicated for assisting the surgeon in the positioning and alignment of implants relative to reference alignment axes and landmarks in stereotactic orthopedic surgery. The system aids the surgeon in making intraoperative measurements such as changes in leg length in Hip Arthroplasty. The system is compatible with straight acetabular impactors and with specific offset impactors, identified in the instructions for use, for which an adapter has been validated. Example orthopedic surgical procedures include but are not limited to:  \n\n\" Total Knee Arthroplasty  \n\n\" Unicompartmental Knee Arthroplasty: Tibial Transverse Resection  \n\n\" Hip Arthroplasty \n\n \n\nThe ARVIS\" head mounted display is for displaying augmented reality visualization and information to the user intraoperatively. The augmented/virtual displayed information should not be relied upon solely for absolute positional/alignment information and should always be used in conjunction with the displayed stereotaxic information.\nComponent: NA",
@@ -89,7 +107,7 @@
      },
      {
       "recalling_firm": "DEPUY (IRELAND)",
-      "product_description": "Depuy Synthes, ATTUNE Revision Hinge Knee Hinge Housing Components with the below product descriptions and Part Codes.\r\n\r\n1. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN B; Part Number: 151730010. \r\n\r\n2. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN C; Part Number: 151730012. \r\n\r\n3. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN D; Part Number: 151730014. \r\n\r\n4. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN E; Part Number: 151730016. \r\n\r\n5. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN F; Part Number: 151730018. \r\n\r\n6. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN G; Part Number: 151730020. \r\n\r\n7. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN H; Part Number: 151730022. \r\n\r\n8. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN I; Part Number: 151730024. \r\n\r\n9. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN J; Part Number: 151730026. \r\n\r\n10. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN K; Part Number: 151730028. \r\n\r\n11. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN L; Part Number: 151730030. \r\n\r\n12. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN M; Part Number: 151730032. \r\n\r\n13. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN N; Part Number: 151730034. \r\n\r\n14. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN P; Part Number: 151730038. \r\n\r\n15. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN Q; Part Number: 151730040. \r\n\r\n16. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN R; Part Number: 151730042. \r\n\r\n17. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN S; Part Number: 151730044. \r\n\r\n18. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN T; Part Number: 151730046. \r\n\r\n19. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN U; Part Number: 151730048. \r\n\r\n20. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN V; Part Number: 151730050. \r\n\r\n21. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN W; Part Number: 151730052. \r\n\r\n22. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN X; Part Number: 151730036.",
+      "product_description": "Depuy Synthes, ATTUNE Revision Hinge Knee Hinge Housing Components with the below product descriptions and Part Codes.\n\n1. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN B; Part Number: 151730010. \n\n2. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN C; Part Number: 151730012. \n\n3. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN D; Part Number: 151730014. \n\n4. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN E; Part Number: 151730016. \n\n5. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN F; Part Number: 151730018. \n\n6. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN G; Part Number: 151730020. \n\n7. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN H; Part Number: 151730022. \n\n8. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN I; Part Number: 151730024. \n\n9. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN J; Part Number: 151730026. \n\n10. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN K; Part Number: 151730028. \n\n11. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN L; Part Number: 151730030. \n\n12. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN M; Part Number: 151730032. \n\n13. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN N; Part Number: 151730034. \n\n14. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN P; Part Number: 151730038. \n\n15. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN Q; Part Number: 151730040. \n\n16. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN R; Part Number: 151730042. \n\n17. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN S; Part Number: 151730044. \n\n18. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN T; Part Number: 151730046. \n\n19. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN U; Part Number: 151730048. \n\n20. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN V; Part Number: 151730050. \n\n21. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN W; Part Number: 151730052. \n\n22. ATTUNE KNEE SYSTEM REVISION HINGE HOUSING COMPONENT AND CROSSPIN X; Part Number: 151730036.",
       "reason_for_recall": "The external sterile packaging was found adhered to the internal sterile packaging, potentially compromising sterility.",
       "root_cause_description": "Under Investigation by firm",
       "event_date_initiated": "2026-05-19",
@@ -98,7 +116,7 @@
      },
      {
       "recalling_firm": "DEPUY (IRELAND)",
-      "product_description": "Depuy Synthes, ATTUNE Revision Hinge Knee Hinge Insert Components with the below product descriptions and Part Codes.\r\n\r\n1. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 10mm B; Part Number: 151730410. \r\n\r\n2. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 12mm B; Part Number: 151730412. \r\n\r\n3. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 14mm B; Part Number: 151730414. \r\n\r\n4. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 16mm B; Part Number: 151730416. \r\n\r\n5. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 18mm B; Part Number: 151730418. \r\n\r\n6. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 20mm B; Part Number: 151730420. \r\n\r\n7. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 22mm B; Part Number: 151730422. \r\n\r\n8. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 24mm B; Part Number: 151730424. \r\n\r\n9. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 26mm B; Part Number: 151730426. \r\n\r\n10. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 8mm B; Part Number: 151730408. \r\n\r\n11. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 10mm C; Part Number: 151730510. \r\n\r\n12. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 12mm C; Part Number: 151730512. \r\n\r\n13. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 14mm C; Part Number: 151730514. \r\n\r\n14. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 16mm C; Part Number: 151730516. \r\n\r\n15. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 18mm C; Part Number: 151730518. \r\n\r\n16. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 20mm C; Part Number: 151730520. \r\n\r\n17. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 22mm C; Part Number: 151730522. \r\n\r\n18. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 24mm C; Part Number: 151730524. \r\n\r\n19. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 26mm C; Part Number: 151730526. \r\n\r\n20. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 8mm C; Part Number: 151730508. \r\n\r\n21. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 10mm E; Part Number: 151730710. \r\n\r\n22. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 12mm E; Part Number: 151730712. \r\n\r\n23. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 14mm E; Part Number: 151730714. \r\n\r\n24. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 16mm E; Part Number: 151730716. \r\n\r\n25. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 18mm E; Part Number: 151730718. \r\n\r\n26. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 20mm E; Part Number: 151730720. \r\n\r\n27. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 22mm E; Part Number: 151730722. \r\n\r\n28. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 24mm E; Part Number: 151730724. \r\n\r\n29. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 26mm E; Part Number: 151730726. \r\n\r\n30. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 8mm E; Part Number: 151730708. \r\n\r\n31. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 10mm W; Part Number: 151730810. \r\n\r\n32. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 12mm W; Part Number: 151730812. \r\n\r\n33. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 14mm W; Part Number: 151730814. \r\n\r\n34. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 16mm W; Part Number: 151730816. \r\n\r\n35. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 18mm W; Part Number: 151730818. \r\n\r\n36. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 20mm W; Part Number: 151730820. \r\n\r\n37. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 22mm W; Part Number: 151730822. \r\n\r\n38. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 8mm F; Part Number: 151730808. \r\n\r\n39. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 24mm W; Part Number: 151730824. \r\n\r\n40. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 26mm W; Part Number: 151730826.",
+      "product_description": "Depuy Synthes, ATTUNE Revision Hinge Knee Hinge Insert Components with the below product descriptions and Part Codes.\n\n1. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 10mm B; Part Number: 151730410. \n\n2. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 12mm B; Part Number: 151730412. \n\n3. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 14mm B; Part Number: 151730414. \n\n4. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 16mm B; Part Number: 151730416. \n\n5. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 18mm B; Part Number: 151730418. \n\n6. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 20mm B; Part Number: 151730420. \n\n7. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 22mm B; Part Number: 151730422. \n\n8. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 24mm B; Part Number: 151730424. \n\n9. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 26mm B; Part Number: 151730426. \n\n10. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 8mm B; Part Number: 151730408. \n\n11. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 10mm C; Part Number: 151730510. \n\n12. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 12mm C; Part Number: 151730512. \n\n13. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 14mm C; Part Number: 151730514. \n\n14. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 16mm C; Part Number: 151730516. \n\n15. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 18mm C; Part Number: 151730518. \n\n16. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 20mm C; Part Number: 151730520. \n\n17. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 22mm C; Part Number: 151730522. \n\n18. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 24mm C; Part Number: 151730524. \n\n19. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 26mm C; Part Number: 151730526. \n\n20. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 8mm C; Part Number: 151730508. \n\n21. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 10mm E; Part Number: 151730710. \n\n22. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 12mm E; Part Number: 151730712. \n\n23. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 14mm E; Part Number: 151730714. \n\n24. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 16mm E; Part Number: 151730716. \n\n25. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 18mm E; Part Number: 151730718. \n\n26. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 20mm E; Part Number: 151730720. \n\n27. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 22mm E; Part Number: 151730722. \n\n28. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 24mm E; Part Number: 151730724. \n\n29. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 26mm E; Part Number: 151730726. \n\n30. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 8mm E; Part Number: 151730708. \n\n31. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 10mm W; Part Number: 151730810. \n\n32. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 12mm W; Part Number: 151730812. \n\n33. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 14mm W; Part Number: 151730814. \n\n34. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 16mm W; Part Number: 151730816. \n\n35. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 18mm W; Part Number: 151730818. \n\n36. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 20mm W; Part Number: 151730820. \n\n37. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 22mm W; Part Number: 151730822. \n\n38. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 8mm F; Part Number: 151730808. \n\n39. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 24mm W; Part Number: 151730824. \n\n40. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 26mm W; Part Number: 151730826.",
       "reason_for_recall": "The external sterile packaging was found adhered to the internal sterile packaging, potentially compromising sterility.",
       "root_cause_description": "Under Investigation by firm",
       "event_date_initiated": "2026-05-19",
@@ -120,24 +138,6 @@
       "reason_for_recall": "During an internal review, Medline identified representative samples did not meet applicable performance specifications. Identified issues include irregularities in catheter surface finish, instances where the catheter connector detached prematurely from the catheter funnel, and limited cases where the catheter outer diameter did not meet specification.",
       "root_cause_description": "Nonconforming Material/Component",
       "event_date_initiated": "2026-05-04",
-      "recall_status": "Open, Classified",
-      "sorvegliata": false
-     },
-     {
-      "recalling_firm": "Medline Industries, LP",
-      "product_description": "Medline convenience kits:\n\nACD\nDYNJ904999J\n\nACDF\nDYNJ907336B\nDYNJ910821A\n\nACDF PACK\nDYNJ81098C\n\nACL\nDYNJ911996\n\nACL ACCESSORY PACK\nDYNJ86584B\n\nACL- LF\nDYNJ905281B\n\nACL PACK\nDYNJ67271A\n\nALIF\nDYNJ904848L\n\nANTERIOR CERVICAL\nDYNJ901355J\n\nARTHROSCOPY\nDYNJ908193B\n\nARTHROSCOPY PACK-LF\nDYNJ42963M\nDYNJ52268B\n\nARTHROSCOPY SHOULDER\nDYNJ908684A\n\nBACK CDS-LF\nCDS983364G\n\nBACK PACK\nDYNJT4339\n\nCDH SPINE PACK\nDYNJ908828D\n\nCERVICAL CDS\nDYNJ903477J\n\nCMC ORTHO BACK TRAY\nSYNJ10272B\n\nCRANIOTOMY\nDYNJ911853\n\nCRANIOTOMY ROOSEVELT PACK\nDYNJ58358F\n\nCUSTOM HAND PACK-LF\nDYNJ0537135V\n\nCUSTOM SPINAL PACK\nDYNJT7544\n\nDISCECTOMY PACK\nDYNJ86770\n\nDJ ORTHO SPINE\nDYNJ48980M\n\nEXTREMITY PACK-LF\nDYNJT4161\n\nFOOT PACK\nDYNJ53179D\n\nGENERAL ORTHO-ACNW\nDYNJ84891\n\nGILMORE SHOULDER SCOPE PACK\nDYNJ58002\n\nGV LUMBAR LAMINECTOMY PK\nDYNJ46938L\n\nHAND PACK\nDYNJ63113B\nDYNJ69662A\nDYNJT5855\n\nHAND-LF\nDYNJ903263B\n\nKIT LAMINECTOMY\nDYNJ908806C\n\nKNEE ARTHROSCOPY\nDYNJ902056C\nDYNJ904846I\n\nKNEE ARTHROSCOPY-LF\nDYNJ905871F\n\nKNEE SCOPE\nDYNJ906986G\n\nLAMINECTOMY\nDYNJ904847K\nDYNJ909505D\n\nLAMINECTOMY CDS\nCDS983115K\n\nLAMINECTOMY CERVICAL DISC-LF\nDYNJ905286G\n\nLAMINECTOMY NEURO PACK\nDYNJ58356F\n\nLAMINECTOMY SPINE\nDYNJ904139L\n\nLOWER EXTREMITY PACK\nDYNJ63114C\n\nLUMBAR CERVICAL PACK-LF\nDYNJ0101088G\n\nLUMBAR LAMI\nDYNJ905020J\n\nLUMBAR LAMINECTOMY\nDYNJ53707\n\nLUMBAR LAMINECTOMY PACK\nDYNJT4386\n\nMAIN/LAMINECTOMY PACK-LF\nDYNJ0565499AN\n\nNJ SPINE SPECIALIST PACK\nDYNJ58706F\n\nOHOW SPINE-BACK PACK\nDYNJ910097A\n\nORTHO NECK CDS-LF\nCDS983134C\n\nORTHO PACK-LF\nDYNJ37202G\n\nORTHO SPINE\nDYNJ40221G\n\nOSC BEACH CHAIR SHOULDER-LF\nDYNJ905282C\n\nPACC PETRIE ACL ADD ON PACK-LF\nDYNJ58290D\n\nPACK,ARTHROSCOPY ASC\nDYNJ65484A\n\nPACK,POSTERIOR SPINAL FUSION\nDYNJ906892B\n\nPAD LATERAL SPINE\nDYNJ902158L\nDYNJ902158M\n\nPAD POSTERIOR SPINE\nDYNJ902142L\n\nPK-SPINE\nDYNJ58259A\n\nPODIATRY PACK\nDYNJ62288D\n\nPOST SPINE PACK\nDYNJ20509R\n\nPOSTERIOR SPINAL FUSION\nDYNJ903250B\n\nRFT ARTHROSCOPY PACK\nDYNJ43956C\n\nRFT SHOULDER PACK-NOBLE\nDYNJ36331D\n\nSA SHOULDER #2 BORDEN\nDYNJ56501A\n\nSHOULDER\nDYNJ900893M\nDYNJ904184I\n\nSHOULDER ARTHROSCOPY\nDYNJ904842G\n\nSHOULDER PACK\nDYNJ83483\n\nSHOULDER PACK-LF\nDYNJ42973N\n\nSHOULDER SCOPE PACK NTX\nDYNJ68399C\n\nSPINAL PACK\nDYNJ49692G\n\nSPINE\nDYNJ910451A\n\nSPINE PACK\nDYNJ20147O\nDYNJ84971\nDYNJ86044A\nDYNJ86308C\nDYNJ88917\nDYNJS3069\nDYNJT4163\nDYNJT8396\n\nST CHARLES TOTAL HIP\nDYNJ909593C\n\nTOTAL HIP\nDYNJ910906D\n\nTOTAL HIP PACK\nDYNJ64156B\n\nTOTAL JOINT\nDYNJ904186G\n\nTOTAL KNEE PACK\nDYNJ60967\nDYNJ61409A\n\nWMC ORTHO SPINE WMC-LF\nDYNJ902528M\n\nXLIF\nDYNJ910795B",
-      "reason_for_recall": "Kits contain recalled lot of Ferndale Laboratories MASTISOL Liquid Adhesive. Butyrate tubing may crack during actuation and render product unusable for application.",
-      "root_cause_description": "Process control",
-      "event_date_initiated": "2026-04-27",
-      "recall_status": "Open, Classified",
-      "sorvegliata": false
-     },
-     {
-      "recalling_firm": "Medline Industries, LP",
-      "product_description": "Medline convenience kits:\n\nACL PACK\nDYNJ64161C\n\nARTHROSCOPY PACK\nDYNJ47103D\nDYNJ67197G\nDYNJ85197A\nDYNJT4007\n\nBASIC ACCESS PACK-LF\nDYNJ36698B\n\nBASIC BACK TRAY\nDYNJ89037\n\nBASIC PEDI PACK-LF\nDYNJ0171446I\nDYNJ0171446J\n\nBASIC SPINE\nDYNJ910915A\n\nBREAST PACK\nDYNJ87587A\n\nBREAST PLASTIC PACK\nDYNJ84482C\n\nC SECTION\nDYNJ49172I\n\nCAROTID ENDARTERECTOMY PACK\nDYNJ48013L\n\nCENTRAL LINE PACK-LF\nDYNJ0220136S\n\nCERVICAL FUSION\nDYNJ908135B\n\nCERVICAL SPINE PACK\nDYNJ53044G\n\nC-SECTION\nDYNJ909099F\n\nDAVINCI PROSTATE PACK\nDYNJ61711C\n\nDEPAUL FOOT & ANKLE-LF\nDYNJ20010L\n\nDIEP PACK\nDYNJ64964J\n\nDYNJ43210K\nDYNJ61787F\nDYNJ87065\n\nEAR CUSTOM PACK\nDYNJ82564A\n\nENT FREE FLAP PACK SAFETY\nDYNJ54720D\n\nEP PACEMAKER SAFETY #1\nDYNJ54722F\n\nEPCH EXTREMITY PACK\nDYNJ83095B\n\nEXTREMITY PACK\nDYNJ32934F\n\nEXTREMITY PACK-LF\nDYNJ68935B\n\nFISTULA PACK\nDYNJ66502B\n\nGENDER AFFIRMING SURGERY\nDYNJ66252F\n\nGYN LAPAROSCOPY PACK AHSC\nDYNJT8381\n\nHAND PACK WATCHMAKER-LF\nDYNJ34580D\n\nHEAD & NECK PACK-LF\nDYNJ0282388T\nDYNJ88308\n\nHIP SCOPE\nDYNJ907120D\n\nKNEE ARTHRO PACK\nDYNJ58404F\n\nKNEE ARTHROSCOPY PACK\nDYNJ84740A\n\nLAMI OVERHEAD PACK\nDYNJ46531Q\n\nLAMINECTOMY NEURO MPH\nDYNJT5271\n\nLAMINECTOMY PACK\nDYNJ68785D\n\nLAP APPY PACK\nDYNJT6005\n\nLAP CHOLE PACK\nDYNJ82087A\n\nLEVY PACK\nDYNJ83939C\n\nMAJOR LAP VCH\nDYNJ39217P\n\nMAJOR NEURO PACK-LF\nDYNJ0578916AA\n\nMAJOR PACK\nDYNJ58528J\n\nMINOR GEN PACK\nDYNJ61661B\n\nMINOR LAPAROTOMY PACK-LF\nDYNJ0753436P\n\nMINOR PACK\nDYNJ54968B\n\nNEURO PACK\nDYNJ67628D\n\nNEURO SHUNT PACK-LF\nDYNJ0578815W\n\nOMFS PACK\nDYNJ54400C\n\nOPEN HEART PACK\nDYNJT5008\n\nOPEN HEART-LF\nDYNJ48260F\n\nOPEN LAPAROTOMY PACK\nDYNJ39247I\nDYNJ39247J\n\nPACEMAKER PACK\nDYNJ31461I\nDYNJ61411C\n\nPACK,ORTHO FLIP\nDYNJ65471B\n\nPED OPEN HEART PACK\nDYNJ45373G\n\nPLASTIC PACK\nDYNJ82495D\n\nPLASTICS PK - NO SYR\nDYNJ62433F\n\nPODIATRY PACK\nOP7809M\n\nPPE BUNDLE KIT\nDT13351A\n\nPROSTATE ROBOTIC PACK\nDYNJ84120C\n\nRADIAL ART LINE INSERTION\nARTNC234\n\nROBOTIC GENERAL WHH\nDYNJT5376\n\nROBOTIC PACK\nDYNJ47978G\n\nRR-SPINE PACK\nDYNJ62643B\n\nSHOULDER ARTH PACK\nDYNJ58410D\n\nSHOULDER ARTHROSCOPY PACK\nDYNJ54477C\nDYNJT8391\n\nSHOULDER PACK\nDYNJ61052B\nDYNJT3266\n\nSHOULDER PACK-LF\nDYNJ0122428K\nPHS656414I\n\nSPINE PACK\nDYNJ64949C\nDYNJ83649B\n\nSPINE SHOULDER PACK\nDYNJ47104D\n\nSTERILE ACCESS KIT\nDYNDA2664\n\nTOTAL KNEE PACK\nDYNJ84741B\n\nTUBAL PACK\nDYNJ68253F\n\nUNIVERSAL PACK\nDYNJ83246B\n\nVA TAMPA GENERAL ROBOTIC PACK\nDYNJT6993\n\nW.C. MINOR LAPAROTOMY PK-LF\nDYNJ0509186J\n\nZALE OTOLOGY CDS\nCDS983181G",
-      "reason_for_recall": "Kits contain recalled lot of Ferndale Laboratories MASTISOL Liquid Adhesive. Butyrate tubing may crack during actuation and render product unusable for application.",
-      "root_cause_description": "Process control",
-      "event_date_initiated": "2026-04-27",
       "recall_status": "Open, Classified",
       "sorvegliata": false
      }
@@ -299,14 +299,14 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Tranylcypromine Rivopharm®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-tranylcypromine-rivopharm.html",
+      "titolo": "Rapporto sintetico di omologazione – Ogsiveo®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ogsiveo.html",
       "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Ogsiveo®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ogsiveo.html",
+      "titolo": "Rapporto sintetico di omologazione – Tranylcypromine Rivopharm®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-tranylcypromine-rivopharm.html",
       "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
@@ -371,8 +371,8 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Serum autolog Insel, collirio®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-insel.html",
+      "titolo": "Rapporto sintetico di omologazione – Serum autolog Blutspende Zürich, collirio®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-serum-autolog-blutspende-zh.html",
       "data": "Wed, 02 Sep 2026 00:00:00 +0000"
      },
      {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 260,
+    "doi_citati_controllati": 266,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -769,81 +769,18 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Arthrex",
-      "titolo": "Wide-Awake Endoscopic Carpal Tunnel Release Using the NanoScopic™ Release Disposable System",
-      "link": "https://www.youtube.com/watch?v=0v649CNsl74",
-      "data": "2026-09-16"
-     },
-     {
-      "canale": "DePuy Synthes",
-      "titolo": "How VELYS Robotics Helped Cassandra Get Back in the Classroom",
-      "link": "https://www.youtube.com/watch?v=GJwmH0C1QIU",
-      "data": "2026-09-16"
-     },
-     {
-      "canale": "DePuy Synthes",
-      "titolo": "VELYS Robotic-Assisted Knee Replacement Patient Education",
-      "link": "https://www.youtube.com/watch?v=sclPFS69LeU",
-      "data": "2026-09-16"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Dr. Robert Anderson Surgeon Testimonial",
-      "link": "https://www.youtube.com/watch?v=xh8EbRxYz-Q",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "EVOS◊ SMALL Ankle Surgical Video",
-      "link": "https://www.youtube.com/watch?v=bLr9NFBlzdE",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "MAVERICK◊ Unilateral External Fixation System | Construct Animation",
-      "link": "https://www.youtube.com/watch?v=ww4nCPmqAPw",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Comparing the TRIGEN◊  INTERTAN◊ Intertrochanteric Antegrade Nail to a Single Screw Device",
-      "link": "https://www.youtube.com/watch?v=I1auQ-neTKw",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "MAVERICK ◊  Unilateral External Fixation System | Tibial Plateau Fracture Stabilization",
-      "link": "https://www.youtube.com/watch?v=uOgoP_gllRs",
-      "data": "2026-09-10"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Trochanteric Fracture Repair with TRIGEN◊  INTERTAN◊  Intramedullary Nail System",
-      "link": "https://www.youtube.com/watch?v=6UBNE2G63z4",
-      "data": "2026-09-10"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Subscapularis Tears Presentation Series (Part 2): Outcomes",
-      "link": "https://www.youtube.com/watch?v=j5ez6qsqEuA",
-      "data": "2026-09-09"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Intertrochanteric Hip Fracture Fixation with INTERTAN◊  Nail: Tips and Tricks",
-      "link": "https://www.youtube.com/watch?v=gH6pupTQ0l8",
-      "data": "2026-09-07"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42749319",
+     "titolo": "Chinese Journal of Reparative and Reconstructive Surgery — Consenso di esperti multicentrico cinese, percorso ",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42748364",
      "titolo": "Knee Surgery, Sports Traumatology, Arthroscopy — Consenso formale internazionale (106 esperti, ESSKA/EKA insie",
@@ -1234,6 +1171,13 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Deep Learning Reconstruction in Pediatric Knee MRI: Evaluation of Image Quality, Reader Preference, and Acquisition Time",
+      "dove": "archivio preprint",
+      "data": "2026-09-17",
+      "doi": "10.21203/rs.3.rs-10886959/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10886959/v1"
+     },
+     {
       "titolo": "Influence of Anaesthesia Technique on Patient-Reported Outcomes After Total Knee Arthroplasty: A Prospective Randomized Comparison of Complete Peripheral Nerve ",
       "dove": "archivio preprint",
       "data": "2026-09-16",
@@ -1400,13 +1344,6 @@
       "data": "2026-09-04",
       "doi": "10.21203/rs.3.rs-10271632/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10271632/v1"
-     },
-     {
-      "titolo": "Multilevel Neuroplastic Changes in Intracortical, Corticospinal, and Spinal Reflex Excitability Following Total Knee Arthroplasty: A One-Year Longitudinal Cohor",
-      "dove": "archivio preprint",
-      "data": "2026-09-04",
-      "doi": "10.21203/rs.3.rs-10741317/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10741317/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
