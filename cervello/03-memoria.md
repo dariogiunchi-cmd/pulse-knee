@@ -7,11 +7,18 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 17 settembre 2026.*
+*Ultimo aggiornamento: 18 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-18 | Chinese Journal of Reparative and Reconstructive Surgery | Consenso di esperti multicentrico (numero di esperti e metodo di voto non riportati), percorso clinico per protesi di ginocchio ad alta conformità in approccio mininvasivo | 10.7507/1002-1892.202607056 | protesi totale, mininvasiva, consenso | aperto — 🔴 PICK del giorno; nessuna raccomandazione gradata per livello di evidenza, nessun dato clinico misurato, nessuna raccomandazione specifica per piattaforma robotica (VELYS non nominato)
+2026-09-18 | Knee Surgery, Sports Traumatology, Arthroscopy | Editoriale di commento (Abul, Yılmaz, Tuncay) sul valore clinico della protesi totale di ginocchio robot-assistita | 10.1002/ksa.70627 | protesi robotica, editoriale | aperto — 🟠 abstract non disponibile su PubMed, testo integrale non open access; in duello con la scheda dello stesso giorno sulla stessa domanda
+2026-09-18 | SICOT-J | Coorte prospettica non randomizzata (Wong, Che-Kamaruddin, Ng, Chong, Chin, Chua), 45 pazienti, protesi robotica ad allineamento funzionale contro protesi convenzionale ad allineamento meccanico | 10.1051/sicotj/2026058 | protesi robotica, allineamento funzionale | aperto — 🟢 VAS più basso a 2 settimane e 3 mesi (p<0,05); outlier di allineamento 10,0% contro 40,0% (p=0,042); FJS-12 più alto ma non significativo (p=0,12) — muto su questo esito; 30 contro 15 pazienti, non randomizzato
+2026-09-18 | Arthroscopy | Coorte retrospettiva comparativa (Panos, Teubner, Long, Tagliero, Hevesi, Saris, Nagelli, Krych — Mayo Clinic), 1564 pazienti (782 donne appaiate a 782 uomini), lesione della radice meniscale mediale e postmenopausa | 10.1002/arj.70561 | menisco, radice meniscale, menopausa | aperto — 🟢 sopravvivenza libera da artroplastica a 10 anni 53,5% nelle donne con MMPRT contro 78,4% negli uomini (p=0,02); odds ratio puntuali per le altre associazioni non riportati nell'abstract
+2026-09-18 | Knee Surgery, Sports Traumatology, Arthroscopy | Serie di casi retrospettiva (Leão, Takamune, da Silva, Camerin, Ariel de Lima, Helito), 15 pazienti, continuità del graft anterolaterale dopo fallimento del LCA in ricostruzione combinata LCA-ALL | 10.1002/ksa.70618 | lca, rinforzo laterale, ALL | aperto — 🟢 graft ALL continuo alla RM in 15/15 (100%); traslazione tibiale e pivot shift più bassi dopo il fallimento che prima dell'indice (p=0,001 per entrambi); serie piccola ed eterogenea, nessuna conclusione sull'omissibilità della revisione anterolaterale; alimenta T1a
+2026-09-18 | Arthroscopy | Coorte retrospettiva con pesatura IPTW (Gao, Gong, Wang, Huang, Ma, Liu, Wang, Wang, Shi, Wang), 104 pazienti, revisione del LCA augmentata da sutura contro isolata, innesti interamente di tessuto molle | 10.1002/arj.70539 | lca, revisione, sutura di augmentazione | aperto — 🟢 fallimento dell'innesto più basso (OR 0,20; IC 95% 0,05-0,65; p=0,006), rientro allo sport più alto (OR 3,85; IC 95% 2,09-7,29; p<0,001) con l'augmentazione; solo innesti di tessuto molle, non il tendine quadricipitale osseo
 
 2026-09-17 | Knee Surgery, Sports Traumatology, Arthroscopy | Consenso formale internazionale (106 esperti, ESSKA/EKA insieme a EHS e APAS, metodologia Delphi-simile in due round), 63 raccomandazioni su percorsi fast-track/ERAS per protesi di anca e ginocchio | 10.1002/ksa.70594 | protesi totale, ERAS, consenso | aperto — 🔴 PICK del giorno, nuovo consenso che tocca la pratica di protesi totale; 39/63 raccomandazioni gradate A o B, 24 C o D, accordo medio 7,7-8,9/9; 24 raccomandazioni restano opinione di esperti, nessuna specifica per singola piattaforma robotica
 2026-09-17 | International Orthopaedics | Coorte retrospettiva monocentrica (Istituto Ortopedico Rizzoli, Bologna), 168 protesi monocompartimentali mediali, follow-up medio 119,7±29,3 mesi | 10.1007/s00264-026-07029-1 | protesi monocompartimentale, sopravvivenza, chirurgia pregressa | aperto — 🟢 sopravvivenza 100% a 5 anni, 96% a 7, 86% a 10, 78% a 15; nessuna comorbidità associata alla revisione; chirurgia ipsilaterale pregressa associata a KSS più basso (73,6±14,1 contro 80,7±12,5; p=0,036) e trend non significativo a più complicanze (28,6% contro 8,1%; OR 4,56; p=0,054) — richiama da un angolo diverso il registro svizzero del 15 settembre
@@ -547,6 +554,19 @@ fissazione onlay o profonda) non è descritto nell'abstract: non chiude né la d
 sull'innesto rigido né quella sul costrutto (T1b), ma aggiunge un ulteriore segnale, questa
 volta radiografico più che clinico, coerente con la tua indicazione universale al rinforzo
 laterale.
+
+**Nuovo il 18 settembre 2026, il rinforzo laterale visto al momento del fallimento, non della tenuta.**
+Una serie di casi retrospettiva brasiliana (15 pazienti, Leão, Takamune, da Silva, Camerin, Ariel de Lima,
+**Camilo Helito**, *KSSTA*) su ginocchia con fallimento dell'innesto del LCA dopo ricostruzione combinata LCA-ALL
+mostra che il graft anterolaterale resta continuo alla risonanza in tutti i 15 casi (100%), con alterazioni di
+segnale lievi in 9 (60%), e che la lassità residua — sia la traslazione tibiale anteriore sia il pivot shift — è
+più bassa dopo il fallimento del LCA che prima della ricostruzione indice (traslazione 5 contro 7mm, riduzione
+mediana 2mm, IQR 1-3, p=0,001; pivot shift 1 contro 2, p=0,001). Non tocca né l'innesto rigido né il costrutto
+onlay che usi: la casistica è eterogenea (12 primari, 3 revisioni), il costrutto ALL non è descritto, e gli
+stessi autori avvertono che il disegno retrospettivo su un campione piccolo non permette di concludere che una
+revisione anterolaterale possa essere omessa quando il graft resta intatto in immagine. Un segnale indiretto,
+comunque, che il gesto laterale — quando tiene — continua a limitare la lassità anche dopo che il LCA primario
+ha ceduto.
 
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
