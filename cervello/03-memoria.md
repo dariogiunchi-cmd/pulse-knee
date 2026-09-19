@@ -7,11 +7,20 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 18 settembre 2026.*
+*Ultimo aggiornamento: 19 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-19 | The Knee | Coorte di registro nazionale olandese (LROI), 79.115 protesi totali di ginocchio, robot-assistita contro convenzionale | 10.1016/j.knee.2026.104632 | protesi robotica, revisione, registro | aperto — 🟠 PICK del giorno; nessuna differenza nel rischio di revisione a 2 anni (HR aggiustato 0,9; IC 95% 0,7-1,1), nessuna differenza fra i quattro produttori robotici; follow-up ancora breve (2022-2024)
+2026-09-19 | Journal of Experimental Orthopaedics | Studio prospettico comparativo non randomizzato (gruppo di Marsiglia: Pineda, Varady, Jacquet, Mihai, Druel, Ollivier), 90 pazienti (30 per gruppo), retto femorale contro tendine quadricipitale contro hamstring nella ricostruzione del LCA con procedura anterolaterale concomitante | 10.1002/jeo2.70901 | lca, innesto quadricipitale, rinforzo laterale | aperto — 🟢 nessuna differenza a un anno su KOOS Dolore/QoL, EQ-5D-5L, POSAS (tutti p≥0,07); campione piccolo, follow-up 12-22 mesi; alimenta T1a
+2026-09-19 | Video Journal of Sports Medicine | Nota di tecnica chirurgica con video (Moran, Kessler, Pullen, Maak, Slone), tenodesi extra-articolare laterale con ancora tutta-sutura a doppio nodo in posizione onlay, su innesto di tendine quadricipitale | 10.1177/26350254261429886 | let, tecnica chirurgica, onlay | aperto — 🟢 nessun dato di paziente, livello V; prima descrizione trovata che combina innesto quadricipitale e fissazione onlay del rinforzo laterale; alimenta T1b
+2026-09-19 | Journal of Experimental Orthopaedics | Revisione sistematica PRISMA (Kratochwil, Kienberger, Deichsel, Gotterbarm, Winkler), 12 studi/1719 ginocchia, procedura extra-articolare laterale nella ricostruzione primaria del LCA in atleti d'élite e agonisti | 10.1002/jeo2.70908 | lca, rinforzo laterale, revisione sistematica | aperto — 🟢 fallimento cumulativo 3,4% e 2,5% con rinforzo laterale contro 10,7% con LCA isolato; rientro allo sport comparabile; livello IV, nessuna stratificazione per innesto; alimenta T1a
+2026-09-19 | JB & JS Open Access | Coorte di registro monocentrica collegata al New Zealand Joint Registry (Hoskins, Gusho, Rosser), 2920 protesi totali di ginocchio, confronto fra Kaplan-Meier e rischio competitivo per il calcolo della revisione a vita | 10.2106/JBJS.OA.26.00217 | protesi totale, metodologia, registro | aperto — 🟢 revisione a 15 anni 8,3% (Kaplan-Meier) contro 7,4% (rischio competitivo); sovrastima relativa oltre l'80% negli over 85; il 97% dei pazienti ≥75 anni muore con la protesi in sede
+2026-09-19 | Bone & Joint Open | Studio prospettico multicentrico con analisi radiostereometrica (Naudie, Lanting, Bohm, Teeter, Righolt, Turgeon, Gascoyne), 29 pazienti, nuova componente tibiale non cementata in protesi totale di ginocchio | 10.1302/2633-1462.79.BJO-2026-0178.R1 | protesi totale, fissazione non cementata, RSA | aperto — 🟢 MTPM 1,02mm a 6 mesi e 1,21mm a 24 mesi, sotto le soglie di rischio di mobilizzazione; nessun gruppo di controllo, campione piccolo
+2026-09-19 | Arthroplasty Today | Coorte retrospettiva monocentrica (Hospital for Special Surgery: Neitzke, Bhatti, Lan, Mayman, Sculco, Chalmers), 9595 ginocchia (720 monocompartimentali, 8875 totali), consumo di oppioidi | 10.1016/j.artd.2026.102143 | protesi monocompartimentale, oppioidi, dolore | aperto — 🟢 degenza 25,4 ore più corta e 275,4 MME in meno nei 90 giorni con la mono rispetto alla totale (entrambi p<0,001); retrospettivo, indicazioni diverse fra i gruppi
+2026-09-19 | Arthroscopy | Coorte retrospettiva comparativa (Smith, Mazzocca, Wang, Gordon, Chang, Katz, Matzkin — Brigham and Women's Hospital), 165 pazienti con innesto di hamstring, fiducia nel ginocchio dopo ricostruzione del LCA | 10.1002/arj.70553 | lca, esiti riferiti dal paziente, rientro allo sport | aperto — ⚪ mancanza di fiducia 88,5% preoperatoria, 24,2% a 2 anni; chi non si fida ha punteggi Marx e KOOS Sport più bassi (p<0,001 per entrambi); solo hamstring, nessun rinforzo laterale; alimenta T3
 
 2026-09-18 | Chinese Journal of Reparative and Reconstructive Surgery | Consenso di esperti multicentrico (numero di esperti e metodo di voto non riportati), percorso clinico per protesi di ginocchio ad alta conformità in approccio mininvasivo | 10.7507/1002-1892.202607056 | protesi totale, mininvasiva, consenso | aperto — 🔴 PICK del giorno; nessuna raccomandazione gradata per livello di evidenza, nessun dato clinico misurato, nessuna raccomandazione specifica per piattaforma robotica (VELYS non nominato)
 2026-09-18 | Knee Surgery, Sports Traumatology, Arthroscopy | Editoriale di commento (Abul, Yılmaz, Tuncay) sul valore clinico della protesi totale di ginocchio robot-assistita | 10.1002/ksa.70627 | protesi robotica, editoriale | aperto — 🟠 abstract non disponibile su PubMed, testo integrale non open access; in duello con la scheda dello stesso giorno sulla stessa domanda
@@ -568,6 +577,22 @@ revisione anterolaterale possa essere omessa quando il graft resta intatto in im
 comunque, che il gesto laterale — quando tiene — continua a limitare la lassità anche dopo che il LCA primario
 ha ceduto.
 
+**Nuovo il 19 settembre 2026, due tasselli nello stesso giorno, in direzioni convergenti.** Una
+revisione sistematica di 12 studi (1719 ginocchia; Kratochwil, Kienberger, Deichsel, Gotterbarm,
+Winkler, *J Exp Orthop*) su ricostruzione primaria del LCA con procedura extra-articolare laterale
+in atleti d'élite e agonisti conferma un fallimento dell'innesto cumulativo più basso con il
+rinforzo (3,4% per LCA+ricostruzione anterolaterale, 2,5% per LCA+Lemaire modificato, contro
+10,7% per il LCA isolato), con rientro allo sport comparabile; livello IV, sintesi narrativa senza
+pooling statistico, nessuna stratificazione per tipo di innesto. Nello stesso giorno, uno studio
+prospettico comparativo su 90 pazienti (30 retto femorale, 30 tendine quadricipitale, 30
+hamstring, tutti con procedura anterolaterale concomitante come nella tua pratica; Pineda, Varady,
+Jacquet, Mihai, Druel, Ollivier, *J Exp Orthop*, lo stesso gruppo di Marsiglia della coorte sullo
+slope tibiale del 17 settembre) non trova differenze significative fra i tre innesti su dolore,
+qualità di vita, cicatrice o soddisfazione globale a un anno (tutti p>0,07) — un segnale
+rassicurante specificamente sul tuo innesto quando il rinforzo laterale è sistematico, ma su un
+campione piccolo (30 per braccio) e un follow-up ancora corto per parlare di fallimento o rientro
+allo sport.
+
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
 **Verificata sul full text di STABILITY 2.** Il protocollo prescrive: banderella di
@@ -639,6 +664,20 @@ poggia anche la sua fissazione onlay, ma il consenso non distingue esplicitament
 di costrutto (onlay corticale vs inlay profondo con graffa) descritte dalla tassonomia di
 Gkekas del 29 agosto: non chiude la tensione, aggiunge però un secondo standard di
 posizionamento condiviso da un ampio panel di esperti, dopo l'anatomia delle fibre di Kaplan.
+
+**Nuovo il 19 settembre 2026, la prima descrizione tecnica trovata sulla tua esatta
+combinazione.** Una nota tecnica con video (Moran, Kessler, Pullen, Maak, Slone, *Video Journal
+of Sports Medicine*) descrive il rinforzo laterale extra-articolare eseguito insieme alla
+ricostruzione del LCA con innesto di **tendine quadricipitale**, fissazione femorale con
+un'ancora tutta-sutura a doppio nodo in posizione **onlay**, prossimale e posteriore
+all'epicondilo laterale — la stessa filosofia di costrutto che usi tu (Lemaire modificato,
+onlay), sia pure con un dispositivo di fissazione diverso dal tuo. Nessun dato di paziente,
+nessun confronto: è una nota di tecnica, livello V, che si appoggia alla letteratura esistente
+(quasi tutta costruita sul costrutto profondo con graffa) per il proprio razionale. Non chiude
+la tensione — resta vero che una serie sull'onlay superficiale con Lemaire modificato su
+innesto quadricipitale non esiste ancora in letteratura — ma per la prima volta qualcuno
+descrive per iscritto, passo per passo, una tecnica vicina alla tua invece di lasciarla
+implicita.
 
 ### T2b — L'estrusione, non il timing né il grado condrale *(riformulata 2026-08-01, sostituisce T2)*
 
@@ -1032,6 +1071,18 @@ predicono né il tasso né il tempo di rientro allo sport, ma la combinazione di
 alto grado con danno meniscale associato, insieme all'età più avanzata, predice esiti riferiti dal paziente
 peggiori a 5 anni — un profilo di rischio diverso dalla sola forza o dal solo salto che questa tensione già
 discute.
+
+**Nuovo il 19 settembre 2026, un'altra misura oltre la sola simmetria di forza, ma non sul tuo
+innesto.** Una coorte retrospettiva di 165 pazienti operati di LCA con innesto di **hamstring**
+(Smith, Mazzocca, Wang, Gordon, Chang, Katz, Matzkin, *Arthroscopy*, Brigham and Women's
+Hospital) mostra che la mancanza di fiducia nel ginocchio, riferita dall'88,5% dei pazienti prima
+dell'intervento, scende al 24,2% a due anni; chi la riferisce ancora a due anni ha punteggi di
+attività (Marx 4,7 contro 8,9; p<0,001) e KOOS Sport/Ricreazione (58,1 contro 85,7; p<0,001)
+significativamente più bassi, con una probabilità più che dimezzata di raggiungere la differenza
+minima clinicamente importante (70,6% contro 91,2%; p=0,002). Nessun rinforzo laterale nella
+coorte, solo hamstring: non tocca la tua combinazione innesto+LET, ma aggiunge una misura
+soggettiva — la fiducia, non solo la simmetria di forza — a un criterio di rientro che questa
+tensione mette in discussione da luglio.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
