@@ -593,6 +593,24 @@ rassicurante specificamente sul tuo innesto quando il rinforzo laterale è siste
 campione piccolo (30 per braccio) e un follow-up ancora corto per parlare di fallimento o rientro
 allo sport.
 
+**Nuovo il 20 settembre 2026, tre tasselli nello stesso giorno, tutti sul rinforzo laterale.** Il
+registro della Société Française d'Arthroscopie (8.407 ricostruzioni primarie del LCA, dicembre
+2021-ottobre 2024; Rocha, Fayard, Thaunat et al., *Orthopaedics & Traumatology: Surgery & Research*)
+mostra che la procedura laterale extra-articolare è salita dal 79,6% al 88,8% dei casi, ma fra chi
+la esegue la ricostruzione anterolaterale (87,4%) ha ormai superato nettamente la tenodesi di
+Lemaire modificata (8,4%) — la tua tecnica di riferimento è oggi minoritaria fra i chirurghi
+francesi che aggiungono un gesto laterale. Una serie di casi italiana su 64 pazienti (Giusti,
+Merlicco, Adriani et al., *Cureus*) con ricostruzione anterolaterale associata al LCA su innesto di
+hamstring — innesto e tecnica diversi dai tuoi — mostra un buon recupero funzionale a sei mesi e un
+rientro allo sport del 100% a 12 mesi, ma senza gruppo di controllo: gli stessi autori chiedono
+studi comparativi prima di attribuire il merito alla tecnica reverse-passing. Infine uno studio
+biomeccanico su 10 arti cadaverici (Tanaka, Hoshino, Kuroda et al., *Journal of Orthopaedic
+Research*, gruppo di Kobe) conferma che il fascio singolo isolato non riduce in modo significativo
+l'accelerazione al pivot shift (1,9±1,2 m/s contro 2,5±1,0 m/s del ginocchio deficiente, non
+significativo), mentre il fascio singolo con LET (1,4±0,7 m/s) e il doppio fascio (1,3±0,9 m/s) sì
+(p<0,01 entrambi) — un tassello meccanico coerente con l'evidenza clinica, ma su cadavere, senza
+informazioni sul tipo di innesto o sulla profondità di fissazione del LET.
+
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
 **Verificata sul full text di STABILITY 2.** Il protocollo prescrive: banderella di
