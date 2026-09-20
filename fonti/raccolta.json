@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-19T07:20:53Z",
+ "generato": "2026-09-20T07:00:10Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -305,14 +305,14 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Ogsiveo®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ogsiveo.html",
+      "titolo": "Rapporto sintetico di omologazione – Tranylcypromine Rivopharm®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-tranylcypromine-rivopharm.html",
       "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Tranylcypromine Rivopharm®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-tranylcypromine-rivopharm.html",
+      "titolo": "Rapporto sintetico di omologazione – Ogsiveo®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ogsiveo.html",
       "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 274,
+    "doi_citati_controllati": 281,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -844,6 +844,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42762868",
+     "titolo": "Orthopaedics & Traumatology: Surgery & Research — Registro SFA-ACL (Société Française d'Arthroscopie), 8.407 r",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42759156",
      "titolo": "The Knee — Coorte di registro nazionale olandese (LROI), 79.115 protesi totali di ginocchio (5535 robotiche, 7",
@@ -1067,6 +1073,15 @@
    "dati": {
     "finestra_giorni": 60,
     "voci": [
+     {
+      "pmid": "42763276",
+      "titolo": "Consensus Guidelines for Radiofrequency Ablation of Chronic Knee Pain in Rural Communities.",
+      "rivista": "Pain management nursing : official journal of the American Society of Pain Management Nurses",
+      "data": "2026 Sep 19",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
      {
       "pmid": "42749319",
       "titolo": "[Expert consensus on clinical pathway for high-conformity total knee arthroplasty through a minimally invasive surgical approach].",
