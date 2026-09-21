@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-20T07:44:45Z",
+ "generato": "2026-09-21T07:08:54Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -831,12 +831,6 @@
       "titolo": "Subscapularis Tears Presentation Series (Part 2): Outcomes",
       "link": "https://www.youtube.com/watch?v=j5ez6qsqEuA",
       "data": "2026-09-09"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Intertrochanteric Hip Fracture Fixation with INTERTAN◊  Nail: Tips and Tricks",
-      "link": "https://www.youtube.com/watch?v=gH6pupTQ0l8",
-      "data": "2026-09-07"
      }
     ]
    }
@@ -1261,6 +1255,27 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Short-time Modified Robert Jones Bandage Does Not Worsen Postoperative Swelling in Enhanced-recovery After Primary Total Knee Arthroplasty without Tourniquet: A",
+      "dove": "archivio preprint",
+      "data": "2026-09-20",
+      "doi": "10.21203/rs.3.rs-10523341/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10523341/v1"
+     },
+     {
+      "titolo": "Visibility Graph Analysis Identifies Informative Spectral Regions in Fiber Evanescent Wave Spectra of Synovial Fluid for Knee Osteoarthritis Diagnosis",
+      "dove": "archivio preprint",
+      "data": "2026-09-20",
+      "doi": "10.21203/rs.3.rs-10233543/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10233543/v1"
+     },
+     {
+      "titolo": "Cascade Deep Learning (nnU-Net + ResNet-18) for Meniscus Segmentation and Three-Grade Injury Classification on Knee MRI: A Single-Centre Study with Reader Assis",
+      "dove": "archivio preprint",
+      "data": "2026-09-20",
+      "doi": "10.21203/rs.3.rs-10358033/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10358033/v1"
+     },
+     {
       "titolo": "Predictors of Postoperative Drain Output and Hemoglobin Decline After Primary Total Knee Arthroplasty: A Retrospective Cohort Study of 486 Cases",
       "dove": "archivio preprint",
       "data": "2026-09-18",
@@ -1413,27 +1428,6 @@
       "data": "2026-09-07",
       "doi": "10.64898/2026.09.03.748852",
       "url": "https://doi.org/10.64898/2026.09.03.748852"
-     },
-     {
-      "titolo": "Effect of Cervical Forward Flexion Compensation on Isokinetic Knee Strength Test Outcomes in University Soccer Players via Wearable Flexible Strain Sensor: A Se",
-      "dove": "archivio preprint",
-      "data": "2026-09-07",
-      "doi": "10.21203/rs.3.rs-10804337/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10804337/v1"
-     },
-     {
-      "titolo": "Large Language Model Responses to Patient Questions About Return to Activities of Daily Living After Knee Arthroplasty: A Multidimensional Evaluation Before and",
-      "dove": "archivio preprint",
-      "data": "2026-09-05",
-      "doi": "10.21203/rs.3.rs-10776810/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10776810/v1"
-     },
-     {
-      "titolo": "Bidirectional Longitudinal Association Between Sleep Duration and Knee Osteoarthritis and the Mediating Role of Depressive Symptoms Among Middle-Aged and Older ",
-      "dove": "archivio preprint",
-      "data": "2026-09-05",
-      "doi": "10.21203/rs.3.rs-10424336/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10424336/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
