@@ -611,6 +611,21 @@ significativo), mentre il fascio singolo con LET (1,4±0,7 m/s) e il doppio fasc
 (p<0,01 entrambi) — un tassello meccanico coerente con l'evidenza clinica, ma su cadavere, senza
 informazioni sul tipo di innesto o sulla profondità di fissazione del LET.
 
+**Nuovo il 22 settembre 2026, indiretto ma dal gruppo che più di ogni altro ha scritto la
+letteratura sul LET.** Un'analisi di sottogruppo prespecificata di un RCT (Santamaria,
+Carrozzo, Pioger, Vieira, **Bertrand Sonnery-Cottet**, Fayard, **Mathieu Thaunat**,
+Sonnery-Cottet, *KSSTA*) su pazienti sotto i 25 anni mostra che la ricostruzione isolata
+con tendine rotuleo (BPTB) fallisce a 5 anni quattro volte più spesso della ricostruzione
+con hamstring più ricostruzione anterolaterale (16,4% contro 4,8%; odds ratio 4,2; IC 95%
+1,8-11,3; p=0,0007 alla regressione multivariata, log-rank p=0,0008), senza differenza sui
+punteggi riferiti dal paziente. Non tocca il tendine quadricipitale/retto femorale né il
+costrutto Lemaire onlay — confronta due innesti diversi insieme al gesto laterale, non
+isola l'effetto dell'anterolaterale da solo, lo stesso limite già visto nello studio
+argentino del 5 settembre — ma è un ulteriore segnale, dal gruppo di Lione che ha scritto
+lo standard sul LET, a favore di aggiungere un gesto laterale nei pazienti più giovani
+della sua fascia d'età, proprio la categoria (sotto i 25 anni, dentro la sua pratica dai
+14 anni in su) in cui il rischio di fallimento pesa di più.
+
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
 **Verificata sul full text di STABILITY 2.** Il protocollo prescrive: banderella di
