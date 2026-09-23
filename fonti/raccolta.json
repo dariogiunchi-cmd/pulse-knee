@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-22T07:43:38Z",
+ "generato": "2026-09-23T06:38:39Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -8,7 +8,7 @@
     "richiami": [
      {
       "recalling_firm": "Howmedica Osteonics Corp.",
-      "product_description": "ALL POLY CONSTRAINED INSERT 54MM\t\r\n\t69-2854\r\n\t\r\nNRG KNEE CR\t\r\n\t82-2-0512\t\r\n\t82-2-0518\r\n\t82-2-0912\r\n\r\nNRG KNEE P/S\t\r\n\t82-3-0318\r\n\t\r\nSCORPIO + MOBILE BEARING PCS\t\r\n\t78-5-0910\r\n\r\nSCORPIO C-DOME PATELLA\t\r\n\t73-2710\r\n\t\t\r\nSCORPIO INSET PATELLA\t\r\n\t73-2610\r\n\t\r\n\t\t\r\nSCORPIO M-DOME PATELLA\t\r\n\t73-0110\r\n\t73-0710\r\n\t73-0910\r\n\t\r\nSCORPIO RECESSED PATELLA 26MM\t\r\n\t3044-0026\r\n\r\nSCORPIO TS TIB INS\t\r\n\t72-4-9114\r\n\t\t\r\nSCORPIO TS TIBIAL INSERT\t\r\n\t72-4-0324\r\n\t\t\r\nSCORPIOFLEX TOTAL KNEE CR\t\r\n\t72-16-0512\r\n\t72-16-0518\r\n\t72-16-0912\r\n\t72-16-1112\r\n\t\r\nSERIES II TIBIAL BEAR INSERT NO 11 15MM\t\r\n\t3052-1115\r\n\t\r\nUHR BIPOLAR 26X52mm\t\r\n\tUH1-52-26\r\n\t\r\nUHR BIPOLAR 26X58mm\t\r\n\tUH1-58-26\r\n\t\r\nUHR BIPOLAR 28X48mm\t\r\n\tUH1-48-28\r\n\r\nUHR BIPOLAR 28X52mm\t\r\n\tUH1-52-28\t\r\n\t\r\nUHR BIPOLAR 28X55mm\t\r\n\tUH1-55-28\t\r\n\t\r\nUHR BIPOLAR 32X49MM\t\r\n\tUH1-49-32\t\r\n\t\r\nUHR BIPOLAR 32X51MM\t\r\n\tUH1-51-32\t\r\n\t\r\nUHR BIPOLAR 32X52MM\t\r\n\tUH1-52-32\t\t\r\n\t\r\nUHR BIPOLAR 32X54MM\t\r\n\tUH1-54-32\r\n\t\r\nOrthopaedic implant components manufactured from UHMWPE (polyethylene)",
+      "product_description": "ALL POLY CONSTRAINED INSERT 54MM\t\n\t69-2854\n\t\nNRG KNEE CR\t\n\t82-2-0512\t\n\t82-2-0518\n\t82-2-0912\n\nNRG KNEE P/S\t\n\t82-3-0318\n\t\nSCORPIO + MOBILE BEARING PCS\t\n\t78-5-0910\n\nSCORPIO C-DOME PATELLA\t\n\t73-2710\n\t\t\nSCORPIO INSET PATELLA\t\n\t73-2610\n\t\n\t\t\nSCORPIO M-DOME PATELLA\t\n\t73-0110\n\t73-0710\n\t73-0910\n\t\nSCORPIO RECESSED PATELLA 26MM\t\n\t3044-0026\n\nSCORPIO TS TIB INS\t\n\t72-4-9114\n\t\t\nSCORPIO TS TIBIAL INSERT\t\n\t72-4-0324\n\t\t\nSCORPIOFLEX TOTAL KNEE CR\t\n\t72-16-0512\n\t72-16-0518\n\t72-16-0912\n\t72-16-1112\n\t\nSERIES II TIBIAL BEAR INSERT NO 11 15MM\t\n\t3052-1115\n\t\nUHR BIPOLAR 26X52mm\t\n\tUH1-52-26\n\t\nUHR BIPOLAR 26X58mm\t\n\tUH1-58-26\n\t\nUHR BIPOLAR 28X48mm\t\n\tUH1-48-28\n\nUHR BIPOLAR 28X52mm\t\n\tUH1-52-28\t\n\t\nUHR BIPOLAR 28X55mm\t\n\tUH1-55-28\t\n\t\nUHR BIPOLAR 32X49MM\t\n\tUH1-49-32\t\n\t\nUHR BIPOLAR 32X51MM\t\n\tUH1-51-32\t\n\t\nUHR BIPOLAR 32X52MM\t\n\tUH1-52-32\t\t\n\t\nUHR BIPOLAR 32X54MM\t\n\tUH1-54-32\n\t\nOrthopaedic implant components manufactured from UHMWPE (polyethylene)",
       "reason_for_recall": "Affected devices were manufactured with Ultra High Molecular Weight Polyethylene (UHMWPE) raw material aged in excess of five years. Product has the potential for elevated levels of oxidation, which may result in increased wear, leading to hazards such as excessive wear debris, material fragments, fractured device, or disassociated device. Potential harms include revision surgery, pain, and inflammation.",
       "root_cause_description": "Process change control",
       "event_date_initiated": "2026-07-30",
@@ -17,7 +17,7 @@
      },
      {
       "recalling_firm": "Howmedica Osteonics Corp.",
-      "product_description": "ABG I ACETABULAR INSERT  HOODED 28mm ID X 48mm\t\r\n\tC-M079-2-801\r\n\t\r\n\t\r\nARC2F ACETABULAR INSERT 48/50/52mm OD x 28mm ID\t\r\n\tC-M071-6-700\r\n\t\r\n\t\r\nARC2F ACETABULAR INSERT 50mm OD x 28mm ID 10DEGREE HOOD\t\r\n\tC-M071-8-400\r\n\t\r\n\t\r\nBEARING AND AXLE BUSHING ASSY STANDARD ELBOW\t\r\n\tC-M110-1-201\r\n\t\r\n\t\r\nBUSHING AND BEARING USE C-MM100253-00\t\r\n\tC-MM100253-02\r\n\t\r\n\t\r\nDURACON TIB INSERT LG 12MM MED 14MM LAT\t\r\n\tC-M066-3-000\r\n\t\r\n\t\r\nEXETER WINGLESS CENTRALISER FOR C-M082-7-302\t\r\n\tC-M082-7-303\r\n\t\r\n\t\r\nEXETER WINGLESS CENTRALIZER XSM\t\r\n\tC-M107-5-301\r\n\t\r\n\t\r\nGMRS EXTRA SM ALL-POLY TIBIA SIZE 11mm\t\r\n\tC-MM100616-02\r\n\t\r\n\t\r\nGMRS EXTRA SM ALL-POLY TIBIA SIZE 16mm\t\r\n\tC-MM100616-03\r\n\t\r\n\t\r\nGMRS EXTRA SM ALL-POLY TIBIA SIZE 8mm\t\r\n\tC-MM100616-01\r\n\t\r\n\t\r\nGMRS SML POLY TIBIA 11MM CASE 100520\t\r\n\tC-MM100520-03\r\n\t\r\n\t\r\nGMRS SML POLY TIBIA 16MM CASE 100520\t\r\n\tC-MM100520-04\r\n\t\r\n\t\r\nGMRS SML POLY TIBIA 8MM CASE 100520\t\r\n\tC-MM100520-02\r\n\t\r\n\t\r\nGMRS SML TIBIA  11MM WITH CASE 100411\t\r\n\tC-MM100411-03\r\n\t\r\n\t\r\nGMRS SML TIBIA  14MM WITH CASE 100411\t\r\n\tC-MM100411-04\r\n\t\r\n\t\r\nGMRS SML TIBIA  8MM WITH CASE 100411\t\r\n\tC-MM100411-02\r\n\t\r\n\t\r\nGMRS TIB INSRT SML 10MM WITH CASE 100507\t\r\n\tC-MM100507-04\r\n\t\r\n\t\r\nGMRS TIB INSRT SML 16MM WITH CASE 100507\t\r\n\tC-MM100507-06\r\n\t\r\n\t\r\nKALI TIBIAL INSERT LARGE RIGHT 8mm\t\r\n\tC-M071-6-601\r\n\t\r\n\t\r\nKRH REV TIB INS 16mm THK .655 DIA STEM\t\r\n\tC-M113-5-603\r\n\t\r\n\t\r\nMRH KNEE TIBIAL INSERT FOR THIN POST\t\r\n\tC-M067-3-103\r\n\t\r\n\t\r\nMRS RADIAL BUSHING FORITH C-M107-7-800\t\r\n\tC-M107-7-801\r\n\t\r\n\t\r\nSELF-PRESSURIZING GLENOID SIZE 9\t\r\n\tC-M064-4-300\r\n\t\r\n\t\r\nTRIATHLON NO. 9 TIBIAL INSERT 11MM\t\r\n\tC-M067-5-003\r\n\t\r\n\t\r\nTRIATHLON NO. 9 TIBIAL INSERT 9MM\t\r\n\tC-M067-5-002\r\n\t\r\n\t\r\nTRIDENT ALL POLY CUP 44 X 66MM\t\r\n\tC-M066-0-901\r\n\t\r\n\t\r\nTRIDENT CONSTRAINED ACETABULAR INSERT SIZE A X 22mm ID  UH1\t\r\n\tC-M104-2-002\r\n\t\r\n\t\r\nTRIDENT CONSTRAINED ACETABULAR INSERT SIZE B X 22mm ID  UH1\t\r\n\tC-M104-2-003\r\n\t\r\n\t\r\nUHR BIPOLAR 22X38MM\t\r\n\tUH1-38-22\r\n\r\nUHR BIPOLAR 22X40MM\t\r\n\tUH1-40-22\r\n\r\nUHR BIPOLAR 22X41MM\t\r\n\tUH1-41-22\r\n\r\nUHR BIPOLAR 22X42MM\t\r\n\tUH1-42-22\r\n\r\nUHR BIPOLAR 22X43MM\t\r\n\tUH1-43-22\r\n\r\nUHR BIPOLAR 22X45MM\t\r\n\tUH1-45-22\r\n\r\nUHR BIPOLAR 26X41mm\t\r\n\tUH1-41-26\r\n\t\r\nUHR BIPOLAR 26X42mm\t\r\n\tUH1-42-26\r\n\t\r\nUHR BIPOLAR 26X43mm\t\r\n\tUH1-43-26\r\n\t\r\nUHR BIPOLAR 26X44mm\t\r\n\tUH1-44-26\r\n\t\r\nUHR BIPOLAR 26X45mm\t\r\n\tUH1-45-26\r\n\t\r\nUHR BIPOLAR 26X46mm\t\r\n\tUH1-46-26\r\n\r\nUHR BIPOLAR 26X47mm\t\r\n\tUH1-47-26\r\n\t\r\nUHR BIPOLAR 26X48mm\t\r\n\tUH1-48-26\r\n\t\r\nUHR BIPOLAR 28X42mm\t\r\n\tUH1-42-28\r\n\t\r\nUHR BIPOLAR 28X44mm\t\r\n\tUH1-44-28\r\n\t\r\nUHR BIPOLAR 28X45mm\t\r\n\tUH1-45-28\r\n\r\nUHR BIPOLAR 28X46mm\t\r\n\tUH1-46-28\r\n\r\nUHR BIPOLAR 28X47mm\t\r\n\tUH1-47-28\r\n\r\nUHR BIPOLAR 28X48mm\t\r\n\tUH1-48-28\r\n\r\n\t\r\nOrthopaedic implant components manufactured from UHMWPE (polyethylene)",
+      "product_description": "ABG I ACETABULAR INSERT  HOODED 28mm ID X 48mm\t\n\tC-M079-2-801\n\t\n\t\nARC2F ACETABULAR INSERT 48/50/52mm OD x 28mm ID\t\n\tC-M071-6-700\n\t\n\t\nARC2F ACETABULAR INSERT 50mm OD x 28mm ID 10DEGREE HOOD\t\n\tC-M071-8-400\n\t\n\t\nBEARING AND AXLE BUSHING ASSY STANDARD ELBOW\t\n\tC-M110-1-201\n\t\n\t\nBUSHING AND BEARING USE C-MM100253-00\t\n\tC-MM100253-02\n\t\n\t\nDURACON TIB INSERT LG 12MM MED 14MM LAT\t\n\tC-M066-3-000\n\t\n\t\nEXETER WINGLESS CENTRALISER FOR C-M082-7-302\t\n\tC-M082-7-303\n\t\n\t\nEXETER WINGLESS CENTRALIZER XSM\t\n\tC-M107-5-301\n\t\n\t\nGMRS EXTRA SM ALL-POLY TIBIA SIZE 11mm\t\n\tC-MM100616-02\n\t\n\t\nGMRS EXTRA SM ALL-POLY TIBIA SIZE 16mm\t\n\tC-MM100616-03\n\t\n\t\nGMRS EXTRA SM ALL-POLY TIBIA SIZE 8mm\t\n\tC-MM100616-01\n\t\n\t\nGMRS SML POLY TIBIA 11MM CASE 100520\t\n\tC-MM100520-03\n\t\n\t\nGMRS SML POLY TIBIA 16MM CASE 100520\t\n\tC-MM100520-04\n\t\n\t\nGMRS SML POLY TIBIA 8MM CASE 100520\t\n\tC-MM100520-02\n\t\n\t\nGMRS SML TIBIA  11MM WITH CASE 100411\t\n\tC-MM100411-03\n\t\n\t\nGMRS SML TIBIA  14MM WITH CASE 100411\t\n\tC-MM100411-04\n\t\n\t\nGMRS SML TIBIA  8MM WITH CASE 100411\t\n\tC-MM100411-02\n\t\n\t\nGMRS TIB INSRT SML 10MM WITH CASE 100507\t\n\tC-MM100507-04\n\t\n\t\nGMRS TIB INSRT SML 16MM WITH CASE 100507\t\n\tC-MM100507-06\n\t\n\t\nKALI TIBIAL INSERT LARGE RIGHT 8mm\t\n\tC-M071-6-601\n\t\n\t\nKRH REV TIB INS 16mm THK .655 DIA STEM\t\n\tC-M113-5-603\n\t\n\t\nMRH KNEE TIBIAL INSERT FOR THIN POST\t\n\tC-M067-3-103\n\t\n\t\nMRS RADIAL BUSHING FORITH C-M107-7-800\t\n\tC-M107-7-801\n\t\n\t\nSELF-PRESSURIZING GLENOID SIZE 9\t\n\tC-M064-4-300\n\t\n\t\nTRIATHLON NO. 9 TIBIAL INSERT 11MM\t\n\tC-M067-5-003\n\t\n\t\nTRIATHLON NO. 9 TIBIAL INSERT 9MM\t\n\tC-M067-5-002\n\t\n\t\nTRIDENT ALL POLY CUP 44 X 66MM\t\n\tC-M066-0-901\n\t\n\t\nTRIDENT CONSTRAINED ACETABULAR INSERT SIZE A X 22mm ID  UH1\t\n\tC-M104-2-002\n\t\n\t\nTRIDENT CONSTRAINED ACETABULAR INSERT SIZE B X 22mm ID  UH1\t\n\tC-M104-2-003\n\t\n\t\nUHR BIPOLAR 22X38MM\t\n\tUH1-38-22\n\nUHR BIPOLAR 22X40MM\t\n\tUH1-40-22\n\nUHR BIPOLAR 22X41MM\t\n\tUH1-41-22\n\nUHR BIPOLAR 22X42MM\t\n\tUH1-42-22\n\nUHR BIPOLAR 22X43MM\t\n\tUH1-43-22\n\nUHR BIPOLAR 22X45MM\t\n\tUH1-45-22\n\nUHR BIPOLAR 26X41mm\t\n\tUH1-41-26\n\t\nUHR BIPOLAR 26X42mm\t\n\tUH1-42-26\n\t\nUHR BIPOLAR 26X43mm\t\n\tUH1-43-26\n\t\nUHR BIPOLAR 26X44mm\t\n\tUH1-44-26\n\t\nUHR BIPOLAR 26X45mm\t\n\tUH1-45-26\n\t\nUHR BIPOLAR 26X46mm\t\n\tUH1-46-26\n\nUHR BIPOLAR 26X47mm\t\n\tUH1-47-26\n\t\nUHR BIPOLAR 26X48mm\t\n\tUH1-48-26\n\t\nUHR BIPOLAR 28X42mm\t\n\tUH1-42-28\n\t\nUHR BIPOLAR 28X44mm\t\n\tUH1-44-28\n\t\nUHR BIPOLAR 28X45mm\t\n\tUH1-45-28\n\nUHR BIPOLAR 28X46mm\t\n\tUH1-46-28\n\nUHR BIPOLAR 28X47mm\t\n\tUH1-47-28\n\nUHR BIPOLAR 28X48mm\t\n\tUH1-48-28\n\n\t\nOrthopaedic implant components manufactured from UHMWPE (polyethylene)",
       "reason_for_recall": "Affected devices were manufactured with Ultra High Molecular Weight Polyethylene (UHMWPE) raw material aged in excess of five years. Product has the potential for elevated levels of oxidation, which may result in increased wear, leading to hazards such as excessive wear debris, material fragments, fractured device, or disassociated device. Potential harms include revision surgery, pain, and inflammation.",
       "root_cause_description": "Process change control",
       "event_date_initiated": "2026-07-30",
@@ -605,17 +605,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07753707",
-       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 111,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07580157",
        "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
        "stato": "ENROLLING_BY_INVITATION",
@@ -624,6 +613,17 @@
         "NA"
        ],
        "n": 20,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07753707",
+       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 111,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 290,
+    "doi_citati_controllati": 297,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -769,81 +769,18 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Anatomic Proximal Humeral Plating System",
-      "link": "https://www.youtube.com/watch?v=UVSDJCOlAow",
-      "data": "2026-09-21"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Wide-Awake Endoscopic Carpal Tunnel Release Using the NanoScopic™ Release Disposable System",
-      "link": "https://www.youtube.com/watch?v=0v649CNsl74",
-      "data": "2026-09-16"
-     },
-     {
-      "canale": "DePuy Synthes",
-      "titolo": "How VELYS Robotics Helped Cassandra Get Back in the Classroom",
-      "link": "https://www.youtube.com/watch?v=GJwmH0C1QIU",
-      "data": "2026-09-16"
-     },
-     {
-      "canale": "DePuy Synthes",
-      "titolo": "VELYS Robotic-Assisted Knee Replacement Patient Education",
-      "link": "https://www.youtube.com/watch?v=sclPFS69LeU",
-      "data": "2026-09-16"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Dr. Robert Anderson Surgeon Testimonial",
-      "link": "https://www.youtube.com/watch?v=xh8EbRxYz-Q",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "EVOS◊ SMALL Ankle Surgical Video",
-      "link": "https://www.youtube.com/watch?v=bLr9NFBlzdE",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "MAVERICK◊ Unilateral External Fixation System | Construct Animation",
-      "link": "https://www.youtube.com/watch?v=ww4nCPmqAPw",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Comparing the TRIGEN◊  INTERTAN◊ Intertrochanteric Antegrade Nail to a Single Screw Device",
-      "link": "https://www.youtube.com/watch?v=I1auQ-neTKw",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "MAVERICK ◊  Unilateral External Fixation System | Tibial Plateau Fracture Stabilization",
-      "link": "https://www.youtube.com/watch?v=uOgoP_gllRs",
-      "data": "2026-09-10"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Trochanteric Fracture Repair with TRIGEN◊  INTERTAN◊  Intramedullary Nail System",
-      "link": "https://www.youtube.com/watch?v=6UBNE2G63z4",
-      "data": "2026-09-10"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Subscapularis Tears Presentation Series (Part 2): Outcomes",
-      "link": "https://www.youtube.com/watch?v=j5ez6qsqEuA",
-      "data": "2026-09-09"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 500: Internal Server Error",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42748362",
+     "titolo": "Knee Surgery, Sports Traumatology, Arthroscopy — Current concepts article ESSKA a 26 autori (fra cui Andy Will",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42763705",
      "titolo": "Journal of Experimental Orthopaedics — **Il tuo lavoro**: FIRM-P, framework concettuale che separa il fenotipo",
@@ -1080,6 +1017,15 @@
     "finestra_giorni": 60,
     "voci": [
      {
+      "pmid": "42771799",
+      "titolo": "Indian expert consensus on prophylactic incisional single-use negative pressure wound therapy in hip and knee arthroplasty: A modified Delphi study.",
+      "rivista": "SICOT-J",
+      "data": "2026 Sep 22",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
       "pmid": "42763276",
       "titolo": "Consensus Guidelines for Radiofrequency Ablation of Chronic Knee Pain in Rural Communities.",
       "rivista": "Pain management nursing : official journal of the American Society of Pain Management Nurses",
@@ -1230,15 +1176,6 @@
        "Journal Article",
        "Practice Guideline"
       ]
-     },
-     {
-      "pmid": "42495946",
-      "titolo": "Bridging Conservative Management With Injectable Orthobiologic Therapies: Proceedings of the International Consensus Meetings on Cartilage Repair of the Ankle.",
-      "rivista": "Foot & ankle specialist",
-      "data": "2026 Jul 24",
-      "tipi": [
-       "Journal Article"
-      ]
      }
     ]
    }
@@ -1257,6 +1194,13 @@
    "dati": {
     "finestra_giorni": 30,
     "voci": [
+     {
+      "titolo": "Association Between CPAK Phenotype Alteration and Changes in Coronal Ankle Alignment After Restricted Kinematic Alignment Total Knee Arthroplasty: A Retrospecti",
+      "dove": "archivio preprint",
+      "data": "2026-09-22",
+      "doi": "10.21203/rs.3.rs-10899673/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10899673/v1"
+     },
      {
       "titolo": "Development of a predictive model for perioperative blood transfusion in primary total knee arthroplasty",
       "dove": "archivio preprint",
@@ -1424,13 +1368,6 @@
       "data": "2026-09-08",
       "doi": "10.21203/rs.3.rs-10784288/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10784288/v1"
-     },
-     {
-      "titolo": "Autograft Selection in Anterior Cruciate Ligament Reconstruction: A Meta-Analysis of Patellar Tendon versus Hamstring Tendon Outcomes in Randomized Controlled T",
-      "dove": "archivio preprint",
-      "data": "2026-09-06",
-      "doi": "10.64898/2026.09.02.26361916",
-      "url": "https://doi.org/10.64898/2026.09.02.26361916"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
