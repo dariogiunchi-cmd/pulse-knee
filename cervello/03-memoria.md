@@ -7,11 +7,19 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 19 settembre 2026.*
+*Ultimo aggiornamento: 23 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-23 | Knee Surgery, Sports Traumatology, Arthroscopy | Current concepts article ESSKA a 26 autori (Runer, Amis, Smigielski, Kittl, Wierer, Getgood, Musahl, Williams, D'Ambrosi, Moatshe et al.), anatomia/biomeccanica/esame clinico del complesso collaterale mediale isolato o combinato a LCA | 10.1002/ksa.70588 | mcl, collaterale mediale, esame clinico | aperto — 🟢 PICK del giorno; sMCL/dMCL/complesso postero-mediale con ruoli distinti, protocollo esplicito per l'instabilità rotatoria antero-mediale; livello V, opinione di esperti, nessuna validazione prospettica
+2026-09-23 | Computer Assisted Surgery | Scoping review + SWOT sul sistema VELYS secondo l'Early Value Assessment del NICE britannico (Morrison, Hall, Clement, Gee, Chopra, Clarke) | 10.1080/24699322.2026.2699503 | protesi robotica, VELYS, valutazione tecnologica | aperto — 🟢 16 studi, nessun RCT; vantaggi pratici riconosciuti, evidenza su esiti a lungo termine e costo-efficacia insufficiente
+2026-09-23 | Knee Surgery, Sports Traumatology, Arthroscopy | Coorte retrospettiva, 100 ginocchia con protesi monocompartimentale mediale, alterazioni cartilaginee laterali alla RM preoperatoria e rischio di revisione (Bunyoz, Troelsen, Jackson, Bottomley, Alvand, Price) | 10.1002/ksa.70629 | protesi monocompartimentale, cartilagine, RM | aperto — 🟢 sHR 0,40 (IC 95% 0,05-3,42; p=0,40) su soli 6 eventi; muto, non equivalenza dimostrata
+2026-09-23 | The Journal of Arthroplasty | Database nazionale USA propensity-matched, protesi femoro-rotulea contro monocompartimentale a 2/5/10 anni (Wang, Morriss, Greif, Ghattas, Kenney) | 10.1016/j.arth.2026.09.025 | protesi femoro-rotulea, protesi monocompartimentale, registro | aperto — ⚪ più artroscopie dopo PFA a 2 e 5 anni, più revisioni a 10 anni (14,2% contro 8,0%), sopravvivenza sovrapponibile; tecnica non eseguita da lui, confronto con la sua mono
+2026-09-23 | Journal of Children's Orthopaedics | Revisione narrativa su torsione femorale/tibiale nell'instabilità femoro-rotulea pediatrica e adolescenziale (Accadbled, Cheok, Martinel, Rawat) | 10.1177/18632521261491569 | mpfl, instabilità rotulea, adolescente | aperto — 🟢 anteversione femorale e torsione tibiale aumentate associate all'instabilità; possono far fallire una plastica isolata se non riconosciute
+2026-09-23 | Arthroscopy | Modelli 3D da TC, 40 ginocchia, errore di misura dell'altezza rotulea da malposizionamento radiografico (Cote, Bowman, Howard, Velasquez-Hammerle, Simeone, Liu, Tanaka) | 10.1002/arj.70543 | femoro-rotuleo, imaging, metodologia | aperto — 🟢 ogni 5° di malposizionamento sposta ~4mm la sovrapposizione condilare; Caton-Deschamps e Blackburne-Peel sensibili, Insall-Salvati meno
+2026-09-23 | Journal of Experimental Orthopaedics | Serie di casi, 20 pazienti, tecnica «a paracadute» per frattura osteocondrale da lussazione rotulea più ricostruzione MPFL (Vieider, Ehmann, Höger, Fritsch, Schweitzer, Runer, Marka, Siebenlist, Mehl) | 10.1002/jeo2.70894 | mpfl, cartilagine, lussazione rotulea | aperto — 🟢 Kujala 89,4, MOCART 84/100, soddisfazione 95%; serie senza controllo, 2/20 reinterventi
 
 2026-09-19 | The Knee | Coorte di registro nazionale olandese (LROI), 79.115 protesi totali di ginocchio, robot-assistita contro convenzionale | 10.1016/j.knee.2026.104632 | protesi robotica, revisione, registro | aperto — 🟠 PICK del giorno; nessuna differenza nel rischio di revisione a 2 anni (HR aggiustato 0,9; IC 95% 0,7-1,1), nessuna differenza fra i quattro produttori robotici; follow-up ancora breve (2022-2024)
 2026-09-19 | Journal of Experimental Orthopaedics | Studio prospettico comparativo non randomizzato (gruppo di Marsiglia: Pineda, Varady, Jacquet, Mihai, Druel, Ollivier), 90 pazienti (30 per gruppo), retto femorale contro tendine quadricipitale contro hamstring nella ricostruzione del LCA con procedura anterolaterale concomitante | 10.1002/jeo2.70901 | lca, innesto quadricipitale, rinforzo laterale | aperto — 🟢 nessuna differenza a un anno su KOOS Dolore/QoL, EQ-5D-5L, POSAS (tutti p≥0,07); campione piccolo, follow-up 12-22 mesi; alimenta T1a
@@ -625,6 +633,22 @@ argentino del 5 settembre — ma è un ulteriore segnale, dal gruppo di Lione ch
 lo standard sul LET, a favore di aggiungere un gesto laterale nei pazienti più giovani
 della sua fascia d'età, proprio la categoria (sotto i 25 anni, dentro la sua pratica dai
 14 anni in su) in cui il rischio di fallimento pesa di più.
+
+**Nuovo il 23 settembre 2026, la sintesi quantitativa più ampia finora su tutta la famiglia dei gesti laterali
+insieme.** Una revisione sistematica e meta-analisi di 31 studi comparativi di livello III (RCT e coorti, 3.172
+pazienti, follow-up minimo 12 mesi; Morales-Valdés, Sáenz-González, *Acta Ortopédica Mexicana*) su ricostruzione
+isolata del LCA contro ricostruzione con rinforzo anterolaterale (LET o ricostruzione ALL considerati insieme, non
+distinti) conferma una riduzione del pivot shift residuo (RR 0,45; IC 95% 0,37-0,55; p<0,001) e del fallimento
+dell'innesto (3,8% contro 11,3%; RR 0,33; IC 95% 0,24-0,48), con guadagni piccoli ma significativi su IKDC (+2,96
+punti; IC 95% 0,47-5,45) e Tegner (+0,47; IC 95% 0,06-0,88), non su Lysholm. Non distingue LET da ricostruzione ALL
+né stratifica per tipo di innesto o costrutto di fissazione — non tocca quindi né il tendine quadricipitale/retto
+femorale né l'onlay superficiale che usi — ma è la sintesi quantitativa più ampia raccolta finora sull'intera
+famiglia dei gesti laterali, e converge nella stessa direzione delle fonti più recenti (RCT di livello I del 24
+agosto, consensus APKASS del 23 agosto, consenso Delphi del 14 settembre): il gesto protegge, la domanda aperta
+resta quella dell'indicazione universale contro selettiva, non più quella dell'efficacia in sé. **Nota di
+verifica**: alla lettura, PubMed non riportava alcun DOI per questo lavoro (PMID 42685408, *Acta Ortopédica
+Mexicana* 40(3):141-155) — citato qui col solo PMID, come impone il Principio Zero quando un identificatore manca;
+per questo motivo non è diventato una scheda dell'app (`test/verita.py` richiede un DOI per ogni scheda).
 
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
