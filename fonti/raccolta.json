@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-23T07:45:59Z",
+ "generato": "2026-09-24T06:43:57Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "I-SMI.TI.22e Notifications according to Article 41, MPLO",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/bewilligungen_zertifikate/autorizzazioni-d-esercizio0/ispettorati.html",
+      "data": "Wed, 23 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "DHPC – Apremilast Leman (apremilastum)",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-apremilast-leman-filmtabletten.html",
       "data": "Mon, 21 Sep 2026 00:00:00 +0000"
@@ -311,14 +317,14 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Ogsiveo®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ogsiveo.html",
+      "titolo": "Rapporto sintetico di omologazione – Tranylcypromine Rivopharm®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-tranylcypromine-rivopharm.html",
       "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Tranylcypromine Rivopharm®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-tranylcypromine-rivopharm.html",
+      "titolo": "Rapporto sintetico di omologazione – Ogsiveo®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ogsiveo.html",
       "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
@@ -355,12 +361,6 @@
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Out-of-Stock – Nordimet 7.5 mg/0.3 ml, solution pour injection dans un stylo prérempli",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-nordimet-7-5-mg-0-3-ml-injektionsloesung-im-fertigpen.html",
-      "data": "Mon, 07 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "I-SMI.TI.06e Market release and distribution in cooperation with a pre-wholesaler",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/bewilligungen_zertifikate/autorizzazioni-d-esercizio0/ispettorati.html",
       "data": "Mon, 07 Sep 2026 00:00:00 +0000"
      },
      {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 297,
+    "doi_citati_controllati": 304,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -769,75 +769,18 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Anatomic Proximal Humeral Plating System",
-      "link": "https://www.youtube.com/watch?v=UVSDJCOlAow",
-      "data": "2026-09-21"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Wide-Awake Endoscopic Carpal Tunnel Release Using the NanoScopic™ Release Disposable System",
-      "link": "https://www.youtube.com/watch?v=0v649CNsl74",
-      "data": "2026-09-16"
-     },
-     {
-      "canale": "DePuy Synthes",
-      "titolo": "How VELYS Robotics Helped Cassandra Get Back in the Classroom",
-      "link": "https://www.youtube.com/watch?v=GJwmH0C1QIU",
-      "data": "2026-09-16"
-     },
-     {
-      "canale": "DePuy Synthes",
-      "titolo": "VELYS Robotic-Assisted Knee Replacement Patient Education",
-      "link": "https://www.youtube.com/watch?v=sclPFS69LeU",
-      "data": "2026-09-16"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Dr. Robert Anderson Surgeon Testimonial",
-      "link": "https://www.youtube.com/watch?v=xh8EbRxYz-Q",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "EVOS◊ SMALL Ankle Surgical Video",
-      "link": "https://www.youtube.com/watch?v=bLr9NFBlzdE",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "MAVERICK◊ Unilateral External Fixation System | Construct Animation",
-      "link": "https://www.youtube.com/watch?v=ww4nCPmqAPw",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Comparing the TRIGEN◊  INTERTAN◊ Intertrochanteric Antegrade Nail to a Single Screw Device",
-      "link": "https://www.youtube.com/watch?v=I1auQ-neTKw",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "MAVERICK ◊  Unilateral External Fixation System | Tibial Plateau Fracture Stabilization",
-      "link": "https://www.youtube.com/watch?v=uOgoP_gllRs",
-      "data": "2026-09-10"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Trochanteric Fracture Repair with TRIGEN◊  INTERTAN◊  Intramedullary Nail System",
-      "link": "https://www.youtube.com/watch?v=6UBNE2G63z4",
-      "data": "2026-09-10"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42777823",
+     "titolo": "Journal of ISAKOS — Meta-analisi di 9 studi comparativi retrospettivi, 910 ginocchia: la riparazione della rad",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42748362",
      "titolo": "Knee Surgery, Sports Traumatology, Arthroscopy — Current concepts article ESSKA a 26 autori (fra cui Andy Will",
@@ -1253,188 +1196,8 @@
    }
   },
   "preprint": {
-   "esito": "ok",
-   "dati": {
-    "finestra_giorni": 30,
-    "voci": [
-     {
-      "titolo": "Association Between CPAK Phenotype Alteration and Changes in Coronal Ankle Alignment After Restricted Kinematic Alignment Total Knee Arthroplasty: A Retrospecti",
-      "dove": "archivio preprint",
-      "data": "2026-09-22",
-      "doi": "10.21203/rs.3.rs-10899673/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10899673/v1"
-     },
-     {
-      "titolo": "Development of a predictive model for perioperative blood transfusion in primary total knee arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-09-21",
-      "doi": "10.21203/rs.3.rs-10820621/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10820621/v1"
-     },
-     {
-      "titolo": "Short-time Modified Robert Jones Bandage Does Not Worsen Postoperative Swelling in Enhanced-recovery After Primary Total Knee Arthroplasty without Tourniquet: A",
-      "dove": "archivio preprint",
-      "data": "2026-09-20",
-      "doi": "10.21203/rs.3.rs-10523341/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10523341/v1"
-     },
-     {
-      "titolo": "Visibility Graph Analysis Identifies Informative Spectral Regions in Fiber Evanescent Wave Spectra of Synovial Fluid for Knee Osteoarthritis Diagnosis",
-      "dove": "archivio preprint",
-      "data": "2026-09-20",
-      "doi": "10.21203/rs.3.rs-10233543/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10233543/v1"
-     },
-     {
-      "titolo": "Cascade Deep Learning (nnU-Net + ResNet-18) for Meniscus Segmentation and Three-Grade Injury Classification on Knee MRI: A Single-Centre Study with Reader Assis",
-      "dove": "archivio preprint",
-      "data": "2026-09-20",
-      "doi": "10.21203/rs.3.rs-10358033/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10358033/v1"
-     },
-     {
-      "titolo": "Predictors of Postoperative Drain Output and Hemoglobin Decline After Primary Total Knee Arthroplasty: A Retrospective Cohort Study of 486 Cases",
-      "dove": "archivio preprint",
-      "data": "2026-09-18",
-      "doi": "10.21203/rs.3.rs-10762706/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10762706/v1"
-     },
-     {
-      "titolo": "Deep Learning Reconstruction in Pediatric Knee MRI: Evaluation of Image Quality, Reader Preference, and Acquisition Time",
-      "dove": "archivio preprint",
-      "data": "2026-09-17",
-      "doi": "10.21203/rs.3.rs-10886959/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10886959/v1"
-     },
-     {
-      "titolo": "Influence of Anaesthesia Technique on Patient-Reported Outcomes After Total Knee Arthroplasty: A Prospective Randomized Comparison of Complete Peripheral Nerve ",
-      "dove": "archivio preprint",
-      "data": "2026-09-16",
-      "doi": "10.21203/rs.3.rs-10529465/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10529465/v1"
-     },
-     {
-      "titolo": "Three-Month Clinical Outcomes and Exploratory Gait Changes After Intra- Articular Platelet-Rich Plasma for Mild-to-Moderate Knee Osteoarthritis: A Prospective S",
-      "dove": "archivio preprint",
-      "data": "2026-09-16",
-      "doi": "10.21203/rs.3.rs-10853879/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10853879/v1"
-     },
-     {
-      "titolo": "Toward the use of simulated environments to evaluate sEMG-informed knee-angle prediction: RMSE predicts simulated instability only above a threshold error",
-      "dove": "archivio preprint",
-      "data": "2026-09-16",
-      "doi": "10.21203/rs.3.rs-10843698/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10843698/v1"
-     },
-     {
-      "titolo": "Individualized Alignment Restoration and Forgotten Joint Status After Medial Unicompartmental Knee Arthroplasty: Development and Internal Validation of a Clinic",
-      "dove": "archivio preprint",
-      "data": "2026-09-15",
-      "doi": "10.21203/rs.3.rs-10786125/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10786125/v1"
-     },
-     {
-      "titolo": "Multimodal mean and variability gait features for machine- learning discrimination between healthy middle-aged and older adults and participants with knee osteo",
-      "dove": "archivio preprint",
-      "data": "2026-09-14",
-      "doi": "10.21203/rs.3.rs-10537844/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10537844/v1"
-     },
-     {
-      "titolo": "Mid- to Long-Term Outcomes of Unicompartmental Knee Arthroplasty: The Significant Impact of Patient Age on Revision Rates",
-      "dove": "archivio preprint",
-      "data": "2026-09-14",
-      "doi": "10.21203/rs.3.rs-10586372/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10586372/v1"
-     },
-     {
-      "titolo": "Development of a model for evaluating knee extensor muscle strength using ultrasound-derived indicators and physical characteristics: An exploratory study",
-      "dove": "archivio preprint",
-      "data": "2026-09-14",
-      "doi": "10.21203/rs.3.rs-10919998/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10919998/v1"
-     },
-     {
-      "titolo": "A Comparative Study on Early Clinical Outcomes of Navigation-Assisted Functional Alignment Total Knee Arthroplasty versus Mechanical Alignment Total Knee Arthro",
-      "dove": "archivio preprint",
-      "data": "2026-09-14",
-      "doi": "10.21203/rs.3.rs-9935639/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-9935639/v1"
-     },
-     {
-      "titolo": "Preoperative clinical, functional, and psychological factors associated with kinesiophobia at 6 months after anterior cruciate ligament reconstruction: a prospe",
-      "dove": "archivio preprint",
-      "data": "2026-09-11",
-      "doi": "10.21203/rs.3.rs-10826415/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10826415/v1"
-     },
-     {
-      "titolo": "Multidomain gait phenotyping in knee osteoarthritis: spatiotemporal, plantar-pressure and lower-limb kinematic findings from a retrospective cross-sectional stu",
-      "dove": "archivio preprint",
-      "data": "2026-09-11",
-      "doi": "10.21203/rs.3.rs-10816633/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10816633/v1"
-     },
-     {
-      "titolo": "The Knee Osteoarthritis Sex Gap Is Not a Biological Constant: A Global Ecological Study Across 204 Countries Revealing a Nine-Fold Range Shaped by Development, ",
-      "dove": "archivio preprint",
-      "data": "2026-09-10",
-      "doi": "10.21203/rs.3.rs-10363146/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10363146/v1"
-     },
-     {
-      "titolo": "The Efficacy of Artificial Intelligence Models in Diagnosing Knee Fractures from X-ray Images using Hybrid Attention Architecture",
-      "dove": "archivio preprint",
-      "data": "2026-09-10",
-      "doi": "10.21203/rs.3.rs-8535392/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-8535392/v1"
-     },
-     {
-      "titolo": "Impact of high external load resistance and low external load resistance training with blood flow restriction on anterior cruciate ligament volume in healthy fe",
-      "dove": "archivio preprint",
-      "data": "2026-09-10",
-      "doi": "10.21203/rs.3.rs-10803830/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10803830/v1"
-     },
-     {
-      "titolo": "Comparison of Functional Recovery and Complications Between Varus and Valgus Knees After Total Knee Arthroplasty: A Large-Sample Cohort Study",
-      "dove": "archivio preprint",
-      "data": "2026-09-10",
-      "doi": "10.21203/rs.3.rs-10714464/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10714464/v1"
-     },
-     {
-      "titolo": "Artificial Intelligence and Surface Electromyography for Assessing Quadriceps Neuromuscular Fatigue and Knee Injury Risk in Professional Basketball Players: A P",
-      "dove": "archivio preprint",
-      "data": "2026-09-09",
-      "doi": "10.20944/preprints202609.0782.v1",
-      "url": "https://doi.org/10.20944/preprints202609.0782.v1"
-     },
-     {
-      "titolo": "Fourfold Faster Knee Valgus Development During Single-Leg Landing Compared with Countermovement Jump: A Novel Approach to ACL Injury Risk Assessment",
-      "dove": "archivio preprint",
-      "data": "2026-09-08",
-      "doi": "10.20944/preprints202609.0670.v1",
-      "url": "https://doi.org/10.20944/preprints202609.0670.v1"
-     },
-     {
-      "titolo": "A Comparative Study of Bone Age Assessment of the Knee: MRI Versus Radiography in Living Individuals",
-      "dove": "archivio preprint",
-      "data": "2026-09-08",
-      "doi": "10.21203/rs.3.rs-10815948/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10815948/v1"
-     },
-     {
-      "titolo": "SMOC Approach in Minimally Invasive Total Knee Arthroplasty for Severe Varus Deformity: Technical Innovations and Clinical Outcomes Using Conventional Instrumen",
-      "dove": "archivio preprint",
-      "data": "2026-09-08",
-      "doi": "10.21203/rs.3.rs-10784288/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10784288/v1"
-     }
-    ],
-    "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
-   }
+   "esito": "non risposto: TimeoutError The read operation timed out",
+   "dati": null
   }
  }
 }
