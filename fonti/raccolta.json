@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-25T06:35:09Z",
+ "generato": "2026-09-25T07:49:37Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -769,8 +769,71 @@
    }
   },
   "youtube": {
-   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "WINS 2027 Save the Date",
+      "link": "https://www.youtube.com/watch?v=cej2AH3_qmM",
+      "data": "2026-09-24"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Olecranon Fracture Fixation Using the Arthrex Elbow Plating System",
+      "link": "https://www.youtube.com/watch?v=IWOY8Y-43v4",
+      "data": "2026-09-23"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Anatomic Proximal Humeral Plating System",
+      "link": "https://www.youtube.com/watch?v=UVSDJCOlAow",
+      "data": "2026-09-21"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Wide-Awake Endoscopic Carpal Tunnel Release Using the NanoScopic™ Release Disposable System",
+      "link": "https://www.youtube.com/watch?v=0v649CNsl74",
+      "data": "2026-09-16"
+     },
+     {
+      "canale": "DePuy Synthes",
+      "titolo": "How VELYS Robotics Helped Cassandra Get Back in the Classroom",
+      "link": "https://www.youtube.com/watch?v=GJwmH0C1QIU",
+      "data": "2026-09-16"
+     },
+     {
+      "canale": "DePuy Synthes",
+      "titolo": "VELYS Robotic-Assisted Knee Replacement Patient Education",
+      "link": "https://www.youtube.com/watch?v=sclPFS69LeU",
+      "data": "2026-09-16"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Dr. Robert Anderson Surgeon Testimonial",
+      "link": "https://www.youtube.com/watch?v=xh8EbRxYz-Q",
+      "data": "2026-09-15"
+     },
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "EVOS◊ SMALL Ankle Surgical Video",
+      "link": "https://www.youtube.com/watch?v=bLr9NFBlzdE",
+      "data": "2026-09-15"
+     },
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "MAVERICK◊ Unilateral External Fixation System | Construct Animation",
+      "link": "https://www.youtube.com/watch?v=ww4nCPmqAPw",
+      "data": "2026-09-15"
+     },
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "Comparing the TRIGEN◊  INTERTAN◊ Intertrochanteric Antegrade Nail to a Single Screw Device",
+      "link": "https://www.youtube.com/watch?v=I1auQ-neTKw",
+      "data": "2026-09-15"
+     }
+    ]
+   }
   },
   "destino": {
    "esito": "ok",
