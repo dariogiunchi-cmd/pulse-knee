@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-26T06:36:06Z",
+ "generato": "2026-09-26T07:42:24Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "DHPC – Clozapina",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-clozapin.html",
+      "data": "Sat, 26 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "DHPC – Remsima® (infliximab)",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-remsima-infliximab.html",
       "data": "Fri, 25 Sep 2026 00:00:00 +0000"
@@ -311,14 +317,14 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Release del portale di Swissmedic – nuove funzionalità disponibili dal 23 settembre 2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/swissmedic-portal-release-neue-funktionen-ab-23-september-2026.html",
+      "titolo": "Informazioni sulla release del portale Swissmedic – 23 settembre 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/kpa/aktuell-kpa/information-zum-swissmedic-portal-release-23-09-2026.html",
       "data": "Thu, 24 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Informazioni sulla release del portale Swissmedic – 23 settembre 2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/kpa/aktuell-kpa/information-zum-swissmedic-portal-release-23-09-2026.html",
+      "titolo": "Release del portale di Swissmedic – nuove funzionalità disponibili dal 23 settembre 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/swissmedic-portal-release-neue-funktionen-ab-23-september-2026.html",
       "data": "Thu, 24 Sep 2026 00:00:00 +0000"
      },
      {
@@ -353,26 +359,20 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Tranylcypromine Rivopharm®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-tranylcypromine-rivopharm.html",
-      "data": "Tue, 15 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Rapporto sintetico di omologazione – Ogsiveo®",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ogsiveo.html",
       "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Nuova linea guida «Bonnes pratiques suisses de matériovigilance dans le domaine du diagnostic in vitro» (BPMV-DIV)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/dispositivi-medici/notificare-eventi---fsca/utilizzatori.html",
-      "data": "Thu, 10 Sep 2026 00:00:00 +0000"
+      "titolo": "Rapporto sintetico di omologazione – Tranylcypromine Rivopharm®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-tranylcypromine-rivopharm.html",
+      "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Senior Controller/in (80 - 100%)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/posti-liberi/fico-controlling.html",
+      "titolo": "Nuova linea guida «Bonnes pratiques suisses de matériovigilance dans le domaine du diagnostic in vitro» (BPMV-DIV)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/dispositivi-medici/notificare-eventi---fsca/utilizzatori.html",
       "data": "Thu, 10 Sep 2026 00:00:00 +0000"
      },
      {
@@ -769,8 +769,71 @@
    }
   },
   "youtube": {
-   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "WINS 2027 Save the Date",
+      "link": "https://www.youtube.com/watch?v=cej2AH3_qmM",
+      "data": "2026-09-24"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Olecranon Fracture Fixation Using the Arthrex Elbow Plating System",
+      "link": "https://www.youtube.com/watch?v=IWOY8Y-43v4",
+      "data": "2026-09-23"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Anatomic Proximal Humeral Plating System",
+      "link": "https://www.youtube.com/watch?v=UVSDJCOlAow",
+      "data": "2026-09-21"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Wide-Awake Endoscopic Carpal Tunnel Release Using the NanoScopic™ Release Disposable System",
+      "link": "https://www.youtube.com/watch?v=0v649CNsl74",
+      "data": "2026-09-16"
+     },
+     {
+      "canale": "DePuy Synthes",
+      "titolo": "How VELYS Robotics Helped Cassandra Get Back in the Classroom",
+      "link": "https://www.youtube.com/watch?v=GJwmH0C1QIU",
+      "data": "2026-09-16"
+     },
+     {
+      "canale": "DePuy Synthes",
+      "titolo": "VELYS Robotic-Assisted Knee Replacement Patient Education",
+      "link": "https://www.youtube.com/watch?v=sclPFS69LeU",
+      "data": "2026-09-16"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Dr. Robert Anderson Surgeon Testimonial",
+      "link": "https://www.youtube.com/watch?v=xh8EbRxYz-Q",
+      "data": "2026-09-15"
+     },
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "EVOS◊ SMALL Ankle Surgical Video",
+      "link": "https://www.youtube.com/watch?v=bLr9NFBlzdE",
+      "data": "2026-09-15"
+     },
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "MAVERICK◊ Unilateral External Fixation System | Construct Animation",
+      "link": "https://www.youtube.com/watch?v=ww4nCPmqAPw",
+      "data": "2026-09-15"
+     },
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "Comparing the TRIGEN◊  INTERTAN◊ Intertrochanteric Antegrade Nail to a Single Screw Device",
+      "link": "https://www.youtube.com/watch?v=I1auQ-neTKw",
+      "data": "2026-09-15"
+     }
+    ]
+   }
   },
   "destino": {
    "esito": "ok",
