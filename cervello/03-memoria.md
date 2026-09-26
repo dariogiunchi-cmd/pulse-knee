@@ -7,11 +7,20 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 23 settembre 2026.*
+*Ultimo aggiornamento: 26 settembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-09-26 | Journal of Robotic Surgery | Meta-analisi con meta-regressione di 24 RCT (3.425 pazienti; Abdelaziz, Zayed, Altukhy, Salem, Hanafy, Hamdy, Abdelrahman, Hadhoud), esiti funzionali e analgesici dopo protesi totale di ginocchio robot-assistita contro convenzionale | 10.1007/s11701-026-03934-0 | protesi robotica, meta-analisi RCT, esiti funzionali | aperto — 🟠 PICK del giorno; nessuna differenza su WOMAC, KSS funzionale, OKS; solo tempo operatorio più lungo con il robot (+22,3min; p<0,01); certezza GRADE bassa-molto bassa, nessuna sottoanalisi per piattaforma
+2026-09-26 | Arthroscopy | Revisione sistematica di 6 studi (271 pazienti; Moews, Thamrongskulsiri, Vega, Morgan, Verma, LaPrade, Chahla), esiti dopo riparazione della radice meniscale mediale posteriore con carico parziale precoce (≤4 settimane) | 10.1002/arj.70529 | menisco, radice meniscale, riabilitazione | aperto — 🟠 punteggi funzionali modesti (IKDC 46,4-70,4) e guarigione incompleta nel 31,3-39,2% dei casi; 222/271 pazienti con tecnica transtibiale pull-out (la sua); nessun confronto diretto fra protocolli di carico, non dimostra causalità
+2026-09-26 | Knee Surgery, Sports Traumatology, Arthroscopy | Current concepts ESSKA parte II a 26 autori (Runer, Bouguennec, Wierer, Amis, D'Ambrosi, Getgood, Musahl, Williams, Moatshe, Smigielski et al.), classificazione AMKI dell'instabilità antero-mediale del ginocchio | 10.1002/ksa.70630 | mcl, instabilità antero-mediale, classificazione | aperto — 🟢 tre gradi (A/B/C) su valgo ed extrarotazione; livello V, nessuna validazione (affidabilità, esito); continua la parte I del 23 settembre
+2026-09-26 | Arthroscopy | Coorte retrospettiva monocentrica (Mayo Clinic Phoenix: Moore, Brinkman, Wang, Braithwaite, Lin, Economopoulos), 289 ricostruzioni primarie del LCA con tenodesi laterale sistematica, slope tibiale ≥12° contro <12° | 10.1002/arj.70616 | lca, LET, slope tibiale | aperto — 🟢 alimenta T1a; fallimento dell'innesto 24% contro 18% (p=0,41), HR 1,07/grado (IC 95% 0,95-1,19); nessun braccio senza LET, gruppo alto slope piccolo (45 pz, RR grezzo 1,36 IC 95% 0,76-2,42)
+2026-09-26 | Arthroscopy | Consenso Delphi modificato (29 esperti internazionali: Super, Tollefson, Murray, Chahla, Geeslin, Johnson, Stevenson, LaPrade), ruolo del tutore di scarico nelle lesioni cartilaginee focali tibiofemorali | 10.1002/arj.70583 | cartilagine, tutore di scarico, consenso | aperto — 🟢 72/73 affermazioni con consenso, incluso l'uso come screening prima di osteotomia; livello V, nessun dato clinico originale
+2026-09-26 | The Journal of Knee Surgery | Coorte retrospettiva monocentrica, singolo chirurgo (Vattipalli, Palakodety), 83 TKA robot-assistite VELYS, manovra "a figura di 4" contro valutazione convenzionale del gap | 10.1055/a-2968-6106 | protesi robotica, VELYS, bilanciamento | aperto — 🟢 apertura laterale in flessione maggiore con la manovra (ΔML -2,18mm; p<0,001), non correlata all'HKA preoperatorio; nessun esito clinico misurato, singolo centro
+2026-09-26 | Journal of Orthopaedic Research | Simulazione muscoloscheletrica personalizzata (Guggenberger, Kainz, Kraus, Koller, Svehlik), 16 pazienti con instabilità femoro-rotulea e anteversione femorale ≥30°, effetto della derotazione femorale sul carico patellofemorale | 10.1002/jor.70278 | mpfl, torsione femorale, biomeccanica | aperto — 🟢 riduzione del carico laterale solo nel 37,5% dei casi simulati, aumento nel 43,7%; simulazione in-silico, campione piccolo (16 pz)
+2026-09-26 | The Journal of Knee Surgery | Revisione sistematica (Geiselmann, Vatti, Hershfeld, Scuderi) sulle strategie di allineamento alternative in protesi totale di ginocchio | 10.1055/a-2968-5826 | protesi totale, allineamento, VELYS | aperto — ⚪ abstract non disponibile su PubMed al momento della verifica; titolo, rivista e autori confermati, nessun risultato riportabile
 
 2026-09-23 | Knee Surgery, Sports Traumatology, Arthroscopy | Current concepts article ESSKA a 26 autori (Runer, Amis, Smigielski, Kittl, Wierer, Getgood, Musahl, Williams, D'Ambrosi, Moatshe et al.), anatomia/biomeccanica/esame clinico del complesso collaterale mediale isolato o combinato a LCA | 10.1002/ksa.70588 | mcl, collaterale mediale, esame clinico | aperto — 🟢 PICK del giorno; sMCL/dMCL/complesso postero-mediale con ruoli distinti, protocollo esplicito per l'instabilità rotatoria antero-mediale; livello V, opinione di esperti, nessuna validazione prospettica
 2026-09-23 | Computer Assisted Surgery | Scoping review + SWOT sul sistema VELYS secondo l'Early Value Assessment del NICE britannico (Morrison, Hall, Clement, Gee, Chopra, Clarke) | 10.1080/24699322.2026.2699503 | protesi robotica, VELYS, valutazione tecnologica | aperto — 🟢 16 studi, nessun RCT; vantaggi pratici riconosciuti, evidenza su esiti a lungo termine e costo-efficacia insufficiente
@@ -649,6 +658,20 @@ resta quella dell'indicazione universale contro selettiva, non più quella dell'
 verifica**: alla lettura, PubMed non riportava alcun DOI per questo lavoro (PMID 42685408, *Acta Ortopédica
 Mexicana* 40(3):141-155) — citato qui col solo PMID, come impone il Principio Zero quando un identificatore manca;
 per questo motivo non è diventato una scheda dell'app (`test/verita.py` richiede un DOI per ogni scheda).
+
+**Nuovo il 26 settembre 2026, il rinforzo laterale visto dal lato dello slope, non dell'innesto.** Una
+coorte retrospettiva monocentrica (Moore, Brinkman, Wang, Braithwaite, Lin, Economopoulos — Mayo Clinic,
+Phoenix, *Arthroscopy*) su 289 ricostruzioni primarie del LCA con tenodesi extra-articolare laterale sistematica
+— come nella tua pratica — mostra che uno slope tibiale posteriore ≥12° non aumenta in modo significativo il
+fallimento dell'innesto rispetto a uno slope <12° (24% contro 18%; p=0,41), e alla regressione di Cox
+multivariabile lo slope non è predittore indipendente di fallimento (hazard ratio 1,07 per grado; IC 95%
+0,95-1,19; p=0,26). Lo studio non ha un braccio senza LET per isolarne l'effetto — non dimostra quindi che sia
+il LET a neutralizzare il rischio dello slope, solo che con il LET sempre presente lo slope smette di predire
+il fallimento in questa coorte — e il gruppo ad alto slope resta piccolo (45 pazienti; rischio relativo grezzo
+1,36, IC 95% 0,76-2,42, ricalcolato con `test/potenza.py`). Non tocca il tuo innesto rigido (tipo di innesto
+non riportato come variabile isolata nell'abstract) né il costrutto onlay (T1b), ma converge con il segnale del
+21 agosto (van der Wal, *AJSM*) sulla stessa domanda: quando il rinforzo laterale è la regola, non l'eccezione,
+lo slope tibiale alto smette di essere un motivo per aspettarsi un esito peggiore.
 
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
