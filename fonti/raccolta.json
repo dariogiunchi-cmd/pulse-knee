@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-25T07:49:37Z",
+ "generato": "2026-09-26T06:36:06Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -293,6 +293,12 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Out-of-Stock – Ketazed, collyre en solution",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-ketazed-augentropfen-loesung.html",
+      "data": "Fri, 25 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Specialista HR in Controlling, Retribuzioni e Progetti (60 - 80%)",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/posti-liberi/hr-fachspezialistin.html",
       "data": "Thu, 24 Sep 2026 00:00:00 +0000"
@@ -370,16 +376,10 @@
       "data": "Thu, 10 Sep 2026 00:00:00 +0000"
      },
      {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "DHPC – Tavneos® (avacopan)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-tavneos-avacopan-1.html",
-      "data": "Thu, 10 Sep 2026 00:00:00 +0000"
-     },
-     {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
-      "titolo": "DHPC – Remsima® (infliximab)DHPC – Apremilast Leman (apremilastum)Ritiro di lotti – Elocom, solution pour application cutanéeDHP...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-remsima-infliximab.html",
-      "data": "Fri, 25 Sep 2026 06:35:13 +0000"
+      "titolo": "DHPC – ClozapinaDHPC – Remsima® (infliximab)Out-of-Stock – Ketazed, collyre en solutionDHPC – Apremilast Leman (apremilastum)Rit...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-clozapin.html",
+      "data": "Sat, 26 Sep 2026 06:36:11 +0000"
      }
     ]
    }
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 311,
+    "doi_citati_controllati": 319,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -769,75 +769,18 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Arthrex",
-      "titolo": "WINS 2027 Save the Date",
-      "link": "https://www.youtube.com/watch?v=cej2AH3_qmM",
-      "data": "2026-09-24"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Olecranon Fracture Fixation Using the Arthrex Elbow Plating System",
-      "link": "https://www.youtube.com/watch?v=IWOY8Y-43v4",
-      "data": "2026-09-23"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Anatomic Proximal Humeral Plating System",
-      "link": "https://www.youtube.com/watch?v=UVSDJCOlAow",
-      "data": "2026-09-21"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Wide-Awake Endoscopic Carpal Tunnel Release Using the NanoScopic™ Release Disposable System",
-      "link": "https://www.youtube.com/watch?v=0v649CNsl74",
-      "data": "2026-09-16"
-     },
-     {
-      "canale": "DePuy Synthes",
-      "titolo": "How VELYS Robotics Helped Cassandra Get Back in the Classroom",
-      "link": "https://www.youtube.com/watch?v=GJwmH0C1QIU",
-      "data": "2026-09-16"
-     },
-     {
-      "canale": "DePuy Synthes",
-      "titolo": "VELYS Robotic-Assisted Knee Replacement Patient Education",
-      "link": "https://www.youtube.com/watch?v=sclPFS69LeU",
-      "data": "2026-09-16"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Dr. Robert Anderson Surgeon Testimonial",
-      "link": "https://www.youtube.com/watch?v=xh8EbRxYz-Q",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "EVOS◊ SMALL Ankle Surgical Video",
-      "link": "https://www.youtube.com/watch?v=bLr9NFBlzdE",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "MAVERICK◊ Unilateral External Fixation System | Construct Animation",
-      "link": "https://www.youtube.com/watch?v=ww4nCPmqAPw",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Comparing the TRIGEN◊  INTERTAN◊ Intertrochanteric Antegrade Nail to a Single Screw Device",
-      "link": "https://www.youtube.com/watch?v=I1auQ-neTKw",
-      "data": "2026-09-15"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42789133",
+     "titolo": "Journal of Robotic Surgery — Meta-analisi con meta-regressione di 24 RCT (3.425 pazienti): nessuna differenza ",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42782213",
      "titolo": "Arthroscopy — Coorte retrospettiva propensity-matched, Mayo Clinic, 50 riparazioni della radice meniscale con ",
@@ -1092,6 +1035,15 @@
     "finestra_giorni": 60,
     "voci": [
      {
+      "pmid": "42791228",
+      "titolo": "Unloader Bracing Is a Biomechanically Rational and Clinically Useful Intervention in Selected Patients With Tibiofemoral Joint Cartilage Pathology: A Modified Delphi Consensus Stud",
+      "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
+      "data": "2026 Sep 25",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
       "pmid": "42771799",
       "titolo": "Indian expert consensus on prophylactic incisional single-use negative pressure wound therapy in hip and knee arthroplasty: A modified Delphi study.",
       "rivista": "SICOT-J",
@@ -1241,16 +1193,6 @@
       "tipi": [
        "Journal Article"
       ]
-     },
-     {
-      "pmid": "42506877",
-      "titolo": "Clinical practice guideline for physical therapist management of total knee arthroplasty: revision 2026.",
-      "rivista": "Physical therapy",
-      "data": "2026 Jul 2",
-      "tipi": [
-       "Journal Article",
-       "Practice Guideline"
-      ]
      }
     ]
    }
@@ -1269,6 +1211,27 @@
    "dati": {
     "finestra_giorni": 30,
     "voci": [
+     {
+      "titolo": "Effect of femoral and tibial tunnel angle on tunnel length and aperture stress in all- epiphyseal anterior cruciate ligament reconstruction: a CT-based and fini",
+      "dove": "archivio preprint",
+      "data": "2026-09-23",
+      "doi": "10.21203/rs.3.rs-10965407/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10965407/v1"
+     },
+     {
+      "titolo": "A Physis-Based Three-Dimensional CT Reference for Precise Evaluation of Varus Deformity Origin and Joint Line Reconstruction in Patients with Severe Knee Osteoa",
+      "dove": "archivio preprint",
+      "data": "2026-09-23",
+      "doi": "10.21203/rs.3.rs-10814308/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10814308/v1"
+     },
+     {
+      "titolo": "Study on the Current Status and Influencing Factors of Pain Beliefs in Elderly Patients with Knee Osteoarthritis Receiving Non-surgical Treatment:A Cross-Sectio",
+      "dove": "archivio preprint",
+      "data": "2026-09-23",
+      "doi": "10.21203/rs.3.rs-9970981/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-9970981/v1"
+     },
      {
       "titolo": "Association Between CPAK Phenotype Alteration and Changes in Coronal Ankle Alignment After Restricted Kinematic Alignment Total Knee Arthroplasty: A Retrospecti",
       "dove": "archivio preprint",
@@ -1422,27 +1385,6 @@
       "data": "2026-09-09",
       "doi": "10.20944/preprints202609.0782.v1",
       "url": "https://doi.org/10.20944/preprints202609.0782.v1"
-     },
-     {
-      "titolo": "Fourfold Faster Knee Valgus Development During Single-Leg Landing Compared with Countermovement Jump: A Novel Approach to ACL Injury Risk Assessment",
-      "dove": "archivio preprint",
-      "data": "2026-09-08",
-      "doi": "10.20944/preprints202609.0670.v1",
-      "url": "https://doi.org/10.20944/preprints202609.0670.v1"
-     },
-     {
-      "titolo": "A Comparative Study of Bone Age Assessment of the Knee: MRI Versus Radiography in Living Individuals",
-      "dove": "archivio preprint",
-      "data": "2026-09-08",
-      "doi": "10.21203/rs.3.rs-10815948/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10815948/v1"
-     },
-     {
-      "titolo": "SMOC Approach in Minimally Invasive Total Knee Arthroplasty for Severe Varus Deformity: Technical Innovations and Clinical Outcomes Using Conventional Instrumen",
-      "dove": "archivio preprint",
-      "data": "2026-09-08",
-      "doi": "10.21203/rs.3.rs-10784288/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10784288/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
