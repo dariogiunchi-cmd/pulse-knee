@@ -673,6 +673,28 @@ non riportato come variabile isolata nell'abstract) né il costrutto onlay (T1b)
 21 agosto (van der Wal, *AJSM*) sulla stessa domanda: quando il rinforzo laterale è la regola, non l'eccezione,
 lo slope tibiale alto smette di essere un motivo per aspettarsi un esito peggiore.
 
+**Nuovo il 28 settembre 2026, il primo dato di esito reale — non solo biomeccanico — a favore del gesto
+laterale, questa volta in revisione, non in ricostruzione primaria.** Uno studio di coorte retrospettivo
+multicentrico argentino-ecuadoriano con ponderazione per propensione (Collazo, Rivarola, Palanconi, Meninato,
+Peñaherrera-Carrillo, Barros Castro, Endara Urresta, *Journal of ISAKOS*) su 300 revisioni monostadio del LCA
+(100 isolate, 100 con tenodesi extra-articolare laterale, 100 con ricostruzione del legamento antero-laterale)
+mostra che l'aumento laterale — LET e ricostruzione ALL aggregati nell'analisi primaria — si associa a una
+sopravvivenza dell'innesto a 5 anni del 90,6% contro il 79,9% della sola revisione (hazard ratio aggiustato
+IPTW 0,46; IC 95% 0,28-0,74; p=0,002) e a un pivot shift residuo dimezzato (17,0% contro 34,0%; OR 0,42; IC
+95% 0,25-0,71; p=0,001). Il confronto esplorativo diretto fra LET e ricostruzione ALL non mostra differenza
+(HR 0,91; IC 95% 0,39-2,10; p=0,82), ma gli stessi autori lo dichiarano non interpretabile come dimostrazione
+di equivalenza: troppo pochi eventi per distinguere le due tecniche. Non tocca né il tuo innesto (tipo di
+innesto della ricostruzione del LCA non riportato come variabile isolata) né il tuo costrutto specifico
+(onlay, superficiale al collaterale laterale, non distinto da altre fissazioni) — ed è revisione, non la tua
+indicazione universale sui primari. Lo stesso giorno, un registro prospettico multicentrico francese
+(Bouguennec, Neri, Carrozzo, Freychet, Hardy, Herce, Kajetanek, Ollivier, Lutz, Cavaignac, *AJSM*, 489
+pazienti, Société Française d'Arthroscopie) mostra che gli innesti diversi dall'hamstring si associano a
+punteggi IKDC più alti (β=7,89; IC 95% 3,45-12,33; p<0,001) indipendentemente dal coinvolgimento del
+legamento collaterale mediale, trattato o meno chirurgicamente — senza però isolare il tendine
+quadricipitale/retto femorale dagli altri innesti «non-hamstring». Due reti chirurgiche diverse, lo stesso
+giorno, verso la stessa direzione: l'innesto non-hamstring e il rinforzo laterale continuano a convergere
+sull'esito, ma nessuno dei due lavori arriva ancora a isolare la tua combinazione esatta.
+
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
 **Verificata sul full text di STABILITY 2.** Il protocollo prescrive: banderella di
@@ -1163,6 +1185,23 @@ minima clinicamente importante (70,6% contro 91,2%; p=0,002). Nessun rinforzo la
 coorte, solo hamstring: non tocca la tua combinazione innesto+LET, ma aggiunge una misura
 soggettiva — la fiducia, non solo la simmetria di forza — a un criterio di rientro che questa
 tensione mette in discussione da luglio.
+
+**Nuovo il 28 settembre 2026, due tasselli sulla stessa domanda — quando la forza è davvero tornata — a
+distanze diverse dall'intervento.** Uno studio di coorte su 48 atleti dopo ricostruzione primaria del LCA con
+innesto di hamstring (Kakavas, Malliaropoulos, Forelli, *Life*) mostra che un indice di simmetria del
+quadricipite (LSI) sotto l'85% a un anno si associa a un rischio di rirottura ipsilaterale entro 24 mesi
+triplicato (RR 3,21; IC 95% 1,17-8,82), più informativo della lassità strumentale o dell'hop test — ma gli
+stessi autori dichiarano che l'indisponibilità della visita di origine e della data della rirottura impedisce
+di stabilire la precedenza temporale, e la soglia dell'85% resta esplorativa. Uno studio trasversale dello
+stesso gruppo (Kakavas, Malliaropoulos, Prill, Forelli, *Diagnostics*) che confronta due coorti indipendenti
+di 30 atleti, una a 12 mesi e una a 24 mesi dalla stessa procedura, mostra che l'asimmetria di forza eccentrica
+degli hamstring si riduce nettamente col tempo (LSI 84,6±9,3% contro 93,5±6,8%; p<0,001) ma resta sotto la
+soglia del 90% in quasi un quarto degli atleti anche a 24 mesi (23,3% contro 70,0% a 12 mesi) — un secondo
+segnale, questa volta sulla forza flessoria, che il tempo da solo non sostituisce una misura tardiva oggettiva.
+Nessuno dei due lavori è sul tuo innesto (entrambi hamstring, nessun rinforzo laterale dichiarato) né aggiunge
+un esito duro nuovo oltre la rirottura già discussa il 10 settembre, ma convergono nella stessa direzione di
+quanto già raccolto sul retto femorale: la sola simmetria di forza misurata una volta, a un tempo fisso, non
+basta a certificare il rientro.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
