@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-27T08:11:15Z",
+ "generato": "2026-09-28T07:36:53Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 324,
+    "doi_citati_controllati": 333,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -838,6 +838,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42800674",
+     "titolo": "Journal of ISAKOS — Coorte retrospettiva multicentrica argentino-ecuadoriana con ponderazione IPTW, 300 revisi",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42744121",
      "titolo": "Journal of ISAKOS — Meta-analisi di 28 RCT (2.685 pazienti): il plasma ricco di piastrine (PRP) intra-articola",
@@ -1250,15 +1256,6 @@
       "titolo": "Osteochondral Lesions of the Tibial Plafond (OLTPs): Proceedings of the International Consensus Meeting on Cartilage Repair of the Ankle.",
       "rivista": "Foot & ankle specialist",
       "data": "2026 Jul 31",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42522736",
-      "titolo": "Surgical Intervention for Moderate-To-Large lesions (1-2.9 cm(2)): Proceedings of the International Consensus Meetings on Cartilage Repair of the Ankle.",
-      "rivista": "Foot & ankle specialist",
-      "data": "2026 Jul 29",
       "tipi": [
        "Journal Article"
       ]
