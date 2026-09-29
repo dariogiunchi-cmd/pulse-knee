@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-28T08:42:17Z",
+ "generato": "2026-09-29T07:29:47Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -125,7 +125,7 @@
      },
      {
       "recalling_firm": "Think Surgical, Inc.",
-      "product_description": "TMINI Femur Tracking Array REF 109003\nUDI-DI code: M9461090030\n\nTMINI Tibia Tracking Array REF 109004\nUDI-DI code: M9461090040\n\nTMINI Miniature Robotic System is indicated as a stereotaxic instrumentation system for total knee replacement (TKA) surgery. It is to assist the surgeon by providing software-defined spatial boundaries for orientation and reference information to identifiable anatomical structures for the accurate placement of knee implant components",
+      "product_description": "TMINI Femur Tracking Array REF 109003\r\nUDI-DI code: M9461090030\r\n\r\nTMINI Tibia Tracking Array REF 109004\r\nUDI-DI code: M9461090040\r\n\r\nTMINI Miniature Robotic System is indicated as a stereotaxic instrumentation system for total knee replacement (TKA) surgery. It is to assist the surgeon by providing software-defined spatial boundaries for orientation and reference information to identifiable anatomical structures for the accurate placement of knee implant components",
       "reason_for_recall": "Due to manufacturing/design issue where the knob on the tracking array may loosen causing potential misalignment of the array.",
       "root_cause_description": "Process control",
       "event_date_initiated": "2026-05-08",
@@ -143,6 +143,24 @@
      }
     ],
     "enforcement": [
+     {
+      "recall_number": "Z-3199-2026",
+      "recalling_firm": "Howmedica Osteonics Corp.",
+      "product_description": "ABG I ACETABULAR INSERT  HOODED 28mm ID X 48mm\t  \tC-M079-2-801  \t  \t  ARC2F ACETABULAR INSERT 48/50/52mm OD x 28mm ID\t  \tC-M071-6-700  \t  \t  ARC2F ACETABULAR INSERT 50mm OD x 28mm ID 10DEGREE HOOD\t  \tC-M071-8-400  \t  \t  BEARING AND AXLE BUSHING ASSY STANDARD ELBOW\t  \tC-M110-1-201  \t  \t  BUSHING AND BEARING USE C-MM100253-00\t  \tC-MM100253-02  \t  \t  DURACON TIB INSERT LG 12MM MED 14MM LAT\t  \tC-M066-3-000  \t  \t  EXETER WINGLESS CENTRALISER FOR C-M082-7-302\t  \tC-M082-7-303  \t  \t  EXETER WINGLESS CENTRALIZER XSM\t  \tC-M107-5-301  \t  \t  GMRS EXTRA SM ALL-POLY TIBIA SIZE 11mm\t  \tC-MM100616-02  \t  \t  GMRS EXTRA SM ALL-POLY TIBIA SIZE 16mm\t  \tC-MM100616-03  \t  \t  GMRS EXTRA SM ALL-POLY TIBIA SIZE 8mm\t  \tC-MM100616-01  \t  \t  GMRS SML POLY TIBIA 11MM CASE 100520\t  \tC-MM100520-03  \t  \t  GMRS SML POLY TIBIA 16MM CASE 100520\t  \tC-MM100520-04  \t  \t  GMRS SML POLY TIBIA 8MM CASE 100520\t  \tC-MM100520-02  \t  \t  GMRS SML TIBIA  11MM WITH CASE 100411\t  \tC-MM100411-03  \t  \t  GMRS SML TIBIA  14MM WITH CASE 100411\t  \tC-MM100411-04  \t  \t  GMRS SML TIBIA  8MM WITH CASE 100411\t  \tC-MM100411-02  \t  \t  GMRS TIB INSRT SML 10MM WITH CASE 100507\t  \tC-MM100507-04  \t  \t  GMRS TIB INSRT SML 16MM WITH CASE 100507\t  \tC-MM100507-06  \t  \t  KALI TIBIAL INSERT LARGE RIGHT 8mm\t  \tC-M071-6-601  \t  \t  KRH REV TIB INS 16mm THK .655 DIA STEM\t  \tC-M113-5-603  \t  \t  MRH KNEE TIBIAL INSERT FOR THIN POST\t  \tC-M067-3-103  \t  \t  MRS RADIAL BUSHING FORITH C-M107-7-800\t  \tC-M107-7-801  \t  \t  SELF-PRESSURIZING GLENOID SIZE 9\t  \tC-M064-4-300  \t  \t  TRIATHLON NO. 9 TIBIAL INSERT 11MM\t  \tC-M067-5-003  \t  \t  TRIATHLON NO. 9 TIBIAL INSERT 9MM\t  \tC-M067-5-002  \t  \t  TRIDENT ALL POLY CUP 44 X 66MM\t  \tC-M066-0-901  \t  \t  TRIDENT CONSTRAINED ACETABULAR INSERT SIZE A X 22mm ID  UH1\t  \tC-M104-2-002  \t  \t  TRIDENT CONSTRAINED ACETABULAR INSERT SIZE B X 22mm ID  UH1\t  \tC-M104-2-003  \t  \t  UHR BIPOLAR 22X38MM\t  \tUH1-38-22    UHR BIPOLAR 22X40MM\t  \tUH1-40-22    UHR BIPOLAR 22X41MM\t  \tUH1-41-22    UHR BIPOLAR 22X42MM\t  \tUH1-42-22    UHR BIPOLAR 22X43MM\t  \tUH1-43-22    UHR BIPOLAR 22X45MM\t  \tUH1-45-22    UHR BIPOLAR 26X41mm\t  \tUH1-41-26  \t  UHR BIPOLAR 26X42mm\t  \tUH1-42-26  \t  UHR BIPOLAR 26X43mm\t  \tUH1-43-26  \t  UHR BIPOLAR 26X44mm\t  \tUH1-44-26  \t  UHR BIPOLAR 26X45mm\t  \tUH1-45-26  \t  UHR BIPOLAR 26X46mm\t  \tUH1-46-26    UHR BIPOLAR 26X47mm\t  \tUH1-47-26  \t  UHR BIPOLAR 26X48mm\t  \tUH1-48-26  \t  UHR BIPOLAR 28X42mm\t  \tUH1-42-28  \t  UHR BIPOLAR 28X44mm\t  \tUH1-44-28  \t  UHR BIPOLAR 28X45mm\t  \tUH1-45-28    UHR BIPOLAR 28X46mm\t  \tUH1-46-28    UHR BIPOLAR 28X47mm\t  \tUH1-47-28    UHR BIPOLAR 28X48mm\t  \tUH1-48-28    \t  Orthopaedic implant components manufactured from UHMWPE (polyethylene)",
+      "reason_for_recall": "Affected devices were manufactured with Ultra High Molecular Weight Polyethylene (UHMWPE) raw material aged in excess of five years. Product has the potential for elevated levels of oxidation, which may result in increased wear, leading to hazards such as excessive wear debris, material fragments, fractured device, or disassociated device. Potential harms include revision surgery, pain, and inflammation.",
+      "report_date": "20260923",
+      "classification": "Class II",
+      "sorvegliata": false
+     },
+     {
+      "recall_number": "Z-3197-2026",
+      "recalling_firm": "Howmedica Osteonics Corp.",
+      "product_description": "ALL POLY CONSTRAINED INSERT 54MM\t  \t69-2854  \t  NRG KNEE CR\t  \t82-2-0512\t  \t82-2-0518  \t82-2-0912    NRG KNEE P/S\t  \t82-3-0318  \t  SCORPIO + MOBILE BEARING PCS\t  \t78-5-0910    SCORPIO C-DOME PATELLA\t  \t73-2710  \t\t  SCORPIO INSET PATELLA\t  \t73-2610  \t  \t\t  SCORPIO M-DOME PATELLA\t  \t73-0110  \t73-0710  \t73-0910  \t  SCORPIO RECESSED PATELLA 26MM\t  \t3044-0026    SCORPIO TS TIB INS\t  \t72-4-9114  \t\t  SCORPIO TS TIBIAL INSERT\t  \t72-4-0324  \t\t  SCORPIOFLEX TOTAL KNEE CR\t  \t72-16-0512  \t72-16-0518  \t72-16-0912  \t72-16-1112  \t  SERIES II TIBIAL BEAR INSERT NO 11 15MM\t  \t3052-1115  \t  UHR BIPOLAR 26X52mm\t  \tUH1-52-26  \t  UHR BIPOLAR 26X58mm\t  \tUH1-58-26  \t  UHR BIPOLAR 28X48mm\t  \tUH1-48-28    UHR BIPOLAR 28X52mm\t  \tUH1-52-28\t  \t  UHR BIPOLAR 28X55mm\t  \tUH1-55-28\t  \t  UHR BIPOLAR 32X49MM\t  \tUH1-49-32\t  \t  UHR BIPOLAR 32X51MM\t  \tUH1-51-32\t  \t  UHR BIPOLAR 32X52MM\t  \tUH1-52-32\t\t  \t  UHR BIPOLAR 32X54MM\t  \tUH1-54-32  \t  Orthopaedic implant components manufactured from UHMWPE (polyethylene)",
+      "reason_for_recall": "Affected devices were manufactured with Ultra High Molecular Weight Polyethylene (UHMWPE) raw material aged in excess of five years. Product has the potential for elevated levels of oxidation, which may result in increased wear, leading to hazards such as excessive wear debris, material fragments, fractured device, or disassociated device. Potential harms include revision surgery, pain, and inflammation.",
+      "report_date": "20260923",
+      "classification": "Class II",
+      "sorvegliata": false
+     },
      {
       "recall_number": "Z-2957-2026",
       "recalling_firm": "Kico Knee Innovation Company",
@@ -259,24 +277,6 @@
       "report_date": "20260715",
       "classification": "Class II",
       "sorvegliata": true
-     },
-     {
-      "recall_number": "Z-2701-2026",
-      "recalling_firm": "Encore Medical, LP",
-      "product_description": "Brand Name: EMPOWR 3D KNEE Product Name: EMPOWR 3D KNEE INS, 11L 14MM, VE Model/Catalog Number: 341-14-711 Product Description: Enovis knee devices are for knee arthroplasty.",
-      "reason_for_recall": "Due to packaging discrepancy with incorrect product size mixed up.",
-      "report_date": "20260715",
-      "classification": "Class II",
-      "sorvegliata": true
-     },
-     {
-      "recall_number": "Z-2617-2026",
-      "recalling_firm": "DEPUY (IRELAND)",
-      "product_description": "Depuy Synthes, ATTUNE Revision Hinge Knee Hinge Insert Components with the below product descriptions and Part Codes.    1. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 10mm B; Part Number: 151730410.     2. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 12mm B; Part Number: 151730412.     3. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 14mm B; Part Number: 151730414.     4. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 16mm B; Part Number: 151730416.     5. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 18mm B; Part Number: 151730418.     6. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 20mm B; Part Number: 151730420.     7. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 22mm B; Part Number: 151730422.     8. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 24mm B; Part Number: 151730424.     9. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 26mm B; Part Number: 151730426.     10. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 4 8mm B; Part Number: 151730408.     11. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 10mm C; Part Number: 151730510.     12. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 12mm C; Part Number: 151730512.     13. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 14mm C; Part Number: 151730514.     14. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 16mm C; Part Number: 151730516.     15. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 18mm C; Part Number: 151730518.     16. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 20mm C; Part Number: 151730520.     17. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 22mm C; Part Number: 151730522.     18. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 24mm C; Part Number: 151730524.     19. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 26mm C; Part Number: 151730526.     20. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 5 8mm C; Part Number: 151730508.     21. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 10mm E; Part Number: 151730710.     22. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 12mm E; Part Number: 151730712.     23. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 14mm E; Part Number: 151730714.     24. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 16mm E; Part Number: 151730716.     25. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 18mm E; Part Number: 151730718.     26. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 20mm E; Part Number: 151730720.     27. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 22mm E; Part Number: 151730722.     28. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 24mm E; Part Number: 151730724.     29. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 26mm E; Part Number: 151730726.     30. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 7 8mm E; Part Number: 151730708.     31. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 10mm W; Part Number: 151730810.     32. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 12mm W; Part Number: 151730812.     33. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 14mm W; Part Number: 151730814.     34. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 16mm W; Part Number: 151730816.     35. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 18mm W; Part Number: 151730818.     36. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 20mm W; Part Number: 151730820.     37. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 22mm W; Part Number: 151730822.     38. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 8mm F; Part Number: 151730808.     39. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 24mm W; Part Number: 151730824.     40. ATTUNE KNEE SYSTEM REVISION HINGE INSERT 8 26mm W; Part Number: 151730826.",
-      "reason_for_recall": "The external sterile packaging was found adhered to the internal sterile packaging, potentially compromising sterility.",
-      "report_date": "20260708",
-      "classification": "Class II",
-      "sorvegliata": true
      }
     ]
    }
@@ -317,14 +317,14 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Release del portale di Swissmedic – nuove funzionalità disponibili dal 23 settembre 2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/swissmedic-portal-release-neue-funktionen-ab-23-september-2026.html",
+      "titolo": "Informazioni sulla release del portale Swissmedic – 23 settembre 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/kpa/aktuell-kpa/information-zum-swissmedic-portal-release-23-09-2026.html",
       "data": "Thu, 24 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Informazioni sulla release del portale Swissmedic – 23 settembre 2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/kpa/aktuell-kpa/information-zum-swissmedic-portal-release-23-09-2026.html",
+      "titolo": "Release del portale di Swissmedic – nuove funzionalità disponibili dal 23 settembre 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/swissmedic-portal-release-neue-funktionen-ab-23-september-2026.html",
       "data": "Thu, 24 Sep 2026 00:00:00 +0000"
      },
      {
@@ -359,14 +359,14 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Tranylcypromine Rivopharm®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-tranylcypromine-rivopharm.html",
+      "titolo": "Rapporto sintetico di omologazione – Ogsiveo®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ogsiveo.html",
       "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Ogsiveo®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ogsiveo.html",
+      "titolo": "Rapporto sintetico di omologazione – Tranylcypromine Rivopharm®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-tranylcypromine-rivopharm.html",
       "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
@@ -605,17 +605,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07753707",
-       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 111,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07580157",
        "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
        "stato": "ENROLLING_BY_INVITATION",
@@ -624,6 +613,17 @@
         "NA"
        ],
        "n": 20,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07753707",
+       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 111,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -753,7 +753,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 333,
+    "doi_citati_controllati": 342,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -772,6 +772,12 @@
    "esito": "ok",
    "dati": {
     "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Long-Bone Fracture Management Using the QuickPass™ FiberTape® Cerclage System",
+      "link": "https://www.youtube.com/watch?v=PEa9oL1MCs4",
+      "data": "2026-09-28"
+     },
      {
       "canale": "Arthrex",
       "titolo": "WINS 2027 Save the Date",
@@ -807,30 +813,6 @@
       "titolo": "VELYS Robotic-Assisted Knee Replacement Patient Education",
       "link": "https://www.youtube.com/watch?v=sclPFS69LeU",
       "data": "2026-09-16"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Dr. Robert Anderson Surgeon Testimonial",
-      "link": "https://www.youtube.com/watch?v=xh8EbRxYz-Q",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "EVOS◊ SMALL Ankle Surgical Video",
-      "link": "https://www.youtube.com/watch?v=bLr9NFBlzdE",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "MAVERICK◊ Unilateral External Fixation System | Construct Animation",
-      "link": "https://www.youtube.com/watch?v=ww4nCPmqAPw",
-      "data": "2026-09-15"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Comparing the TRIGEN◊  INTERTAN◊ Intertrochanteric Antegrade Nail to a Single Screw Device",
-      "link": "https://www.youtube.com/watch?v=I1auQ-neTKw",
-      "data": "2026-09-15"
      }
     ]
    }
@@ -838,6 +820,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42804769",
+     "titolo": "Annals of Internal Medicine — RCT a gruppi paralleli non in cieco (La Trobe University, registro ACTRN12620001",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42800674",
      "titolo": "Journal of ISAKOS — Coorte retrospettiva multicentrica argentino-ecuadoriana con ponderazione IPTW, 300 revisi",
@@ -1278,6 +1266,55 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Participant-Independent Lower-Limb sEMG and Knee-Goniometry Profiles Across Movement Tasks in a Public Knee-Abnormality Cohort",
+      "dove": "archivio preprint",
+      "data": "2026-09-28",
+      "doi": "10.21203/rs.3.rs-10927896/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10927896/v1"
+     },
+     {
+      "titolo": "Quantifying and Comparing Knee Quasi-Stiffness Across Speed Vault Landing Modes: An Observational Biomechanical Analysis",
+      "dove": "archivio preprint",
+      "data": "2026-09-28",
+      "doi": "10.21203/rs.3.rs-10418677/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10418677/v1"
+     },
+     {
+      "titolo": "Spatial Transcriptomics Identifies Muscle Inflammation Susceptibility as a Distinct Periarticular Skeletal Muscle Phenotype in End-Stage Knee Osteoarthritis",
+      "dove": "archivio preprint",
+      "data": "2026-09-24",
+      "doi": "10.64898/2026.09.16.752138",
+      "url": "https://doi.org/10.64898/2026.09.16.752138"
+     },
+     {
+      "titolo": "Feasibility, Safety, and Preliminary Efficacy of Intermittent Theta Burst Stimulation Targeting the Left Dorsolateral Prefrontal Cortex in Older Adults with Chr",
+      "dove": "archivio preprint",
+      "data": "2026-09-25",
+      "doi": "10.21203/rs.3.rs-10928863/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10928863/v1"
+     },
+     {
+      "titolo": "Efficacy of platelet-rich plasma injections for treating knee osteoarthritis and its influencing factors: a retrospective cohort study",
+      "dove": "archivio preprint",
+      "data": "2026-09-24",
+      "doi": "10.21203/rs.3.rs-10870421/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10870421/v1"
+     },
+     {
+      "titolo": "A prospective single-arm pre-post study of a soft knee orthotic intervention on pain, physical activity, and functional capacity in clinically mild knee osteoar",
+      "dove": "archivio preprint",
+      "data": "2026-09-24",
+      "doi": "10.21203/rs.3.rs-10914868/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10914868/v1"
+     },
+     {
+      "titolo": "Effectiveness and Potential Benefits of the Use of Laser Light Therapy in Musculoskeletal Rehabilitation Programs with a Focus on Knee Osteoarthritis: A Narrati",
+      "dove": "archivio preprint",
+      "data": "2026-09-24",
+      "doi": "10.20944/preprints202608.1113.v2",
+      "url": "https://doi.org/10.20944/preprints202608.1113.v2"
+     },
+     {
       "titolo": "Effect of femoral and tibial tunnel angle on tunnel length and aperture stress in all- epiphyseal anterior cruciate ligament reconstruction: a CT-based and fini",
       "dove": "archivio preprint",
       "data": "2026-09-23",
@@ -1402,55 +1439,6 @@
       "data": "2026-09-14",
       "doi": "10.21203/rs.3.rs-9935639/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-9935639/v1"
-     },
-     {
-      "titolo": "Preoperative clinical, functional, and psychological factors associated with kinesiophobia at 6 months after anterior cruciate ligament reconstruction: a prospe",
-      "dove": "archivio preprint",
-      "data": "2026-09-11",
-      "doi": "10.21203/rs.3.rs-10826415/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10826415/v1"
-     },
-     {
-      "titolo": "Multidomain gait phenotyping in knee osteoarthritis: spatiotemporal, plantar-pressure and lower-limb kinematic findings from a retrospective cross-sectional stu",
-      "dove": "archivio preprint",
-      "data": "2026-09-11",
-      "doi": "10.21203/rs.3.rs-10816633/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10816633/v1"
-     },
-     {
-      "titolo": "The Knee Osteoarthritis Sex Gap Is Not a Biological Constant: A Global Ecological Study Across 204 Countries Revealing a Nine-Fold Range Shaped by Development, ",
-      "dove": "archivio preprint",
-      "data": "2026-09-10",
-      "doi": "10.21203/rs.3.rs-10363146/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10363146/v1"
-     },
-     {
-      "titolo": "The Efficacy of Artificial Intelligence Models in Diagnosing Knee Fractures from X-ray Images using Hybrid Attention Architecture",
-      "dove": "archivio preprint",
-      "data": "2026-09-10",
-      "doi": "10.21203/rs.3.rs-8535392/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-8535392/v1"
-     },
-     {
-      "titolo": "Impact of high external load resistance and low external load resistance training with blood flow restriction on anterior cruciate ligament volume in healthy fe",
-      "dove": "archivio preprint",
-      "data": "2026-09-10",
-      "doi": "10.21203/rs.3.rs-10803830/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10803830/v1"
-     },
-     {
-      "titolo": "Comparison of Functional Recovery and Complications Between Varus and Valgus Knees After Total Knee Arthroplasty: A Large-Sample Cohort Study",
-      "dove": "archivio preprint",
-      "data": "2026-09-10",
-      "doi": "10.21203/rs.3.rs-10714464/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10714464/v1"
-     },
-     {
-      "titolo": "Artificial Intelligence and Surface Electromyography for Assessing Quadriceps Neuromuscular Fatigue and Knee Injury Risk in Professional Basketball Players: A P",
-      "dove": "archivio preprint",
-      "data": "2026-09-09",
-      "doi": "10.20944/preprints202609.0782.v1",
-      "url": "https://doi.org/10.20944/preprints202609.0782.v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
