@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-29T08:31:25Z",
+ "generato": "2026-09-30T07:26:29Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "HPC - Librela ad us. vet., solution injectable pour chiens (Bedinvetmabum)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/tierarzneimittel/medicamenti-per-uso-veterinario/dhpc-veterinary-medicines/hpc-librela-ad-us-vet-injlsg.html",
+      "data": "Tue, 29 Sep 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "DHPC – Clozapina",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-clozapin.html",
       "data": "Sat, 26 Sep 2026 00:00:00 +0000"
@@ -370,16 +376,10 @@
       "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Nuova linea guida «Bonnes pratiques suisses de matériovigilance dans le domaine du diagnostic in vitro» (BPMV-DIV)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/dispositivi-medici/notificare-eventi---fsca/utilizzatori.html",
-      "data": "Thu, 10 Sep 2026 00:00:00 +0000"
-     },
-     {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
-      "titolo": "DHPC – ClozapinaDHPC – Remsima® (infliximab)Out-of-Stock – Ketazed, collyre en solutionDHPC – Apremilast Leman (apremilastum)Rit...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-clozapin.html",
-      "data": "Sat, 26 Sep 2026 06:36:11 +0000"
+      "titolo": "HPC - Librela ad us. vet., solution injectable pour chiens (Bedinvetmabum)DHPC – ClozapinaDHPC – Remsima® (infliximab)Out-of-Sto...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/tierarzneimittel/medicamenti-per-uso-veterinario/dhpc-veterinary-medicines/hpc-librela-ad-us-vet-injlsg.html",
+      "data": "Tue, 29 Sep 2026 19:32:05 +0000"
      }
     ]
    }
@@ -390,6 +390,17 @@
     {
      "sorveglianza": "STABILITY 2 (T1a)",
      "studi": [
+      {
+       "nct": "NCT06664047",
+       "titolo": "Over-the-Top vs. Anteromedial ACLR With Lateral Extraarticular Tenodesis",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-09-29",
+       "fase": [
+        "NA"
+       ],
+       "n": 118,
+       "tipo": "INTERVENTIONAL"
+      },
       {
        "nct": "NCT07041242",
        "titolo": "Outcomes and Complication Rates of Anterior Cruciate Ligament Reconstruction Using the \"Over-the-top\" Technique Combined With Lateral Extra-articular Tenodesis in Patients Over 50 Years Old, Compared With a Control Group of Patients Under 30",
@@ -455,17 +466,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT06664047",
-       "titolo": "Over-the-Top vs. Anteromedial ACLR With Lateral Extraarticular Tenodesis",
-       "stato": "RECRUITING",
-       "aggiornato": "2024-10-31",
-       "fase": [
-        "NA"
-       ],
-       "n": 150,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT06222814",
        "titolo": "Evaluation of the Results of Two Different Methods in Management of Antero-lateral Instability of the Knee",
        "stato": "UNKNOWN",
@@ -497,6 +497,17 @@
     {
      "sorveglianza": "LET / tenodesi laterale",
      "studi": [
+      {
+       "nct": "NCT06664047",
+       "titolo": "Over-the-Top vs. Anteromedial ACLR With Lateral Extraarticular Tenodesis",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-09-29",
+       "fase": [
+        "NA"
+       ],
+       "n": 118,
+       "tipo": "INTERVENTIONAL"
+      },
       {
        "nct": "NCT07041242",
        "titolo": "Outcomes and Complication Rates of Anterior Cruciate Ligament Reconstruction Using the \"Over-the-top\" Technique Combined With Lateral Extra-articular Tenodesis in Patients Over 50 Years Old, Compared With a Control Group of Patients Under 30",
@@ -567,21 +578,23 @@
        ],
        "n": 60,
        "tipo": "INTERVENTIONAL"
-      },
-      {
-       "nct": "NCT06961292",
-       "titolo": "The Clinical Efficacy of Anterolateral Complex Augmentation in Patients With ACL Rupture Combined With Excessive Internal Tibial Rotation Subluxation: A Bidirectional Cohort Study",
-       "stato": "ENROLLING_BY_INVITATION",
-       "aggiornato": "2025-05-07",
-       "fase": null,
-       "n": 335,
-       "tipo": "OBSERVATIONAL"
       }
      ]
     },
     {
      "sorveglianza": "Innesto quadricipitale",
      "studi": [
+      {
+       "nct": "NCT07846709",
+       "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-09-29",
+       "fase": [
+        "NA"
+       ],
+       "n": 150,
+       "tipo": "INTERVENTIONAL"
+      },
       {
        "nct": "NCT07830953",
        "titolo": "SharkScrew ACL RCT",
@@ -651,17 +664,6 @@
        "titolo": "BFR Therapy for Post-Op Rehab of ACL Reconstruction With Quadriceps Tendon Autograft",
        "stato": "COMPLETED",
        "aggiornato": "2026-06-29",
-       "fase": [
-        "NA"
-       ],
-       "n": 60,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
-       "nct": "NCT07671729",
-       "titolo": "Quadriceps Tendon vs Peroneus Longus Tendon in ACL Reconstruction",
-       "stato": "RECRUITING",
-       "aggiornato": "2026-06-26",
        "fase": [
         "NA"
        ],
@@ -753,7 +755,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 342,
+    "doi_citati_controllati": 350,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -795,24 +797,6 @@
       "titolo": "Arthrex Anatomic Proximal Humeral Plating System",
       "link": "https://www.youtube.com/watch?v=UVSDJCOlAow",
       "data": "2026-09-21"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Wide-Awake Endoscopic Carpal Tunnel Release Using the NanoScopic™ Release Disposable System",
-      "link": "https://www.youtube.com/watch?v=0v649CNsl74",
-      "data": "2026-09-16"
-     },
-     {
-      "canale": "DePuy Synthes",
-      "titolo": "How VELYS Robotics Helped Cassandra Get Back in the Classroom",
-      "link": "https://www.youtube.com/watch?v=GJwmH0C1QIU",
-      "data": "2026-09-16"
-     },
-     {
-      "canale": "DePuy Synthes",
-      "titolo": "VELYS Robotic-Assisted Knee Replacement Patient Education",
-      "link": "https://www.youtube.com/watch?v=sclPFS69LeU",
-      "data": "2026-09-16"
      }
     ]
    }
@@ -820,6 +804,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42809375",
+     "titolo": "Arthroscopy — Revisione sistematica (Vosoughi, Menbari Oskouie, Entezari, Torkamanzadeh, Taghva Nakhjiri; PubM",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42804769",
      "titolo": "Annals of Internal Medicine — RCT a gruppi paralleli non in cieco (La Trobe University, registro ACTRN12620001",
@@ -1098,6 +1088,15 @@
     "finestra_giorni": 60,
     "voci": [
      {
+      "pmid": "42809374",
+      "titolo": "The Use of Unloader Bracing in the Management of Knee Osteoarthritis: A Modified Delphi Consensus Study.",
+      "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
+      "data": "2026 Sep 29",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
       "pmid": "42791228",
       "titolo": "Unloader Bracing Is a Biomechanically Rational and Clinically Useful Intervention in Selected Patients With Tibiofemoral Joint Cartilage Pathology: A Modified Delphi Consensus Stud",
       "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
@@ -1237,15 +1236,6 @@
       "tipi": [
        "Journal Article",
        "Review"
-      ]
-     },
-     {
-      "pmid": "42535925",
-      "titolo": "Osteochondral Lesions of the Tibial Plafond (OLTPs): Proceedings of the International Consensus Meeting on Cartilage Repair of the Ankle.",
-      "rivista": "Foot & ankle specialist",
-      "data": "2026 Jul 31",
-      "tipi": [
-       "Journal Article"
       ]
      }
     ]
