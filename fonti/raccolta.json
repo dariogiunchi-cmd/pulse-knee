@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-30T07:26:29Z",
+ "generato": "2026-09-30T08:34:55Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -323,14 +323,14 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Informazioni sulla release del portale Swissmedic – 23 settembre 2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/kpa/aktuell-kpa/information-zum-swissmedic-portal-release-23-09-2026.html",
+      "titolo": "Release del portale di Swissmedic – nuove funzionalità disponibili dal 23 settembre 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/swissmedic-portal-release-neue-funktionen-ab-23-september-2026.html",
       "data": "Thu, 24 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Release del portale di Swissmedic – nuove funzionalità disponibili dal 23 settembre 2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/swissmedic-portal-release-neue-funktionen-ab-23-september-2026.html",
+      "titolo": "Informazioni sulla release del portale Swissmedic – 23 settembre 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/kpa/aktuell-kpa/information-zum-swissmedic-portal-release-23-09-2026.html",
       "data": "Thu, 24 Sep 2026 00:00:00 +0000"
      },
      {
@@ -365,14 +365,14 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Ogsiveo®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ogsiveo.html",
+      "titolo": "Rapporto sintetico di omologazione – Tranylcypromine Rivopharm®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-tranylcypromine-rivopharm.html",
       "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Tranylcypromine Rivopharm®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-tranylcypromine-rivopharm.html",
+      "titolo": "Rapporto sintetico di omologazione – Ogsiveo®",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ogsiveo.html",
       "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
