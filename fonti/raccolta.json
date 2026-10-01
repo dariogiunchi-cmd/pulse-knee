@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-30T08:34:55Z",
+ "generato": "2026-10-01T07:47:06Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,18 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Adeguamento della guida complementare Importazione di un medicamento per uso umano ai sensi dell’art. 14 cpv. 2 e 3 LATer (impor...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/anpassung-der-wegleitung-einfuhr-eines-humanarzneimittels-nach-art-14-abs-2-und-3-hmg-parallelimport.html",
+      "data": "Thu, 01 Oct 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Revisione della guida complementare Omologazione Biosimilari",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/revision-der-wegleitung-zulassung-biosimilar.html",
+      "data": "Thu, 01 Oct 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "HPC - Librela ad us. vet., solution injectable pour chiens (Bedinvetmabum)",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/tierarzneimittel/medicamenti-per-uso-veterinario/dhpc-veterinary-medicines/hpc-librela-ad-us-vet-injlsg.html",
       "data": "Tue, 29 Sep 2026 00:00:00 +0000"
@@ -323,14 +335,14 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Release del portale di Swissmedic – nuove funzionalità disponibili dal 23 settembre 2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/swissmedic-portal-release-neue-funktionen-ab-23-september-2026.html",
+      "titolo": "Informazioni sulla release del portale Swissmedic – 23 settembre 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/kpa/aktuell-kpa/information-zum-swissmedic-portal-release-23-09-2026.html",
       "data": "Thu, 24 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Informazioni sulla release del portale Swissmedic – 23 settembre 2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/kpa/aktuell-kpa/information-zum-swissmedic-portal-release-23-09-2026.html",
+      "titolo": "Release del portale di Swissmedic – nuove funzionalità disponibili dal 23 settembre 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/swissmedic-portal-release-neue-funktionen-ab-23-september-2026.html",
       "data": "Thu, 24 Sep 2026 00:00:00 +0000"
      },
      {
@@ -361,18 +373,6 @@
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Rapporto sintetico di omologazione – Abrysvo®",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-abrysvo-1.html",
-      "data": "Tue, 15 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Tranylcypromine Rivopharm®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-tranylcypromine-rivopharm.html",
-      "data": "Tue, 15 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Ogsiveo®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-ogsiveo.html",
       "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
@@ -618,17 +618,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07580157",
-       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
-       "stato": "ENROLLING_BY_INVITATION",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 20,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07753707",
        "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
        "stato": "ACTIVE_NOT_RECRUITING",
@@ -637,6 +626,17 @@
         "NA"
        ],
        "n": 111,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07580157",
+       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 20,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -755,9 +755,17 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 350,
+    "doi_citati_controllati": 359,
     "colpiti": [],
     "nel_perimetro": [
+     {
+      "tipo": "retraction",
+      "avviso": "10.1016/j.heliyon.2023.e23084",
+      "bersaglio": [
+       "10.1016/j.heliyon.2023.e23084"
+      ],
+      "titolo": "RETRACTED: Tetraclinis articulata (Vahl) Mast. essential oil as a promising source of bioactive compounds with antimicrobial, antioxidant, anti-inflammatory and"
+     },
      {
       "tipo": "withdrawal",
       "avviso": "10.1016/j.jor.2019.02.032",
@@ -804,6 +812,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42815981",
+     "titolo": "BMJ — Emulazione di trial su registro nazionale (National Joint Registry di Inghilterra, Galles, Irlanda del N",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42809375",
      "titolo": "Arthroscopy — Revisione sistematica (Vosoughi, Menbari Oskouie, Entezari, Torkamanzadeh, Taghva Nakhjiri; PubM",
