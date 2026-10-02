@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-01T08:57:02Z",
+ "generato": "2026-10-02T07:30:28Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -35,7 +35,7 @@
      },
      {
       "recalling_firm": "Medline Industries, LP",
-      "product_description": "Medline Kits containing Zimmer Biomet mixing bowls and spatulas\n\nTOTAL KNEE PACK\nDYNJT6267",
+      "product_description": "Medline Kits containing Zimmer Biomet mixing bowls and spatulas\r\n\r\nTOTAL KNEE PACK\r\nDYNJT6267",
       "reason_for_recall": "Kits contain Zimmer Biomet mixing bowls and spatulas, which were recalled due to seal nonconformities which present risk of sterility breach. Health consequences from use of product include clinically insignificant extension of surgery to find another readily available device.",
       "root_cause_description": "Under Investigation by firm",
       "event_date_initiated": "2026-06-10",
@@ -44,7 +44,7 @@
      },
      {
       "recalling_firm": "Medline Industries, LP",
-      "product_description": "Medline Kits containing Zimmer Biomet mixing bowls and spatulas\n\nTOTAL KNEE PACK-LF\nDYNJ61651J",
+      "product_description": "Medline Kits containing Zimmer Biomet mixing bowls and spatulas\r\n\r\nTOTAL KNEE PACK-LF\r\nDYNJ61651J",
       "reason_for_recall": "Kits contain Zimmer Biomet mixing bowls and spatulas, which were recalled due to seal nonconformities which present risk of sterility breach. Health consequences from use of product include clinically insignificant extension of surgery to find another readily available device.",
       "root_cause_description": "Under Investigation by firm",
       "event_date_initiated": "2026-06-10",
@@ -125,7 +125,7 @@
      },
      {
       "recalling_firm": "Think Surgical, Inc.",
-      "product_description": "TMINI Femur Tracking Array REF 109003\r\nUDI-DI code: M9461090030\r\n\r\nTMINI Tibia Tracking Array REF 109004\r\nUDI-DI code: M9461090040\r\n\r\nTMINI Miniature Robotic System is indicated as a stereotaxic instrumentation system for total knee replacement (TKA) surgery. It is to assist the surgeon by providing software-defined spatial boundaries for orientation and reference information to identifiable anatomical structures for the accurate placement of knee implant components",
+      "product_description": "TMINI Femur Tracking Array REF 109003\nUDI-DI code: M9461090030\n\nTMINI Tibia Tracking Array REF 109004\nUDI-DI code: M9461090040\n\nTMINI Miniature Robotic System is indicated as a stereotaxic instrumentation system for total knee replacement (TKA) surgery. It is to assist the surgeon by providing software-defined spatial boundaries for orientation and reference information to identifiable anatomical structures for the accurate placement of knee implant components",
       "reason_for_recall": "Due to manufacturing/design issue where the knob on the tracking array may loosen causing potential misalignment of the array.",
       "root_cause_description": "Process control",
       "event_date_initiated": "2026-05-08",
@@ -299,6 +299,12 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Adeguamenti necessari per il rilascio delle autorizzazioni d’esercizio e dei certificati GMP per i fabbricanti di principi attiv...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/notwendige-anpassungen-fuer-die-ausstellung-von-betriebsbewilligungen-und-gmp-zertifikaten-fuer-wirkstoffhersteller.html",
+      "data": "Thu, 01 Oct 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "HPC - Librela ad us. vet., solution injectable pour chiens (Bedinvetmabum)",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/tierarzneimittel/medicamenti-per-uso-veterinario/dhpc-veterinary-medicines/hpc-librela-ad-us-vet-injlsg.html",
       "data": "Tue, 29 Sep 2026 00:00:00 +0000"
@@ -368,12 +374,6 @@
       "titolo": "Preavviso relativo alla release del portale di Swissmedic del 23 settembre 2026",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/kpa/aktuell-kpa/info-kpa-portalrelease-09-2026.html",
       "data": "Thu, 17 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Rapporto sintetico di omologazione – Abrysvo®",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/public-summary-swiss-par/public-summary-swiss-par-abrysvo-1.html",
-      "data": "Tue, 15 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
@@ -618,17 +618,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07753707",
-       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 111,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07580157",
        "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
        "stato": "ENROLLING_BY_INVITATION",
@@ -637,6 +626,17 @@
         "NA"
        ],
        "n": 20,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07753707",
+       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 111,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -755,7 +755,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 359,
+    "doi_citati_controllati": 367,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -782,6 +782,24 @@
    "esito": "ok",
    "dati": {
     "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Women in Foot and Ankle Surgery Course - December 11-12, 2026",
+      "link": "https://www.youtube.com/shorts/tidYdE-V2uA",
+      "data": "2026-10-01"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "NanoNeedle™ Scope 2.0 for Gastrocnemius Recession",
+      "link": "https://www.youtube.com/watch?v=FsD5Itp3GDc",
+      "data": "2026-10-01"
+     },
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "CORI ◊ SHOULDER | Handheld Robotics in Shoulder Arthroplasty with Dr. Christopher Klifto",
+      "link": "https://www.youtube.com/watch?v=LFDiRdZS1ME",
+      "data": "2026-10-01"
+     },
      {
       "canale": "Arthrex",
       "titolo": "Long-Bone Fracture Management Using the QuickPass™ FiberTape® Cerclage System",
@@ -1102,6 +1120,15 @@
     "finestra_giorni": 60,
     "voci": [
      {
+      "pmid": "42821083",
+      "titolo": "Correction: Genicular Artery Embolization for Chronic Knee Pain: Expert Consensus Recommendations on Indications, Technique and Clinical Care Using a Delphi Process.",
+      "rivista": "Cardiovascular and interventional radiology",
+      "data": "2026 Oct 1",
+      "tipi": [
+       "Published Erratum"
+      ]
+     },
+     {
       "pmid": "42809374",
       "titolo": "The Use of Unloader Bracing in the Management of Knee Osteoarthritis: A Modified Delphi Consensus Study.",
       "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
@@ -1270,6 +1297,55 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "The Effects of a Digital Exercise Therapy Application for Patients with Shoulder and Knee Pain During the COVID-19 Pandemic",
+      "dove": "archivio preprint",
+      "data": "2026-10-01",
+      "doi": "10.64898/2026.09.25.26364013",
+      "url": "https://doi.org/10.64898/2026.09.25.26364013"
+     },
+     {
+      "titolo": "Impact of Daily Physical Fatigue on Inter-Limb Load Asymmetry and Joint Loading Rates During Daily Living Tasks in Unilateral Knee Osteoarthritis",
+      "dove": "archivio preprint",
+      "data": "2026-10-01",
+      "doi": "10.64898/2026.09.25.26364015",
+      "url": "https://doi.org/10.64898/2026.09.25.26364015"
+     },
+     {
+      "titolo": "Impact of Gluteus Medius Strengthening Based Knee Rehabilitation on Radiographic Knee Alignment and Muscle Function in Patients Following Total Knee Arthroplast",
+      "dove": "archivio preprint",
+      "data": "2026-09-30",
+      "doi": "10.20944/preprints202609.2616.v1",
+      "url": "https://doi.org/10.20944/preprints202609.2616.v1"
+     },
+     {
+      "titolo": "The Influence of Obesity and Body Shape on Sagittal Plane Knee Kinematics and Kinetics during Obstacle Crossing",
+      "dove": "archivio preprint",
+      "data": "2026-09-28",
+      "doi": "10.64898/2026.09.24.753943",
+      "url": "https://doi.org/10.64898/2026.09.24.753943"
+     },
+     {
+      "titolo": "Lateral Partial Patellar Facetectomy Is Associated with Improved Patellofemoral Outcomes Following Primary Non-Resurfaced Total Knee Arthroplasty: A Retrospecti",
+      "dove": "archivio preprint",
+      "data": "2026-09-29",
+      "doi": "10.21203/rs.3.rs-10943625/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10943625/v1"
+     },
+     {
+      "titolo": "Psychological and Knee Function Measures at 1 Month Predict High Kinesiophobia at 6 Months After Anterior Cruciate Ligament Reconstruction: Development and Inte",
+      "dove": "archivio preprint",
+      "data": "2026-09-29",
+      "doi": "10.21203/rs.3.rs-10838037/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10838037/v1"
+     },
+     {
+      "titolo": "Process evaluation protocol of a trial evaluating app-based post knee arthroplasty telerehabilitation strategy in India",
+      "dove": "archivio preprint",
+      "data": "2026-09-29",
+      "doi": "10.12688/wellcomeopenres.26007.3",
+      "url": "https://doi.org/10.12688/wellcomeopenres.26007.3"
+     },
+     {
       "titolo": "Participant-Independent Lower-Limb sEMG and Knee-Goniometry Profiles Across Movement Tasks in a Public Knee-Abnormality Cohort",
       "dove": "archivio preprint",
       "data": "2026-09-28",
@@ -1394,55 +1470,6 @@
       "data": "2026-09-16",
       "doi": "10.21203/rs.3.rs-10529465/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10529465/v1"
-     },
-     {
-      "titolo": "Three-Month Clinical Outcomes and Exploratory Gait Changes After Intra- Articular Platelet-Rich Plasma for Mild-to-Moderate Knee Osteoarthritis: A Prospective S",
-      "dove": "archivio preprint",
-      "data": "2026-09-16",
-      "doi": "10.21203/rs.3.rs-10853879/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10853879/v1"
-     },
-     {
-      "titolo": "Toward the use of simulated environments to evaluate sEMG-informed knee-angle prediction: RMSE predicts simulated instability only above a threshold error",
-      "dove": "archivio preprint",
-      "data": "2026-09-16",
-      "doi": "10.21203/rs.3.rs-10843698/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10843698/v1"
-     },
-     {
-      "titolo": "Individualized Alignment Restoration and Forgotten Joint Status After Medial Unicompartmental Knee Arthroplasty: Development and Internal Validation of a Clinic",
-      "dove": "archivio preprint",
-      "data": "2026-09-15",
-      "doi": "10.21203/rs.3.rs-10786125/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10786125/v1"
-     },
-     {
-      "titolo": "Multimodal mean and variability gait features for machine- learning discrimination between healthy middle-aged and older adults and participants with knee osteo",
-      "dove": "archivio preprint",
-      "data": "2026-09-14",
-      "doi": "10.21203/rs.3.rs-10537844/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10537844/v1"
-     },
-     {
-      "titolo": "Mid- to Long-Term Outcomes of Unicompartmental Knee Arthroplasty: The Significant Impact of Patient Age on Revision Rates",
-      "dove": "archivio preprint",
-      "data": "2026-09-14",
-      "doi": "10.21203/rs.3.rs-10586372/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10586372/v1"
-     },
-     {
-      "titolo": "Development of a model for evaluating knee extensor muscle strength using ultrasound-derived indicators and physical characteristics: An exploratory study",
-      "dove": "archivio preprint",
-      "data": "2026-09-14",
-      "doi": "10.21203/rs.3.rs-10919998/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10919998/v1"
-     },
-     {
-      "titolo": "A Comparative Study on Early Clinical Outcomes of Navigation-Assisted Functional Alignment Total Knee Arthroplasty versus Mechanical Alignment Total Knee Arthro",
-      "dove": "archivio preprint",
-      "data": "2026-09-14",
-      "doi": "10.21203/rs.3.rs-9935639/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-9935639/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
