@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-02T08:32:40Z",
+ "generato": "2026-10-03T07:04:52Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -755,17 +755,9 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 367,
+    "doi_citati_controllati": 376,
     "colpiti": [],
     "nel_perimetro": [
-     {
-      "tipo": "retraction",
-      "avviso": "10.1016/j.heliyon.2023.e23084",
-      "bersaglio": [
-       "10.1016/j.heliyon.2023.e23084"
-      ],
-      "titolo": "RETRACTED: Tetraclinis articulata (Vahl) Mast. essential oil as a promising source of bioactive compounds with antimicrobial, antioxidant, anti-inflammatory and"
-     },
      {
       "tipo": "withdrawal",
       "avviso": "10.1016/j.jor.2019.02.032",
@@ -1120,6 +1112,33 @@
     "finestra_giorni": 60,
     "voci": [
      {
+      "pmid": "42825587",
+      "titolo": "American Academy of Orthopaedic Surgeons Clinical Practice Guideline Summary: Management of Acute Isolated Meniscal Pathology: Erratum.",
+      "rivista": "The Journal of the American Academy of Orthopaedic Surgeons",
+      "data": "2026 Oct 15",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42825585",
+      "titolo": "AAOS Clinical Practice Guideline Summary: Management of Osteoarthritis of the Knee (Nonarthroplasty), Third Edition: Erratum.",
+      "rivista": "The Journal of the American Academy of Orthopaedic Surgeons",
+      "data": "2026 Oct 15",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42825584",
+      "titolo": "AAOS Clinical Practice Guideline Summary: Prevention of Total Hip and Knee Arthroplasty Periprosthetic Joint Infection in Patients Undergoing Dental Procedures: Erratum.",
+      "rivista": "The Journal of the American Academy of Orthopaedic Surgeons",
+      "data": "2026 Oct 15",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
       "pmid": "42821083",
       "titolo": "Correction: Genicular Artery Embolization for Chronic Knee Pain: Expert Consensus Recommendations on Indications, Technique and Clinical Care Using a Delphi Process.",
       "rivista": "Cardiovascular and interventional radiology",
@@ -1268,16 +1287,6 @@
       "tipi": [
        "Journal Article"
       ]
-     },
-     {
-      "pmid": "42545819",
-      "titolo": "Management of increased posterior tibial slope in ACL deficiency: A narrative review and recommendation of the Osteotomy Committee of the German Knee Society.",
-      "rivista": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
-      "data": "2026 Aug 3",
-      "tipi": [
-       "Journal Article",
-       "Review"
-      ]
      }
     ]
    }
@@ -1296,6 +1305,13 @@
    "dati": {
     "finestra_giorni": 30,
     "voci": [
+     {
+      "titolo": "Time-Varying Coactivation Pattern and Knee Joint Kinematics and Kinetics Following ACL Reconstruction: A Statistical Parametric Mapping Approach",
+      "dove": "archivio preprint",
+      "data": "2026-10-02",
+      "doi": "10.64898/2026.09.30.26364410",
+      "url": "https://doi.org/10.64898/2026.09.30.26364410"
+     },
      {
       "titolo": "The Effects of a Digital Exercise Therapy Application for Patients with Shoulder and Knee Pain During the COVID-19 Pandemic",
       "dove": "archivio preprint",
@@ -1463,13 +1479,6 @@
       "data": "2026-09-17",
       "doi": "10.21203/rs.3.rs-10886959/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10886959/v1"
-     },
-     {
-      "titolo": "Influence of Anaesthesia Technique on Patient-Reported Outcomes After Total Knee Arthroplasty: A Prospective Randomized Comparison of Complete Peripheral Nerve ",
-      "dove": "archivio preprint",
-      "data": "2026-09-16",
-      "doi": "10.21203/rs.3.rs-10529465/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10529465/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
