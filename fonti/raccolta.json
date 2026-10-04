@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-04T07:21:55Z",
+ "generato": "2026-10-04T08:27:27Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -758,14 +758,6 @@
     "doi_citati_controllati": 384,
     "colpiti": [],
     "nel_perimetro": [
-     {
-      "tipo": "retraction",
-      "avviso": "10.1016/j.heliyon.2023.e23084",
-      "bersaglio": [
-       "10.1016/j.heliyon.2023.e23084"
-      ],
-      "titolo": "RETRACTED: Tetraclinis articulata (Vahl) Mast. essential oil as a promising source of bioactive compounds with antimicrobial, antioxidant, anti-inflammatory and"
-     },
      {
       "tipo": "withdrawal",
       "avviso": "10.1016/j.jor.2019.02.032",
