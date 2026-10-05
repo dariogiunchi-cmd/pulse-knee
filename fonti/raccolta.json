@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-04T08:27:27Z",
+ "generato": "2026-10-05T07:40:33Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -755,7 +755,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 384,
+    "doi_citati_controllati": 392,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -809,12 +809,6 @@
       "titolo": "Olecranon Fracture Fixation Using the Arthrex Elbow Plating System",
       "link": "https://www.youtube.com/watch?v=IWOY8Y-43v4",
       "data": "2026-09-23"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Anatomic Proximal Humeral Plating System",
-      "link": "https://www.youtube.com/watch?v=UVSDJCOlAow",
-      "data": "2026-09-21"
      }
     ]
    }
