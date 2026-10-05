@@ -7,12 +7,20 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 4 ottobre 2026.*
+*Ultimo aggiornamento: 5 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-10-05 | Journal of Experimental Orthopaedics | Studio prospettico comparativo da registro (Högberg, Wernbom, Sundberg, Hermansson, Larsson, Adell, Samuelsson, Hamrin Senorski; Göteborg), 68 LCA hamstring + 33 controlli rotuleo/quadricipitale, simmetria dei flessori con quattro test | 10.1002/jeo2.70932 | LCA, hamstring, criterio di rientro, LSI | aperto — 🟢 livello II; LSI 98,4% (Biodex) contro 54,5% (ISO90 PF), differenza 43,9% (IC 95% 39,9-47,8); quota ≥90% 80% contro 3%; controllo quasi tutto rotuleo; tocca T3 (metodo)
+2026-10-05 | Journal of Experimental Orthopaedics | Serie retrospettiva (Abdulai, Schweizer, Rühle, Krug, Morgenbesser, Herre, Aldinger, Merle, Waldstein; Stoccarda), 84 UKA laterali fixed-bearing ≤55 anni | 10.1002/jeo2.70935 | UKA laterale, giovani | aperto — 🟢 livello IV; nessuna revisione del componente laterale, sopravvivenza libera da reintervento a 5 anni 92,5% (IC 95% 86,8-98,2); nessun controllo
+2026-10-05 | Journal of Experimental Orthopaedics | Coorte retrospettiva (Morita, Shin, El-Hassan, Shichman, Long, Sculco; HSS), 402 TKA robot-assistite, obliquità della rima articolare | 10.1002/jeo2.70936 | protesi totale, robotica, CPAK, equilibrio | aperto — 🟢 livello III; maggiore ΔJLO con minore squilibrio in flessione (β -0,060; p<0,001); nessuna associazione con KOOS JR; piattaforma non indicata
+2026-10-05 | Journal of Experimental Orthopaedics | Studio radiografico retrospettivo (Favroul, Kaitouni, Servien, Batailler, Lustig; Lione), 320 TKA MAKO, approccio e inserto | 10.1002/jeo2.70933 | protesi totale, robotica, rotula | aperto — 🟢 livello IV; differenza di tilt rotulea di circa 1°, IC non riportati; MAKO, non VELYS
+2026-10-05 | Journal of Experimental Orthopaedics | Studio retrospettivo con questionario (Gonzalez, Isla, Barba, Erskine, Landea, Tapia, Figueroa), 150 UKA, 6,8 anni | 10.1002/jeo2.70929 | UKA, ritorno allo sport | aperto — 🟢 livello IV; partecipazione attuale 33,3%, ripresa entro 12 mesi 49,3%, limitazioni 75,3%; dati ricordati
+2026-10-05 | Indian Journal of Orthopaedics | Coorte retrospettiva (İnce, Oğur, Çiçek, Seyfettinoğlu, Pazarcı, Çiçek), 100 LCA hamstring, asse coronale a 5 anni | 10.1007/s43465-026-01699-0 | LCA, allineamento, varo | aperto — 🟢 livello IV; HKA 177,3° ± 3,3 contro 177,7° ± 3,1 (p>0,05); varo e Lysholm r -0,28 (p=0,01); MUTO (nessuna equivalenza)
+2026-10-05 | Indian Journal of Orthopaedics | Serie prospettica (Rs, Loganathan, S), 246 TKA con allineamento cinematico ristretto e guide da TC | 10.1007/s43465-026-01844-9 | protesi totale, allineamento cinematico, guide su misura | aperto — ⚪ livello IV; nessun controllo, 6-18 mesi, complicanze 2,0%
+2026-10-05 | Journal of Experimental Orthopaedics | Studio trasversale (Sasabe, Ozeki, Katano, Nakagawa, Nakamura, Koga, Sekiya), 94 ginocchia di 89 donne, RM di copertura meniscale e cartilagine | 10.1002/jeo2.70927 | menisco, cartilagine, asse meccanico, osteotomia | aperto — ⚪ livello III; R² aggiustato 0,668 (aHKA) contro 0,840 (con JLCA) e 0,841 (con RM)
 2026-10-04 | Journal of ISAKOS | Studio caso-controllo retrospettivo accoppiato (Oehme, Arteaga, El-Kayali, Wolf, Bartek, Gwinner, Winkler, Jung, Milinkovic; Charité Berlino), 280 pazienti con lesione cartilaginea trattati con MACI, slope tibiale mediale | 10.1016/j.jisako.2026.101228 | slope, cartilagine, femororotuleo | aperto — 🟢 PICK del giorno; MPTS 9,73° contro 8,92° (differenza aggiustata 0,80°; IC 95% 0,32-1,27), solo retropatellare (+0,92°; IC 0,05-1,80) e trocleare (+1,60°; IC 0,11-3,10), non condili; livello III, solo associazione; non muove T1a (riguarda la cartilagine, non l'innesto)
 2026-10-04 | Indian Journal of Orthopaedics | Rassegna narrativa (Elliott, Gupte), 51 studi, LCP negli atleti d'élite | 10.1007/s43465-026-01794-2 | LCP, multilegamentose, ritorno allo sport | aperto — 🟢 livello V; rientro >90% con tutore dinamico nelle lesioni isolate acute selezionate di grado II-III (livello III), 80-90% nelle multilegamentose; nessun IC
 2026-10-04 | Arthroscopy Techniques | Nota di tecnica (Dai, Yang, Jiang, Chen), MPFL con cordone di retinacolo mediale al posto del legamento quadricipito-femorale mediale | 10.1002/atn2.70282 | MPFL, instabilità rotulea | aperto — 🟢 livello V, nessun paziente né esito
@@ -1260,6 +1268,17 @@ Nessuno dei due lavori è sul tuo innesto (entrambi hamstring, nessun rinforzo l
 un esito duro nuovo oltre la rirottura già discussa il 10 settembre, ma convergono nella stessa direzione di
 quanto già raccolto sul retto femorale: la sola simmetria di forza misurata una volta, a un tempo fisso, non
 basta a certificare il rientro.
+
+**Nuovo il 5 ottobre 2026, un tassello di metodo: la soglia del 90% dipende dal test con cui si misura.**
+Uno studio prospettico del registro Project ACL di Göteborg (Högberg, Wernbom, Hamrin Senorski et al.,
+*J Exp Orthop*) su 68 pazienti operati con hamstring, a una mediana di 12 mesi, misura la simmetria dei flessori
+con quattro test: 98,4% ± 10,5% al Biodex seduto, 85,3% ± 14,4% al Nordic hamstring, 64,1% ± 13,6% e 54,5% ± 16,0%
+nelle due prove isometriche prone (differenza Biodex-ISO90 PF 43,9%; IC 95% 39,9-47,8). La quota che supera il 90% va
+dall'80% al 3% secondo il test; nei 33 controlli, quasi tutti con innesto rotuleo (32; uno quadricipitale), la
+differenza fra gli stessi test è di circa 6 punti. Non è il tuo innesto e non misura l'estensione, dove è atteso il
+tuo deficit: il tassello è di metodo. Se usi una soglia di simmetria per il rientro, annota con quale test (strumento,
+posizione, tipo di contrazione), perché un 90% al Biodex e un 90% in una prova prona non sono lo stesso fatto. Limiti:
+test nella stessa seduta e non randomizzati, controllo piccolo, nessun esito duro.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
