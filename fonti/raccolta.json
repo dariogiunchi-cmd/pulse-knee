@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-05T09:05:20Z",
+ "generato": "2026-10-06T08:06:43Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -35,7 +35,7 @@
      },
      {
       "recalling_firm": "Medline Industries, LP",
-      "product_description": "Medline Kits containing Zimmer Biomet mixing bowls and spatulas\r\n\r\nTOTAL KNEE PACK\r\nDYNJT6267",
+      "product_description": "Medline Kits containing Zimmer Biomet mixing bowls and spatulas\n\nTOTAL KNEE PACK\nDYNJT6267",
       "reason_for_recall": "Kits contain Zimmer Biomet mixing bowls and spatulas, which were recalled due to seal nonconformities which present risk of sterility breach. Health consequences from use of product include clinically insignificant extension of surgery to find another readily available device.",
       "root_cause_description": "Under Investigation by firm",
       "event_date_initiated": "2026-06-10",
@@ -44,7 +44,7 @@
      },
      {
       "recalling_firm": "Medline Industries, LP",
-      "product_description": "Medline Kits containing Zimmer Biomet mixing bowls and spatulas\r\n\r\nTOTAL KNEE PACK-LF\r\nDYNJ61651J",
+      "product_description": "Medline Kits containing Zimmer Biomet mixing bowls and spatulas\n\nTOTAL KNEE PACK-LF\nDYNJ61651J",
       "reason_for_recall": "Kits contain Zimmer Biomet mixing bowls and spatulas, which were recalled due to seal nonconformities which present risk of sterility breach. Health consequences from use of product include clinically insignificant extension of surgery to find another readily available device.",
       "root_cause_description": "Under Investigation by firm",
       "event_date_initiated": "2026-06-10",
@@ -341,14 +341,14 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Informazioni sulla release del portale Swissmedic – 23 settembre 2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/kpa/aktuell-kpa/information-zum-swissmedic-portal-release-23-09-2026.html",
+      "titolo": "Release del portale di Swissmedic – nuove funzionalità disponibili dal 23 settembre 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/swissmedic-portal-release-neue-funktionen-ab-23-september-2026.html",
       "data": "Thu, 24 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Release del portale di Swissmedic – nuove funzionalità disponibili dal 23 settembre 2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/swissmedic-portal-release-neue-funktionen-ab-23-september-2026.html",
+      "titolo": "Informazioni sulla release del portale Swissmedic – 23 settembre 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/kpa/aktuell-kpa/information-zum-swissmedic-portal-release-23-09-2026.html",
       "data": "Thu, 24 Sep 2026 00:00:00 +0000"
      },
      {
@@ -585,6 +585,17 @@
      "sorveglianza": "Innesto quadricipitale",
      "studi": [
       {
+       "nct": "NCT07830953",
+       "titolo": "SharkScrew ACL RCT",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-10-05",
+       "fase": [
+        "NA"
+       ],
+       "n": 33,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
        "nct": "NCT07846709",
        "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
        "stato": "NOT_YET_RECRUITING",
@@ -593,17 +604,6 @@
         "NA"
        ],
        "n": 150,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
-       "nct": "NCT07830953",
-       "titolo": "SharkScrew ACL RCT",
-       "stato": "NOT_YET_RECRUITING",
-       "aggiornato": "2026-09-21",
-       "fase": [
-        "NA"
-       ],
-       "n": 33,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -618,17 +618,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07580157",
-       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
-       "stato": "ENROLLING_BY_INVITATION",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 20,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07753707",
        "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
        "stato": "ACTIVE_NOT_RECRUITING",
@@ -637,6 +626,17 @@
         "NA"
        ],
        "n": 111,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07580157",
+       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 20,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -675,6 +675,17 @@
     {
      "sorveglianza": "Radice meniscale",
      "studi": [
+      {
+       "nct": "NCT07858669",
+       "titolo": "Arthroscopic Capsulodesis Decreases Meniscal Extrusion at 1 Year Follow up When Combined With Transtibial Pull Out Repair of Posteromedial Root Lesion. A Prospective Randomized Study",
+       "stato": "COMPLETED",
+       "aggiornato": "2026-10-05",
+       "fase": [
+        "NA"
+       ],
+       "n": 28,
+       "tipo": "INTERVENTIONAL"
+      },
       {
        "nct": "NCT05985772",
        "titolo": "Operative vs Non-operative Management of Posterior-medial Meniscal Root Tears: A Randomized Multicenter Trial (RCT)",
@@ -755,9 +766,17 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 392,
+    "doi_citati_controllati": 400,
     "colpiti": [],
     "nel_perimetro": [
+     {
+      "tipo": "retraction",
+      "avviso": "10.1016/j.heliyon.2023.e23084",
+      "bersaglio": [
+       "10.1016/j.heliyon.2023.e23084"
+      ],
+      "titolo": "RETRACTED: Tetraclinis articulata (Vahl) Mast. essential oil as a promising source of bioactive compounds with antimicrobial, antioxidant, anti-inflammatory and"
+     },
      {
       "tipo": "withdrawal",
       "avviso": "10.1016/j.jor.2019.02.032",
@@ -774,6 +793,12 @@
    "esito": "ok",
    "dati": {
     "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Hip Joint Access Using the Atraumatic Hip Access Convenience Kit",
+      "link": "https://www.youtube.com/watch?v=UYtAITPqfJA",
+      "data": "2026-10-05"
+     },
      {
       "canale": "Arthrex",
       "titolo": "Arthrex Women in Foot and Ankle Surgery Course - December 11-12, 2026",
@@ -1062,9 +1087,7 @@
      "citanti": [
       "42742643"
      ],
-     "nuovi": [
-      "42742643"
-     ]
+     "nuovi": []
     },
     {
      "pmid": "42545819",
@@ -1295,6 +1318,13 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Clinical Outcomes of Biomaterial-Based Cartilage Repair Strategies for Knee Chondral Defects: A Systematic Review and Meta- Analysis",
+      "dove": "archivio preprint",
+      "data": "2026-10-05",
+      "doi": "10.21203/rs.3.rs-11054622/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11054622/v1"
+     },
+     {
       "titolo": "Time-Varying Coactivation Pattern and Knee Joint Kinematics and Kinetics Following ACL Reconstruction: A Statistical Parametric Mapping Approach",
       "dove": "archivio preprint",
       "data": "2026-10-02",
@@ -1461,13 +1491,6 @@
       "data": "2026-09-18",
       "doi": "10.21203/rs.3.rs-10762706/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10762706/v1"
-     },
-     {
-      "titolo": "Deep Learning Reconstruction in Pediatric Knee MRI: Evaluation of Image Quality, Reader Preference, and Acquisition Time",
-      "dove": "archivio preprint",
-      "data": "2026-09-17",
-      "doi": "10.21203/rs.3.rs-10886959/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10886959/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
