@@ -7,12 +7,20 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 5 ottobre 2026.*
+*Ultimo aggiornamento: 7 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-10-07 | Journal of Experimental Orthopaedics | Coorte clinica monocentrica (Weber, Maxand, Wagner; Neuruppin/Berlino), 59/63 pazienti, LCA più sMCL a banda singola con peroneo lungo diviso per instabilità rotatoria anteromediale | 10.1002/jeo2.70941 | MCL, AMRI, LCA, peroneo lungo | aperto — 🟢 PICK livello IV; differenza laterale del cassetto in rotazione esterna 0,0 ± 1,3 mm (IC 95% da -0,4 a 0,3), pivot-shift negativo 93%, RTS 66%; nessun controllo; non è il tuo costrutto (semitendineo 91%, Lemaire 29%); non muove tensioni
+2026-10-07 | Arthroscopy | Revisione sistematica (Han, Jung, Chung, Moon, Jung, Lim, Kim; Yonsei), 9 studi, soglie MCID/PASS dopo LCA | 10.1002/arj.70512 | LCA, PROM, MCID | aperto — 🟢 IKDC MCID 9,0-10,4, PASS 74,2-86,8; KOOS MCID 2,5-21,9; soglie non esportabili; IC non riportati
+2026-10-07 | Frontiers in Surgery | Coorte retrospettiva (Wang et al.), 165 ginocchia K-L IV, osteotomia tibiale ad apertura mediale, MPTA >95° contro ≤95° a 64,5 mesi | 10.3389/fsurg.2026.1946486 | osteotomia, MPTA | aperto — 🟢 livello III per disegno; WOMAC -0,16 (IC 95% da -5,42 a 5,11), Lysholm 0,24 (da -3,22 a 3,69); gruppi non assegnati; non sostiene l'ipercorrezione
+2026-10-07 | Journal of Experimental Orthopaedics | Coorte retrospettiva (Konstantinou et al.; Larissa), 48 lesioni dell'arteria poplitea (36 multilegamentose, 12 fratture) | 10.1002/jeo2.70943 | multilegamentose, arteria poplitea | aperto — 🟢 livello III; amputazioni 5/48 tutte nelle multilegamentose tardive (RR 3,86, IC 95% 0,23-65,19); IKDC 85,4 contro 74,2 (p=0,032)
+2026-10-07 | Knee Surgery, Sports Traumatology, Arthroscopy | Revisione sistematica con meta-analisi (Han et al.; Fudan), 32 studi EMG nell'atterraggio dopo LCA | 10.1002/ksa.70637 | LCA, EMG, ritorno allo sport | aperto — ⚪ livello IV; flessori mediali SMD 0,35 (IC 95% 0,01-0,69), gluteo 0,63 (0,22-1,03), retto femorale -0,64 (da -1,13 a -0,14); sfiora T3 senza LSI
+2026-10-07 | Journal of Experimental Orthopaedics | Caso-controllo (Franco et al.; Brigham), 62 ginocchia in revisione del LCA, angolo patella-tendine | 10.1002/jeo2.70931 | LCA, revisione, femororotulea | aperto — ⚪ livello III; OR 1,15 per grado (IC 95% 1,02-1,30); AUC 0,66 (0,50-0,80); differenza sotto la MDC95
+2026-10-07 | Arthroplasty (London) | Umbrella review di 14 meta-analisi (Migliorini et al.), resurfacing rotuleo nella TKA | 10.1186/s42836-026-00438-y | protesi totale, rotula | aperto — ⚪ reintervento OR 1,44 (0,54-3,84) ma RR 0,59 (0,52-0,67); PROM senza differenze rilevanti
+2026-10-07 | Clinical Orthopaedics and Related Research | Analisi con collegamento al registro (Hoskins et al.; Whangārei), 2341 TKA, allineamento preoperatorio e revisione | 10.1097/CORR.0000000000004161 | protesi totale, registri, allineamento | aperto — ⚪ C-index validato 0,59-0,61, nessun miglioramento validato con l'allineamento; HKA sHR 1,06 (IC 95% 1,00-1,12) nel sottogruppo
 2026-10-05 | Journal of Experimental Orthopaedics | Studio prospettico comparativo da registro (Högberg, Wernbom, Sundberg, Hermansson, Larsson, Adell, Samuelsson, Hamrin Senorski; Göteborg), 68 LCA hamstring + 33 controlli rotuleo/quadricipitale, simmetria dei flessori con quattro test | 10.1002/jeo2.70932 | LCA, hamstring, criterio di rientro, LSI | aperto — 🟢 livello II; LSI 98,4% (Biodex) contro 54,5% (ISO90 PF), differenza 43,9% (IC 95% 39,9-47,8); quota ≥90% 80% contro 3%; controllo quasi tutto rotuleo; tocca T3 (metodo)
 2026-10-05 | Journal of Experimental Orthopaedics | Serie retrospettiva (Abdulai, Schweizer, Rühle, Krug, Morgenbesser, Herre, Aldinger, Merle, Waldstein; Stoccarda), 84 UKA laterali fixed-bearing ≤55 anni | 10.1002/jeo2.70935 | UKA laterale, giovani | aperto — 🟢 livello IV; nessuna revisione del componente laterale, sopravvivenza libera da reintervento a 5 anni 92,5% (IC 95% 86,8-98,2); nessun controllo
 2026-10-05 | Journal of Experimental Orthopaedics | Coorte retrospettiva (Morita, Shin, El-Hassan, Shichman, Long, Sculco; HSS), 402 TKA robot-assistite, obliquità della rima articolare | 10.1002/jeo2.70936 | protesi totale, robotica, CPAK, equilibrio | aperto — 🟢 livello III; maggiore ΔJLO con minore squilibrio in flessione (β -0,060; p<0,001); nessuna associazione con KOOS JR; piattaforma non indicata
@@ -824,6 +832,8 @@ descrive per iscritto, passo per passo, una tecnica vicina alla tua invece di la
 implicita.
 
 ### T2b — L'estrusione, non il timing né il grado condrale *(riformulata 2026-08-01, sostituisce T2)*
+
+**Da sorvegliare dal 7 ottobre 2026.** Il raccoglitore ha messo fra i trial della radice meniscale NCT07858669 (capsulodesi artroscopica associata al pull-out transtibiale per lesione della radice posteromediale, RCT prospettico, 28 pazienti, COMPLETED, aggiornato il 5 ottobre). Il titolo del record dichiara una minore estrusione a un anno, ma non ci sono risultati depositati né una pubblicazione su PubMed: non verificato, nessuna scheda. Se uscirà il lavoro, è il primo dato randomizzato che agisce sull'estrusione sulla tecnica che usi (transtibiale).
 
 **Nuovo l'1 ottobre 2026, un segnale muto contro la premessa, sulla radice laterale.** Una serie di 30 pazienti
 operati di pull-out transtibiale per lesione traumatica della radice posteriore del menisco laterale, 28 con LCA
