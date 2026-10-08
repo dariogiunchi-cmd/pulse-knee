@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-08T07:58:12Z",
+ "generato": "2026-10-08T08:58:37Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -770,14 +770,6 @@
     "colpiti": [],
     "nel_perimetro": [
      {
-      "tipo": "retraction",
-      "avviso": "10.1016/j.heliyon.2023.e23084",
-      "bersaglio": [
-       "10.1016/j.heliyon.2023.e23084"
-      ],
-      "titolo": "RETRACTED: Tetraclinis articulata (Vahl) Mast. essential oil as a promising source of bioactive compounds with antimicrobial, antioxidant, anti-inflammatory and"
-     },
-     {
       "tipo": "withdrawal",
       "avviso": "10.1016/j.jor.2019.02.032",
       "bersaglio": [
@@ -786,7 +778,12 @@
       "titolo": "Withdrawn: Aspirin for venous thromboembolism prophylaxis after hip or knee arthroplasty: An updated meta-analysis of randomized controlled trials"
      }
     ],
-    "tipi_falliti": []
+    "tipi_falliti": [
+     {
+      "tipo": "retraction",
+      "errore": "HTTPError HTTP Error 500: Server Error"
+     }
+    ]
    }
   },
   "youtube": {
