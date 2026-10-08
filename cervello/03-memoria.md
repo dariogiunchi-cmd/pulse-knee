@@ -7,12 +7,21 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 7 ottobre 2026.*
+*Ultimo aggiornamento: 8 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-10-08 | Arthroscopy Techniques | Nota tecnica (D'Ambrosi, Mei, Muscarella, Di Pace, Picori, Sconfienza, Ursino; Galeazzi, Milano), prelievo mini-invasivo del retto femorale per il LCA | 10.1002/atn2.70279 | LCA, retto femorale, prelievo | aperto — 🟢 livello V; incisione ~3 cm, stripper ≥7 mm a 10°-20°; nessun paziente né esito; lunghezza 28-35 cm del testo incoerente, non usata
+2026-10-08 | Arthroscopy Techniques | Nota tecnica (Novak, Povh; Valdoltra), MPFL a doppio fascio con retto femorale libero | 10.1002/atn2.70263 | MPFL, retto femorale | aperto — 🟢 livello V; nessun paziente né numero
+2026-10-08 | Journal of Orthopaedic Surgery (Hong Kong) | Coorte retrospettiva (Eyceyurt et al.; Izmir), 62 osteotomie ad apertura mediale in 3 tecniche, slope tibiale | 10.1177/10225536261496570 | osteotomia, slope | aperto — 🟢 livello III per disegno; slope +2,12° ± 3,22°, +3,39° ± 2,76°, −0,88° ± 3,78° (p<0,001); esiti clinici non riportati
+2026-10-08 | The Journal of Arthroplasty | Coorte prospettica (Bax et al.; Mayo), 216 TKA dopo osteotomia o UKA, 11,5 anni | 10.1016/j.arth.2026.09.046 | osteotomia, protesi totale, conversione | aperto — 🟢 livello III per disegno; revisioni 4% contro 6% (p=0,91), RR stimato 0,61 (0,18-2,05); KSS funzionale +15 mediana a 2 anni
+2026-10-08 | Journal of Experimental Orthopaedics | Coorte retrospettiva (Bazebi et al.; Montréal), 93 adolescenti, LCA con hamstring, forza isocinetica a 4 mesi | 10.1002/jeo2.70926 | LCA, adolescenti, LSI | aperto — 🟢 livello III; arto operato invariato (p=0,672/0,316), LSI −12%/−7% per guadagno dell'arto sano; tocca il criterio di rientro
+2026-10-08 | Journal of Experimental Orthopaedics | Revisione sistematica con meta-analisi (Kobayashi et al.), contraccettivi orali e LCA, 10 studi | 10.1002/jeo2.70940 | LCA, prevenzione, donne | aperto — ⚪ livello IV; OR 0,89 (0,77-1,02), certezza molto bassa
+2026-10-08 | Knee Surgery, Sports Traumatology, Arthroscopy | Coorte appaiata (Weishorn et al.; Heidelberg), 132 coppie di UKA con varo ≥10° | 10.1002/ksa.70636 | UKA, varo, JLCA | aperto — ⚪ livello III; sopravvivenza 92,3% contro 90,2% (p=0,618)
+2026-10-08 | Frontiers in Surgery | Meta-analisi (Zhou et al.), 8 coorti, 1709 pazienti, lesione del menisco laterale e UKA mediale | 10.3389/fsurg.2026.1913901 | UKA, menisco laterale | aperto — ⚪ livello IV; SMD −0,06 (−0,26/0,14)
+2026-10-08 | The Journal of Arthroplasty | RCT esplorativo (Sarzaeem et al.; Teheran), Bi-UKA contro TKA, 56 pazienti | 10.1016/j.arth.2026.09.050 | UKA, protesi bicompartimentale | aperto — ⚪ livello II per disegno; FJS −4,91 (−17,92/8,09)
 2026-10-07 | Journal of Experimental Orthopaedics | Coorte clinica monocentrica (Weber, Maxand, Wagner; Neuruppin/Berlino), 59/63 pazienti, LCA più sMCL a banda singola con peroneo lungo diviso per instabilità rotatoria anteromediale | 10.1002/jeo2.70941 | MCL, AMRI, LCA, peroneo lungo | aperto — 🟢 PICK livello IV; differenza laterale del cassetto in rotazione esterna 0,0 ± 1,3 mm (IC 95% da -0,4 a 0,3), pivot-shift negativo 93%, RTS 66%; nessun controllo; non è il tuo costrutto (semitendineo 91%, Lemaire 29%); non muove tensioni
 2026-10-07 | Arthroscopy | Revisione sistematica (Han, Jung, Chung, Moon, Jung, Lim, Kim; Yonsei), 9 studi, soglie MCID/PASS dopo LCA | 10.1002/arj.70512 | LCA, PROM, MCID | aperto — 🟢 IKDC MCID 9,0-10,4, PASS 74,2-86,8; KOOS MCID 2,5-21,9; soglie non esportabili; IC non riportati
 2026-10-07 | Frontiers in Surgery | Coorte retrospettiva (Wang et al.), 165 ginocchia K-L IV, osteotomia tibiale ad apertura mediale, MPTA >95° contro ≤95° a 64,5 mesi | 10.3389/fsurg.2026.1946486 | osteotomia, MPTA | aperto — 🟢 livello III per disegno; WOMAC -0,16 (IC 95% da -5,42 a 5,11), Lysholm 0,24 (da -3,22 a 3,69); gruppi non assegnati; non sostiene l'ipercorrezione
@@ -1289,6 +1298,15 @@ differenza fra gli stessi test è di circa 6 punti. Non è il tuo innesto e non 
 tuo deficit: il tassello è di metodo. Se usi una soglia di simmetria per il rientro, annota con quale test (strumento,
 posizione, tipo di contrazione), perché un 90% al Biodex e un 90% in una prova prona non sono lo stesso fatto. Limiti:
 test nella stessa seduta e non randomizzati, controllo piccolo, nessun esito duro.
+
+**Aggiornata l'8 ottobre 2026, un dato di metodo sulla simmetria.** Una coorte
+retrospettiva di Montréal (Bazebi et al., *J Exp Orthop*, PMID 42841077) su 93
+adolescenti con LCA e hamstring misura la forza isocinetica a 180°/s da seduti: a 4 mesi
+l'arto operato non differisce dal preoperatorio (flessione p=0,672; estensione p=0,316),
+l'arto sano guadagna (p<0,001) e l'LSI cala di 12% in estensione e di 7% in flessione.
+Non è il tuo innesto e «nessuna differenza» senza intervalli non prova l'assenza di un
+deficit: il tassello è di metodo (una soglia di simmetria va letta con i valori assoluti
+dei due arti). Non chiude la tensione.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
