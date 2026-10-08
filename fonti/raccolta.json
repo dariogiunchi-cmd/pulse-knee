@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-07T08:40:01Z",
+ "generato": "2026-10-08T07:58:12Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -585,6 +585,28 @@
      "sorveglianza": "Innesto quadricipitale",
      "studi": [
       {
+       "nct": "NCT07846709",
+       "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-10-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 150,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT03896464",
+       "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-10-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 352,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
        "nct": "NCT07830953",
        "titolo": "SharkScrew ACL RCT",
        "stato": "NOT_YET_RECRUITING",
@@ -593,17 +615,6 @@
         "NA"
        ],
        "n": 33,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
-       "nct": "NCT07846709",
-       "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
-       "stato": "NOT_YET_RECRUITING",
-       "aggiornato": "2026-09-29",
-       "fase": [
-        "NA"
-       ],
-       "n": 150,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -657,17 +668,6 @@
         "NA"
        ],
        "n": 150,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
-       "nct": "NCT04519801",
-       "titolo": "BFR Therapy for Post-Op Rehab of ACL Reconstruction With Quadriceps Tendon Autograft",
-       "stato": "COMPLETED",
-       "aggiornato": "2026-06-29",
-       "fase": [
-        "NA"
-       ],
-       "n": 60,
        "tipo": "INTERVENTIONAL"
       }
      ]
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 408,
+    "doi_citati_controllati": 417,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -822,12 +822,6 @@
       "titolo": "Long-Bone Fracture Management Using the QuickPass™ FiberTape® Cerclage System",
       "link": "https://www.youtube.com/watch?v=PEa9oL1MCs4",
       "data": "2026-09-28"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "WINS 2027 Save the Date",
-      "link": "https://www.youtube.com/watch?v=cej2AH3_qmM",
-      "data": "2026-09-24"
      }
     ]
    }
@@ -1127,6 +1121,16 @@
     "finestra_giorni": 60,
     "voci": [
      {
+      "pmid": "42840866",
+      "titolo": "Return to Sport Guidelines Following Total Knee Arthroplasty: A Scoping Review.",
+      "rivista": "Physiotherapy Canada. Physiotherapie Canada",
+      "data": "2026 Jun 8",
+      "tipi": [
+       "Journal Article",
+       "Systematic Review"
+      ]
+     },
+     {
       "pmid": "42825587",
       "titolo": "American Academy of Orthopaedic Surgeons Clinical Practice Guideline Summary: Management of Acute Isolated Meniscal Pathology: Erratum.",
       "rivista": "The Journal of the American Academy of Orthopaedic Surgeons",
@@ -1312,6 +1316,27 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Cannabidiol treatment for symptomatic knee osteoarthritis: a randomized, placebo- controlled, cross-over pilot-feasibility trial",
+      "dove": "archivio preprint",
+      "data": "2026-10-07",
+      "doi": "10.21203/rs.3.rs-10702167/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10702167/v1"
+     },
+     {
+      "titolo": "Intra-articular Bone Marrow Aspirate Concentrate for Knee Osteoarthritis: 7-Year Outcomes and Predictors of Treatment Success in 50 Knees",
+      "dove": "archivio preprint",
+      "data": "2026-10-07",
+      "doi": "10.21203/rs.3.rs-10894813/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10894813/v1"
+     },
+     {
+      "titolo": "The one-millimetre varus knee: titrating femoral rotation to the medial flexion gap in functional-alignment robotic total knee arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-10-07",
+      "doi": "10.21203/rs.3.rs-11106402/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11106402/v1"
+     },
+     {
       "titolo": "Association of Accelerometer-Measured Moderate-to-Vigorous Physical Activity with Knee/Hip Osteoarthritis Across Body Mass Index Categories",
       "dove": "archivio preprint",
       "data": "2026-10-06",
@@ -1464,27 +1489,6 @@
       "data": "2026-09-22",
       "doi": "10.21203/rs.3.rs-10899673/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10899673/v1"
-     },
-     {
-      "titolo": "Development of a predictive model for perioperative blood transfusion in primary total knee arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-09-21",
-      "doi": "10.21203/rs.3.rs-10820621/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10820621/v1"
-     },
-     {
-      "titolo": "Short-time Modified Robert Jones Bandage Does Not Worsen Postoperative Swelling in Enhanced-recovery After Primary Total Knee Arthroplasty without Tourniquet: A",
-      "dove": "archivio preprint",
-      "data": "2026-09-20",
-      "doi": "10.21203/rs.3.rs-10523341/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10523341/v1"
-     },
-     {
-      "titolo": "Visibility Graph Analysis Identifies Informative Spectral Regions in Fiber Evanescent Wave Spectra of Synovial Fluid for Knee Osteoarthritis Diagnosis",
-      "dove": "archivio preprint",
-      "data": "2026-09-20",
-      "doi": "10.21203/rs.3.rs-10233543/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10233543/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
