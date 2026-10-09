@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-09T07:59:11Z",
+ "generato": "2026-10-09T09:05:27Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -1317,8 +1317,188 @@
    }
   },
   "preprint": {
-   "esito": "non risposto: HTTPError HTTP Error 503: Service Temporarily Unavailable",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "finestra_giorni": 30,
+    "voci": [
+     {
+      "titolo": "Benchmarking longitudinal local centiles for radiographic knee osteoarthritis prognosis",
+      "dove": "archivio preprint",
+      "data": "2026-10-08",
+      "doi": "10.64898/2026.10.06.757088",
+      "url": "https://doi.org/10.64898/2026.10.06.757088"
+     },
+     {
+      "titolo": "AI-Based System for Monitoring Knee Movement During Rehabilitation",
+      "dove": "archivio preprint",
+      "data": "2026-10-07",
+      "doi": "10.20944/preprints202610.0409.v1",
+      "url": "https://doi.org/10.20944/preprints202610.0409.v1"
+     },
+     {
+      "titolo": "Cannabidiol treatment for symptomatic knee osteoarthritis: a randomized, placebo- controlled, cross-over pilot-feasibility trial",
+      "dove": "archivio preprint",
+      "data": "2026-10-07",
+      "doi": "10.21203/rs.3.rs-10702167/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10702167/v1"
+     },
+     {
+      "titolo": "Intra-articular Bone Marrow Aspirate Concentrate for Knee Osteoarthritis: 7-Year Outcomes and Predictors of Treatment Success in 50 Knees",
+      "dove": "archivio preprint",
+      "data": "2026-10-07",
+      "doi": "10.21203/rs.3.rs-10894813/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10894813/v1"
+     },
+     {
+      "titolo": "The one-millimetre varus knee: titrating femoral rotation to the medial flexion gap in functional-alignment robotic total knee arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-10-07",
+      "doi": "10.21203/rs.3.rs-11106402/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11106402/v1"
+     },
+     {
+      "titolo": "Association of Accelerometer-Measured Moderate-to-Vigorous Physical Activity with Knee/Hip Osteoarthritis Across Body Mass Index Categories",
+      "dove": "archivio preprint",
+      "data": "2026-10-06",
+      "doi": "10.21203/rs.3.rs-11019327/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11019327/v1"
+     },
+     {
+      "titolo": "Quality and Consistency of Four Large Language Models in Answering AAOS Guideline-Based Questions on Knee Osteoarthritis and Total Knee Arthroplasty: A Blinded ",
+      "dove": "archivio preprint",
+      "data": "2026-10-06",
+      "doi": "10.21203/rs.3.rs-11009605/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11009605/v1"
+     },
+     {
+      "titolo": "Clinical Outcomes of Biomaterial-Based Cartilage Repair Strategies for Knee Chondral Defects: A Systematic Review and Meta- Analysis",
+      "dove": "archivio preprint",
+      "data": "2026-10-05",
+      "doi": "10.21203/rs.3.rs-11054622/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11054622/v1"
+     },
+     {
+      "titolo": "Time-Varying Coactivation Pattern and Knee Joint Kinematics and Kinetics Following ACL Reconstruction: A Statistical Parametric Mapping Approach",
+      "dove": "archivio preprint",
+      "data": "2026-10-02",
+      "doi": "10.64898/2026.09.30.26364410",
+      "url": "https://doi.org/10.64898/2026.09.30.26364410"
+     },
+     {
+      "titolo": "The Effects of a Digital Exercise Therapy Application for Patients with Shoulder and Knee Pain During the COVID-19 Pandemic",
+      "dove": "archivio preprint",
+      "data": "2026-10-01",
+      "doi": "10.64898/2026.09.25.26364013",
+      "url": "https://doi.org/10.64898/2026.09.25.26364013"
+     },
+     {
+      "titolo": "Impact of Daily Physical Fatigue on Inter-Limb Load Asymmetry and Joint Loading Rates During Daily Living Tasks in Unilateral Knee Osteoarthritis",
+      "dove": "archivio preprint",
+      "data": "2026-10-01",
+      "doi": "10.64898/2026.09.25.26364015",
+      "url": "https://doi.org/10.64898/2026.09.25.26364015"
+     },
+     {
+      "titolo": "Impact of Gluteus Medius Strengthening Based Knee Rehabilitation on Radiographic Knee Alignment and Muscle Function in Patients Following Total Knee Arthroplast",
+      "dove": "archivio preprint",
+      "data": "2026-09-30",
+      "doi": "10.20944/preprints202609.2616.v1",
+      "url": "https://doi.org/10.20944/preprints202609.2616.v1"
+     },
+     {
+      "titolo": "The Influence of Obesity and Body Shape on Sagittal Plane Knee Kinematics and Kinetics during Obstacle Crossing",
+      "dove": "archivio preprint",
+      "data": "2026-09-28",
+      "doi": "10.64898/2026.09.24.753943",
+      "url": "https://doi.org/10.64898/2026.09.24.753943"
+     },
+     {
+      "titolo": "Lateral Partial Patellar Facetectomy Is Associated with Improved Patellofemoral Outcomes Following Primary Non-Resurfaced Total Knee Arthroplasty: A Retrospecti",
+      "dove": "archivio preprint",
+      "data": "2026-09-29",
+      "doi": "10.21203/rs.3.rs-10943625/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10943625/v1"
+     },
+     {
+      "titolo": "Psychological and Knee Function Measures at 1 Month Predict High Kinesiophobia at 6 Months After Anterior Cruciate Ligament Reconstruction: Development and Inte",
+      "dove": "archivio preprint",
+      "data": "2026-09-29",
+      "doi": "10.21203/rs.3.rs-10838037/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10838037/v1"
+     },
+     {
+      "titolo": "Process evaluation protocol of a trial evaluating app-based post knee arthroplasty telerehabilitation strategy in India",
+      "dove": "archivio preprint",
+      "data": "2026-09-29",
+      "doi": "10.12688/wellcomeopenres.26007.3",
+      "url": "https://doi.org/10.12688/wellcomeopenres.26007.3"
+     },
+     {
+      "titolo": "Participant-Independent Lower-Limb sEMG and Knee-Goniometry Profiles Across Movement Tasks in a Public Knee-Abnormality Cohort",
+      "dove": "archivio preprint",
+      "data": "2026-09-28",
+      "doi": "10.21203/rs.3.rs-10927896/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10927896/v1"
+     },
+     {
+      "titolo": "Quantifying and Comparing Knee Quasi-Stiffness Across Speed Vault Landing Modes: An Observational Biomechanical Analysis",
+      "dove": "archivio preprint",
+      "data": "2026-09-28",
+      "doi": "10.21203/rs.3.rs-10418677/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10418677/v1"
+     },
+     {
+      "titolo": "Spatial Transcriptomics Identifies Muscle Inflammation Susceptibility as a Distinct Periarticular Skeletal Muscle Phenotype in End-Stage Knee Osteoarthritis",
+      "dove": "archivio preprint",
+      "data": "2026-09-24",
+      "doi": "10.64898/2026.09.16.752138",
+      "url": "https://doi.org/10.64898/2026.09.16.752138"
+     },
+     {
+      "titolo": "Feasibility, Safety, and Preliminary Efficacy of Intermittent Theta Burst Stimulation Targeting the Left Dorsolateral Prefrontal Cortex in Older Adults with Chr",
+      "dove": "archivio preprint",
+      "data": "2026-09-25",
+      "doi": "10.21203/rs.3.rs-10928863/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10928863/v1"
+     },
+     {
+      "titolo": "Efficacy of platelet-rich plasma injections for treating knee osteoarthritis and its influencing factors: a retrospective cohort study",
+      "dove": "archivio preprint",
+      "data": "2026-09-24",
+      "doi": "10.21203/rs.3.rs-10870421/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10870421/v1"
+     },
+     {
+      "titolo": "A prospective single-arm pre-post study of a soft knee orthotic intervention on pain, physical activity, and functional capacity in clinically mild knee osteoar",
+      "dove": "archivio preprint",
+      "data": "2026-09-24",
+      "doi": "10.21203/rs.3.rs-10914868/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10914868/v1"
+     },
+     {
+      "titolo": "Effectiveness and Potential Benefits of the Use of Laser Light Therapy in Musculoskeletal Rehabilitation Programs with a Focus on Knee Osteoarthritis: A Narrati",
+      "dove": "archivio preprint",
+      "data": "2026-09-24",
+      "doi": "10.20944/preprints202608.1113.v2",
+      "url": "https://doi.org/10.20944/preprints202608.1113.v2"
+     },
+     {
+      "titolo": "Effect of femoral and tibial tunnel angle on tunnel length and aperture stress in all- epiphyseal anterior cruciate ligament reconstruction: a CT-based and fini",
+      "dove": "archivio preprint",
+      "data": "2026-09-23",
+      "doi": "10.21203/rs.3.rs-10965407/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10965407/v1"
+     },
+     {
+      "titolo": "A Physis-Based Three-Dimensional CT Reference for Precise Evaluation of Varus Deformity Origin and Joint Line Reconstruction in Patients with Severe Knee Osteoa",
+      "dove": "archivio preprint",
+      "data": "2026-09-23",
+      "doi": "10.21203/rs.3.rs-10814308/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10814308/v1"
+     }
+    ],
+    "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
+   }
   }
  }
 }
