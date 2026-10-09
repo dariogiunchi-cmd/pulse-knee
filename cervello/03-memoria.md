@@ -842,6 +842,8 @@ implicita.
 
 ### T2b — L'estrusione, non il timing né il grado condrale *(riformulata 2026-08-01, sostituisce T2)*
 
+**Nuovo il 9 ottobre 2026, la risonanza a 7 T sull'estrusione dopo la sutura.** Uno studio del Minnesota con LaPrade (Kajabi et al., *J Orthop Res*; PMID 42844718; 25 pazienti con rifissazione della radice posteriore del menisco mediale e 9 controlli, risonanza a 7 tesla prima e a 6 mesi) trova suture integre in tutti ma un'estrusione mediale che cresce da 3,7 ± 1,1 a 4,9 ± 1,5 mm (p=0,002), con la T2* preoperatoria correlata all'estrusione postoperatoria (ρ=0,765; p<0,001; IC non riportato, stima mia circa 0,53-0,89). L'abstract non dice con quale tecnica sono state suturate: non è dimostrato che sia la transtibiale pull-out. Rafforza che l'estrusione resta il problema aperto anche con la riparazione riuscita e aggiunge un candidato predittore preoperatorio (qualità del tessuto) che oggi non si misura in ambulatorio; non chiude nulla: 25 pazienti, una sede, 6 mesi, nessun esito clinico, nessun confronto fra tecniche.
+
 **Da sorvegliare dal 7 ottobre 2026.** Il raccoglitore ha messo fra i trial della radice meniscale NCT07858669 (capsulodesi artroscopica associata al pull-out transtibiale per lesione della radice posteromediale, RCT prospettico, 28 pazienti, COMPLETED, aggiornato il 5 ottobre). Il titolo del record dichiara una minore estrusione a un anno, ma non ci sono risultati depositati né una pubblicazione su PubMed: non verificato, nessuna scheda. Se uscirà il lavoro, è il primo dato randomizzato che agisce sull'estrusione sulla tecnica che usi (transtibiale).
 
 **Nuovo l'1 ottobre 2026, un segnale muto contro la premessa, sulla radice laterale.** Una serie di 30 pazienti
