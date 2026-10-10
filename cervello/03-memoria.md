@@ -7,12 +7,21 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 8 ottobre 2026.*
+*Ultimo aggiornamento: 10 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-10-10 | The American Journal of Sports Medicine | Serie di casi (Kang et al.; Mayo Clinic), 100 LCA con tendine quadricipitale, LSI a 3-6-9 mesi e PROM a 2 anni | 10.1177/03635465261490238 | LCA, tendine quadricipitale, LSI, rientro | aperto — 🟠 livello IV; LSI quadricipite 77-81% a 9 mesi, Lysholm 90,7, IKDC 77,8 a 2 anni; LSI isometrico a 3 mesi su IKDC β=3,9 (R² agg. 0,36; p<0,03); PICK, tocca T3 (app T4)
+2026-10-10 | The American Journal of Sports Medicine | Coorte retrospettiva (Manitiu et al.; Montréal), 70 pazienti ≤18 anni, LCA con LET contro isolato, cinematica del passo a ~4 mesi | 10.1177/03635465261487281 | LET, pediatrico, passo | aperto — 🟢 livello III; nessuna differenza (tutti p>0,05), rotazione tibiale 1,03° ± 4,27° contro 1,61° ± 3,51°; tocca T1a
+2026-10-10 | Clinical Biomechanics | Studio comparativo (Kim et al.; Corea), 67 pazienti, LCA isolato (37) contro LCA+ALL (30), Y-balance e Biodex | 10.1016/j.clinbiomech.2026.106986 | ALL, equilibrio dinamico | aperto — 🟢 livello III per disegno; Y-balance postero-mediale p=0,009, postero-laterale p=0,049
+2026-10-10 | The American Journal of Sports Medicine | Coorte retrospettiva (Kim et al.; Penn), 97 adolescenti, MPFL ± osteotomia della tuberosità, ACL-RSI | 10.1177/03635465261487282 | MPFL, adolescenti, rientro | aperto — 🟢 livello III; rientro 78,3%, ACL-RSI ≥59,2 AUC 0,70 (0,56-0,83), OR 3,56 (1,10-11,51)
+2026-10-10 | Journal of Orthopaedic Case Reports | Studio prospettico osservazionale (Thomas et al.; Valsad), 50 LCA, lesioni ramp e risonanza | 10.13107/jocr.2026.v16.i10.8330 | ramp, menisco, LCA | aperto — 🟢 livello IV; incidenza 28,0% (14/50), risonanza 8/14
+2026-10-10 | The Bone & Joint Journal | Coorte retrospettiva multicentrica (Zaidi et al.; Auckland), 297 TKA robotiche, cambio di fenotipo CPAK e OKS | 10.1302/0301-620X.108B10.BJJ-2025-1378.R2 | TKA robotica, CPAK, allineamento | aperto — 🟢 livello III per disegno; 19 pazienti con due classi di cambio, OKS minore a 3 mesi (p=0,008) e 6 mesi (p=0,036)
+2026-10-10 | The Bone & Joint Journal | RCT in doppio cieco (de Ridder et al.; Zoetermeer), 96 TKA non cementate, HXLPE contro PE, RSA a 10 anni | 10.1302/0301-620X.108B10.BJJ-2026-0426.R1 | TKA, polietilene, usura | aperto — ⚪ livello I per disegno; usura 0,15→0,13 contro 0,22→0,46 mm; migrazione tibiale 0,99 (0,83-1,18) contro 1,05 (0,87-1,24) mm
+2026-10-10 | Journal of ISAKOS | Revisione sistematica con meta-analisi (Jia Yi et al.; Singapore), 31 studi RM, 2.463 ginocchia, morfometria asiatica e occidentale | 10.1016/j.jisako.2026.101233 | notch, slope, mondo orientale | aperto — ⚪ livello IV; nessuna differenza significativa (p=0,45-0,78; LCA p=0,08), I² 75-100%
+2026-10-10 | Journal of Orthopaedic Case Reports | Coorte prospettica a braccio singolo (Kumar et al.; Rohtak), 38 pazienti, OATS in difetti ICRS IV | 10.13107/jocr.2026.v16.i10.8296 | cartilagine, OATS | aperto — ⚪ livello IV; Lysholm 50,29→93,03, IKDC 48,29→91,24, Tegner 2,40→8,71 a 18 mesi
 2026-10-08 | Arthroscopy Techniques | Nota tecnica (D'Ambrosi, Mei, Muscarella, Di Pace, Picori, Sconfienza, Ursino; Galeazzi, Milano), prelievo mini-invasivo del retto femorale per il LCA | 10.1002/atn2.70279 | LCA, retto femorale, prelievo | aperto — 🟢 livello V; incisione ~3 cm, stripper ≥7 mm a 10°-20°; nessun paziente né esito; lunghezza 28-35 cm del testo incoerente, non usata
 2026-10-08 | Arthroscopy Techniques | Nota tecnica (Novak, Povh; Valdoltra), MPFL a doppio fascio con retto femorale libero | 10.1002/atn2.70263 | MPFL, retto femorale | aperto — 🟢 livello V; nessun paziente né numero
 2026-10-08 | Journal of Orthopaedic Surgery (Hong Kong) | Coorte retrospettiva (Eyceyurt et al.; Izmir), 62 osteotomie ad apertura mediale in 3 tecniche, slope tibiale | 10.1177/10225536261496570 | osteotomia, slope | aperto — 🟢 livello III per disegno; slope +2,12° ± 3,22°, +3,39° ± 2,76°, −0,88° ± 3,78° (p<0,001); esiti clinici non riportati
@@ -754,6 +763,16 @@ quadricipitale/retto femorale dagli altri innesti «non-hamstring». Due reti ch
 giorno, verso la stessa direzione: l'innesto non-hamstring e il rinforzo laterale continuano a convergere
 sull'esito, ma nessuno dei due lavori arriva ancora a isolare la tua combinazione esatta.
 
+**Nuovo il 10 ottobre 2026, una domanda di sicurezza sul LET nei più giovani.** Una coorte
+retrospettiva di Montréal (Manitiu et al., *Am J Sports Med*, PMID 42852835; 70 pazienti ≤18
+anni, 35 LCA con LET e 35 LCA isolato) non trova differenze della cinematica 3D del passo a circa
+4 mesi (tutti p>0,05; rotazione tibiale media 1,03° ± 4,27° contro 1,61° ± 3,51°; IC 95% della
+differenza circa −1,3°/+2,4°, stima mia). Risponde alla preoccupazione del sovravincolo, non al
+fallimento dell'innesto: 4 mesi, passo in piano, confronto non randomizzato, innesto e tecnica del
+LET non riportati. Un secondo studio funzionale (Kim et al., *Clin Biomech*, PMID 42854272; 67
+pazienti) associa la ricostruzione dell'ALL a un Y-balance migliore a 3 mesi (p=0,009 e p=0,049),
+ma con una ALL con innesto e non con il tuo Lemaire onlay. Non chiude nulla.
+
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
 **Verificata sul full text di STABILITY 2.** Il protocollo prescrive: banderella di
@@ -1309,6 +1328,18 @@ l'arto sano guadagna (p<0,001) e l'LSI cala di 12% in estensione e di 7% in fles
 Non è il tuo innesto e «nessuna differenza» senza intervalli non prova l'assenza di un
 deficit: il tassello è di metodo (una soglia di simmetria va letta con i valori assoluti
 dei due arti). Non chiude la tensione.
+
+**Aggiornata il 10 ottobre 2026, un dato su un innesto vicino al tuo.** Una serie della
+Mayo Clinic (Kang et al., *Am J Sports Med*, PMID 42852663; 100 ricostruzioni con tendine
+quadricipitale) misura gli LSI a 3, 6 e 9 mesi: a 9 mesi la forza del quadricipite è al 77-81%
+dell'arto sano e quella dei flessori al 98-100%, e a circa 2 anni Lysholm 90,7 e IKDC 77,8.
+L'LSI isometrico del quadricipite a 3 mesi è associato all'IKDC a 2 anni (β=3,9; R² aggiustato
+0,36; p<0,03) e chi raggiunge la soglia PASS ha in genere un LSI di 60-70% a 3 mesi. Per il tuo
+criterio: sul quadricipite una soglia del 90% non è raggiunta in media a 9 mesi, eppure gli
+esiti riferiti sono buoni; l'LSI resta una direzione utile più che un cancello binario. Limiti:
+serie monocentrica senza confronto, coefficienti senza intervalli di confidenza, punteggi e non
+rotture, medie e non la distribuzione dei pazienti sotto il 90%, procedure associate non
+riportate. Non chiude la tensione.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
