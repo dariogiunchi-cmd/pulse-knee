@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-09T09:05:27Z",
+ "generato": "2026-10-10T07:43:49Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Conformità alle GMP dei fabbricanti esteri",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/gmp-konformitaet-auslaendische-hersteller.html",
+      "data": "Fri, 09 Oct 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Adeguamento della guida complementare Importazione di un medicamento per uso umano ai sensi dell’art. 14 cpv. 2 e 3 LATer (impor...",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/anpassung-der-wegleitung-einfuhr-eines-humanarzneimittels-nach-art-14-abs-2-und-3-hmg-parallelimport.html",
       "data": "Thu, 01 Oct 2026 00:00:00 +0000"
@@ -368,12 +374,6 @@
       "titolo": "Ritiro di lotti – Elocom, solution pour application cutanée",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-elocom-loesung-zur-anwendung-auf-der-haut.html",
       "data": "Fri, 18 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Preavviso relativo alla release del portale di Swissmedic del 23 settembre 2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/kpa/aktuell-kpa/info-kpa-portalrelease-09-2026.html",
-      "data": "Thu, 17 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
@@ -498,6 +498,17 @@
      "sorveglianza": "LET / tenodesi laterale",
      "studi": [
       {
+       "nct": "NCT07777458",
+       "titolo": "The Effect of Lateral Extra-Articular Tenodesis on Lower-Extremity Lean Mass Recovery Following Anterior Cruciate Ligament Reconstruction",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-10-09",
+       "fase": [
+        "NA"
+       ],
+       "n": 40,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
        "nct": "NCT06664047",
        "titolo": "Over-the-Top vs. Anteromedial ACLR With Lateral Extraarticular Tenodesis",
        "stato": "ACTIVE_NOT_RECRUITING",
@@ -516,17 +527,6 @@
        "fase": null,
        "n": 164,
        "tipo": "OBSERVATIONAL"
-      },
-      {
-       "nct": "NCT07777458",
-       "titolo": "The Effect of Lateral Extra-Articular Tenodesis on Lower-Extremity Lean Mass Recovery Following Anterior Cruciate Ligament Reconstruction",
-       "stato": "NOT_YET_RECRUITING",
-       "aggiornato": "2026-08-20",
-       "fase": [
-        "NA"
-       ],
-       "n": 40,
-       "tipo": "INTERVENTIONAL"
       },
       {
        "nct": "NCT06868147",
@@ -585,17 +585,6 @@
      "sorveglianza": "Innesto quadricipitale",
      "studi": [
       {
-       "nct": "NCT03896464",
-       "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
-       "stato": "RECRUITING",
-       "aggiornato": "2026-10-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 352,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07846709",
        "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
        "stato": "NOT_YET_RECRUITING",
@@ -604,6 +593,17 @@
         "NA"
        ],
        "n": 150,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT03896464",
+       "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-10-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 352,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -629,17 +629,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07580157",
-       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
-       "stato": "ENROLLING_BY_INVITATION",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 20,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07753707",
        "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
        "stato": "ACTIVE_NOT_RECRUITING",
@@ -648,6 +637,17 @@
         "NA"
        ],
        "n": 111,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07580157",
+       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 20,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 425,
+    "doi_citati_controllati": 434,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -829,6 +829,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42852663",
+     "titolo": "The American Journal of Sports Medicine — Serie di casi (livello IV dichiarato; Kang, Ina, Johnson, Iyer, Duch",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42844718",
      "titolo": "Journal of Orthopaedic Research — Coorte con controlli (livello III per disegno; Kajabi, Knutsen, Hedayati, St",
@@ -1126,6 +1132,26 @@
    "dati": {
     "finestra_giorni": 60,
     "voci": [
+     {
+      "pmid": "42853098",
+      "titolo": "Validation of the European Bone & Joint Infection Society recommendations for debridement, antibiotics, and implant retention in hip and knee periprosthetic joint infection : a stu",
+      "rivista": "The bone & joint journal",
+      "data": "2026 Oct 1",
+      "tipi": [
+       "Journal Article",
+       "Multicenter Study",
+       "Validation Study"
+      ]
+     },
+     {
+      "pmid": "42852545",
+      "titolo": "Developing a new CT-based bone defect classification in revision knee arthroplasty : a Delphi consensus study.",
+      "rivista": "Bone & joint open",
+      "data": "2026 Oct 7",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
      {
       "pmid": "42840866",
       "titolo": "Return to Sport Guidelines Following Total Knee Arthroplasty: A Scoping Review.",
