@@ -7,12 +7,20 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 10 ottobre 2026.*
+*Ultimo aggiornamento: 11 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-10-11 | Clinical Biomechanics | Revisione sistematica (Marczak et al.; Creighton), 6 studi, 173 operati di LCA e 79 controlli, elastografia a onde di taglio | 10.1016/j.clinbiomech.2026.106982 | LCA, vasto mediale, elastografia, sito donatore | aperto — 🟠 SR di studi osservazionali; vasto mediale g da -1,10 a -1,21, semitendinoso g da -1,29 a -1,64 dopo prelievo (IC non riportati); PICK, tocca T3 (app T4)
+2026-10-11 | Anaesthesia | RCT triplo cieco (Beun et al.; Losanna), 80 LCA, IPACK contro blocco tibiale selettivo | 10.1111/anae.70433 | LCA, analgesia, blocco nervoso | aperto — 🟢 morfina a 24 h, mediana 12 mg (IQR 6-20) contro 16 mg (10-30), p=0,073; nessuna differenza funzionale a 4 e 8 mesi
+2026-10-11 | Archives of Orthopaedic and Trauma Surgery | Coorte prospettica a due bracci (De Berardinis et al.; Milano, Firenze), 109 TKA non cementate (54) contro cementate (55), FJS-12 a 24 mesi | 10.1007/s00402-026-06531-w | TKA, cementazione, FJS-12 | aperto — 🟢 livello III; FJS-12 β=7,4 (IC 95% da -1,8 a 16,6; p=0,115), PASS 96,3% contro 76,4% (IC 95% 7,1-32,9)
+2026-10-11 | Journal of Athletic Training | Studio trasversale (Murphy et al.), 58 operati di LCA a ~6 mesi, ACL-RSI | 10.4085/1062-6050-0696.25 | LCA, prontezza psicologica, cinesiofobia | aperto — 🟢 bassa; ansia +18,1%, TSK-11 22,3%, modello 70,5% della varianza; tocca T3 (app T4)
+2026-10-11 | Journal of Orthopaedic Research | Sviluppo e validazione esterna di apprendimento automatico (Morrow et al.; UNC), 863 + 174 partecipanti, operati contro controlli | 10.1002/jor.70283 | LCA, machine learning, LSI | aperto — ⚪ bassa; AUC 0,98 interna e 0,83 esterna; tocca T3 (app T4) di lato
+2026-10-11 | Ulus Travma Acil Cerrahi Derg (TJTES) | Coorte retrospettiva multicentrica (Ozdemir et al.), 67 rotture acute del tendine quadricipitale, fragilità | 10.14744/tjtes.2026.36602 | tendine quadricipitale, fragilità, Lysholm | aperto — ⚪ bassa; mFI-5 +1,26 giorni (IC 95% 0,61-1,90), CFS -4,32 Lysholm (IC 95% da -6,98 a -1,67)
+2026-10-11 | Journal of Orthopaedic Case Reports | RCT a 3 bracci (Bishnoi et al.), 54 pazienti con lesione meniscale degenerativa, PRP contro GFC contro fisiologica | 10.13107/jocr.2026.v16.i10.8328 | menisco degenerativo, PRP, orthobiologics | aperto — 🟢 RCT piccolo (18 per braccio); VAS 9 mesi GFC 6,21→3,58, PRP 6,33→5,11, p<0,0001
+2026-10-11 | Journal of Orthopaedic Case Reports | Accuratezza diagnostica retrospettiva (Qureshi et al.), 35 pazienti, RM contro artroscopia | 10.13107/jocr.2026.v16.i10.8310 | RM, menisco, LCA | aperto — ⚪ bassa; accuratezza menisco mediale 82,9% (29/35; Wilson circa 67-92%, calcolo mio)
 2026-10-10 | The American Journal of Sports Medicine | Serie di casi (Kang et al.; Mayo Clinic), 100 LCA con tendine quadricipitale, LSI a 3-6-9 mesi e PROM a 2 anni | 10.1177/03635465261490238 | LCA, tendine quadricipitale, LSI, rientro | aperto — 🟠 livello IV; LSI quadricipite 77-81% a 9 mesi, Lysholm 90,7, IKDC 77,8 a 2 anni; LSI isometrico a 3 mesi su IKDC β=3,9 (R² agg. 0,36; p<0,03); PICK, tocca T3 (app T4)
 2026-10-10 | The American Journal of Sports Medicine | Coorte retrospettiva (Manitiu et al.; Montréal), 70 pazienti ≤18 anni, LCA con LET contro isolato, cinematica del passo a ~4 mesi | 10.1177/03635465261487281 | LET, pediatrico, passo | aperto — 🟢 livello III; nessuna differenza (tutti p>0,05), rotazione tibiale 1,03° ± 4,27° contro 1,61° ± 3,51°; tocca T1a
 2026-10-10 | Clinical Biomechanics | Studio comparativo (Kim et al.; Corea), 67 pazienti, LCA isolato (37) contro LCA+ALL (30), Y-balance e Biodex | 10.1016/j.clinbiomech.2026.106986 | ALL, equilibrio dinamico | aperto — 🟢 livello III per disegno; Y-balance postero-mediale p=0,009, postero-laterale p=0,049
@@ -1340,6 +1348,19 @@ esiti riferiti sono buoni; l'LSI resta una direzione utile più che un cancello 
 serie monocentrica senza confronto, coefficienti senza intervalli di confidenza, punteggi e non
 rotture, medie e non la distribuzione dei pazienti sotto il 90%, procedure associate non
 riportate. Non chiude la tensione.
+
+**Aggiornata l'11 ottobre 2026, tre dati laterali.** Uno studio trasversale su 58 operati di LCA
+(Murphy et al., *J Athl Train*, PMID 42852171) trova che a circa 6 mesi la prontezza psicologica
+(ACL-RSI) si spiega con ansia generalizzata (+18,1% di varianza), cinesiofobia (TSK-11, 22,3%) e
+qualità di vita (KOOS-QoL 9,8%), mentre forza del quadricipite e simmetria dell'hop aggiungono
+poco (modello completo 70,5%; intervalli non riportati; validazione solo interna). Un modello di
+apprendimento automatico (Morrow et al., *J Orthop Res*, PMID 42845144; 863 + 174 partecipanti)
+tiene fra le variabili più informative l'LSI della coppia di estensione, il KOOS-QoL e l'IKDC, ma
+separa operati da sani (AUC 0,83 in validazione esterna): non prevede il rientro. Una revisione
+sistematica sull'elastografia (Marczak et al., *Clin Biomech*, PMID 42815174; 6 studi) vede un
+vasto mediale operato più cedevole (g da -1,10 a -1,21) in relazione a forza, funzione e
+atterraggio. Nessuno muove la soglia del 90%; aggiungono che il cancello ha una dimensione
+psicologica e una meccanica che l'LSI da solo non vede. Non chiude la tensione.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
