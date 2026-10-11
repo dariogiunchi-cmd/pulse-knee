@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-10T08:30:17Z",
+ "generato": "2026-10-11T07:48:05Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 434,
+    "doi_citati_controllati": 442,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -829,6 +829,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42815174",
+     "titolo": "Clinical Biomechanics — Revisione sistematica PRISMA (Marczak, Lightle, Brooks, Kyriazi, Chong, Martinez, Thor",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42852663",
      "titolo": "The American Journal of Sports Medicine — Serie di casi (livello IV dichiarato; Kang, Ina, Johnson, Iyer, Duch",
