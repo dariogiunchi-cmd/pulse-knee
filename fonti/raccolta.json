@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-11T08:52:05Z",
+ "generato": "2026-10-12T07:57:38Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -377,9 +377,9 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
-      "titolo": "HPC - Librela ad us. vet., solution injectable pour chiens (Bedinvetmabum)DHPC – ClozapinaDHPC – Remsima® (infliximab)Out-of-Sto...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/tierarzneimittel/medicamenti-per-uso-veterinario/dhpc-veterinary-medicines/hpc-librela-ad-us-vet-injlsg.html",
-      "data": "Tue, 29 Sep 2026 19:32:05 +0000"
+      "titolo": "Out-of-Stock – Syntocinon spray nasal, solution ; Oxytocin 40 U.I./mlHPC - Librela ad us. vet., solution injectable pour chiens ...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-syntocinon-nasenspray-loesung-oxytocin-40-i-e-ml.html",
+      "data": "Mon, 12 Oct 2026 07:57:43 +0000"
      }
     ]
    }
@@ -816,12 +816,6 @@
       "titolo": "CORI ◊ SHOULDER | Handheld Robotics in Shoulder Arthroplasty with Dr. Christopher Klifto",
       "link": "https://www.youtube.com/watch?v=LFDiRdZS1ME",
       "data": "2026-10-01"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Long-Bone Fracture Management Using the QuickPass™ FiberTape® Cerclage System",
-      "link": "https://www.youtube.com/watch?v=PEa9oL1MCs4",
-      "data": "2026-09-28"
      }
     ]
    }
@@ -1354,6 +1348,13 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Suture Retraction to Preserve the Infrapatellar Fat Pad During Anterior Cruciate Ligament Reconstruction: A Retrospective Cohort Study",
+      "dove": "archivio preprint",
+      "data": "2026-10-11",
+      "doi": "10.21203/rs.3.rs-10848435/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10848435/v1"
+     },
+     {
       "titolo": "Benchmarking longitudinal local centiles for radiographic knee osteoarthritis prognosis",
       "dove": "archivio preprint",
       "data": "2026-10-08",
@@ -1520,13 +1521,6 @@
       "data": "2026-09-23",
       "doi": "10.21203/rs.3.rs-10965407/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-10965407/v1"
-     },
-     {
-      "titolo": "A Physis-Based Three-Dimensional CT Reference for Precise Evaluation of Varus Deformity Origin and Joint Line Reconstruction in Patients with Severe Knee Osteoa",
-      "dove": "archivio preprint",
-      "data": "2026-09-23",
-      "doi": "10.21203/rs.3.rs-10814308/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10814308/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
