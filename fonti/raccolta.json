@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-12T07:57:38Z",
+ "generato": "2026-10-12T09:13:42Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Out-of-Stock – Syntocinon spray nasal, solution ; Oxytocin 40 U.I./ml",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-syntocinon-nasenspray-loesung-oxytocin-40-i-e-ml.html",
+      "data": "Mon, 12 Oct 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Conformità alle GMP dei fabbricanti esteri",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/gmp-konformitaet-auslaendische-hersteller.html",
       "data": "Fri, 09 Oct 2026 00:00:00 +0000"
@@ -368,12 +374,6 @@
       "titolo": "DHPC – Apremilast Leman (apremilastum)",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-apremilast-leman-filmtabletten.html",
       "data": "Mon, 21 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Ritiro di lotti – Elocom, solution pour application cutanée",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-elocom-loesung-zur-anwendung-auf-der-haut.html",
-      "data": "Fri, 18 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
