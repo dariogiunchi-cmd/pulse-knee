@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-12T09:13:42Z",
+ "generato": "2026-10-13T08:24:59Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -62,7 +62,7 @@
      },
      {
       "recalling_firm": "Medline Industries, LP",
-      "product_description": "MEDLINE convenience kits labeled as:  \n1) TOTAL JOINT KIT, Medline Kit SKU DYKS1574A; \n2) TOTAL KNEE BASIC, Medline Kit SKU DYNJ902378J; \n3) TOTAL HIP, Medline Kit SKU DYNJ903492K; \n4) ANTERIOR HIP, Medline Kit SKU DYNJ903493I; \n5) ANTERIOR HIP, Medline Kit SKU DYNJ903493J; \n6) ANTERIOR HIP, Medline Kit SKU DYNJ903493K; \n7) TOTAL HIP, Medline Kit SKU DYNJ906665G; \n8) TOTAL KNEE, Medline Kit SKU DYNJ906666J; \n9) TOTAL HIP-LF, Medline Kit SKU DYNJ909000A; \n10) TOTAL KNEE-LF, Medline Kit SKU DYNJ909002A; \n11) TOTAL HIP W NAVIGATION NO SYR, Medline Kit SKU DYNJ909068B; \n12) TOTAL JOINT, Medline Kit SKU DYNJ909069B; \n13) TOTAL KNEE, Medline Kit SKU DYNJ909070C; \n14) TOTAL KNEE W NAVIGATION NO SYR, Medline Kit SKU DYNJ909071B; \n15) TOTAL KNEE W NAVIGATION, Medline Kit SKU DYNJ909071C; \n16) MHCZ TOTAL KNEE, Medline Kit SKU DYNJ909534; \n17) MHCZ TOTAL KNEE, Medline Kit SKU DYNJ909534A; \n18) MHCZ TOTAL KNEE, Medline Kit SKU DYNJ909534B; \n19) ANTERIOR HIP, Medline Kit SKU DYNJ909640F; \n20) POSTERIOR HIP, Medline Kit SKU DYNJ909642D; \n21) TOTAL KNEE, Medline Kit SKU DYNJ909643D; \n22) TOTAL KNEE, Medline Kit SKU DYNJ909643F; \n23) TOTAL JOINT, Medline Kit SKU DYNJ910002A; \n24) TOTAL KNEE, Medline Kit SKU DYNJ910354A; \n25) TOTAL HIP, Medline Kit SKU DYNJ910813; \n26) ANTERIOR HIP, Medline Kit SKU DYNJ911083.",
+      "product_description": "MEDLINE convenience kits labeled as:  \r\n1) TOTAL JOINT KIT, Medline Kit SKU DYKS1574A; \r\n2) TOTAL KNEE BASIC, Medline Kit SKU DYNJ902378J; \r\n3) TOTAL HIP, Medline Kit SKU DYNJ903492K; \r\n4) ANTERIOR HIP, Medline Kit SKU DYNJ903493I; \r\n5) ANTERIOR HIP, Medline Kit SKU DYNJ903493J; \r\n6) ANTERIOR HIP, Medline Kit SKU DYNJ903493K; \r\n7) TOTAL HIP, Medline Kit SKU DYNJ906665G; \r\n8) TOTAL KNEE, Medline Kit SKU DYNJ906666J; \r\n9) TOTAL HIP-LF, Medline Kit SKU DYNJ909000A; \r\n10) TOTAL KNEE-LF, Medline Kit SKU DYNJ909002A; \r\n11) TOTAL HIP W NAVIGATION NO SYR, Medline Kit SKU DYNJ909068B; \r\n12) TOTAL JOINT, Medline Kit SKU DYNJ909069B; \r\n13) TOTAL KNEE, Medline Kit SKU DYNJ909070C; \r\n14) TOTAL KNEE W NAVIGATION NO SYR, Medline Kit SKU DYNJ909071B; \r\n15) TOTAL KNEE W NAVIGATION, Medline Kit SKU DYNJ909071C; \r\n16) MHCZ TOTAL KNEE, Medline Kit SKU DYNJ909534; \r\n17) MHCZ TOTAL KNEE, Medline Kit SKU DYNJ909534A; \r\n18) MHCZ TOTAL KNEE, Medline Kit SKU DYNJ909534B; \r\n19) ANTERIOR HIP, Medline Kit SKU DYNJ909640F; \r\n20) POSTERIOR HIP, Medline Kit SKU DYNJ909642D; \r\n21) TOTAL KNEE, Medline Kit SKU DYNJ909643D; \r\n22) TOTAL KNEE, Medline Kit SKU DYNJ909643F; \r\n23) TOTAL JOINT, Medline Kit SKU DYNJ910002A; \r\n24) TOTAL KNEE, Medline Kit SKU DYNJ910354A; \r\n25) TOTAL HIP, Medline Kit SKU DYNJ910813; \r\n26) ANTERIOR HIP, Medline Kit SKU DYNJ911083.",
       "reason_for_recall": "Medline Industries, LP is issuing a recall for specific Medline kits containing B. Braun convenience kits that include Bupivacaine Hydrochloride in Dextrose Injection, USP. B. Braun Medical Inc. was notified by their supplier, Spectra Medical Devices, LLC of a product recall from Huons Co, Ltd., the manufacturer of Bupivacaine Hydrochloride in Dextrose Injection, USP. Huons Co, Ltd. has issued a voluntary recall of this product due to quality issues.",
       "root_cause_description": "Under Investigation by firm",
       "event_date_initiated": "2026-06-05",
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Sindrome neurolettica maligna associata a trattamento antipsicotico",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/farmacovigilanza/vigilance-news/malignes-neuroleptisches-syndrom.html",
+      "data": "Mon, 12 Oct 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Out-of-Stock – Syntocinon spray nasal, solution ; Oxytocin 40 U.I./ml",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-syntocinon-nasenspray-loesung-oxytocin-40-i-e-ml.html",
       "data": "Mon, 12 Oct 2026 00:00:00 +0000"
@@ -368,12 +374,6 @@
       "titolo": "I-SMI.TI.22e Notifications according to Article 41, MPLO",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/bewilligungen_zertifikate/autorizzazioni-d-esercizio0/ispettorati.html",
       "data": "Wed, 23 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "DHPC – Apremilast Leman (apremilastum)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-apremilast-leman-filmtabletten.html",
-      "data": "Mon, 21 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 442,
+    "doi_citati_controllati": 451,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -793,6 +793,12 @@
    "esito": "ok",
    "dati": {
     "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Rotator Cuff Express Instrument System",
+      "link": "https://www.youtube.com/watch?v=PDYNyXVCBIE",
+      "data": "2026-10-12"
+     },
      {
       "canale": "Arthrex",
       "titolo": "Hip Joint Access Using the Atraumatic Hip Access Convenience Kit",
@@ -823,6 +829,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42857476",
+     "titolo": "Journal of Experimental Orthopaedics — Coorte retrospettiva monocentrica di un chirurgo (Zhang, Guo, Xu, Zhu, ",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42815174",
      "titolo": "Clinical Biomechanics — Revisione sistematica PRISMA (Marczak, Lightle, Brooks, Kyriazi, Chong, Martinez, Thor",
