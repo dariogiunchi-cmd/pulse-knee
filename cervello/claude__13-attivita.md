@@ -180,6 +180,12 @@ più solo disciplina, è l'unico modo di passare il cancello.
 MUTE COL NUMERO: per dichiarare muto un confronto binario usa
   python3 test/potenza.py <eventi1> <n1> <eventi2> <n2>
 e scrivi nel MUTE che cosa lo studio non può escludere (l'IC che ti stampa).
+DUE TRAPPOLE DI CONTENUTO viste il 13 ottobre (il cancello si è fermato su un briefing valido):
+· un MUTE (o NLB/SOCV/CONF) che contiene «numero,numero:» — es. «a 0,794: lo studio…» — viene letto
+  dal controllo sulle chiavi come numero di scheda inesistente: dopo un numero usa «;» o «.», mai «:».
+· le PRIME TRE schede finiscono intere nella fotografia dei salvati e nel link di trasferimento fra
+  dispositivi (test/trasferimento.py, tetto 25 KB): tieni design, risultati e «per te» di quelle tre
+  entro circa 11,6 KB di JSON in totale; se il test suona, accorcia i contenuti, mai il test.
 FULL TEXT DEL PICK: se il lavoro del giorno è open access su PMC
 (get_copyright_status / get_full_text_article del connettore PubMed), apri il testo
 completo PRIMA di scrivere la scheda estesa: numeri e limiti dall'abstract da solo

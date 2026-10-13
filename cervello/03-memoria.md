@@ -7,12 +7,21 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 11 ottobre 2026.*
+*Ultimo aggiornamento: 13 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-10-13 | Journal of Experimental Orthopaedics | Coorte retrospettiva monocentrica (Zhang et al.; Guangzhou), 49 pull-out transtibiali della radice posteriore mediale, esordio acuto contro insidioso | 10.1002/jeo2.70948 | menisco, radice, estrusione, pull-out transtibiale | aperto — 🟢 PICK livello III; IKDC 73,0 contro 67,0 (p=0,02), progressione K-L 1/28 contro 8/21, estrusione 3,3 contro 3,9 mm (differenza 0,4 mm, IC 95% 0,1-0,7), guarigione alla RM uguale; tocca T2b
+2026-10-13 | Journal of Experimental Orthopaedics | Coorte retrospettiva multicentrica (Rivarola et al.; Buenos Aires), 500 suture meniscali | 10.1002/jeo2.70947 | menisco, sutura, prognosi | aperto — 🟢 livello III; reinterventi 16,2%, sopravvivenza a 5 anni 82,6%; tessuto HR 2,74, sutura mediale HR 2,18; morfologia non indipendente; IC non riportati
+2026-10-13 | Journal of Experimental Orthopaedics | Studio trasversale (Santos-Nunes et al.; Porto), 176 LCA acuti, ALL alla RM e tacca femorale profonda | 10.1002/jeo2.70950 | ALL, RM, instabilità rotatoria | aperto — 🟢 livello III; tacca 10/40 contro 29/136 (p=0,623; RR 1,17, IC 95% 0,63-2,19), contusione ossea OR 2,192 (1,012-4,748); tocca T1a
+2026-10-13 | Arthroscopy Techniques | Nota tecnica (Ripoll et al.; Nizza, Tolosa), LCA-LCM continuo con retto femorale | 10.1002/atn2.70304 | retto femorale, LCM, multilegamentose | aperto — 🟢 livello V; nessun paziente
+2026-10-13 | Arthroscopy Techniques | Nota tecnica (Suruga et al.; Tokyo), Lemaire modificato in tunnel, tunnel del rinforzo per primo | 10.1002/atn2.70297 | LET, Lemaire, tunnel | aperto — 🟢 livello V; nessun paziente; tocca T1b (costrutto in tunnel con ancora, non onlay)
+2026-10-13 | Journal of Experimental Orthopaedics | Simulazione radiografica (Plassard et al.; Marsiglia), 259 radiografie, abaco per osteotomia di riduzione dello slope | 10.1002/jeo2.70951 | osteotomia, slope | aperto — 🟢 livello IV; errore medio assoluto 0,45 e 0,88 mm; in-sample, nessun esito clinico
+2026-10-13 | Arthroscopy | Serie retrospettiva (Schroeder et al.; Stanford), 23 LCA con tendine rotuleo, difetto rotuleo | 10.1002/arj.70618 | LCA, tendine rotuleo, sito donatore | aperto — ⚪ livello IV; R 0,481 (p=0,002) con n=23: p incoerenti (calcolo mio)
+2026-10-13 | JB & JS Open Access | Coorte su database assicurativo (Playter et al.), 384.582 persone, terapia estrogenica e rottura del LCA | 10.2106/JBJS.OA.26.00279 | LCA, donne, prevenzione | aperto — ⚪ livello III; OR 1,26 (IC 95% 1,02-1,55), ricostruzione OR 1,5 (1,07-2,11)
+2026-10-13 | Bone & Joint Open | Coorte retrospettiva (Cheok et al.; Brisbane), UKA mediale robotica Restoris MCK contro Oxford | 10.1302/2633-1462.710.BJO-2026-0104.R1 | UKA, robotica, revisione | aperto — ⚪ coorti non contemporanee; revisione -78% (p=0,046, IC non riportato), degenza -2,2 giorni (IC 95% 1,0-3,3)
 2026-10-11 | Clinical Biomechanics | Revisione sistematica (Marczak et al.; Creighton), 6 studi, 173 operati di LCA e 79 controlli, elastografia a onde di taglio | 10.1016/j.clinbiomech.2026.106982 | LCA, vasto mediale, elastografia, sito donatore | aperto — 🟠 SR di studi osservazionali; vasto mediale g da -1,10 a -1,21, semitendinoso g da -1,29 a -1,64 dopo prelievo (IC non riportati); PICK, tocca T3 (app T4)
 2026-10-11 | Anaesthesia | RCT triplo cieco (Beun et al.; Losanna), 80 LCA, IPACK contro blocco tibiale selettivo | 10.1111/anae.70433 | LCA, analgesia, blocco nervoso | aperto — 🟢 morfina a 24 h, mediana 12 mg (IQR 6-20) contro 16 mg (10-30), p=0,073; nessuna differenza funzionale a 4 e 8 mesi
 2026-10-11 | Archives of Orthopaedic and Trauma Surgery | Coorte prospettica a due bracci (De Berardinis et al.; Milano, Firenze), 109 TKA non cementate (54) contro cementate (55), FJS-12 a 24 mesi | 10.1007/s00402-026-06531-w | TKA, cementazione, FJS-12 | aperto — 🟢 livello III; FJS-12 β=7,4 (IC 95% da -1,8 a 16,6; p=0,115), PASS 96,3% contro 76,4% (IC 95% 7,1-32,9)
@@ -401,6 +410,8 @@
 
 ### T1a — Il LET serve su innesto rigido? *(dal 2026-07-21)*
 
+**Nuovo il 13 ottobre 2026, un criterio di imaging per scegliere il rinforzo laterale non regge.** Studio trasversale su 176 LCA acuti operati (Santos-Nunes et al., *J Exp Orthop*; PMID 42857852): lesione dell'ALL alla RM in 40 (22,7%); segno della tacca laterale femorale profonda in 10/40 con lesione contro 29/136 senza (p=0,623; RR 1,17, IC 95% 0,63-2,19, calcolo mio, quindi muto); unico fattore indipendente la contusione ossea (OR 2,192; IC 95% 1,012-4,748). Non muove la posizione universale; toglie un appoggio a chi selezionasse il LET per imaging. Trasversale, senza esiti di stabilità.
+
 **Nuovo il 2 settembre 2026, il primo dato diretto sul tuo innesto nel paziente
 pediatrico/adolescente.** Una revisione sistematica PRISMA (51 studi, 4.153
 pazienti ≤19 anni; Olivelle, Guevel, Sarraf, *J ISAKOS*) sulla scelta
@@ -783,6 +794,8 @@ ma con una ALL con innesto e non con il tuo Lemaire onlay. Non chiude nulla.
 
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
+**Nuovo il 13 ottobre 2026, una terza famiglia di costrutto.** Nota tecnica (Suruga et al., *Arthrosc Tech*; PMID 42857577; livello V, nessun paziente): Lemaire modificato con fissazione in tunnel osseo e ancora SwiveLock, passaggio posteriore al collaterale laterale, con il tunnel del rinforzo scavato per primo per evitare la convergenza con quello del LCA. Nessun dato; affianca al profondo con graffa degli studi randomizzati e al superficiale onlay un costrutto in tunnel che la letteratura chiama allo stesso modo. Con l'onlay la convergenza non si pone.
+
 **Verificata sul full text di STABILITY 2.** Il protocollo prescrive: banderella di
 bendelletta 1 × 8 cm, *«tunnelled **under the fibular collateral ligament** (FCL)
 and attached to the femur with a **Richards' staple** (Smith and Nephew)»*,
@@ -868,6 +881,8 @@ descrive per iscritto, passo per passo, una tecnica vicina alla tua invece di la
 implicita.
 
 ### T2b — L'estrusione, non il timing né il grado condrale *(riformulata 2026-08-01, sostituisce T2)*
+
+**Nuovo il 13 ottobre 2026, l'esordio dei sintomi e l'estrusione dopo la stessa tecnica.** Coorte retrospettiva di Guangzhou (Zhang et al., *J Exp Orthop*; PMID 42857476; 49 pull-out transtibiali di rotture di tipo 2 della radice posteriore mediale, un chirurgo, minimo 24 mesi): a un anno l'estrusione è maggiore dopo esordio insidioso che dopo acuto (3,9 contro 3,3 mm; differenza 0,4 mm, IC 95% 0,1-0,7) e la progressione dell'artrosi più frequente (8/21 contro 1/28), a guarigione alla RM sovrapponibile (completa 24/28 contro 16/21, p=0,47; mancata guarigione completa RR 0,60, IC 95% 0,18-1,97, calcolo mio, muto). Rafforza l'idea che la sutura guarita non equivalga a menisco in posizione, ma la differenza assoluta è di 0,3-0,4 mm, gli autori ne dichiarano incerta la rilevanza e l'OR aggiustato (0,02; IC 95% 0,001-0,35) poggia su 9 eventi. Non cambia che cosa fare: l'esordio è una domanda da annotare, non un criterio di esclusione.
 
 **Nuovo il 9 ottobre 2026, la risonanza a 7 T sull'estrusione dopo la sutura.** Uno studio del Minnesota con LaPrade (Kajabi et al., *J Orthop Res*; PMID 42844718; 25 pazienti con rifissazione della radice posteriore del menisco mediale e 9 controlli, risonanza a 7 tesla prima e a 6 mesi) trova suture integre in tutti ma un'estrusione mediale che cresce da 3,7 ± 1,1 a 4,9 ± 1,5 mm (p=0,002), con la T2* preoperatoria correlata all'estrusione postoperatoria (ρ=0,765; p<0,001; IC non riportato, stima mia circa 0,53-0,89). L'abstract non dice con quale tecnica sono state suturate: non è dimostrato che sia la transtibiale pull-out. Rafforza che l'estrusione resta il problema aperto anche con la riparazione riuscita e aggiunge un candidato predittore preoperatorio (qualità del tessuto) che oggi non si misura in ambulatorio; non chiude nulla: 25 pazienti, una sede, 6 mesi, nessun esito clinico, nessun confronto fra tecniche.
 
