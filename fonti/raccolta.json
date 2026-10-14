@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-13T09:26:05Z",
+ "generato": "2026-10-14T06:41:10Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 451,
+    "doi_citati_controllati": 460,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -790,45 +790,18 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Rotator Cuff Express Instrument System",
-      "link": "https://www.youtube.com/watch?v=PDYNyXVCBIE",
-      "data": "2026-10-12"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Hip Joint Access Using the Atraumatic Hip Access Convenience Kit",
-      "link": "https://www.youtube.com/watch?v=UYtAITPqfJA",
-      "data": "2026-10-05"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Women in Foot and Ankle Surgery Course - December 11-12, 2026",
-      "link": "https://www.youtube.com/shorts/tidYdE-V2uA",
-      "data": "2026-10-01"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "NanoNeedle™ Scope 2.0 for Gastrocnemius Recession",
-      "link": "https://www.youtube.com/watch?v=FsD5Itp3GDc",
-      "data": "2026-10-01"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "CORI ◊ SHOULDER | Handheld Robotics in Shoulder Arthroplasty with Dr. Christopher Klifto",
-      "link": "https://www.youtube.com/watch?v=LFDiRdZS1ME",
-      "data": "2026-10-01"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42865127",
+     "titolo": "The American Journal of Sports Medicine — Serie di casi retrospettiva (livello IV; Nishioka, Thamrongskulsiri,",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42857476",
      "titolo": "Journal of Experimental Orthopaedics — Coorte retrospettiva monocentrica di un chirurgo (Zhang, Guo, Xu, Zhu, ",
@@ -1327,16 +1300,6 @@
       "titolo": "The iliotibial band revisited: surgical anatomy and imaging-based guidelines for lateral tenodesis in ACL reconstruction.",
       "rivista": "Surgical and radiologic anatomy : SRA",
       "data": "2026 Aug 19",
-      "tipi": [
-       "Journal Article",
-       "Review"
-      ]
-     },
-     {
-      "pmid": "42596025",
-      "titolo": "Asia-Pacific expert consensus on robotic-assisted hip and knee arthroplasty.",
-      "rivista": "Arthroplasty (London, England)",
-      "data": "2026 Aug 13",
       "tipi": [
        "Journal Article",
        "Review"
