@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-14T06:41:10Z",
+ "generato": "2026-10-14T07:39:04Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -790,8 +790,41 @@
    }
   },
   "youtube": {
-   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Rotator Cuff Express Instrument System",
+      "link": "https://www.youtube.com/watch?v=PDYNyXVCBIE",
+      "data": "2026-10-12"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Hip Joint Access Using the Atraumatic Hip Access Convenience Kit",
+      "link": "https://www.youtube.com/watch?v=UYtAITPqfJA",
+      "data": "2026-10-05"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Women in Foot and Ankle Surgery Course - December 11-12, 2026",
+      "link": "https://www.youtube.com/shorts/tidYdE-V2uA",
+      "data": "2026-10-01"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "NanoNeedle™ Scope 2.0 for Gastrocnemius Recession",
+      "link": "https://www.youtube.com/watch?v=FsD5Itp3GDc",
+      "data": "2026-10-01"
+     },
+     {
+      "canale": "Smith+Nephew",
+      "titolo": "CORI ◊ SHOULDER | Handheld Robotics in Shoulder Arthroplasty with Dr. Christopher Klifto",
+      "link": "https://www.youtube.com/watch?v=LFDiRdZS1ME",
+      "data": "2026-10-01"
+     }
+    ]
+   }
   },
   "destino": {
    "esito": "ok",
