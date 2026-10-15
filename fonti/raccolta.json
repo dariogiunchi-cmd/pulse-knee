@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-15T06:26:02Z",
+ "generato": "2026-10-15T07:27:25Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -790,8 +790,23 @@
    }
   },
   "youtube": {
-   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Rotator Cuff Express Instrument System",
+      "link": "https://www.youtube.com/watch?v=PDYNyXVCBIE",
+      "data": "2026-10-12"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Hip Joint Access Using the Atraumatic Hip Access Convenience Kit",
+      "link": "https://www.youtube.com/watch?v=UYtAITPqfJA",
+      "data": "2026-10-05"
+     }
+    ]
+   }
   },
   "destino": {
    "esito": "ok",
