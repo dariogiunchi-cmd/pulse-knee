@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-14T07:39:04Z",
+ "generato": "2026-10-15T06:26:02Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Swissmedic Journal",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/swissmedic-journal.html",
+      "data": "Wed, 14 Oct 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Emovigilanza Rapporto annuale 2025",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/haemovigilance/haemovigilance-publications-events/haemovigilance-report-2025.html",
       "data": "Tue, 13 Oct 2026 00:00:00 +0000"
@@ -367,12 +373,6 @@
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Release del portale di Swissmedic – nuove funzionalità disponibili dal 23 settembre 2026",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/swissmedic-portal-release-neue-funktionen-ab-23-september-2026.html",
-      "data": "Thu, 24 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Informazioni sulla release del portale Swissmedic – 23 settembre 2026",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/kpa/aktuell-kpa/information-zum-swissmedic-portal-release-23-09-2026.html",
       "data": "Thu, 24 Sep 2026 00:00:00 +0000"
      },
      {
@@ -585,17 +585,6 @@
      "sorveglianza": "Innesto quadricipitale",
      "studi": [
       {
-       "nct": "NCT07846709",
-       "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
-       "stato": "NOT_YET_RECRUITING",
-       "aggiornato": "2026-10-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 150,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT03896464",
        "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
        "stato": "RECRUITING",
@@ -604,6 +593,17 @@
         "NA"
        ],
        "n": 352,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07846709",
+       "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-10-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 150,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 460,
+    "doi_citati_controllati": 469,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -790,45 +790,18 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Rotator Cuff Express Instrument System",
-      "link": "https://www.youtube.com/watch?v=PDYNyXVCBIE",
-      "data": "2026-10-12"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Hip Joint Access Using the Atraumatic Hip Access Convenience Kit",
-      "link": "https://www.youtube.com/watch?v=UYtAITPqfJA",
-      "data": "2026-10-05"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Women in Foot and Ankle Surgery Course - December 11-12, 2026",
-      "link": "https://www.youtube.com/shorts/tidYdE-V2uA",
-      "data": "2026-10-01"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "NanoNeedle™ Scope 2.0 for Gastrocnemius Recession",
-      "link": "https://www.youtube.com/watch?v=FsD5Itp3GDc",
-      "data": "2026-10-01"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "CORI ◊ SHOULDER | Handheld Robotics in Shoulder Arthroplasty with Dr. Christopher Klifto",
-      "link": "https://www.youtube.com/watch?v=LFDiRdZS1ME",
-      "data": "2026-10-01"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42871761",
+     "titolo": "Journal of Experimental Orthopaedics — Studio radiografico retrospettivo monocentrico (livello IV; Vidović, Bl",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42865127",
      "titolo": "The American Journal of Sports Medicine — Serie di casi retrospettiva (livello IV; Nishioka, Thamrongskulsiri,",
