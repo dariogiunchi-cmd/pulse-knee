@@ -7,12 +7,21 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 14 ottobre 2026.*
+*Ultimo aggiornamento: 15 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-10-15 | Journal of Experimental Orthopaedics | Studio radiografico retrospettivo (Vidović et al.; Zagabria), 3337 ginocchia artrosiche, pendenza tibiale posteriore in due cluster | 10.1002/jeo2.70945 | slope, CPAK, k-means, fenotipo sagittale | aperto — 🟢 PICK livello IV, testo completo letto; gruppo piatto 3,56° (55,91%) e ripido 8,52° (44,09%), silhouette 0,56; CPAK non separa i gruppi per singola categoria, apice distale 54,2% ripido contro 38,7% (p<0,01); nessun esito clinico; sfondo per T1a
+2026-10-15 | Orthopaedic surgery | Coorte comparativa (Liang et al.; Shenzhen), 48 LCA monofascio con residuo conservato «tension suspension» (30) contro no (18) | 10.1111/os.70443 | LCA, residuo, legamentizzazione, RM | aperto — 🟢 segnale RM e tunnel femorale diversi a 3 mesi (p<0,05), non a 6 (SNQ prossimale p=0,058), punteggi uguali; MUTO
+2026-10-15 | Bone & joint research | Studio prospettico non randomizzato (Miyazaki et al.; Fukuoka), 36 ginocchia, collagene del semitendinoso e lassità generalizzata | 10.1302/2046-3758.1510.BJR-2025-0544.R1 | LCA, semitendinoso, lassità, collagene | aperto — 🟢 collagene III 117,9 contro 130,0 (scala invertita) solo con Beighton ≥6 (p=0,036); ≥4 e ≥5 p=0,249 e 0,053; innesto hamstring, non il tuo; MUTO
+2026-10-15 | Arthroplasty (London) | Studio retrospettivo monocentrico (Yu et al.; Fuzhou), 321 UKA, cemento residuo | 10.1186/s42836-026-00439-x | UKA, cemento, complicanze | aperto — 🟢 84/321 (26,16%) con cemento residuo, estruso 66, frammenti liberi 18 (sei reinterventi); inserto sottile OR 2,59 (IC 95% 1,38-4,98); TC solo nei sintomatici
+2026-10-15 | Bone & joint research | Osservazionale UK Biobank propensity-matched (Glynou et al.; Imperial), 2283 con accelerometro | 10.1302/2046-3758.1510.BJR-2025-0603.R1 | UKA, TKA, attività, passi | aperto — 🟢 UKA 9150 contro TKA 7920 passi/die (+15,5%; p<0,001); indicazione non casuale; IC non riportati
+2026-10-15 | J Long Term Eff Med Implants | Serie retrospettiva (Konstantas et al.; Atene), 6 cisti pretibiali su 446 LCA con viti PLLA | 10.1615/JLongTermEffMedImplants.2025062524 | LCA, vite bioassorbibile, cisti | aperto — ⚪ granuloma da corpo estraneo, tutti operati senza recidiva; 1,3% (IC 95% di Wilson 0,6-2,9%, calcolo mio); MUTO
+2026-10-15 | SICOT-J | Serie retrospettiva (Fogacci et al.; Lione), 35 PFA con robot MAKO | 10.1051/sicotj/2026070 | protesi femororotulea, robot | aperto — ⚪ livello IV; libera da revisione 91,6% (IC 95% 80,1-100,0) a 24 mesi, reintervento 3/35; nessun controllo; MUTO
+2026-10-15 | Musculoskeletal surgery | Coorte retrospettiva (Keltz et al.; Melbourne), 637 TKA allineate meccanicamente | 10.1007/s12306-026-00973-6 | TKA, equilibrio, radiografia | aperto — ⚪ nelle donne <70 anni -1 punto OKS per mm di apertura mediale al primo giorno; nessuna associazione negli uomini; IC non riportati; sottogruppo
+2026-10-15 | Bone & joint open | Consenso Delphi (de Bondt et al.; Nimega), classificazione TC dei difetti ossei in revisione di TKA | 10.1302/2633-1462.710.BJO-2026-0188.R1 | revisione TKA, TC, consenso | aperto — ⚪ consenso sul 93% di 29 affermazioni, non sulle zone anatomiche; opinione di esperti
 2026-10-14 | The American journal of sports medicine | Serie di casi retrospettiva (Nishioka et al.; Rush, Chicago), 21 rifissazioni della radice mediale con pie-crusting spinto del collaterale mediale | 10.1177/03635465261492229 | menisco, radice, pie-crusting, collaterale mediale | aperto — 🟢 PICK livello IV; apertura valgo +1,21 mm (IC 95% 0,73-1,70) contro soglia 3,2 mm; nessun esito clinico; tocca T2b di lato
 2026-10-14 | Sports health | Analisi secondaria di RCT (Marmura et al.), 500 LCA con hamstring ± tenodesi laterale, rientro per sesso | 10.1177/19417381261491843 | LCA, rientro allo sport, sesso, LET | aperto — 🟢 livello 1 dichiarato, analisi secondaria; OR 0,47 (IC 95% 0,29-0,76), rientro a sport e livello 45,5%; hamstring; tocca T3 di lato
 2026-10-14 | Sports medicine (Auckland, N.Z.) | Coorte nazionale (Sandon et al.; Karolinska), 10.836 calciatori operati di LCA, rientro in partita e carriera | 10.1007/s40279-026-02558-6 | LCA, calcio, rientro, registro | aperto — 🟢 coorte nazionale; rientro 58,5%, 31 partite (IQR 11-70) dopo il rientro
