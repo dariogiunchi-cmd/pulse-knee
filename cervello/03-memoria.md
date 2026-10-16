@@ -7,12 +7,21 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 15 ottobre 2026.*
+*Ultimo aggiornamento: 16 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-10-16 | Science & medicine in football | Consensus UEFA sul LCA nel calcio femminile, parte 2: riabilitazione, rientro e prospettiva delle giocatrici (Verhagen et al.; 26 esperti, 180 affermazioni) | 10.1080/24733938.2026.2726165 | consensus, rientro allo sport, quadricipite, criteri | aperto — 🔴 per regola; consenso su 170 (94%), rientro a criteri, soglie non nell'abstract
+2026-10-16 | KSSTA | Coorte SANTI (Santamaria, Sonnery-Cottet et al.; Lione), 232 LCA in 215 calciatori professionisti, LEAP 201 contro 31 | 10.1002/ksa.70641 | LCA, LET, calcio, rottura dell'innesto | aperto — 🟢 13 rotture (5,6%); HR 2,48 (IC 95% 0,49-9,87), confronto muto
+2026-10-16 | AJSM | Coorte prospettica PLUTO (Bram et al.; Kocher, Fabricant), 91 LCA transfisari vicino alla maturità | 10.1177/03635465261492231 | lca adolescente, allineamento, crescita | aperto — 🟢 28% con asse ≥10 mm, 16-17% con angoli ≥5°
+2026-10-16 | Arthrosc Sports Med Rehabil | Revisione sistematica (Kang et al.; Mayo), 6 studi, 243 pazienti, rientro dopo MPFL | 10.1002/ars2.70110 | mpfl, rientro allo sport, LSI | aperto — 🟢 rientro 85-100%, 14-40% supera tutti i criteri
+2026-10-16 | Science & medicine in football | Consensus UEFA sul LCA nel calcio femminile, parte 1: rischio e prevenzione (Okholm Kryger et al.; 31 esperti) | 10.1080/24733938.2026.2747391 | consensus, prevenzione, calcio femminile | aperto
+2026-10-16 | KSSTA | Coorte retrospettiva (Marty-Diloy et al.; Bordeaux), 479 LCA, differenze per sesso | 10.1002/ksa.70651 | LCA, sesso, rientro, livello pre-infortunio | aperto — ⚪ 45,1% contro 28,1% al livello pre-infortunio
+2026-10-16 | Arthroscopy | Metanalisi di 21 RCT (Daud et al.; Toronto), NMES dopo LCA | 10.1002/arj.70614 | LCA, NMES, quadricipite | aperto — ⚪ forza isometrica a 6-12 settimane, non oltre
+2026-10-16 | Arthroscopy techniques | Nota tecnica (Grassi, Marcheggiani Muccioli, Zaffagnini; Bologna), menisco laterale ipermobile | 10.1002/atn2.70338 | menisco laterale, all-inside | aperto
+2026-10-16 | Journal of robotic surgery | Revisione sistematica (Burgio et al.; HSS), conversione robotica UKA-TKA, 5 studi | 10.1007/s11701-026-04063-4 | UKA, TKA, robot, conversione | aperto — ⚪ aumenti 13,6%, steli 3,6%
 2026-10-15 | Journal of Experimental Orthopaedics | Studio radiografico retrospettivo (Vidović et al.; Zagabria), 3337 ginocchia artrosiche, pendenza tibiale posteriore in due cluster | 10.1002/jeo2.70945 | slope, CPAK, k-means, fenotipo sagittale | aperto — 🟢 PICK livello IV, testo completo letto; gruppo piatto 3,56° (55,91%) e ripido 8,52° (44,09%), silhouette 0,56; CPAK non separa i gruppi per singola categoria, apice distale 54,2% ripido contro 38,7% (p<0,01); nessun esito clinico; sfondo per T1a
 2026-10-15 | Orthopaedic surgery | Coorte comparativa (Liang et al.; Shenzhen), 48 LCA monofascio con residuo conservato «tension suspension» (30) contro no (18) | 10.1111/os.70443 | LCA, residuo, legamentizzazione, RM | aperto — 🟢 segnale RM e tunnel femorale diversi a 3 mesi (p<0,05), non a 6 (SNQ prossimale p=0,058), punteggi uguali; MUTO
 2026-10-15 | Bone & joint research | Studio prospettico non randomizzato (Miyazaki et al.; Fukuoka), 36 ginocchia, collagene del semitendinoso e lassità generalizzata | 10.1302/2046-3758.1510.BJR-2025-0544.R1 | LCA, semitendinoso, lassità, collagene | aperto — 🟢 collagene III 117,9 contro 130,0 (scala invertita) solo con Beighton ≥6 (p=0,036); ≥4 e ≥5 p=0,249 e 0,053; innesto hamstring, non il tuo; MUTO
@@ -810,6 +819,8 @@ LET non riportati. Un secondo studio funzionale (Kim et al., *Clin Biomech*, PMI
 pazienti) associa la ricostruzione dell'ALL a un Y-balance migliore a 3 mesi (p=0,009 e p=0,049),
 ma con una ALL con innesto e non con il tuo Lemaire onlay. Non chiude nulla.
 
+**Nuovo il 16 ottobre 2026, un dato di sicurezza a lungo termine dal calcio professionistico (PMID 42879166).** Una coorte retrospettiva del gruppo SANTI (Santamaria, Sonnery-Cottet et al., *Knee Surg Sports Traumatol Arthrosc*; 232 LCA primari in 215 calciatori professionisti, 201 con procedura laterale extra-articolare e 31 senza) conta 13 rotture dell'innesto (5,6%) a 100 mesi medi: 12,9% senza e 4,5% con procedura laterale, ma HR 2,48 (IC 95% 0,49-9,87; p=0,246). Con 4 eventi su 31 contro 9 su 201 il rischio relativo grezzo (2,88; IC 95% 0,94-8,79, test/potenza.py) non esclude né l'assenza di differenza né un rischio fino a circa nove volte maggiore senza rinforzo: confronto muto. L'abstract non dice quale innesto né quale tecnica laterale; l'innesto rotuleo è fattore di rischio di reintervento (HR 3,14), il quadricipitale non è nominato. Non isola il tuo LET su quadricipite e non muove la tensione.
+
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
 **Nuovo il 13 ottobre 2026, una terza famiglia di costrutto.** Nota tecnica (Suruga et al., *Arthrosc Tech*; PMID 42857577; livello V, nessun paziente): Lemaire modificato con fissazione in tunnel osseo e ancora SwiveLock, passaggio posteriore al collaterale laterale, con il tunnel del rinforzo scavato per primo per evitare la convergenza con quello del LCA. Nessun dato; affianca al profondo con graffa degli studi randomizzati e al superficiale onlay un costrutto in tunnel che la letteratura chiama allo stesso modo. Con l'onlay la convergenza non si pone.
@@ -1398,6 +1409,8 @@ sistematica sull'elastografia (Marczak et al., *Clin Biomech*, PMID 42815174; 6 
 vasto mediale operato più cedevole (g da -1,10 a -1,21) in relazione a forza, funzione e
 atterraggio. Nessuno muove la soglia del 90%; aggiungono che il cancello ha una dimensione
 psicologica e una meccanica che l'LSI da solo non vede. Non chiude la tensione.
+
+**Aggiornata il 16 ottobre 2026, il consensus di una federazione sul criterio e tre dati laterali (PMID 42875873, 42876992, 42879163, 42876225).** Il consensus UEFA sul LCA nel calcio femminile, parte 2 (Verhagen et al., *Sci Med Footb*; 26 esperti, RAND-UCLA modificato, 180 affermazioni, consenso su 170, 94%) sostiene un rientro a criteri e non a tempi fissi, con la forza del quadricipite come tappa centrale accanto a prontezza neuromuscolare e psicologica e a un rientro a fasi: il tuo LSI resta una tappa, non il cancello unico. Consenso di esperti, soglia numerica non nell'abstract, testo completo non aperto (NON VERIFICATO). Una revisione sistematica sul MPFL (Kang et al.; 6 studi, 243 pazienti) riporta rientro dell'85-100% ma solo il 14-40% soddisfa tutti i criteri definiti, con estensione isocinetica al 70-96% di LSI. Una coorte di Bordeaux (Marty-Diloy et al.; 479 operati di LCA) trova rientro a 5 anni simile (uomini 61,2%, donne 59,5%; p=0,85) ma livello pre-infortunio ritrovato nel 45,1% degli uomini contro il 28,1% delle donne (OR maschile 2,16; IC 95% 1,40-3,39). Una metanalisi di 21 RCT (Daud et al., *Arthroscopy*) vede la stimolazione elettrica neuromuscolare migliorare la forza isometrica a 6-12 settimane ma non oltre le 12. Nessuno sposta la soglia del 90%; il consensus la integra e non la sostituisce. Non chiude la tensione.
 
 ### T4 — La variabilità del tessuto di partenza nel minced cartilage *(riformulata 2026-08-01)*
 
