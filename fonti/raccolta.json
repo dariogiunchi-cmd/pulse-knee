@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-16T07:10:32Z",
+ "generato": "2026-10-17T06:09:55Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "La 13e édition de la Pharmacopoea Helvetica",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/legal/farmacopea/informazioni-importanti/pharmacopoea-helvetica-13.html",
+      "data": "Fri, 16 Oct 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Swissmedic Journal",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/swissmedic-journal.html",
       "data": "Wed, 14 Oct 2026 00:00:00 +0000"
@@ -356,12 +362,6 @@
       "titolo": "Out-of-Stock – Ketazed, collyre en solution",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-ketazed-augentropfen-loesung.html",
       "data": "Fri, 25 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Specialista HR in Controlling, Retribuzioni e Progetti (60 - 80%)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/posti-liberi/hr-fachspezialistin.html",
-      "data": "Thu, 24 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 478,
+    "doi_citati_controllati": 487,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -790,33 +790,18 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Spine Percutaneous Spine Fixation",
-      "link": "https://www.youtube.com/watch?v=NFq3GGG6tn4",
-      "data": "2026-10-15"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Rotator Cuff Express Instrument System",
-      "link": "https://www.youtube.com/watch?v=PDYNyXVCBIE",
-      "data": "2026-10-12"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Hip Joint Access Using the Atraumatic Hip Access Convenience Kit",
-      "link": "https://www.youtube.com/watch?v=UYtAITPqfJA",
-      "data": "2026-10-05"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42770603",
+     "titolo": "Knee surgery, sports traumatology, arthroscopy — Revisione sistematica PRISMA (Sian, See, Alqeisi, Meena, Dalg",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42875873",
      "titolo": "Science & medicine in football — Consensus di esperti UEFA sul LCA nel calcio femminile, parte 2: riabilitazio",
@@ -1383,6 +1368,83 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Inter-Individual Variability in Cycling Biomechanics During Experimentally Induced Movement-Evoked Knee Pain",
+      "dove": "archivio preprint",
+      "data": "2026-10-16",
+      "doi": "10.64898/2026.10.09.757760",
+      "url": "https://doi.org/10.64898/2026.10.09.757760"
+     },
+     {
+      "titolo": "Nose-to-Knee Transplantation for Osteochondral Regeneration: A Proof-of-Concept Study in Sheep Employing Ceramic-Hydrogel Osteochondral Grafts",
+      "dove": "archivio preprint",
+      "data": "2026-10-12",
+      "doi": "10.64898/2026.10.09.757945",
+      "url": "https://doi.org/10.64898/2026.10.09.757945"
+     },
+     {
+      "titolo": "HLA Genotype is Associated with Patient Reported Outcomes and Adverse Reactions to Metal Debris in Patients with Cobalt-Chrome Knee Arthroplasties",
+      "dove": "archivio preprint",
+      "data": "2026-10-13",
+      "doi": "10.64898/2026.10.12.26365276",
+      "url": "https://doi.org/10.64898/2026.10.12.26365276"
+     },
+     {
+      "titolo": "Subchondral bone remodeling in knee osteoarthritis is coupled to lipid mobilization from bone marrow adipocytes",
+      "dove": "archivio preprint",
+      "data": "2026-10-14",
+      "doi": "10.64898/2026.10.07.757365",
+      "url": "https://doi.org/10.64898/2026.10.07.757365"
+     },
+     {
+      "titolo": "Lateral meniscal positional asymmetry during early knee flexion under axial loading following anterior cruciate ligament reconstruction: a paired-knee MRI study",
+      "dove": "archivio preprint",
+      "data": "2026-10-14",
+      "doi": "10.21203/rs.3.rs-11057709/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11057709/v1"
+     },
+     {
+      "titolo": "Correlation Between Demographic Data and Intraoperative Distal Femoral Anthropometry in Patients Undergoing Total Knee Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-10-14",
+      "doi": "10.21203/rs.3.rs-11098453/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11098453/v1"
+     },
+     {
+      "titolo": "Deep Learning-Based Sex Classification and Chronological Age-Group Estimation from Knee Radiographs Using a Multi-Task Framework with Rank-Fusion and Tri-Loss L",
+      "dove": "archivio preprint",
+      "data": "2026-10-14",
+      "doi": "10.21203/rs.3.rs-11155947/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11155947/v1"
+     },
+     {
+      "titolo": "Adverse Childhood Experiences and Incident Symptomatic Knee Osteoarthritis: The Mediating Role of Frailty in a Nationwide Chinese Cohort",
+      "dove": "archivio preprint",
+      "data": "2026-10-14",
+      "doi": "10.21203/rs.3.rs-11080066/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11080066/v1"
+     },
+     {
+      "titolo": "Multi-Task Framework for Efficient Knee Osteoarthritis Segmentation and Classification",
+      "dove": "archivio preprint",
+      "data": "2026-10-15",
+      "doi": "10.21203/rs.3.rs-8330779/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-8330779/v1"
+     },
+     {
+      "titolo": "Anterior Cruciate Ligament Reconstruction and Adapted Rehabilitation in Adolescents with Intellectual Developmental Disorder: A Three-Case Series",
+      "dove": "archivio preprint",
+      "data": "2026-10-10",
+      "doi": "10.20944/preprints202610.0889.v1",
+      "url": "https://doi.org/10.20944/preprints202610.0889.v1"
+     },
+     {
+      "titolo": "Faster Pain Relief, but Not Greater Overall Recovery: Adding Trunk Neuromuscular Training to Knee-Focused Rehabilitation in Patients with Knee Osteoarthritis",
+      "dove": "archivio preprint",
+      "data": "2026-10-14",
+      "doi": "10.20944/preprints202610.1382.v1",
+      "url": "https://doi.org/10.20944/preprints202610.1382.v1"
+     },
+     {
       "titolo": "Suture Retraction to Preserve the Infrapatellar Fat Pad During Anterior Cruciate Ligament Reconstruction: A Retrospective Cohort Study",
       "dove": "archivio preprint",
       "data": "2026-10-11",
@@ -1479,83 +1541,6 @@
       "data": "2026-09-28",
       "doi": "10.64898/2026.09.24.753943",
       "url": "https://doi.org/10.64898/2026.09.24.753943"
-     },
-     {
-      "titolo": "Lateral Partial Patellar Facetectomy Is Associated with Improved Patellofemoral Outcomes Following Primary Non-Resurfaced Total Knee Arthroplasty: A Retrospecti",
-      "dove": "archivio preprint",
-      "data": "2026-09-29",
-      "doi": "10.21203/rs.3.rs-10943625/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10943625/v1"
-     },
-     {
-      "titolo": "Psychological and Knee Function Measures at 1 Month Predict High Kinesiophobia at 6 Months After Anterior Cruciate Ligament Reconstruction: Development and Inte",
-      "dove": "archivio preprint",
-      "data": "2026-09-29",
-      "doi": "10.21203/rs.3.rs-10838037/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10838037/v1"
-     },
-     {
-      "titolo": "Process evaluation protocol of a trial evaluating app-based post knee arthroplasty telerehabilitation strategy in India",
-      "dove": "archivio preprint",
-      "data": "2026-09-29",
-      "doi": "10.12688/wellcomeopenres.26007.3",
-      "url": "https://doi.org/10.12688/wellcomeopenres.26007.3"
-     },
-     {
-      "titolo": "Participant-Independent Lower-Limb sEMG and Knee-Goniometry Profiles Across Movement Tasks in a Public Knee-Abnormality Cohort",
-      "dove": "archivio preprint",
-      "data": "2026-09-28",
-      "doi": "10.21203/rs.3.rs-10927896/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10927896/v1"
-     },
-     {
-      "titolo": "Quantifying and Comparing Knee Quasi-Stiffness Across Speed Vault Landing Modes: An Observational Biomechanical Analysis",
-      "dove": "archivio preprint",
-      "data": "2026-09-28",
-      "doi": "10.21203/rs.3.rs-10418677/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10418677/v1"
-     },
-     {
-      "titolo": "Spatial Transcriptomics Identifies Muscle Inflammation Susceptibility as a Distinct Periarticular Skeletal Muscle Phenotype in End-Stage Knee Osteoarthritis",
-      "dove": "archivio preprint",
-      "data": "2026-09-24",
-      "doi": "10.64898/2026.09.16.752138",
-      "url": "https://doi.org/10.64898/2026.09.16.752138"
-     },
-     {
-      "titolo": "Feasibility, Safety, and Preliminary Efficacy of Intermittent Theta Burst Stimulation Targeting the Left Dorsolateral Prefrontal Cortex in Older Adults with Chr",
-      "dove": "archivio preprint",
-      "data": "2026-09-25",
-      "doi": "10.21203/rs.3.rs-10928863/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10928863/v1"
-     },
-     {
-      "titolo": "Efficacy of platelet-rich plasma injections for treating knee osteoarthritis and its influencing factors: a retrospective cohort study",
-      "dove": "archivio preprint",
-      "data": "2026-09-24",
-      "doi": "10.21203/rs.3.rs-10870421/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10870421/v1"
-     },
-     {
-      "titolo": "A prospective single-arm pre-post study of a soft knee orthotic intervention on pain, physical activity, and functional capacity in clinically mild knee osteoar",
-      "dove": "archivio preprint",
-      "data": "2026-09-24",
-      "doi": "10.21203/rs.3.rs-10914868/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10914868/v1"
-     },
-     {
-      "titolo": "Effectiveness and Potential Benefits of the Use of Laser Light Therapy in Musculoskeletal Rehabilitation Programs with a Focus on Knee Osteoarthritis: A Narrati",
-      "dove": "archivio preprint",
-      "data": "2026-09-24",
-      "doi": "10.20944/preprints202608.1113.v2",
-      "url": "https://doi.org/10.20944/preprints202608.1113.v2"
-     },
-     {
-      "titolo": "Effect of femoral and tibial tunnel angle on tunnel length and aperture stress in all- epiphyseal anterior cruciate ligament reconstruction: a CT-based and fini",
-      "dove": "archivio preprint",
-      "data": "2026-09-23",
-      "doi": "10.21203/rs.3.rs-10965407/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10965407/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
