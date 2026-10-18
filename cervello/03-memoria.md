@@ -7,11 +7,22 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 16 ottobre 2026.*
+*Ultimo aggiornamento: 18 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-10-18 | Arthrosc Sports Med Rehabil | Metanalisi di 13 RCT (Gutierrez-Moreno et al.; Chihuahua), LCA fascio singolo contro doppio fascio, 1041 pazienti, testo completo letto | 10.1002/ars2.70102 | LCA, doppio fascio, pivot shift, IKDC, MCID | aperto — 🟠 pivot shift RR 0,60 a 24-48 mesi (NNT 10), nessuna differenza oltre 48 mesi; un solo RCT con quadricipite, plastica laterale non analizzata
+2026-10-18 | EFORT Open Rev | Revisione sistematica (Legnani, Fadel, D'Ambrosi et al.; Galeazzi), UKA e TKA nello stesso paziente, 10 studi, 437 pazienti | 10.1530/EOR-2025-0193 | protesi monocompartimentale, protesi totale, bilaterale | aperto — evidenza retrospettiva; sopravvivenza più alta con la TKA
+2026-10-18 | KSSTA | Coorte retrospettiva (Morita et al.; HSS), 429 TKA robotiche, fenotipo coronale e bilanciamento dei gap | 10.1002/ksa.70648 | protesi robotica, VELYS, bilanciamento | aperto — marca del robot non riportata
+2026-10-18 | Front Surg | Coorte retrospettiva (Ren et al.; Tianjin), osteotomia tibiale alta di apertura, varismo lieve contro moderato, 30 contro 30 | 10.3389/fsurg.2026.1942837 | osteotomia, varismo lieve | aperto — muto
+2026-10-18 | Front Med | Coorte retrospettiva esplorativa (Xue et al.; Pechino), osteotomia tibiale alta e massa ossea, 123 pazienti | 10.3389/fmed.2026.1922205 | osteotomia, osteoporosi, slope | aperto — muto (complicanze RR 1,58, IC 95% 0,27-9,10)
+2026-10-18 | Knee | Serie osservazionale (Dalal et al.; Sheffield), osteotomia derotativa sopramalleolare della tibia, instabilità rotulea, 21 pazienti | 10.1016/j.knee.2026.104644 | MPFL, torsione tibiale, adolescenti | aperto — senza controllo
+2026-10-18 | Orthop Surg | Coorte retrospettiva (Yusoff et al.; Kuala Lumpur), LCA all-inside con rinforzo di sutura, 63 pazienti | 10.1111/os.70442 | LCA, internal brace, allotrapianto | aperto — 0/63 rotture, IC esatto superiore 5,7%, senza controllo
+2026-10-18 | Knee | Revisione sistematica (Edmonds et al.; Cambridge), osteotomia fibulare prossimale, 45 studi | 10.1016/j.knee.2026.104653 | osteotomia fibulare, artrosi mediale | aperto — sicurezza non quantificata
+2026-10-18 | Arthrosc Sports Med Rehabil | Serie di casi (Sherman et al.; MGB), condroplastica rotulea isolata, 39 pazienti | 10.1002/ars2.70095 | rotula, cartilagine, condroplastica | aperto — senza controllo
+2026-10-18 | Front Surg | Revisione sistematica di 21 RCT (Dias Batista et al.), BMA e BMAC | 10.3389/fsurg.2026.1932090 | BMAC, cartilagine, biologici | aperto — sintesi narrativa
 
 2026-10-16 | Science & medicine in football | Consensus UEFA sul LCA nel calcio femminile, parte 2: riabilitazione, rientro e prospettiva delle giocatrici (Verhagen et al.; 26 esperti, 180 affermazioni) | 10.1080/24733938.2026.2726165 | consensus, rientro allo sport, quadricipite, criteri | aperto — 🔴 per regola; consenso su 170 (94%), rientro a criteri, soglie non nell'abstract
 2026-10-16 | KSSTA | Coorte SANTI (Santamaria, Sonnery-Cottet et al.; Lione), 232 LCA in 215 calciatori professionisti, LEAP 201 contro 31 | 10.1002/ksa.70641 | LCA, LET, calcio, rottura dell'innesto | aperto — 🟢 13 rotture (5,6%); HR 2,48 (IC 95% 0,49-9,87), confronto muto
@@ -436,6 +447,8 @@
 ## TENSIONI APERTE
 
 ### T1a — Il LET serve su innesto rigido? *(dal 2026-07-21)*
+
+**Nuovo il 18 ottobre 2026, una metanalisi che non testa il LET lo nomina come confondente.** Metanalisi di 13 RCT sul doppio fascio contro il fascio singolo (Gutierrez-Moreno et al., *Arthrosc Sports Med Rehabil*; 1041 pazienti; PMID 42890719): la plastica laterale non è stata estratta, ma gli autori scrivono che il suo uso crescente negli studi recenti può pareggiare nel tempo la stabilità rotatoria fra le due tecniche. Ipotesi degli autori, non risultato; un solo RCT con tendine quadricipitale (51 pazienti). Non muove la posizione universale.
 
 **Nuovo il 13 ottobre 2026, un criterio di imaging per scegliere il rinforzo laterale non regge.** Studio trasversale su 176 LCA acuti operati (Santos-Nunes et al., *J Exp Orthop*; PMID 42857852): lesione dell'ALL alla RM in 40 (22,7%); segno della tacca laterale femorale profonda in 10/40 con lesione contro 29/136 senza (p=0,623; RR 1,17, IC 95% 0,63-2,19, calcolo mio, quindi muto); unico fattore indipendente la contusione ossea (OR 2,192; IC 95% 1,012-4,748). Non muove la posizione universale; toglie un appoggio a chi selezionasse il LET per imaging. Trasversale, senza esiti di stabilità.
 
