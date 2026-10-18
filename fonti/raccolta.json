@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-17T06:57:54Z",
+ "generato": "2026-10-18T06:34:24Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 487,
+    "doi_citati_controllati": 497,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -796,6 +796,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42890719",
+     "titolo": "Arthroscopy, sports medicine, and rehabilitation — Metanalisi di 13 RCT (Gutierrez-Moreno, Arámbula-Torres, Pr",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42770603",
      "titolo": "Knee surgery, sports traumatology, arthroscopy — Revisione sistematica PRISMA (Sian, See, Alqeisi, Meena, Dalg",
