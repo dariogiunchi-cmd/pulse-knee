@@ -7,12 +7,22 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 18 ottobre 2026.*
+*Ultimo aggiornamento: 19 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-10-19 | KSSTA | Coorte retrospettiva (Dadoo et al.; UPMC Pittsburgh), LCA primaria e reintervento per rigidità, 1226 pazienti | 10.1002/ksa.70652 | LCA, rigidità, innesto rotuleo, sutura menisco laterale | aperto — 🟠 donne: rotuleo OR 1,91 e sutura laterale OR 1,72; quadricipite non descritto nell'abstract
+2026-10-19 | Cureus | Studio prospettico non randomizzato (George et al.; Bangalore), LCA con sutura laterale con e senza LET, 40 pazienti, testo completo letto | 10.7759/cureus.116356 | LET, Lemaire modificato, pivot shift, menisco laterale | aperto — pivot shift grado 0 85% contro 15%, gruppi sbilanciati; vite sotto il collaterale, nessun quadricipite
+2026-10-19 | KSSTA | Coorte retrospettiva (Santamaria et al.; SANTI, Lione), sutura del corno posteriore mediale in LCA di revisione, 402 suture | 10.1002/ksa.70645 | menisco, revisione LCA, suture-hook | aperto — meniscectomia secondaria 17,5% a 10 anni; tecnica non indipendente (HR 1,62)
+2026-10-19 | Ir J Med Sci | Coorte prospettica (Shahid et al.; Lahore), prima lussazione rotulea negli adolescenti, 160 pazienti | 10.1007/s11845-026-04695-3 | MPFL, adolescenti, rientro, LSI | aperto — predittori LSI quadricipite e apprensione, AUC 0,80
+2026-10-19 | Orthop Surg | Studio diagnostico retrospettivo (Sun et al.; Pechino), J-sign e troclea in TC, 120 ginocchia | 10.1111/os.70404 | MPFL, troclea, J-sign | aperto — piano d'ingresso AUC 0,803-0,912; nessun esito clinico
+2026-10-19 | Clin Orthop Surg | Coorte da database TriNetX (Wajahath et al.), ketorolac nel LCA sotto i 18 anni, 1443 coppie, testo completo letto | 10.4055/cios25488 | LCA adolescenti, ketorolac, oppioidi | aperto — nuova ricostruzione 6,0% contro 2,6% ma esito composito
+2026-10-19 | Cartilage | Scoping review (Suiindik et al.; Astana), strategie cellulari per la cartilagine del ginocchio, 75 pubblicazioni | 10.1177/19476035261499465 | AMIC, minced cartilage, cellule mesenchimali | aperto — mappa, nessun vantaggio costante di un approccio più complesso
+2026-10-19 | Knee | Studio intra-paziente (Hakukawa et al.; Keio), BCR contro BCS in TKA bilaterale, 25 pazienti | 10.1016/j.knee.2026.104652 | protesi totale, crociati, momento di adduzione | aperto — KAM più basso con BCR, punteggi comparabili
+2026-10-19 | J Clin Med | Studio di concordanza retrospettivo (Tseng et al.; Kaohsiung), HKA ROSA contro radiografia, 208 ginocchia | 10.3390/jcm15197432 | protesi robotica, HKA, allineamento | aperto — bias −1,75°, ICC 0,472; non è il VELYS
+2026-10-19 | J Clin Med | Caso-controllo esplorativo (Murad et al.; Petah Tikva), distanza fibula-tibia e revisione per instabilità, 22 contro 29 | 10.3390/jcm15197658 | protesi totale, instabilità, revisione | aperto — AUC 0,66 in validazione incrociata, ipotesi
 2026-10-18 | Arthrosc Sports Med Rehabil | Metanalisi di 13 RCT (Gutierrez-Moreno et al.; Chihuahua), LCA fascio singolo contro doppio fascio, 1041 pazienti, testo completo letto | 10.1002/ars2.70102 | LCA, doppio fascio, pivot shift, IKDC, MCID | aperto — 🟠 pivot shift RR 0,60 a 24-48 mesi (NNT 10), nessuna differenza oltre 48 mesi; un solo RCT con quadricipite, plastica laterale non analizzata
 2026-10-18 | EFORT Open Rev | Revisione sistematica (Legnani, Fadel, D'Ambrosi et al.; Galeazzi), UKA e TKA nello stesso paziente, 10 studi, 437 pazienti | 10.1530/EOR-2025-0193 | protesi monocompartimentale, protesi totale, bilaterale | aperto — evidenza retrospettiva; sopravvivenza più alta con la TKA
 2026-10-18 | KSSTA | Coorte retrospettiva (Morita et al.; HSS), 429 TKA robotiche, fenotipo coronale e bilanciamento dei gap | 10.1002/ksa.70648 | protesi robotica, VELYS, bilanciamento | aperto — marca del robot non riportata
@@ -447,6 +457,8 @@
 ## TENSIONI APERTE
 
 ### T1a — Il LET serve su innesto rigido? *(dal 2026-07-21)*
+
+**Nuovo il 19 ottobre 2026, due note di sfondo.** Studio prospettico non randomizzato su LCA con sutura del menisco laterale, con e senza LET (George et al., *Cureus*; Bangalore; PMID 42890845; 40 pazienti; testo completo letto): a 12 mesi pivot shift di grado 0 nell'85% contro il 15%, IKDC 84,84 ± 7,64 contro 76,16 ± 8,67; assegnazione per rischio (pivot shift di grado 3 al basale 65% contro 0%), 20 contro 20 invece degli 80 calcolati, Lemaire modificato sotto il collaterale fibulare con vite a interferenza (non onlay in superficie), nessun innesto quadricipitale: non isola l'effetto e non tocca il tuo costrutto. Revisione narrativa (George et al., *Curr Rev Musculoskelet Med*; PMID 42873380; solo abstract): la plastica laterale va riservata ai ginocchi ad alto rischio; opinione, nessun dato nuovo. Non muovono la posizione universale.
 
 **Nuovo il 18 ottobre 2026, una metanalisi che non testa il LET lo nomina come confondente.** Metanalisi di 13 RCT sul doppio fascio contro il fascio singolo (Gutierrez-Moreno et al., *Arthrosc Sports Med Rehabil*; 1041 pazienti; PMID 42890719): la plastica laterale non è stata estratta, ma gli autori scrivono che il suo uso crescente negli studi recenti può pareggiare nel tempo la stabilità rotatoria fra le due tecniche. Ipotesi degli autori, non risultato; un solo RCT con tendine quadricipitale (51 pazienti). Non muove la posizione universale.
 
