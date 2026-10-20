@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-20T06:35:08Z",
+ "generato": "2026-10-20T07:35:21Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -790,8 +790,29 @@
    }
   },
   "youtube": {
-   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "BreakThrough™ With Christopher Adams, MD—Percutaneous Pars Fracture Repair",
+      "link": "https://www.youtube.com/shorts/fkHi7lbN7QM",
+      "data": "2026-10-19"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Spine Percutaneous Spine Fixation",
+      "link": "https://www.youtube.com/watch?v=NFq3GGG6tn4",
+      "data": "2026-10-15"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Rotator Cuff Express Instrument System",
+      "link": "https://www.youtube.com/watch?v=PDYNyXVCBIE",
+      "data": "2026-10-12"
+     }
+    ]
+   }
   },
   "destino": {
    "esito": "ok",
@@ -1109,9 +1130,7 @@
       "42742643",
       "42828722"
      ],
-     "nuovi": [
-      "42828722"
-     ]
+     "nuovi": []
     },
     {
      "pmid": "42545819",
