@@ -7,11 +7,21 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 19 ottobre 2026.*
+*Ultimo aggiornamento: 21 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-10-21 | Journal of Experimental Orthopaedics | Coorte retrospettiva (Balashanmugam et al.; Chennai), LCA con sutura transtibiale della radice laterale, tunnel condiviso contro separato, 50 pazienti, testo completo letto | 10.1002/jeo2.70687 | menisco, radice meniscale, LCA, tunnel transtibiale | aperto — tempo 73,50 contro 97,00 minuti (p<0,001), esiti a 2 anni simili; guarigione completa 16/24 contro 21/26, muto (RR mancata guarigione 1,73, IC 95% 0,66-4,57); radice laterale, hamstring
+2026-10-21 | Journal of Experimental Orthopaedics | Serie di casi retrospettiva (Dadoo et al.; UPMC Pittsburgh), posizione del tunnel femorale nel LCA, 372 pazienti | 10.1002/jeo2.70694 | LCA, tunnel femorale, quadricipite, rotuleo | aperto — quadricipite 29% contro 50% nel quartile più anteriore; nessun esito clinico
+2026-10-21 | AJSM | Studio di laboratorio in vivo (Dzidzishvili et al.; Barcellona e Chicago), radice mediale con o senza centralizzazione, 16 conigli | 10.1177/03635465261492230 | radice meniscale, centralizzazione, estrusione | aperto — meno degenerazione (p=0,01) e OARSI (p=0,04), estrusione senza differenza (p=0,12); animale, ancore; muove T2b di poco
+2026-10-21 | KSSTA | Studio biomeccanico su cadavere (Gellhaus et al.; Kiel e Münster), varismo, PLC e forza sul LCA, 8 ginocchia | 10.1002/ksa.70654 | osteotomia, varismo, angolo posterolaterale, LCA | aperto — 153,2 ± 58,4 N a 8° senza PLC; dopo ricostruzione nessun effetto; muto
+2026-10-21 | Journal of Experimental Orthopaedics | Coorte retrospettiva (Jo et al.; Sapporo), osteotomia a V rovesciata, WORMS e KOOS, 46 ginocchia | 10.1002/jeo2.70690 | osteotomia tibiale alta, rotula, cartilagine | aperto — WORMS rotuleo predice KOOS Symptoms più basso; coefficienti non riportati
+2026-10-21 | Acta Orthop Traumatol Turc | Studio retrospettivo comparativo (Yao et al.; Taiwan), fascio singolo contro doppio con pendenza ridotta, 136 pazienti | 10.5152/j.aott.2026.25795 | LCA, doppio fascio, pendenza tibiale | aperto — Lysholm 94,26 contro 88,23 a 14 anni, associazione piccola
+2026-10-21 | KSSTA | Sviluppo e validazione (Rupp et al.; Monaco), IA per la pianificazione dell'osteotomia tibiale alta di apertura, 594 pazienti | 10.1002/ksa.70635 | osteotomia, intelligenza artificiale, pianificazione | aperto — 25,3 contro 148,7 s; nessun esito clinico
+2026-10-21 | J Robot Surg | Coorte retrospettiva con propensity matching (Wang et al.), UKA contro TKA ≥75 anni, 60 contro 120 | 10.1007/s11701-026-04086-x | protesi monocompartimentale, protesi totale | aperto — complicanze 5,0% contro 15,8%, RR grezzo 0,32 (IC 95% 0,10-1,03); robot non nominato
+2026-10-21 | KSSTA | Coorte prospettica (Borim et al.), tensionatore digitale contro manuale in 152 TKA con CORI | 10.1002/ksa.70650 | protesi robotica, gap, bilanciamento | aperto — gap laterale 2,38 contro 1,63 mm in estensione; non è il VELYS
 
 2026-10-19 | KSSTA | Coorte retrospettiva (Dadoo et al.; UPMC Pittsburgh), LCA primaria e reintervento per rigidità, 1226 pazienti | 10.1002/ksa.70652 | LCA, rigidità, innesto rotuleo, sutura menisco laterale | aperto — 🟠 donne: rotuleo OR 1,91 e sutura laterale OR 1,72; quadricipite non descritto nell'abstract
 2026-10-19 | Cureus | Studio prospettico non randomizzato (George et al.; Bangalore), LCA con sutura laterale con e senza LET, 40 pazienti, testo completo letto | 10.7759/cureus.116356 | LET, Lemaire modificato, pivot shift, menisco laterale | aperto — pivot shift grado 0 85% contro 15%, gruppi sbilanciati; vite sotto il collaterale, nessun quadricipite
@@ -935,6 +945,8 @@ descrive per iscritto, passo per passo, una tecnica vicina alla tua invece di la
 implicita.
 
 ### T2b — L'estrusione, non il timing né il grado condrale *(riformulata 2026-08-01, sostituisce T2)*
+
+**Nuovo il 21 ottobre 2026, il primo dato controllato sulla centralizzazione aggiunta alla sutura, ma su un animale (PMID 42899379).** Studio di laboratorio su 16 conigli (Dzidzishvili, Cole, LaPrade, Chahla et al., *Am J Sports Med*; ancore senza nodi, radice posteriore mediale da sola o con centralizzazione, 8 per braccio, 4 mesi; letto solo l'abstract): degenerazione macroscopica 12,3 ± 2,2 contro 9,1 ± 2,0 (p=0,01), OARSI 4,2 ± 1,5 contro 3,1 ± 1,6 (p=0,04), guarigione a favore della centralizzazione (p=0,041), ma estrusione senza differenza (p=0,12): con otto animali per gruppo il confronto è muto proprio sul bersaglio della tensione. Non è il trial sull'uomo che la tensione cerca e usa ancore, non il tuo tunnel transtibiale. Lo stesso giorno la coorte di Chennai sulla radice laterale riparata con il LCA (Balashanmugam et al., *J Exp Orthop*; PMID 42898998; 50 pazienti, testo completo letto) vede l'estrusione laterale ridursi di 2,14 ± 0,35 e 2,01 ± 0,35 mm con tunnel condiviso o separato (p=0,181): radice laterale e innesto hamstring, non la tua tecnica. Non cambia che cosa fare oggi.
 
 **Nuovo il 14 ottobre 2026, il costo del pie-crusting nella stessa chirurgia (PMID 42865127).** Una serie di casi di Chicago (Nishioka et al., *Am J Sports Med*; 21 rifissazioni isolate della radice posteriore del menisco mediale, livello IV) trova che il pie-crusting percutaneo spinto del collaterale mediale lascia, a circa 6 mesi, un'apertura mediale in valgo di 1,21 ± 1,07 mm in più rispetto al lato sano (IC 95% 0,73-1,70), sotto la soglia di 3,2 mm. Non tocca la premessa della tensione (estrusione e artrosi a distanza) e l'abstract non riporta né esiti clinici né guarigione della radice; toglie però un argomento contro il gesto con cui si entra nel compartimento mediale. Non cambia che cosa fare oggi.
 
