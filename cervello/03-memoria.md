@@ -7,11 +7,21 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 21 ottobre 2026.*
+*Ultimo aggiornamento: 22 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
+
+2026-10-22 | Knee Surgery & Related Research | Revisione sistematica senza metanalisi (Han et al.; Yonsei, Seul), fattori prognostici dopo riparazione della cartilagine del ginocchio, 31 report, testo completo letto | 10.1186/s43019-026-00350-4 | cartilagine, microfratture, ACI, prognosi | aperto — 29 unità su 37 ad alto rischio di bias, nessuna basso; età maggiore e esiti peggiori dopo microfratture (OR 0,61 MCID, OR 0,86 PASS a 24 mesi, intervalli non riportati); nessun fattore costante; AMIC e minced cartilage non nominati
+2026-10-22 | Knee Surgery & Related Research | Coorte retrospettiva (Gomi et al.; Sakaide), osteotomia tibiale alta d'apertura per grado KL, 274 ginocchia, follow-up 12,5 anni | 10.1186/s43019-026-00351-3 | osteotomia tibiale alta, KL4, conversione in protesi | aperto — revisione 22,2% contro 6,9% (p<0,01); KL2-3 circa 8 eventi, regressione esplorativa; pendenza non riportata
+2026-10-22 | Arthroscopy Techniques | Nota tecnica (Rossettie et al.; MedStar Georgetown), menisco laterale discoide di Wrisberg con radice ricreata con ancora senza nodi | 10.1002/atn2.70319 | menisco, radice meniscale, adolescenti, ancora | aperto — nessun esito; alternativa al tunnel transtibiale con fisi aperte, muto
+2026-10-22 | Acta of Bioengineering and Biomechanics | Studio comparativo (Du, Liu; Hainan), elettrostimolazione dopo LCA, 20 atleti | 10.37190/abb/218840 | LCA, riabilitazione, elettrostimolazione | aperto — Lysholm 86,56 ± 11,67 nel trattato; controlli non riportati; muto
+2026-10-22 | J Exp Orthop | Studio biomeccanico su cadavere (Michel et al.; Münster), riparazione del tendine quadricipite, 21 rotule | 10.1002/jeo2.70695 | quadricipite, rottura, fori transossei, ancore | aperto — fori angolati 472,7 contro 344,8 N (p<0,05), ancore senza differenza; estensore e non innesto; muto
+2026-10-22 | Journal of Robotic Surgery | Studio osservazionale monocentrico (Temponi et al.), TKA robotica con allineamento funzionale, 65 ginocchia varo | 10.1007/s11701-026-04037-6 | protesi robotica, rotazione femorale, gap | aperto — ρ=0,571; sistema non nominato, non è dimostrato il VELYS; muto
+2026-10-22 | Rev Esp Cir Ortop Traumatol | Studio trasversale su TC (Pujol et al.), anatomia femorale e TKA, 318 pazienti | 10.1016/j.recot.2026.10.003 | protesi totale, allineamento, femore | aperto — riferimenti fissi: 74,7% in varo, 46,1% in rotazione interna; simulazione
+2026-10-22 | Indian J Orthop | Revisione sistematica PRISMA (Choudhury et al.), rottura del quadricipite dopo TKA, 11 studi, 132 ginocchia | 10.1007/s43465-026-01913-z | quadricipite, protesi totale, complicanze | aperto — complicanze 17,8%; nessun confronto fra tecniche
+2026-10-22 | J Rehabil Med | RCT (Alotaibi et al.; Arabia Saudita), pliometria in acqua nel dolore femororotuleo, 56 adolescenti | 10.2340/jrm.v58.46495 | rotula, dolore femororotuleo, adolescenti, riabilitazione | aperto — dolore p=0,004 (η²p 0,14); medie non riportate
 
 2026-10-21 | Journal of Experimental Orthopaedics | Coorte retrospettiva (Balashanmugam et al.; Chennai), LCA con sutura transtibiale della radice laterale, tunnel condiviso contro separato, 50 pazienti, testo completo letto | 10.1002/jeo2.70687 | menisco, radice meniscale, LCA, tunnel transtibiale | aperto — tempo 73,50 contro 97,00 minuti (p<0,001), esiti a 2 anni simili; guarigione completa 16/24 contro 21/26, muto (RR mancata guarigione 1,73, IC 95% 0,66-4,57); radice laterale, hamstring
 2026-10-21 | Journal of Experimental Orthopaedics | Serie di casi retrospettiva (Dadoo et al.; UPMC Pittsburgh), posizione del tunnel femorale nel LCA, 372 pazienti | 10.1002/jeo2.70694 | LCA, tunnel femorale, quadricipite, rotuleo | aperto — quadricipite 29% contro 50% nel quartile più anteriore; nessun esito clinico
