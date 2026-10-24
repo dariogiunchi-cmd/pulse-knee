@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-23T07:33:06Z",
+ "generato": "2026-10-24T06:27:10Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 542,
+    "doi_citati_controllati": 550,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -790,39 +790,18 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Arthrex",
-      "titolo": "Percutaneous Pars Fracture Fixation Surgical Technique - Saqib Hasan, MD",
-      "link": "https://www.youtube.com/watch?v=_0cZzPzivLc",
-      "data": "2026-10-22"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "BreakThrough™ With Christopher Adams, MD—Percutaneous Pars Fracture Repair",
-      "link": "https://www.youtube.com/shorts/fkHi7lbN7QM",
-      "data": "2026-10-19"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Spine Percutaneous Spine Fixation",
-      "link": "https://www.youtube.com/watch?v=NFq3GGG6tn4",
-      "data": "2026-10-15"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Rotator Cuff Express Instrument System",
-      "link": "https://www.youtube.com/watch?v=PDYNyXVCBIE",
-      "data": "2026-10-12"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42908376",
+     "titolo": "Orthopaedic surgery — Revisione sistematica con metanalisi (Kanakala, Sugand, Tasong, Prashar, Shinmar, Namire",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42903211",
      "titolo": "Journal of experimental orthopaedics — Coorte retrospettiva sequenziale (Fujie, Yasuda, Yabuuchi, Ebata, Inoue",
@@ -1433,6 +1412,27 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Electroacupuncture Alleviates Pain in Rats with Knee Osteoarthritis by Modulating Autophagy via the PI3K/Akt/mTOR Signaling Pathway",
+      "dove": "archivio preprint",
+      "data": "2026-10-23",
+      "doi": "10.21203/rs.3.rs-11302390/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11302390/v1"
+     },
+     {
+      "titolo": "Outcome Differences in Robotic vs Traditional Total Knee Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-10-23",
+      "doi": "10.21203/rs.3.rs-11139026/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11139026/v1"
+     },
+     {
+      "titolo": "Case Report: Candida auris Prosthetic Knee Infection: The First Reported Case in Tunisia",
+      "dove": "archivio preprint",
+      "data": "2026-10-23",
+      "doi": "10.12688/f1000research.192537.1",
+      "url": "https://doi.org/10.12688/f1000research.192537.1"
+     },
+     {
       "titolo": "N-Acetylglucosamine ameliorates knee osteoarthritis by enhancing UDP-GlcNAc conversion and chondrocyte DNA repair capacity",
       "dove": "archivio preprint",
       "data": "2026-10-22",
@@ -1585,27 +1585,6 @@
       "data": "2026-10-06",
       "doi": "10.21203/rs.3.rs-11019327/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-11019327/v1"
-     },
-     {
-      "titolo": "Quality and Consistency of Four Large Language Models in Answering AAOS Guideline-Based Questions on Knee Osteoarthritis and Total Knee Arthroplasty: A Blinded ",
-      "dove": "archivio preprint",
-      "data": "2026-10-06",
-      "doi": "10.21203/rs.3.rs-11009605/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11009605/v1"
-     },
-     {
-      "titolo": "Clinical Outcomes of Biomaterial-Based Cartilage Repair Strategies for Knee Chondral Defects: A Systematic Review and Meta- Analysis",
-      "dove": "archivio preprint",
-      "data": "2026-10-05",
-      "doi": "10.21203/rs.3.rs-11054622/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11054622/v1"
-     },
-     {
-      "titolo": "Time-Varying Coactivation Pattern and Knee Joint Kinematics and Kinetics Following ACL Reconstruction: A Statistical Parametric Mapping Approach",
-      "dove": "archivio preprint",
-      "data": "2026-10-02",
-      "doi": "10.64898/2026.09.30.26364410",
-      "url": "https://doi.org/10.64898/2026.09.30.26364410"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
