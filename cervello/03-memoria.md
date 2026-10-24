@@ -7,12 +7,20 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 23 ottobre 2026.*
+*Ultimo aggiornamento: 24 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-10-24 | Indian J Orthop | Serie di casi retrospettiva monocentrica (Weninger et al.; Vienna), LCA rotto trattato senza chirurgia con cellule mononucleate autologhe e PRP, 47 pazienti | 10.1007/s43465-026-01904-0 | LCA, trattamento biologico, PRP | aperto — IKDC 93,6 (IC 95% 92,4-94,8) a 12 mesi; nessun gruppo di controllo, stabilità non riportata; muto
+2026-10-24 | Orthop Surg | Metanalisi (Kanakala et al.; Imperial College London), protesi monocompartimentale robotica contro manuale, 34 studi, 68.196 protesi, testo completo letto | 10.1111/os.70424 | protesi monocompartimentale, robotica, revisioni | aperto — revisioni OR 0,54 (IC 95% 0,39-0,75); 27 studi su 34 non randomizzati, nessuna soglia MCID per la UKA; da rileggere con controlli a 5-10 anni
+2026-10-24 | J Exp Orthop | Revisione sistematica (Davtyan et al.; Limerick), RM nel LCA cronicamente deficitario, 22 studi, 2.863 pazienti | 10.1002/jeo2.70696 | LCA, menisco, ritardo, cartilagine | aperto — menisco mediale lesionato 50,3% contro 36,0% (p<0,001); associazione, non causa
+2026-10-24 | Eur J Trauma Emerg Surg | Coorte retrospettiva comparativa (Salem et al.; Zagazig), MPFL con distalizzazione MPTL contro MPFL isolata, 28 adolescenti con patella alta | 10.1007/s00068-026-03365-4 | MPFL, patella alta, adolescente | aperto — Kujala 88,9 ± 4,5 contro 84,3 ± 5,1; recidive 1/14 contro 2/14 (RR 2,00; IC 95% 0,20-19,62); muto, assegnazione non casuale
+2026-10-24 | J Vis Exp | RCT (Zhang et al.; Lanzhou), esercizio funzionale aggiuntivo dopo sutura meniscale, 96 pazienti | 10.3791/74035 | menisco, riabilitazione, arco di movimento | aperto — arco di movimento +6,74° (IC 95% 5,37-8,10) a 6 mesi; Lysholm senza differenza; registrazione retrospettiva
+2026-10-24 | Cureus | Revisione sistematica di segnalazioni di casi (Sack et al.), pseudoaneurisma dopo artroscopia del ginocchio, 62 casi | 10.7759/cureus.116501 | artroscopia, complicanze, arteria poplitea | aperto — diagnosi mediana a 14 giorni; solo frequenze descrittive, nessuna incidenza
+2026-10-24 | J Exp Orthop | Caso-controllo (Hayes et al.; Ottawa), rendimento di 43 giocatori NHL dopo ricostruzione del LCA | 10.1002/jeo2.70588 | LCA, hockey, ritorno allo sport | aperto — GAR offensivo/60 0,18 contro 0,37 a 2 anni; misura di squadra, non di ginocchio
+2026-10-24 | J Magn Reson Imaging | Coorte prospettica (Wu et al.; UC San Diego), RM a eco ultracorta del menisco dopo ricostruzione del LCA, 62 scansioni | 10.1002/jmri.70600 | menisco, LCA, RM quantitativa | aperto — T1rho +5,60 ms (q=0,035) nel menisco laterale; nessuna associazione con i PROM; muto
 2026-10-23 | J Exp Orthop | Coorte retrospettiva sequenziale (Fujie et al.; Sapporo), riparazione della radice posteriore mediale con osteotomia tibiale alta, pull-out transtibiale contro all-inside, 54 ginocchia, testo completo letto | 10.1002/jeo2.70956 | menisco, radice meniscale, estrusione, osteotomia | aperto — 🟠 PICK; continuità 89,3% e 88,5%, Lysholm 96,3 e 92,8; estrusione 49,6% → 62,0% (p=0,003) e 48,8% → 68,8% (p<0,001), fra i gruppi p=0,190, potenza 76%; alimenta T2b
 2026-10-23 | Arch Orthop Trauma Surg | Coorte retrospettiva monocentrica (Itou et al.; Tokyo), osteotomia tibiale alta, 181 ginocchia, per gravità dell'artrosi | 10.1007/s00402-026-06540-9 | osteotomia tibiale alta, sovracorrezione, FJS-12 | aperto — sovracorrezione (≥ 70%) riduce ΔFJS-12 nei KL ≤ 2 (β −10,49; IC 95% da −20,46 a −0,53), non nei KL ≥ 3
 2026-10-23 | Curr Rev Musculoskelet Med | Revisione narrativa (Jackson et al.; Missouri), innesto nel LCA e ritorno allo sport | 10.1007/s12178-026-10061-8 | LCA, innesto, quadricipite, ritorno allo sport | aperto — autoinnesto sopra alloinnesto nei giovani attivi, nessun autoinnesto superiore; quadricipite opzione ragionevole; non muove T4
