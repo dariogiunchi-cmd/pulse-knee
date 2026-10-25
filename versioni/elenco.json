@@ -1,6 +1,11 @@
 {
- "aggiornato": "2026-10-24",
+ "aggiornato": "2026-10-25",
  "versioni": [
+  {
+   "data": "2026-10-25",
+   "file": "versioni/2026-10-25.html",
+   "byte": 324415
+  },
   {
    "data": "2026-10-24",
    "file": "versioni/2026-10-24.html",
@@ -145,11 +150,6 @@
    "data": "2026-09-25",
    "file": "versioni/2026-09-25.html",
    "byte": 292069
-  },
-  {
-   "data": "2026-09-24",
-   "file": "versioni/2026-09-24.html",
-   "byte": 294626
   },
   {
    "data": "2026-09-01",
