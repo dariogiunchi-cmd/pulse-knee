@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-25T07:35:45Z",
+ "generato": "2026-10-26T06:56:37Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 558,
+    "doi_citati_controllati": 564,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -790,39 +790,18 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Arthrex",
-      "titolo": "Percutaneous Pars Fracture Fixation Surgical Technique - Saqib Hasan, MD",
-      "link": "https://www.youtube.com/watch?v=_0cZzPzivLc",
-      "data": "2026-10-22"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "BreakThrough™ With Christopher Adams, MD—Percutaneous Pars Fracture Repair",
-      "link": "https://www.youtube.com/shorts/fkHi7lbN7QM",
-      "data": "2026-10-19"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Spine Percutaneous Spine Fixation",
-      "link": "https://www.youtube.com/watch?v=NFq3GGG6tn4",
-      "data": "2026-10-15"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Rotator Cuff Express Instrument System",
-      "link": "https://www.youtube.com/watch?v=PDYNyXVCBIE",
-      "data": "2026-10-12"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42921574",
+     "titolo": "Arthroscopy, sports medicine, and rehabilitation — Coorte retrospettiva monocentrica (Egert, Schneider, Gosheg",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42901444",
      "titolo": "Revista espanola de cirugia ortopedica y traumatologia — Studio diagnostico di coorte prospettica (Paucar-Verg",
