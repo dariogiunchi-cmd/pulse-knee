@@ -7,12 +7,18 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 24 ottobre 2026.*
+*Ultimo aggiornamento: 26 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-10-26 | Arthrosc Sports Med Rehabil | Coorte retrospettiva monocentrica (Egert et al.; Francoforte, Münster, St. Moritz), riparazione artroscopica del LCA con sutura di rinforzo, 93 riparazioni su 176 rotture prossimali, testo completo letto | 10.1002/ars2.70128 | LCA, riparazione primaria, suture augmentation | aperto — 🟢 PICK; reintervento 13/80 (16,3%; IC 95% 9,7-25,8, calcolo mio); a 79 mesi IKDC 94, Lysholm 92; ritardo chirurgico unico predittore di Tegner più basso (−0,79; IC 95% da −1,49 a −0,10); nessun controllo, 13 persi; 47% delle rotture prossimali non riparabile
+2026-10-26 | Arthrosc Sports Med Rehabil | Studio retrospettivo (Rivarola, Helito et al.; Buenos Aires), traslazione artroscopica del piatto tibiale laterale, 60 pazienti con LCA rotto | 10.1002/ars2.70113 | LCA, pivot-shift, pendenza tibiale, instabilità rotatoria | aperto — traslazione 4,6 ± 1,7 mm; >5 mm sensibilità 82%, specificità 78%, AUC 0,85 (IC 95% 0,77-0,93), soglia sullo stesso campione; solo abstract; non tocca T1
+2026-10-26 | Arthrosc Tech | Nota tecnica (Barney et al.; San Antonio), trapianto di menisco da donatore, radici con ancore di sola sutura | 10.1002/atn2.70278 | menisco, trapianto, radice meniscale | aperto — nessun paziente; muto
+2026-10-26 | BMJ Open Sport Exerc Med | Sintesi descrittiva (Okholm Kryger et al.; UEFA), «epidemia di LCA» nel calcio femminile d'élite, 10 studi di sorveglianza | 10.1136/bmjsem-2026-003416 | LCA, calcio femminile, incidenza | aperto — meno di un LCA per squadra per stagione quasi ovunque (eccezione 1,2); tre autori su sette UEFA; ricerca non sistematica; muto
+2026-10-26 | Ann Afr Med | Nota tecnica con un caso (Sudheer, Jivrajani; Pune), LCA con hamstring e fissazione tibiale con disco di sutura artigianale | 10.4103/aam.aam_756_26 | LCA, hamstring, fissazione | aperto — un paziente, 12 settimane; muto
+2026-10-26 | Reports (MDPI) | Case report (Zmerly et al.; Bologna e Roma), degenerazione mucoide del LCA, debridement selettivo | 10.3390/reports9040324 | LCA, degenerazione mucoide, artroscopia | aperto — un paziente, Lysholm 41 → 95 a 54 mesi; muto
 2026-10-24 | Indian J Orthop | Serie di casi retrospettiva monocentrica (Weninger et al.; Vienna), LCA rotto trattato senza chirurgia con cellule mononucleate autologhe e PRP, 47 pazienti | 10.1007/s43465-026-01904-0 | LCA, trattamento biologico, PRP | aperto — IKDC 93,6 (IC 95% 92,4-94,8) a 12 mesi; nessun gruppo di controllo, stabilità non riportata; muto
 2026-10-24 | Orthop Surg | Metanalisi (Kanakala et al.; Imperial College London), protesi monocompartimentale robotica contro manuale, 34 studi, 68.196 protesi, testo completo letto | 10.1111/os.70424 | protesi monocompartimentale, robotica, revisioni | aperto — revisioni OR 0,54 (IC 95% 0,39-0,75); 27 studi su 34 non randomizzati, nessuna soglia MCID per la UKA; da rileggere con controlli a 5-10 anni
 2026-10-24 | J Exp Orthop | Revisione sistematica (Davtyan et al.; Limerick), RM nel LCA cronicamente deficitario, 22 studi, 2.863 pazienti | 10.1002/jeo2.70696 | LCA, menisco, ritardo, cartilagine | aperto — menisco mediale lesionato 50,3% contro 36,0% (p<0,001); associazione, non causa
