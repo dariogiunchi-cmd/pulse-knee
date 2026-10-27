@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-27T06:49:20Z",
+ "generato": "2026-10-27T07:52:44Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -790,8 +790,41 @@
    }
   },
   "youtube": {
-   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Spine Evolutions 2027",
+      "link": "https://www.youtube.com/watch?v=6HhmtoDtjZs",
+      "data": "2026-10-26"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Tensionable Knotless Remplissage Technique Using the Knotless FiberTak® Remplissage Implant System",
+      "link": "https://www.youtube.com/watch?v=jf_b-E4NcXU",
+      "data": "2026-10-26"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Percutaneous Pars Fracture Fixation Surgical Technique - Saqib Hasan, MD",
+      "link": "https://www.youtube.com/watch?v=_0cZzPzivLc",
+      "data": "2026-10-22"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "BreakThrough™ With Christopher Adams, MD—Percutaneous Pars Fracture Repair",
+      "link": "https://www.youtube.com/shorts/fkHi7lbN7QM",
+      "data": "2026-10-19"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Spine Percutaneous Spine Fixation",
+      "link": "https://www.youtube.com/watch?v=NFq3GGG6tn4",
+      "data": "2026-10-15"
+     }
+    ]
+   }
   },
   "destino": {
    "esito": "ok",
@@ -1415,188 +1448,8 @@
    }
   },
   "preprint": {
-   "esito": "ok",
-   "dati": {
-    "finestra_giorni": 30,
-    "voci": [
-     {
-      "titolo": "An exploratory analysis of circulating cytokine profiles, pain-associated transcripts and autoantibody responses associated with treatment response in knee oste",
-      "dove": "archivio preprint",
-      "data": "2026-10-26",
-      "doi": "10.64898/2026.10.25.26365740",
-      "url": "https://doi.org/10.64898/2026.10.25.26365740"
-     },
-     {
-      "titolo": "Association of CPAK Phenotypes With Valgus Overcorrection After Robotic-Assisted Total Knee Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-10-24",
-      "doi": "10.21203/rs.3.rs-11164350/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11164350/v1"
-     },
-     {
-      "titolo": "Electroacupuncture Alleviates Pain in Rats with Knee Osteoarthritis by Modulating Autophagy via the PI3K/Akt/mTOR Signaling Pathway",
-      "dove": "archivio preprint",
-      "data": "2026-10-23",
-      "doi": "10.21203/rs.3.rs-11302390/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11302390/v1"
-     },
-     {
-      "titolo": "Outcome Differences in Robotic vs Traditional Total Knee Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-10-23",
-      "doi": "10.21203/rs.3.rs-11139026/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11139026/v1"
-     },
-     {
-      "titolo": "Case Report: Candida auris Prosthetic Knee Infection: The First Reported Case in Tunisia",
-      "dove": "archivio preprint",
-      "data": "2026-10-23",
-      "doi": "10.12688/f1000research.192537.1",
-      "url": "https://doi.org/10.12688/f1000research.192537.1"
-     },
-     {
-      "titolo": "N-Acetylglucosamine ameliorates knee osteoarthritis by enhancing UDP-GlcNAc conversion and chondrocyte DNA repair capacity",
-      "dove": "archivio preprint",
-      "data": "2026-10-22",
-      "doi": "10.64898/2026.10.21.760584",
-      "url": "https://doi.org/10.64898/2026.10.21.760584"
-     },
-     {
-      "titolo": "Feasibility of Distributed Wearable Ultrasound for Detecting Neuromuscular Coordination Differences After Knee Injury",
-      "dove": "archivio preprint",
-      "data": "2026-10-20",
-      "doi": "10.64898/2026.10.18.26365835",
-      "url": "https://doi.org/10.64898/2026.10.18.26365835"
-     },
-     {
-      "titolo": "​​Shallow Medial Tibial Plateau Depth is Independently Associated with Medial Meniscus Posterior Root Tear after Adjustment for Alignment and Morphological Para",
-      "dove": "archivio preprint",
-      "data": "2026-10-20",
-      "doi": "10.21203/rs.3.rs-11178271/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11178271/v1"
-     },
-     {
-      "titolo": "Association Between Q-Angle and Patellofemoral Pain Syndrome in University Athletes: A Cross-Sectional Study",
-      "dove": "archivio preprint",
-      "data": "2026-10-19",
-      "doi": "10.20944/preprints202610.1651.v1",
-      "url": "https://doi.org/10.20944/preprints202610.1651.v1"
-     },
-     {
-      "titolo": "Inter-Individual Variability in Cycling Biomechanics During Experimentally Induced Movement-Evoked Knee Pain",
-      "dove": "archivio preprint",
-      "data": "2026-10-16",
-      "doi": "10.64898/2026.10.09.757760",
-      "url": "https://doi.org/10.64898/2026.10.09.757760"
-     },
-     {
-      "titolo": "Nose-to-Knee Transplantation for Osteochondral Regeneration: A Proof-of-Concept Study in Sheep Employing Ceramic-Hydrogel Osteochondral Grafts",
-      "dove": "archivio preprint",
-      "data": "2026-10-12",
-      "doi": "10.64898/2026.10.09.757945",
-      "url": "https://doi.org/10.64898/2026.10.09.757945"
-     },
-     {
-      "titolo": "HLA Genotype is Associated with Patient Reported Outcomes and Adverse Reactions to Metal Debris in Patients with Cobalt-Chrome Knee Arthroplasties",
-      "dove": "archivio preprint",
-      "data": "2026-10-13",
-      "doi": "10.64898/2026.10.12.26365276",
-      "url": "https://doi.org/10.64898/2026.10.12.26365276"
-     },
-     {
-      "titolo": "Subchondral bone remodeling in knee osteoarthritis is coupled to lipid mobilization from bone marrow adipocytes",
-      "dove": "archivio preprint",
-      "data": "2026-10-14",
-      "doi": "10.64898/2026.10.07.757365",
-      "url": "https://doi.org/10.64898/2026.10.07.757365"
-     },
-     {
-      "titolo": "Lateral meniscal positional asymmetry during early knee flexion under axial loading following anterior cruciate ligament reconstruction: a paired-knee MRI study",
-      "dove": "archivio preprint",
-      "data": "2026-10-14",
-      "doi": "10.21203/rs.3.rs-11057709/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11057709/v1"
-     },
-     {
-      "titolo": "Correlation Between Demographic Data and Intraoperative Distal Femoral Anthropometry in Patients Undergoing Total Knee Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-10-14",
-      "doi": "10.21203/rs.3.rs-11098453/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11098453/v1"
-     },
-     {
-      "titolo": "Deep Learning-Based Sex Classification and Chronological Age-Group Estimation from Knee Radiographs Using a Multi-Task Framework with Rank-Fusion and Tri-Loss L",
-      "dove": "archivio preprint",
-      "data": "2026-10-14",
-      "doi": "10.21203/rs.3.rs-11155947/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11155947/v1"
-     },
-     {
-      "titolo": "Adverse Childhood Experiences and Incident Symptomatic Knee Osteoarthritis: The Mediating Role of Frailty in a Nationwide Chinese Cohort",
-      "dove": "archivio preprint",
-      "data": "2026-10-14",
-      "doi": "10.21203/rs.3.rs-11080066/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11080066/v1"
-     },
-     {
-      "titolo": "Multi-Task Framework for Efficient Knee Osteoarthritis Segmentation and Classification",
-      "dove": "archivio preprint",
-      "data": "2026-10-15",
-      "doi": "10.21203/rs.3.rs-8330779/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-8330779/v1"
-     },
-     {
-      "titolo": "Anterior Cruciate Ligament Reconstruction and Adapted Rehabilitation in Adolescents with Intellectual Developmental Disorder: A Three-Case Series",
-      "dove": "archivio preprint",
-      "data": "2026-10-10",
-      "doi": "10.20944/preprints202610.0889.v1",
-      "url": "https://doi.org/10.20944/preprints202610.0889.v1"
-     },
-     {
-      "titolo": "Faster Pain Relief, but Not Greater Overall Recovery: Adding Trunk Neuromuscular Training to Knee-Focused Rehabilitation in Patients with Knee Osteoarthritis",
-      "dove": "archivio preprint",
-      "data": "2026-10-14",
-      "doi": "10.20944/preprints202610.1382.v1",
-      "url": "https://doi.org/10.20944/preprints202610.1382.v1"
-     },
-     {
-      "titolo": "Suture Retraction to Preserve the Infrapatellar Fat Pad During Anterior Cruciate Ligament Reconstruction: A Retrospective Cohort Study",
-      "dove": "archivio preprint",
-      "data": "2026-10-11",
-      "doi": "10.21203/rs.3.rs-10848435/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10848435/v1"
-     },
-     {
-      "titolo": "Benchmarking longitudinal local centiles for radiographic knee osteoarthritis prognosis",
-      "dove": "archivio preprint",
-      "data": "2026-10-08",
-      "doi": "10.64898/2026.10.06.757088",
-      "url": "https://doi.org/10.64898/2026.10.06.757088"
-     },
-     {
-      "titolo": "AI-Based System for Monitoring Knee Movement During Rehabilitation",
-      "dove": "archivio preprint",
-      "data": "2026-10-07",
-      "doi": "10.20944/preprints202610.0409.v1",
-      "url": "https://doi.org/10.20944/preprints202610.0409.v1"
-     },
-     {
-      "titolo": "Cannabidiol treatment for symptomatic knee osteoarthritis: a randomized, placebo- controlled, cross-over pilot-feasibility trial",
-      "dove": "archivio preprint",
-      "data": "2026-10-07",
-      "doi": "10.21203/rs.3.rs-10702167/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10702167/v1"
-     },
-     {
-      "titolo": "Intra-articular Bone Marrow Aspirate Concentrate for Knee Osteoarthritis: 7-Year Outcomes and Predictors of Treatment Success in 50 Knees",
-      "dove": "archivio preprint",
-      "data": "2026-10-07",
-      "doi": "10.21203/rs.3.rs-10894813/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10894813/v1"
-     }
-    ],
-    "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
-   }
+   "esito": "non risposto: HTTPError HTTP Error 503: ",
+   "dati": null
   }
  }
 }
