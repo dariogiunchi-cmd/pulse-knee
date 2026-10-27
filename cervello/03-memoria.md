@@ -7,12 +7,18 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 26 ottobre 2026.*
+*Ultimo aggiornamento: 27 ottobre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-10-27 | Arthroscopy | Serie di casi retrospettiva (Wolf et al.; Lille e Charleroi), ricostruzione del LCA con semitendinoso a 4 capi all-inside, controllo medio 138 mesi, 156 rispondenti | 10.1002/arj.70646 | LCA, hamstring, fallimento dell'innesto, lungo termine | aperto — 🟢 PICK; fallimento 32/156 (20,5%; IC 95% 14,9-27,5, Wilson, calcolo mio); IKDC soggettivo 85,6 ± 13,5, rientro 51%; Tegner preoperatorio più alto associato (p=0,016); nessun confronto, LET non dichiarato, solo abstract; dato di base per T1a, non la sua combinazione
+2026-10-27 | Knee Surg Sports Traumatol Arthrosc | RCT prospettico (Zhang et al.; Pechino), MPFL con innesto ibrido contro autoinnesto, 46 analizzati | 10.1002/ksa.70644 | MPFL, instabilità rotulea, innesto artificiale | aperto — Kujala a 3 mesi 82,4 ± 4,3 contro 68,6 ± 5,2 (p<0,001); esito primario a 12 mesi senza differenza; recidive non riportate; solo abstract
+2026-10-27 | Knee Surg Sports Traumatol Arthrosc | Revisione sistematica con metanalisi (Alkatheeri et al.), osteotomia a doppio livello contro HTO, 9 studi osservazionali, 805 ginocchia | 10.1002/ksa.70656 | osteotomia, doppio livello, obliquità della rima | aperto — obliquità −4,14° (IC 95% da −5,22 a −3,06; I² 76%); fratture della cerniera RR 0,41 (IC 95% 0,23-0,73); punteggi senza differenza; confondimento da indicazione
+2026-10-27 | Arthroscopy | Serie di casi retrospettiva (Dragoo et al.; Colorado), cartilagine giovanile particellata di donatore per via artroscopica, 34 pazienti | 10.1002/arj.70629 | cartilagine, allotrapianto, particellata | aperto — miglioramento di tutti i sottopunteggi a 24 mesi (p<0,003); 1/34 distacco tardivo; nessun controllo; non muove T4
+2026-10-27 | Am J Sports Med | Studio descrittivo di laboratorio (LaPrade et al.), LCM profondo, 10 cadaveri | 10.1177/03635465261492535 | collaterale mediale, anatomia | aperto — margine anteriore 27,0 ± 3,4 mm dal LCM superficiale; solo anatomia; muto
+2026-10-27 | Rev Esp Cir Ortop Traumatol | Scoping review (Jiménez et al.; Bogotà), protesi totale convenzionale contro navigazione e robot, 23 studi | 10.1016/j.recot.2026.10.019 | protesi totale, robotica, VELYS | aperto — allineamento più preciso, nessuna differenza funzionale a ≥10 anni; sistemi non separati, VELYS non nominato
 2026-10-26 | Arthrosc Sports Med Rehabil | Coorte retrospettiva monocentrica (Egert et al.; Francoforte, Münster, St. Moritz), riparazione artroscopica del LCA con sutura di rinforzo, 93 riparazioni su 176 rotture prossimali, testo completo letto | 10.1002/ars2.70128 | LCA, riparazione primaria, suture augmentation | aperto — 🟢 PICK; reintervento 13/80 (16,3%; IC 95% 9,7-25,8, calcolo mio); a 79 mesi IKDC 94, Lysholm 92; ritardo chirurgico unico predittore di Tegner più basso (−0,79; IC 95% da −1,49 a −0,10); nessun controllo, 13 persi; 47% delle rotture prossimali non riparabile
 2026-10-26 | Arthrosc Sports Med Rehabil | Studio retrospettivo (Rivarola, Helito et al.; Buenos Aires), traslazione artroscopica del piatto tibiale laterale, 60 pazienti con LCA rotto | 10.1002/ars2.70113 | LCA, pivot-shift, pendenza tibiale, instabilità rotatoria | aperto — traslazione 4,6 ± 1,7 mm; >5 mm sensibilità 82%, specificità 78%, AUC 0,85 (IC 95% 0,77-0,93), soglia sullo stesso campione; solo abstract; non tocca T1
 2026-10-26 | Arthrosc Tech | Nota tecnica (Barney et al.; San Antonio), trapianto di menisco da donatore, radici con ancore di sola sutura | 10.1002/atn2.70278 | menisco, trapianto, radice meniscale | aperto — nessun paziente; muto
