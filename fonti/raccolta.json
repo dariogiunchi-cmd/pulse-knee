@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-27T07:52:44Z",
+ "generato": "2026-10-28T07:23:11Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -596,17 +596,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT03896464",
-       "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
-       "stato": "RECRUITING",
-       "aggiornato": "2026-10-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 352,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07846709",
        "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
        "stato": "NOT_YET_RECRUITING",
@@ -615,6 +604,17 @@
         "NA"
        ],
        "n": 150,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT03896464",
+       "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-10-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 352,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -629,17 +629,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07753707",
-       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 111,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07580157",
        "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
        "stato": "ENROLLING_BY_INVITATION",
@@ -648,6 +637,17 @@
         "NA"
        ],
        "n": 20,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07753707",
+       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 111,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 570,
+    "doi_citati_controllati": 577,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -829,6 +829,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42934217",
+     "titolo": "The American journal of sports medicine — Studio controllato di laboratorio (Kruckeberg, Brady, Cinque, Sidrak",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42929665",
      "titolo": "Arthroscopy — Serie di casi retrospettiva (Wolf, Kortbawi, De Saint-Vincent, Luisetto, Letartre; Lille e Charl",
@@ -1448,8 +1454,188 @@
    }
   },
   "preprint": {
-   "esito": "non risposto: HTTPError HTTP Error 503: ",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "finestra_giorni": 30,
+    "voci": [
+     {
+      "titolo": "Extending Musculoskeletal Modelling Validation Beyond Gait: Knee Loading and Kinematics During Daily Activities",
+      "dove": "archivio preprint",
+      "data": "2026-10-27",
+      "doi": "10.64898/2026.10.24.761008",
+      "url": "https://doi.org/10.64898/2026.10.24.761008"
+     },
+     {
+      "titolo": "Cross-cultural adaptation and longitudinal measurement properties of the Simplified Chinese version of the original 22-item Knee Self- Efficacy Scale after ante",
+      "dove": "archivio preprint",
+      "data": "2026-10-27",
+      "doi": "10.21203/rs.3.rs-10961753/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10961753/v1"
+     },
+     {
+      "titolo": "Knee extension motor imagery paired with single-pulse TMS facilitates corticospinal excitability in the tibialis anterior muscle, but not in the rectus femoris ",
+      "dove": "archivio preprint",
+      "data": "2026-10-27",
+      "doi": "10.21203/rs.3.rs-11315069/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11315069/v1"
+     },
+     {
+      "titolo": "Comparative Functional Outcomes of Patellar Resurfacing in Patients Undergoing Posterior Stabilized and Cruciate Retaining Total Knee Arthroplasty: A Prospectiv",
+      "dove": "archivio preprint",
+      "data": "2026-10-27",
+      "doi": "10.21203/rs.3.rs-9957570/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-9957570/v1"
+     },
+     {
+      "titolo": "Biocompatibility and Osteochondral Regenerative Potential of Hydroxyapatite-Based Hydrogels in a Vietnamese Pig Knee Defect Model",
+      "dove": "archivio preprint",
+      "data": "2026-10-26",
+      "doi": "10.20944/preprints202610.2433.v1",
+      "url": "https://doi.org/10.20944/preprints202610.2433.v1"
+     },
+     {
+      "titolo": "Static Antibiotic Spacers in Periprosthetic Knee Infection: Indications, Technique, and Outcomes",
+      "dove": "archivio preprint",
+      "data": "2026-10-26",
+      "doi": "10.20944/preprints202610.2482.v1",
+      "url": "https://doi.org/10.20944/preprints202610.2482.v1"
+     },
+     {
+      "titolo": "CORI-Assisted Personalized Alignment Versus Conventional Mechanical Alignment in Total Knee Arthroplasty: A Retrospective Comparative Study",
+      "dove": "archivio preprint",
+      "data": "2026-10-27",
+      "doi": "10.20944/preprints202610.2576.v1",
+      "url": "https://doi.org/10.20944/preprints202610.2576.v1"
+     },
+     {
+      "titolo": "An exploratory analysis of circulating cytokine profiles, pain-associated transcripts and autoantibody responses associated with treatment response in knee oste",
+      "dove": "archivio preprint",
+      "data": "2026-10-26",
+      "doi": "10.64898/2026.10.25.26365740",
+      "url": "https://doi.org/10.64898/2026.10.25.26365740"
+     },
+     {
+      "titolo": "Association of CPAK Phenotypes With Valgus Overcorrection After Robotic-Assisted Total Knee Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-10-24",
+      "doi": "10.21203/rs.3.rs-11164350/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11164350/v1"
+     },
+     {
+      "titolo": "Electroacupuncture Alleviates Pain in Rats with Knee Osteoarthritis by Modulating Autophagy via the PI3K/Akt/mTOR Signaling Pathway",
+      "dove": "archivio preprint",
+      "data": "2026-10-23",
+      "doi": "10.21203/rs.3.rs-11302390/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11302390/v1"
+     },
+     {
+      "titolo": "Outcome Differences in Robotic vs Traditional Total Knee Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-10-23",
+      "doi": "10.21203/rs.3.rs-11139026/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11139026/v1"
+     },
+     {
+      "titolo": "Case Report: Candida auris Prosthetic Knee Infection: The First Reported Case in Tunisia",
+      "dove": "archivio preprint",
+      "data": "2026-10-23",
+      "doi": "10.12688/f1000research.192537.1",
+      "url": "https://doi.org/10.12688/f1000research.192537.1"
+     },
+     {
+      "titolo": "N-Acetylglucosamine ameliorates knee osteoarthritis by enhancing UDP-GlcNAc conversion and chondrocyte DNA repair capacity",
+      "dove": "archivio preprint",
+      "data": "2026-10-22",
+      "doi": "10.64898/2026.10.21.760584",
+      "url": "https://doi.org/10.64898/2026.10.21.760584"
+     },
+     {
+      "titolo": "Feasibility of Distributed Wearable Ultrasound for Detecting Neuromuscular Coordination Differences After Knee Injury",
+      "dove": "archivio preprint",
+      "data": "2026-10-20",
+      "doi": "10.64898/2026.10.18.26365835",
+      "url": "https://doi.org/10.64898/2026.10.18.26365835"
+     },
+     {
+      "titolo": "​​Shallow Medial Tibial Plateau Depth is Independently Associated with Medial Meniscus Posterior Root Tear after Adjustment for Alignment and Morphological Para",
+      "dove": "archivio preprint",
+      "data": "2026-10-20",
+      "doi": "10.21203/rs.3.rs-11178271/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11178271/v1"
+     },
+     {
+      "titolo": "Association Between Q-Angle and Patellofemoral Pain Syndrome in University Athletes: A Cross-Sectional Study",
+      "dove": "archivio preprint",
+      "data": "2026-10-19",
+      "doi": "10.20944/preprints202610.1651.v1",
+      "url": "https://doi.org/10.20944/preprints202610.1651.v1"
+     },
+     {
+      "titolo": "Inter-Individual Variability in Cycling Biomechanics During Experimentally Induced Movement-Evoked Knee Pain",
+      "dove": "archivio preprint",
+      "data": "2026-10-16",
+      "doi": "10.64898/2026.10.09.757760",
+      "url": "https://doi.org/10.64898/2026.10.09.757760"
+     },
+     {
+      "titolo": "Nose-to-Knee Transplantation for Osteochondral Regeneration: A Proof-of-Concept Study in Sheep Employing Ceramic-Hydrogel Osteochondral Grafts",
+      "dove": "archivio preprint",
+      "data": "2026-10-12",
+      "doi": "10.64898/2026.10.09.757945",
+      "url": "https://doi.org/10.64898/2026.10.09.757945"
+     },
+     {
+      "titolo": "HLA Genotype is Associated with Patient Reported Outcomes and Adverse Reactions to Metal Debris in Patients with Cobalt-Chrome Knee Arthroplasties",
+      "dove": "archivio preprint",
+      "data": "2026-10-13",
+      "doi": "10.64898/2026.10.12.26365276",
+      "url": "https://doi.org/10.64898/2026.10.12.26365276"
+     },
+     {
+      "titolo": "Subchondral bone remodeling in knee osteoarthritis is coupled to lipid mobilization from bone marrow adipocytes",
+      "dove": "archivio preprint",
+      "data": "2026-10-14",
+      "doi": "10.64898/2026.10.07.757365",
+      "url": "https://doi.org/10.64898/2026.10.07.757365"
+     },
+     {
+      "titolo": "Lateral meniscal positional asymmetry during early knee flexion under axial loading following anterior cruciate ligament reconstruction: a paired-knee MRI study",
+      "dove": "archivio preprint",
+      "data": "2026-10-14",
+      "doi": "10.21203/rs.3.rs-11057709/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11057709/v1"
+     },
+     {
+      "titolo": "Correlation Between Demographic Data and Intraoperative Distal Femoral Anthropometry in Patients Undergoing Total Knee Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-10-14",
+      "doi": "10.21203/rs.3.rs-11098453/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11098453/v1"
+     },
+     {
+      "titolo": "Deep Learning-Based Sex Classification and Chronological Age-Group Estimation from Knee Radiographs Using a Multi-Task Framework with Rank-Fusion and Tri-Loss L",
+      "dove": "archivio preprint",
+      "data": "2026-10-14",
+      "doi": "10.21203/rs.3.rs-11155947/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11155947/v1"
+     },
+     {
+      "titolo": "Adverse Childhood Experiences and Incident Symptomatic Knee Osteoarthritis: The Mediating Role of Frailty in a Nationwide Chinese Cohort",
+      "dove": "archivio preprint",
+      "data": "2026-10-14",
+      "doi": "10.21203/rs.3.rs-11080066/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11080066/v1"
+     },
+     {
+      "titolo": "Multi-Task Framework for Efficient Knee Osteoarthritis Segmentation and Classification",
+      "dove": "archivio preprint",
+      "data": "2026-10-15",
+      "doi": "10.21203/rs.3.rs-8330779/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-8330779/v1"
+     }
+    ],
+    "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
+   }
   }
  }
 }
