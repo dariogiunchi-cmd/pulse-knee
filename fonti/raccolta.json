@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-28T08:33:26Z",
+ "generato": "2026-10-29T07:39:22Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -596,17 +596,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07846709",
-       "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
-       "stato": "NOT_YET_RECRUITING",
-       "aggiornato": "2026-10-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 150,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT03896464",
        "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
        "stato": "RECRUITING",
@@ -615,6 +604,17 @@
         "NA"
        ],
        "n": 352,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07846709",
+       "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-10-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 150,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 577,
+    "doi_citati_controllati": 584,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -794,6 +794,12 @@
    "dati": {
     "video": [
      {
+      "canale": "Smith+Nephew",
+      "titolo": "Ortho Case Insight Series | Femur Fracture Cases with EVOS◊ Large and Periprosthetic Plating System",
+      "link": "https://www.youtube.com/watch?v=67kV_9nHcP0",
+      "data": "2026-10-28"
+     },
+     {
       "canale": "Arthrex",
       "titolo": "Arthrex Spine Evolutions 2027",
       "link": "https://www.youtube.com/watch?v=6HhmtoDtjZs",
@@ -816,12 +822,6 @@
       "titolo": "BreakThrough™ With Christopher Adams, MD—Percutaneous Pars Fracture Repair",
       "link": "https://www.youtube.com/shorts/fkHi7lbN7QM",
       "data": "2026-10-19"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Spine Percutaneous Spine Fixation",
-      "link": "https://www.youtube.com/watch?v=NFq3GGG6tn4",
-      "data": "2026-10-15"
      }
     ]
    }
@@ -829,6 +829,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42951020",
+     "titolo": "Journal of sport and health science — Revisione sistematica con metanalisi (Jiang, Zhong, Tu, Xu, Liu, Wang, W",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42934217",
      "titolo": "The American journal of sports medicine — Studio controllato di laboratorio (Kruckeberg, Brady, Cinque, Sidrak",
