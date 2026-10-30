@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-29T08:29:32Z",
+ "generato": "2026-10-30T07:42:40Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -71,7 +71,7 @@
      },
      {
       "recalling_firm": "United Orthopedic Corp.",
-      "product_description": "Brand Name: U2 Total Knee System\nProduct Name: PSA Box Trial, L, #1-6 and PSA Box Trial, R, #1-6\nModel/Catalog Number: 9323-5511 thru 9323-5516 and 9323-5521 thru 9323-5526\nSoftware Version: N/A\nProduct Description: Knee femur prosthesis trial, reusable\nComponent: No, N/A",
+      "product_description": "Brand Name: U2 Total Knee System\r\nProduct Name: PSA Box Trial, L, #1-6 and PSA Box Trial, R, #1-6\r\nModel/Catalog Number: 9323-5511 thru 9323-5516 and 9323-5521 thru 9323-5526\r\nSoftware Version: N/A\r\nProduct Description: Knee femur prosthesis trial, reusable\r\nComponent: No, N/A",
       "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
       "root_cause_description": "Process design",
       "event_date_initiated": "2026-05-20",
@@ -80,7 +80,7 @@
      },
      {
       "recalling_firm": "United Orthopedic Corp.",
-      "product_description": "Brand Name: USTAR II Knee System\nProduct Name: Hinge Box Trial, L, #1-6 and Hinge Box Trial, R, #1-6\nModel/Catalog Number: 9325-5711 thru 9325-5716 and 9325-5721 thru 9325-5726\nSoftware Version: N/A\nProduct Description: Knee femur prosthesis trial, reusable\nComponent: No, N/A",
+      "product_description": "Brand Name: USTAR II Knee System\r\nProduct Name: Hinge Box Trial, L, #1-6 and Hinge Box Trial, R, #1-6\r\nModel/Catalog Number: 9325-5711 thru 9325-5716 and 9325-5721 thru 9325-5726\r\nSoftware Version: N/A\r\nProduct Description: Knee femur prosthesis trial, reusable\r\nComponent: No, N/A",
       "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
       "root_cause_description": "Process design",
       "event_date_initiated": "2026-05-20",
@@ -89,7 +89,7 @@
      },
      {
       "recalling_firm": "United Orthopedic Corp.",
-      "product_description": "Brand Name: U2 Total Knee System\nProduct Name: Femoral valgus adaptor, left and right\nModel/Catalog Number: 9323-5333 and 9323-5334\nSoftware Version: N/A\nProduct Description: Manual Orthopedic Surgical Instrument\nComponent: No",
+      "product_description": "Brand Name: U2 Total Knee System\r\nProduct Name: Femoral valgus adaptor, left and right\r\nModel/Catalog Number: 9323-5333 and 9323-5334\r\nSoftware Version: N/A\r\nProduct Description: Manual Orthopedic Surgical Instrument\r\nComponent: No",
       "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
       "root_cause_description": "Process design",
       "event_date_initiated": "2026-05-20",
@@ -98,7 +98,7 @@
      },
      {
       "recalling_firm": "United Orthopedic Corp.",
-      "product_description": "Brand Name: U2 Total Knee System\nProduct Name: Femoral valgus offset adaptor, 2mm, 4mm, 6mm, left and Femoral valgus offset adaptor, 2mm, 4mm, 6mm, right\nModel/Catalog Number: 9323-5335, 9323-5337, 9323-5339 and 9323-5336, 9323-5338, 9323-5340\nSoftware Version: N/A\nProduct Description: Manual Orthopedic Surgical Instrument\nComponent: No",
+      "product_description": "Brand Name: U2 Total Knee System\r\nProduct Name: Femoral valgus offset adaptor, 2mm, 4mm, 6mm, left and Femoral valgus offset adaptor, 2mm, 4mm, 6mm, right\r\nModel/Catalog Number: 9323-5335, 9323-5337, 9323-5339 and 9323-5336, 9323-5338, 9323-5340\r\nSoftware Version: N/A\r\nProduct Description: Manual Orthopedic Surgical Instrument\r\nComponent: No",
       "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
       "root_cause_description": "Process design",
       "event_date_initiated": "2026-05-20",
@@ -629,17 +629,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07580157",
-       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
-       "stato": "ENROLLING_BY_INVITATION",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 20,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07753707",
        "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
        "stato": "ACTIVE_NOT_RECRUITING",
@@ -648,6 +637,17 @@
         "NA"
        ],
        "n": 111,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07580157",
+       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 20,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 584,
+    "doi_citati_controllati": 591,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -793,6 +793,12 @@
    "esito": "ok",
    "dati": {
     "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "StayPort™ Hip Cannula",
+      "link": "https://www.youtube.com/watch?v=9wbba9Lxj_Q",
+      "data": "2026-10-29"
+     },
      {
       "canale": "Smith+Nephew",
       "titolo": "Ortho Case Insight Series | Femur Fracture Cases with EVOS◊ Large and Periprosthetic Plating System",
@@ -829,6 +835,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42954106",
+     "titolo": "Arthroscopy — Revisione sistematica (Dhillon, Bui, Keeter, Kraeutler), LCA primario con autoinnesto di tendine",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42951020",
      "titolo": "Journal of sport and health science — Revisione sistematica con metanalisi (Jiang, Zhong, Tu, Xu, Liu, Wang, W",
@@ -1096,8 +1108,12 @@
     {
      "pmid": "42678638",
      "titolo": "Journal of Robotic Surgery — Revisione narrativa su sei piattaforme robotiche ortopediche commerciali (MAKO, R",
-     "citanti": [],
-     "nuovi": []
+     "citanti": [
+      "42859283"
+     ],
+     "nuovi": [
+      "42859283"
+     ]
     },
     {
      "pmid": "42551742",
@@ -1241,6 +1257,24 @@
    "dati": {
     "finestra_giorni": 60,
     "voci": [
+     {
+      "pmid": "42953907",
+      "titolo": "Surgical Intervention for Small Osteochondral Lesions (<1 cm): Proceedings of the International Consensus Meeting on Cartilage Repair of the Ankle.",
+      "rivista": "Foot & ankle specialist",
+      "data": "2026 Oct 29",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42953767",
+      "titolo": "No significant differences between large language model prompting strategies and human experts in summarisation of 'the formal EU-US meniscus rehabilitation consensus: An ESSKA-AOS",
+      "rivista": "Journal of experimental orthopaedics",
+      "data": "2026 Oct 28",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
      {
       "pmid": "42896985",
       "titolo": "[Interpretation of the 2026 Asia-Pacific Expert Consensus on Robotic-assisted Hip and Knee Arthroplasty: From precise execution to individualized decision-making].",
@@ -1437,15 +1471,6 @@
       "tipi": [
        "Journal Article"
       ]
-     },
-     {
-      "pmid": "42668741",
-      "titolo": "Arthrofibrosis After Total Knee Arthroplasty: Biological Mechanisms, Diagnosis, and Treatment: An International Consensus Symposium.",
-      "rivista": "HSS journal : the musculoskeletal journal of Hospital for Special Surgery",
-      "data": "2026 Aug 28",
-      "tipi": [
-       "Journal Article"
-      ]
      }
     ]
    }
@@ -1464,6 +1489,13 @@
    "dati": {
     "finestra_giorni": 30,
     "voci": [
+     {
+      "titolo": "Energy-based plastic design and seismic evaluation of doubly buckling-restrained knee-braced frames",
+      "dove": "archivio preprint",
+      "data": "2026-10-28",
+      "doi": "10.21203/rs.3.rs-11487370/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11487370/v1"
+     },
      {
       "titolo": "Extending Musculoskeletal Modelling Validation Beyond Gait: Knee Loading and Kinematics During Daily Activities",
       "dove": "archivio preprint",
@@ -1631,13 +1663,6 @@
       "data": "2026-10-14",
       "doi": "10.21203/rs.3.rs-11080066/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-11080066/v1"
-     },
-     {
-      "titolo": "Multi-Task Framework for Efficient Knee Osteoarthritis Segmentation and Classification",
-      "dove": "archivio preprint",
-      "data": "2026-10-15",
-      "doi": "10.21203/rs.3.rs-8330779/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-8330779/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
