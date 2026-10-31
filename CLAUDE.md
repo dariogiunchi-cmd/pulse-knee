@@ -93,7 +93,7 @@ Installali e rilancia; non toccare `index.html`.
 
 | Trappola | Regola |
 |---|---|
-| **Playwright** | Serve **`playwright==1.56.0`**: è la versione che corrisponde al Chromium **1194** dell'immagine. La 1.62 ne pretende una 1234 che non c'è, e fa fallire nove suite su dodici. Ci pensa `.claude/hooks/session-start.sh`. |
+| **Playwright** | Serve **`playwright==1.63.0`**: è la versione che corrisponde al Chromium **1243** dell'immagine (dal 31 ottobre; prima era la 1.56.0 con il 1194, che oggi non apre più il browser). Una versione che pretende un'altra build, come la 1.62 con la 1234, non trova il browser, e fa fallire nove suite su dodici. Ci pensa `.claude/hooks/session-start.sh`. |
 | **`github.io` dal sandbox** | `curl` risponde `000`. **Non è un guasto del sito.** Verifica con l'URL raw sullo SHA. |
 | **Cache di `raw.githubusercontent.com`** | L'URL sul *ramo* resta in cache alcuni minuti e restituisce versioni vecchie. Per scaricare o verificare usa sempre l'URL con lo **SHA del commit**. Il 2 agosto questa trappola ha fatto sparire le barre di confidenza. |
 | **Firma dei commit** | Configurata a livello globale, GitHub la verifica. **Non disattivarla mai** con `-c commit.gpgsign=false`: rende ogni pubblicazione «Unverified». |

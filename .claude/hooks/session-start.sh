@@ -8,8 +8,9 @@
 # «Executable doesn't exist», e una sessione distratta avrebbe potuto concludere che
 # fosse l'app a essere rotta — esattamente ciò che il cancello zero vuole impedire.
 #
-# La 1.56.0 è la versione che corrisponde al Chromium 1194 già presente. Non
-# aggiornarla senza aver prima verificato quale build si trova in /opt/pw-browsers.
+# La 1.63.0 corrisponde al Chromium 1243 oggi presente nell'immagine (31 ottobre 2026:
+# la 1.56.0, che voleva il 1194, non apriva più il browser). Non aggiornarla senza
+# aver prima verificato quale build si trova in /opt/pw-browsers.
 set -euo pipefail
 
 # Sul Mac del Dr. Giunchi Playwright si porta dietro il proprio Chromium: nessun
@@ -18,7 +19,7 @@ if [ "${CLAUDE_CODE_REMOTE:-}" != "true" ]; then
   exit 0
 fi
 
-ATTESA="1.56.0"
+ATTESA="1.63.0"
 ORA="$(python3 -c "import importlib.metadata as m; print(m.version('playwright'))" 2>/dev/null || echo "")"
 
 if [ "$ORA" != "$ATTESA" ]; then

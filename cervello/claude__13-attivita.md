@@ -208,7 +208,7 @@ PUBBLICAZIONE — un solo comando, senza token:
 Il push usa l'accesso della sessione. Se la verifica fallisce NON pubblica: leggi che
 cosa segnala, correggi, rilancia — quasi sempre il difetto è nei tuoi contenuti, non nel
 test. Mai disattivare un controllo, mai push a mano. Se mancano strumenti (Playwright,
-Chromium) non è l'app a essere rotta: serve playwright==1.56.0 (Chromium 1194) — il
+Chromium) non è l'app a essere rotta: serve playwright==1.63.0 (Chromium 1243; se cambia l'immagine, controlla /opt/pw-browsers e allinea la versione) — il
 hook di avvio lo installa da solo, ma se non l'ha fatto: installa e rilancia.
 Se il PUSH fallisce, dillo in chat in una riga con l'errore esatto: un push muto è il
 guasto che ha già ucciso cinque mattini.

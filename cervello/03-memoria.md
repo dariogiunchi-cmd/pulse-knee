@@ -7,7 +7,7 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 30 ottobre 2026.*
+*Ultimo aggiornamento: 31 ottobre 2026.*
 
 ---
 
@@ -520,6 +520,8 @@
 
 ### T1a — Il LET serve su innesto rigido? *(dal 2026-07-21)*
 
+**Nuovo il 31 ottobre 2026, un editoriale dubita che il LET basti con slope alto (PMID 42949191).** Choi, *Arthroscopy* (solo abstract, opinione senza dati): con slope tibiale posteriore di 12° o più e traslazione anteriore statica oltre 5 mm né l'innesto rotuleo né il LET possono bastare a proteggere l'innesto; osteotomia di chiusura anteriore da considerare; servono prove. Non nomina il quadricipite: non muove la posizione, indica un sottogruppo. Stesso giorno, editoriale di Laporte e Gilmer (PMID 42949164) sull'all-inside con hamstring: fallimenti attribuiti all'innesto, quadricipite o rotuleo per i pazienti ad alto rischio.
+
 **Nuovo il 19 ottobre 2026, due note di sfondo.** Studio prospettico non randomizzato su LCA con sutura del menisco laterale, con e senza LET (George et al., *Cureus*; Bangalore; PMID 42890845; 40 pazienti; testo completo letto): a 12 mesi pivot shift di grado 0 nell'85% contro il 15%, IKDC 84,84 ± 7,64 contro 76,16 ± 8,67; assegnazione per rischio (pivot shift di grado 3 al basale 65% contro 0%), 20 contro 20 invece degli 80 calcolati, Lemaire modificato sotto il collaterale fibulare con vite a interferenza (non onlay in superficie), nessun innesto quadricipitale: non isola l'effetto e non tocca il tuo costrutto. Revisione narrativa (George et al., *Curr Rev Musculoskelet Med*; PMID 42873380; solo abstract): la plastica laterale va riservata ai ginocchi ad alto rischio; opinione, nessun dato nuovo. Non muovono la posizione universale.
 
 **Nuovo il 18 ottobre 2026, una metanalisi che non testa il LET lo nomina come confondente.** Metanalisi di 13 RCT sul doppio fascio contro il fascio singolo (Gutierrez-Moreno et al., *Arthrosc Sports Med Rehabil*; 1041 pazienti; PMID 42890719): la plastica laterale non è stata estratta, ma gli autori scrivono che il suo uso crescente negli studi recenti può pareggiare nel tempo la stabilità rotatoria fra le due tecniche. Ipotesi degli autori, non risultato; un solo RCT con tendine quadricipitale (51 pazienti). Non muove la posizione universale.
@@ -910,6 +912,8 @@ ma con una ALL con innesto e non con il tuo Lemaire onlay. Non chiude nulla.
 
 ### T1b — Il costrutto superficiale/onlay si comporta come il profondo/graffa? *(nuova, 2026-08-01)*
 
+**Nuovo il 31 ottobre 2026, un'altra variante di costrutto, senza dati (PMID 42953463).** Nota tecnica (Lucina, Tierney, Patel; *Arthrosc Tech*; testo completo letto): Lemaire modificato, banda ileotibiale passata in profondità al collaterale laterale e fissata in onlay con ancora knotless a tutta sutura da 1,8 mm. Il passaggio del Dr. Giunchi è superficiale; nessun paziente, nessun confronto fra costrutti.
+
 **Nuovo il 13 ottobre 2026, una terza famiglia di costrutto.** Nota tecnica (Suruga et al., *Arthrosc Tech*; PMID 42857577; livello V, nessun paziente): Lemaire modificato con fissazione in tunnel osseo e ancora SwiveLock, passaggio posteriore al collaterale laterale, con il tunnel del rinforzo scavato per primo per evitare la convergenza con quello del LCA. Nessun dato; affianca al profondo con graffa degli studi randomizzati e al superficiale onlay un costrutto in tunnel che la letteratura chiama allo stesso modo. Con l'onlay la convergenza non si pone.
 
 **Verificata sul full text di STABILITY 2.** Il protocollo prescrive: banderella di
@@ -999,6 +1003,8 @@ implicita.
 **Nuovo il 28 ottobre 2026, un dato di contesto da banco.** Studio di laboratorio dello Steadman Philippon (Kruckeberg et al., *Am J Sports Med*; PMID 42934217; 10 ginocchia di cadavere, solo abstract): due punti femorali del LET (inserzione del legamento anterolaterale e fibre di Kaplan distali) e due angoli di fissazione (30° e 60°) non differiscono nel carico sul trapianto né nella cinematica; il LET riduce la forza sul trapianto in rotazione interna del 14-55% secondo la flessione e la rotazione interna di 1,86-5,92°, oltre il ginocchio nativo (iper-vincolo). L'abstract non riporta innesto, decorso rispetto al collaterale né dispositivo di fissazione: non confronta profondo con graffa e superficiale con onlay, quindi non chiude la tensione. Aggiunge che la scelta del punto non sembra critica e che l'iper-vincolo va tenuto presente.
 
 ### T2b — L'estrusione, non il timing né il grado condrale *(riformulata 2026-08-01, sostituisce T2)*
+
+**Nuovo il 31 ottobre 2026, la frattura da insufficienza subcondrale (SIFK) predice una sutura di radice meno efficace (PMID 42958723).** Coorte retrospettiva (Garcia, Cole, Yanke, Chahla et al., *Arthroscopy*; livello III; 91 pazienti, follow-up medio 38,3 mesi; solo abstract): con SIFK (37,4%) KOOS-JR rilevante 38,2% contro 80,7% (p < 0,001), reinterventi 20,6% contro 5,3% (differenza di rischio 15,3 punti, IC 95% 1,6-31,9), Kellgren-Lawrence mediano 3,0 contro 2,0. Estrusione e tecnica non riportate: fattore prognostico accanto all'estrusione. Stesso giorno, PMID 42958592 (retrospettivo, 120 ginocchia): l'asimmetria di slope mediale-laterale si associa alla lesione di radice (OR 2,17 per grado, IC 95% 1,56-3,02; soglia esplorativa da validare).
 
 **Nuovo il 30 ottobre 2026, la prima sintesi sulla centralizzazione aggiunta alla sutura della radice, ma indiretta (PMID 42954043).** Revisione sistematica di Moews, Flanigan et al. (*Arthroscopy*; solo abstract): 6 studi, 148 pazienti, età media 55,6 anni, follow-up medio 19,8 mesi; Lysholm da +21,1 a +42,3, estrusione sotto 3 mm in 5 studi su 6, in un RCT aumentata ma meno che con la sola riparazione. Tecnica di riparazione non riportata, sintesi solo qualitativa, quasi nessun confronto con la sola riparazione: sposta la domanda a «la centralizzazione la riduce davvero», non la chiude. Non cambia che cosa fare oggi.
 
