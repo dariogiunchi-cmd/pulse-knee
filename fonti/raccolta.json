@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-30T08:39:32Z",
+ "generato": "2026-10-31T07:29:11Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -629,17 +629,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07753707",
-       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 111,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07580157",
        "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
        "stato": "ENROLLING_BY_INVITATION",
@@ -648,6 +637,17 @@
         "NA"
        ],
        "n": 20,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07753707",
+       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 111,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 591,
+    "doi_citati_controllati": 598,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -835,6 +835,12 @@
   "destino": {
    "esito": "ok",
    "dati": [
+    {
+     "pmid": "42958723",
+     "titolo": "Arthroscopy — Coorte retrospettiva (Garcia, Cohen, Gilat, Ralls, Atkins, Murray, Jan, Dave, Cole, Yanke, Verma",
+     "citanti": [],
+     "nuovi": []
+    },
     {
      "pmid": "42954106",
      "titolo": "Arthroscopy — Revisione sistematica (Dhillon, Bui, Keeter, Kraeutler), LCA primario con autoinnesto di tendine",
@@ -1313,7 +1319,7 @@
      },
      {
       "pmid": "42875873",
-      "titolo": "Uefa consensus guidelines on anterior cruciate ligament (ACL) injury in women's football - Part Two: rehabilitation, return to play, and players' perceptions.",
+      "titolo": "UEFA consensus guidelines on anterior cruciate ligament (ACL) injury in women's football - Part Two: rehabilitation, return to play, and players' perceptions.",
       "rivista": "Science & medicine in football",
       "data": "2026 Oct 14",
       "tipi": [
@@ -1488,6 +1494,27 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Anatomically matched spatial comparisons identify Trps1 as a regulator of knee interzone formation",
+      "dove": "archivio preprint",
+      "data": "2026-10-30",
+      "doi": "10.64898/2026.10.28.762640",
+      "url": "https://doi.org/10.64898/2026.10.28.762640"
+     },
+     {
+      "titolo": "Are Longer Waits Associated with Lower Satisfaction and Worse Recovery? A Retrospective Observational Study of Hip and Knee Replacement in England",
+      "dove": "archivio preprint",
+      "data": "2026-10-30",
+      "doi": "10.64898/2026.10.28.26366729",
+      "url": "https://doi.org/10.64898/2026.10.28.26366729"
+     },
+     {
+      "titolo": "Neural shape models enable cohort-scale simulation of knee cartilage mechanics",
+      "dove": "archivio preprint",
+      "data": "2026-10-30",
+      "doi": "10.64898/2026.10.29.26366866",
+      "url": "https://doi.org/10.64898/2026.10.29.26366866"
+     },
+     {
       "titolo": "Energy-based plastic design and seismic evaluation of doubly buckling-restrained knee-braced frames",
       "dove": "archivio preprint",
       "data": "2026-10-28",
@@ -1640,27 +1667,6 @@
       "data": "2026-10-14",
       "doi": "10.21203/rs.3.rs-11057709/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-11057709/v1"
-     },
-     {
-      "titolo": "Correlation Between Demographic Data and Intraoperative Distal Femoral Anthropometry in Patients Undergoing Total Knee Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-10-14",
-      "doi": "10.21203/rs.3.rs-11098453/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11098453/v1"
-     },
-     {
-      "titolo": "Deep Learning-Based Sex Classification and Chronological Age-Group Estimation from Knee Radiographs Using a Multi-Task Framework with Rank-Fusion and Tri-Loss L",
-      "dove": "archivio preprint",
-      "data": "2026-10-14",
-      "doi": "10.21203/rs.3.rs-11155947/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11155947/v1"
-     },
-     {
-      "titolo": "Adverse Childhood Experiences and Incident Symptomatic Knee Osteoarthritis: The Mediating Role of Frailty in a Nationwide Chinese Cohort",
-      "dove": "archivio preprint",
-      "data": "2026-10-14",
-      "doi": "10.21203/rs.3.rs-11080066/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11080066/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
