@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-31T08:26:05Z",
+ "generato": "2026-11-01T08:07:50Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 598,
+    "doi_citati_controllati": 605,
     "colpiti": [],
     "nel_perimetro": [
      {
