@@ -24,7 +24,7 @@ ORA="$(python3 -c "import importlib.metadata as m; print(m.version('playwright')
 
 if [ "$ORA" != "$ATTESA" ]; then
   echo "PULSE · installo playwright==$ATTESA (trovato: ${ORA:-nessuno})"
-  pip install -q "playwright==$ATTESA" --break-system-packages
+  python3 -m pip install -q "playwright==$ATTESA" --break-system-packages
 else
   echo "PULSE · playwright $ATTESA già presente"
 fi
