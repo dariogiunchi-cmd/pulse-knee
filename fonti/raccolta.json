@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-01T08:07:50Z",
+ "generato": "2026-11-01T09:16:41Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,18 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Modifica del «Formulario DMF»",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/anpassung-fo-dmf.html",
+      "data": "Sun, 01 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Aggiornamento dei formulari Nuova omologazione di medicamenti per uso umano e Modifiche ed estensioni dell’omologazione MUU",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/aktualisierung-der-formulare-neuzulassung-humanarzneimittel-und-aenderungen-und-zulassungserweiterungen-ham.html",
+      "data": "Sun, 01 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Nuove informazioni sull'introduzione dell'eCTD v4.0",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/services/submissions/ectd-v4-0-2.html",
       "data": "Mon, 26 Oct 2026 00:00:00 +0000"
@@ -362,18 +374,6 @@
       "titolo": "Adeguamenti necessari per il rilascio delle autorizzazioni d’esercizio e dei certificati GMP per i fabbricanti di principi attiv...",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/notwendige-anpassungen-fuer-die-ausstellung-von-betriebsbewilligungen-und-gmp-zertifikaten-fuer-wirkstoffhersteller.html",
       "data": "Thu, 01 Oct 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "HPC - Librela ad us. vet., solution injectable pour chiens (Bedinvetmabum)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/tierarzneimittel/medicamenti-per-uso-veterinario/dhpc-veterinary-medicines/hpc-librela-ad-us-vet-injlsg.html",
-      "data": "Tue, 29 Sep 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "DHPC – Clozapina",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-clozapin.html",
-      "data": "Sat, 26 Sep 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
