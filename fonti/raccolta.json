@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-01T09:16:41Z",
+ "generato": "2026-11-02T08:16:48Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 605,
+    "doi_citati_controllati": 612,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -822,12 +822,6 @@
       "titolo": "Percutaneous Pars Fracture Fixation Surgical Technique - Saqib Hasan, MD",
       "link": "https://www.youtube.com/watch?v=_0cZzPzivLc",
       "data": "2026-10-22"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "BreakThrough™ With Christopher Adams, MD—Percutaneous Pars Fracture Repair",
-      "link": "https://www.youtube.com/shorts/fkHi7lbN7QM",
-      "data": "2026-10-19"
      }
     ]
    }
@@ -1494,6 +1488,41 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Clinical Outcomes of Anterior Cruciate Ligament Reconstruction With and Without Lateral Extra-articular Tenodesis in Non-Athletic Patients: A Retrospective Comp",
+      "dove": "archivio preprint",
+      "data": "2026-11-01",
+      "doi": "10.21203/rs.3.rs-11281275/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11281275/v1"
+     },
+     {
+      "titolo": "MRI Assessment of Patellofemoral Morphology and Chondromalacia Severity in Young Soccer Players: A Case-Control Study",
+      "dove": "archivio preprint",
+      "data": "2026-11-01",
+      "doi": "10.21203/rs.3.rs-11029051/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11029051/v1"
+     },
+     {
+      "titolo": "Septic arthritis superimposed on an arthritic knee is a surgical dilemma: A 10-year experience with two-stage total knee arthroplasty – the first reported study",
+      "dove": "archivio preprint",
+      "data": "2026-11-01",
+      "doi": "10.21203/rs.3.rs-11065773/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11065773/v1"
+     },
+     {
+      "titolo": "Association Between Lesion-Directed Positioning Management and Early Functional Recovery Following PRP-Augmented Meniscal Repair: A Retrospective Cohort Study",
+      "dove": "archivio preprint",
+      "data": "2026-11-01",
+      "doi": "10.21203/rs.3.rs-11024297/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11024297/v1"
+     },
+     {
+      "titolo": "Normalised plantar pressure measures are reliable, whereas absolute force and gait-curve temporal measures are not: a test–retest reliability study of a plantar",
+      "dove": "archivio preprint",
+      "data": "2026-11-01",
+      "doi": "10.21203/rs.3.rs-11248193/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11248193/v1"
+     },
+     {
       "titolo": "Anatomically matched spatial comparisons identify Trps1 as a regulator of knee interzone formation",
       "dove": "archivio preprint",
       "data": "2026-10-30",
@@ -1632,41 +1661,6 @@
       "data": "2026-10-19",
       "doi": "10.20944/preprints202610.1651.v1",
       "url": "https://doi.org/10.20944/preprints202610.1651.v1"
-     },
-     {
-      "titolo": "Inter-Individual Variability in Cycling Biomechanics During Experimentally Induced Movement-Evoked Knee Pain",
-      "dove": "archivio preprint",
-      "data": "2026-10-16",
-      "doi": "10.64898/2026.10.09.757760",
-      "url": "https://doi.org/10.64898/2026.10.09.757760"
-     },
-     {
-      "titolo": "Nose-to-Knee Transplantation for Osteochondral Regeneration: A Proof-of-Concept Study in Sheep Employing Ceramic-Hydrogel Osteochondral Grafts",
-      "dove": "archivio preprint",
-      "data": "2026-10-12",
-      "doi": "10.64898/2026.10.09.757945",
-      "url": "https://doi.org/10.64898/2026.10.09.757945"
-     },
-     {
-      "titolo": "HLA Genotype is Associated with Patient Reported Outcomes and Adverse Reactions to Metal Debris in Patients with Cobalt-Chrome Knee Arthroplasties",
-      "dove": "archivio preprint",
-      "data": "2026-10-13",
-      "doi": "10.64898/2026.10.12.26365276",
-      "url": "https://doi.org/10.64898/2026.10.12.26365276"
-     },
-     {
-      "titolo": "Subchondral bone remodeling in knee osteoarthritis is coupled to lipid mobilization from bone marrow adipocytes",
-      "dove": "archivio preprint",
-      "data": "2026-10-14",
-      "doi": "10.64898/2026.10.07.757365",
-      "url": "https://doi.org/10.64898/2026.10.07.757365"
-     },
-     {
-      "titolo": "Lateral meniscal positional asymmetry during early knee flexion under axial loading following anterior cruciate ligament reconstruction: a paired-knee MRI study",
-      "dove": "archivio preprint",
-      "data": "2026-10-14",
-      "doi": "10.21203/rs.3.rs-11057709/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11057709/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
