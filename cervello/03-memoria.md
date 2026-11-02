@@ -7,12 +7,19 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 31 ottobre 2026.*
+*Ultimo aggiornamento: 2 novembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-11-02 | BMC Musculoskelet Disord | Coorte retrospettiva con controlli (Byun et al.; Yonsei, Seul), rottura degenerativa del menisco mediale, radice contro orizzontale contro controlli, 84 pazienti, testo completo letto | 10.1186/s12891-026-10308-y | menisco, radice meniscale, BMI, varismo, HKA | aperto — 🟢 PICK; radice contro controlli BMI OR 1,534 (IC 95% 1,187-1,983), HKA OR 1,685 (IC 95% 1,177-2,412); nessun predittore per l'orizzontale; associazione, non causa; non muove T2b (app T3)
+2026-11-02 | Arthrosc Tech | Nota tecnica (Toyooka et al.; Teikyo, Tokyo), menisco laterale discoide instabile, rilascio della corda anteriore e sutura all-inside | 10.1002/atn2.70360 | menisco laterale, discoide, iato popliteo | aperto — 🟢 nessun paziente; muto
+2026-11-02 | World J Clin Pediatr | Revisione narrativa (Lim et al.; Middlesbrough), lesioni ramp pediatriche | 10.5409/wjcp.120301 | menisco, ramp, LCA, adolescenti | aperto — 🟢 nessun numero nell'abstract; lacune dichiarate su follow-up e algoritmi; solo abstract
+2026-11-02 | Arthrosc Tech | Nota tecnica (Zhou et al.; Beijing Jishuitan), angolo posterolaterale con legamento artificiale a Y | 10.1002/atn2.70333 | multilegamentose, angolo posterolaterale, legamento artificiale | aperto — 🟢 nessun paziente; muto
+2026-11-02 | J Exp Orthop | Studio comparativo esplorativo (Lindskog et al.; Göteborg, Balgrist), modelli linguistici contro esperti nel riassumere la consensus ESSKA-AOSSM-AASPT sul menisco | 10.1002/jeo2.70964 | menisco, consensus, riabilitazione, intelligenza artificiale | aperto — 🟢 livello V; nessuna differenza significativa con tre valutatori (Gwet AC2 0,79-0,99); non prova di equivalenza
+2026-11-02 | Cureus | Pilota prospettico non randomizzato (Kapoor et al.; Vadodara), protesi totale robotica contro convenzionale, 30 pazienti | 10.7759/cureus.117259 | protesi robotica, VELYS, allineamento cinematico | aperto — 🟢 KSS a due settimane 87,9 contro 76,9; pari a tre mesi; allineamento diverso nei due bracci; si affianca alla coorte cinese del 1 novembre
+2026-11-02 | J Exp Orthop | Caso-controllo retrospettivo (Pellicanò et al.; Rizzoli), rottura del quadricipite dopo protesi, 17 casi e 100 controlli | 10.1002/jeo2.70966 | protesi, quadricipite, rotula | aperto — ⚪ OR 0,77 (IC 95% 0,55-1,08); muto
 2026-11-01 | Arthroscopy | Analisi retrospettiva di sottogruppo di studio di fase 3 (Park, Ha), cartilagine, staminali allogeniche da sangue cordonale con ialuronato contro microfrattura, 48 pazienti a 5 anni | 10.1002/arj.70706 | cartilagine, microfrattura, staminali, MOCART | aperto — 🟢 PICK; VAS 23,4 contro 46,3 (p = 0,0019); riparazione durevole 62,5% contro 26,3% (OR 8,2, IC 95% 1,6-42,5); solo abstract
 2026-11-01 | J Orthop Surg (Hong Kong) | Coorte retrospettiva (Zhang et al.), protesi totale con pianificazione AI e robot contro convenzionale, 56 coppie appaiate | 10.1177/10225536261504098 | protesi robotica, pianificazione, taglia | aperto — 🟠 taglia femorale 75,0% contro 58,9%; nessuna differenza funzionale a sei mesi; robot non nominato
 2026-11-01 | Arthrosc Tech | Nota tecnica (Bouguennec, Colombet, Graveleau), tenodesi laterale MERI con striscia di fascia lata e ancora a vite, superficiale al collaterale | 10.1002/atn2.70325 | LET, MERI, fascia lata, T1b | aperto — 🟢 nessun paziente; testo completo letto
