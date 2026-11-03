@@ -7,12 +7,17 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 2 novembre 2026.*
+*Ultimo aggiornamento: 3 novembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-11-03 | J Arthroplasty | Revisione sistematica con metanalisi (Ade-Conde et al.; McMaster, Western), marcatori infiammatori dopo protesi totale robotica contro manuale, 14 studi, 2.858 ginocchia, solo abstract | 10.1016/j.arth.2026.10.035 | protesi robotica, VELYS, infiammazione, CRP | aperto — 🟢 PICK; CRP giorno 1 −4,8 mg/L e giorno 3 −9,6 mg/L (p = 0,017), nessuna differenza a un mese; tempo operatorio +11,4 minuti; surrogati, nessun esito clinico, IC non riportati
+2026-11-03 | J Biomech | Studio trasversale (Ghani et al.; UCL), impulso del salto e cinetica di corsa dopo LCA, 42 persone | 10.1016/j.jbiomech.2026.113644 | LCA, ritorno alla corsa, impulso concentrico | aperto — 🟢 deficit concentrico monopodalico Δ 1,3 N·s/kg (d = 1,49; p < 0,001); innesto non riportato; non muove T4
+2026-11-03 | Knee | Coorte retrospettiva su database (Daley et al.; Dartmouth-Hitchcock), protesi totale sotto i 40 anni, 3.177 contro 698.662 | 10.1016/j.knee.2026.104663 | protesi, giovani, infezione, reintervento | aperto — ⚪ artrosi primaria, infezione a 90 giorni OR 3,16 (IC 95% 2,29-4,35); dati amministrativi
+2026-11-03 | J Arthroplasty | Coorte retrospettiva su database nazionale (Magaldi et al.), revisione per instabilità, singolo contro più componenti | 10.1016/j.arth.2026.10.037 | revisione, instabilità, polietilene | aperto — ⚪ sopravvivenza a cinque anni 85,4% contro 86,7%, HR 1,083 (IC 95% 0,921-1,273); non esclude +27%
+2026-11-03 | J Arthroplasty | Coorte retrospettiva monocentrica (Jager et al.; AZ Delta), monocompartimentale laterale a piatto fisso, 85 ginocchia | 10.1016/j.arth.2026.10.038 | monocompartimentale, laterale, sopravvivenza | aperto — ⚪ 90,6% senza revisione a 10 e 15 anni; nessun confronto; muto
 2026-11-02 | BMC Musculoskelet Disord | Coorte retrospettiva con controlli (Byun et al.; Yonsei, Seul), rottura degenerativa del menisco mediale, radice contro orizzontale contro controlli, 84 pazienti, testo completo letto | 10.1186/s12891-026-10308-y | menisco, radice meniscale, BMI, varismo, HKA | aperto — 🟢 PICK; radice contro controlli BMI OR 1,534 (IC 95% 1,187-1,983), HKA OR 1,685 (IC 95% 1,177-2,412); nessun predittore per l'orizzontale; associazione, non causa; non muove T2b (app T3)
 2026-11-02 | Arthrosc Tech | Nota tecnica (Toyooka et al.; Teikyo, Tokyo), menisco laterale discoide instabile, rilascio della corda anteriore e sutura all-inside | 10.1002/atn2.70360 | menisco laterale, discoide, iato popliteo | aperto — 🟢 nessun paziente; muto
 2026-11-02 | World J Clin Pediatr | Revisione narrativa (Lim et al.; Middlesbrough), lesioni ramp pediatriche | 10.5409/wjcp.120301 | menisco, ramp, LCA, adolescenti | aperto — 🟢 nessun numero nell'abstract; lacune dichiarate su follow-up e algoritmi; solo abstract

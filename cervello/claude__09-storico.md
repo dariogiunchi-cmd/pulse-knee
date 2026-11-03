@@ -8,9 +8,25 @@
 > `## AAAA-MM-GG  ·  n papers · n rossi · n arancioni`
 > poi: PICK, e l'elenco compatto delle schede con PMID/DOI.
 
-*Ultimo aggiornamento: 2 novembre 2026.*
+*Ultimo aggiornamento: 3 novembre 2026.*
 
 ---
+
+## 2026-11-03 · 5 papers · 0 rossi · 0 arancioni
+PICK: The Journal of arthroplasty — Revisione sistematica con metanalisi (Ade-Conde, Son, Lanting, Howard, Khalik; McMaster e Western University; livello III), marcatori infiammatori dopo protesi totale robotica contro manuale, 14 studi, 15 coorti, 2.858 ginocchia (1.448 robotiche, 1.410 manuali): CRP giorno 1 differenza media −4,8 mg/L (p = 0,017), giorno 3 −9,6 mg/L (p = 0,017); globuli bianchi giorno 3 −0,49 ×10⁹/L (p = 0,028); rapporto neutrofili/linfociti giorno 3 −0,68 (p = 0,040); nessuna differenza a un mese; tempo operatorio +11,4 minuti (p < 0,001); quattro significativi su dodici confronti, intervalli di confidenza non riportati; solo abstract
+- 🟢 PICK sopra · PMID 42971445 · 10.1016/j.arth.2026.10.035 (verde: protesi robotica; non cambia l'indicazione, nessun esito clinico)
+- 🟢 Journal of biomechanics — Studio trasversale (Ghani, Lucron, Chan, Paton; UCL, Londra), 42 persone dopo ricostruzione del LCA al ritorno alla corsa: deficit dell'impulso concentrico monopodalico Δ 1,3 N·s/kg (d = 1,49; p < 0,001); R aggiustato 0,25-0,38 con la forza di corsa; innesto non riportato; non muove T4; solo abstract · PMID 42967446 · 10.1016/j.jbiomech.2026.113644
+- ⚪ The Knee — Coorte retrospettiva su database Epic Cosmos (Daley, Yarden, Diaz-Coto, Moschetti; Dartmouth-Hitchcock), protesi totale primaria sotto i 40 anni (3.177) contro oltre i 65 (698.662): artrosi primaria, infezione a 90 giorni OR 3,16 (IC 95% 2,29-4,35), reintervento OR 3,91 (IC 95% 3,34-4,58); solo abstract · PMID 42971029 · 10.1016/j.knee.2026.104663
+- ⚪ The Journal of arthroplasty — Coorte retrospettiva su database nazionale (Magaldi, Smith, Ong, Post, Ponzio, Ong; Jefferson e Rothman), revisione per instabilità, 2.671 singolo componente contro 4.773 più componenti: sopravvivenza a cinque anni 85,4% contro 86,7% (HR 1,083; IC 95% 0,921-1,273); quota del singolo componente dal 25,6% al 47,1%; solo abstract · PMID 42971444 · 10.1016/j.arth.2026.10.037
+- ⚪ The Journal of arthroplasty — Coorte retrospettiva monocentrica (Jager, Winnock de Grave, Ryckaert, Tampere, Luyckx; AZ Delta, Roeselare), monocompartimentale laterale a piatto fisso, 78 pazienti (85 ginocchia): sopravvivenza di Kaplan-Meier 91,7% a cinque anni, 90,6% a 10 e 15; otto revisioni; nessun confronto, nessun IC; solo abstract · PMID 42971441 · 10.1016/j.arth.2026.10.038
+CITAZIONI: verificate 5/5 su PubMed MCP — ogni PMID riaperto con get_article_metadata e confrontato su titolo, rivista e DOI; di tutte e cinque è stato letto solo l'abstract. Anche gli 11 brevi (compreso 42971443, database di rete sulle complicanze della protesi totale, spostato dai brevi perché consecutivo a 42971444 e 42971445 e quindi bloccato dal controllo sulle progressioni) e le 3 SCOPERTE sono stati riaperti su PubMed (titolo, rivista e DOI).
+STUDI MUTI: 4 — scheda 1 (marcatori surrogati, quattro su dodici confronti senza correzione), 2 (42 persone, trasversale, innesto non riportato), 4 (HR 1,083 con IC fino a 1,273: non esclude +27%), 5 (85 ginocchia, otto eventi, nessun confronto).
+DUELLO: nessuno oggi.
+TENSIONI MOSSE: nessuna. La scheda 2 non riporta l'innesto né il reinfortunio: non muove T4. Nessuna delle altre schede tocca T1, T2, T3, T5.
+SUGGERIMENTO (SUGGQ): invariato — Christoph Kittl (Università di Münster), nessun segnale arrivato per farlo ruotare.
+INDUSTRIA: nessun richiamo nuovo — openFDA conferma i 15 richiami già noti (ultimo del 30 luglio, Howmedica Osteonics/Stryker). Raccoglitore del 2 novembre alle 09:31 UTC (non della notte appena trascorsa, tutte le fonti «ok», circa 20 ore): usato come il più recente disponibile. Linee guida: nessun consensus nuovo nel perimetro. Destino dei verdetti: nessun citante nuovo.
+RITRATTAZIONI: Crossref (raccoglitore, 612 DOI citati) 0 colpiti. PubMed: riaperti i PMID di schede, brevi e scoperte di oggi e 20 dei 30 PMID citati negli ultimi quattro giorni (il connettore ne restituisce un numero limitato per chiamata); ritirato solo 37067550, già noto dal 19 ottobre e mai citato come scheda. Ricontrollo di ciascun PMID dello storico: NON VERIFICATO.
+BREVI DI OGGI (non nello storico dei lavori; possono diventare schede): 42967377, 42971442, 42969010, 42971446, 42971522, 42967026, 42968195, 42969770, 42971462, 42970703, 42971443. SCOPERTE: 42970827, 42969349, 42971253.
 
 ## 2026-11-02 · 7 papers · 0 rossi · 0 arancioni
 PICK: BMC Musculoskeletal Disorders — Coorte retrospettiva con controlli (Byun, Kim, Choi, Jung, Chung, Jung, Jang, Moon; Yonsei, Seul), rottura degenerativa del menisco mediale, 84 pazienti di 40-60 anni senza artrosi oltre KL 1 (29 radice posteriore, 27 orizzontale, 28 controlli con contusione): dopo IPTW BMI più alto (p = 0,009) e HKA più in varo (p = 0,048) nei pazienti con rottura; radice contro controlli BMI OR 1,534 (IC 95% 1,187-1,983) e HKA OR 1,685 (IC 95% 1,177-2,412), radice contro orizzontali BMI OR 1,585 (IC 95% 1,218-2,062) e HKA OR 1,550 (IC 95% 1,143-2,100); nessun predittore indipendente per la rottura orizzontale; pendenza tibiale non indipendente; testo completo letto (PMC)
