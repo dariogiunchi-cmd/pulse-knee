@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-02T09:31:15Z",
+ "generato": "2026-11-03T08:32:43Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -71,7 +71,7 @@
      },
      {
       "recalling_firm": "United Orthopedic Corp.",
-      "product_description": "Brand Name: U2 Total Knee System\r\nProduct Name: PSA Box Trial, L, #1-6 and PSA Box Trial, R, #1-6\r\nModel/Catalog Number: 9323-5511 thru 9323-5516 and 9323-5521 thru 9323-5526\r\nSoftware Version: N/A\r\nProduct Description: Knee femur prosthesis trial, reusable\r\nComponent: No, N/A",
+      "product_description": "Brand Name: U2 Total Knee System\nProduct Name: PSA Box Trial, L, #1-6 and PSA Box Trial, R, #1-6\nModel/Catalog Number: 9323-5511 thru 9323-5516 and 9323-5521 thru 9323-5526\nSoftware Version: N/A\nProduct Description: Knee femur prosthesis trial, reusable\nComponent: No, N/A",
       "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
       "root_cause_description": "Process design",
       "event_date_initiated": "2026-05-20",
@@ -80,7 +80,7 @@
      },
      {
       "recalling_firm": "United Orthopedic Corp.",
-      "product_description": "Brand Name: USTAR II Knee System\r\nProduct Name: Hinge Box Trial, L, #1-6 and Hinge Box Trial, R, #1-6\r\nModel/Catalog Number: 9325-5711 thru 9325-5716 and 9325-5721 thru 9325-5726\r\nSoftware Version: N/A\r\nProduct Description: Knee femur prosthesis trial, reusable\r\nComponent: No, N/A",
+      "product_description": "Brand Name: USTAR II Knee System\nProduct Name: Hinge Box Trial, L, #1-6 and Hinge Box Trial, R, #1-6\nModel/Catalog Number: 9325-5711 thru 9325-5716 and 9325-5721 thru 9325-5726\nSoftware Version: N/A\nProduct Description: Knee femur prosthesis trial, reusable\nComponent: No, N/A",
       "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
       "root_cause_description": "Process design",
       "event_date_initiated": "2026-05-20",
@@ -89,7 +89,7 @@
      },
      {
       "recalling_firm": "United Orthopedic Corp.",
-      "product_description": "Brand Name: U2 Total Knee System\r\nProduct Name: Femoral valgus adaptor, left and right\r\nModel/Catalog Number: 9323-5333 and 9323-5334\r\nSoftware Version: N/A\r\nProduct Description: Manual Orthopedic Surgical Instrument\r\nComponent: No",
+      "product_description": "Brand Name: U2 Total Knee System\nProduct Name: Femoral valgus adaptor, left and right\nModel/Catalog Number: 9323-5333 and 9323-5334\nSoftware Version: N/A\nProduct Description: Manual Orthopedic Surgical Instrument\nComponent: No",
       "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
       "root_cause_description": "Process design",
       "event_date_initiated": "2026-05-20",
@@ -98,7 +98,7 @@
      },
      {
       "recalling_firm": "United Orthopedic Corp.",
-      "product_description": "Brand Name: U2 Total Knee System\r\nProduct Name: Femoral valgus offset adaptor, 2mm, 4mm, 6mm, left and Femoral valgus offset adaptor, 2mm, 4mm, 6mm, right\r\nModel/Catalog Number: 9323-5335, 9323-5337, 9323-5339 and 9323-5336, 9323-5338, 9323-5340\r\nSoftware Version: N/A\r\nProduct Description: Manual Orthopedic Surgical Instrument\r\nComponent: No",
+      "product_description": "Brand Name: U2 Total Knee System\nProduct Name: Femoral valgus offset adaptor, 2mm, 4mm, 6mm, left and Femoral valgus offset adaptor, 2mm, 4mm, 6mm, right\nModel/Catalog Number: 9323-5335, 9323-5337, 9323-5339 and 9323-5336, 9323-5338, 9323-5340\nSoftware Version: N/A\nProduct Description: Manual Orthopedic Surgical Instrument\nComponent: No",
       "reason_for_recall": "Due to an incomplete process of the component screw by a subcontractor which prevents the properly assembling of stem trail.",
       "root_cause_description": "Process design",
       "event_date_initiated": "2026-05-20",
@@ -287,6 +287,36 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Aggiornamento di pubblicazioni relative ai prodotti parenterali senza destinazione medica",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/problemi-di-delimitazione/parenteralia-im-fokus.html",
+      "data": "Mon, 02 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Patologie oculari in corso di trattamento con amiodarone",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/farmacovigilanza/vigilance-news/amiodarone-treatment-eye-disorders.html",
+      "data": "Mon, 02 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Out-of-Stock – Duvaxyn WNV ad us. vet., émulsion injectable pour chevaux",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/tierarzneimittel/medicamenti-per-uso-veterinario/out-of-stock-tam/out-of-stock-duvaxyn-wnv-ad-us-vet-injektionsemulsion-fuer-pferde.html",
+      "data": "Mon, 02 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Informazioni integrative sulla guida complementare «Importazione di un medicamento per uso umano ai sensi dell’art. 14 cpv. 2 e ...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/ergaenzende-information-zur-wegleitung-einfuhr-eines-ham-nach-art-14-parallelimport.html",
+      "data": "Mon, 02 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Presentazione delle notifiche di modifiche sostanziali tramite il portale di Swissmedic a partire dal 1° novembre 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/einreichung-von-meldungen-von-wesentlichen-aenderungen-ueber-das-swissmedic-portal.html",
+      "data": "Mon, 02 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Modifica del «Formulario DMF»",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/anpassung-fo-dmf.html",
       "data": "Sun, 01 Nov 2026 00:00:00 +0000"
@@ -346,40 +376,10 @@
       "data": "Mon, 12 Oct 2026 00:00:00 +0000"
      },
      {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Out-of-Stock – Syntocinon spray nasal, solution ; Oxytocin 40 U.I./ml",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-syntocinon-nasenspray-loesung-oxytocin-40-i-e-ml.html",
-      "data": "Mon, 12 Oct 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Conformità alle GMP dei fabbricanti esteri",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/gmp-konformitaet-auslaendische-hersteller.html",
-      "data": "Fri, 09 Oct 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Adeguamento della guida complementare Importazione di un medicamento per uso umano ai sensi dell’art. 14 cpv. 2 e 3 LATer (impor...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/anpassung-der-wegleitung-einfuhr-eines-humanarzneimittels-nach-art-14-abs-2-und-3-hmg-parallelimport.html",
-      "data": "Thu, 01 Oct 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Revisione della guida complementare Omologazione Biosimilari",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/revision-der-wegleitung-zulassung-biosimilar.html",
-      "data": "Thu, 01 Oct 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Adeguamenti necessari per il rilascio delle autorizzazioni d’esercizio e dei certificati GMP per i fabbricanti di principi attiv...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/notwendige-anpassungen-fuer-die-ausstellung-von-betriebsbewilligungen-und-gmp-zertifikaten-fuer-wirkstoffhersteller.html",
-      "data": "Thu, 01 Oct 2026 00:00:00 +0000"
-     },
-     {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
-      "titolo": "Out-of-Stock – Cablivi 10 mg, poudre et solvent pour solution injectableOut-of-Stock – Syntocinon spray nasal, solution ; Oxytoc...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-cablivi-10-mg.html",
-      "data": "Mon, 26 Oct 2026 18:11:36 +0000"
+      "titolo": "Out-of-Stock – Duvaxyn WNV ad us. vet., émulsion injectable pour chevauxOut-of-Stock – Cablivi 10 mg, poudre et solvent pour sol...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/tierarzneimittel/medicamenti-per-uso-veterinario/out-of-stock-tam/out-of-stock-duvaxyn-wnv-ad-us-vet-injektionsemulsion-fuer-pferde.html",
+      "data": "Mon, 02 Nov 2026 13:50:39 +0000"
      }
     ]
    }
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 612,
+    "doi_citati_controllati": 617,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -793,6 +793,12 @@
    "esito": "ok",
    "dati": {
     "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Osteochondral Lesion Repair Using the ChondralTak™ Technique",
+      "link": "https://www.youtube.com/watch?v=JK4micy6SwU",
+      "data": "2026-11-02"
+     },
      {
       "canale": "Arthrex",
       "titolo": "StayPort™ Hip Cannula",
@@ -1227,8 +1233,12 @@
     {
      "pmid": "42539917",
      "titolo": "OJSM — Il LCA non riduce l'artrosi ma abbassa le protesi",
-     "citanti": [],
-     "nuovi": []
+     "citanti": [
+      "42866276"
+     ],
+     "nuovi": [
+      "42866276"
+     ]
     },
     {
      "pmid": "42547948",
@@ -1483,188 +1493,8 @@
    }
   },
   "preprint": {
-   "esito": "ok",
-   "dati": {
-    "finestra_giorni": 30,
-    "voci": [
-     {
-      "titolo": "Clinical Outcomes of Anterior Cruciate Ligament Reconstruction With and Without Lateral Extra-articular Tenodesis in Non-Athletic Patients: A Retrospective Comp",
-      "dove": "archivio preprint",
-      "data": "2026-11-01",
-      "doi": "10.21203/rs.3.rs-11281275/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11281275/v1"
-     },
-     {
-      "titolo": "MRI Assessment of Patellofemoral Morphology and Chondromalacia Severity in Young Soccer Players: A Case-Control Study",
-      "dove": "archivio preprint",
-      "data": "2026-11-01",
-      "doi": "10.21203/rs.3.rs-11029051/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11029051/v1"
-     },
-     {
-      "titolo": "Septic arthritis superimposed on an arthritic knee is a surgical dilemma: A 10-year experience with two-stage total knee arthroplasty – the first reported study",
-      "dove": "archivio preprint",
-      "data": "2026-11-01",
-      "doi": "10.21203/rs.3.rs-11065773/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11065773/v1"
-     },
-     {
-      "titolo": "Association Between Lesion-Directed Positioning Management and Early Functional Recovery Following PRP-Augmented Meniscal Repair: A Retrospective Cohort Study",
-      "dove": "archivio preprint",
-      "data": "2026-11-01",
-      "doi": "10.21203/rs.3.rs-11024297/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11024297/v1"
-     },
-     {
-      "titolo": "Normalised plantar pressure measures are reliable, whereas absolute force and gait-curve temporal measures are not: a test–retest reliability study of a plantar",
-      "dove": "archivio preprint",
-      "data": "2026-11-01",
-      "doi": "10.21203/rs.3.rs-11248193/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11248193/v1"
-     },
-     {
-      "titolo": "Anatomically matched spatial comparisons identify Trps1 as a regulator of knee interzone formation",
-      "dove": "archivio preprint",
-      "data": "2026-10-30",
-      "doi": "10.64898/2026.10.28.762640",
-      "url": "https://doi.org/10.64898/2026.10.28.762640"
-     },
-     {
-      "titolo": "Are Longer Waits Associated with Lower Satisfaction and Worse Recovery? A Retrospective Observational Study of Hip and Knee Replacement in England",
-      "dove": "archivio preprint",
-      "data": "2026-10-30",
-      "doi": "10.64898/2026.10.28.26366729",
-      "url": "https://doi.org/10.64898/2026.10.28.26366729"
-     },
-     {
-      "titolo": "Neural shape models enable cohort-scale simulation of knee cartilage mechanics",
-      "dove": "archivio preprint",
-      "data": "2026-10-30",
-      "doi": "10.64898/2026.10.29.26366866",
-      "url": "https://doi.org/10.64898/2026.10.29.26366866"
-     },
-     {
-      "titolo": "Energy-based plastic design and seismic evaluation of doubly buckling-restrained knee-braced frames",
-      "dove": "archivio preprint",
-      "data": "2026-10-28",
-      "doi": "10.21203/rs.3.rs-11487370/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11487370/v1"
-     },
-     {
-      "titolo": "Extending Musculoskeletal Modelling Validation Beyond Gait: Knee Loading and Kinematics During Daily Activities",
-      "dove": "archivio preprint",
-      "data": "2026-10-27",
-      "doi": "10.64898/2026.10.24.761008",
-      "url": "https://doi.org/10.64898/2026.10.24.761008"
-     },
-     {
-      "titolo": "Cross-cultural adaptation and longitudinal measurement properties of the Simplified Chinese version of the original 22-item Knee Self- Efficacy Scale after ante",
-      "dove": "archivio preprint",
-      "data": "2026-10-27",
-      "doi": "10.21203/rs.3.rs-10961753/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10961753/v1"
-     },
-     {
-      "titolo": "Knee extension motor imagery paired with single-pulse TMS facilitates corticospinal excitability in the tibialis anterior muscle, but not in the rectus femoris ",
-      "dove": "archivio preprint",
-      "data": "2026-10-27",
-      "doi": "10.21203/rs.3.rs-11315069/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11315069/v1"
-     },
-     {
-      "titolo": "Comparative Functional Outcomes of Patellar Resurfacing in Patients Undergoing Posterior Stabilized and Cruciate Retaining Total Knee Arthroplasty: A Prospectiv",
-      "dove": "archivio preprint",
-      "data": "2026-10-27",
-      "doi": "10.21203/rs.3.rs-9957570/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-9957570/v1"
-     },
-     {
-      "titolo": "Biocompatibility and Osteochondral Regenerative Potential of Hydroxyapatite-Based Hydrogels in a Vietnamese Pig Knee Defect Model",
-      "dove": "archivio preprint",
-      "data": "2026-10-26",
-      "doi": "10.20944/preprints202610.2433.v1",
-      "url": "https://doi.org/10.20944/preprints202610.2433.v1"
-     },
-     {
-      "titolo": "Static Antibiotic Spacers in Periprosthetic Knee Infection: Indications, Technique, and Outcomes",
-      "dove": "archivio preprint",
-      "data": "2026-10-26",
-      "doi": "10.20944/preprints202610.2482.v1",
-      "url": "https://doi.org/10.20944/preprints202610.2482.v1"
-     },
-     {
-      "titolo": "CORI-Assisted Personalized Alignment Versus Conventional Mechanical Alignment in Total Knee Arthroplasty: A Retrospective Comparative Study",
-      "dove": "archivio preprint",
-      "data": "2026-10-27",
-      "doi": "10.20944/preprints202610.2576.v1",
-      "url": "https://doi.org/10.20944/preprints202610.2576.v1"
-     },
-     {
-      "titolo": "An exploratory analysis of circulating cytokine profiles, pain-associated transcripts and autoantibody responses associated with treatment response in knee oste",
-      "dove": "archivio preprint",
-      "data": "2026-10-26",
-      "doi": "10.64898/2026.10.25.26365740",
-      "url": "https://doi.org/10.64898/2026.10.25.26365740"
-     },
-     {
-      "titolo": "Association of CPAK Phenotypes With Valgus Overcorrection After Robotic-Assisted Total Knee Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-10-24",
-      "doi": "10.21203/rs.3.rs-11164350/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11164350/v1"
-     },
-     {
-      "titolo": "Electroacupuncture Alleviates Pain in Rats with Knee Osteoarthritis by Modulating Autophagy via the PI3K/Akt/mTOR Signaling Pathway",
-      "dove": "archivio preprint",
-      "data": "2026-10-23",
-      "doi": "10.21203/rs.3.rs-11302390/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11302390/v1"
-     },
-     {
-      "titolo": "Outcome Differences in Robotic vs Traditional Total Knee Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-10-23",
-      "doi": "10.21203/rs.3.rs-11139026/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11139026/v1"
-     },
-     {
-      "titolo": "Case Report: Candida auris Prosthetic Knee Infection: The First Reported Case in Tunisia",
-      "dove": "archivio preprint",
-      "data": "2026-10-23",
-      "doi": "10.12688/f1000research.192537.1",
-      "url": "https://doi.org/10.12688/f1000research.192537.1"
-     },
-     {
-      "titolo": "N-Acetylglucosamine ameliorates knee osteoarthritis by enhancing UDP-GlcNAc conversion and chondrocyte DNA repair capacity",
-      "dove": "archivio preprint",
-      "data": "2026-10-22",
-      "doi": "10.64898/2026.10.21.760584",
-      "url": "https://doi.org/10.64898/2026.10.21.760584"
-     },
-     {
-      "titolo": "Feasibility of Distributed Wearable Ultrasound for Detecting Neuromuscular Coordination Differences After Knee Injury",
-      "dove": "archivio preprint",
-      "data": "2026-10-20",
-      "doi": "10.64898/2026.10.18.26365835",
-      "url": "https://doi.org/10.64898/2026.10.18.26365835"
-     },
-     {
-      "titolo": "​​Shallow Medial Tibial Plateau Depth is Independently Associated with Medial Meniscus Posterior Root Tear after Adjustment for Alignment and Morphological Para",
-      "dove": "archivio preprint",
-      "data": "2026-10-20",
-      "doi": "10.21203/rs.3.rs-11178271/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11178271/v1"
-     },
-     {
-      "titolo": "Association Between Q-Angle and Patellofemoral Pain Syndrome in University Athletes: A Cross-Sectional Study",
-      "dove": "archivio preprint",
-      "data": "2026-10-19",
-      "doi": "10.20944/preprints202610.1651.v1",
-      "url": "https://doi.org/10.20944/preprints202610.1651.v1"
-     }
-    ],
-    "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
-   }
+   "esito": "non risposto: HTTPError HTTP Error 503: ",
+   "dati": null
   }
  }
 }
