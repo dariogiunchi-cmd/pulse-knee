@@ -8,9 +8,25 @@
 > `## AAAA-MM-GG  ·  n papers · n rossi · n arancioni`
 > poi: PICK, e l'elenco compatto delle schede con PMID/DOI.
 
-*Ultimo aggiornamento: 3 novembre 2026.*
+*Ultimo aggiornamento: 4 novembre 2026.*
 
 ---
+
+## 2026-11-04 · 5 papers · 0 rossi · 1 arancione
+PICK: Orthopaedic journal of sports medicine — Coorte retrospettiva monocentrica (Hamad, Joachim, Chung, Wu, Liu, Silva, Bowen, Baghdadi; UCLA; livello 3), tenodesi laterale e movimento a tre mesi dopo LCA pediatrico, 412 ricostruzioni sotto i 18 anni (età media 16,3 anni; quadricipite 65%; LET in 167): movimento limitato 16,8% con LET contro 10,2% (OR aggiustato 2, IC 95% 1,01-3,95; p = 0,046); mobilizzazione in anestesia o lisi 7/167 contro 1/245 (p = 0,009); innesto non associato (p = 0,450); testo completo letto (PMC)
+- 🟠 PICK sopra · PMID 42973674 · 10.1177/23259671261467539 (arancione: tocca il LET su tutti i LCA; costrutto profondo, non il suo; prezzo precoce, non prova di artrofibrosi persistente)
+- 🟢 Knee surgery, sports traumatology, arthroscopy — Revisione sistematica con metanalisi (Pineda, Peña, Arriagada, Ugarte, Olivieri, Ollivier; Santiago del Cile e Marsiglia), osteotomia tibiale di chiusura anteriore con LCA, 16 studi osservazionali, 664 pazienti: fallimento dell'innesto 1,7% (IC 95% 0,3-7,9), materiale sintomatico 7,8%, certezza molto bassa; solo abstract · PMID 42975567 · 10.1002/ksa.70665
+- 🟢 Orthopaedic journal of sports medicine — Studio retrospettivo (Takahashi, Sato, Jo, Ebata, Hara, Iwasaki e altri; Hokkaido), osteotomia tibiale aperta mediale, 44 ginocchia: edema osseo trocleare e KOOS Sintomi a due anni β −7,18 (IC 95% da −13,48 a −0,88; p = 0,03); solo abstract · PMID 42973684 · 10.1177/23259671261480489
+- 🟢 Sports medicine and arthroscopy review — Revisione narrativa (Paine, Veerkamp, Butler, Dennis, Brady, Shubin Stein, Parikh e altri; HSS), aggiornamento sulla coorte JUPITER, instabilità rotulea e MPFL; nessun numero nell'abstract; solo abstract · PMID 42972655 · 10.1097/JSA.0000000000000469
+- 🟢 Knee surgery, sports traumatology, arthroscopy — Sottogruppo di RCT (Davies, Banziger, Lawless, O'Brien, Ebert e altri; Perth, DOSTAR), prelievo del gracile, 38 pazienti: volume del gracile −1,6 ± 4,6 contro +2,8 ± 6,8 (p = 0,026), adduttore lungo p = 0,020; hamstring, non il suo innesto; solo abstract · PMID 42975569 · 10.1002/ksa.70671
+CITAZIONI: verificate 5/5 su PubMed MCP — ogni PMID riaperto con get_article_metadata e confrontato su titolo, rivista e DOI; testo completo letto solo per la scheda 1 (PMC13724889), solo abstract per le altre quattro. Anche i 10 brevi e le 3 SCOPERTE sono stati riaperti su PubMed (titolo, rivista e DOI).
+STUDI MUTI: 5 — scheda 1 (innesto non associato ma RR non aggiustato 1,65 con IC 0,73-3,76; 8 eventi procedurali), 2 (certezza molto bassa, nessun confronto con la sola ricostruzione), 3 (44 ginocchia, IC fino a −0,88), 4 (nessun numero), 5 (38 pazienti, ipertrofia del gracile p = 0,103; RR grezzo 0,53, IC 0,27-1,04).
+DUELLO: nessuno oggi.
+TENSIONI MOSSE: T1a e T1b — la scheda 1 aggiunge il primo dato sul costo precoce del LET con quadricipite in età adolescenziale (non muove l'indicazione) e un costrutto profondo, non il suo. La scheda 2 non chiude la domanda dell'editoriale sullo slope alto.
+SUGGERIMENTO (SUGGQ): invariato — Christoph Kittl (Università di Münster), nessun segnale arrivato per farlo ruotare.
+INDUSTRIA: nessun richiamo nuovo — openFDA conferma i 15 richiami già noti (ultimo del 30 luglio, Howmedica Osteonics/Stryker). Raccoglitore del 3 novembre alle 09:33 UTC (non della notte appena trascorsa, tutte le fonti «ok», circa 20 ore): usato come il più recente disponibile. Linee guida: nessun consensus nuovo nel perimetro (l'unica voce nuova, PMID 42953907, riguarda la caviglia). Destino dei verdetti: nessun citante nuovo. Trial: nessuna variazione di stato nelle tensioni.
+RITRATTAZIONI: Crossref (raccoglitore, 617 DOI citati) 0 colpiti. PubMed: riaperti i PMID di schede, brevi e scoperte di oggi e i 16 PMID di schede e brevi di ieri, nessuno ritirato. Ricontrollo di ciascun PMID dello storico: NON VERIFICATO.
+BREVI DI OGGI (non nello storico dei lavori; possono diventare schede): 42975564, 42974418, 42974501, 42973939, 42973963, 42972238, 42977153, 42975578, 42975672, 42972652. SCOPERTE: 42977630, 42976294, 42973591.
 
 ## 2026-11-03 · 5 papers · 0 rossi · 0 arancioni
 PICK: The Journal of arthroplasty — Revisione sistematica con metanalisi (Ade-Conde, Son, Lanting, Howard, Khalik; McMaster e Western University; livello III), marcatori infiammatori dopo protesi totale robotica contro manuale, 14 studi, 15 coorti, 2.858 ginocchia (1.448 robotiche, 1.410 manuali): CRP giorno 1 differenza media −4,8 mg/L (p = 0,017), giorno 3 −9,6 mg/L (p = 0,017); globuli bianchi giorno 3 −0,49 ×10⁹/L (p = 0,028); rapporto neutrofili/linfociti giorno 3 −0,68 (p = 0,040); nessuna differenza a un mese; tempo operatorio +11,4 minuti (p < 0,001); quattro significativi su dodici confronti, intervalli di confidenza non riportati; solo abstract
