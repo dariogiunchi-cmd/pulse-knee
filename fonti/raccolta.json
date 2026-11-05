@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-05T08:30:02Z",
+ "generato": "2026-11-05T09:29:49Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -1283,6 +1283,13 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Wearable Estimation of Knee Joint Contact Forces: SiMPLeSENSE, a Simulated-IMU Pipeline Validated Against In Vivo Loads",
+      "dove": "archivio preprint",
+      "data": "2026-11-03",
+      "doi": "10.64898/2026.11.03.763565",
+      "url": "https://doi.org/10.64898/2026.11.03.763565"
+     },
+     {
       "titolo": "Efficacy of Topical 5% Doxepin Cream Compared with Diclofenac Gel and Placebo for Knee Osteoarthritis: A Randomized Double-Blind Clinical Trial",
       "dove": "archivio preprint",
       "data": "2026-11-03",
@@ -1449,13 +1456,6 @@
       "data": "2026-10-23",
       "doi": "10.21203/rs.3.rs-11302390/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-11302390/v1"
-     },
-     {
-      "titolo": "Outcome Differences in Robotic vs Traditional Total Knee Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-10-23",
-      "doi": "10.21203/rs.3.rs-11139026/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11139026/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
