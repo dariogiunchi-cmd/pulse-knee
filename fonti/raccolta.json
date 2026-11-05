@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-04T09:13:22Z",
+ "generato": "2026-11-05T08:30:02Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,18 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Save the Date: Clinical Trials Symposium 2027",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/veranstaltungen/clinical-trials-symposium.html",
+      "data": "Wed, 04 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "DHPC – Respreeza (alpha-1-proteinasi inhibitor humanum)",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-respreeza-alpha-1-proteinasi-inhibitor-humanum.html",
+      "data": "Wed, 04 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Swissmedic Vigilance-News Edition 37",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/farmacovigilanza/vigilance-news/vigilance-news/vigilance-news-37-uebersicht.html",
       "data": "Tue, 03 Nov 2026 00:00:00 +0000"
@@ -362,18 +374,6 @@
       "titolo": "Valutatore/trice Qualità/CMC (80–100%) – Specializzazione Vaccini ed Emoderivati",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/posti-liberi/quality-cmc-assessor.html",
       "data": "Wed, 21 Oct 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Nuovo approccio strategico volto a ridurre al minimo gli esperimenti su animali nello sviluppo di medicamenti",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/neuer-strategischer-ansatz-zur-minimierung-von-tierversuchen-bei-der-entwicklung-von-arzneimitteln.html",
-      "data": "Tue, 20 Oct 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "La 13e édition de la Pharmacopoea Helvetica",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/legal/farmacopea/informazioni-importanti/pharmacopoea-helvetica-13.html",
-      "data": "Fri, 16 Oct 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
@@ -794,6 +794,12 @@
    "dati": {
     "video": [
      {
+      "canale": "Stryker",
+      "titolo": "Driven to move MedTech forward",
+      "link": "https://www.youtube.com/watch?v=y6Gt331N-sI",
+      "data": "2026-11-04"
+     },
+     {
       "canale": "Arthrex",
       "titolo": "Going Pro With the Syndesmosis TightRope® PRO Implant",
       "link": "https://www.youtube.com/watch?v=ZlvX41qKVDM",
@@ -828,12 +834,6 @@
       "titolo": "Tensionable Knotless Remplissage Technique Using the Knotless FiberTak® Remplissage Implant System",
       "link": "https://www.youtube.com/watch?v=jf_b-E4NcXU",
       "data": "2026-10-26"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Percutaneous Pars Fracture Fixation Surgical Technique - Saqib Hasan, MD",
-      "link": "https://www.youtube.com/watch?v=_0cZzPzivLc",
-      "data": "2026-10-22"
      }
     ]
    }
@@ -1265,227 +1265,8 @@
    ]
   },
   "linee_guida": {
-   "esito": "ok",
-   "dati": {
-    "finestra_giorni": 60,
-    "voci": [
-     {
-      "pmid": "42953907",
-      "titolo": "Surgical Intervention for Small Osteochondral Lesions (<1 cm): Proceedings of the International Consensus Meeting on Cartilage Repair of the Ankle.",
-      "rivista": "Foot & ankle specialist",
-      "data": "2026 Oct 29",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42953767",
-      "titolo": "No significant differences between large language model prompting strategies and human experts in summarisation of 'the formal EU-US meniscus rehabilitation consensus: An ESSKA-AOS",
-      "rivista": "Journal of experimental orthopaedics",
-      "data": "2026 Oct 28",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42896985",
-      "titolo": "[Interpretation of the 2026 Asia-Pacific Expert Consensus on Robotic-assisted Hip and Knee Arthroplasty: From precise execution to individualized decision-making].",
-      "rivista": "Zhongguo xiu fu chong jian wai ke za zhi = Zhongguo xiufu chongjian waike zazhi = Chinese journal of reparative and reconstructive surgery",
-      "data": "2026 Oct 15",
-      "tipi": [
-       "Journal Article",
-       "Consensus Statement",
-       "Review"
-      ]
-     },
-     {
-      "pmid": "42893304",
-      "titolo": "Barriers and Facilitators Influencing Physiotherapists' Adherence to Clinical Practice Guidelines and Return to Sport Criteria after Anterior Cruciate Ligament Reconstruction: A Qu",
-      "rivista": "International journal of sports physical therapy",
-      "data": "2026 Oct 2",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42880894",
-      "titolo": "Sex differences in clinical need, willingness, and surgeon recommendations for total knee arthroplasty: a cross-sectional study.",
-      "rivista": "The Journal of rheumatology",
-      "data": "2026 Oct 15",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42875874",
-      "titolo": "UEFA consensus guidelines on anterior cruciate ligament (ACL) injury in Women's football - part one: risk factors and prevention.",
-      "rivista": "Science & medicine in football",
-      "data": "2026 Oct 14",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42875873",
-      "titolo": "UEFA consensus guidelines on anterior cruciate ligament (ACL) injury in women's football - Part Two: rehabilitation, return to play, and players' perceptions.",
-      "rivista": "Science & medicine in football",
-      "data": "2026 Oct 14",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42853098",
-      "titolo": "Validation of the European Bone & Joint Infection Society recommendations for debridement, antibiotics, and implant retention in hip and knee periprosthetic joint infection : a stu",
-      "rivista": "The bone & joint journal",
-      "data": "2026 Oct 1",
-      "tipi": [
-       "Journal Article",
-       "Multicenter Study",
-       "Validation Study"
-      ]
-     },
-     {
-      "pmid": "42852545",
-      "titolo": "Developing a new CT-based bone defect classification in revision knee arthroplasty : a Delphi consensus study.",
-      "rivista": "Bone & joint open",
-      "data": "2026 Oct 7",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42840866",
-      "titolo": "Return to Sport Guidelines Following Total Knee Arthroplasty: A Scoping Review.",
-      "rivista": "Physiotherapy Canada. Physiotherapie Canada",
-      "data": "2026 Jun 8",
-      "tipi": [
-       "Journal Article",
-       "Systematic Review"
-      ]
-     },
-     {
-      "pmid": "42825587",
-      "titolo": "American Academy of Orthopaedic Surgeons Clinical Practice Guideline Summary: Management of Acute Isolated Meniscal Pathology: Erratum.",
-      "rivista": "The Journal of the American Academy of Orthopaedic Surgeons",
-      "data": "2026 Oct 15",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42825585",
-      "titolo": "AAOS Clinical Practice Guideline Summary: Management of Osteoarthritis of the Knee (Nonarthroplasty), Third Edition: Erratum.",
-      "rivista": "The Journal of the American Academy of Orthopaedic Surgeons",
-      "data": "2026 Oct 15",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42825584",
-      "titolo": "AAOS Clinical Practice Guideline Summary: Prevention of Total Hip and Knee Arthroplasty Periprosthetic Joint Infection in Patients Undergoing Dental Procedures: Erratum.",
-      "rivista": "The Journal of the American Academy of Orthopaedic Surgeons",
-      "data": "2026 Oct 15",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42821083",
-      "titolo": "Correction: Genicular Artery Embolization for Chronic Knee Pain: Expert Consensus Recommendations on Indications, Technique and Clinical Care Using a Delphi Process.",
-      "rivista": "Cardiovascular and interventional radiology",
-      "data": "2026 Oct 1",
-      "tipi": [
-       "Published Erratum"
-      ]
-     },
-     {
-      "pmid": "42809374",
-      "titolo": "The Use of Unloader Bracing in the Management of Knee Osteoarthritis: A Modified Delphi Consensus Study.",
-      "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
-      "data": "2026 Sep 29",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42791228",
-      "titolo": "Unloader Bracing Is a Biomechanically Rational and Clinically Useful Intervention in Selected Patients With Tibiofemoral Joint Cartilage Pathology: A Modified Delphi Consensus Stud",
-      "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
-      "data": "2026 Sep 25",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42771799",
-      "titolo": "Indian expert consensus on prophylactic incisional single-use negative pressure wound therapy in hip and knee arthroplasty: A modified Delphi study.",
-      "rivista": "SICOT-J",
-      "data": "2026 Sep 22",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42763276",
-      "titolo": "Consensus Guidelines for Radiofrequency Ablation of Chronic Knee Pain in Rural Communities.",
-      "rivista": "Pain management nursing : official journal of the American Society of Pain Management Nurses",
-      "data": "2026 Sep 19",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42749319",
-      "titolo": "[Expert consensus on clinical pathway for high-conformity total knee arthroplasty through a minimally invasive surgical approach].",
-      "rivista": "Zhongguo xiu fu chong jian wai ke za zhi = Zhongguo xiufu chongjian waike zazhi = Chinese journal of reparative and reconstructive surgery",
-      "data": "2026 Sep 15",
-      "tipi": [
-       "Journal Article",
-       "Consensus Statement",
-       "English Abstract"
-      ]
-     },
-     {
-      "pmid": "42748364",
-      "titolo": "Formal consensus on fast-track hip and knee arthroplasty: ESSKA/EKA, EHS and APAS recommendations for optimised recovery pathways in joint replacement surgeries.",
-      "rivista": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
-      "data": "2026 Sep 16",
-      "tipi": [
-       "Journal Article",
-       "Consensus Statement"
-      ]
-     },
-     {
-      "pmid": "42732043",
-      "titolo": "Delphi Expert Consensus Identifies Revision Surgery, High-Grade Pivot Shift, and High-Risk Athletes in Pivoting Sports as Indications for Anterolateral Ligament Reconstruction or L",
-      "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
-      "data": "2026 Sep 12",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42711866",
-      "titolo": "Clinical Work-up, Diagnostic Imaging, and Radiographic Classification Systems for Osteochondral Lesions of the Talus: Proceedings of the International Consensus Meetings on Cartila",
-      "rivista": "Foot & ankle specialist",
-      "data": "2026 Sep 8",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42701879",
-      "titolo": "An International Delphi Consensus on Meniscus Radial Tears: From Diagnosis to Management and Rehabilitation.",
-      "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
-      "data": "2026 Sep 6",
-      "tipi": [
-       "Journal Article"
-      ]
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 500: Internal Server Error",
+   "dati": null
   },
   "polso": {
    "esito": "ok",
