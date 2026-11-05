@@ -8,9 +8,12 @@
 > `## AAAA-MM-GG  ·  n papers · n rossi · n arancioni`
 > poi: PICK, e l'elenco compatto delle schede con PMID/DOI.
 
-*Ultimo aggiornamento: 4 novembre 2026.*
+*Ultimo aggiornamento: 5 novembre 2026.*
 
 ---
+
+## 2026-11-05 · 0 papers · 0 rossi · 0 arancioni
+nessun briefing — PubMed non raggiungibile. Il connettore PubMed MCP risponde a get_article_metadata ma ogni search_articles (cinque tentativi, query e filtri diversi, anche la più semplice) restituisce API_ERROR. Senza ricerca non si può fare lo screening della letteratura: schede ricostruite a memoria sarebbero il fallimento che il sistema esiste per impedire (mandato, ⛔). index.html NON modificato: online resta il briefing del 4 novembre. Raccolta notturna (fonti/raccolta.json, generato 2026-11-04T09:13Z) con tutte le fonti «ok», non utilizzata.
 
 ## 2026-11-04 · 5 papers · 0 rossi · 1 arancione
 PICK: Orthopaedic journal of sports medicine — Coorte retrospettiva monocentrica (Hamad, Joachim, Chung, Wu, Liu, Silva, Bowen, Baghdadi; UCLA; livello 3), tenodesi laterale e movimento a tre mesi dopo LCA pediatrico, 412 ricostruzioni sotto i 18 anni (età media 16,3 anni; quadricipite 65%; LET in 167): movimento limitato 16,8% con LET contro 10,2% (OR aggiustato 2, IC 95% 1,01-3,95; p = 0,046); mobilizzazione in anestesia o lisi 7/167 contro 1/245 (p = 0,009); innesto non associato (p = 0,450); testo completo letto (PMC)
