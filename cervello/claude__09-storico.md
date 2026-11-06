@@ -8,9 +8,26 @@
 > `## AAAA-MM-GG  ·  n papers · n rossi · n arancioni`
 > poi: PICK, e l'elenco compatto delle schede con PMID/DOI.
 
-*Ultimo aggiornamento: 5 novembre 2026.*
+*Ultimo aggiornamento: 6 novembre 2026.*
 
 ---
+
+## 2026-11-06 · 5 papers · 0 rossi · 0 arancioni
+PICK: The Knee — Coorte retrospettiva (Ackermann, Jones, Ball, Kabeer, Bamania, Watura, Lee, Williams; Fortius Clinic, Londra), rotazione tibio-femorale statica alla RM dopo LCA, 310 RM di 106 calciatori professionisti (106 LCA lesi, 204 ricostruiti): flessione dell'esame β 0,15° per grado (IC 95% 0,02-0,27°; p = 0,020); asimmetria di slope β 1,33° per grado (IC 95% 0,72-1,95°; p < 0,001); LET p = 0,328 (numero di casi non riportato); solo abstract
+- 🟢 PICK sopra · PMID 42982012 · 10.1016/j.knee.2026.104662 (verde: slope e LET, ma misura di imaging senza esiti clinici; gruppo Fortius della sua rete)
+- 🟢 The Journal of bone and joint surgery. American volume — Coorte retrospettiva monocentrica (Tsukamoto, MacInnis, Grimm, Bedard, Sierra, Pagnano, Abdel, Hannon; Mayo Clinic; livello III), monocompartimentale, 2.234 ginocchia: sopravvivenza senza revisione 92% a 10 anni e 85% a 15; HR univariate tecnologia 0,4, alto volume 0,5, piatto mobile 1,9 (p < 0,01, IC non riportati); solo abstract · PMID 42987190 · 10.2106/JBJS.26.00507
+- 🟢 Journal of experimental orthopaedics — Coorte retrospettiva monocentrica (Kato, Ichikawa, Matsui, Takazawa, Koga, Yamada, Kiuchi, Ryu, Ohuchi; Kameda, Chiba; livello III), osteotomia femorale distale di chiusura mediale per valgo, 62 ginocchia: JLCA da −1,13 ± 2,04° a −0,56 ± 1,61°, cambiamento 0,57 ± 1,90° (da −4,6° a 6,9°); coefficiente del JLCA preoperatorio −0,56 (IC 95% da −0,78 a −0,34); solo abstract (PMC ID presente, non letto) · PMID 42979506 · 10.1002/jeo2.70975
+- 🟢 Sports medicine and arthroscopy review — Revisione narrativa (Maffulli, Migliorini), allograft per MPFL, MQTFL e MPTL in adulti e immaturi; nessun numero nell'abstract; solo abstract · PMID 42972656 · 10.1097/JSA.0000000000000488
+- ⚪ Sports health — Studio trasversale (Kırık, Akdemir, Karaduman, Güzel, Genç, Anıl, Korkmaz Salkılıç, Kehribar, Önder, Yılmaz; Izmir e Samsun; livello 3), 51 uomini a 6-8 mesi dalla ricostruzione: salti monopodalici e forza isocinetica, R² aggiustato 0,26-0,52 (p < 0,001); innesto non riportato; solo abstract · PMID 42981220 · 10.1177/19417381261486269
+CITAZIONI: verificate 5/5 su PubMed MCP — ogni PMID riaperto con get_article_metadata e confrontato su titolo, rivista e DOI; solo abstract per tutte e cinque. Anche gli 11 brevi e le 3 SCOPERTE sono stati riaperti su PubMed (titolo, rivista e DOI).
+STUDI MUTI: 5 — scheda 1 (LET p = 0,328 senza numero di casi), 2 (associazioni univariate senza IC, tecnologia soprattutto fluoroscopia), 3 (62 ginocchia, accoppiamento matematico), 4 (narrativa senza numeri), 5 (51 uomini, una misura, nessun esito duro).
+DUELLO: nessuno oggi.
+TENSIONI MOSSE: nessuna. La scheda 1 tocca LET e slope (T1/T2) solo come misura di imaging, senza esiti: non muove nulla. La scheda 5 tocca il criterio di rientro (T4) con un test intermedio e senza esito duro: non sposta la soglia.
+SUGGERIMENTO (SUGGQ): invariato — Christoph Kittl (Università di Münster), nessun segnale arrivato per farlo ruotare.
+INDUSTRIA: nessun richiamo nuovo — openFDA conferma i 15 richiami già noti. Swissmedic: 16 voci, nessuna sui dispositivi del ginocchio. Raccoglitore del 5 novembre alle 09:29 UTC (circa 24 ore, tutte le fonti «ok» tranne linee guida): usato come il più recente disponibile. Linee guida: fonte del raccoglitore NON risposta (HTTP 500), sostituita da ricerca diretta su PubMed (6 ottobre-6 novembre): nessun consensus nuovo sul ginocchio operato; l'unico nuovo in tema è la definizione Delphi di artrosi del ginocchio refrattaria (PMID 42973704), nei brevi. Destino dei verdetti: nessun citante nuovo su 69 voci. Trial: nessuna variazione di stato nelle tensioni (ultimo aggiornamento fra gli studi sorvegliati: 20 ottobre).
+RITRATTAZIONI: Crossref (raccoglitore, 622 DOI citati) 0 colpiti. PubMed: riaperti i PMID di schede, brevi e scoperte di oggi e i 17 PMID di schede e brevi dei due briefing precedenti, nessuno ritirato. Ricontrollo di ciascun PMID dello storico: NON VERIFICATO. LAST_RETRACTION_CHECK = 6 novembre 2026.
+NOTA DI COPERTURA: il 5 novembre il briefing non era stato fatto (search_articles in errore); oggi PubMed risponde e la ricerca per edat parte dal 3 novembre, quindi copre anche il 5. Nessun lavoro nuovo su radice meniscale (sutura), minced cartilage, AMIC, innesto quadricipitale o LET come tema principale.
+BREVI DI OGGI (non nello storico dei lavori; possono diventare schede): 42982057, 42982245, 42987667, 42985114, 42979342, 42979281, 42979084, 42975047, 42985230, 42975568, 42973704. SCOPERTE: 42986911, 42980267, 42988403.
 
 ## 2026-11-05 · 0 papers · 0 rossi · 0 arancioni
 nessun briefing — PubMed non raggiungibile. Il connettore PubMed MCP risponde a get_article_metadata ma ogni search_articles (cinque tentativi, query e filtri diversi, anche la più semplice) restituisce API_ERROR. Senza ricerca non si può fare lo screening della letteratura: schede ricostruite a memoria sarebbero il fallimento che il sistema esiste per impedire (mandato, ⛔). index.html NON modificato: online resta il briefing del 4 novembre. Raccolta notturna (fonti/raccolta.json, generato 2026-11-04T09:13Z) con tutte le fonti «ok», non utilizzata.
