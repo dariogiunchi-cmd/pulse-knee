@@ -1,11 +1,20 @@
 {
- "generato": "2026-11-05T09:29:49Z",
+ "generato": "2026-11-06T08:28:57Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
    "esito": "ok",
    "dati": {
     "richiami": [
+     {
+      "recalling_firm": "CORIN MEDICAL, LTD.",
+      "product_description": "Unity Knee ASC Modular Handle included in the Corin UNITY ASC INSTRUMENT SYSTEM. Part Number: 1232040.",
+      "reason_for_recall": "Potential malfunction of the Modular Handles where the locking mechanism may fail. Any mating instruments already engaged to the handle will not be able to be disengaged, and the handle will be unable to fitted securely to any unengaged mating instruments.",
+      "root_cause_description": "Under Investigation by firm",
+      "event_date_initiated": "2026-10-02",
+      "recall_status": "Open, Classified",
+      "sorvegliata": false
+     },
      {
       "recalling_firm": "Howmedica Osteonics Corp.",
       "product_description": "ALL POLY CONSTRAINED INSERT 54MM\t\n\t69-2854\n\t\nNRG KNEE CR\t\n\t82-2-0512\t\n\t82-2-0518\n\t82-2-0912\n\nNRG KNEE P/S\t\n\t82-3-0318\n\t\nSCORPIO + MOBILE BEARING PCS\t\n\t78-5-0910\n\nSCORPIO C-DOME PATELLA\t\n\t73-2710\n\t\t\nSCORPIO INSET PATELLA\t\n\t73-2610\n\t\n\t\t\nSCORPIO M-DOME PATELLA\t\n\t73-0110\n\t73-0710\n\t73-0910\n\t\nSCORPIO RECESSED PATELLA 26MM\t\n\t3044-0026\n\nSCORPIO TS TIB INS\t\n\t72-4-9114\n\t\t\nSCORPIO TS TIBIAL INSERT\t\n\t72-4-0324\n\t\t\nSCORPIOFLEX TOTAL KNEE CR\t\n\t72-16-0512\n\t72-16-0518\n\t72-16-0912\n\t72-16-1112\n\t\nSERIES II TIBIAL BEAR INSERT NO 11 15MM\t\n\t3052-1115\n\t\nUHR BIPOLAR 26X52mm\t\n\tUH1-52-26\n\t\nUHR BIPOLAR 26X58mm\t\n\tUH1-58-26\n\t\nUHR BIPOLAR 28X48mm\t\n\tUH1-48-28\n\nUHR BIPOLAR 28X52mm\t\n\tUH1-52-28\t\n\t\nUHR BIPOLAR 28X55mm\t\n\tUH1-55-28\t\n\t\nUHR BIPOLAR 32X49MM\t\n\tUH1-49-32\t\n\t\nUHR BIPOLAR 32X51MM\t\n\tUH1-51-32\t\n\t\nUHR BIPOLAR 32X52MM\t\n\tUH1-52-32\t\t\n\t\nUHR BIPOLAR 32X54MM\t\n\tUH1-54-32\n\t\nOrthopaedic implant components manufactured from UHMWPE (polyethylene)",
@@ -26,7 +35,7 @@
      },
      {
       "recalling_firm": "Kico Knee Innovation Company",
-      "product_description": "Brand Name: Kico Knee Innovation\nProduct Name: ARVIS SURGICAL NAVIGATION SYSTEM GEN 2\nModel/Catalog Number: IN-29200\nSoftware Version: ARVIS Hip and Knee Gap Balance Software v3.3.2 (IN-28200)\nARVIS Shoulder Software v2.0.3 (IN-23630)\nProduct Description: The ARVIS system is a computer-controlled navigation system intended to provide intra-operative measurements to the surgeon to aid in selection and positioning of orthopedic implant components. \n\n \n\nThe ARVIS Surgical Navigation System is indicated for assisting the surgeon in the positioning and alignment of implants relative to reference alignment axes and landmarks in stereotactic orthopedic surgery. The system aids the surgeon in making intraoperative measurements such as changes in leg length in Hip Arthroplasty. The system is compatible with straight acetabular impactors and with specific offset impactors, identified in the instructions for use, for which an adapter has been validated. Example orthopedic surgical procedures include but are not limited to:  \n\n\" Total Knee Arthroplasty  \n\n\" Unicompartmental Knee Arthroplasty: Tibial Transverse Resection  \n\n\" Hip Arthroplasty \n\n \n\nThe ARVIS\" head mounted display is for displaying augmented reality visualization and information to the user intraoperatively. The augmented/virtual displayed information should not be relied upon solely for absolute positional/alignment information and should always be used in conjunction with the displayed stereotaxic information.\nComponent: NA",
+      "product_description": "Brand Name: Kico Knee Innovation\r\nProduct Name: ARVIS SURGICAL NAVIGATION SYSTEM GEN 2\r\nModel/Catalog Number: IN-29200\r\nSoftware Version: ARVIS Hip and Knee Gap Balance Software v3.3.2 (IN-28200)\r\nARVIS Shoulder Software v2.0.3 (IN-23630)\r\nProduct Description: The ARVIS system is a computer-controlled navigation system intended to provide intra-operative measurements to the surgeon to aid in selection and positioning of orthopedic implant components. \r\n\r\n \r\n\r\nThe ARVIS Surgical Navigation System is indicated for assisting the surgeon in the positioning and alignment of implants relative to reference alignment axes and landmarks in stereotactic orthopedic surgery. The system aids the surgeon in making intraoperative measurements such as changes in leg length in Hip Arthroplasty. The system is compatible with straight acetabular impactors and with specific offset impactors, identified in the instructions for use, for which an adapter has been validated. Example orthopedic surgical procedures include but are not limited to:  \r\n\r\n\" Total Knee Arthroplasty  \r\n\r\n\" Unicompartmental Knee Arthroplasty: Tibial Transverse Resection  \r\n\r\n\" Hip Arthroplasty \r\n\r\n \r\n\r\nThe ARVIS\" head mounted display is for displaying augmented reality visualization and information to the user intraoperatively. The augmented/virtual displayed information should not be relied upon solely for absolute positional/alignment information and should always be used in conjunction with the displayed stereotaxic information.\r\nComponent: NA",
       "reason_for_recall": "Due to an internal sensor issue, image displayed with eyepiece may appear tilted relative to the eyepiece housing",
       "root_cause_description": "Device Design",
       "event_date_initiated": "2026-07-13",
@@ -129,15 +138,6 @@
       "reason_for_recall": "Due to manufacturing/design issue where the knob on the tracking array may loosen causing potential misalignment of the array.",
       "root_cause_description": "Process control",
       "event_date_initiated": "2026-05-08",
-      "recall_status": "Open, Classified",
-      "sorvegliata": false
-     },
-     {
-      "recalling_firm": "Medline Industries, LP",
-      "product_description": "MEDLINE Medical Procedure Kits labeled as:  \n1) CRANI, Medline Kit Number/SKU DYNJ908097; \n2) CRANI, Medline Kit Number/SKU DYNJ908097A; \n3) CRANI, Medline Kit Number/SKU DYNJ908097B; \n4) CRANI, Medline Kit Number/SKU DYNJ908097C; \n5) CRANI, Medline Kit Number/SKU DYNJ908097D; \n6) DR TUCKER ANT TOTAL HIP, Medline Kit Number/SKU DYNJ912029; \n7) JEWISH CRANI PACK, Medline Kit Number/SKU DYNJ55637B; \n8) L SCOPE PACK, Medline Kit Number/SKU DYNJ43930A; \n9) LAMI PACK, Medline Kit Number/SKU DYNJ67767; \n10) LAVH NEW BRAUNFELS, Medline Kit Number/SKU DYNJ61136F; \n11) SOI KNEE ARTHROSCOPY, Medline Kit Number/SKU DYNJV0172Q; \n12) T AND A PACK, Medline Kit Number/SKU DYNJ86229.",
-      "reason_for_recall": "During an internal review, Medline identified representative samples did not meet applicable performance specifications. Identified issues include irregularities in catheter surface finish, instances where the catheter connector detached prematurely from the catheter funnel, and limited cases where the catheter outer diameter did not meet specification.",
-      "root_cause_description": "Nonconforming Material/Component",
-      "event_date_initiated": "2026-05-04",
       "recall_status": "Open, Classified",
       "sorvegliata": false
      }
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Swissmedic Journal",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/swissmedic-journal.html",
+      "data": "Thu, 05 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Save the Date: Clinical Trials Symposium 2027",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/services/veranstaltungen/clinical-trials-symposium.html",
       "data": "Wed, 04 Nov 2026 00:00:00 +0000"
@@ -368,12 +374,6 @@
       "titolo": "Out-of-Stock – Cablivi 10 mg, poudre et solvent pour solution injectable",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-cablivi-10-mg.html",
       "data": "Mon, 26 Oct 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Valutatore/trice Qualità/CMC (80–100%) – Specializzazione Vaccini ed Emoderivati",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/posti-liberi/quality-cmc-assessor.html",
-      "data": "Wed, 21 Oct 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
@@ -596,17 +596,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT03896464",
-       "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
-       "stato": "RECRUITING",
-       "aggiornato": "2026-10-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 352,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07846709",
        "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
        "stato": "NOT_YET_RECRUITING",
@@ -615,6 +604,17 @@
         "NA"
        ],
        "n": 150,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT03896464",
+       "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-10-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 352,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -629,17 +629,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07580157",
-       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
-       "stato": "ENROLLING_BY_INVITATION",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 20,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07753707",
        "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
        "stato": "ACTIVE_NOT_RECRUITING",
@@ -648,6 +637,17 @@
         "NA"
        ],
        "n": 111,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07580157",
+       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 20,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 622,
+    "doi_citati_controllati": 627,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -1265,8 +1265,218 @@
    ]
   },
   "linee_guida": {
-   "esito": "non risposto: HTTPError HTTP Error 500: Internal Server Error",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "finestra_giorni": 60,
+    "voci": [
+     {
+      "pmid": "42953907",
+      "titolo": "Surgical Intervention for Small Osteochondral Lesions (<1 cm): Proceedings of the International Consensus Meeting on Cartilage Repair of the Ankle.",
+      "rivista": "Foot & ankle specialist",
+      "data": "2026 Oct 29",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42953767",
+      "titolo": "No significant differences between large language model prompting strategies and human experts in summarisation of 'the formal EU-US meniscus rehabilitation consensus: An ESSKA-AOS",
+      "rivista": "Journal of experimental orthopaedics",
+      "data": "2026 Oct 28",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42896985",
+      "titolo": "[Interpretation of the 2026 Asia-Pacific Expert Consensus on Robotic-assisted Hip and Knee Arthroplasty: From precise execution to individualized decision-making].",
+      "rivista": "Zhongguo xiu fu chong jian wai ke za zhi = Zhongguo xiufu chongjian waike zazhi = Chinese journal of reparative and reconstructive surgery",
+      "data": "2026 Oct 15",
+      "tipi": [
+       "Journal Article",
+       "Consensus Statement",
+       "Review"
+      ]
+     },
+     {
+      "pmid": "42893304",
+      "titolo": "Barriers and Facilitators Influencing Physiotherapists' Adherence to Clinical Practice Guidelines and Return to Sport Criteria after Anterior Cruciate Ligament Reconstruction: A Qu",
+      "rivista": "International journal of sports physical therapy",
+      "data": "2026 Oct 2",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42880894",
+      "titolo": "Sex differences in clinical need, willingness, and surgeon recommendations for total knee arthroplasty: a cross-sectional study.",
+      "rivista": "The Journal of rheumatology",
+      "data": "2026 Oct 15",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42875874",
+      "titolo": "UEFA consensus guidelines on anterior cruciate ligament (ACL) injury in Women's football - part one: risk factors and prevention.",
+      "rivista": "Science & medicine in football",
+      "data": "2026 Oct 14",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42875873",
+      "titolo": "UEFA consensus guidelines on anterior cruciate ligament (ACL) injury in women's football - Part Two: rehabilitation, return to play, and players' perceptions.",
+      "rivista": "Science & medicine in football",
+      "data": "2026 Oct 14",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42853098",
+      "titolo": "Validation of the European Bone & Joint Infection Society recommendations for debridement, antibiotics, and implant retention in hip and knee periprosthetic joint infection : a stu",
+      "rivista": "The bone & joint journal",
+      "data": "2026 Oct 1",
+      "tipi": [
+       "Journal Article",
+       "Multicenter Study",
+       "Validation Study"
+      ]
+     },
+     {
+      "pmid": "42852545",
+      "titolo": "Developing a new CT-based bone defect classification in revision knee arthroplasty : a Delphi consensus study.",
+      "rivista": "Bone & joint open",
+      "data": "2026 Oct 7",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42840866",
+      "titolo": "Return to Sport Guidelines Following Total Knee Arthroplasty: A Scoping Review.",
+      "rivista": "Physiotherapy Canada. Physiotherapie Canada",
+      "data": "2026 Jun 8",
+      "tipi": [
+       "Journal Article",
+       "Systematic Review"
+      ]
+     },
+     {
+      "pmid": "42825587",
+      "titolo": "American Academy of Orthopaedic Surgeons Clinical Practice Guideline Summary: Management of Acute Isolated Meniscal Pathology: Erratum.",
+      "rivista": "The Journal of the American Academy of Orthopaedic Surgeons",
+      "data": "2026 Oct 15",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42825585",
+      "titolo": "AAOS Clinical Practice Guideline Summary: Management of Osteoarthritis of the Knee (Nonarthroplasty), Third Edition: Erratum.",
+      "rivista": "The Journal of the American Academy of Orthopaedic Surgeons",
+      "data": "2026 Oct 15",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42825584",
+      "titolo": "AAOS Clinical Practice Guideline Summary: Prevention of Total Hip and Knee Arthroplasty Periprosthetic Joint Infection in Patients Undergoing Dental Procedures: Erratum.",
+      "rivista": "The Journal of the American Academy of Orthopaedic Surgeons",
+      "data": "2026 Oct 15",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42821083",
+      "titolo": "Correction: Genicular Artery Embolization for Chronic Knee Pain: Expert Consensus Recommendations on Indications, Technique and Clinical Care Using a Delphi Process.",
+      "rivista": "Cardiovascular and interventional radiology",
+      "data": "2026 Oct 1",
+      "tipi": [
+       "Published Erratum"
+      ]
+     },
+     {
+      "pmid": "42809374",
+      "titolo": "The Use of Unloader Bracing in the Management of Knee Osteoarthritis: A Modified Delphi Consensus Study.",
+      "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
+      "data": "2026 Sep 29",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42791228",
+      "titolo": "Unloader Bracing Is a Biomechanically Rational and Clinically Useful Intervention in Selected Patients With Tibiofemoral Joint Cartilage Pathology: A Modified Delphi Consensus Stud",
+      "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
+      "data": "2026 Sep 25",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42771799",
+      "titolo": "Indian expert consensus on prophylactic incisional single-use negative pressure wound therapy in hip and knee arthroplasty: A modified Delphi study.",
+      "rivista": "SICOT-J",
+      "data": "2026 Sep 22",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42763276",
+      "titolo": "Consensus Guidelines for Radiofrequency Ablation of Chronic Knee Pain in Rural Communities.",
+      "rivista": "Pain management nursing : official journal of the American Society of Pain Management Nurses",
+      "data": "2026 Sep 19",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42749319",
+      "titolo": "[Expert consensus on clinical pathway for high-conformity total knee arthroplasty through a minimally invasive surgical approach].",
+      "rivista": "Zhongguo xiu fu chong jian wai ke za zhi = Zhongguo xiufu chongjian waike zazhi = Chinese journal of reparative and reconstructive surgery",
+      "data": "2026 Sep 15",
+      "tipi": [
+       "Journal Article",
+       "Consensus Statement",
+       "English Abstract"
+      ]
+     },
+     {
+      "pmid": "42748364",
+      "titolo": "Formal consensus on fast-track hip and knee arthroplasty: ESSKA/EKA, EHS and APAS recommendations for optimised recovery pathways in joint replacement surgeries.",
+      "rivista": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+      "data": "2026 Sep 16",
+      "tipi": [
+       "Journal Article",
+       "Consensus Statement"
+      ]
+     },
+     {
+      "pmid": "42732043",
+      "titolo": "Delphi Expert Consensus Identifies Revision Surgery, High-Grade Pivot Shift, and High-Risk Athletes in Pivoting Sports as Indications for Anterolateral Ligament Reconstruction or L",
+      "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
+      "data": "2026 Sep 12",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42711866",
+      "titolo": "Clinical Work-up, Diagnostic Imaging, and Radiographic Classification Systems for Osteochondral Lesions of the Talus: Proceedings of the International Consensus Meetings on Cartila",
+      "rivista": "Foot & ankle specialist",
+      "data": "2026 Sep 8",
+      "tipi": [
+       "Journal Article"
+      ]
+     }
+    ]
+   }
   },
   "polso": {
    "esito": "ok",
@@ -1282,13 +1492,6 @@
    "dati": {
     "finestra_giorni": 30,
     "voci": [
-     {
-      "titolo": "Wearable Estimation of Knee Joint Contact Forces: SiMPLeSENSE, a Simulated-IMU Pipeline Validated Against In Vivo Loads",
-      "dove": "archivio preprint",
-      "data": "2026-11-03",
-      "doi": "10.64898/2026.11.03.763565",
-      "url": "https://doi.org/10.64898/2026.11.03.763565"
-     },
      {
       "titolo": "Efficacy of Topical 5% Doxepin Cream Compared with Diclofenac Gel and Placebo for Knee Osteoarthritis: A Randomized Double-Blind Clinical Trial",
       "dove": "archivio preprint",
@@ -1360,7 +1563,7 @@
       "url": "https://doi.org/10.21203/rs.3.rs-11248193/v1"
      },
      {
-      "titolo": "Anatomically matched spatial comparisons identify Trps1 as a regulator of knee interzone formation",
+      "titolo": "Anatomically matched spatial comparisons identify  <i>Trps1</i>  as a regulator of knee interzone formation",
       "dove": "archivio preprint",
       "data": "2026-10-30",
       "doi": "10.64898/2026.10.28.762640",
@@ -1456,6 +1659,13 @@
       "data": "2026-10-23",
       "doi": "10.21203/rs.3.rs-11302390/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-11302390/v1"
+     },
+     {
+      "titolo": "Outcome Differences in Robotic vs Traditional Total Knee Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-10-23",
+      "doi": "10.21203/rs.3.rs-11139026/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11139026/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
