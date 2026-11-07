@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-06T09:25:11Z",
+ "generato": "2026-11-07T07:45:41Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -596,17 +596,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07846709",
-       "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
-       "stato": "NOT_YET_RECRUITING",
-       "aggiornato": "2026-10-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 150,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT03896464",
        "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
        "stato": "RECRUITING",
@@ -615,6 +604,17 @@
         "NA"
        ],
        "n": 352,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07846709",
+       "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-10-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 150,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -629,17 +629,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07753707",
-       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 111,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07580157",
        "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
        "stato": "ENROLLING_BY_INVITATION",
@@ -648,6 +637,17 @@
         "NA"
        ],
        "n": 20,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07753707",
+       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 111,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 627,
+    "doi_citati_controllati": 634,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -790,53 +790,8 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Stryker",
-      "titolo": "Driven to move MedTech forward",
-      "link": "https://www.youtube.com/watch?v=y6Gt331N-sI",
-      "data": "2026-11-04"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Going Pro With the Syndesmosis TightRope® PRO Implant",
-      "link": "https://www.youtube.com/watch?v=ZlvX41qKVDM",
-      "data": "2026-11-03"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Osteochondral Lesion Repair Using the ChondralTak™ Technique",
-      "link": "https://www.youtube.com/watch?v=JK4micy6SwU",
-      "data": "2026-11-02"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "StayPort™ Hip Cannula",
-      "link": "https://www.youtube.com/watch?v=9wbba9Lxj_Q",
-      "data": "2026-10-29"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Ortho Case Insight Series | Femur Fracture Cases with EVOS◊ Large and Periprosthetic Plating System",
-      "link": "https://www.youtube.com/watch?v=67kV_9nHcP0",
-      "data": "2026-10-28"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Spine Evolutions 2027",
-      "link": "https://www.youtube.com/watch?v=6HhmtoDtjZs",
-      "data": "2026-10-26"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Tensionable Knotless Remplissage Technique Using the Knotless FiberTak® Remplissage Implant System",
-      "link": "https://www.youtube.com/watch?v=jf_b-E4NcXU",
-      "data": "2026-10-26"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
@@ -1269,6 +1224,24 @@
    "dati": {
     "finestra_giorni": 60,
     "voci": [
+     {
+      "pmid": "42992615",
+      "titolo": "Post-Treatment Follow-up, Rehabilitation, and Return to Sport: Proceedings of the International Consensus Meetings on Cartilage Repair of the Ankle.",
+      "rivista": "Foot & ankle specialist",
+      "data": "2026 Nov 6",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
+      "pmid": "42989778",
+      "titolo": "Indications, Techniques, and Outcomes of Meniscus Centralization for Root Tears and Meniscus Transplantation: An International Expert Consensus Statement.",
+      "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
+      "data": "2026 Nov 5",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
      {
       "pmid": "42953907",
       "titolo": "Surgical Intervention for Small Osteochondral Lesions (<1 cm): Proceedings of the International Consensus Meeting on Cartilage Repair of the Ankle.",
