@@ -7,12 +7,17 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 7 novembre 2026.*
+*Ultimo aggiornamento: 8 novembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-11-08 | KSSTA | Analisi di registro locale (Högberg et al.; Stoccolma), rapporto ischiocrurali/quadricipite a 6 mesi e revisione dopo LCA con ischiocrurali, 3.458 operati, livello III, solo abstract | 10.1002/ksa.70679 | LCA, criterio di rientro, forza, revisione | aperto — 🟢 PICK; OR 0,81 per 10 unità (IC 95% 0,71-0,93), AUC 0,64; salto LSI β −1,30; solo ischiocrurali; tocca T3 (app T4) come dato laterale
+2026-11-08 | Arthroscopy | Analisi decisionale di Markov (Dean et al.; Mayo Clinic), innesti per LCA a 5 anni, livello III, solo abstract | 10.1002/arj.70713 | LCA, innesto, quadricipite, costo-efficacia | aperto — 🟢 ICER quadricipite su rotuleo 42.905 dollari per QALY; quadricipite preferito nel 55,7% delle simulazioni; ischiocrurali e allotrapianto peggiori; modello, costi in dollari
+2026-11-08 | KSSTA | Serie retrospettiva (Barastegui et al.; Barcellona), futsal, 331 operati di LCA, livello IV, solo abstract | 10.1002/ksa.70675 | LCA, revisione, cartilagine, menisco | aperto — 🟢 lesioni condrali nelle revisioni 55,9% contro 16,2%, OR 6,36 (IC 95% 2,94-13,74); con Outerbridge ≥ 2 OR 2,13 (0,87-5,23)
+2026-11-08 | J Exp Orthop | Serie retrospettiva (Schmidt et al.; Mannheim e Pforzheim), MPFL con trocleoplastica, 141 pazienti, livello IV, solo abstract | 10.1002/jeo2.70979 | MPFL, instabilità rotulea, rotazione tibio-femorale | aperto — 🟢 rotazione −1,55° (IC 95% 0,86-2,23), PT-TGA unico predittore indipendente; nessun esito clinico
+2026-11-08 | J Robot Surg | Revisione narrativa di esperti (Xu et al.), protesi robotica, precisione e beneficio clinico, solo abstract | 10.1007/s11701-026-04149-z | protesi robotica, VELYS, evidenza | aperto — ⚪ precisione documentata, beneficio clinico incoerente; tre autori affiliati a MicroPort
 2026-11-07 | Arthroscopy | Consensus Delphi di esperti (Chahla, Dzidzishvili, Krych, LaPrade, Tapasvi e il pannello), centralizzazione del menisco con lesione di radice e trapianto, 22 esperti, livello V, solo abstract | 10.1002/arj.70659 | menisco, radice, centralizzazione, estrusione, consensus | aperto — 🟠 PICK; centralizzazione da considerare con estrusione oltre 3 mm (mediale; laterale con lesione del legamento menisco-femorale), sconsigliata nell'artrosi avanzata, sostenuta con osteotomia tibiale alta; transtibiale, ancore e ibridi accettabili; opinione, non prova; alimenta T2b (app T3)
 2026-11-07 | J Arthroplasty | Meta-analisi di rete (Tan et al.; Singapore), allineamento in protesi totale, 61 studi (22 RCT), 7.822 pazienti, solo abstract | 10.1016/j.arth.2026.11.002 | protesi robotica, allineamento, FJS | aperto — 🟢 FJS contro meccanico: funzionale 14,24 (IC 95% 3,32-25,16), cinematico non restrittivo 12,28 (9,06-15,51), restrittivo 8,75 (3,41-14,08); solo il funzionale supera la soglia; GRADE bassa o molto bassa
 2026-11-07 | J Arthroplasty | Coorte retrospettiva bayesiana (Hoskins et al.; Whangārei), protesi sotto i 65 anni, 470 protesi, 26 revisioni, solo abstract | 10.1016/j.arth.2026.11.026 | protesi, allineamento costituzionale, revisione | aperto — 🟢 restaurazione HR 1,00 (CrI 0,90-1,10), neutralizzazione HR 1,08 (0,93-1,22; probabilità di danno 87%); muto, 26 eventi
@@ -1252,6 +1257,8 @@ combinare le due procedure protegga la riparazione: conferma indirettamente la s
 sotto carico nella riabilitazione precoce, anche quando l'osteotomia è già stata eseguita.
 
 ### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22)*
+
+**Nuovo l'8 novembre 2026, un test isocinetico a 6 mesi lega debolmente il rapporto ischiocrurali/quadricipite alla revisione (PMID 42994101).** Analisi di un registro di Stoccolma (Högberg et al., *KSSTA*; 3.458 operati con innesto di ischiocrurali; solo abstract): per ogni aumento di 10 unità del rapporto misto a 6 mesi, OR di revisione entro 2 anni 0,81 (IC 95% 0,71-0,93), ma AUC 0,64; un rapporto più alto si associa a un salto monopodalico più asimmetrico (β −1,30; IC 95% da −1,51 a −1,09). Solo ischiocrurali e nessun dato sul quadricipite: non fissa né sposta la soglia del 90% sul suo innesto. È un secondo indizio, dopo la prontezza psicologica del 29 ottobre, che un solo numero di forza non basta a decidere il rientro.
 
 **Nuovo il 29 ottobre 2026, la prontezza psicologica distingue chi rientra più della forza (PMID 42951020).** Una revisione sistematica con metanalisi di 25 studi e 7174 operati di LCA (Jiang et al., *J Sport Health Sci*; solo abstract) trova che la differenza di ACL-RSI fra chi torna al livello pre-infortunio e chi no cresce da 16,09 (IC 95% 9,13-23,05) entro 6 mesi a 27,07 (22,37-31,76) oltre i 12, mentre le differenze di LSI fra rientrati e non sono di 2,96-7,48 punti percentuali (estensione 7,48%; IC 95% 2,69-12,26). Rientro allo sport 79,3%, al livello pre-infortunio 44,1%. È un'associazione fra studi osservazionali, senza innesto riportato e senza analisi per innesto o per LET: non fissa né sposta la soglia del 90% sul suo innesto, ma sostiene il campo «fare» (affiancare l'ACL-RSI alla LSI e ripeterla nel tempo).
 
