@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-07T08:47:30Z",
+ "generato": "2026-11-08T07:57:22Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 634,
+    "doi_citati_controllati": 639,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -790,59 +790,8 @@
    }
   },
   "youtube": {
-   "esito": "ok",
-   "dati": {
-    "video": [
-     {
-      "canale": "Arthrex",
-      "titolo": "The Benefits of Nano Arthroscopy for Pediatric Orthopedics",
-      "link": "https://www.youtube.com/watch?v=IPqTSVZd5mo",
-      "data": "2026-11-06"
-     },
-     {
-      "canale": "Stryker",
-      "titolo": "Driven to move MedTech forward",
-      "link": "https://www.youtube.com/watch?v=y6Gt331N-sI",
-      "data": "2026-11-04"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Going Pro With the Syndesmosis TightRope® PRO Implant",
-      "link": "https://www.youtube.com/watch?v=ZlvX41qKVDM",
-      "data": "2026-11-03"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Osteochondral Lesion Repair Using the ChondralTak™ Technique",
-      "link": "https://www.youtube.com/watch?v=JK4micy6SwU",
-      "data": "2026-11-02"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "StayPort™ Hip Cannula",
-      "link": "https://www.youtube.com/watch?v=9wbba9Lxj_Q",
-      "data": "2026-10-29"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Ortho Case Insight Series | Femur Fracture Cases with EVOS◊ Large and Periprosthetic Plating System",
-      "link": "https://www.youtube.com/watch?v=67kV_9nHcP0",
-      "data": "2026-10-28"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Spine Evolutions 2027",
-      "link": "https://www.youtube.com/watch?v=6HhmtoDtjZs",
-      "data": "2026-10-26"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Tensionable Knotless Remplissage Technique Using the Knotless FiberTak® Remplissage Implant System",
-      "link": "https://www.youtube.com/watch?v=jf_b-E4NcXU",
-      "data": "2026-10-26"
-     }
-    ]
-   }
+   "esito": "non risposto: HTTPError HTTP Error 500: Internal Server Error",
+   "dati": null
   },
   "destino": {
    "esito": "ok",
