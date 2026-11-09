@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-08T08:59:49Z",
+ "generato": "2026-11-09T08:39:37Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 639,
+    "doi_citati_controllati": 644,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -834,18 +834,6 @@
       "titolo": "Ortho Case Insight Series | Femur Fracture Cases with EVOS◊ Large and Periprosthetic Plating System",
       "link": "https://www.youtube.com/watch?v=67kV_9nHcP0",
       "data": "2026-10-28"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Spine Evolutions 2027",
-      "link": "https://www.youtube.com/watch?v=6HhmtoDtjZs",
-      "data": "2026-10-26"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Tensionable Knotless Remplissage Technique Using the Knotless FiberTak® Remplissage Implant System",
-      "link": "https://www.youtube.com/watch?v=jf_b-E4NcXU",
-      "data": "2026-10-26"
      }
     ]
    }
@@ -1492,15 +1480,6 @@
       "titolo": "Delphi Expert Consensus Identifies Revision Surgery, High-Grade Pivot Shift, and High-Risk Athletes in Pivoting Sports as Indications for Anterolateral Ligament Reconstruction or L",
       "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
       "data": "2026 Sep 12",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42711866",
-      "titolo": "Clinical Work-up, Diagnostic Imaging, and Radiographic Classification Systems for Osteochondral Lesions of the Talus: Proceedings of the International Consensus Meetings on Cartila",
-      "rivista": "Foot & ankle specialist",
-      "data": "2026 Sep 8",
       "tipi": [
        "Journal Article"
       ]
