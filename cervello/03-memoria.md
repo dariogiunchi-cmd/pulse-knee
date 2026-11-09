@@ -7,12 +7,17 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 8 novembre 2026.*
+*Ultimo aggiornamento: 9 novembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-11-09 | J ISAKOS | Revisione State of the Art (Salim et al., con Musahl), presoaking dei trapianti in vancomicina, narrativa, solo abstract | 10.1016/j.jisako.2026.101237 | LCA, infezione, vancomicina, quadricipite | aperto — 🟢 PICK; meno artrite settica in osservazionali, evidenza diretta per ischiocrurali, RCT sottodimensionati; quadricipite: dati limitati e una serie 2026 non controllata con possibile segnale di sicurezza, non confermato
+2026-11-09 | BMC Musculoskelet Disord | Serie retrospettiva (Ren et al.; Tianjin), LCA con ischiocrurali più Lemaire modificato in iperlassità generalizzata, 25 pazienti, livello IV, solo abstract | 10.1186/s12891-026-10495-8 | LET, LCA, iperlassità | aperto — 🟢 KT-1000 da 11,77 ± 1,80 a 1,68 ± 1,25 mm; Lysholm da 55,48 a 91,32; braccio singolo, innesto non suo; non muove T1a/T1b
+2026-11-09 | Ann Jt | Revisione sistematica (Few et al.; Ochsner), menisco nel LCA di atleti professionisti, 5 studi, 519 pazienti, solo abstract | 10.21037/aoj-2026-0017 | menisco, LCA, rampa, radice, riparazione | aperto — 🟢 lesioni 59-86%; preservazione favorita; mediale con più fallimenti, soprattutto all-inside; tassi per tecnica non riportati
+2026-11-09 | Ann Jt | Revisione narrativa (Williams et al.; Duke), osteotomie di riduzione dello slope, solo abstract | 10.21037/aoj-2026-0038 | osteotomia, slope, revisione LCA | aperto — 🟢 esiti incoraggianti con approcci anteriori; nessun RCT; algoritmo degli autori
+2026-11-09 | J Robot Surg | Analisi trasversale di segnalazioni MAUDE (Abushal), robot per artroplastica, 12.175 segnalazioni, solo abstract | 10.1007/s11701-026-04162-2 | protesi robotica, VELYS, sorveglianza | aperto — 🟢 lesione 17,3%, dallo 0,6% (VELYS) al 44,2% (ROSA); discordanza etichetta-codici 14,7% (IC 95% 14,0-15,3); non misura la sicurezza
 2026-11-08 | KSSTA | Analisi di registro locale (Högberg et al.; Stoccolma), rapporto ischiocrurali/quadricipite a 6 mesi e revisione dopo LCA con ischiocrurali, 3.458 operati, livello III, solo abstract | 10.1002/ksa.70679 | LCA, criterio di rientro, forza, revisione | aperto — 🟢 PICK; OR 0,81 per 10 unità (IC 95% 0,71-0,93), AUC 0,64; salto LSI β −1,30; solo ischiocrurali; tocca T3 (app T4) come dato laterale
 2026-11-08 | Arthroscopy | Analisi decisionale di Markov (Dean et al.; Mayo Clinic), innesti per LCA a 5 anni, livello III, solo abstract | 10.1002/arj.70713 | LCA, innesto, quadricipite, costo-efficacia | aperto — 🟢 ICER quadricipite su rotuleo 42.905 dollari per QALY; quadricipite preferito nel 55,7% delle simulazioni; ischiocrurali e allotrapianto peggiori; modello, costi in dollari
 2026-11-08 | KSSTA | Serie retrospettiva (Barastegui et al.; Barcellona), futsal, 331 operati di LCA, livello IV, solo abstract | 10.1002/ksa.70675 | LCA, revisione, cartilagine, menisco | aperto — 🟢 lesioni condrali nelle revisioni 55,9% contro 16,2%, OR 6,36 (IC 95% 2,94-13,74); con Outerbridge ≥ 2 OR 2,13 (0,87-5,23)

@@ -8,9 +8,26 @@
 > `## AAAA-MM-GG  ·  n papers · n rossi · n arancioni`
 > poi: PICK, e l'elenco compatto delle schede con PMID/DOI.
 
-*Ultimo aggiornamento: 8 novembre 2026.*
+*Ultimo aggiornamento: 9 novembre 2026.*
 
 ---
+
+## 2026-11-09 · 5 papers · 0 rossi · 0 arancioni
+PICK: Journal of ISAKOS — Revisione «State of the Art» narrativa (Salim, Araújo, Vertullo, Pfeiffer, de Sa, Musahl; livello basso), presoaking dei trapianti legamentosi in vancomicina, ricerca PubMed aggiornata all'11 ottobre 2026: coorti comparative ampie e analisi aggregate lo associano a meno artrite settica dopo LCA, evidenza più diretta per gli ischiocrurali, RCT sottodimensionati; per quadricipite, rotuleo e allotrapianto evidenza limitata o indiretta, e una serie 2026 non controllata sul quadricipite segnala un possibile problema di sicurezza, non confermato; nessun numero nell'abstract; solo abstract
+- 🟢 PICK sopra · PMID 42998406 · 10.1016/j.jisako.2026.101237 (verde: tocca il suo innesto, il quadricipite, dove l'evidenza è più sottile; nessun cambio sull'abstract)
+- 🟢 BMC Musculoskeletal Disorders — Serie retrospettiva a braccio singolo (Ren, Qian, Xing, Meng, Wang, Huang, Cao; Tianjin; livello IV), LCA con ischiocrurali più Lemaire modificato in iperlassità generalizzata, 25 pazienti, follow-up 25,76 ± 1,42 mesi: KT-1000 da 11,77 ± 1,80 a 1,68 ± 1,25 mm (p < 0,001); Lysholm da 55,48 ± 19,62 a 91,32 ± 4,89; pivot-shift di grado I residuo in 5; nessun confronto; solo abstract · PMID 42995576 · 10.1186/s12891-026-10495-8
+- 🟢 Annals of Joint — Revisione sistematica PRISMA (Few, Mullen, Wilder, Godshaw; Ochsner), menisco nel LCA di atleti professionisti, 5 studi e 519 pazienti: lesioni meniscali nel 59-86%; riparazione favorita; mediale con più fallimenti del laterale, soprattutto all-inside; numeri per tecnica non riportati; solo abstract (PMC ID presente, non letto) · PMID 42999722 · 10.21037/aoj-2026-0017
+- 🟢 Annals of Joint — Revisione narrativa (Williams, Olomi, Yang, Goel, Kennedy, Ryu, Lau; Duke), osteotomie di riduzione dello slope dopo fallimento del LCA: esiti incoraggianti con approcci anteriori sovra-, infra- e trans-tuberositari, nessun RCT, algoritmo proposto; nessun numero nell'abstract; solo abstract (PMC ID presente, non letto) · PMID 42999539 · 10.21037/aoj-2026-0038
+- 🟢 Journal of robotic surgery — Analisi trasversale di segnalazioni MAUDE (Abushal; Tabuk; livello basso), robot per artroplastica, 12.175 segnalazioni: etichetta lesione 17,3%, dallo 0,6% (VELYS) al 44,2% (ROSA); etichetta e codici del paziente discordanti in 1.785 (14,7%; IC 95% 14,0-15,3); l'autore esclude che misuri sicurezza o serva a classificare le piattaforme; solo abstract · PMID 42995343 · 10.1007/s11701-026-04162-2
+CITAZIONI: verificate 5/5 su PubMed MCP — ogni PMID riaperto con get_article_metadata e confrontato su titolo, rivista e DOI; solo abstract per tutte e cinque. Anche gli 8 brevi e le 3 SCOPERTE sono stati riaperti su PubMed (titolo, rivista e DOI).
+STUDI MUTI: 5 — scheda 1 (revisione narrativa senza dati aggregati; RCT sottodimensionati), 2 (braccio singolo, 25 pazienti, nessun confronto), 3 (5 studi retrospettivi, tassi per tecnica assenti), 4 (nessun dato aggregato, nessun RCT), 5 (non è uno studio di esito, nessun denominatore).
+DUELLO: nessuno oggi.
+TENSIONI MOSSE: nessuna. La scheda 2 tocca la tensione sul LET (T1a/T1b della memoria) ma senza spostarla: innesto di ischiocrurali, braccio singolo; la scheda 3 tocca la radice meniscale solo di lato.
+SUGGERIMENTO (SUGGQ): invariato — Christoph Kittl (Università di Münster), nessun segnale arrivato per farlo ruotare.
+INDUSTRIA: nessun richiamo nuovo — openFDA e Swissmedic come nel raccoglitore dell'8 novembre alle 08:59 UTC (circa 20 ore, tutte le fonti «ok»): usato come il più recente disponibile. Linee guida (raccoglitore): unica voce nuova il consensus internazionale sulla cartilagine dedicato alla caviglia (PMID 42992615), fuori perimetro. Destino dei verdetti: nessun citante nuovo. Trial: nessuna variazione di stato nelle tensioni.
+RITRATTAZIONI: Crossref (raccoglitore, 639 DOI citati) 0 colpiti. PubMed: riaperti i PMID di schede, brevi e scoperte di oggi; ricerca per tipo di pubblicazione sul ginocchio con modifica dal 1 ottobre: 18 voci, solo i PMID 39566778 e 37067550 compaiono nello storico (già noti, mai citati come scheda). Ricontrollo di ciascun PMID dello storico: NON VERIFICATO. LAST_RETRACTION_CHECK = 9 novembre 2026.
+NOTA DI COPERTURA: lunedì, giornata di media densità; molte revisioni narrative dell'Annals of Joint. Nessun lavoro nuovo su radice meniscale (sutura), minced cartilage, innesto quadricipitale come tema principale o LET con quadricipite. Il raccoglitore non è passato nella notte: dati di circa 20 ore.
+BREVI DI OGGI (non nello storico dei lavori; possono diventare schede): 42999754, 42997069, 42999027, 42997036, 42999724, 42999758, 42999026, 42997080. SCOPERTE: 42998352, 42996340, 42996743.
 
 ## 2026-11-08 · 5 papers · 0 rossi · 0 arancioni
 PICK: Knee surgery, sports traumatology, arthroscopy — Analisi di registro locale (Högberg, Cristiani, Samuelsson, Mikkelsen, Hamrin Senorski; Capio Artro Clinic, Stoccolma; livello III), rapporto misto ischiocrurali eccentrici/quadricipite concentrico a 6 mesi e revisione entro 2 anni dopo LCA con ischiocrurali, 3.458 operati: OR aggiustato 0,81 per 10 unità (IC 95% 0,71-0,93; p = 0,003), AUC 0,64; salto monopodalico LSI β −1,30 (IC 95% da −1,51 a −1,09); numero di revisioni e unità del rapporto non riportati; solo abstract
