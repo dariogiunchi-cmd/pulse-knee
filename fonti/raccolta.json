@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-09T09:48:52Z",
+ "generato": "2026-11-10T08:48:47Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -35,7 +35,7 @@
      },
      {
       "recalling_firm": "Kico Knee Innovation Company",
-      "product_description": "Brand Name: Kico Knee Innovation\r\nProduct Name: ARVIS SURGICAL NAVIGATION SYSTEM GEN 2\r\nModel/Catalog Number: IN-29200\r\nSoftware Version: ARVIS Hip and Knee Gap Balance Software v3.3.2 (IN-28200)\r\nARVIS Shoulder Software v2.0.3 (IN-23630)\r\nProduct Description: The ARVIS system is a computer-controlled navigation system intended to provide intra-operative measurements to the surgeon to aid in selection and positioning of orthopedic implant components. \r\n\r\n \r\n\r\nThe ARVIS Surgical Navigation System is indicated for assisting the surgeon in the positioning and alignment of implants relative to reference alignment axes and landmarks in stereotactic orthopedic surgery. The system aids the surgeon in making intraoperative measurements such as changes in leg length in Hip Arthroplasty. The system is compatible with straight acetabular impactors and with specific offset impactors, identified in the instructions for use, for which an adapter has been validated. Example orthopedic surgical procedures include but are not limited to:  \r\n\r\n\" Total Knee Arthroplasty  \r\n\r\n\" Unicompartmental Knee Arthroplasty: Tibial Transverse Resection  \r\n\r\n\" Hip Arthroplasty \r\n\r\n \r\n\r\nThe ARVIS\" head mounted display is for displaying augmented reality visualization and information to the user intraoperatively. The augmented/virtual displayed information should not be relied upon solely for absolute positional/alignment information and should always be used in conjunction with the displayed stereotaxic information.\r\nComponent: NA",
+      "product_description": "Brand Name: Kico Knee Innovation\nProduct Name: ARVIS SURGICAL NAVIGATION SYSTEM GEN 2\nModel/Catalog Number: IN-29200\nSoftware Version: ARVIS Hip and Knee Gap Balance Software v3.3.2 (IN-28200)\nARVIS Shoulder Software v2.0.3 (IN-23630)\nProduct Description: The ARVIS system is a computer-controlled navigation system intended to provide intra-operative measurements to the surgeon to aid in selection and positioning of orthopedic implant components. \n\n \n\nThe ARVIS Surgical Navigation System is indicated for assisting the surgeon in the positioning and alignment of implants relative to reference alignment axes and landmarks in stereotactic orthopedic surgery. The system aids the surgeon in making intraoperative measurements such as changes in leg length in Hip Arthroplasty. The system is compatible with straight acetabular impactors and with specific offset impactors, identified in the instructions for use, for which an adapter has been validated. Example orthopedic surgical procedures include but are not limited to:  \n\n\" Total Knee Arthroplasty  \n\n\" Unicompartmental Knee Arthroplasty: Tibial Transverse Resection  \n\n\" Hip Arthroplasty \n\n \n\nThe ARVIS\" head mounted display is for displaying augmented reality visualization and information to the user intraoperatively. The augmented/virtual displayed information should not be relied upon solely for absolute positional/alignment information and should always be used in conjunction with the displayed stereotaxic information.\nComponent: NA",
       "reason_for_recall": "Due to an internal sensor issue, image displayed with eyepiece may appear tilted relative to the eyepiece housing",
       "root_cause_description": "Device Design",
       "event_date_initiated": "2026-07-13",
@@ -287,6 +287,18 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Publication eCTD v4.0 Implementation Guide Package v2.0",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/submissions/ectd-v4-0-2.html",
+      "data": "Mon, 09 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Preparati a base di NAD+: quando le offerte lifestyle hanno conseguenze penali",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/medicamenti-in-internet/avvertenze-sui-medicamenti-acquistati-su-internet/nad-praeparate-wenn-lifestyle-angebote-strafrechtliche-folgen-haben.html",
+      "data": "Mon, 09 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Swissmedic Journal",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/chi-siamo/pubblicazioni/swissmedic-journal.html",
       "data": "Thu, 05 Nov 2026 00:00:00 +0000"
@@ -362,18 +374,6 @@
       "titolo": "Aggiornamento dei formulari Nuova omologazione di medicamenti per uso umano e Modifiche ed estensioni dell’omologazione MUU",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/aktualisierung-der-formulare-neuzulassung-humanarzneimittel-und-aenderungen-und-zulassungserweiterungen-ham.html",
       "data": "Sun, 01 Nov 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Nuove informazioni sull'introduzione dell'eCTD v4.0",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/submissions/ectd-v4-0-2.html",
-      "data": "Mon, 26 Oct 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Out-of-Stock – Cablivi 10 mg, poudre et solvent pour solution injectable",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-cablivi-10-mg.html",
-      "data": "Mon, 26 Oct 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
@@ -498,6 +498,17 @@
      "sorveglianza": "LET / tenodesi laterale",
      "studi": [
       {
+       "nct": "NCT07925099",
+       "titolo": "Lateral Femoral Cutaneous Nerve Block (LFCN) in ACL Reconstruction With MacFL-type Lateral Tenodesis",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-11-09",
+       "fase": [
+        "NA"
+       ],
+       "n": 108,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
        "nct": "NCT07777458",
        "titolo": "The Effect of Lateral Extra-Articular Tenodesis on Lower-Extremity Lean Mass Recovery Following Anterior Cruciate Ligament Reconstruction",
        "stato": "NOT_YET_RECRUITING",
@@ -567,17 +578,6 @@
        "fase": null,
        "n": 51,
        "tipo": "OBSERVATIONAL"
-      },
-      {
-       "nct": "NCT06668155",
-       "titolo": "ACLR: Isolated Autograft vs Allograft With Lateral Extra-articular Tenodesis",
-       "stato": "NOT_YET_RECRUITING",
-       "aggiornato": "2025-11-26",
-       "fase": [
-        "NA"
-       ],
-       "n": 60,
-       "tipo": "INTERVENTIONAL"
       }
      ]
     },
@@ -596,17 +596,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT03896464",
-       "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
-       "stato": "RECRUITING",
-       "aggiornato": "2026-10-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 352,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07846709",
        "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
        "stato": "NOT_YET_RECRUITING",
@@ -615,6 +604,17 @@
         "NA"
        ],
        "n": 150,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT03896464",
+       "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-10-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 352,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -629,17 +629,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07580157",
-       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
-       "stato": "ENROLLING_BY_INVITATION",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 20,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07753707",
        "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
        "stato": "ACTIVE_NOT_RECRUITING",
@@ -648,6 +637,17 @@
         "NA"
        ],
        "n": 111,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07580157",
+       "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
+       "stato": "ENROLLING_BY_INVITATION",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 20,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -766,7 +766,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 644,
+    "doi_citati_controllati": 650,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -793,6 +793,18 @@
    "esito": "ok",
    "dati": {
     "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Nano FiberTak® Soft Anchor: The Smallest Arthrex Suture Anchor",
+      "link": "https://www.youtube.com/watch?v=YmkdRk_hSqQ",
+      "data": "2026-11-09"
+     },
+     {
+      "canale": "DePuy Synthes",
+      "titolo": "GYPHON Flex Knotless Anchor",
+      "link": "https://www.youtube.com/watch?v=JgYUi-jyoJU",
+      "data": "2026-11-09"
+     },
      {
       "canale": "Arthrex",
       "titolo": "Subscapularis Tear Recognition: Bear Hug, Belly Press, and MRI",
@@ -1502,6 +1514,41 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Medial Meniscus Posterior Root Notch Angle and Lateral Tibial Plateau Morphology Are Associated with Medial Meniscus Posterior Root Tears",
+      "dove": "archivio preprint",
+      "data": "2026-11-06",
+      "doi": "10.21203/rs.3.rs-11386656/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11386656/v1"
+     },
+     {
+      "titolo": "Comparative Study of the Efficacy of One-Stage versus Two-Stage Revision for Chronic Periprosthetic Joint Infection Following Total Knee Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-11-06",
+      "doi": "10.21203/rs.3.rs-11294633/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11294633/v1"
+     },
+     {
+      "titolo": "Transportability of artificial intelligence models for predicting hip and knee osteoarthritis progression: a systematic review and meta-analysis of within-model",
+      "dove": "archivio preprint",
+      "data": "2026-11-06",
+      "doi": "10.21203/rs.3.rs-11403368/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11403368/v1"
+     },
+     {
+      "titolo": "Neuromuscular Control During Tai Chi in Individuals With Knee Osteoarthritis: Broadly Preserved Muscle Synergy Architecture With Selective Alterationsin Functio",
+      "dove": "archivio preprint",
+      "data": "2026-11-05",
+      "doi": "10.21203/rs.3.rs-10586009/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10586009/v1"
+     },
+     {
+      "titolo": "Wearable Estimation of Knee Joint Contact Forces: SiMPLeSENSE, a Simulated-IMU Pipeline Validated Against  <i>In Vivo</i>  Loads",
+      "dove": "archivio preprint",
+      "data": "2026-11-03",
+      "doi": "10.64898/2026.11.03.763565",
+      "url": "https://doi.org/10.64898/2026.11.03.763565"
+     },
+     {
       "titolo": "Efficacy of Topical 5% Doxepin Cream Compared with Diclofenac Gel and Placebo for Knee Osteoarthritis: A Randomized Double-Blind Clinical Trial",
       "dove": "archivio preprint",
       "data": "2026-11-03",
@@ -1640,41 +1687,6 @@
       "data": "2026-10-26",
       "doi": "10.20944/preprints202610.2482.v1",
       "url": "https://doi.org/10.20944/preprints202610.2482.v1"
-     },
-     {
-      "titolo": "CORI-Assisted Personalized Alignment Versus Conventional Mechanical Alignment in Total Knee Arthroplasty: A Retrospective Comparative Study",
-      "dove": "archivio preprint",
-      "data": "2026-10-27",
-      "doi": "10.20944/preprints202610.2576.v1",
-      "url": "https://doi.org/10.20944/preprints202610.2576.v1"
-     },
-     {
-      "titolo": "An exploratory analysis of circulating cytokine profiles, pain-associated transcripts and autoantibody responses associated with treatment response in knee oste",
-      "dove": "archivio preprint",
-      "data": "2026-10-26",
-      "doi": "10.64898/2026.10.25.26365740",
-      "url": "https://doi.org/10.64898/2026.10.25.26365740"
-     },
-     {
-      "titolo": "Association of CPAK Phenotypes With Valgus Overcorrection After Robotic-Assisted Total Knee Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-10-24",
-      "doi": "10.21203/rs.3.rs-11164350/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11164350/v1"
-     },
-     {
-      "titolo": "Electroacupuncture Alleviates Pain in Rats with Knee Osteoarthritis by Modulating Autophagy via the PI3K/Akt/mTOR Signaling Pathway",
-      "dove": "archivio preprint",
-      "data": "2026-10-23",
-      "doi": "10.21203/rs.3.rs-11302390/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11302390/v1"
-     },
-     {
-      "titolo": "Outcome Differences in Robotic vs Traditional Total Knee Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-10-23",
-      "doi": "10.21203/rs.3.rs-11139026/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11139026/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
