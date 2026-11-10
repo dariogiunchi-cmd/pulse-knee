@@ -7,7 +7,7 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 9 novembre 2026.*
+*Ultimo aggiornamento: 10 novembre 2026.*
 
 ---
 
