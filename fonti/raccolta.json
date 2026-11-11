@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-10T09:51:06Z",
+ "generato": "2026-11-11T08:22:09Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,18 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Droghe sintetiche: il DFI pone sotto controllo altre sostanze psicoattive",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/narcotics-list-extended-112026.html",
+      "data": "Tue, 10 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Ritiro di lotti – Ologynelle, comprimés pelliculés",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-ologynelle-filmtabletten.html",
+      "data": "Tue, 10 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Publication eCTD v4.0 Implementation Guide Package v2.0",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/services/submissions/ectd-v4-0-2.html",
       "data": "Mon, 09 Nov 2026 00:00:00 +0000"
@@ -364,22 +376,10 @@
       "data": "Mon, 02 Nov 2026 00:00:00 +0000"
      },
      {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Modifica del «Formulario DMF»",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/anpassung-fo-dmf.html",
-      "data": "Sun, 01 Nov 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Aggiornamento dei formulari Nuova omologazione di medicamenti per uso umano e Modifiche ed estensioni dell’omologazione MUU",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/aktualisierung-der-formulare-neuzulassung-humanarzneimittel-und-aenderungen-und-zulassungserweiterungen-ham.html",
-      "data": "Sun, 01 Nov 2026 00:00:00 +0000"
-     },
-     {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
-      "titolo": "DHPC – Respreeza (alpha-1-proteinasi inhibitor humanum)Importanti informazioni da SwissmedicOut-of-Stock – Duvaxyn WNV ad us. ve...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-respreeza-alpha-1-proteinasi-inhibitor-humanum.html",
-      "data": "Wed, 04 Nov 2026 09:13:27 +0000"
+      "titolo": "Ritiro di lotti – Ologynelle, comprimés pelliculés DHPC – Respreeza (alpha-1-proteinasi inhibitor humanum)Importanti informazion...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-ologynelle-filmtabletten.html",
+      "data": "Tue, 10 Nov 2026 20:04:45 +0000"
      }
     ]
    }
@@ -498,6 +498,17 @@
      "sorveglianza": "LET / tenodesi laterale",
      "studi": [
       {
+       "nct": "NCT06668155",
+       "titolo": "ACLR: Isolated Autograft vs Allograft With Lateral Extra-articular Tenodesis",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-11-10",
+       "fase": [
+        "NA"
+       ],
+       "n": 60,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
        "nct": "NCT07925099",
        "titolo": "Lateral Femoral Cutaneous Nerve Block (LFCN) in ACL Reconstruction With MacFL-type Lateral Tenodesis",
        "stato": "NOT_YET_RECRUITING",
@@ -569,21 +580,23 @@
        ],
        "n": 510,
        "tipo": "INTERVENTIONAL"
-      },
-      {
-       "nct": "NCT07049484",
-       "titolo": "Clinical and Biomechanical Outcomes of Anterior Cruciate Ligament (ACL) Reconstruction Associated With Lateral Extra-articular Tenodesis (LET)",
-       "stato": "RECRUITING",
-       "aggiornato": "2026-04-22",
-       "fase": null,
-       "n": 51,
-       "tipo": "OBSERVATIONAL"
       }
      ]
     },
     {
      "sorveglianza": "Innesto quadricipitale",
      "studi": [
+      {
+       "nct": "NCT06668155",
+       "titolo": "ACLR: Isolated Autograft vs Allograft With Lateral Extra-articular Tenodesis",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-11-10",
+       "fase": [
+        "NA"
+       ],
+       "n": 60,
+       "tipo": "INTERVENTIONAL"
+      },
       {
        "nct": "NCT07657195",
        "titolo": "Dry Needling and Quad Strength After Anterior Cruciate Ligament Reconstruction",
@@ -629,17 +642,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07753707",
-       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-08-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 111,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07580157",
        "titolo": "A Study Of Focused Shockwave For Anterior Knee Pain Following Anterior Cruciate Ligament Reconstruction",
        "stato": "ENROLLING_BY_INVITATION",
@@ -651,6 +653,17 @@
        "tipo": "INTERVENTIONAL"
       },
       {
+       "nct": "NCT07753707",
+       "titolo": "Influence of the Different Types of Tibial Fixation in the Reconstruction of the Anterior Cruciate Ligament of the Knee: Osseous Integration, Ligament Maturation and Clinical Results.",
+       "stato": "ACTIVE_NOT_RECRUITING",
+       "aggiornato": "2026-08-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 111,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
        "nct": "NCT07722104",
        "titolo": "Graft Type and Outcomes After ACL Reconstruction in Female Athletes",
        "stato": "NOT_YET_RECRUITING",
@@ -658,17 +671,6 @@
        "fase": null,
        "n": 82,
        "tipo": "OBSERVATIONAL"
-      },
-      {
-       "nct": "NCT04039971",
-       "titolo": "Tendon-Bone Versus All-Soft-Tissue for ACL Reconstruction: A Patient-Blinded Randomized Clinical Trial",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-07-13",
-       "fase": [
-        "NA"
-       ],
-       "n": 150,
-       "tipo": "INTERVENTIONAL"
       }
      ]
     },
@@ -766,7 +768,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 650,
+    "doi_citati_controllati": 657,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -793,6 +795,12 @@
    "esito": "ok",
    "dati": {
     "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Beaming System: Cadaveric Surgical Demonstration",
+      "link": "https://www.youtube.com/watch?v=wBDKZaiv33U",
+      "data": "2026-11-10"
+     },
      {
       "canale": "Arthrex",
       "titolo": "Nano FiberTak® Soft Anchor: The Smallest Arthrex Suture Anchor",
@@ -840,12 +848,6 @@
       "titolo": "StayPort™ Hip Cannula",
       "link": "https://www.youtube.com/watch?v=9wbba9Lxj_Q",
       "data": "2026-10-29"
-     },
-     {
-      "canale": "Smith+Nephew",
-      "titolo": "Ortho Case Insight Series | Femur Fracture Cases with EVOS◊ Large and Periprosthetic Plating System",
-      "link": "https://www.youtube.com/watch?v=67kV_9nHcP0",
-      "data": "2026-10-28"
      }
     ]
    }
@@ -1425,7 +1427,7 @@
       "pmid": "42821083",
       "titolo": "Correction: Genicular Artery Embolization for Chronic Knee Pain: Expert Consensus Recommendations on Indications, Technique and Clinical Care Using a Delphi Process.",
       "rivista": "Cardiovascular and interventional radiology",
-      "data": "2026 Oct 1",
+      "data": "2026 Nov",
       "tipi": [
        "Published Erratum"
       ]
