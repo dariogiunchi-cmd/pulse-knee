@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-12T08:49:29Z",
+ "generato": "2026-11-12T09:50:41Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -1516,6 +1516,20 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Regional Trabecular Bone Alterations in Knee Osteoarthritis: QCT Evidence from the Knee and Lumbar Spine",
+      "dove": "archivio preprint",
+      "data": "2026-11-11",
+      "doi": "10.21203/rs.3.rs-11425647/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11425647/v1"
+     },
+     {
+      "titolo": "Micro-fragmented Adipose Tissue Enhances Graft-to-Bone Healing after Anterior Cruciate Ligament Reconstruction: A Non-blinded Randomised Controlled Trial",
+      "dove": "archivio preprint",
+      "data": "2026-11-11",
+      "doi": "10.21203/rs.3.rs-11351242/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11351242/v1"
+     },
+     {
       "titolo": "The effects of exercise and physical activity on gait biomechanics and pain in knee osteoarthritis: A systematic review and meta-analysis",
       "dove": "archivio preprint",
       "data": "2026-11-10",
@@ -1675,20 +1689,6 @@
       "data": "2026-10-27",
       "doi": "10.64898/2026.10.24.761008",
       "url": "https://doi.org/10.64898/2026.10.24.761008"
-     },
-     {
-      "titolo": "Cross-cultural adaptation and longitudinal measurement properties of the Simplified Chinese version of the original 22-item Knee Self- Efficacy Scale after ante",
-      "dove": "archivio preprint",
-      "data": "2026-10-27",
-      "doi": "10.21203/rs.3.rs-10961753/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10961753/v1"
-     },
-     {
-      "titolo": "Knee extension motor imagery paired with single-pulse TMS facilitates corticospinal excitability in the tibialis anterior muscle, but not in the rectus femoris ",
-      "dove": "archivio preprint",
-      "data": "2026-10-27",
-      "doi": "10.21203/rs.3.rs-11315069/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11315069/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
