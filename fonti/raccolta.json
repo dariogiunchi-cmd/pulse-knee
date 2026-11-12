@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-11T09:26:53Z",
+ "generato": "2026-11-12T08:49:29Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -768,7 +768,7 @@
   "ritrattazioni": {
    "esito": "ok",
    "dati": {
-    "doi_citati_controllati": 657,
+    "doi_citati_controllati": 666,
     "colpiti": [],
     "nel_perimetro": [
      {
@@ -795,6 +795,12 @@
    "esito": "ok",
    "dati": {
     "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Instability Express Instrument System",
+      "link": "https://www.youtube.com/watch?v=IAfNkVH6qTk",
+      "data": "2026-11-11"
+     },
      {
       "canale": "Arthrex",
       "titolo": "Arthrex Beaming System: Cadaveric Surgical Demonstration",
@@ -842,12 +848,6 @@
       "titolo": "Osteochondral Lesion Repair Using the ChondralTak™ Technique",
       "link": "https://www.youtube.com/watch?v=JK4micy6SwU",
       "data": "2026-11-02"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "StayPort™ Hip Cannula",
-      "link": "https://www.youtube.com/watch?v=9wbba9Lxj_Q",
-      "data": "2026-10-29"
      }
     ]
    }
@@ -1516,6 +1516,27 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "The effects of exercise and physical activity on gait biomechanics and pain in knee osteoarthritis: A systematic review and meta-analysis",
+      "dove": "archivio preprint",
+      "data": "2026-11-10",
+      "doi": "10.64898/2026.11.08.26367018",
+      "url": "https://doi.org/10.64898/2026.11.08.26367018"
+     },
+     {
+      "titolo": "Tibia-neutral functional alignment with femoral varus adjustment of up to 3° in robotic-assisted total knee arthroplasty: a preliminary prospective study using ",
+      "dove": "archivio preprint",
+      "data": "2026-11-10",
+      "doi": "10.21203/rs.3.rs-11441368/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11441368/v1"
+     },
+     {
+      "titolo": "A PTN-Rich MSC Subtype Promotes Cartilage Repair in End-Stage Knee Osteoarthritis",
+      "dove": "archivio preprint",
+      "data": "2026-11-09",
+      "doi": "10.64898/2026.11.06.764540",
+      "url": "https://doi.org/10.64898/2026.11.06.764540"
+     },
+     {
       "titolo": "Medial Meniscus Posterior Root Notch Angle and Lateral Tibial Plateau Morphology Are Associated with Medial Meniscus Posterior Root Tears",
       "dove": "archivio preprint",
       "data": "2026-11-06",
@@ -1668,27 +1689,6 @@
       "data": "2026-10-27",
       "doi": "10.21203/rs.3.rs-11315069/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-11315069/v1"
-     },
-     {
-      "titolo": "Comparative Functional Outcomes of Patellar Resurfacing in Patients Undergoing Posterior Stabilized and Cruciate Retaining Total Knee Arthroplasty: A Prospectiv",
-      "dove": "archivio preprint",
-      "data": "2026-10-27",
-      "doi": "10.21203/rs.3.rs-9957570/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-9957570/v1"
-     },
-     {
-      "titolo": "Biocompatibility and Osteochondral Regenerative Potential of Hydroxyapatite-Based Hydrogels in a Vietnamese Pig Knee Defect Model",
-      "dove": "archivio preprint",
-      "data": "2026-10-26",
-      "doi": "10.20944/preprints202610.2433.v1",
-      "url": "https://doi.org/10.20944/preprints202610.2433.v1"
-     },
-     {
-      "titolo": "Static Antibiotic Spacers in Periprosthetic Knee Infection: Indications, Technique, and Outcomes",
-      "dove": "archivio preprint",
-      "data": "2026-10-26",
-      "doi": "10.20944/preprints202610.2482.v1",
-      "url": "https://doi.org/10.20944/preprints202610.2482.v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
