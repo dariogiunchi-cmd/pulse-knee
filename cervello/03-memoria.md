@@ -7,12 +7,21 @@
 > Formato: `data | fonte | titolo | DOI | temi | stato`
 > Stato: **aperto** · **risolto** · **superato**
 
-*Ultimo aggiornamento: 12 novembre 2026.*
+*Ultimo aggiornamento: 13 novembre 2026.*
 
 ---
 
 ## LAVORI ARCHIVIATI
 
+2026-11-13 | JSAMS Plus | Studio diagnostico su registro prospettico Project ACL (Högberg et al.; Göteborg), valori soglia di forza e salto relativi al rientro dopo LCA, 428 atleti, testo completo letto | 10.1016/j.jsampl.2026.100163 | LCA, ritorno allo sport, test funzionali, seconda lesione | aperto — 🟠 PICK; AUC 0,48-0,55, nessun test discrimina; T3
+2026-11-13 | J Exp Orthop | Registro pediatrico prospettico (Seeto et al.; Queensland), fallimento a 2 anni del LCA sotto i 18 anni, 290 pazienti, solo abstract | 10.1002/jeo2.70978 | LCA, adolescente, IMC, condilo laterale | aperto — 🟢 IMC HR 1,13 (1,05-1,22); LFCI HR 0,93 (0,88-0,99); 20 eventi
+2026-11-13 | Acta Ortop Bras | Meta-analisi (de Albuquerque et al., con Helito), maturazione dell'innesto alla RM con e senza rinforzo anterolaterale, 5 studi, 450 pazienti, solo abstract | 10.1590/1413-785220263406e307712 | LET, LCA, maturazione dell'innesto | aperto — 🟢 SNQ MD −0,77 (IC 95% −3,56/2,03), I² 92%
+2026-11-13 | J ISAKOS | Coorte di livello III (Mónico et al., con Espregueira-Mendes), lunghezza dell'innesto nel tunnel femorale in 63 calciatori, solo abstract | 10.1016/j.jisako.2026.101242 | LCA, tunnel femorale, calcio | aperto — 🟢 muto: 7 rotture, p = 0,08
+2026-11-13 | Osteoarthritis Cartilage | Coorte OAI (White et al.; Stanford), IMC e varo nella progressione compartimentale, 5.930 arti, solo abstract | 10.1016/j.joca.2026.11.003 | artrosi, varo, IMC, osteotomia | aperto — 🟢 protesi OR 1,14 a 10 anni (1,08-1,21) per grado di HKA
+2026-11-13 | J Orthop Surg Res | Meta-analisi (Javidmehr et al.; Teheran), lunghezza dell'arto dopo osteotomie tibiali e femorali, 13 studi, 884 ginocchia, solo abstract | 10.1186/s13018-026-07082-x | osteotomia, lunghezza dell'arto | aperto — 🟢 apertura mediale +5,4 mm (3,6-7,19)
+2026-11-13 | J Arthroplasty | RCT (Yang et al.; Shanghai), protesi robotica CR contro PS in allineamento funzionale, 120 pazienti, solo abstract | 10.1016/j.arth.2026.11.018 | protesi robotica, CR, PS, bilancio | aperto — 🟢 esiti uguali a 2 anni, muto per potenza
+2026-11-13 | Orthopadie (Heidelb) | Revisione di 5 meta-analisi (Vaishya et al., con Migliorini), monocompartimentale robotica, solo abstract | 10.1007/s00132-026-04910-0 | monocompartimentale, robot | aperto — 🟢 zona sicura RR 1,73; complicanze OR 0,66 (0,34-1,29)
+2026-11-13 | J Arthroplasty | Registro AOANJRR (Rele et al.), rischio di revisione nell'arco della vita delle protesi totali 2000-2020, solo abstract | 10.1016/j.arth.2026.11.041 | protesi totale, registro, età | aperto — 🟢 46-50 anni 39,0% (38,3-39,8)
 2026-11-12 | J Pediatr Orthop | Studio retrospettivo comparativo (Thai et al.; Johns Hopkins), artrofibrosi dopo LCA pediatrico con quadricipite contro ischiocrurali, LET esclusa, 154 pazienti, livello III, solo abstract | 10.1097/BPO.0000000000003532 | LCA, adolescente, quadricipite, artrofibrosi | aperto — 🟠 artrofibrosi 7% contro 0% (p = 0,018), 5 eventi, RR 13,17 con IC 95% 0,74-234,11 (potenza.py); più lesioni condrali nel gruppo quadricipite; contraddice in parte Hamad (4 nov) sull'origine della rigidità; alimenta T1a
 2026-11-12 | N Engl J Med | RCT pragmatico di non inferiorità PEPPER (Pellegrini et al.), aspirina contro warfarin contro rivaroxaban dopo protesi d'anca e di ginocchio, 18.883 randomizzati, 15.317 per protocollo, livello alto, solo abstract | 10.1056/NEJMoa2602435 | protesi, tromboprofilassi, aspirina | aperto — 🟢 PICK; morte o TEV 1,26% / 1,23% / 0,94%; aspirina contro rivaroxaban +0,30 punti (IC 95% da −0,20 a 0,81) oltre il margine 0,69; sicurezza a favore dell'aspirina senza significatività; ginocchio non separato nell'abstract
 2026-11-12 | KSSTA | Editoriale (Dzidzishvili, Ostojic, Chahla, LaPrade), centralizzazione meniscale: estrusione causa o conseguenza dell'artrosi | 10.1002/ksa.70676 | menisco, radice, centralizzazione, estrusione | aperto — 🟢 opinione, nessun dato; dubbio sollevato da autori favorevoli alla centralizzazione; tocca T2b (app T3) senza muoverla
@@ -1272,6 +1281,8 @@ combinare le due procedure protegga la riparazione: conferma indirettamente la s
 sotto carico nella riabilitazione precoce, anche quando l'osteotomia è già stata eseguita.
 
 ### T3 — Il criterio di rientro contro la sua stessa evidenza *(dal 2026-07-22)*
+
+**Nuovo il 13 novembre 2026, nemmeno i valori relativi al peso predicono la seconda lesione (PMID 43017134).** Registro prospettico Project ACL (Högberg et al., *JSAMS Plus*; Göteborg; testo completo letto): 428 atleti tornati al livello pre-infortunio, 50 seconde lesioni entro 2 anni (11,7%; 31 omolaterali, 19 controlaterali). Forza isocinetica in Nm/kg e salti rapportati all'altezza: AUC da 0,48 a 0,55, indice di Youden da 0,06 a 0,14, nessun test ≥ 0,70. Non misura la LSI del 90%, ma gli autori ricordano che lo stesso registro l'aveva già trovata non predittiva; esposizione allo sport non misurata, tipo di autoinnesto non riportato nel testo letto. È il terzo indizio in due settimane (dopo il 29 ottobre e l'8 novembre) che un numero di forza, comunque normalizzato, misura il recupero ma non il rischio: rafforza il campo «fare», non sposta la soglia.
 
 **Nuovo l'8 novembre 2026, un test isocinetico a 6 mesi lega debolmente il rapporto ischiocrurali/quadricipite alla revisione (PMID 42994101).** Analisi di un registro di Stoccolma (Högberg et al., *KSSTA*; 3.458 operati con innesto di ischiocrurali; solo abstract): per ogni aumento di 10 unità del rapporto misto a 6 mesi, OR di revisione entro 2 anni 0,81 (IC 95% 0,71-0,93), ma AUC 0,64; un rapporto più alto si associa a un salto monopodalico più asimmetrico (β −1,30; IC 95% da −1,51 a −1,09). Solo ischiocrurali e nessun dato sul quadricipite: non fissa né sposta la soglia del 90% sul suo innesto. È un secondo indizio, dopo la prontezza psicologica del 29 ottobre, che un solo numero di forza non basta a decidere il rientro.
 
