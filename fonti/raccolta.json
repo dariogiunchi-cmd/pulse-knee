@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-14T07:59:25Z",
+ "generato": "2026-11-14T08:58:34Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -792,8 +792,71 @@
    }
   },
   "youtube": {
-   "esito": "non risposto: HTTPError HTTP Error 404: Not Found",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "video": [
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Spine Evolutions 2027",
+      "link": "https://www.youtube.com/watch?v=zIOJPImj4vE",
+      "data": "2026-11-12"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Instability Express Instrument System",
+      "link": "https://www.youtube.com/watch?v=IAfNkVH6qTk",
+      "data": "2026-11-11"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Arthrex Beaming System: Cadaveric Surgical Demonstration",
+      "link": "https://www.youtube.com/watch?v=wBDKZaiv33U",
+      "data": "2026-11-10"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Nano FiberTak® Soft Anchor: The Smallest Arthrex Suture Anchor",
+      "link": "https://www.youtube.com/watch?v=YmkdRk_hSqQ",
+      "data": "2026-11-09"
+     },
+     {
+      "canale": "DePuy Synthes",
+      "titolo": "GYPHON Flex Knotless Anchor",
+      "link": "https://www.youtube.com/watch?v=JgYUi-jyoJU",
+      "data": "2026-11-09"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Subscapularis Tear Recognition: Bear Hug, Belly Press, and MRI",
+      "link": "https://www.youtube.com/watch?v=hlcwk5hEFwM",
+      "data": "2026-11-07"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "The Benefits of Nano Arthroscopy for Pediatric Orthopedics",
+      "link": "https://www.youtube.com/watch?v=IPqTSVZd5mo",
+      "data": "2026-11-06"
+     },
+     {
+      "canale": "Stryker",
+      "titolo": "Driven to move MedTech forward",
+      "link": "https://www.youtube.com/watch?v=y6Gt331N-sI",
+      "data": "2026-11-04"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Going Pro With the Syndesmosis TightRope® PRO Implant",
+      "link": "https://www.youtube.com/watch?v=ZlvX41qKVDM",
+      "data": "2026-11-03"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Osteochondral Lesion Repair Using the ChondralTak™ Technique",
+      "link": "https://www.youtube.com/watch?v=JK4micy6SwU",
+      "data": "2026-11-02"
+     }
+    ]
+   }
   },
   "destino": {
    "esito": "ok",
