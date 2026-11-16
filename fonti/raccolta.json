@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-15T09:26:57Z",
+ "generato": "2026-11-16T08:34:02Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -840,12 +840,6 @@
       "titolo": "Going Pro With the Syndesmosis TightRope® PRO Implant",
       "link": "https://www.youtube.com/watch?v=ZlvX41qKVDM",
       "data": "2026-11-03"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Osteochondral Lesion Repair Using the ChondralTak™ Technique",
-      "link": "https://www.youtube.com/watch?v=JK4micy6SwU",
-      "data": "2026-11-02"
      }
     ]
    }
@@ -1340,9 +1334,9 @@
      },
      {
       "pmid": "42880894",
-      "titolo": "Sex differences in clinical need, willingness, and surgeon recommendations for total knee arthroplasty: a cross-sectional study.",
+      "titolo": "Sex Differences in Clinical Need, Willingness, and Surgeon Recommendations for Total Knee Arthroplasty: A Cross-Sectional Study.",
       "rivista": "The Journal of rheumatology",
-      "data": "2026 Oct 15",
+      "data": "2026 Nov 15",
       "tipi": [
        "Journal Article"
       ]
@@ -1465,27 +1459,6 @@
       "data": "2026 Sep 19",
       "tipi": [
        "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42749319",
-      "titolo": "[Expert consensus on clinical pathway for high-conformity total knee arthroplasty through a minimally invasive surgical approach].",
-      "rivista": "Zhongguo xiu fu chong jian wai ke za zhi = Zhongguo xiufu chongjian waike zazhi = Chinese journal of reparative and reconstructive surgery",
-      "data": "2026 Sep 15",
-      "tipi": [
-       "Journal Article",
-       "Consensus Statement",
-       "English Abstract"
-      ]
-     },
-     {
-      "pmid": "42748364",
-      "titolo": "Formal consensus on fast-track hip and knee arthroplasty: ESSKA/EKA, EHS and APAS recommendations for optimised recovery pathways in joint replacement surgeries.",
-      "rivista": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
-      "data": "2026 Sep 16",
-      "tipi": [
-       "Journal Article",
-       "Consensus Statement"
       ]
      }
     ]
