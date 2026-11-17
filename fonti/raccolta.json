@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-16T09:45:00Z",
+ "generato": "2026-11-17T09:43:13Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -144,6 +144,15 @@
     ],
     "enforcement": [
      {
+      "recall_number": "Z-0356-2027",
+      "recalling_firm": "CORIN MEDICAL, LTD.",
+      "product_description": "Unity Knee ASC Modular Handle included in the Corin UNITY ASC INSTRUMENT SYSTEM. Part Number: 1232040.",
+      "reason_for_recall": "Potential malfunction of the Modular Handles where the locking mechanism may fail. Any mating instruments already engaged to the handle will not be able to be disengaged, and the handle will be unable to fitted securely to any unengaged mating instruments.",
+      "report_date": "20261111",
+      "classification": "Class II",
+      "sorvegliata": false
+     },
+     {
       "recall_number": "Z-3199-2026",
       "recalling_firm": "Howmedica Osteonics Corp.",
       "product_description": "ABG I ACETABULAR INSERT  HOODED 28mm ID X 48mm\t  \tC-M079-2-801  \t  \t  ARC2F ACETABULAR INSERT 48/50/52mm OD x 28mm ID\t  \tC-M071-6-700  \t  \t  ARC2F ACETABULAR INSERT 50mm OD x 28mm ID 10DEGREE HOOD\t  \tC-M071-8-400  \t  \t  BEARING AND AXLE BUSHING ASSY STANDARD ELBOW\t  \tC-M110-1-201  \t  \t  BUSHING AND BEARING USE C-MM100253-00\t  \tC-MM100253-02  \t  \t  DURACON TIB INSERT LG 12MM MED 14MM LAT\t  \tC-M066-3-000  \t  \t  EXETER WINGLESS CENTRALISER FOR C-M082-7-302\t  \tC-M082-7-303  \t  \t  EXETER WINGLESS CENTRALIZER XSM\t  \tC-M107-5-301  \t  \t  GMRS EXTRA SM ALL-POLY TIBIA SIZE 11mm\t  \tC-MM100616-02  \t  \t  GMRS EXTRA SM ALL-POLY TIBIA SIZE 16mm\t  \tC-MM100616-03  \t  \t  GMRS EXTRA SM ALL-POLY TIBIA SIZE 8mm\t  \tC-MM100616-01  \t  \t  GMRS SML POLY TIBIA 11MM CASE 100520\t  \tC-MM100520-03  \t  \t  GMRS SML POLY TIBIA 16MM CASE 100520\t  \tC-MM100520-04  \t  \t  GMRS SML POLY TIBIA 8MM CASE 100520\t  \tC-MM100520-02  \t  \t  GMRS SML TIBIA  11MM WITH CASE 100411\t  \tC-MM100411-03  \t  \t  GMRS SML TIBIA  14MM WITH CASE 100411\t  \tC-MM100411-04  \t  \t  GMRS SML TIBIA  8MM WITH CASE 100411\t  \tC-MM100411-02  \t  \t  GMRS TIB INSRT SML 10MM WITH CASE 100507\t  \tC-MM100507-04  \t  \t  GMRS TIB INSRT SML 16MM WITH CASE 100507\t  \tC-MM100507-06  \t  \t  KALI TIBIAL INSERT LARGE RIGHT 8mm\t  \tC-M071-6-601  \t  \t  KRH REV TIB INS 16mm THK .655 DIA STEM\t  \tC-M113-5-603  \t  \t  MRH KNEE TIBIAL INSERT FOR THIN POST\t  \tC-M067-3-103  \t  \t  MRS RADIAL BUSHING FORITH C-M107-7-800\t  \tC-M107-7-801  \t  \t  SELF-PRESSURIZING GLENOID SIZE 9\t  \tC-M064-4-300  \t  \t  TRIATHLON NO. 9 TIBIAL INSERT 11MM\t  \tC-M067-5-003  \t  \t  TRIATHLON NO. 9 TIBIAL INSERT 9MM\t  \tC-M067-5-002  \t  \t  TRIDENT ALL POLY CUP 44 X 66MM\t  \tC-M066-0-901  \t  \t  TRIDENT CONSTRAINED ACETABULAR INSERT SIZE A X 22mm ID  UH1\t  \tC-M104-2-002  \t  \t  TRIDENT CONSTRAINED ACETABULAR INSERT SIZE B X 22mm ID  UH1\t  \tC-M104-2-003  \t  \t  UHR BIPOLAR 22X38MM\t  \tUH1-38-22    UHR BIPOLAR 22X40MM\t  \tUH1-40-22    UHR BIPOLAR 22X41MM\t  \tUH1-41-22    UHR BIPOLAR 22X42MM\t  \tUH1-42-22    UHR BIPOLAR 22X43MM\t  \tUH1-43-22    UHR BIPOLAR 22X45MM\t  \tUH1-45-22    UHR BIPOLAR 26X41mm\t  \tUH1-41-26  \t  UHR BIPOLAR 26X42mm\t  \tUH1-42-26  \t  UHR BIPOLAR 26X43mm\t  \tUH1-43-26  \t  UHR BIPOLAR 26X44mm\t  \tUH1-44-26  \t  UHR BIPOLAR 26X45mm\t  \tUH1-45-26  \t  UHR BIPOLAR 26X46mm\t  \tUH1-46-26    UHR BIPOLAR 26X47mm\t  \tUH1-47-26  \t  UHR BIPOLAR 26X48mm\t  \tUH1-48-26  \t  UHR BIPOLAR 28X42mm\t  \tUH1-42-28  \t  UHR BIPOLAR 28X44mm\t  \tUH1-44-28  \t  UHR BIPOLAR 28X45mm\t  \tUH1-45-28    UHR BIPOLAR 28X46mm\t  \tUH1-46-28    UHR BIPOLAR 28X47mm\t  \tUH1-47-28    UHR BIPOLAR 28X48mm\t  \tUH1-48-28    \t  Orthopaedic implant components manufactured from UHMWPE (polyethylene)",
@@ -268,15 +277,6 @@
       "report_date": "20260715",
       "classification": "Class II",
       "sorvegliata": false
-     },
-     {
-      "recall_number": "Z-2700-2026",
-      "recalling_firm": "Encore Medical, LP",
-      "product_description": "Brand Name: EMPOWR 3D KNEE Product Name: EMPOWR 3D KNEE INS, 11L 14MM, VE Model/Catalog Number: 342-19-703 Product Description: Enovis knee devices are intended for knee arthroplasty.",
-      "reason_for_recall": "Due to packaging discrepancy with incorrect product size mixed up.",
-      "report_date": "20260715",
-      "classification": "Class II",
-      "sorvegliata": true
      }
     ]
    }
@@ -498,6 +498,17 @@
      "sorveglianza": "LET / tenodesi laterale",
      "studi": [
       {
+       "nct": "NCT07939464",
+       "titolo": "Study of the Integrated Biomechanics of the Lower Limbs and Trunk in Athletes of Different Age Groups During the Performance of Motor Tasks",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-11-16",
+       "fase": [
+        "NA"
+       ],
+       "n": 52,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
        "nct": "NCT06668155",
        "titolo": "ACLR: Isolated Autograft vs Allograft With Lateral Extra-articular Tenodesis",
        "stato": "NOT_YET_RECRUITING",
@@ -569,17 +580,6 @@
        ],
        "n": 1272,
        "tipo": "INTERVENTIONAL"
-      },
-      {
-       "nct": "NCT06885372",
-       "titolo": "Long-term Follow up of the Stability 1 Trial",
-       "stato": "ENROLLING_BY_INVITATION",
-       "aggiornato": "2026-05-14",
-       "fase": [
-        "NA"
-       ],
-       "n": 510,
-       "tipo": "INTERVENTIONAL"
       }
      ]
     },
@@ -609,17 +609,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07846709",
-       "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
-       "stato": "NOT_YET_RECRUITING",
-       "aggiornato": "2026-10-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 150,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT03896464",
        "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
        "stato": "RECRUITING",
@@ -628,6 +617,17 @@
         "NA"
        ],
        "n": 352,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07846709",
+       "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-10-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 150,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -834,12 +834,6 @@
       "titolo": "Driven to move MedTech forward",
       "link": "https://www.youtube.com/watch?v=y6Gt331N-sI",
       "data": "2026-11-04"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Going Pro With the Syndesmosis TightRope® PRO Implant",
-      "link": "https://www.youtube.com/watch?v=ZlvX41qKVDM",
-      "data": "2026-11-03"
      }
     ]
    }
@@ -994,8 +988,12 @@
     {
      "pmid": "42804769",
      "titolo": "Annals of Internal Medicine — RCT a gruppi paralleli non in cieco (La Trobe University, registro ACTRN12620001",
-     "citanti": [],
-     "nuovi": []
+     "citanti": [
+      "42960303"
+     ],
+     "nuovi": [
+      "42960303"
+     ]
     },
     {
      "pmid": "42800674",
@@ -1479,6 +1477,13 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Graft Diameter Differentially Affects ACL Stress Across Flexion Angles: A Finite Element Analysis With Native Knee Control",
+      "dove": "archivio preprint",
+      "data": "2026-11-16",
+      "doi": "10.21203/rs.3.rs-11457178/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11457178/v1"
+     },
+     {
       "titolo": "Volumetric Analysis of the Deltoid Muscle From Neck-to-Knee Dixon MRI: A pilot population assessment of a posterior intramuscular injection target",
       "dove": "archivio preprint",
       "data": "2026-11-12",
@@ -1645,13 +1650,6 @@
       "data": "2026-11-01",
       "doi": "10.21203/rs.3.rs-11065773/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-11065773/v1"
-     },
-     {
-      "titolo": "Association Between Lesion-Directed Positioning Management and Early Functional Recovery Following PRP-Augmented Meniscal Repair: A Retrospective Cohort Study",
-      "dove": "archivio preprint",
-      "data": "2026-11-01",
-      "doi": "10.21203/rs.3.rs-11024297/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11024297/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
