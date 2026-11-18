@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-17T10:44:00Z",
+ "generato": "2026-11-18T09:05:41Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Regulatory & Beyond 2026",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/veranstaltungen/regulatory-beyond-2026.html",
+      "data": "Tue, 17 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "HPC – Credelio ad us. vet., comprimés à croquer pour chats",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/tierarzneimittel/medicamenti-per-uso-veterinario/dhpc-veterinary-medicines/hpc-credelio-12-mg-ad-us-vet-kautabletten-fuer-katzen.html",
       "data": "Fri, 13 Nov 2026 00:00:00 +0000"
@@ -367,12 +373,6 @@
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Aggiornamento di pubblicazioni relative ai prodotti parenterali senza destinazione medica",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/services/problemi-di-delimitazione/parenteralia-im-fokus.html",
-      "data": "Mon, 02 Nov 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Patologie oculari in corso di trattamento con amiodarone",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/farmacovigilanza/vigilance-news/amiodarone-treatment-eye-disorders.html",
       "data": "Mon, 02 Nov 2026 00:00:00 +0000"
      },
      {
@@ -788,6 +788,24 @@
    "dati": {
     "video": [
      {
+      "canale": "DePuy Synthes",
+      "titolo": "Lateral Ankle Repair with Augmentationfeaturing Dr. Park using Gryphon Flex KnotlessAnchor",
+      "link": "https://www.youtube.com/watch?v=Vd0k2rma4K0",
+      "data": "2026-11-17"
+     },
+     {
+      "canale": "DePuy Synthes",
+      "titolo": "Posterior Labral Repair featuring Dr. Larry Gulotta using Gryphon Flex Knotless",
+      "link": "https://www.youtube.com/watch?v=gDbKtZ5SO1M",
+      "data": "2026-11-17"
+     },
+     {
+      "canale": "DePuy Synthes",
+      "titolo": "Lateral Extra Articular Tenodesis (LET) featuring Dr. Miho Tanaka using Gryphon Flex Knotless Anchor",
+      "link": "https://www.youtube.com/watch?v=uCL0NYBdAh4",
+      "data": "2026-11-17"
+     },
+     {
       "canale": "Arthrex",
       "titolo": "Arthrex Spine Evolutions 2027",
       "link": "https://www.youtube.com/watch?v=zIOJPImj4vE",
@@ -828,12 +846,6 @@
       "titolo": "The Benefits of Nano Arthroscopy for Pediatric Orthopedics",
       "link": "https://www.youtube.com/watch?v=IPqTSVZd5mo",
       "data": "2026-11-06"
-     },
-     {
-      "canale": "Stryker",
-      "titolo": "Driven to move MedTech forward",
-      "link": "https://www.youtube.com/watch?v=y6Gt331N-sI",
-      "data": "2026-11-04"
      }
     ]
    }
@@ -1475,6 +1487,34 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Association Between Final Intraoperative Medial Joint Laxity and One-Year Patient Satisfaction After ROSA-Assisted Medial Unicompartmental Knee Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-11-17",
+      "doi": "10.21203/rs.3.rs-11546258/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11546258/v1"
+     },
+     {
+      "titolo": "Experiences of Patients with Physiotherapy Service for Knee Osteoarthritis at Tertiary Care Government Hospital, Pokhara, Nepal-A qualitative study",
+      "dove": "archivio preprint",
+      "data": "2026-11-17",
+      "doi": "10.21203/rs.3.rs-11409973/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11409973/v1"
+     },
+     {
+      "titolo": "Physical calibration and signal periodic updates to synchronize IMUs for 5-day continuous knee flexion tracking",
+      "dove": "archivio preprint",
+      "data": "2026-11-16",
+      "doi": "10.64898/2026.11.14.26368098",
+      "url": "https://doi.org/10.64898/2026.11.14.26368098"
+     },
+     {
+      "titolo": "Real-Time Osteoporosis Diagnosis from Knee X-Rays Using anEnhanced YOLO Architecture on Jetson Nano",
+      "dove": "archivio preprint",
+      "data": "2026-11-17",
+      "doi": "10.21203/rs.3.rs-8446858/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-8446858/v1"
+     },
+     {
       "titolo": "Graft Diameter Differentially Affects ACL Stress Across Flexion Angles: A Finite Element Analysis With Native Knee Control",
       "dove": "archivio preprint",
       "data": "2026-11-16",
@@ -1620,34 +1660,6 @@
       "data": "2026-11-03",
       "doi": "10.20944/preprints202611.0125.v1",
       "url": "https://doi.org/10.20944/preprints202611.0125.v1"
-     },
-     {
-      "titolo": "Changes in Coronal Lower-Limb Alignment and Knee Phenotypes After Total Hip Arthroplasty in Patients Who Have Crowe IV Developmental Dysplasia of the Hip",
-      "dove": "archivio preprint",
-      "data": "2026-11-02",
-      "doi": "10.21203/rs.3.rs-11203155/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11203155/v1"
-     },
-     {
-      "titolo": "Clinical Outcomes of Anterior Cruciate Ligament Reconstruction With and Without Lateral Extra-articular Tenodesis in Non-Athletic Patients: A Retrospective Comp",
-      "dove": "archivio preprint",
-      "data": "2026-11-01",
-      "doi": "10.21203/rs.3.rs-11281275/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11281275/v1"
-     },
-     {
-      "titolo": "MRI Assessment of Patellofemoral Morphology and Chondromalacia Severity in Young Soccer Players: A Case-Control Study",
-      "dove": "archivio preprint",
-      "data": "2026-11-01",
-      "doi": "10.21203/rs.3.rs-11029051/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11029051/v1"
-     },
-     {
-      "titolo": "Septic arthritis superimposed on an arthritic knee is a surgical dilemma: A 10-year experience with two-stage total knee arthroplasty – the first reported study",
-      "dove": "archivio preprint",
-      "data": "2026-11-01",
-      "doi": "10.21203/rs.3.rs-11065773/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11065773/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
