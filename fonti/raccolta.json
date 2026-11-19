@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-18T10:10:36Z",
+ "generato": "2026-11-19T09:29:01Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -587,6 +587,17 @@
      "sorveglianza": "Innesto quadricipitale",
      "studi": [
       {
+       "nct": "NCT07081815",
+       "titolo": "JOCOAT Safety and Tolerability Clinical Trial GLAD-04",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-11-18",
+       "fase": [
+        "NA"
+       ],
+       "n": 24,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
        "nct": "NCT06668155",
        "titolo": "ACLR: Isolated Autograft vs Allograft With Lateral Extra-articular Tenodesis",
        "stato": "NOT_YET_RECRUITING",
@@ -609,17 +620,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT03896464",
-       "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
-       "stato": "RECRUITING",
-       "aggiornato": "2026-10-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 352,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07846709",
        "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
        "stato": "NOT_YET_RECRUITING",
@@ -628,6 +628,17 @@
         "NA"
        ],
        "n": 150,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT03896464",
+       "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-10-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 352,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -660,17 +671,6 @@
        "fase": null,
        "n": 82,
        "tipo": "OBSERVATIONAL"
-      },
-      {
-       "nct": "NCT04039971",
-       "titolo": "Tendon-Bone Versus All-Soft-Tissue for ACL Reconstruction: A Patient-Blinded Randomized Clinical Trial",
-       "stato": "ACTIVE_NOT_RECRUITING",
-       "aggiornato": "2026-07-13",
-       "fase": [
-        "NA"
-       ],
-       "n": 150,
-       "tipo": "INTERVENTIONAL"
       }
      ]
     },
@@ -788,6 +788,24 @@
    "dati": {
     "video": [
      {
+      "canale": "Arthrex",
+      "titolo": "SpeedPearl: SutureCup Offset for Maximizing Subcoracoid Distance in RTSA",
+      "link": "https://www.youtube.com/watch?v=6lmjl3kM12I",
+      "data": "2026-11-18"
+     },
+     {
+      "canale": "Arthrex",
+      "titolo": "Subscapularis Tears: Read Your Own MRI | Dr. Denard",
+      "link": "https://www.youtube.com/shorts/xysS87t6Kc0",
+      "data": "2026-11-18"
+     },
+     {
+      "canale": "DePuy Synthes",
+      "titolo": "DS Sports Center Ep#1: Lower Trapezius Transfer featuring Dr. Bassem Elhassan & Dr. Peter Chalmers",
+      "link": "https://www.youtube.com/watch?v=_lpWbiWYLU8",
+      "data": "2026-11-18"
+     },
+     {
       "canale": "DePuy Synthes",
       "titolo": "Lateral Ankle Repair with Augmentationfeaturing Dr. Park using Gryphon Flex KnotlessAnchor",
       "link": "https://www.youtube.com/watch?v=Vd0k2rma4K0",
@@ -827,12 +845,6 @@
       "canale": "Arthrex",
       "titolo": "Nano FiberTak® Soft Anchor: The Smallest Arthrex Suture Anchor",
       "link": "https://www.youtube.com/watch?v=YmkdRk_hSqQ",
-      "data": "2026-11-09"
-     },
-     {
-      "canale": "DePuy Synthes",
-      "titolo": "GYPHON Flex Knotless Anchor",
-      "link": "https://www.youtube.com/watch?v=JgYUi-jyoJU",
       "data": "2026-11-09"
      },
      {
@@ -1459,15 +1471,6 @@
       "tipi": [
        "Journal Article"
       ]
-     },
-     {
-      "pmid": "42763276",
-      "titolo": "Consensus Guidelines for Radiofrequency Ablation of Chronic Knee Pain in Rural Communities.",
-      "rivista": "Pain management nursing : official journal of the American Society of Pain Management Nurses",
-      "data": "2026 Sep 19",
-      "tipi": [
-       "Journal Article"
-      ]
      }
     ]
    }
@@ -1482,188 +1485,8 @@
    }
   },
   "preprint": {
-   "esito": "ok",
-   "dati": {
-    "finestra_giorni": 30,
-    "voci": [
-     {
-      "titolo": "Association Between Final Intraoperative Medial Joint Laxity and One-Year Patient Satisfaction After ROSA-Assisted Medial Unicompartmental Knee Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-11-17",
-      "doi": "10.21203/rs.3.rs-11546258/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11546258/v1"
-     },
-     {
-      "titolo": "Experiences of Patients with Physiotherapy Service for Knee Osteoarthritis at Tertiary Care Government Hospital, Pokhara, Nepal-A qualitative study",
-      "dove": "archivio preprint",
-      "data": "2026-11-17",
-      "doi": "10.21203/rs.3.rs-11409973/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11409973/v1"
-     },
-     {
-      "titolo": "Physical calibration and signal periodic updates to synchronize IMUs for 5-day continuous knee flexion tracking",
-      "dove": "archivio preprint",
-      "data": "2026-11-16",
-      "doi": "10.64898/2026.11.14.26368098",
-      "url": "https://doi.org/10.64898/2026.11.14.26368098"
-     },
-     {
-      "titolo": "Real-Time Osteoporosis Diagnosis from Knee X-Rays Using anEnhanced YOLO Architecture on Jetson Nano",
-      "dove": "archivio preprint",
-      "data": "2026-11-17",
-      "doi": "10.21203/rs.3.rs-8446858/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-8446858/v1"
-     },
-     {
-      "titolo": "Graft Diameter Differentially Affects ACL Stress Across Flexion Angles: A Finite Element Analysis With Native Knee Control",
-      "dove": "archivio preprint",
-      "data": "2026-11-16",
-      "doi": "10.21203/rs.3.rs-11457178/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11457178/v1"
-     },
-     {
-      "titolo": "Volumetric Analysis of the Deltoid Muscle From Neck-to-Knee Dixon MRI: A pilot population assessment of a posterior intramuscular injection target",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.64898/2026.11.10.26367545",
-      "url": "https://doi.org/10.64898/2026.11.10.26367545"
-     },
-     {
-      "titolo": "Association Between Average Step Width and History of Falls in Patients with Moderate-to-Severe Knee Osteoarthritis: A Cross-Sectional Gait Analysis",
-      "dove": "archivio preprint",
-      "data": "2026-11-13",
-      "doi": "10.21203/rs.3.rs-11412954/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11412954/v1"
-     },
-     {
-      "titolo": "Association between COL6A4P1 gene polymorphisms and knee osteoarthritis in the Chinese Han population",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.21203/rs.3.rs-11356070/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11356070/v1"
-     },
-     {
-      "titolo": "Association between patients’ knee posture and patient satisfaction in primary care consultations",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.21203/rs.3.rs-11431072/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11431072/v1"
-     },
-     {
-      "titolo": "Identifying User-Centered Mobile Rehabilitation Needs After Total Knee Arthroplasty in Older Adults: An Exploratory Sequential Mixed-Methods Study Using the Tec",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.21203/rs.3.rs-11161171/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11161171/v1"
-     },
-     {
-      "titolo": "Evaluation of Intra-articular Platelet-Rich Plasma with and without Meniscal Infiltration: A Retrospective Clinical Study",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.21203/rs.3.rs-10170077/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10170077/v1"
-     },
-     {
-      "titolo": "Regional Trabecular Bone Alterations in Knee Osteoarthritis: QCT Evidence from the Knee and Lumbar Spine",
-      "dove": "archivio preprint",
-      "data": "2026-11-11",
-      "doi": "10.21203/rs.3.rs-11425647/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11425647/v1"
-     },
-     {
-      "titolo": "Micro-fragmented Adipose Tissue Enhances Graft-to-Bone Healing after Anterior Cruciate Ligament Reconstruction: A Non-blinded Randomised Controlled Trial",
-      "dove": "archivio preprint",
-      "data": "2026-11-11",
-      "doi": "10.21203/rs.3.rs-11351242/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11351242/v1"
-     },
-     {
-      "titolo": "The effects of exercise and physical activity on gait biomechanics and pain in knee osteoarthritis: A systematic review and meta-analysis",
-      "dove": "archivio preprint",
-      "data": "2026-11-10",
-      "doi": "10.64898/2026.11.08.26367018",
-      "url": "https://doi.org/10.64898/2026.11.08.26367018"
-     },
-     {
-      "titolo": "Tibia-neutral functional alignment with femoral varus adjustment of up to 3° in robotic-assisted total knee arthroplasty: a preliminary prospective study using ",
-      "dove": "archivio preprint",
-      "data": "2026-11-10",
-      "doi": "10.21203/rs.3.rs-11441368/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11441368/v1"
-     },
-     {
-      "titolo": "A PTN-Rich MSC Subtype Promotes Cartilage Repair in End-Stage Knee Osteoarthritis",
-      "dove": "archivio preprint",
-      "data": "2026-11-09",
-      "doi": "10.64898/2026.11.06.764540",
-      "url": "https://doi.org/10.64898/2026.11.06.764540"
-     },
-     {
-      "titolo": "Medial Meniscus Posterior Root Notch Angle and Lateral Tibial Plateau Morphology Are Associated with Medial Meniscus Posterior Root Tears",
-      "dove": "archivio preprint",
-      "data": "2026-11-06",
-      "doi": "10.21203/rs.3.rs-11386656/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11386656/v1"
-     },
-     {
-      "titolo": "Comparative Study of the Efficacy of One-Stage versus Two-Stage Revision for Chronic Periprosthetic Joint Infection Following Total Knee Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-11-06",
-      "doi": "10.21203/rs.3.rs-11294633/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11294633/v1"
-     },
-     {
-      "titolo": "Transportability of artificial intelligence models for predicting hip and knee osteoarthritis progression: a systematic review and meta-analysis of within-model",
-      "dove": "archivio preprint",
-      "data": "2026-11-06",
-      "doi": "10.21203/rs.3.rs-11403368/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11403368/v1"
-     },
-     {
-      "titolo": "Neuromuscular Control During Tai Chi in Individuals With Knee Osteoarthritis: Broadly Preserved Muscle Synergy Architecture With Selective Alterationsin Functio",
-      "dove": "archivio preprint",
-      "data": "2026-11-05",
-      "doi": "10.21203/rs.3.rs-10586009/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10586009/v1"
-     },
-     {
-      "titolo": "Wearable Estimation of Knee Joint Contact Forces: SiMPLeSENSE, a Simulated-IMU Pipeline Validated Against  <i>In Vivo</i>  Loads",
-      "dove": "archivio preprint",
-      "data": "2026-11-03",
-      "doi": "10.64898/2026.11.03.763565",
-      "url": "https://doi.org/10.64898/2026.11.03.763565"
-     },
-     {
-      "titolo": "Efficacy of Topical 5% Doxepin Cream Compared with Diclofenac Gel and Placebo for Knee Osteoarthritis: A Randomized Double-Blind Clinical Trial",
-      "dove": "archivio preprint",
-      "data": "2026-11-03",
-      "doi": "10.21203/rs.3.rs-11091898/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11091898/v1"
-     },
-     {
-      "titolo": "Cross-cultural adaptation and longitudinal validation of the Simplified Chinese PHOSA-ACLR after anterior cruciate ligament reconstruction: a prospective cohort",
-      "dove": "archivio preprint",
-      "data": "2026-11-03",
-      "doi": "10.21203/rs.3.rs-11005332/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11005332/v1"
-     },
-     {
-      "titolo": "Non-invasive Detection of Neuronal Electrical Activity in the Knee Joint Using Quantum Sensing MRI",
-      "dove": "archivio preprint",
-      "data": "2026-11-03",
-      "doi": "10.21203/rs.3.rs-11327314/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11327314/v1"
-     },
-     {
-      "titolo": "Strain-Engineered PVA Hydrogels for Anisotropic Load-Bearing Fibrocartilage: Mechanical and Microstructural Characterization in a Meniscal Model",
-      "dove": "archivio preprint",
-      "data": "2026-11-03",
-      "doi": "10.20944/preprints202611.0125.v1",
-      "url": "https://doi.org/10.20944/preprints202611.0125.v1"
-     }
-    ],
-    "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
-   }
+   "esito": "non risposto: TimeoutError The read operation timed out",
+   "dati": null
   }
  }
 }
