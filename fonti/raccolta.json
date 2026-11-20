@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-19T10:21:09Z",
+ "generato": "2026-11-20T09:09:49Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Correction to the information regarding the basis for Pilot Phase 1",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/submissions/ectd-v4-0-2.html",
+      "data": "Thu, 19 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Regulatory & Beyond 2026",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/services/veranstaltungen/regulatory-beyond-2026.html",
       "data": "Tue, 17 Nov 2026 00:00:00 +0000"
@@ -320,12 +326,6 @@
       "titolo": "Ritiro di lotti – Ologynelle, comprimés pelliculés",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/qualitaetsmaengel-und-chargenrueckrufe/ritiri-delle-partite/chargenrueckruf-ologynelle-filmtabletten.html",
       "data": "Tue, 10 Nov 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Publication eCTD v4.0 Implementation Guide Package v2.0",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/submissions/ectd-v4-0-2.html",
-      "data": "Mon, 09 Nov 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
@@ -620,17 +620,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT07846709",
-       "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
-       "stato": "NOT_YET_RECRUITING",
-       "aggiornato": "2026-10-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 150,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT03896464",
        "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
        "stato": "RECRUITING",
@@ -639,6 +628,17 @@
         "NA"
        ],
        "n": 352,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT07846709",
+       "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-10-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 150,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -852,12 +852,6 @@
       "titolo": "Subscapularis Tear Recognition: Bear Hug, Belly Press, and MRI",
       "link": "https://www.youtube.com/watch?v=hlcwk5hEFwM",
       "data": "2026-11-07"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "The Benefits of Nano Arthroscopy for Pediatric Orthopedics",
-      "link": "https://www.youtube.com/watch?v=IPqTSVZd5mo",
-      "data": "2026-11-06"
      }
     ]
    }
@@ -1297,6 +1291,15 @@
     "finestra_giorni": 60,
     "voci": [
      {
+      "pmid": "43057288",
+      "titolo": "Expert clinical consensus on the application of vancomycin graft presoaking in anterior cruciate ligament reconstruction : a modified Delphi study.",
+      "rivista": "Bone & joint open",
+      "data": "2026 Nov 20",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
       "pmid": "42992615",
       "titolo": "Post-Treatment Follow-up, Rehabilitation, and Return to Sport: Proceedings of the International Consensus Meetings on Cartilage Repair of the Ankle.",
       "rivista": "Foot & ankle specialist",
@@ -1490,6 +1493,20 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Nutrition during rehabilitation after anterior cruciate ligament injury and reconstruction: perspectives of healthcare professionals and patients",
+      "dove": "archivio preprint",
+      "data": "2026-11-19",
+      "doi": "10.21203/rs.3.rs-10411402/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10411402/v1"
+     },
+     {
+      "titolo": "Responsiveness and Minimal Clinically Important Differences of Four Patient- Reported Outcome Measures Following Treatment of Knee Articular Cartilage Defects",
+      "dove": "archivio preprint",
+      "data": "2026-11-19",
+      "doi": "10.21203/rs.3.rs-11527839/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11527839/v1"
+     },
+     {
       "titolo": "Short-term efficacy and safety of bicompartmental versus total knee arthroplasty for medial tibiofemoral and patellofemoral osteoarthritis: a propensity score-m",
       "dove": "archivio preprint",
       "data": "2026-11-18",
@@ -1649,20 +1666,6 @@
       "data": "2026-11-06",
       "doi": "10.21203/rs.3.rs-11403368/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-11403368/v1"
-     },
-     {
-      "titolo": "Neuromuscular Control During Tai Chi in Individuals With Knee Osteoarthritis: Broadly Preserved Muscle Synergy Architecture With Selective Alterationsin Functio",
-      "dove": "archivio preprint",
-      "data": "2026-11-05",
-      "doi": "10.21203/rs.3.rs-10586009/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10586009/v1"
-     },
-     {
-      "titolo": "Wearable Estimation of Knee Joint Contact Forces: SiMPLeSENSE, a Simulated-IMU Pipeline Validated Against  <i>In Vivo</i>  Loads",
-      "dove": "archivio preprint",
-      "data": "2026-11-03",
-      "doi": "10.64898/2026.11.03.763565",
-      "url": "https://doi.org/10.64898/2026.11.03.763565"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
