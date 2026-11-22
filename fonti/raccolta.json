@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-21T09:50:38Z",
+ "generato": "2026-11-22T08:48:28Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -1456,15 +1456,6 @@
       "titolo": "Unloader Bracing Is a Biomechanically Rational and Clinically Useful Intervention in Selected Patients With Tibiofemoral Joint Cartilage Pathology: A Modified Delphi Consensus Stud",
       "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
       "data": "2026 Sep 25",
-      "tipi": [
-       "Journal Article"
-      ]
-     },
-     {
-      "pmid": "42771799",
-      "titolo": "Indian expert consensus on prophylactic incisional single-use negative pressure wound therapy in hip and knee arthroplasty: A modified Delphi study.",
-      "rivista": "SICOT-J",
-      "data": "2026 Sep 22",
       "tipi": [
        "Journal Article"
       ]
