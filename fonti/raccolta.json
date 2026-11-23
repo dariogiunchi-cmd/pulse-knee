@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-23T09:45:05Z",
+ "generato": "2026-11-23T10:46:14Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -997,9 +997,7 @@
      "citanti": [
       "42960303"
      ],
-     "nuovi": [
-      "42960303"
-     ]
+     "nuovi": []
     },
     {
      "pmid": "42800674",
@@ -1121,9 +1119,7 @@
      "citanti": [
       "42995343"
      ],
-     "nuovi": [
-      "42995343"
-     ]
+     "nuovi": []
     },
     {
      "pmid": "42701875",
@@ -1137,9 +1133,7 @@
      "citanti": [
       "42859283"
      ],
-     "nuovi": [
-      "42859283"
-     ]
+     "nuovi": []
     },
     {
      "pmid": "42551742",
@@ -1239,11 +1233,7 @@
       "42828722",
       "42939037"
      ],
-     "nuovi": [
-      "42742643",
-      "42828722",
-      "42939037"
-     ]
+     "nuovi": []
     },
     {
      "pmid": "42545819",
@@ -1263,9 +1253,7 @@
      "citanti": [
       "42866276"
      ],
-     "nuovi": [
-      "42866276"
-     ]
+     "nuovi": []
     },
     {
      "pmid": "42547948",
@@ -1491,7 +1479,7 @@
    }
   },
   "preprint": {
-   "esito": "non risposto: TimeoutError The read operation timed out",
+   "esito": "non risposto: HTTPError HTTP Error 503: ",
    "dati": null
   }
  }
