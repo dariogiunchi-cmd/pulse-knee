@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-22T09:46:55Z",
+ "generato": "2026-11-23T09:45:05Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -840,25 +840,468 @@
       "titolo": "Arthrex Beaming System: Cadaveric Surgical Demonstration",
       "link": "https://www.youtube.com/watch?v=wBDKZaiv33U",
       "data": "2026-11-10"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Nano FiberTak® Soft Anchor: The Smallest Arthrex Suture Anchor",
-      "link": "https://www.youtube.com/watch?v=YmkdRk_hSqQ",
-      "data": "2026-11-09"
      }
     ]
    }
   },
   "destino": {
-   "esito": "non risposto: IncompleteRead IncompleteRead(0 bytes read)",
-   "dati": null
+   "esito": "ok",
+   "dati": [
+    {
+     "pmid": "42958723",
+     "titolo": "Arthroscopy — Coorte retrospettiva (Garcia, Cohen, Gilat, Ralls, Atkins, Murray, Jan, Dave, Cole, Yanke, Verma",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42954106",
+     "titolo": "Arthroscopy — Revisione sistematica (Dhillon, Bui, Keeter, Kraeutler), LCA primario con autoinnesto di tendine",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42951020",
+     "titolo": "Journal of sport and health science — Revisione sistematica con metanalisi (Jiang, Zhong, Tu, Xu, Liu, Wang, W",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42934217",
+     "titolo": "The American journal of sports medicine — Studio controllato di laboratorio (Kruckeberg, Brady, Cinque, Sidrak",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42929665",
+     "titolo": "Arthroscopy — Serie di casi retrospettiva (Wolf, Kortbawi, De Saint-Vincent, Luisetto, Letartre; Lille e Charl",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42921574",
+     "titolo": "Arthroscopy, sports medicine, and rehabilitation — Coorte retrospettiva monocentrica (Egert, Schneider, Gosheg",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42901444",
+     "titolo": "Revista espanola de cirugia ortopedica y traumatologia — Studio diagnostico di coorte prospettica (Paucar-Verg",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42908376",
+     "titolo": "Orthopaedic surgery — Revisione sistematica con metanalisi (Kanakala, Sugand, Tasong, Prashar, Shinmar, Namire",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42903211",
+     "titolo": "Journal of experimental orthopaedics — Coorte retrospettiva sequenziale (Fujie, Yasuda, Yabuuchi, Ebata, Inoue",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42902365",
+     "titolo": "Knee surgery & related research — Revisione sistematica senza metanalisi (Han, Jung, Chung, Moon, Jung, Baik, ",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42898998",
+     "titolo": "Journal of experimental orthopaedics — Studio retrospettivo comparativo monocentrico (Balashanmugam, Kasthurir",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42894623",
+     "titolo": "Indian journal of orthopaedics — Studio retrospettivo comparativo monocentrico (Song, Cai, Qiu, Zhao, Song, De",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42891655",
+     "titolo": "Knee surgery, sports traumatology, arthroscopy — Coorte retrospettiva (Dadoo, Nash, Yang, Aycardi, Bhardwaj, V",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42890719",
+     "titolo": "Arthroscopy, sports medicine, and rehabilitation — Metanalisi di 13 RCT (Gutierrez-Moreno, Arámbula-Torres, Pr",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42770603",
+     "titolo": "Knee surgery, sports traumatology, arthroscopy — Revisione sistematica PRISMA (Sian, See, Alqeisi, Meena, Dalg",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42875873",
+     "titolo": "Science & medicine in football — Consensus di esperti UEFA sul LCA nel calcio femminile, parte 2: riabilitazio",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42871761",
+     "titolo": "Journal of Experimental Orthopaedics — Studio radiografico retrospettivo monocentrico (livello IV; Vidović, Bl",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42865127",
+     "titolo": "The American Journal of Sports Medicine — Serie di casi retrospettiva (livello IV; Nishioka, Thamrongskulsiri,",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42857476",
+     "titolo": "Journal of Experimental Orthopaedics — Coorte retrospettiva monocentrica di un chirurgo (Zhang, Guo, Xu, Zhu, ",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42815174",
+     "titolo": "Clinical Biomechanics — Revisione sistematica PRISMA (Marczak, Lightle, Brooks, Kyriazi, Chong, Martinez, Thor",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42852663",
+     "titolo": "The American Journal of Sports Medicine — Serie di casi (livello IV dichiarato; Kang, Ina, Johnson, Iyer, Duch",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42844718",
+     "titolo": "Journal of Orthopaedic Research — Coorte con controlli (livello III per disegno; Kajabi, Knutsen, Hedayati, St",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42815981",
+     "titolo": "BMJ — Emulazione di trial su registro nazionale (National Joint Registry di Inghilterra, Galles, Irlanda del N",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42809375",
+     "titolo": "Arthroscopy — Revisione sistematica (Vosoughi, Menbari Oskouie, Entezari, Torkamanzadeh, Taghva Nakhjiri; PubM",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42804769",
+     "titolo": "Annals of Internal Medicine — RCT a gruppi paralleli non in cieco (La Trobe University, registro ACTRN12620001",
+     "citanti": [
+      "42960303"
+     ],
+     "nuovi": [
+      "42960303"
+     ]
+    },
+    {
+     "pmid": "42800674",
+     "titolo": "Journal of ISAKOS — Coorte retrospettiva multicentrica argentino-ecuadoriana con ponderazione IPTW, 300 revisi",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42744121",
+     "titolo": "Journal of ISAKOS — Meta-analisi di 28 RCT (2.685 pazienti): il plasma ricco di piastrine (PRP) intra-articola",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42789133",
+     "titolo": "Journal of Robotic Surgery — Meta-analisi con meta-regressione di 24 RCT (3.425 pazienti): nessuna differenza ",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42782213",
+     "titolo": "Arthroscopy — Coorte retrospettiva propensity-matched, Mayo Clinic, 50 riparazioni della radice meniscale con ",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42777823",
+     "titolo": "Journal of ISAKOS — Meta-analisi di 9 studi comparativi retrospettivi, 910 ginocchia: la riparazione della rad",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42748362",
+     "titolo": "Knee Surgery, Sports Traumatology, Arthroscopy — Current concepts article ESSKA a 26 autori (fra cui Andy Will",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42763705",
+     "titolo": "Journal of Experimental Orthopaedics — **Il tuo lavoro**: FIRM-P, framework concettuale che separa il fenotipo",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42762868",
+     "titolo": "Orthopaedics & Traumatology: Surgery & Research — Registro SFA-ACL (Société Française d'Arthroscopie), 8.407 r",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42759156",
+     "titolo": "The Knee — Coorte di registro nazionale olandese (LROI), 79.115 protesi totali di ginocchio (5535 robotiche, 7",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42749319",
+     "titolo": "Chinese Journal of Reparative and Reconstructive Surgery — Consenso di esperti multicentrico cinese, percorso ",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42748364",
+     "titolo": "Knee Surgery, Sports Traumatology, Arthroscopy — Consenso formale internazionale (106 esperti, ESSKA/EKA insie",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42735864",
+     "titolo": "The Journal of Arthroplasty — Coorte retrospettiva monocentrica, 623 pazienti (124 impianto su misura, 499 di ",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42735046",
+     "titolo": "Knee Surgery, Sports Traumatology, Arthroscopy — Coorte di registro nazionale svizzero (Swiss Implant Registry",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42732043",
+     "titolo": "Arthroscopy — Consenso Delphi in tre round (40 esperti internazionali) su indicazioni, biomeccanica, tecnica e",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42731122",
+     "titolo": "Knee Surgery, Sports Traumatology, Arthroscopy — Coorte retrospettiva propensity-matched su database TriNetX (",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42724261",
+     "titolo": "Orthopaedic Journal of Sports Medicine — Rianalisi di fragilità di 8 RCT (562 pazienti allocati, 482 disponibi",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42719661",
+     "titolo": "Arthroscopy, Sports Medicine, and Rehabilitation — Serie retrospettiva monocentrica di 53 riparazioni artrosco",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42713242",
+     "titolo": "Journal of Sports Science & Medicine — Revisione sistematica e meta-analisi di 43 studi (17.350 pazienti) sull",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42710782",
+     "titolo": "Journal of ISAKOS — Coorte retrospettiva monocentrica su 7657 ricostruzioni del LCA in 26 anni (2000-2025) al ",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42690546",
+     "titolo": "Journal of Robotic Surgery — Analisi descrittiva delle segnalazioni di sicurezza australiane (TGA), 140 segnal",
+     "citanti": [
+      "42995343"
+     ],
+     "nuovi": [
+      "42995343"
+     ]
+    },
+    {
+     "pmid": "42701875",
+     "titolo": "Arthroscopy — Coorte retrospettiva giapponese (55 ginocchia/44 pazienti, follow-up medio 6,9 anni), estrusione",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42678638",
+     "titolo": "Journal of Robotic Surgery — Revisione narrativa su sei piattaforme robotiche ortopediche commerciali (MAKO, R",
+     "citanti": [
+      "42859283"
+     ],
+     "nuovi": [
+      "42859283"
+     ]
+    },
+    {
+     "pmid": "42551742",
+     "titolo": "Orthopaedics & Traumatology: Surgery & Research — Studio prospettico comparativo su 140 calciatori agonisti ar",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42692807",
+     "titolo": "British Journal of Sports Medicine — Coorte nazionale su registro svedese collegato alla federazione calcio, 1",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42682852",
+     "titolo": "Orthopaedic Journal of Sports Medicine — Studio caso-controllo su 72 rifissazioni della radice meniscale media",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42680067",
+     "titolo": "Journal of ISAKOS — Revisione sistematica di 51 studi (4.153 pazienti pediatrici/adolescenziali) su innesto e ",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42671659",
+     "titolo": "Journal of Robotic Surgery — Revisione critica narrativa sulla protesi di ginocchio robot-assistita: accuratez",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42668741",
+     "titolo": "HSS Journal — Consensus internazionale sull'artrofibrosi dopo protesi totale di ginocchio (Hospital for Specia",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42291753",
+     "titolo": "Asia-Pac J Sports Med — Consensus APKASS 2024, parte I: gestione delle lesioni del LCA pediatrico e adolescenz",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42654439",
+     "titolo": "Medicina (Kaunas) — Revisione sistematica di 33 studi sulla fissazione femorale del LET: la fissazione onlay c",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42656738",
+     "titolo": "J Clin Orthop Trauma — RCT prospettico su 200 protesi totali di ginocchio: piattaforma robotica VELYS vs tecni",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42647020",
+     "titolo": "Knee Surg Sports Traumatol Arthrosc — Coorte prospettica (90 pz: 30 retto femorale, 30 tendine quadricipitale,",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42641205",
+     "titolo": "The Knee — Coorte retrospettiva (452 pz): il fallimento dell'innesto dopo ricostruzione del LCA non dipende da",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42636872",
+     "titolo": "J Knee Surg — Revisione sistematica di 24 studi (21.261 pz): l'osteotomia tibiale alta resta un'opzione valida",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42633011",
+     "titolo": "Orthop J Sports Med — Meta-analisi di 10 RCT (1.419 pz): il LET riduce i fallimenti dell'innesto, ma gli autor",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42631105",
+     "titolo": "Asia-Pac J Sports Med Arthrosc Rehabil Technol — Consensus APKASS 2024 (parte II, 23 esperti/8 paesi): nella r",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42597838",
+     "titolo": "JOCR — Riparare la radice mediale in varo senza correggere l'asse spesso fallisce (revisione narrativa su oste",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42624811",
+     "titolo": "Lancet — RACER-Knee, il RCT più ampio e rigoroso mai condotto su TKR robot-assistita (Mako): nessun beneficio ",
+     "citanti": [
+      "42742643",
+      "42828722",
+      "42939037"
+     ],
+     "nuovi": [
+      "42742643",
+      "42828722",
+      "42939037"
+     ]
+    },
+    {
+     "pmid": "42545819",
+     "titolo": "KSSTA — Il ginocchio tedesco raccomanda un approccio individuale allo slope aumentato nel LCA (Deutsche Kniege",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42610516",
+     "titolo": "AJSM — La cartilagine femoro-rotulea al momento della sutura della radice predice la protesi, non i sintomi",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42539917",
+     "titolo": "OJSM — Il LCA non riduce l'artrosi ma abbassa le protesi",
+     "citanti": [
+      "42866276"
+     ],
+     "nuovi": [
+      "42866276"
+     ]
+    },
+    {
+     "pmid": "42547948",
+     "titolo": "AJSM — Innesto quadricipitale: più reinterventi per deficit d'estensione vs hamstring",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42605970",
+     "titolo": "KSSTA — Prelievo parziale del quadricipite: forza recuperata prima, pari a 12 mesi",
+     "citanti": [],
+     "nuovi": []
+    },
+    {
+     "pmid": "42605116",
+     "titolo": "Sports Health — Test del salto dopo il crociato: il deficit dell'arto operato resta anche con carico visivo-co",
+     "citanti": [],
+     "nuovi": []
+    }
+   ]
   },
   "linee_guida": {
    "esito": "ok",
    "dati": {
     "finestra_giorni": 60,
     "voci": [
+     {
+      "pmid": "43068135",
+      "titolo": "Targeting bone and cartilage: A practical guideline for tissue- and cell-specific delivery tools in preclinical studies.",
+      "rivista": "Journal of orthopaedic translation",
+      "data": "2026 Nov 16",
+      "tipi": [
+       "Journal Article",
+       "Review"
+      ]
+     },
      {
       "pmid": "43057288",
       "titolo": "Expert clinical consensus on the application of vancomycin graft presoaking in anterior cruciate ligament reconstruction : a modified Delphi study.",
@@ -1048,188 +1491,8 @@
    }
   },
   "preprint": {
-   "esito": "ok",
-   "dati": {
-    "finestra_giorni": 30,
-    "voci": [
-     {
-      "titolo": "Clinical Outcomes of Medial Bicompartmental Knee Arthroplasty Versus Total Knee Arthroplasty for Bicompartmental Knee Osteoarthritis: A Propensity Score-Matched",
-      "dove": "archivio preprint",
-      "data": "2026-11-20",
-      "doi": "10.21203/rs.3.rs-11635622/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11635622/v1"
-     },
-     {
-      "titolo": "A novel semi-quantitative ultrasound scoring method derived from WORMS for assessing cartilage damage in knee osteoarthritis: a cross-sectional study",
-      "dove": "archivio preprint",
-      "data": "2026-11-20",
-      "doi": "10.21203/rs.3.rs-11349608/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11349608/v1"
-     },
-     {
-      "titolo": "Nutrition during rehabilitation after anterior cruciate ligament injury and reconstruction: perspectives of healthcare professionals and patients",
-      "dove": "archivio preprint",
-      "data": "2026-11-19",
-      "doi": "10.21203/rs.3.rs-10411402/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10411402/v1"
-     },
-     {
-      "titolo": "Responsiveness and Minimal Clinically Important Differences of Four Patient- Reported Outcome Measures Following Treatment of Knee Articular Cartilage Defects",
-      "dove": "archivio preprint",
-      "data": "2026-11-19",
-      "doi": "10.21203/rs.3.rs-11527839/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11527839/v1"
-     },
-     {
-      "titolo": "Short-term efficacy and safety of bicompartmental versus total knee arthroplasty for medial tibiofemoral and patellofemoral osteoarthritis: a propensity score-m",
-      "dove": "archivio preprint",
-      "data": "2026-11-18",
-      "doi": "10.21203/rs.3.rs-11431622/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11431622/v1"
-     },
-     {
-      "titolo": "Preoperative Bone Marrow Lesion Severity and Early Quality of Recovery After Medial Unicompartmental Knee Arthroplasty: A Retrospective Cohort Study",
-      "dove": "archivio preprint",
-      "data": "2026-11-18",
-      "doi": "10.21203/rs.3.rs-11470664/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11470664/v1"
-     },
-     {
-      "titolo": "Concordance of GPT-5.6, Gemini 3.6 Flash, DeepSeek-V4, and Doubao-2.1 With the Formal EU-US Meniscus Rehabilitation 2024 Consensus: A Comparative Study at the Q",
-      "dove": "archivio preprint",
-      "data": "2026-11-18",
-      "doi": "10.21203/rs.3.rs-11193068/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11193068/v1"
-     },
-     {
-      "titolo": "Implant Longevity in Total Hip and Knee Arthroplasty: A Bibliometric Analysis of the 100 Most-Cited Articles",
-      "dove": "archivio preprint",
-      "data": "2026-11-18",
-      "doi": "10.21203/rs.3.rs-11649935/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11649935/v1"
-     },
-     {
-      "titolo": "Association Between Final Intraoperative Medial Joint Laxity and One-Year Patient Satisfaction After ROSA-Assisted Medial Unicompartmental Knee Arthroplasty",
-      "dove": "archivio preprint",
-      "data": "2026-11-17",
-      "doi": "10.21203/rs.3.rs-11546258/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11546258/v1"
-     },
-     {
-      "titolo": "Experiences of Patients with Physiotherapy Service for Knee Osteoarthritis at Tertiary Care Government Hospital, Pokhara, Nepal-A qualitative study",
-      "dove": "archivio preprint",
-      "data": "2026-11-17",
-      "doi": "10.21203/rs.3.rs-11409973/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11409973/v1"
-     },
-     {
-      "titolo": "Physical calibration and signal periodic updates to synchronize IMUs for 5-day continuous knee flexion tracking",
-      "dove": "archivio preprint",
-      "data": "2026-11-16",
-      "doi": "10.64898/2026.11.14.26368098",
-      "url": "https://doi.org/10.64898/2026.11.14.26368098"
-     },
-     {
-      "titolo": "Real-Time Osteoporosis Diagnosis from Knee X-Rays Using anEnhanced YOLO Architecture on Jetson Nano",
-      "dove": "archivio preprint",
-      "data": "2026-11-17",
-      "doi": "10.21203/rs.3.rs-8446858/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-8446858/v1"
-     },
-     {
-      "titolo": "Graft Diameter Differentially Affects ACL Stress Across Flexion Angles: A Finite Element Analysis With Native Knee Control",
-      "dove": "archivio preprint",
-      "data": "2026-11-16",
-      "doi": "10.21203/rs.3.rs-11457178/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11457178/v1"
-     },
-     {
-      "titolo": "Volumetric Analysis of the Deltoid Muscle From Neck-to-Knee Dixon MRI: A pilot population assessment of a posterior intramuscular injection target",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.64898/2026.11.10.26367545",
-      "url": "https://doi.org/10.64898/2026.11.10.26367545"
-     },
-     {
-      "titolo": "Association Between Average Step Width and History of Falls in Patients with Moderate-to-Severe Knee Osteoarthritis: A Cross-Sectional Gait Analysis",
-      "dove": "archivio preprint",
-      "data": "2026-11-13",
-      "doi": "10.21203/rs.3.rs-11412954/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11412954/v1"
-     },
-     {
-      "titolo": "Association between COL6A4P1 gene polymorphisms and knee osteoarthritis in the Chinese Han population",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.21203/rs.3.rs-11356070/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11356070/v1"
-     },
-     {
-      "titolo": "Association between patients’ knee posture and patient satisfaction in primary care consultations",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.21203/rs.3.rs-11431072/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11431072/v1"
-     },
-     {
-      "titolo": "Identifying User-Centered Mobile Rehabilitation Needs After Total Knee Arthroplasty in Older Adults: An Exploratory Sequential Mixed-Methods Study Using the Tec",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.21203/rs.3.rs-11161171/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11161171/v1"
-     },
-     {
-      "titolo": "Evaluation of Intra-articular Platelet-Rich Plasma with and without Meniscal Infiltration: A Retrospective Clinical Study",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.21203/rs.3.rs-10170077/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10170077/v1"
-     },
-     {
-      "titolo": "Regional Trabecular Bone Alterations in Knee Osteoarthritis: QCT Evidence from the Knee and Lumbar Spine",
-      "dove": "archivio preprint",
-      "data": "2026-11-11",
-      "doi": "10.21203/rs.3.rs-11425647/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11425647/v1"
-     },
-     {
-      "titolo": "Micro-fragmented Adipose Tissue Enhances Graft-to-Bone Healing after Anterior Cruciate Ligament Reconstruction: A Non-blinded Randomised Controlled Trial",
-      "dove": "archivio preprint",
-      "data": "2026-11-11",
-      "doi": "10.21203/rs.3.rs-11351242/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11351242/v1"
-     },
-     {
-      "titolo": "The effects of exercise and physical activity on gait biomechanics and pain in knee osteoarthritis: A systematic review and meta-analysis",
-      "dove": "archivio preprint",
-      "data": "2026-11-10",
-      "doi": "10.64898/2026.11.08.26367018",
-      "url": "https://doi.org/10.64898/2026.11.08.26367018"
-     },
-     {
-      "titolo": "Tibia-neutral functional alignment with femoral varus adjustment of up to 3° in robotic-assisted total knee arthroplasty: a preliminary prospective study using ",
-      "dove": "archivio preprint",
-      "data": "2026-11-10",
-      "doi": "10.21203/rs.3.rs-11441368/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11441368/v1"
-     },
-     {
-      "titolo": "A PTN-Rich MSC Subtype Promotes Cartilage Repair in End-Stage Knee Osteoarthritis",
-      "dove": "archivio preprint",
-      "data": "2026-11-09",
-      "doi": "10.64898/2026.11.06.764540",
-      "url": "https://doi.org/10.64898/2026.11.06.764540"
-     },
-     {
-      "titolo": "Medial Meniscus Posterior Root Notch Angle and Lateral Tibial Plateau Morphology Are Associated with Medial Meniscus Posterior Root Tears",
-      "dove": "archivio preprint",
-      "data": "2026-11-06",
-      "doi": "10.21203/rs.3.rs-11386656/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11386656/v1"
-     }
-    ],
-    "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
-   }
+   "esito": "non risposto: TimeoutError The read operation timed out",
+   "dati": null
   }
  }
 }
