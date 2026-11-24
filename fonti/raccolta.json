@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-24T11:35:56Z",
+ "generato": "2026-11-24T12:29:12Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -1166,10 +1166,7 @@
       "42999758",
       "43002334"
      ],
-     "nuovi": [
-      "42999758",
-      "43002334"
-     ]
+     "nuovi": []
     },
     {
      "pmid": "42668741",
@@ -1247,9 +1244,7 @@
      "citanti": [
       "42999539"
      ],
-     "nuovi": [
-      "42999539"
-     ]
+     "nuovi": []
     },
     {
      "pmid": "42610516",
