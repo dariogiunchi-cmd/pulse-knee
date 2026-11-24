@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-23T10:46:14Z",
+ "generato": "2026-11-24T11:35:56Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,18 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Out-of-Stock – Inbrija, gélule de poudre pour inhalation",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-inbrija-hartkapsel-mit-pulver-zur-inhalation.html",
+      "data": "Tue, 24 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Out-of-Stock – Varitect CP, solution pour perfusion",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-varitect-cp-loesung-zur-intravenoesen-injektion.html",
+      "data": "Tue, 24 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Correction to the information regarding the basis for Pilot Phase 1",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/services/submissions/ectd-v4-0-2.html",
       "data": "Thu, 19 Nov 2026 00:00:00 +0000"
@@ -364,22 +376,10 @@
       "data": "Tue, 03 Nov 2026 00:00:00 +0000"
      },
      {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Importanti informazioni da Swissmedic",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/hpc-wichtige-information-von-swissmedic.html",
-      "data": "Tue, 03 Nov 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Aggiornamento di pubblicazioni relative ai prodotti parenterali senza destinazione medica",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/services/problemi-di-delimitazione/parenteralia-im-fokus.html",
-      "data": "Mon, 02 Nov 2026 00:00:00 +0000"
-     },
-     {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
-      "titolo": "HPC – Credelio ad us. vet., comprimés à croquer pour chats Ritiro di lotti – Ologynelle, comprimés pelliculés DHPC – Respreeza (...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/tierarzneimittel/medicamenti-per-uso-veterinario/dhpc-veterinary-medicines/hpc-credelio-12-mg-ad-us-vet-kautabletten-fuer-katzen.html",
-      "data": "Fri, 13 Nov 2026 09:31:36 +0000"
+      "titolo": "Out-of-Stock – Inbrija, gélule de poudre pour inhalation Out-of-Stock – Varitect CP, solution pour perfusionHPC – Credelio ad us...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-inbrija-hartkapsel-mit-pulver-zur-inhalation.html",
+      "data": "Tue, 24 Nov 2026 10:51:53 +0000"
      }
     ]
    }
@@ -789,6 +789,12 @@
     "video": [
      {
       "canale": "Arthrex",
+      "titolo": "High Monocyte Technique With the ACP Max™ PRP System",
+      "link": "https://www.youtube.com/watch?v=R-H8l1dJWyg",
+      "data": "2026-11-23"
+     },
+     {
+      "canale": "Arthrex",
       "titolo": "SpeedPearl: SutureCup Offset for Maximizing Subcoracoid Distance in RTSA",
       "link": "https://www.youtube.com/watch?v=6lmjl3kM12I",
       "data": "2026-11-18"
@@ -834,12 +840,6 @@
       "titolo": "Arthrex Instability Express Instrument System",
       "link": "https://www.youtube.com/watch?v=IAfNkVH6qTk",
       "data": "2026-11-11"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Beaming System: Cadaveric Surgical Demonstration",
-      "link": "https://www.youtube.com/watch?v=wBDKZaiv33U",
-      "data": "2026-11-10"
      }
     ]
    }
@@ -1162,8 +1162,14 @@
     {
      "pmid": "42671659",
      "titolo": "Journal of Robotic Surgery — Revisione critica narrativa sulla protesi di ginocchio robot-assistita: accuratez",
-     "citanti": [],
-     "nuovi": []
+     "citanti": [
+      "42999758",
+      "43002334"
+     ],
+     "nuovi": [
+      "42999758",
+      "43002334"
+     ]
     },
     {
      "pmid": "42668741",
@@ -1238,8 +1244,12 @@
     {
      "pmid": "42545819",
      "titolo": "KSSTA — Il ginocchio tedesco raccomanda un approccio individuale allo slope aumentato nel LCA (Deutsche Kniege",
-     "citanti": [],
-     "nuovi": []
+     "citanti": [
+      "42999539"
+     ],
+     "nuovi": [
+      "42999539"
+     ]
     },
     {
      "pmid": "42610516",
@@ -1280,6 +1290,16 @@
    "dati": {
     "finestra_giorni": 60,
     "voci": [
+     {
+      "pmid": "43071296",
+      "titolo": "Standardized framework for periprosthetic DXA in hip and knee arthroplasty: multisociety RAND/UCLA consensus recommendations.",
+      "rivista": "Archives of osteoporosis",
+      "data": "2026 Nov 23",
+      "tipi": [
+       "Journal Article",
+       "Consensus Statement"
+      ]
+     },
      {
       "pmid": "43068135",
       "titolo": "Targeting bone and cartilage: A practical guideline for tissue- and cell-specific delivery tools in preclinical studies.",
@@ -1479,8 +1499,188 @@
    }
   },
   "preprint": {
-   "esito": "non risposto: HTTPError HTTP Error 503: ",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "finestra_giorni": 30,
+    "voci": [
+     {
+      "titolo": "Identification of Knee Osteoarthritis–Related Markers and Development of an Interpretable Random Forest Model Using SHAP",
+      "dove": "archivio preprint",
+      "data": "2026-11-23",
+      "doi": "10.21203/rs.3.rs-11321236/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11321236/v1"
+     },
+     {
+      "titolo": "Rare combination of knee injuries in an eight-year-old boy with spina bifida: A Case Report",
+      "dove": "archivio preprint",
+      "data": "2026-11-23",
+      "doi": "10.21203/rs.3.rs-10361363/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10361363/v1"
+     },
+     {
+      "titolo": "Design and Nonlinear Force Compensation of an Integrated Knee Distractor for Soft Tissue Balancing in TKA",
+      "dove": "archivio preprint",
+      "data": "2026-11-23",
+      "doi": "10.21203/rs.3.rs-10835825/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10835825/v1"
+     },
+     {
+      "titolo": "Agreement Between IMU-Based and 2D Video Analysis of Frontal-Plane Knee Alignment Across Different Single-Leg Squat Tasks",
+      "dove": "archivio preprint",
+      "data": "2026-11-20",
+      "doi": "10.20944/preprints202611.2166.v1",
+      "url": "https://doi.org/10.20944/preprints202611.2166.v1"
+     },
+     {
+      "titolo": "Clinical Outcomes of Medial Bicompartmental Knee Arthroplasty Versus Total Knee Arthroplasty for Bicompartmental Knee Osteoarthritis: A Propensity Score-Matched",
+      "dove": "archivio preprint",
+      "data": "2026-11-20",
+      "doi": "10.21203/rs.3.rs-11635622/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11635622/v1"
+     },
+     {
+      "titolo": "A novel semi-quantitative ultrasound scoring method derived from WORMS for assessing cartilage damage in knee osteoarthritis: a cross-sectional study",
+      "dove": "archivio preprint",
+      "data": "2026-11-20",
+      "doi": "10.21203/rs.3.rs-11349608/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11349608/v1"
+     },
+     {
+      "titolo": "Nutrition during rehabilitation after anterior cruciate ligament injury and reconstruction: perspectives of healthcare professionals and patients",
+      "dove": "archivio preprint",
+      "data": "2026-11-19",
+      "doi": "10.21203/rs.3.rs-10411402/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10411402/v1"
+     },
+     {
+      "titolo": "Responsiveness and Minimal Clinically Important Differences of Four Patient- Reported Outcome Measures Following Treatment of Knee Articular Cartilage Defects",
+      "dove": "archivio preprint",
+      "data": "2026-11-19",
+      "doi": "10.21203/rs.3.rs-11527839/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11527839/v1"
+     },
+     {
+      "titolo": "Short-term efficacy and safety of bicompartmental versus total knee arthroplasty for medial tibiofemoral and patellofemoral osteoarthritis: a propensity score-m",
+      "dove": "archivio preprint",
+      "data": "2026-11-18",
+      "doi": "10.21203/rs.3.rs-11431622/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11431622/v1"
+     },
+     {
+      "titolo": "Preoperative Bone Marrow Lesion Severity and Early Quality of Recovery After Medial Unicompartmental Knee Arthroplasty: A Retrospective Cohort Study",
+      "dove": "archivio preprint",
+      "data": "2026-11-18",
+      "doi": "10.21203/rs.3.rs-11470664/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11470664/v1"
+     },
+     {
+      "titolo": "Concordance of GPT-5.6, Gemini 3.6 Flash, DeepSeek-V4, and Doubao-2.1 With the Formal EU-US Meniscus Rehabilitation 2024 Consensus: A Comparative Study at the Q",
+      "dove": "archivio preprint",
+      "data": "2026-11-18",
+      "doi": "10.21203/rs.3.rs-11193068/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11193068/v1"
+     },
+     {
+      "titolo": "Implant Longevity in Total Hip and Knee Arthroplasty: A Bibliometric Analysis of the 100 Most-Cited Articles",
+      "dove": "archivio preprint",
+      "data": "2026-11-18",
+      "doi": "10.21203/rs.3.rs-11649935/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11649935/v1"
+     },
+     {
+      "titolo": "Association Between Final Intraoperative Medial Joint Laxity and One-Year Patient Satisfaction After ROSA-Assisted Medial Unicompartmental Knee Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-11-17",
+      "doi": "10.21203/rs.3.rs-11546258/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11546258/v1"
+     },
+     {
+      "titolo": "Experiences of Patients with Physiotherapy Service for Knee Osteoarthritis at Tertiary Care Government Hospital, Pokhara, Nepal-A qualitative study",
+      "dove": "archivio preprint",
+      "data": "2026-11-17",
+      "doi": "10.21203/rs.3.rs-11409973/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11409973/v1"
+     },
+     {
+      "titolo": "Physical calibration and signal periodic updates to synchronize IMUs for 5-day continuous knee flexion tracking",
+      "dove": "archivio preprint",
+      "data": "2026-11-16",
+      "doi": "10.64898/2026.11.14.26368098",
+      "url": "https://doi.org/10.64898/2026.11.14.26368098"
+     },
+     {
+      "titolo": "Real-Time Osteoporosis Diagnosis from Knee X-Rays Using anEnhanced YOLO Architecture on Jetson Nano",
+      "dove": "archivio preprint",
+      "data": "2026-11-17",
+      "doi": "10.21203/rs.3.rs-8446858/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-8446858/v1"
+     },
+     {
+      "titolo": "Graft Diameter Differentially Affects ACL Stress Across Flexion Angles: A Finite Element Analysis With Native Knee Control",
+      "dove": "archivio preprint",
+      "data": "2026-11-16",
+      "doi": "10.21203/rs.3.rs-11457178/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11457178/v1"
+     },
+     {
+      "titolo": "Volumetric Analysis of the Deltoid Muscle From Neck-to-Knee Dixon MRI: A pilot population assessment of a posterior intramuscular injection target",
+      "dove": "archivio preprint",
+      "data": "2026-11-12",
+      "doi": "10.64898/2026.11.10.26367545",
+      "url": "https://doi.org/10.64898/2026.11.10.26367545"
+     },
+     {
+      "titolo": "Association Between Average Step Width and History of Falls in Patients with Moderate-to-Severe Knee Osteoarthritis: A Cross-Sectional Gait Analysis",
+      "dove": "archivio preprint",
+      "data": "2026-11-13",
+      "doi": "10.21203/rs.3.rs-11412954/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11412954/v1"
+     },
+     {
+      "titolo": "Association between COL6A4P1 gene polymorphisms and knee osteoarthritis in the Chinese Han population",
+      "dove": "archivio preprint",
+      "data": "2026-11-12",
+      "doi": "10.21203/rs.3.rs-11356070/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11356070/v1"
+     },
+     {
+      "titolo": "Association between patients’ knee posture and patient satisfaction in primary care consultations",
+      "dove": "archivio preprint",
+      "data": "2026-11-12",
+      "doi": "10.21203/rs.3.rs-11431072/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11431072/v1"
+     },
+     {
+      "titolo": "Identifying User-Centered Mobile Rehabilitation Needs After Total Knee Arthroplasty in Older Adults: An Exploratory Sequential Mixed-Methods Study Using the Tec",
+      "dove": "archivio preprint",
+      "data": "2026-11-12",
+      "doi": "10.21203/rs.3.rs-11161171/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11161171/v1"
+     },
+     {
+      "titolo": "Evaluation of Intra-articular Platelet-Rich Plasma with and without Meniscal Infiltration: A Retrospective Clinical Study",
+      "dove": "archivio preprint",
+      "data": "2026-11-12",
+      "doi": "10.21203/rs.3.rs-10170077/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10170077/v1"
+     },
+     {
+      "titolo": "Regional Trabecular Bone Alterations in Knee Osteoarthritis: QCT Evidence from the Knee and Lumbar Spine",
+      "dove": "archivio preprint",
+      "data": "2026-11-11",
+      "doi": "10.21203/rs.3.rs-11425647/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11425647/v1"
+     },
+     {
+      "titolo": "Micro-fragmented Adipose Tissue Enhances Graft-to-Bone Healing after Anterior Cruciate Ligament Reconstruction: A Non-blinded Randomised Controlled Trial",
+      "dove": "archivio preprint",
+      "data": "2026-11-11",
+      "doi": "10.21203/rs.3.rs-11351242/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11351242/v1"
+     }
+    ],
+    "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
+   }
   }
  }
 }
