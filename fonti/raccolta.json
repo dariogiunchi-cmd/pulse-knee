@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-24T12:29:12Z",
+ "generato": "2026-11-25T10:27:53Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -498,6 +498,17 @@
      "sorveglianza": "LET / tenodesi laterale",
      "studi": [
       {
+       "nct": "NCT07925099",
+       "titolo": "Lateral Femoral Cutaneous Nerve Block (LFCN) in ACL Reconstruction With MacFL-type Lateral Tenodesis",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-11-24",
+       "fase": [
+        "NA"
+       ],
+       "n": 108,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
        "nct": "NCT07939464",
        "titolo": "Study of the Integrated Biomechanics of the Lower Limbs and Trunk in Athletes of Different Age Groups During the Performance of Motor Tasks",
        "stato": "NOT_YET_RECRUITING",
@@ -517,17 +528,6 @@
         "NA"
        ],
        "n": 60,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
-       "nct": "NCT07925099",
-       "titolo": "Lateral Femoral Cutaneous Nerve Block (LFCN) in ACL Reconstruction With MacFL-type Lateral Tenodesis",
-       "stato": "NOT_YET_RECRUITING",
-       "aggiornato": "2026-11-09",
-       "fase": [
-        "NA"
-       ],
-       "n": 108,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -834,12 +834,6 @@
       "titolo": "Arthrex Spine Evolutions 2027",
       "link": "https://www.youtube.com/watch?v=zIOJPImj4vE",
       "data": "2026-11-12"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Instability Express Instrument System",
-      "link": "https://www.youtube.com/watch?v=IAfNkVH6qTk",
-      "data": "2026-11-11"
      }
     ]
    }
@@ -1286,6 +1280,15 @@
     "finestra_giorni": 60,
     "voci": [
      {
+      "pmid": "43076012",
+      "titolo": "Indications for medial unicompartmental knee arthroplasty (UKA). The 2026 ESSKA-EKA formal consensus. Part 1-Patient history and clinical principles.",
+      "rivista": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+      "data": "2026 Nov 24",
+      "tipi": [
+       "Journal Article"
+      ]
+     },
+     {
       "pmid": "43071296",
       "titolo": "Standardized framework for periprosthetic DXA in hip and knee arthroplasty: multisociety RAND/UCLA consensus recommendations.",
       "rivista": "Archives of osteoporosis",
@@ -1471,15 +1474,6 @@
       "tipi": [
        "Journal Article"
       ]
-     },
-     {
-      "pmid": "42791228",
-      "titolo": "Unloader Bracing Is a Biomechanically Rational and Clinically Useful Intervention in Selected Patients With Tibiofemoral Joint Cartilage Pathology: A Modified Delphi Consensus Stud",
-      "rivista": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
-      "data": "2026 Sep 25",
-      "tipi": [
-       "Journal Article"
-      ]
      }
     ]
    }
@@ -1498,6 +1492,41 @@
    "dati": {
     "finestra_giorni": 30,
     "voci": [
+     {
+      "titolo": "Real-time visualization of spatial muscle activity using augmented reality improves endurance during dynamic knee extensions",
+      "dove": "archivio preprint",
+      "data": "2026-11-24",
+      "doi": "10.64898/2026.11.11.765967",
+      "url": "https://doi.org/10.64898/2026.11.11.765967"
+     },
+     {
+      "titolo": "Unifying Mechanics and Surgery for Analytical Total Knee Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-11-24",
+      "doi": "10.21203/rs.3.rs-11697362/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11697362/v1"
+     },
+     {
+      "titolo": "Impact of GLP-1 Receptor Agonists on Postoperative Complications and Long-Term Outcomes in Total Knee Arthroplasty: A Retrospective Cohort Study Stratified by B",
+      "dove": "archivio preprint",
+      "data": "2026-11-24",
+      "doi": "10.21203/rs.3.rs-11714866/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11714866/v1"
+     },
+     {
+      "titolo": "Third-Space Optimisation (3SO) in Total Knee Arthroplasty: A Narrative Review and Proposed Framework for Integrating the Patellofemoral Joint into Alignment Pla",
+      "dove": "archivio preprint",
+      "data": "2026-11-24",
+      "doi": "10.20944/preprints202611.2413.v1",
+      "url": "https://doi.org/10.20944/preprints202611.2413.v1"
+     },
+     {
+      "titolo": "Patient-Aware Self-Supervised Contrastive Learning for Passive Assessment of Patient-Reported Knee Osteoarthritis Pain from Wearable Free-Living Activity Counts",
+      "dove": "archivio preprint",
+      "data": "2026-11-24",
+      "doi": "10.20944/preprints202611.2428.v1",
+      "url": "https://doi.org/10.20944/preprints202611.2428.v1"
+     },
      {
       "titolo": "Identification of Knee Osteoarthritis–Related Markers and Development of an Interpretable Random Forest Model Using SHAP",
       "dove": "archivio preprint",
@@ -1637,41 +1666,6 @@
       "data": "2026-11-12",
       "doi": "10.21203/rs.3.rs-11356070/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-11356070/v1"
-     },
-     {
-      "titolo": "Association between patients’ knee posture and patient satisfaction in primary care consultations",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.21203/rs.3.rs-11431072/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11431072/v1"
-     },
-     {
-      "titolo": "Identifying User-Centered Mobile Rehabilitation Needs After Total Knee Arthroplasty in Older Adults: An Exploratory Sequential Mixed-Methods Study Using the Tec",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.21203/rs.3.rs-11161171/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11161171/v1"
-     },
-     {
-      "titolo": "Evaluation of Intra-articular Platelet-Rich Plasma with and without Meniscal Infiltration: A Retrospective Clinical Study",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.21203/rs.3.rs-10170077/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-10170077/v1"
-     },
-     {
-      "titolo": "Regional Trabecular Bone Alterations in Knee Osteoarthritis: QCT Evidence from the Knee and Lumbar Spine",
-      "dove": "archivio preprint",
-      "data": "2026-11-11",
-      "doi": "10.21203/rs.3.rs-11425647/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11425647/v1"
-     },
-     {
-      "titolo": "Micro-fragmented Adipose Tissue Enhances Graft-to-Bone Healing after Anterior Cruciate Ligament Reconstruction: A Non-blinded Randomised Controlled Trial",
-      "dove": "archivio preprint",
-      "data": "2026-11-11",
-      "doi": "10.21203/rs.3.rs-11351242/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11351242/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
