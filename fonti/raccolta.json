@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-25T11:18:18Z",
+ "generato": "2026-11-26T10:01:23Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Il Consiglio federale approva gli obiettivi strategici 2027–2030 di Swissmedic e stabilisce il contributo federale",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/bundesrat-genehmigt-strategische-ziele-2027-2030-von-Swissmedic-und-legt-den-bundesbeitrag-fest.html",
+      "data": "Wed, 25 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Out-of-Stock – Inbrija, gélule de poudre pour inhalation",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-inbrija-hartkapsel-mit-pulver-zur-inhalation.html",
       "data": "Tue, 24 Nov 2026 00:00:00 +0000"
@@ -367,12 +373,6 @@
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Swissmedic Vigilance-News Edition 37",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/farmacovigilanza/vigilance-news/vigilance-news/vigilance-news-37-uebersicht.html",
-      "data": "Tue, 03 Nov 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Vigilanza dei medicamenti per uso veterinario - Rapporto annuale 2025",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/tierarzneimittel/medicamenti-per-uso-veterinario/notifica-di-effetti-indesiderati--per-uso-veterinario-/pubblicazioni/tamvigilance-news-2025.html",
       "data": "Tue, 03 Nov 2026 00:00:00 +0000"
      },
      {
@@ -678,6 +678,17 @@
      "sorveglianza": "Radice meniscale",
      "studi": [
       {
+       "nct": "NCT07959705",
+       "titolo": "Medial Versus Lateral Tibial Tunnel in Transtibial Pullout Repair of Medial Meniscus Posterior Root Tears",
+       "stato": "NOT_YET_RECRUITING",
+       "aggiornato": "2026-11-25",
+       "fase": [
+        "NA"
+       ],
+       "n": 60,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
        "nct": "NCT07858669",
        "titolo": "Arthroscopic Capsulodesis Decreases Meniscal Extrusion at 1 Year Follow up When Combined With Transtibial Pull Out Repair of Posteromedial Root Lesion. A Prospective Randomized Study",
        "stato": "COMPLETED",
@@ -749,17 +760,6 @@
        "fase": null,
        "n": 69,
        "tipo": "OBSERVATIONAL"
-      },
-      {
-       "nct": "NCT05088525",
-       "titolo": "Meniscal Root Tears: Evaluation Using an Ultrahigh MRI",
-       "stato": "COMPLETED",
-       "aggiornato": "2024-11-22",
-       "fase": [
-        "NA"
-       ],
-       "n": 27,
-       "tipo": "INTERVENTIONAL"
       }
      ]
     }
@@ -828,12 +828,6 @@
       "titolo": "Lateral Extra Articular Tenodesis (LET) featuring Dr. Miho Tanaka using Gryphon Flex Knotless Anchor",
       "link": "https://www.youtube.com/watch?v=uCL0NYBdAh4",
       "data": "2026-11-17"
-     },
-     {
-      "canale": "Arthrex",
-      "titolo": "Arthrex Spine Evolutions 2027",
-      "link": "https://www.youtube.com/watch?v=zIOJPImj4vE",
-      "data": "2026-11-12"
      }
     ]
    }
@@ -1493,6 +1487,34 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Group B Streptococcus (Streptococcus agalactiae) bacteremia following arthroscopic anterior cruciate ligament reconstruction: a case report",
+      "dove": "archivio preprint",
+      "data": "2026-11-25",
+      "doi": "10.21203/rs.3.rs-11500687/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11500687/v1"
+     },
+     {
+      "titolo": "Effects of Fatigue and Cognitive Load on Knee Kinematics and Mechanical Loading During Backhand Forecourt Lunges in Highly Trained Male Badminton Players",
+      "dove": "archivio preprint",
+      "data": "2026-11-25",
+      "doi": "10.21203/rs.3.rs-11427502/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11427502/v1"
+     },
+     {
+      "titolo": "Beyond BMI: Predictive Accuracy of Novel Anthropometric Indices for Knee Osteoarthritis and Popliteal Intima–Media Thickness",
+      "dove": "archivio preprint",
+      "data": "2026-11-25",
+      "doi": "10.21203/rs.3.rs-11494937/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11494937/v1"
+     },
+     {
+      "titolo": "Tendon graft reconstruction and transtibial rip-stop repair achieve higher ultimate failure loads than cross-tag rip-stop repair for complete medial meniscus po",
+      "dove": "archivio preprint",
+      "data": "2026-11-25",
+      "doi": "10.21203/rs.3.rs-11585840/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11585840/v1"
+     },
+     {
       "titolo": "Real-time visualization of spatial muscle activity using augmented reality improves endurance during dynamic knee extensions",
       "dove": "archivio preprint",
       "data": "2026-11-24",
@@ -1638,34 +1660,6 @@
       "data": "2026-11-17",
       "doi": "10.21203/rs.3.rs-8446858/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-8446858/v1"
-     },
-     {
-      "titolo": "Graft Diameter Differentially Affects ACL Stress Across Flexion Angles: A Finite Element Analysis With Native Knee Control",
-      "dove": "archivio preprint",
-      "data": "2026-11-16",
-      "doi": "10.21203/rs.3.rs-11457178/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11457178/v1"
-     },
-     {
-      "titolo": "Volumetric Analysis of the Deltoid Muscle From Neck-to-Knee Dixon MRI: A pilot population assessment of a posterior intramuscular injection target",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.64898/2026.11.10.26367545",
-      "url": "https://doi.org/10.64898/2026.11.10.26367545"
-     },
-     {
-      "titolo": "Association Between Average Step Width and History of Falls in Patients with Moderate-to-Severe Knee Osteoarthritis: A Cross-Sectional Gait Analysis",
-      "dove": "archivio preprint",
-      "data": "2026-11-13",
-      "doi": "10.21203/rs.3.rs-11412954/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11412954/v1"
-     },
-     {
-      "titolo": "Association between COL6A4P1 gene polymorphisms and knee osteoarthritis in the Chinese Han population",
-      "dove": "archivio preprint",
-      "data": "2026-11-12",
-      "doi": "10.21203/rs.3.rs-11356070/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11356070/v1"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
