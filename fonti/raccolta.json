@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-26T10:01:23Z",
+ "generato": "2026-11-26T10:54:24Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Introduction to ElViS 2.0: Submitting Individual Case Reports to Swissmedic",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/elvis-online-training.html",
+      "data": "Thu, 26 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Il Consiglio federale approva gli obiettivi strategici 2027–2030 di Swissmedic e stabilisce il contributo federale",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/bundesrat-genehmigt-strategische-ziele-2027-2030-von-Swissmedic-und-legt-den-bundesbeitrag-fest.html",
       "data": "Wed, 25 Nov 2026 00:00:00 +0000"
@@ -368,12 +374,6 @@
       "titolo": "DHPC – Respreeza (alpha-1-proteinasi inhibitor humanum)",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-respreeza-alpha-1-proteinasi-inhibitor-humanum.html",
       "data": "Wed, 04 Nov 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "Swissmedic Vigilance-News Edition 37",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/farmacovigilanza/vigilance-news/vigilance-news/vigilance-news-37-uebersicht.html",
-      "data": "Tue, 03 Nov 2026 00:00:00 +0000"
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
