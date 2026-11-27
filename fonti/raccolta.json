@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-27T10:06:58Z",
+ "generato": "2026-11-27T10:52:17Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -377,9 +377,9 @@
      },
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCaCbuGTNg8h6y.rss",
-      "titolo": "Out-of-Stock – Inbrija, gélule de poudre pour inhalation Out-of-Stock – Varitect CP, solution pour perfusionHPC – Credelio ad us...",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-inbrija-hartkapsel-mit-pulver-zur-inhalation.html",
-      "data": "Tue, 24 Nov 2026 10:51:53 +0000"
+      "titolo": "Out-of-Stock – Kinpeygo 4 mg, gélules à libération modifiéeOut-of-Stock – Inbrija, gélule de poudre pour inhalation Out-of-Stock...",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-kinpeygo-4mg-hartkapseln-mit-veraenderter-wirkstofffreisetzun.html",
+      "data": "Fri, 27 Nov 2026 10:52:21 +0000"
      }
     ]
    }
@@ -1482,8 +1482,188 @@
    }
   },
   "preprint": {
-   "esito": "non risposto: TimeoutError The read operation timed out",
-   "dati": null
+   "esito": "ok",
+   "dati": {
+    "finestra_giorni": 30,
+    "voci": [
+     {
+      "titolo": "Opioid-Sparing Outcomes of Intraoperative Open-Field Adductor Canal Injection Combined with Intravenous Dexamethasone in Total Knee Arthroplasty: A Retrospectiv",
+      "dove": "archivio preprint",
+      "data": "2026-11-26",
+      "doi": "10.21203/rs.3.rs-11340324/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11340324/v1"
+     },
+     {
+      "titolo": "Group B Streptococcus (Streptococcus agalactiae) bacteremia following arthroscopic anterior cruciate ligament reconstruction: a case report",
+      "dove": "archivio preprint",
+      "data": "2026-11-25",
+      "doi": "10.21203/rs.3.rs-11500687/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11500687/v1"
+     },
+     {
+      "titolo": "Effects of Fatigue and Cognitive Load on Knee Kinematics and Mechanical Loading During Backhand Forecourt Lunges in Highly Trained Male Badminton Players",
+      "dove": "archivio preprint",
+      "data": "2026-11-25",
+      "doi": "10.21203/rs.3.rs-11427502/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11427502/v1"
+     },
+     {
+      "titolo": "Beyond BMI: Predictive Accuracy of Novel Anthropometric Indices for Knee Osteoarthritis and Popliteal Intima–Media Thickness",
+      "dove": "archivio preprint",
+      "data": "2026-11-25",
+      "doi": "10.21203/rs.3.rs-11494937/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11494937/v1"
+     },
+     {
+      "titolo": "Tendon graft reconstruction and transtibial rip-stop repair achieve higher ultimate failure loads than cross-tag rip-stop repair for complete medial meniscus po",
+      "dove": "archivio preprint",
+      "data": "2026-11-25",
+      "doi": "10.21203/rs.3.rs-11585840/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11585840/v1"
+     },
+     {
+      "titolo": "Real-time visualization of spatial muscle activity using augmented reality improves endurance during dynamic knee extensions",
+      "dove": "archivio preprint",
+      "data": "2026-11-24",
+      "doi": "10.64898/2026.11.11.765967",
+      "url": "https://doi.org/10.64898/2026.11.11.765967"
+     },
+     {
+      "titolo": "Unifying Mechanics and Surgery for Analytical Total Knee Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-11-24",
+      "doi": "10.21203/rs.3.rs-11697362/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11697362/v1"
+     },
+     {
+      "titolo": "Impact of GLP-1 Receptor Agonists on Postoperative Complications and Long-Term Outcomes in Total Knee Arthroplasty: A Retrospective Cohort Study Stratified by B",
+      "dove": "archivio preprint",
+      "data": "2026-11-24",
+      "doi": "10.21203/rs.3.rs-11714866/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11714866/v1"
+     },
+     {
+      "titolo": "Third-Space Optimisation (3SO) in Total Knee Arthroplasty: A Narrative Review and Proposed Framework for Integrating the Patellofemoral Joint into Alignment Pla",
+      "dove": "archivio preprint",
+      "data": "2026-11-24",
+      "doi": "10.20944/preprints202611.2413.v1",
+      "url": "https://doi.org/10.20944/preprints202611.2413.v1"
+     },
+     {
+      "titolo": "Patient-Aware Self-Supervised Contrastive Learning for Passive Assessment of Patient-Reported Knee Osteoarthritis Pain from Wearable Free-Living Activity Counts",
+      "dove": "archivio preprint",
+      "data": "2026-11-24",
+      "doi": "10.20944/preprints202611.2428.v1",
+      "url": "https://doi.org/10.20944/preprints202611.2428.v1"
+     },
+     {
+      "titolo": "Identification of Knee Osteoarthritis–Related Markers and Development of an Interpretable Random Forest Model Using SHAP",
+      "dove": "archivio preprint",
+      "data": "2026-11-23",
+      "doi": "10.21203/rs.3.rs-11321236/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11321236/v1"
+     },
+     {
+      "titolo": "Rare combination of knee injuries in an eight-year-old boy with spina bifida: A Case Report",
+      "dove": "archivio preprint",
+      "data": "2026-11-23",
+      "doi": "10.21203/rs.3.rs-10361363/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10361363/v1"
+     },
+     {
+      "titolo": "Design and Nonlinear Force Compensation of an Integrated Knee Distractor for Soft Tissue Balancing in TKA",
+      "dove": "archivio preprint",
+      "data": "2026-11-23",
+      "doi": "10.21203/rs.3.rs-10835825/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10835825/v1"
+     },
+     {
+      "titolo": "Agreement Between IMU-Based and 2D Video Analysis of Frontal-Plane Knee Alignment Across Different Single-Leg Squat Tasks",
+      "dove": "archivio preprint",
+      "data": "2026-11-20",
+      "doi": "10.20944/preprints202611.2166.v1",
+      "url": "https://doi.org/10.20944/preprints202611.2166.v1"
+     },
+     {
+      "titolo": "Clinical Outcomes of Medial Bicompartmental Knee Arthroplasty Versus Total Knee Arthroplasty for Bicompartmental Knee Osteoarthritis: A Propensity Score-Matched",
+      "dove": "archivio preprint",
+      "data": "2026-11-20",
+      "doi": "10.21203/rs.3.rs-11635622/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11635622/v1"
+     },
+     {
+      "titolo": "A novel semi-quantitative ultrasound scoring method derived from WORMS for assessing cartilage damage in knee osteoarthritis: a cross-sectional study",
+      "dove": "archivio preprint",
+      "data": "2026-11-20",
+      "doi": "10.21203/rs.3.rs-11349608/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11349608/v1"
+     },
+     {
+      "titolo": "Nutrition during rehabilitation after anterior cruciate ligament injury and reconstruction: perspectives of healthcare professionals and patients",
+      "dove": "archivio preprint",
+      "data": "2026-11-19",
+      "doi": "10.21203/rs.3.rs-10411402/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-10411402/v1"
+     },
+     {
+      "titolo": "Responsiveness and Minimal Clinically Important Differences of Four Patient- Reported Outcome Measures Following Treatment of Knee Articular Cartilage Defects",
+      "dove": "archivio preprint",
+      "data": "2026-11-19",
+      "doi": "10.21203/rs.3.rs-11527839/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11527839/v1"
+     },
+     {
+      "titolo": "Short-term efficacy and safety of bicompartmental versus total knee arthroplasty for medial tibiofemoral and patellofemoral osteoarthritis: a propensity score-m",
+      "dove": "archivio preprint",
+      "data": "2026-11-18",
+      "doi": "10.21203/rs.3.rs-11431622/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11431622/v1"
+     },
+     {
+      "titolo": "Preoperative Bone Marrow Lesion Severity and Early Quality of Recovery After Medial Unicompartmental Knee Arthroplasty: A Retrospective Cohort Study",
+      "dove": "archivio preprint",
+      "data": "2026-11-18",
+      "doi": "10.21203/rs.3.rs-11470664/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11470664/v1"
+     },
+     {
+      "titolo": "Concordance of GPT-5.6, Gemini 3.6 Flash, DeepSeek-V4, and Doubao-2.1 With the Formal EU-US Meniscus Rehabilitation 2024 Consensus: A Comparative Study at the Q",
+      "dove": "archivio preprint",
+      "data": "2026-11-18",
+      "doi": "10.21203/rs.3.rs-11193068/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11193068/v1"
+     },
+     {
+      "titolo": "Implant Longevity in Total Hip and Knee Arthroplasty: A Bibliometric Analysis of the 100 Most-Cited Articles",
+      "dove": "archivio preprint",
+      "data": "2026-11-18",
+      "doi": "10.21203/rs.3.rs-11649935/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11649935/v1"
+     },
+     {
+      "titolo": "Association Between Final Intraoperative Medial Joint Laxity and One-Year Patient Satisfaction After ROSA-Assisted Medial Unicompartmental Knee Arthroplasty",
+      "dove": "archivio preprint",
+      "data": "2026-11-17",
+      "doi": "10.21203/rs.3.rs-11546258/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11546258/v1"
+     },
+     {
+      "titolo": "Experiences of Patients with Physiotherapy Service for Knee Osteoarthritis at Tertiary Care Government Hospital, Pokhara, Nepal-A qualitative study",
+      "dove": "archivio preprint",
+      "data": "2026-11-17",
+      "doi": "10.21203/rs.3.rs-11409973/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11409973/v1"
+     },
+     {
+      "titolo": "Physical calibration and signal periodic updates to synchronize IMUs for 5-day continuous knee flexion tracking",
+      "dove": "archivio preprint",
+      "data": "2026-11-16",
+      "doi": "10.64898/2026.11.14.26368098",
+      "url": "https://doi.org/10.64898/2026.11.14.26368098"
+     }
+    ],
+    "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
+   }
   }
  }
 }
