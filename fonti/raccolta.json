@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-27T10:52:17Z",
+ "generato": "2026-11-28T09:25:51Z",
  "nota": "Raccolta automatica da API ufficiali e feed pubblici. Ogni fonte dichiara il suo esito: «non risposto» significa che stanotte quella fonte NON è stata verificata.",
  "fonti": {
   "openfda": {
@@ -287,6 +287,12 @@
     "voci": [
      {
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
+      "titolo": "Out-of-Stock – Kinpeygo 4 mg, gélules à libération modifiée",
+      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/out-of-stock/domande-approvate/out-of-stock-kinpeygo-4mg-hartkapseln-mit-veraenderter-wirkstofffreisetzun.html",
+      "data": "Fri, 27 Nov 2026 00:00:00 +0000"
+     },
+     {
+      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Introduction to ElViS 2.0: Submitting Individual Case Reports to Swissmedic",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/news/mitteilungen/elvis-online-training.html",
       "data": "Thu, 26 Nov 2026 00:00:00 +0000"
@@ -367,12 +373,6 @@
       "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
       "titolo": "Save the Date: Clinical Trials Symposium 2027",
       "link": "https://www.swissmedic.ch/swissmedic/it/home/services/veranstaltungen/clinical-trials-symposium.html",
-      "data": "Wed, 04 Nov 2026 00:00:00 +0000"
-     },
-     {
-      "feed": "https://fetchrss.com/feed/X-CSwP0MWGVCZ8m-kc-M8t-S.rss",
-      "titolo": "DHPC – Respreeza (alpha-1-proteinasi inhibitor humanum)",
-      "link": "https://www.swissmedic.ch/swissmedic/it/home/medicamenti-per-uso-umano/sorveglianza-del-mercato/health-professional-communication--hpc-/dhpc-respreeza-alpha-1-proteinasi-inhibitor-humanum.html",
       "data": "Wed, 04 Nov 2026 00:00:00 +0000"
      },
      {
@@ -620,17 +620,6 @@
        "tipo": "INTERVENTIONAL"
       },
       {
-       "nct": "NCT03896464",
-       "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
-       "stato": "RECRUITING",
-       "aggiornato": "2026-10-07",
-       "fase": [
-        "NA"
-       ],
-       "n": 352,
-       "tipo": "INTERVENTIONAL"
-      },
-      {
        "nct": "NCT07846709",
        "titolo": "Bone-Patellar Tendon-Bone Versus Quadriceps Tendon Autograft for Anterior Cruciate Ligament Reconstruction: A Non-Inferiority Trial Regarding Anterior Knee Pain",
        "stato": "NOT_YET_RECRUITING",
@@ -639,6 +628,17 @@
         "NA"
        ],
        "n": 150,
+       "tipo": "INTERVENTIONAL"
+      },
+      {
+       "nct": "NCT03896464",
+       "titolo": "Soft-tissue Quadriceps Autograft ACL-reconstruction in the Skeletally-immature vs. Hamstrings",
+       "stato": "RECRUITING",
+       "aggiornato": "2026-10-07",
+       "fase": [
+        "NA"
+       ],
+       "n": 352,
        "tipo": "INTERVENTIONAL"
       },
       {
@@ -1487,6 +1487,20 @@
     "finestra_giorni": 30,
     "voci": [
      {
+      "titolo": "Comparison of Clinical Outcomes Between Asymmetric Reconstruction and Mechanical Alignment Total Knee Arthroplasty for CPAK Type I Knee Osteoarthritis: A Retros",
+      "dove": "archivio preprint",
+      "data": "2026-11-27",
+      "doi": "10.21203/rs.3.rs-11670529/v1",
+      "url": "https://doi.org/10.21203/rs.3.rs-11670529/v1"
+     },
+     {
+      "titolo": "High Tibial Osteotomy Versus Total Knee Arthroplasty for Knee Osteoarthritis in Patients Aged 65 Years or Younger: A Propensity Score–Matched Cohort Study at a ",
+      "dove": "archivio preprint",
+      "data": "2026-11-26",
+      "doi": "10.20944/preprints202611.2875.v1",
+      "url": "https://doi.org/10.20944/preprints202611.2875.v1"
+     },
+     {
       "titolo": "Opioid-Sparing Outcomes of Intraoperative Open-Field Adductor Canal Injection Combined with Intravenous Dexamethasone in Total Knee Arthroplasty: A Retrospectiv",
       "dove": "archivio preprint",
       "data": "2026-11-26",
@@ -1646,20 +1660,6 @@
       "data": "2026-11-17",
       "doi": "10.21203/rs.3.rs-11546258/v1",
       "url": "https://doi.org/10.21203/rs.3.rs-11546258/v1"
-     },
-     {
-      "titolo": "Experiences of Patients with Physiotherapy Service for Knee Osteoarthritis at Tertiary Care Government Hospital, Pokhara, Nepal-A qualitative study",
-      "dove": "archivio preprint",
-      "data": "2026-11-17",
-      "doi": "10.21203/rs.3.rs-11409973/v1",
-      "url": "https://doi.org/10.21203/rs.3.rs-11409973/v1"
-     },
-     {
-      "titolo": "Physical calibration and signal periodic updates to synchronize IMUs for 5-day continuous knee flexion tracking",
-      "dove": "archivio preprint",
-      "data": "2026-11-16",
-      "doi": "10.64898/2026.11.14.26368098",
-      "url": "https://doi.org/10.64898/2026.11.14.26368098"
      }
     ],
     "nota": "preprint NON sottoposti a revisione: si leggono con questo peso, mai citati come prove"
